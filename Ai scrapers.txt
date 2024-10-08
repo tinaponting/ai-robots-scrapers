@@ -975,11 +975,21 @@ Grok-2 mini
 Grok-2
 Grok-2‡
 
+241008 new ai:
+
+Google Gemini (Formerly Bard) 
+Microsoft Copilot
+Mistral Chat
+GroqChat
+HuggingChat
+Pi, your personal AI
+Poe
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 241007
+Updated: 241008
 
 241003: Updates robots. txt both!
 241003: Removed spavning.txt then google wont index posts:(
 241007: updated. robots.txt, completer robota.txt also on: single user.
+241008: Some new Ai.
