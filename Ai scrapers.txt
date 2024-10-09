@@ -743,6 +743,8 @@ User-agent: WormGPT V3.0
 Disallow: /
 User-agent: wpbot
 Disallow: /
+User-agent: wpbot/1.1
+Disallow: /
 User-agent: Webzio-Extended
 Disallow: /
 User-agent: VelenPublicWebCrawler
@@ -866,6 +868,7 @@ User-agent: TinyTestBot
 User-agent: WebChatGPT
 User-agent: WormGPT V3.0
 User-agent: wpbot
+User-agent: wpbot/1.1
 User-agent: Webzio-Extended
 User-agent: VelenPublicWebCrawler
 User-agent: proximic
@@ -985,6 +988,10 @@ HuggingChat
 Pi, your personal AI
 Poe
 
+
+NEW: 20241009:
+User-agent: wpbot/1.1
+
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Updated: 241008
@@ -993,3 +1000,4 @@ Updated: 241008
 241003: Removed spavning.txt then google wont index posts:(
 241007: updated. robots.txt, completer robota.txt also on: single user.
 241008: Some new Ai.
+241009, new wp ai. added.
