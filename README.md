@@ -5,4 +5,5 @@ Ai robots txt, ai scrapers txt, block them
 
 
 * Updates:
-* * 201008, added some more:)
+* Updated: 241010:  block ai.php
+* Updated: 201008, added some more:)
