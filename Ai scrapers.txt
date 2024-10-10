@@ -18,6 +18,35 @@ Ai bots/scrapers:
 * Perplexity: 
 * Webz.io:  https://webz.io/
 
+:::::::::::::::::::::::::::::::::
+
+### ÖVRIGT Ai browsers:
+https://arc.net     AI: Max
+https://brave.com   AI: Leo
+https://www.mozilla.org/sv-SE/firefox   AI: mozilla.ai 
+https://www.opera.com     AI: Aria AI
+https://www.microsoft.com/sv-se/edge   AI: Edge AI
+https://vivaldi.com    AI: Bing AI
+https://www.torproject.or   AI: Tor.ai 
+https://mullvad.net/en/browser    AI: NON YET?
+Safari:  AI:  Safari AI
+
+
+#Less Known:
+https://astian.org/midori-browser/  AI: Midori-AI
+https://www.palemoon.org/    AI: Non yet?
+https://www.seamonkey-project.org  AI: Non yet?
+https://www.falkon.org  AI: Falkon AI
+https://www.maxthon.com   AI: AIChat
+https://apps.kde.org/sv/konqueror  AI: Kfind Ai
+Comodo IceDragon / Comodo Dragon Internet Browser  AI: ??
+https://epicbrowser.com     AI: Epic AI?
+https://www.lunascape.org   AI: ?? 
+https://www.waterfox.net    AI:  Heliopas AI
+https://duckduckgo.com      AI: AI Chat 
+https://ghostbrowser.com    AI: ?
+
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................... 
 ********************************************************************
@@ -994,7 +1023,7 @@ User-agent: wpbot/1.1
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 241008
+Updated: 241010
 
 241003: Updates robots. txt both!
 241003: Removed spavning.txt then google wont index posts:(
