@@ -3,21 +3,45 @@ Ai bots/scrapers:
 .................................................................
 ## Ai (important) Adresses:  ###
 
-* Anthropic: https://www.anthropic.com/
-* Hugging face:  https://huggingface.co/
-* Open ai: https://openai.com/
-* Claude ai news: https://claude.ai/login
-* Common Crawl: https://commoncrawl.org/
-* crew AI: https://www.crewai.com/
-* Crew ai: spider scraper: https://spider.cloud/   Useragent: spider
-* Cohere: https://cohere.com/
-* Grok: https://x.ai/
+* anthropic-ai: https://www.anthropic.com
+        Claude ai news: https://claude.ai
+* Auto-GPT: https://agpt.co
+* Agent GTP: https://agentgpt.reworkd.ai
+* Apple/Safari: https://support.apple.com/en-us/119829
+* Anthropic: https://www.anthropic.com
+* Hugging face:  https://huggingface.co
+* Open ai: https://openai.com
+      https://platform.openai.com/docs/overview
+* Common Crawl: https://commoncrawl.org
+* crew AI: https://www.crewai.com
+* Crew ai: spider scraper: https://spider.cloud   Useragent: spider
+* Cohere: https://cohere.com
+* Grok: https://x.ai
 * Google: https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers?hl=en
-* Gemini: https://gemini.google.com/
-* Meta ai (facebook): https://ai.meta.com/
-* Perplexity: 
-* Webz.io:  https://webz.io/
+* Gemini: https://gemini.google.com
+* Meta ai (facebook): https://ai.meta.com
+* Mistral Ai:  https://docs.mistral.ai/capabilities/agents
+* Perplexity:  https://www.perplexity.ai
+* Webz.io:  https://webz.io
 
+Control of AI Spiders:
+https://darkvisitors.com
+
+Useful Blogs: 
+N Clarke: https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website/
+Botpress: https://botpress.com/blog/what-is-an-ai-agent
+
+
+#OTHERS (of intrests):
+SuperAgent: https://github.com/superagent-ai/superagent
+BabyAGI: https://github.com/yoheinakajima/babyagi
+Aomni:  https://www.aomni.com
+MetaGPT: https://www.deepwisdom.ai
+Tusk AI: https://usetusk.ai
+Superagent (BUILD YOUR OWN CHAT): https://www.superagent.sh
+Devin AI: https://preview.devin.ai
+
+.................................
 :::::::::::::::::::::::::::::::::
 
 ### ÖVRIGT Ai browsers:
@@ -45,8 +69,17 @@ https://www.lunascape.org   AI: ??
 https://www.waterfox.net    AI:  Heliopas AI
 https://duckduckgo.com      AI: AI Chat 
 https://ghostbrowser.com    AI: ?
-
-
+LAION-AI: https://laion.ai   //open source AI.  
+      https://github.com/laion-ai
+GPT-J: https://huggingface.co/EleutherAI/gpt-j-6b   //open source AI. 
+     https://github.com/graphcore/gpt-j
+GPTNeo: https://huggingface.co/togethercomputer/GPT-NeoXT-Chat-Base-20B  //open source AI. 
+Cerebras-GPT  https://cerebras.ai/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models/
+Pythia:  https://askpythia.ai  
+         https://projectpythia.org
+		 *
+LOTS of more Ai: https://sapling.ai/llm/gpt-j-vs-gptneo
+And More: https://github.com/e2b-dev/awesome-ai-agents
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................... 
 ********************************************************************
@@ -96,6 +129,7 @@ Ai image grabber:
 RedirectMatch 403 thehive.ai  #ai image scraper
 
 thehive.ai
+
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
@@ -216,6 +250,14 @@ User-agent: OAI-SearchBot
 
 User-agent: Timpibot
 Disallow: /
+## Hard to block:(
+Timpibot/0.8     Mozilla/5.0 (compatible; Timpibot/0.8; +http://www.timpi.io)
+Timpibot/0.9     Timpibot/0.9 (+http://www.timpi.io)
+
+https://timpi.io/
+I blocked whole user string!
+
+......
 
 # ByPasser of ai: Can by pass allrobots.txt, scurity to steal your stuff:
 User-agent: GPTZero
@@ -292,7 +334,6 @@ User-agent: Meta AI
 Disallow: /
 
 #Japan: https://ucri.nict.go.jp/en/icccrawler/
-
 User-agent: ICC-Crawler
 Disallow: /
 
@@ -315,9 +356,53 @@ hackers with their hacking and programming endeavors
 
 WormGPT V3.0
 
-...........................
 
-### Affect me/or? 
+#WORDPress:
+# New 240916
+wpbot
+
+WPBot is an easy to use, Native, No coding required, AI ChatBot for 
+WordPress websites to provide automated Live Chat Support, 
+Lead Generation and collecting information from your users. 
+Best AI ChatBot for automated 24/7 customer support.
+
+This ChatBot can be also be powered by OpenAI ChatGPT, DialogFlow, 
+or simply use the built-in features to 
+provide Live Customer support and collect data without any extra cost. 
+Own and Manage this Native WordPress ChatBot directly from your 
+WordPress Dashboard for improving customer support efficiency and user conversion.
+
+
+https://sv.wordpress.org/plugins/chatbot/
+
+
+User-agent: wpbot
+Disallow: /
+User-agent: wpbot/1.1
+Disallow: /
+
+-----------------------------------------------------
+.....................................................
+### Not yet/Affect me/or? 
+
+Not seen this on my blog yet:
+
+### Grok: https://x.ai/
+Grok-1.5	
+Grok-2 mini	
+Grok-2
+Grok-2‡
+
+241008 new ai:
+
+Google Gemini (Formerly Bard) 
+Microsoft Copilot
+Mistral Chat
+GroqChat
+HuggingChat
+Pi, your personal AI
+Poe
+
 
 Baidu - Ernie
 Google/DeepMind - PaLM, Gemini, Gemma
@@ -325,7 +410,6 @@ DeepMind - Chinchilla
 Meta - OPT, Galactica, LLaMA
 Amazon - AlexaTM
 x.AI - Grok
-
 
 Other:
 DALL-E (text-to-image) - https://openai.com/dall-e-2
@@ -336,7 +420,7 @@ Meta (Facebook) Llama
 https://www.llama2.ai/
 https://llama.meta.com/
 
-Mistral AI
+## Mistral AI
 https://mistral.ai
 http://chat.mistral.ai/
 
@@ -354,6 +438,12 @@ Gemini 1.5 Flash
 # Machine learning
 CatBoost
 Yandex - YaLM
+
+
+#THIS Is blocked by: common hackers tools
+https://www.dataprovider.com/spider/
+User-agent: dataprovider
+Disallow: /
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 --------------------------------------------------
@@ -425,7 +515,7 @@ RewriteCond%{HTTP_USER_AGENT}(ZAP)[NC,OR]
 
 :::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................
-# Put in .htaccess or htaccess: 
+#### Put in .htaccess or htaccess:   ###
 # Block “Scrapers, image stealers/downloader” bots:
 
 ### EXEMPEL/EXAMPLE:
@@ -447,6 +537,8 @@ RewriteRule .* – [F,L]
 	RedirectMatch 403 /bot/
 </IfModule>
 
+::::::::::::::::::::::::::::::::::::::::::
+..........................................
 #STRONG ALTERNATIVE####:
 
 <IfModule mod_rewrite.c>
@@ -455,7 +547,7 @@ RewriteCond%{QUERY_STRING}(BOT|BOT |BOT |BOT |BOT)\:[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}^.*(BOT|BOT |BOT |BOT |BOT).*[NC]
 RewriteRule .* - [F]</ifModule>
 
-.
+.........................
 
 #From sixcolurs /  https://sixcolors.com/post/2024/06/excluding-your-website-from-apples-ai-crawler/
 
@@ -572,10 +664,9 @@ RewriteRule .* - [F]</ifModule>
 :::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................  
 ### A Complete Ai List ##)
-#Ai/BOTS - scrapers:
+#Ai/BOTS - scrapers:   (IF Needed: User-agent: * )
 # Robots.txt:
-
-User-agent: *
+*
 User-agent: AutoGPT
 Disallow: /
 User-agent: Agent GPT
@@ -678,10 +769,6 @@ User-agent: Google Bard AI
 Disallow: /
 User-agent: GoogleOther
 Disallow: / 
-User-agent: GoogleOther-Image
-Disallow: /
-User-agent: GoogleOther-Video
-Disallow: /
 User-agent: FacebookBot
 Disallow: /
 User-agent: FacebookBot/1.0
@@ -792,9 +879,9 @@ User-agent: peer39_crawler/1.0
 Disallow: /
 
 ...............................
-SLIM: #Ai - scrapers -Robots. txt:
+...............................
+SLIM: #Ai - scrapers -Robots. txt:  (IF Needed: User-agent: * )
 
-User-agent: *
 User-agent: AutoGPT
 User-agent: Agent GPT
 User-agent: Aria browser AI
@@ -847,8 +934,6 @@ User-agent: SearchGPT
 User-agent: Google-Extended   
 User-agent: Google Bard AI
 User-agent: GoogleOther
-User-agent: GoogleOther-Image
-User-agent: GoogleOther-Video
 User-agent: FacebookBot
 User-agent: FacebookBot/1.0
 User-agent: facebookexternalhit
@@ -909,31 +994,9 @@ User-agent: peer39_crawler/1.0
 Disallow: /
 
 
-..........................
-..........................
-# New 240916
-wpbot
-
-WPBot is an easy to use, Native, No coding required, AI ChatBot for 
-WordPress websites to provide automated Live Chat Support, 
-Lead Generation and collecting information from your users. 
-Best AI ChatBot for automated 24/7 customer support.
-
-This ChatBot can be also be powered by OpenAI ChatGPT, DialogFlow, 
-or simply use the built-in features to 
-provide Live Customer support and collect data without any extra cost. 
-Own and Manage this Native WordPress ChatBot directly from your 
-WordPress Dashboard for improving customer support efficiency and user conversion.
-
-
-https://sv.wordpress.org/plugins/chatbot/
-
 ................................
-
+--------------------------------
 # New: 240830:
-
-AI2 Bot  Mozilla/5.0 (compatible) AI2Bot (+https://www.allenai.org/crawler
-
 User-agent: Ai2Bot-Dolma  (LLMS trainer)
 https://allenai.org/
 
@@ -942,45 +1005,27 @@ Disallow: /
 User-agent: Ai2Bot-Dolma
 Disallow: /
 
-
 User-agent: Webzio-Extended
 Disallow: /
 
 New: 200916
- 
-Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot
-
 User-agent: OAI-SearchBot/1.0
 Disallow: /
  
 240921  //Another variant of:
- 
+
 User-agent: OAI SearchBot
 Disallow: /
 
-
-NEW: 240922
-
-# Timpibot:
-
-Timpibot/0.9 (+http://www.timpi.io)
-
-User-agent: Timpibot/0.9 
-Disallow: /
 
 #240928 /this comes loking around: 
 User-agent: Dalvik/2
 Disallow: /
 
-# Open ai new:
-
-GPT 4 Omni	
-GPT 4 Omni Mini
-
 ::::
 
 241006:
-# Yandex:
+####  Yandex:
 
 User-agent: YarGPT
 Disallow: /
@@ -989,42 +1034,18 @@ Also: User-agent: yarchatgpt
       Disallow: /
 
 FROM: http://yarchatgpt.ru
+::
 
-## Hard to block:(
-Timpibot/0.8     Mozilla/5.0 (compatible; Timpibot/0.8; +http://www.timpi.io)
-Timpibot/0.9     Timpibot/0.9 (+http://www.timpi.io)
+### NEW: 241011:
+Not yet enrolled  ** in list
 
-https://timpi.io/
-I blocked whole user string!
-
-:::
-Not seen this on my blog yet:
-
-### Grok: https://x.ai/
-
-Grok-1.5	
-Grok-2 mini	
-Grok-2
-Grok-2‡
-
-241008 new ai:
-
-Google Gemini (Formerly Bard) 
-Microsoft Copilot
-Mistral Chat
-GroqChat
-HuggingChat
-Pi, your personal AI
-Poe
-
-
-NEW: 20241009:
-User-agent: wpbot/1.1
+AlphaAI   *singapore
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 241010
+Updated: 241019
 
+241014: robots.txt - checked with robots.txt checker.
 241003: Updates robots. txt both!
 241003: Removed spavning.txt then google wont index posts:(
 241007: updated. robots.txt, completer robota.txt also on: single user.
