@@ -5,6 +5,7 @@ Ai robots txt, ai scrapers txt, block them
 
 
 * Updates:
+* 241023, Updaed Robots.txt is on: Single user.
 * 241023: Robots.txt updated with the Latest
 * 241014: robots.txt - checked with robots.txt checker.
 * 241003: Updates robots. txt both!
