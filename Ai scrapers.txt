@@ -3,6 +3,7 @@ Ai bots/scrapers:
 .................................................................
 ## Ai (important) Adresses:  ###
 
+* Alpha AI: https://www.alphaai.capital
 * anthropic-ai: https://www.anthropic.com
         Claude ai news: https://claude.ai
 * Auto-GPT: https://agpt.co
@@ -627,11 +628,11 @@ RewriteRule "^.*$" - [F,L]</IfModule>
 
 <IfModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}(AI2 Bot|Ai2Bot-Dolma|AutoGPT|Agent GPT|Applebot-Extended|Aria browser AI|Aria AI|Applebot-Extended|Amazon Bedrock|Alexa|AlphaAI|Amazon Lex|Brave Leo AI|bingbot/2.0|bingbot-chat/2.0|
-Bing ai|Browse AI|ChatGPT|ChatGPT-User|cohere-ai|ClaudeBot|crewAI|CCBot|Claude 3.5 Sonnet|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|ChatGPT|ChatGPT-User|Diffbot|DialoGPT|DepolarizingGPT|Dalvik/2|Dalvik/2.1.0)[NC,OR
+Bing ai|Browse AI|ChatGPT|ChatGPT-User|cohere-ai|ClaudeBot|crewAI|CCBot|claudebot|Claude 3.5 Sonnet|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|ChatGPT|ChatGPT-User|Diffbot|DialoGPT|DepolarizingGPT|Dalvik/2|Dalvik/2.1.0)[NC,OR
 ]RewriteCond%{QUERY_STRING}(AutoGPT|Agent GPT|Applebot-Extended|Aria browser AI|Aria AI|Applebot-Extended|Amazon Bedrock|Alexa|AlphaAI|Amazon Lex|Brave Leo AI|bingbot/2.0|bingbot-chat/2.0|
 Bing ai|Browse AI|ChatGPT|ChatGPT-User|cohere-ai|ClaudeBot|crewAI|CCBot|Claude 3.5 Sonnet|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|ChatGPT|ChatGPT-User|Diffbot|DialoGPT|DepolarizingGPT|Dalvik/2|Dalvik/2.1.0)\:[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}^.*(AutoGPT|Agent GPT|Applebot-Extended|Aria browser AI|Aria AI|Applebot-Extended|Amazon Bedrock|Alexa|AlphaAI|Amazon Lex|Brave Leo AI|bingbot/2.0|bingbot-chat/2.0|
-Bing ai|Browse AI|ChatGPT|ChatGPT-User|cohere-ai|ClaudeBot|crewAI|CCBot|Claude 3.5 Sonnet|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|ChatGPT|ChatGPT-User|Diffbot|DialoGPT|DepolarizingGPT|Dalvik/2|Dalvik/2.1.0).*[NC]
+Bing ai|Browse AI|ChatGPT|ChatGPT-User|cohere-ai|ClaudeBot|crewAI|CCBot|claudebot|Claude 3.5 Sonnet|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|ChatGPT|ChatGPT-User|Diffbot|DialoGPT|DepolarizingGPT|Dalvik/2|Dalvik/2.1.0).*[NC]
 RewriteRule .* - [F]</ifModule>
 
 <IfModule mod_rewrite.c>
@@ -806,7 +807,9 @@ Disallow: /
 User-agent: img2dataset
 Disallow: /
 User-agent: iaskspider/2.0
-Disallow: 
+Disallow:
+User-agent: Kangaroo Bot 
+Disallow: /
 User-Agent: The Knowledge AI 
 Disallow: /
 User-agent: LeftWingGPT
@@ -841,7 +844,11 @@ User-agent: SearchGPT
 Disallow: /
 User-agent: scrapy
 Disallow: /
+User-agent: Stability AI
+Disallow: /
 User-agent: PerplexityBot
+Disallow: /
+User-agent: peer39_crawler/1.0
 Disallow: /
 User-agent: RightWingGPT
 Disallow: /
@@ -865,6 +872,10 @@ User-agent: Webzio-Extended
 Disallow: /
 User-agent: VelenPublicWebCrawler
 Disallow: /
+User-agent: PaperLiBot
+Disallow: /
+User-agent: PaperLiBot/2.1
+Disallow: /
 User-agent: proximic
 Disallow: /
 User-agent: PiplBot
@@ -874,8 +885,6 @@ Disallow: /
 User-agent: YarGPT
 Disallow: /
 User-agent: yarchatgpt
-Disallow: /
-User-agent: peer39_crawler/1.0
 Disallow: /
 
 ...............................
@@ -956,6 +965,7 @@ User-agent: IntelliSeek.ai
 User-agent: ImagesiftBot 
 User-agent: img2dataset
 User-agent: iaskspider/2.0
+User-agent: Kangaroo Bot
 User-Agent: The Knowledge AI 
 User-agent: LeftWingGPT
 User-Agent: my-tiny-bot
@@ -973,7 +983,7 @@ User-agent: OAI-SearchBot/1.0
 User-agent: Owler
 User-agent: SearchGPT 
 User-agent: scrapy
-User-agent: PerplexityBot
+User-agent: Stability AI
 User-agent: RightWingGPT
 User-agent: Timpibot
 User-agent: Timpibot/0.8
@@ -985,12 +995,15 @@ User-agent: wpbot
 User-agent: wpbot/1.1
 User-agent: Webzio-Extended
 User-agent: VelenPublicWebCrawler
+User-agent: PaperLiBot
+User-agent: PaperLiBot/2.1
+User-agent: PerplexityBot
 User-agent: proximic
+User-agent: peer39_crawler/1.0 
 User-agent: PiplBot
 User-agent: YouBot
 User-agent: YarGPT
 User-agent: yarchatgpt
-User-agent: peer39_crawler/1.0 
 Disallow: /
 
 
@@ -1037,16 +1050,21 @@ FROM: http://yarchatgpt.ru
 ::
 
 ### NEW: 241011:
-Not yet enrolled  ** in list
-
 AlphaAI   *singapore
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 241019
 
-241014: robots.txt - checked with robots.txt checker.
-241003: Updates robots. txt both!
-241003: Removed spavning.txt then google wont index posts:(
-241007: updated. robots.txt, completer robota.txt also on: single user.
-241008: Some new Ai.
+NEW 241023: 
+Operator	Kangaroo LLM
+Documentation	https://kangaroollm.com.au/kangaroo-bot/
+User-agent: Kangaroo Bot
+
+User-agent: Stability AI
+https://stability.ai/
+
+User-agent: PaperLiBot
+User-agent: PaperLiBot/2.1
+
+https://finity.ai
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Updated: 2411023
