@@ -1,3 +1,5 @@
+𝗮𝗶-𝗿𝗼𝗯𝗼𝘁𝘀-𝘁𝘅𝘁 (𝗮𝗻𝗱 𝗽𝗵𝗽 𝗯𝗹𝗼𝗰𝗸𝗲𝗱)
+
 # ai-robots-scrapers
 AI robots.txt, AI scrapers block ai scrapers
 
