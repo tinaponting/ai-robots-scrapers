@@ -53,6 +53,7 @@ https://vivaldi.com    AI: Bing AI
 https://www.torproject.or   AI: Tor.ai 
 https://mullvad.net/en/browser    AI: NON YET?
 Safari:  AI:  Safari AI
+https://sigmaos.com  AI: Airis
 
 #Less Known:
 https://astian.org/midori-browser/  AI: Midori-AI
@@ -78,6 +79,7 @@ Pythia:  https://askpythia.ai
 		 *
 LOTS of more Ai: https://sapling.ai/llm/gpt-j-vs-gptneo
 And More: https://github.com/e2b-dev/awesome-ai-agents
+Integuru: https://github.com/Integuru-AI/Integuru
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................... 
 ********************************************************************
@@ -328,6 +330,14 @@ Disallow: /
 User-agent: ZeroGPT
 Disallow: /
 
+*
+https://allenai.org/crawler
+https://allenai.org
+User-agent: AI2Bot
+Disallow: /
+
+User-agent: Ai2Bot-Dolma
+Disallow: /
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................... 
@@ -567,7 +577,6 @@ User-agent: Accoona-AI-Agent
 Disallow: /
 
 '
-
 #Japan: https://ucri.nict.go.jp/en/icccrawler/
 User-agent: ICC-Crawler
 Disallow: /
@@ -1162,7 +1171,6 @@ User-agent: img2dataset
 User-agent: iaskspider/2.0
 User-agent: Kangaroo Bot
 User-agent: LeftWingGPT
-User-Agent: my-tiny-bot
 User-agent: Nicecrawler
 User-agent: magpie-crawler
 User-agent: Omgilibot
@@ -1208,4 +1216,4 @@ Disallow: /
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 2411026
+Updated: 241101
