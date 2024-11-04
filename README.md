@@ -7,6 +7,7 @@ Ai robots txt, ai scrapers txt, block them
 
 
 * Updates:
+* 241104, new Ai -- not wanted!
 * 241103, BLock ai.php updated and checkd, do interfere with speed:)
 * 241026, Updated Robots.txt/ai scrapers List, new Ai.  Not done: Ai.php yet
 * 241023, Updated Robots.txt is on: Single user.
