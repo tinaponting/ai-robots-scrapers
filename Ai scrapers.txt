@@ -850,8 +850,6 @@ User-agent: AutoGPT
 Disallow: /
 User-agent: Agent GPT
 Disallow: /
-User-agent: anthropic-ai
-Disallow: /
 User-agent: Applebot-Extended
 Disallow: /
 User-agent: Aria browser AI
@@ -863,17 +861,17 @@ Disallow:/
 User-agent: Amazon Bedrock
 Disallow: /
 User-agent: Amazon Lex
-Disallow /
+Disallow: /
 User-agent: amazon-kendra
-Disallow /
+Disallow: /
 User-agent: Amazon Silk
-Disallow /
+Disallow: /
 User-agent: Amazon SageMaker
-Disallow /
+Disallow: /
 User-agent: AWS Trainium 
-Disallow /
+Disallow: /
 User-agent: Amazon Kendra
-Disallow /
+Disallow: /
 User-agent: Amazon Bedrock
 Disallow: /
 User-agent: Alexa
@@ -924,8 +922,6 @@ User-agent: dataprovider
 Disallow: /
 User-agent: Doubao AI
 Disallow: /
-User-agent: DuckAssistBot
-Disallow: /
 User-agent: Dalvik/2
 Disallow: /
 User-agent: Dalvik/2.1.0
@@ -974,8 +970,6 @@ User-agent: Google Gemini
 Disallow: /
 User-agent: GoogleOther
 Disallow: / 
-User-agent: Google-CloudVertexBot
-Disallow: /
 User-agent: FacebookBot
 Disallow: /
 User-agent: FacebookBot/1.0
@@ -1222,4 +1216,4 @@ Disallow: /
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 241104
+Updated: 241106
