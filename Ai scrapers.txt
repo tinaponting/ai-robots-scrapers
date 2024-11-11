@@ -689,6 +689,103 @@ Cohere R+
 * https://www.librechat.ai
 LibreChat
 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::
+------------------------------------------------------
+
+#NYTT: AI:
+LiteLLM    https://www.litellm.ai
+reliableGPT   https://github.com/BerriAI/reliableGPT  
+
+Azure OpenAI 
+https://azure.microsoft.com/en-us/products/ai-services/openai-service
+https://ai.azure.com/
+
+Google PaLM2
+https://ai.google/discover/palm2
+https://cloud.google.com/blog/products/ai-machine-learning/generative-ai-applications-with-vertex-ai-palm-2-models-and-langchain 
+
+
+* text to Imagages AI:
+Midjourney 
+https://www.midjourneyfree.ai
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+....................................................................
+## CHINA AI:  ***
+
+ChatGLM   / GLM-4
+https://github.com/THUDM/ChatGLM-6B/blob/main/README_en.md
+https://huggingface.co/THUDM
+https://arxiv.org/html/2406.12793v1
+
+
+Baidu ERNIE Bot  Ernie Bot
+https://research.baidu.com/Blog/index-view?id=185f
+
+
+iFlytek’s Spark  /  Spark V4.0
+https://www.iflytek.com/en/news-events/news/52.html
+https://www.iot-now.com/2024/07/03/145210-iflytek-launches-spark-v4-0-rivals-gpt-4-turbo
+
+Minimax AI   / MiniMax (Hailuo AI) 
+https://minimax-ai.org
+https://minimaxai.me
+
+Moonshot AI 
+https://www.moonshot-ai.com
+Kimi AI Chatbot 
+*  by the Moon's Dark Side Technolog
+
+
+InternLM
+https://internlm.intern-ai.org.cn
+https://github.com/InternLM/InternLM
+
+LocalAI / Ollama 
+https://ollama.com
+
+Tongyi Qianwen  / Tongyi Qwen 
+* by Alibaba Group
+https://www.alibabacloud.com/en/solutions/generative-ai/qwen?_p_lc=1
+
+
+HunyuanAide  (chatbot)
+Tencent Hunyuan
+* by Tencent Holdings
+https://www.tencent.com
+https://hunyuan.tencent.com
+
+
+Zhipu AI  /  ChatGLM 
+https://www.zhipuai.cn
+ 
+
+Baichuan AI
+https://www.baichuan-ai.com/home
+
+
+DeepSeek AI 
+https://www.deepseek.com
+https://github.com/deepseek-ai/DeepSeek-Coder
+DeepSeek chat: https://chat.deepseek.com/sign_in
+
+ByteDance Skylark
+ByteDance AI chatbot
+https://www.bytedance.com
+
+Groq Cloud AI
+https://groq.com
+
+OpenRouter
+*Varying AI
+https://openrouter.ai
+
+360 GPT
+* Marketing
+https://gpt360.io
+
+................................
+* Ai News:
+https://www.aibase.com
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................... 
