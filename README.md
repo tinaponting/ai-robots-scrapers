@@ -3,10 +3,11 @@
 # ai-robots-scrapers
 AI robots.txt, AI scrapers block ai scrapers
 
-Ai robots txt, ai scrapers txt, block them
+Ai robots txt, ai scrapers txt, block theme!
 
 
 * Updates:
+* 241111, did forget to update, robots.txt with, duckassistent.
 * 241104, new Ai -- not wanted!
 * 241103, BLock ai.php updated and checkd, do interfere with speed:)
 * 241026, Updated Robots.txt/ai scrapers List, new Ai.  Not done: Ai.php yet
