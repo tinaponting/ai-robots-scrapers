@@ -179,11 +179,13 @@ DALL-E Mini
 .................................................................... 
 ********************************************************************
 #AMAZON AI (also #claudebot is on Amazon!
+URL: https://aws.amazon.com/free/machine-learning/
 :
 # Speaking AI:
 User-agent: Amazon Lex
 Disallow: /
 
+* The rest: 
 User-agent: AISearchBot
 Disallow: /
 
@@ -199,7 +201,7 @@ Disallow: /
 User-agent: AWS Trainium 
 Disallow: /
 
-User-agent: Amazon Kendra
+User-agent: amazon-kendra
 Disallow: /
 
 User-agent: Amazon Bedrock
@@ -211,7 +213,13 @@ Disallow: /
 User-agent: AlexaTM
 Disallow: /
 
-.......
+User-agent: Amazon Textract
+Disallow: /
+
+User-agent: Amazon Comprehend
+Disallow: /
+ 
+..........................................
 
 *#' Antoher Way, if they do not give up!:
 
@@ -235,7 +243,9 @@ RewriteCond%{HTTP_USER_AGENT}"AISearchBot"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"Alexa"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"AlexaTM"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"Amazonbot/0.1"[NC,OR]  
-RewriteCond%{HTTP_USER_AGENT}"amazon-kendra"[NC,OR]  
+RewriteCond%{HTTP_USER_AGENT}"amazon-kendra"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"Amazon Textract"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"Amazon Comprehend"[NC,OR]  
 RewriteCond%{HTTP_USER_AGENT}"amazonbot"[NC,OR]   
 RewriteCond%{HTTP_USER_AGENT}"Amazonbot"[NC,OR]  
 RewriteCond%{HTTP_USER_AGENT}"Amazon Silk"[NC,OR] 
@@ -244,8 +254,8 @@ RewriteCond%{HTTP_USER_AGENT}"Amazon Bedrock"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"Amazon SageMaker"[NC,OR] 
 RewriteCond%{HTTP_USER_AGENT}"Amazon: AWS"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"AWS Trainium"[NC,OR] 
-RewriteCond%{HTTP_USER_AGENT}"Amazon Lex"[NC,OR]  
 RewriteCond%{HTTP_USER_AGENT}"Amazon Kendra"[NC,OR]
+RewriteCond%{REMOTE_ADDR}!^AS16509 [NC]                #Hacker Attack!
 RewriteCond%{REMOTE_ADDR}!^3\.141.37.212)$ [NC,OR]     #claudebot
 RewriteCond%{REMOTE_ADDR}!^3\.148.107.103)$ [NC,OR] 
 RewriteCond%{HTTP_USER_AGENT}"Nutch"[NC]
@@ -866,13 +876,17 @@ User-agent: Amazon SageMaker
 Disallow: /
 User-agent: AWS Trainium 
 Disallow: /
-User-agent: Amazon Kendra
+User-agent: amazon-kendra
 Disallow: /
 User-agent: Amazon Bedrock
 Disallow: /
 User-agent: Alexa
 Disallow: /
 User-agent: AlexaTM
+Disallow: /
+User-agent: Amazon Textract
+Disallow: /
+User-agent: Amazon Comprehend
 Disallow: /
 User-agent: AnyPicker
 Disallow: /
@@ -1092,14 +1106,16 @@ User-agent: Aria browser AI
 User-agent: Aria browse Aria AI
 User-agent: AISearchBot 
 User-agent: Applebot-Extended
-User-agent: Amazon Bedrock
 User-agent: amazon-kendra
 User-agent: Amazon Silk
 User-agent: Amazon SageMaker
 User-agent: AWS Trainium 
-User-agent: Amazon Kendra
+User-agent: amazon-kendra
+User-agent: Amazon Bedrock
 User-agent: Alexa
 User-agent: AlexaTM
+User-agent: Amazon Textract
+User-agent: Amazon Comprehend
 User-agent: AnyPicker
 User-agent: AlphaAI
 User-agent: AI2 Bot
