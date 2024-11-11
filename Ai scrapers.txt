@@ -182,25 +182,25 @@ DALL-E Mini
 :
 # Speaking AI:
 User-agent: Amazon Lex
-Disallow /
+Disallow: /
 
 User-agent: AISearchBot
-Disallow /
+Disallow: /
 
 User-agent: amazon-kendra
-Disallow /
+Disallow: /
 
 User-agent: Amazon Silk
-Disallow /
+Disallow: /
 
 User-agent: Amazon SageMaker
-Disallow /
+Disallow: /
 
 User-agent: AWS Trainium 
-Disallow /
+Disallow: /
 
 User-agent: Amazon Kendra
-Disallow /
+Disallow: /
 
 User-agent: Amazon Bedrock
 Disallow: /
@@ -858,8 +858,6 @@ User-agent: Aria browse Aria AI
 Disallow: /
 User-agent: AISearchBot 
 Disallow:/
-User-agent: Amazon Bedrock
-Disallow: /
 User-agent: Amazon Lex
 Disallow: /
 User-agent: amazon-kendra
@@ -1103,7 +1101,6 @@ User-agent: Amazon Silk
 User-agent: Amazon SageMaker
 User-agent: AWS Trainium 
 User-agent: Amazon Kendra
-User-agent: Amazon Bedrock
 User-agent: Alexa
 User-agent: AlexaTM
 User-agent: AnyPicker
