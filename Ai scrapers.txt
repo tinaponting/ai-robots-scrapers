@@ -818,8 +818,8 @@ function my_robots_commands($output, $public) {
 
 # RAW List:
 
-AutoGPTIAgent GPTIanthropic-ailAria browser AIIAria browse Aria AIIAISearchBotI Applebot-ExtendedIAmazon BedrockIAmazon LexIAISearchBotIamazon-kendraIAmazon SilkIAmazon SageMakerIAWS TrainiumI Amazon KendraIAmazon BedrockI
-AlexaIAlexaTMIAnyPickerIAlphaAIIAI2 BotIAi2Bot-DolmaIBrave Leo AIIbingbot-chat/2.0IBing aiIcohere-aiIClaudeBotIcrewAIIClaude 3.5 SonnetICCBotIccbotICCBot/2.0ICC-Crawler/2.0I
+AutoGPTIAgent GPTIanthropic-ailAria browser AIIAria browse Aria AIIAISearchBotIApplebot-ExtendedIAmazon TextractIAmazon ComprehendIAmazon BedrockIIAISearchBotIamazon-kendraIAmazon SilkIAmazon SageMakerIAWS TrainiumIAmazon TextractI
+AlexaIAlexaTMIAnyPickerIAlphaAIIAI2 BotIAi2Bot-DolmaIBrave Leo AIIbingbot-chat/2.0IBing aiIcohere-aiIClaudeBotIcrewAIIClaude 3.5 SonnetICCBotIccbotICCBot/2.0ICC-Crawler/2.0II
 ChatGPTIChatGPT-UserIdataproviderIDiffbotIDialoGPTIDepolarizingGPTIDalvik/2IDoubao AI|DuckAssistBot|Dalvik/2IDalvik/2.1.0|GPTBot|GPTbot/0.1|GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3| GPT-3.5|GPT-4| 
 gpt-4-turbo|GPT-4o|GPT-4V|GPT-4o mini|GPT-3.5 Turbo|GPT 4 Omni|GPT 4 Omni Mini|GPT-Sw3|GPTZero|ZeroGPT|ZeroCHAT|SearchGPT|Google-Extended|Google Gemini|GoogleOther|Google-CloudVertexBot|FacebookBot|
 FacebookBot/1.0|facebookexternalhit|meta-externalfetcher/1.1|Meta-ExternalAgent|Meta-ExternalFetcher|Meta AI|Llama 3.2|FriendlyCrawler|FriendlyCrawler/1.0|FriendlyCrawler/Nutch-1.20-SNAPSHOT|
