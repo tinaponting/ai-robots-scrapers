@@ -7,6 +7,7 @@ Ai robots txt, ai scrapers txt, block theme!
 
 
 * Updates:
+* 241111: Updated, block, aiscraper.php, all, + extended version.
 * 241111, did forget to update, robots.txt with, duckassistent.
 * 241104, new Ai -- not wanted!
 * 241103, BLock ai.php updated and checkd, do interfere with speed:)
