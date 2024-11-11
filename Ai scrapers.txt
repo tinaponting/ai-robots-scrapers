@@ -858,8 +858,6 @@ User-agent: Aria browse Aria AI
 Disallow: /
 User-agent: AISearchBot 
 Disallow:/
-User-agent: Amazon Lex
-Disallow: /
 User-agent: amazon-kendra
 Disallow: /
 User-agent: Amazon Silk
@@ -1095,7 +1093,6 @@ User-agent: Aria browse Aria AI
 User-agent: AISearchBot 
 User-agent: Applebot-Extended
 User-agent: Amazon Bedrock
-User-agent: Amazon Lex
 User-agent: amazon-kendra
 User-agent: Amazon Silk
 User-agent: Amazon SageMaker
