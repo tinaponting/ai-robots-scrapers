@@ -42,6 +42,7 @@ MetaGPT: https://www.deepwisdom.ai
 Tusk AI: https://usetusk.ai
 Superagent (BUILD YOUR OWN CHAT): https://www.superagent.sh
 Devin AI: https://preview.devin.ai
+Laoin AI: https://laion.ai
 
 ### ÖVRIGT Ai browsers:
 https://arc.net     AI: Max
@@ -881,9 +882,20 @@ RewriteRule .* – [F,L]
 
 # Another way to block ai bots:
 
-# Block via Request URI
+# Block via Request URL:
+
 <IfModule mod_alias.c>
 	RedirectMatch 403 /bot/
+</IfModule>
+
+#Alternative way:
+
+# Apache 2.4:
+
+<IfModule authz_core_module>
+    <If "%{HTTP_USER_AGENT} == 'GPTBot'">
+        Require all denied
+    </If>
 </IfModule>
 
 ::::::::::::::::::::::::::::::::::::::::::
@@ -1325,4 +1337,4 @@ Disallow: /
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 241111
+Updated: 241118
