@@ -971,14 +971,14 @@ User-agent: Agent GPT
 Disallow: /
 User-agent: Applebot-Extended
 Disallow: /
+User-agent: anthropic-ai
+Disallow: /
 User-agent: Aria browser AI
 Disallow: /
 User-agent: Aria browse Aria AI
 Disallow: /
 User-agent: AISearchBot 
 Disallow:/
-User-agent: amazon-kendra
-Disallow: /
 User-agent: Amazon Silk
 Disallow: /
 User-agent: Amazon SageMaker
@@ -1011,6 +1011,7 @@ User-agent: bingbot-chat/2.0
 Disallow: /
 User-agent: Bing ai 
 Disallow: /
+
 User-agent: cohere-ai
 Disallow: /
 User-agent: ClaudeBot
@@ -1018,6 +1019,8 @@ Disallow: /
 User-agent: crewAI
 Disallow: /
 User-agent: Claude 3.5 Sonnet
+Disallow: /
+User-agent: Claude 3.5 Haiku 
 Disallow: /
 User-agent: CCBot
 Disallow: /
@@ -1075,6 +1078,10 @@ User-agent: GPT-4V
 Disallow: /
 User-agent: GPT-3.5 Turbo
 Disallow: /
+User-agent: GPT 4 Omni
+Disallow: /	
+User-agent: GPT 4 Omni Mini
+Disallow: /
 User-agent: GPT-Sw3
 Disallow: /
 User-agent: GPTZero
@@ -1090,6 +1097,8 @@ Disallow: /
 User-agent: Google Gemini
 Disallow: /
 User-agent: GoogleOther
+Disallow: / 
+User-agent: Google-CloudVertexBot
 Disallow: / 
 User-agent: FacebookBot
 Disallow: /
@@ -1191,6 +1200,10 @@ User-agent: VelenPublicWebCrawler
 Disallow: /
 User-agent: PaperLiBot
 Disallow: /
+User-agent: PerplexityBot
+Disallow: /
+User-agent: peer39_crawler/1.0 
+Disallow: /
 User-agent: PaperLiBot/2.1
 Disallow: /
 User-agent: proximic
@@ -1219,7 +1232,6 @@ User-agent: amazon-kendra
 User-agent: Amazon Silk
 User-agent: Amazon SageMaker
 User-agent: AWS Trainium 
-User-agent: amazon-kendra
 User-agent: Amazon Bedrock
 User-agent: Alexa
 User-agent: AlexaTM
@@ -1236,6 +1248,7 @@ User-agent: cohere-ai
 User-agent: ClaudeBot
 User-agent: crewAI
 User-agent: Claude 3.5 Sonnet
+User-agent: Claude 3.5 Haiku 
 User-agent: CCBot
 User-agent: ccbot
 User-agent: CCBot/2.0
@@ -1334,7 +1347,10 @@ User-agent: YarGPT
 User-agent: yarchatgpt
 Disallow: /
 
+''''''''''''''''''''''''''''''''''''''''''
+Added 241119:
+Claude 3.5 Haiku
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 241118
+Updated: 241119
