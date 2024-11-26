@@ -1199,11 +1199,13 @@ User-agent: VelenPublicWebCrawler
 Disallow: /
 User-agent: PaperLiBot
 Disallow: /
+User-agent: PaperLiBot/2.1
+Disallow: /
+User-agent: PanguBot
+Disallow: /
 User-agent: PerplexityBot
 Disallow: /
 User-agent: peer39_crawler/1.0 
-Disallow: /
-User-agent: PaperLiBot/2.1
 Disallow: /
 User-agent: proximic
 Disallow: /
@@ -1337,6 +1339,7 @@ User-agent: Webzio-Extended
 User-agent: VelenPublicWebCrawler
 User-agent: PaperLiBot
 User-agent: PaperLiBot/2.1
+User-agent: PanguBot
 User-agent: PerplexityBot
 User-agent: proximic
 User-agent: peer39_crawler/1.0 
@@ -1350,6 +1353,14 @@ Disallow: /
 Added 241119:
 Claude 3.5 Haiku
 
+Added 241126:
+PanguBot is a web crawler operated by the Chinese company Huawei. (huwai.com)
+It's used to download training data for its multimodal LLM (Large Language Model) called PanGu.
+Information from: darkvisitors. https://darkvisitors.com
+
+User-agent: PanguBot
+Disallow: /
+
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 241125
+Updated: 241126
