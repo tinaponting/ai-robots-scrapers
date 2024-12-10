@@ -3,6 +3,7 @@ And ways to block ai scrapers of your content.)
 
 
 # Updates: 
+241210: Updated: BLock ai.php
 241210: addded: one more bot.
 241126: new ChinaAi added in script and robots.txt, /whole Robots.txt avaible at: Wordpress single user.
 241119, updated, block ai + ai scrapers list.
