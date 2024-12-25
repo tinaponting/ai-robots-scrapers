@@ -904,6 +904,14 @@ RewriteRule .* – [F,L]
     </If>
 </IfModule>
 
+
+#Alternative with no welcome at all:
+
+<IfModule authz_core_module>
+<If "%{HTTP_USER_AGENT} == 'GPTBot'">
+<If "%{HTTP_USER_AGENT} == 'robots.txt'">
+Require all denied
+</If></IfModule>
 ::::::::::::::::::::::::::::::::::::::::::
 ..........................................
 #STRONG ALTERNATIVE####:
@@ -933,13 +941,12 @@ function my_robots_commands($output, $public) {
 
 # RAW List:
 
-AutoGPTIAgent GPTIanthropic-ailAria browser AIIAria browse Aria AIIAISearchBotIApplebot-ExtendedIAmazon TextractIAmazon ComprehendIAmazon BedrockIIAISearchBotIamazon-kendraIAmazon SilkIAmazon SageMakerIAWS TrainiumIAmazon TextractI
-AlexaIAlexaTMIAnyPickerIAlphaAIIAI2 BotIAi2Bot-DolmaIBrave Leo AIIbingbot-chat/2.0IBing aiIcohere-aiIClaudeBotIcrewAIIClaude 3.5 SonnetIClaude 3.5 HaikuICCBotIccbotICCBot/2.0ICC-Crawler/2.0II
-ChatGPTIChatGPT-UserIdataproviderIDiffbotIDialoGPTIDepolarizingGPTIDalvik/2IDoubao AI|DuckAssistBot|Dalvik/2IDalvik/2.1.0|GPTBot|GTPBOT|GPTbot/0.1|GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3| GPT-3.5|GPT-4| 
-gpt-4-turbo|GPT-4o|GPT-4V|GPT-4o mini|GPT-3.5 Turbo|GPT 4 Omni|GPT 4 Omni Mini|GPT-Sw3|GPTZero|ZeroGPT|ZeroCHAT|SearchGPT|Google-Extended|Google Gemini|GoogleOther|Google-CloudVertexBot|FacebookBot|
-FacebookBot/1.0|facebookexternalhit|meta-externalfetcher/1.1|Meta-ExternalAgent|Meta-ExternalFetcher|Meta AI|Llama 3.2|FriendlyCrawler|FriendlyCrawler/1.0|FriendlyCrawler/Nutch-1.20-SNAPSHOT|
-ICC-Crawler|IntelliSeek|IntelliSeek.ai|ImagesiftBot|img2dataset|iaskspider/2.0|Kangaroo Bot|LeftWingGPT|my-tiny-bot|Nicecrawler|Microsoft|magpie-crawler|Omgilibot|Omgili|OpenAI| 
-Openbot|OpenAI GPT|OAI SearchBot|OAI-SearchBot/1.0|OpenAI o1|OpenAI o1-mini|Owler|SearchGPT| scrapy|Stability AI|ScraperGPT|ShadowGPT|thehive.ai|RightWingGPT|Timpibot|Timpibot/0.8|Timpibot/0.9| 
+AutoGPT|Agent GPT|anthropic-ai|Aria browser AI|Aria browse Aria AI|AISearchBot|Applebot-Extended|Amazon Textract|Amazon Comprehend|Amazon Bedrock|
+AISearchBot|amazon-kendraIAmazon SilkIAmazon SageMaker|AWS TrainiumIAmazon Textract|Alexa|AlexaTM|AnyPicker|AlphaAI|AI2 Bot|Ai2Bot-Dolma|Brave Leo AI|bingbot-chat/2.0|Bing aiIcohere-ai|ClaudeBotIcrewAI|Claude 3.5 SonnetIClaude 3.5 HaikuICCBotIccbotICCBot/2.0ICC-Crawler/2.0I|
+ChatGPT|ChatGPT-User|dataprovider|Diffbot|DialoGPT|DepolarizingGPT|Dalvik/2|Doubao AI|DuckAssistBot|Dalvik/2IDalvik/2.1.0|GPTBot|GTPBOT|GPTbot/0.1|GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3|GPT-3.5|GPT-4| 
+gpt-4-turbo|GPT-4o|GPT-4V|GPT-4o mini|GPT-3.5 Turbo|GPT 4 Omni|GPT 4 Omni Mini|GPT-Sw3|GPTZero|ZeroGPT|ZeroCHAT|SearchGPT|Google-Extended|Google Gemini|GoogleOther|Google-CloudVertexBot|FacebookBot|FacebookBot/1.0|facebookexternalhit|meta-externalfetcher/1.1|Meta-ExternalAgent|Meta-ExternalFetcher|Meta AI|Llama 3.2|
+FriendlyCrawler|FriendlyCrawler/1.0|FriendlyCrawler/Nutch-1.20-SNAPSHOT|ICC-Crawler|IntelliSeek|IntelliSeek.ai|ImagesiftBot|img2dataset|iaskspider/2.0|Kangaroo Bot|LeftWingGPT|my-tiny-bot|Nicecrawler|Microsoft|magpie-crawler|Omgilibot|Omgili|OpenAI| 
+Openbot|OpenAI GPT|OAI SearchBot|OAI-SearchBot/1.0|OpenAI o1|OpenAI o1-mini|Owler|SearchGPT|scrapy|Stability AI|ScraperGPT|ShadowGPT|thehive.ai|RightWingGPT|Timpibot|Timpibot/0.8|Timpibot/0.9| 
 WebChatGPT|WormGPT V3.0|wpbot|wpbot/1.1|Webzio-Extended|VelenPublicWebCrawler|PaperLiBot|PaperLiBot/2.1|PanguBot|PerplexityBot|proximic|peer39_crawler/1.0|PiplBot|YouBot|YarGPT|yarchatgpt
 
 
@@ -968,9 +975,10 @@ RewriteRule .* - [F]</ifModule>
 :::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................  
 ### A Complete Ai List ##)
-#Ai/BOTS - scrapers:   (IF Needed: User-agent: * )
+#Ai/BOTS - scrapers: 
 # Robots.txt:
 *
+User-agent: *
 User-agent: AutoGPT
 Disallow: /
 User-agent: Agent GPT
@@ -1011,6 +1019,8 @@ User-agent: AI2 Bot
 Disallow: /
 User-agent: Ai2Bot-Dolma
 Disallow: /
+User-agent: AndersPinkBot
+Disallow: /
 User-agent: Brave Leo AI
 Disallow: /
 User-agent: bingbot-chat/2.0
@@ -1018,6 +1028,8 @@ Disallow: /
 User-agent: Bing ai 
 Disallow: /
 User-agent: cohere-ai
+Disallow: /
+User-agent: cohere-training-data-crawler
 Disallow: /
 User-agent: ClaudeBot
 Disallow: /
@@ -1191,6 +1203,8 @@ User-agent: Timpibot/0.9
 Disallow: /
 User-agent: Timpibot
 Disallow: /
+User-agent: TurnitinBot
+Disallow: /   
 User-Agent: thehive.ai
 Disallow: /
 User-agent: WebChatGPT
@@ -1228,8 +1242,9 @@ Disallow: /
 
 ...............................
 ...............................
-SLIM: #Ai - scrapers -Robots. txt:  (IF Needed: User-agent: * )
+SLIM: #Ai - scrapers -Robots. txt:  
 
+User-agent: * 
 User-agent: AutoGPT
 User-agent: Agent GPT
 User-agent: anthropic-ai
@@ -1249,11 +1264,13 @@ User-agent: Amazon Comprehend
 User-agent: AnyPicker
 User-agent: AlphaAI
 User-agent: AI2 Bot
-User-agent: Ai2Bot-Dolma  
+User-agent: Ai2Bot-Dolma 
+User-agent: AndersPinkBot
 User-agent: Brave Leo AI
 User-agent: bingbot-chat/2.0
 User-agent: Bing ai 
 User-agent: cohere-ai
+User-agent: cohere-training-data-crawler
 User-agent: ClaudeBot
 User-agent: crewAI
 User-agent: Claude 3.5 Sonnet
@@ -1339,7 +1356,8 @@ User-Agent: thehive.ai
 User-agent: RightWingGPT
 User-agent: Timpibot
 User-agent: Timpibot/0.8
-User-agent: Timpibot/0.9 
+User-agent: Timpibot/0.9
+User-agent: TurnitinBot  
 User-agent: WebChatGPT
 User-agent: WormGPT V3.0
 User-agent: wpbot
@@ -1359,7 +1377,7 @@ User-agent: yarchatgpt
 Disallow: /
 
 ''''''''''''''''''''''''''''''''''''''''''
-Added 241119:
+#Added 241119:
 Claude 3.5 Haiku
 
 Added 241126:
@@ -1370,11 +1388,47 @@ Information from: darkvisitors. https://darkvisitors.com
 User-agent: PanguBot
 Disallow: /
 
-Added 241210 Used by scrapers! NOTE: Capital letters
+# Added 241210 Used by scrapers! NOTE: Capital letters
 
 User-agent: GTPBOT
 Disallow: /
 
+if you don´t want them, thy try by this way: add them to your htaccess 1:)
+RedirectMatch 403 HTTP/1.1 404
+RedirectMatch 403 HTTP/1.1 302
+RedirectMatch 403 HTTP/1.1 301
+RedirectMatch 403 HTTP/1.1 
+RedirectMatch 403 robots.txt HTTP/1.0
+RedirectMatch 403 robots.txt HTTP/1.1
+RedirectMatch 403 robots.txt HTTP/1.1
+
+
+# 241225 NEW agent.
+
+## TurnitinBot
+* A web crawler (aka spider, robot or bot) is a computer program that scours the web gathering content.
+https://www.turnitin.com/robot/crawlerinfo.html
+
+User-agent: TurnitinBot
+Disallow: /   
+
+**
+
+# AndersPinkBot
+* curated content for learning
+https://anderspink.com
+
+User-agent: AndersPinkBot
+Disallow: /
+
+**
+
+User-agent: cohere-training-data-crawler
+Disallow: /
+
+* cohere-training-data-crawler
+
+
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 241126
+Updated: 241225
