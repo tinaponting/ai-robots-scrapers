@@ -941,12 +941,12 @@ function my_robots_commands($output, $public) {
 
 # RAW List:
 
-AutoGPT|Agent GPT|anthropic-ai|Aria browser AI|Aria browse Aria AI|AISearchBot|Applebot-Extended|Amazon Textract|Amazon Comprehend|Amazon Bedrock|
-AISearchBot|amazon-kendraIAmazon SilkIAmazon SageMaker|AWS TrainiumIAmazon Textract|Alexa|AlexaTM|AnyPicker|AlphaAI|AI2 Bot|Ai2Bot-Dolma|Brave Leo AI|bingbot-chat/2.0|Bing aiIcohere-ai|ClaudeBotIcrewAI|Claude 3.5 SonnetIClaude 3.5 HaikuICCBotIccbotICCBot/2.0ICC-Crawler/2.0I|
+AutoGPT|Agent GPT|anthropic-ai|Aria browser AI|Aria browse Aria AI|AISearchBot|Applebot-Extended|Amazon Textract|Amazon Comprehend|Amazon Bedrock|AndersPinkBot|
+AISearchBot|amazon-kendraIAmazon SilkIAmazon SageMaker|AWS TrainiumIAmazon Textract|Alexa|AlexaTM|AnyPicker|AlphaAI|AI2 Bot|Ai2Bot-Dolma|Brave Leo AI|bingbot-chat/2.0|Bing ai| cohere-training-data-crawler|cohere-ai|ClaudeBotIcrewAI|Claude 3.5 SonnetIClaude 3.5 HaikuICCBotIccbotICCBot/2.0ICC-Crawler/2.0I|
 ChatGPT|ChatGPT-User|dataprovider|Diffbot|DialoGPT|DepolarizingGPT|Dalvik/2|Doubao AI|DuckAssistBot|Dalvik/2IDalvik/2.1.0|GPTBot|GTPBOT|GPTbot/0.1|GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3|GPT-3.5|GPT-4| 
 gpt-4-turbo|GPT-4o|GPT-4V|GPT-4o mini|GPT-3.5 Turbo|GPT 4 Omni|GPT 4 Omni Mini|GPT-Sw3|GPTZero|ZeroGPT|ZeroCHAT|SearchGPT|Google-Extended|Google Gemini|GoogleOther|Google-CloudVertexBot|FacebookBot|FacebookBot/1.0|facebookexternalhit|meta-externalfetcher/1.1|Meta-ExternalAgent|Meta-ExternalFetcher|Meta AI|Llama 3.2|
 FriendlyCrawler|FriendlyCrawler/1.0|FriendlyCrawler/Nutch-1.20-SNAPSHOT|ICC-Crawler|IntelliSeek|IntelliSeek.ai|ImagesiftBot|img2dataset|iaskspider/2.0|Kangaroo Bot|LeftWingGPT|my-tiny-bot|Nicecrawler|Microsoft|magpie-crawler|Omgilibot|Omgili|OpenAI| 
-Openbot|OpenAI GPT|OAI SearchBot|OAI-SearchBot/1.0|OpenAI o1|OpenAI o1-mini|Owler|SearchGPT|scrapy|Stability AI|ScraperGPT|ShadowGPT|thehive.ai|RightWingGPT|Timpibot|Timpibot/0.8|Timpibot/0.9| 
+Openbot|OpenAI GPT|OAI SearchBot|OAI-SearchBot/1.0|OpenAI o1|OpenAI o1-mini|Owler|SearchGPT|scrapy|Stability AI|ScraperGPT|ShadowGPT|thehive.ai|RightWingGPT|Timpibot|Timpibot/0.8|Timpibot/0.9|TurnitinBot| 
 WebChatGPT|WormGPT V3.0|wpbot|wpbot/1.1|Webzio-Extended|VelenPublicWebCrawler|PaperLiBot|PaperLiBot/2.1|PanguBot|PerplexityBot|proximic|peer39_crawler/1.0|PiplBot|YouBot|YarGPT|yarchatgpt
 
 
@@ -1427,7 +1427,25 @@ User-agent: cohere-training-data-crawler
 Disallow: /
 
 * cohere-training-data-crawler
+-----------
 
+241226:
+LLM tRAINER:
+
+User-agent: Node/simplecrawler
+Disallow: /
+
+H# lML Element ( Robots Meta Tag)
+* fROM: https://www.searchenginejournal.com/new-rules-will-block-ai-training-bots/532348/
+The following are the proposed meta robots directives:
+
+<meta name=”robots” content=”DisallowAITraining”>
+
+* SentiBot
+URL: https://sites.google.com/senti1.com/sentibot-eu/home
+URL 2: https://sentione.com/
+Blocks SentiOne's AI-powered social media listening and analysis tools
+Note: Nothing i´ve seen so far!
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
