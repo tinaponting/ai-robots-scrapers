@@ -2,7 +2,8 @@ Ai crapers - Ai bots - Ai robts.txt
 And ways to block ai scrapers of your content.)
 
 
-# Updates: 
+# Updates:
+* 250109, GTBOT - a pain in the ass!
 * 241225 All updated ith the Latest:)
 * 241210: Updated: BLock ai.php
 * 241210: addded: one more bot.
