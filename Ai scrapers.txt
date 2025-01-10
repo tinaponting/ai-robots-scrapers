@@ -16,6 +16,7 @@ Ai bots/scrapers:
 * Common Crawl: https://commoncrawl.org
 * crew AI: https://www.crewai.com
 * Crew ai: spider scraper: https://spider.cloud   Useragent: spider
+* https://github.com/CrewAI  /Hologram AI  - chanfe of name! Dont´delate above )
 * Cohere: https://cohere.com
 * Grok: https://x.ai
 * Google: https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers?hl=en
