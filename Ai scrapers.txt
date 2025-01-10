@@ -81,6 +81,9 @@ Pythia:  https://askpythia.ai
 LOTS of more Ai: https://sapling.ai/llm/gpt-j-vs-gptneo
 And More: https://github.com/e2b-dev/awesome-ai-agents
 Integuru: https://github.com/Integuru-AI/Integuru
+
+* Ai news: https://www.artificialintelligence-news.com/
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................... 
 ********************************************************************
@@ -1478,6 +1481,9 @@ RewriteCond%{REMOTE_ADDR}!^172\.203.190.132)$ [NC]RewriteRule .* - [F]</IfModule
 ###Bytesdance hell
 Singapore/Hnkong/China
 https://darkvisitors.com/agents/bytespider
+
+https://github.com/bytedance
+https://www.scmp.com/tech/big-tech/article/3291201/chinese-start-zhipu-ai-raises-us412-million-new-funding-amid-crowded-market?module=perpetual_scroll_1_RM&pgtype=article
 
 * Hard to stop, about 100.000 IP dresses, robots.txt do not stop it!
 
