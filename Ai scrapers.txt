@@ -1473,6 +1473,34 @@ RewriteCond%{REMOTE_ADDR}!^20\.171.207.174)$ [NC,OR]
 RewriteCond%{REMOTE_ADDR}!^20.171.)$ [NC,OR]  
 RewriteCond%{REMOTE_ADDR}!^172\.203.190.132)$ [NC]RewriteRule .* - [F]</IfModule> 
 
+................................................................................
+250110
+###Bytesdance hell
+Singapore/Hnkong/China
+https://darkvisitors.com/agents/bytespider
+
+* Hard to stop, about 100.000 IP dresses, robots.txt do not stop it!
+
+ALT 1:
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} ^.(Bytedance|Bytespider).$ [NC]
+RewriteRule .* – [F,L]
+
+ALT 2:
+<IfModule mod_alias.c>
+RedirectMatch 403 HTTP/1.1
+RedirectMatch 403 HTTP/1.0 403
+RedirectMatch 403 HTTP/1.1 404
+RedirectMatch 403 HTTP/1.1 302
+RedirectMatch 403 HTTP/1.1 301
+RedirectMatch 403 robots.txt HTTP/1.0
+RedirectMatch 403 robots.txt HTTP/1.1
+RedirectMatch 403 robots.txt HTTP/1.1
+RedirectMatch 403 GET /robots.txt HTTP/1.1
+</IfModule>
+
+***They use http: : 1,0/1
+
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 250109
+Updated: 250110
