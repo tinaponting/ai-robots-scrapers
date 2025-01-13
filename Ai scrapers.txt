@@ -16,7 +16,6 @@ Ai bots/scrapers:
 * Common Crawl: https://commoncrawl.org
 * crew AI: https://www.crewai.com
 * Crew ai: spider scraper: https://spider.cloud   Useragent: spider
-* https://github.com/CrewAI  /Hologram AI  - chanfe of name! Dont´delate above )
 * Cohere: https://cohere.com
 * Grok: https://x.ai
 * Google: https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers?hl=en
@@ -873,6 +872,14 @@ RewriteRule .* http://www.anthropic.com [R,L]
 </IfModule>
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+# Sidetrade indexer bot  
+URL: https://www.sidetrade.com/	
+Extracts data for a variety of uses including training AI.	
+AI product training. Only affects if you got a shop and thoroughly.
+
+User-agent: Sidetrade indexer bot
+Disallow: /
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................... 
 ********************************************************************
 #### Put in .htaccess or htaccess:   ###
@@ -1030,6 +1037,8 @@ Disallow: /
 User-agent: bingbot-chat/2.0
 Disallow: /
 User-agent: Bing ai 
+Disallow: /
+User-agent: Bytedance
 Disallow: /
 User-agent: cohere-ai
 Disallow: /
@@ -1273,6 +1282,7 @@ User-agent: AndersPinkBot
 User-agent: Brave Leo AI
 User-agent: bingbot-chat/2.0
 User-agent: Bing ai 
+User-agent: Bytedance
 User-agent: cohere-ai
 User-agent: cohere-training-data-crawler
 User-agent: ClaudeBot
@@ -1398,13 +1408,13 @@ User-agent: GTPBOT
 Disallow: /
 
 if you don´t want them, thy try by this way: add them to your htaccess 1:)
-RedirectMatch 403 HTTP/1.1 404
-RedirectMatch 403 HTTP/1.1 302
-RedirectMatch 403 HTTP/1.1 301
+RedirectMatch 403 HTTP/1.0 
 RedirectMatch 403 HTTP/1.1 
+RedirectMatch 403 HTTP/1.2 
 RedirectMatch 403 robots.txt HTTP/1.0
 RedirectMatch 403 robots.txt HTTP/1.1
 RedirectMatch 403 robots.txt HTTP/1.1
+RedirectMatch 403 robots.txt HTTP/1.2
 
 
 # 241225 NEW agent.
@@ -1457,28 +1467,27 @@ Note: Nothing i´ve seen so far!
 Whatever Ido, robots.txt - NO RESPECT, scrapes evrything om my blog, so this is solutionb for me:
 Sneaks in by some backdoor??
 
+###Alternative when Norhing helps:
+
+#GTPBOT
 <IfModule mod_rewrite.c>RewriteCond%{HTTP_REFERER}^https://.*microsoft\.com [F] 
 RewriteCond%{HTTP_REFERER}^https://.*www.openai\.com [F]
 RewriteCond%{HTTP_REFERER}^https://.*openai\.com [F]
-RewriteCond%{HTTP_REFERER}^https://(([^.]+\.)+)?chinamobile.sn\.com.cn[F]
+RewriteCond%{HTTP_REFERER}^OAI-SearchBot/1.0 [F]
+RewriteCond%{HTTP_REFERER}^GTPBOT [F]
 RewriteCond%{REMOTE_HOST}^.*\Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)\ [NC,OR]
 RewriteCond%{REMOTE_HOST}^.*\Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GPTBot/1.2; +https://openai.com/gptbot)\ [NC,OR]
 RewriteCond%{REMOTE_HOST}^.*\Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot\ [NC,OR]
-RewriteCond%{HTTP_REFERER}^OAI-SearchBot/1.0 [F]
-RewriteCond%{REMOTE_ADDR}!^4\.227.36.0/25)$ [NC,OR] 
-RewriteCond%{REMOTE_ADDR}!^52\.230.152.0/24)$ [NC,OR]  
-RewriteCond%{REMOTE_ADDR}!^52\.233.106.0/24)$ [NC,OR]
-RewriteCond%{REMOTE_ADDR}!^20\.171.206.0/24)$ [NC,OR]  
-RewriteCond%{REMOTE_ADDR}!^20\.171.207.218)$ [NC,OR]  
-RewriteCond%{REMOTE_ADDR}!^20\.171.207.227)$ [NC,OR] 
-RewriteCond%{REMOTE_ADDR}!^20\.171.207.0/24)$ [NC,OR] 
-RewriteCond%{REMOTE_ADDR}!^20\.171.207.75)$ [NC,OR]
-RewriteCond%{REMOTE_ADDR}!^20\.171.207.174)$ [NC,OR]
-RewriteCond%{REMOTE_ADDR}!^20.171.)$ [NC,OR]  
-RewriteCond%{REMOTE_ADDR}!^172\.203.190.132)$ [NC]RewriteRule .* - [F]</IfModule> 
+RewriteCond%{REMOTE_ADDR}^4.227.36.(0[0-254]|0[0-254]|0[0-254]|0[0-254])$[OR]
+RewriteCond%{REMOTE_ADDR}!^52.230.(0[10-256]|0[0-255]|0[0-255]|0[0-255])$[OR] 
+RewriteCond%{REMOTE_ADDR}!^52.233.(0[10-256]|0[0-255]|0[0-255]|0[0-255])$[OR] 
+RewriteCond%{REMOTE_ADDR}!^172.203.(0[10-256]|0[0-255]|0[0-255]|0[0-255])$[OR] 
+RewriteCond%{REMOTE_ADDR}^20.171.206.(0[0-254]|0[0-254]|0[0-254]|0[0-254])$[OR] 
+RewriteCond%{REMOTE_ADDR}^20.171.207(0[0-254]|0[0-254]|0[0-254]|0[0-254])$[NC] RewriteRule .* - [F]</IfModule> 
+
 
 ................................................................................
-250110
+250113
 ###Bytesdance hell
 Singapore/Hnkong/China
 https://darkvisitors.com/agents/bytespider
@@ -1495,11 +1504,10 @@ RewriteRule .* – [F,L]
 
 ALT 2:
 <IfModule mod_alias.c>
-RedirectMatch 403 HTTP/1.1
-RedirectMatch 403 HTTP/1.0 403
-RedirectMatch 403 HTTP/1.1 404
-RedirectMatch 403 HTTP/1.1 302
-RedirectMatch 403 HTTP/1.1 301
+RedirectMatch 403 HTTP/1.0
+RedirectMatch 403 HTTP/1.1 
+RedirectMatch 403 HTTP/1.1 
+RedirectMatch 403 HTTP/1.1 
 RedirectMatch 403 robots.txt HTTP/1.0
 RedirectMatch 403 robots.txt HTTP/1.1
 RedirectMatch 403 robots.txt HTTP/1.1
@@ -1508,6 +1516,23 @@ RedirectMatch 403 GET /robots.txt HTTP/1.1
 
 ***They use http: : 1,0/1
 
+## LLM:
+Bytedance
+
+User-agent: Bytedance
+Disallow: /
+
+#Added in extended verson of Aibots.php /robots.txt.
+User-agent: Bytespider
+Disallow: /
+
+***********************************
+ISSCyberRiskCrawler   //Note seen anywhere on my blogs( 200 affliteblogs...)
+URL: https://iss-cyber.com/
+
+User-agent: ISSCyberRiskCrawler
+Disallow: /
+
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 250110
+Updated: 25013
