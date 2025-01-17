@@ -1466,7 +1466,7 @@ H# lML Element ( Robots Meta Tag)
 * fROM: https://www.searchenginejournal.com/new-rules-will-block-ai-training-bots/532348/
 The following are the proposed meta robots directives:
 
-<meta name=”robots”content=”DisallowAITraining”>
+<meta name=”robots” content=”DisallowAITraining”>
 
 * SentiBot
 URL: https://sites.google.com/senti1.com/sentibot-eu/home
