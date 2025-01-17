@@ -100,7 +100,7 @@ https://pirg.org/edfund/resources/how-to-stop-your-data-from-being-used-for-ai-t
 
 <meta name="robots" content="noimageai">
 
-*To place both directives:
+**To place both directives:
 
 <meta name="robots" content="noai, noimageai">
 
@@ -124,6 +124,7 @@ https://pirg.org/edfund/resources/how-to-stop-your-data-from-being-used-for-ai-t
 Any copying, including ephemeral copying, for the purpose of training an artificial intelligence (AI), large language model (LLM), 
 machine learning system or neural network is prohibited.
 
+................
 241226:
 LLM TRAINER:
 
@@ -139,6 +140,32 @@ DisallowAITraining – instructs the parser to not use the data for AI training 
 
 User-agent: AITraining
 Disallow: /
+
+............................
+## ADD: X-Robots-Tag HTTP header:
+DeviantArt covers how to set the X-Robots-Tag header (which also has other uses to help control how search engines crawl your site) to express an opt-out.
+On Apache httpd (I know, I’m old school) it’s something like this:
+
+
+Header Set X-Robots-Tag "noai"
+
+* OR:
+X-Robots-Tag: noai
+X-Robots-Tag: noimageai
+
+
+
+## privacy opt out for servers ****
+This is the first site to include the new SPC meta tag and X-Robots-Tag header 
+for a privacy opt-out that works like Global Privacy Control but for servers. 
+Basically you have legally enforceable rights in your personal information, blogs have personal information, 
+but regular GPC only works from your browser (client) to company on the server. This goes the other way, and sends a legally enforceable* 
+*yes, I know, this has not yet been tested in court, but give it a minute, we’re just getting started hereprivacy signal from a personal blog on the server 
+to an AI scraper on the client side.
+
+So the new header on here is
+
+X-Robots-Tag: noai, noimageai, SPC
 
 :::::::::::::::::::::::::::::::::::::
 
