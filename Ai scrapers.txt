@@ -225,10 +225,9 @@ Disallow: /
  
 ..........................................
 
-*#' Antoher Way, if they do not give up!:
+*#' Antoher Way, if they do not give up!:   "UPDAED: 250117, hates: bytesspider....
 
-<IfModule mod_rewrite.c>
-RewriteCond%{HTTP_REFERER}^https://.*amazonaws\.com [F] 
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_REFERER}^https://.*amazonaws\.com [F] 
 RewriteCond%{HTTP_REFERER}^https://.*amazon\.com [F]
 RewriteCond%{HTTP_REFERER}^https://(([^.]+\.)+)?amazonaws\.com[F]
 RewriteCon%{HTTP_REFERER}amazonaws\.com [NC]  
@@ -237,12 +236,14 @@ RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?amazonaws\.com" [NC,OR]
 RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?amazon\.com" [NC,OR]
 RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?Amazon\.com" [NC] 
 RewriteCond%{REMOTE_HOST}^.*\.compute-1\.amazonaws\.com [NC,OR] 
-RewriteCond%{REMOTE_HOST}^.*\1.compute.amazonaws.com [NC,OR] 
-RewriteCond%{REMOTE_HOST}^.*\2.compute.amazonaws.com [NC,OR] 
+RewriteCond%{REMOTE_HOST}^.*\1.compute.amazonaws\.com [NC,OR] 
+RewriteCond%{REMOTE_HOST}^.*\2.compute.amazonaws\.com [NC,OR] 
 RewriteCond%{REMOTE_HOST}^.*\.compute-2\.amazonaws\.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\.us-west-2.compute.amazonaws.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\.eu-west-1.compute.amazonaws.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\.compute-1.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\.us-west-2.compute.amazonaws\.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\.eu-west-1.compute.amazonaws\.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\.ap-south-1.compute.amazonaws\.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\.compute-1.amazonaws\.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\.ap-southeast-1.compute.amazonaws.com [NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"AISearchBot"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"Alexa"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"AlexaTM"[NC,OR]
@@ -259,11 +260,23 @@ RewriteCond%{HTTP_USER_AGENT}"Amazon SageMaker"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"Amazon: AWS"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"AWS Trainium"[NC,OR] 
 RewriteCond%{HTTP_USER_AGENT}"Amazon Kendra"[NC,OR]
-RewriteCond%{REMOTE_ADDR}!^AS16509 [NC]                #Hacker Attack!
-RewriteCond%{REMOTE_ADDR}!^3\.141.37.212)$ [NC,OR]     #claudebot
+RewriteCond%{HTTP_USER_AGENT}"SurdotlyBot"[NC,OR]
+RewriteCond%{REMOTE_ADDR}!^3\.6.93.227)$ [NC,OR]      #ClaudeBot AI 
+RewriteCond%{REMOTE_ADDR}!^3\.21.98.184)$ [NC,OR      #ClaudeBot AI 
+RewriteCond%{REMOTE_ADDR}!^3\.145.103.169)$ [NC,OR]   #ClaudeBot AI  
 RewriteCond%{REMOTE_ADDR}!^3\.148.107.103)$ [NC,OR] 
-RewriteCond%{HTTP_USER_AGENT}"Nutch"[NC]
-RewriteRule ^(.*)$ - [F,L]</IfModule>
+RewriteCond%{REMOTE_ADDR}!^3\.148.107.103)$ [NC,OR] 
+RewriteCond%{REMOTE_ADDR}!^3\.148.107.103)$ [NC,OR]
+RewriteCond%{REMOTE_ADDR}!^13\.232.214.)$ [NC,OR]     #Image stealer India
+RewriteCond%{REMOTE_ADDR}!^13\.232.214.104)$ [NC,OR]  #Image hacker
+RewriteCond%{REMOTE_ADDR}!^34\.232.23.139)$ [NC,OR]   #SurdotlyBot
+RewriteCond%{REMOTE_ADDR}!^47.128)$ [NC,OR]           #Bytesspider
+RewriteCond%{REMOTE_ADDR}!^47.128.116.87)$ [NC,OR]    #Bytesspider
+RewriteCond%{REMOTE_ADDR}!^47\.128.42.31)$ [NC,OR]    #Bytesspider
+RewriteCond%{REMOTE_ADDR}!^47\.128.27.246)$ [NC,OR]   #Bytesspider
+RewriteCond%{REMOTE_ADDR}!^47\.128.25.)$ [NC,OR]      #Bytesspider
+RewriteCond%{REMOTE_ADDR}!^47\.128.54.92)$ [NC,OR]    #Bytesspider
+RewriteCond%{HTTP_USER_AGENT}"Nutch"[NC]RewriteRule ^(.*)$ - [F,L]</IfModule>
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................... 
@@ -1453,7 +1466,7 @@ H# lML Element ( Robots Meta Tag)
 * fROM: https://www.searchenginejournal.com/new-rules-will-block-ai-training-bots/532348/
 The following are the proposed meta robots directives:
 
-<meta name=”robots” content=”DisallowAITraining”>
+<meta name=”robots”content=”DisallowAITraining”>
 
 * SentiBot
 URL: https://sites.google.com/senti1.com/sentibot-eu/home
@@ -1535,4 +1548,4 @@ Disallow: /
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 250113
+Updated: 250117
