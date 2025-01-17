@@ -3,6 +3,7 @@ And ways to block ai scrapers of your content.)
 
 
 # Updates:
+* Updated 250115, with: block Ai training
 * Updated 250113, with bytesdance LLM
 * Updated 250110, ai robots.txt.
 * 250109, GTBOT - a pain in the ass!
