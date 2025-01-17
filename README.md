@@ -1,6 +1,6 @@
 Ai crapers - Ai bots - Ai robts.txt 
 And ways to block ai scrapers of your content.)
-
+Robots txt complete: https://github.com/tinaponting/wordpress-single-user
 
 # Updates:
 * Updated 250115, with: block Ai training
