@@ -370,7 +370,7 @@ Disallow: /
 User-agent: Timpibot/0.9 
 Disallow: /
 
-## Hard to block:(
+## Hard to block:
 Timpibot/0.8     Mozilla/5.0 (compatible; Timpibot/0.8; +http://www.timpi.io)
 Timpibot/0.9     Timpibot/0.9 (+http://www.timpi.io)
 
@@ -880,7 +880,7 @@ Disallow: /
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................... 
 ********************************************************************
-#### claude Hell:
+#### claudebot Hell:
 
 <IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}"claudebot"[NC]
 RewriteCond%{HTTP_USER_AGENT}"claudeBot"[NC]
@@ -927,6 +927,38 @@ RewriteCond %{REQUEST_URI} !robots\.txt
 RewriteRule .* http://www.anthropic.com [R,L]
 </IfModule>
 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::)
+#GTPBOT HELL:
+
+### Added 241210 Used by scrapers! NOTE: Capital letters:
+
+User-agent: GTPBOT
+Disallow: /
+
+Whatever Ido, robots.txt - NO RESPECT, scrapes evrything om my blog, so this is solutionb for me:
+Sneaks in by some backdoor??
+
+###Alternative when Norhing helps:
+
+#GTPBOT
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_REFERER}^https://.*microsoft\.com [F] 
+RewriteCond%{HTTP_REFERER}^https://.*www.openai\.com [F]
+RewriteCond%{HTTP_REFERER}^https://.*openai\.com [F]
+RewriteCond%{HTTP_REFERER}^OAI-SearchBot/1.0 [F]
+RewriteCond%{HTTP_REFERER}^GTPBOT [F]
+RewriteCond%{HTTP_REFERER}^GTPbot [F]
+RewriteCond%{REQUEST_URI}!robots\.txt
+RewriteCond%{REMOTE_HOST}^.*\Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)\ [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GPTBot/1.2; +https://openai.com/gptbot)\ [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot\ [NC,OR]
+RewriteCond%{REMOTE_ADDR}^4.227.36.(0[0-254]|0[0-254]|0[0-254]|0[0-254])$[OR]
+RewriteCond%{REMOTE_ADDR}!^52.230.(0[10-256]|0[0-255]|0[0-255]|0[0-255])$[OR] 
+RewriteCond%{REMOTE_ADDR}!^52.233.(0[10-256]|0[0-255]|0[0-255]|0[0-255])$[OR] 
+RewriteCond%{REMOTE_ADDR}!^172.203.(0[10-256]|0[0-255]|0[0-255]|0[0-255])$[OR] 
+RewriteCond%{REMOTE_ADDR}^20.171.206.(0[0-254]|0[0-254]|0[0-254]|0[0-254])$[OR] 
+RewriteCond%{REMOTE_ADDR}^20.171.207(0[0-254]|0[0-254]|0[0-254]|0[0-254])$[NC] RewriteRule .* - [F]</IfModule>  
+
+...............................................................................
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 # Sidetrade indexer bot  
 URL: https://www.sidetrade.com/	
@@ -936,60 +968,82 @@ AI product training. Only affects if you got a shop and thoroughly.
 User-agent: Sidetrade indexer bot
 Disallow: /
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-.................................................................... 
-********************************************************************
+.................................................................... :)
+******************************************************************** :)
 #### Put in .htaccess or htaccess:   ###
 # Block “Scrapers, image stealers/downloader” bots:
 
-### EXEMPEL:
+## ALT 1: WORKS WELL: 
+
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT} (facebookexternalhit|PetalBot|GPTBot) [NC]
+RewriteRule .* - [F,L]
+</IfModule
+
+### EXEMPLE 1:
 
 <IfModule mod_rewrite.c>
 RewriteCond %{HTTP_USER_AGENT}"(bot|bot|bot|bot|bot|bot|bot)"[NC]
 RewriteRule "^.*$" - [F,L]
 </IfModule>
 
-#Another way /But noot stoping GPT bots.....:(
+### EXAMPLE 2:
 
+<IfModule mod_rewrite.c>
 RewriteCond %{HTTP_USER_AGENT}^.*(BotToBlock1|BotToBlock2|BotToBlock3).*$ [NC] 
 RewriteRule .* – [F,L]
 
-# Another way to block ai bots:
-
-# Block via Request URL:
+### EXAPLE 3: way to block ai bots. Block via Request URL:
 
 <IfModule mod_alias.c>
-	RedirectMatch 403 /bot/
+RedirectMatch 403 /bot/
 </IfModule>
 
-#Alternative way:
+OR: 
+<IfModule mod_alias.c>
+RedirectMatch 403 /(bot|bot)/
+</IfModule>
+...............
+### EXAMPLE 3:
 
-# Apache 2.4:
+# Apache:
 
 <IfModule authz_core_module>
-    <If "%{HTTP_USER_AGENT} == 'GPTBot'">
-        Require all denied
-    </If>
+<If "%{HTTP_USER_AGENT} == 'BOT'">
+Require all denied
+</If>
 </IfModule>
 
+...................
 
-#Alternative with no welcome at all:
+### EXAPMPLE 4: Alternative with no welcome at all:
 
 <IfModule authz_core_module>
 <If "%{HTTP_USER_AGENT} == 'GPTBot'">
 <If "%{HTTP_USER_AGENT} == 'robots.txt'">
 Require all denied
 </If></IfModule>
-::::::::::::::::::::::::::::::::::::::::::
-..........................................
-#STRONG ALTERNATIVE####:
+
+............................
+### EXAMPLE 5, Block via Query String:
 
 <IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}(BOT|BOT |BOT |BOT |BOT)[NC,OR]
-RewriteCond%{QUERY_STRING}(BOT|BOT|BOT |BOT |BOT)\:[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}^.*(BOT|BOT |BOT |BOT |BOT).*[NC]
-RewriteRule .* - [F]</ifModule>
+RewriteEngine On
+RewriteCond %{QUERY_STRING} (bot|bot) [NC]
+RewriteRule (.*) - [F,L]
+</IfModule>
 
-.........................
+...................................
+### Block AI bots on a NGINX*  web server
+NGINX web servers do not use .htaccess files, but instead nginx.conf (or Vhost files). T
+o block bad bots on your NGINX server, add a list of user agents to your nginx.conf, like this:
+If more bots, add:  Bot|Bot|BotBot|Bot|Bot and so on.
+
+if ($http_user_agent ~* (Bot|Bot|Bot) ) { 
+return 403; 
+}
+
+..............................................................
 
 #From sixcolurs /  https://sixcolors.com/post/2024/06/excluding-your-website-from-apples-ai-crawler/
 
@@ -1002,7 +1056,18 @@ function my_robots_commands($output, $public) {
   return $output;
 }
 
-.........................
+:::::::::::::::::::::::::::::::::::::::::::)
+..........................................:)
+#STRONG ALTERNATIVE####:  (i use this, bot not stoping: GTBBOT ? )
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}(BOT|BOT |BOT |BOT |BOT)[NC,OR]
+RewriteCond%{QUERY_STRING}(BOT|BOT|BOT |BOT |BOT)\:[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(BOT|BOT |BOT |BOT |BOT).*[NC]
+RewriteRule .* - [F]</ifModule>
+
+...........................................................................:)
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::)
 ## htaccess: (htaccess1)
 # AI Content/webscraping #: 
 
@@ -1015,28 +1080,6 @@ gpt-4-turbo|GPT-4o|GPT-4V|GPT-4o mini|GPT-3.5 Turbo|GPT 4 Omni|GPT 4 Omni Mini|G
 FriendlyCrawler|FriendlyCrawler/1.0|FriendlyCrawler/Nutch-1.20-SNAPSHOT|ICC-Crawler|IntelliSeek|IntelliSeek.ai|ImagesiftBot|img2dataset|iaskspider/2.0|Kangaroo Bot|LeftWingGPT|my-tiny-bot|Nicecrawler|Microsoft|magpie-crawler|Omgilibot|Omgili|OpenAI| 
 Openbot|OpenAI GPT|OAI SearchBot|OAI-SearchBot/1.0|OpenAI o1|OpenAI o1-mini|Owler|SearchGPT|scrapy|Stability AI|ScraperGPT|ShadowGPT|thehive.ai|RightWingGPT|Timpibot|Timpibot/0.8|Timpibot/0.9|TurnitinBot| 
 WebChatGPT|WormGPT V3.0|wpbot|wpbot/1.1|Webzio-Extended|VelenPublicWebCrawler|PaperLiBot|PaperLiBot/2.1|PanguBot|PerplexityBot|proximic|peer39_crawler/1.0|PiplBot|YouBot|YarGPT|yarchatgpt
-
-
-** Added Microsoft Lots GTP crawls
- 
-***
-
-# Ai Bots bloccking - Simple:
-
-<IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}( Add above here )[NC]
-RewriteRule ^ – [F]</IfModule>
-
-.......................................
-.......................................
-#Alternative#:
-# List to use - Extra good BLOCK #:
-
-<IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}( Add above here )[NC,OR]
-RewriteCond%{QUERY_STRING}( Add above here )\:[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}^.*( Add above here ).*[NC]
-RewriteRule .* - [F]</ifModule>
 
 
 :::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1448,32 +1491,15 @@ User-agent: YouBot
 User-agent: YarGPT
 User-agent: yarchatgpt
 Disallow: /
+...................................................................:)
 
-''''''''''''''''''''''''''''''''''''''''''
-#Added 241119:
-Claude 3.5 Haiku
-
-Added 241126:
+# Added 241126:
 PanguBot is a web crawler operated by the Chinese company Huawei. (huwai.com)
 It's used to download training data for its multimodal LLM (Large Language Model) called PanGu.
 Information from: darkvisitors. https://darkvisitors.com
 
 User-agent: PanguBot
 Disallow: /
-
-# Added 241210 Used by scrapers! NOTE: Capital letters
-
-User-agent: GTPBOT
-Disallow: /
-
-if you don´t want them, thy try by this way: add them to your htaccess 1:)
-RedirectMatch 403 HTTP/1.0 
-RedirectMatch 403 HTTP/1.1 
-RedirectMatch 403 HTTP/1.2 
-RedirectMatch 403 robots.txt HTTP/1.0
-RedirectMatch 403 robots.txt HTTP/1.1
-RedirectMatch 403 robots.txt HTTP/1.1
-RedirectMatch 403 robots.txt HTTP/1.2
 
 
 # 241225 NEW agent.
@@ -1513,31 +1539,6 @@ User-agent: Node/simplecrawler
 Disallow: /
 
 -----------------------------------------------------------------
-250109
-#GTPBOT
-Whatever Ido, robots.txt - NO RESPECT, scrapes evrything om my blog, so this is solutionb for me:
-Sneaks in by some backdoor??
-
-###Alternative when Norhing helps:
-
-#GTPBOT
-<IfModule mod_rewrite.c>RewriteCond%{HTTP_REFERER}^https://.*microsoft\.com [F] 
-RewriteCond%{HTTP_REFERER}^https://.*www.openai\.com [F]
-RewriteCond%{HTTP_REFERER}^https://.*openai\.com [F]
-RewriteCond%{HTTP_REFERER}^OAI-SearchBot/1.0 [F]
-RewriteCond%{HTTP_REFERER}^GTPBOT [F]
-RewriteCond%{REMOTE_HOST}^.*\Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)\ [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GPTBot/1.2; +https://openai.com/gptbot)\ [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot\ [NC,OR]
-RewriteCond%{REMOTE_ADDR}^4.227.36.(0[0-254]|0[0-254]|0[0-254]|0[0-254])$[OR]
-RewriteCond%{REMOTE_ADDR}!^52.230.(0[10-256]|0[0-255]|0[0-255]|0[0-255])$[OR] 
-RewriteCond%{REMOTE_ADDR}!^52.233.(0[10-256]|0[0-255]|0[0-255]|0[0-255])$[OR] 
-RewriteCond%{REMOTE_ADDR}!^172.203.(0[10-256]|0[0-255]|0[0-255]|0[0-255])$[OR] 
-RewriteCond%{REMOTE_ADDR}^20.171.206.(0[0-254]|0[0-254]|0[0-254]|0[0-254])$[OR] 
-RewriteCond%{REMOTE_ADDR}^20.171.207(0[0-254]|0[0-254]|0[0-254]|0[0-254])$[NC] RewriteRule .* - [F]</IfModule> 
-
-
-................................................................................
 250113
 ###Bytesdance hell
 Singapore/Hnkong/China
@@ -1562,6 +1563,7 @@ RedirectMatch 403 HTTP/1.1
 RedirectMatch 403 robots.txt HTTP/1.0
 RedirectMatch 403 robots.txt HTTP/1.1
 RedirectMatch 403 robots.txt HTTP/1.1
+RedirectMatch 403 robots.txt HTTP/1.2
 RedirectMatch 403 GET /robots.txt HTTP/1.1
 </IfModule>
 
@@ -1573,7 +1575,7 @@ Bytedance
 User-agent: Bytedance
 Disallow: /
 
-#Added in extended verson of Aibots.php /robots.txt.
+#Added in extended versons: of Aibots.php /robots.txt.
 User-agent: Bytespider
 Disallow: /
 
@@ -1586,4 +1588,4 @@ Disallow: /
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 250117
+Updated: 25018 WITH more alternative to Block even with NGINX.
