@@ -996,8 +996,14 @@ RewriteRule .* – [F,L]</IfModule>
 * Or if you want: 403:
 
 <IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT} (googlebot|bingbot|Baiduspider) [NC]
+RewriteCond %{HTTP_USER_AGENT} (bot|bot|bot) [NC]
 RewriteRule .* - [R=403,L]</IfModule>
+
+IF you want a: 503:
+
+RewriteCond %{HTTP_USER_AGENT} ^.*(bot|bot|bot).*$ [NC]
+RewriteCond %{REQUEST_URI} !^/robots\.txt$
+RewriteRule .* - [R=503,L]
 
 ### EXAPLE 3: way to block ai bots. Block via Request URL:
 
