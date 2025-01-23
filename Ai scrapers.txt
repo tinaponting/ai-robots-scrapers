@@ -991,7 +991,13 @@ RewriteRule "^.*$" - [F,L]
 
 <IfModule mod_rewrite.c>
 RewriteCond %{HTTP_USER_AGENT}^.*(BotToBlock1|BotToBlock2|BotToBlock3).*$ [NC] 
-RewriteRule .* – [F,L]
+RewriteRule .* – [F,L]</IfModule>
+
+* Or if you want: 403:
+
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT} (googlebot|bingbot|Baiduspider) [NC]
+RewriteRule .* - [R=403,L]</IfModule>
 
 ### EXAPLE 3: way to block ai bots. Block via Request URL:
 
@@ -1033,6 +1039,16 @@ RewriteCond %{QUERY_STRING} (bot|bot) [NC]
 RewriteRule (.*) - [F,L]
 </IfModule>
 
+............................
+####EXAMPLE;PLE 6: 
+with IP adress  For notorius ai bots, who gets under the radar.
+
+RewriteCond %{HTTP_USER_AGENT} ^$ [OR]
+RewriteCond %{HTTP_USER_AGENT} (bot|crawl|robot)
+RewriteCond %{HTTP_USER_AGENT} !(bot|bot|bot|bot|bot|bot) [NC]
+RewriteRule ^/?.*$ "http\:\/\/127\.0\.0\.1" [R,L]
+
+* Change above IP to the Notirous one not wanted ip
 ...................................
 ### Block AI bots on a NGINX*  web server
 NGINX web servers do not use .htaccess files, but instead nginx.conf (or Vhost files). T
@@ -1058,13 +1074,20 @@ function my_robots_commands($output, $public) {
 
 :::::::::::::::::::::::::::::::::::::::::::)
 ..........................................:)
-#STRONG ALTERNATIVE####:  (i use this, bot not stoping: GTBBOT ? )
+#STRONG ALTERNATIVE####:  
 
 <IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}(BOT|BOT |BOT |BOT |BOT)[NC,OR]
-RewriteCond%{QUERY_STRING}(BOT|BOT|BOT |BOT |BOT)\:[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}^.*(BOT|BOT |BOT |BOT |BOT).*[NC]
+RewriteCond% {HTTP_USER_AGENT}(BOT|BOT |BOT |BOT |BOT)[NC,OR]
+RewriteCond% {QUERY_STRING} (BOT|BOT|BOT |BOT |BOT)\:[NC,OR]
+RewriteCond% {HTTP_USER_AGENT} ^.*(BOT|BOT |BOT |BOT |BOT).*[NC]
 RewriteRule .* - [F]</ifModule>
+
+* ALT:
+<IfModule mod_rewrite.c>
+RewriteCond% {HTTP_USER_AGENT}(BOT|BOT |BOT |BOT |BOT)[NC]
+RewriteCond% {QUERY_STRING} (BOT|BOT|BOT |BOT |BOT)\:[NC]
+RewriteCond% {HTTP_USER_AGENT} ^.*(BOT|BOT |BOT |BOT |BOT).*[NC]
+RewriteRule .* - [F,L]</ifModule>
 
 ...........................................................................:)
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::)
@@ -1081,6 +1104,114 @@ FriendlyCrawler|FriendlyCrawler/1.0|FriendlyCrawler/Nutch-1.20-SNAPSHOT|ICC-Craw
 Openbot|OpenAI GPT|OAI SearchBot|OAI-SearchBot/1.0|OpenAI o1|OpenAI o1-mini|Owler|SearchGPT|scrapy|Stability AI|ScraperGPT|ShadowGPT|thehive.ai|RightWingGPT|Timpibot|Timpibot/0.8|Timpibot/0.9|TurnitinBot| 
 WebChatGPT|WormGPT V3.0|wpbot|wpbot/1.1|Webzio-Extended|VelenPublicWebCrawler|PaperLiBot|PaperLiBot/2.1|PanguBot|PerplexityBot|proximic|peer39_crawler/1.0|PiplBot|YouBot|YarGPT|yarchatgpt
 
+
+Alternative if: Add: GTB  - maybe s tops all gtb?
+GTB|
+...........................................................................:)
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::)
+### NEW ADDITIONS:  ###
+
+# Added 241126:
+PanguBot is a web crawler operated by the Chinese company Huawei. (huwai.com)
+It's used to download training data for its multimodal LLM (Large Language Model) called PanGu.
+Information from: darkvisitors. https://darkvisitors.com
+
+User-agent: PanguBot
+Disallow: /
+
+
+# 241225 NEW agent.
+
+## TurnitinBot
+* A web crawler (aka spider, robot or bot) is a computer program that scours the web gathering content.
+https://www.turnitin.com/robot/crawlerinfo.html
+
+User-agent: TurnitinBot
+Disallow: /   
+
+**
+
+# AndersPinkBot
+* curated content for learning  LLM!
+https://anderspink.com
+
+User-agent: AndersPinkBot
+Disallow: /
+
+**
+
+User-agent: cohere-training-data-crawler
+Disallow: /
+
+* cohere-training-data-crawler
+-----------.......................................................
+
+* SentiBot
+URL: https://sites.google.com/senti1.com/sentibot-eu/home
+URL 2: https://sentione.com/
+Blocks SentiOne's AI-powered social media listening and analysis tools
+Note: Nothing i´ve seen so far!
+
+
+User-agent: Node/simplecrawler
+Disallow: /
+
+-----------------------------------------------------------------
+250113
+###Bytesdance hell
+Singapore/Hnkong/China
+https://darkvisitors.com/agents/bytespider
+
+https://github.com/bytedance
+https://www.scmp.com/tech/big-tech/article/3291201/chinese-start-zhipu-ai-raises-us412-million-new-funding-amid-crowded-market?module=perpetual_scroll_1_RM&pgtype=article
+
+* Hard to stop, about 100.000 IP dresses, robots.txt do not stop it!
+
+ALT 1:
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} ^.(Bytedance|Bytespider).$ [NC]
+RewriteRule .* – [F,L]
+
+ALT 2:
+<IfModule mod_alias.c>
+RedirectMatch 403 HTTP/1.0
+RedirectMatch 403 HTTP/1.1 
+RedirectMatch 403 HTTP/1.1 
+RedirectMatch 403 HTTP/1.1 
+RedirectMatch 403 robots.txt HTTP/1.0
+RedirectMatch 403 robots.txt HTTP/1.1
+RedirectMatch 403 robots.txt HTTP/1.1
+RedirectMatch 403 robots.txt HTTP/1.2
+RedirectMatch 403 GET /robots.txt HTTP/1.1
+</IfModule>
+
+***They use http: : 1,0/1
+
+## LLM:
+Bytedance
+
+User-agent: Bytedance
+Disallow: /
+
+#Added in extended versons: of Aibots.php /robots.txt.
+User-agent: Bytespider
+Disallow: /
+
+...................................................................
+ISSCyberRiskCrawler   //Note seen anywhere on my blogs( 200 affliteblogs...)
+URL: https://iss-cyber.com/
+
+User-agent: ISSCyberRiskCrawler
+Disallow: /
+
+.............................................................
+250121 ???  Not one I´ve seen on any of my blogs (200 affliteblogs......)
+
+User-agent: Crawlspace
+Disallow: 
+
+URL: https://crawlspace.dev
+DOES:  Scrapes data, images and so on
 
 :::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................  
@@ -1140,6 +1271,8 @@ Disallow: /
 User-agent: Bing ai 
 Disallow: /
 User-agent: Bytedance
+Disallow: /
+User-agent: Bytespider
 Disallow: /
 User-agent: cohere-ai
 Disallow: /
@@ -1385,6 +1518,7 @@ User-agent: Brave Leo AI
 User-agent: bingbot-chat/2.0
 User-agent: Bing ai 
 User-agent: Bytedance
+User-agent: Bytespider
 User-agent: cohere-ai
 User-agent: cohere-training-data-crawler
 User-agent: ClaudeBot
@@ -1491,101 +1625,12 @@ User-agent: YouBot
 User-agent: YarGPT
 User-agent: yarchatgpt
 Disallow: /
-...................................................................:)
 
-# Added 241126:
-PanguBot is a web crawler operated by the Chinese company Huawei. (huwai.com)
-It's used to download training data for its multimodal LLM (Large Language Model) called PanGu.
-Information from: darkvisitors. https://darkvisitors.com
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-User-agent: PanguBot
-Disallow: /
+270130: User-agent: Bytespider added:) 
+Removed drom extended robots.txt - moved to above.
 
-
-# 241225 NEW agent.
-
-## TurnitinBot
-* A web crawler (aka spider, robot or bot) is a computer program that scours the web gathering content.
-https://www.turnitin.com/robot/crawlerinfo.html
-
-User-agent: TurnitinBot
-Disallow: /   
-
-**
-
-# AndersPinkBot
-* curated content for learning
-https://anderspink.com
-
-User-agent: AndersPinkBot
-Disallow: /
-
-**
-
-User-agent: cohere-training-data-crawler
-Disallow: /
-
-* cohere-training-data-crawler
------------
-
-* SentiBot
-URL: https://sites.google.com/senti1.com/sentibot-eu/home
-URL 2: https://sentione.com/
-Blocks SentiOne's AI-powered social media listening and analysis tools
-Note: Nothing i´ve seen so far!
-
-
-User-agent: Node/simplecrawler
-Disallow: /
-
------------------------------------------------------------------
-250113
-###Bytesdance hell
-Singapore/Hnkong/China
-https://darkvisitors.com/agents/bytespider
-
-https://github.com/bytedance
-https://www.scmp.com/tech/big-tech/article/3291201/chinese-start-zhipu-ai-raises-us412-million-new-funding-amid-crowded-market?module=perpetual_scroll_1_RM&pgtype=article
-
-* Hard to stop, about 100.000 IP dresses, robots.txt do not stop it!
-
-ALT 1:
-RewriteEngine On
-RewriteCond %{HTTP_USER_AGENT} ^.(Bytedance|Bytespider).$ [NC]
-RewriteRule .* – [F,L]
-
-ALT 2:
-<IfModule mod_alias.c>
-RedirectMatch 403 HTTP/1.0
-RedirectMatch 403 HTTP/1.1 
-RedirectMatch 403 HTTP/1.1 
-RedirectMatch 403 HTTP/1.1 
-RedirectMatch 403 robots.txt HTTP/1.0
-RedirectMatch 403 robots.txt HTTP/1.1
-RedirectMatch 403 robots.txt HTTP/1.1
-RedirectMatch 403 robots.txt HTTP/1.2
-RedirectMatch 403 GET /robots.txt HTTP/1.1
-</IfModule>
-
-***They use http: : 1,0/1
-
-## LLM:
-Bytedance
-
-User-agent: Bytedance
-Disallow: /
-
-#Added in extended versons: of Aibots.php /robots.txt.
 User-agent: Bytespider
 Disallow: /
-
-***********************************
-ISSCyberRiskCrawler   //Note seen anywhere on my blogs( 200 affliteblogs...)
-URL: https://iss-cyber.com/
-
-User-agent: ISSCyberRiskCrawler
-Disallow: /
-
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 25018 WITH more alternative to Block even with NGINX.
