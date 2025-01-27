@@ -81,6 +81,8 @@ Pythia:  https://askpythia.ai
 LOTS of more Ai: https://sapling.ai/llm/gpt-j-vs-gptneo
 And More: https://github.com/e2b-dev/awesome-ai-agents
 Integuru: https://github.com/Integuru-AI/Integuru
+DeepSEEK: https://github.com/deepseek-ai/DeepSeek-V3
+     URL: https://www.deepseek.com
 
 * Ai news: https://www.artificialintelligence-news.com/
 * Ai News: https://www.aibase.com
@@ -391,7 +393,7 @@ User-agent: dataprovider
 Disallow: /
 
 * https://gptzero.me/
-# ByPasser of ai: Can by pass allrobots.txt, scurity to steal your stuff:
+# ByPasser of ai: Can by pass allrobots.txt, scurity to steal your stuff:(
 
 User-agent: GPTZero
 Disallow: /
@@ -1635,8 +1637,11 @@ Disallow: /
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-270130: User-agent: Bytespider added:) 
-Removed drom extended robots.txt - moved to above.
+250126: User-agent: Bytespider added:) 
+Removed from extended robots.txt - moved to above.
+But eeither bytespider/bytedance respect robots.txt!
 
 User-agent: Bytespider
 Disallow: /
+
+#* Updated: 250127
