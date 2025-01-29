@@ -1397,7 +1397,9 @@ Disallow: /
 User-agent: FriendlyCrawler/1.0
 Disallow: /	
 User-agent: FriendlyCrawler/Nutch-1.20-SNAPSHOT
-Disallow: /	
+Disallow: /
+User-agent: flyriverbot/1.1	
+Disallow: /
 User-agent: ICC-Crawler
 Disallow:/
 User-agent: IntelliSeek
@@ -1577,6 +1579,7 @@ User-agent: FacebookBot
 User-agent: FacebookBot/1.0
 User-agent: facebookexternalhit
 User-agent: facebookexternalhit/1.1
+User-agent: flyriverbot/1.1
 User-agent: meta-externalfetcher/1.1
 User-agent: Meta-ExternalAgent
 User-agent: Meta-ExternalFetcher
@@ -1645,3 +1648,15 @@ User-agent: Bytespider
 Disallow: /
 
 #* Updated: 250127
+
+......................................
+
+*** Updated: 25012)  Ai fact bot, works with:chat gtp, gemini and LIama, xrapes yoyr facts!
+NEW 1:
+# Flyriverbot  (AI bot)
+
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 flyriverbot/1.1 (+https://www.flyriver.com/crawler; AI Content)
+
+https://www.flyriver.com/crawler
+
+.......................................
