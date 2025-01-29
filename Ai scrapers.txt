@@ -1094,9 +1094,13 @@ RewriteRule .* - [F]</ifModule>
 <IfModule mod_rewrite.c>
 RewriteCond% {HTTP_USER_AGENT}(BOT|BOT |BOT |BOT |BOT)[NC]
 RewriteCond% {QUERY_STRING} (BOT|BOT|BOT |BOT |BOT)\:[NC]
+RewriteCond% {QUERY_STRING} (bot|bot) [NC]
 RewriteCond% {HTTP_USER_AGENT} ^.*(BOT|BOT |BOT |BOT |BOT).*[NC]
 RewriteRule .* - [F,L]</ifModule>
 
+* Add: 
+RewriteCond%{REQUEST_URI}!robots\.txt [F]
+Another one:
 ...........................................................................:)
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::)
 ## htaccess: (htaccess1)
