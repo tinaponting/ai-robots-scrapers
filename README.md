@@ -3,6 +3,7 @@ And ways to block ai scrapers of your content.)
 Robots txt complete: https://github.com/tinaponting/wordpress-single-user
 
 # Updates:
+* Updated 250129, with: block Ai, php updated, robots.txt on single user with flyer ai:)
 * Updated 250123, with: block Ai, php updated, robots.txt on single user:)
 * Updated 250115, with: block Ai training
 * Updated 250113, with bytesdance LLM
