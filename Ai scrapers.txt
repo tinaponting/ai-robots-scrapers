@@ -943,17 +943,19 @@ Sneaks in by some backdoor??
 ###Alternative when Norhing helps:
 
 #GTPBOT
-<IfModule mod_rewrite.c>RewriteCond%{HTTP_REFERER}^https://.*microsoft\.com [F] 
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_REFERER}^https://.*microsoft\.com [F]
 RewriteCond%{HTTP_REFERER}^https://.*www.openai\.com [F]
 RewriteCond%{HTTP_REFERER}^https://.*openai\.com [F]
-RewriteCond%{HTTP_REFERER}^OAI-SearchBot/1.0 [F]
-RewriteCond%{HTTP_REFERER}^GTPBOT [F]
-RewriteCond%{HTTP_REFERER}^GTPbot [F]
-RewriteCond%{REQUEST_URI}!robots\.txt
+RewriteCond%{HTTP_REFERER}^OAI-SearchBot/1.0 [[NC,OR]
+RewriteCond%{HTTP_REFERER}^GTPBOT [NC,OR]
+RewriteCond%{HTTP_REFERER}^gptbot [NC,OR]
+RewriteCond%{HTTP_REFERER}^GPTBot/1.2 [NC,OR]
+RewriteCond%{REQUEST_URI}!robots\.txt [NC]
 RewriteCond%{REMOTE_HOST}^.*\Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)\ [NC,OR]
 RewriteCond%{REMOTE_HOST}^.*\Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GPTBot/1.2; +https://openai.com/gptbot)\ [NC,OR]
 RewriteCond%{REMOTE_HOST}^.*\Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot\ [NC,OR]
-RewriteCond%{REMOTE_ADDR}^4.227.36.(0[0-254]|0[0-254]|0[0-254]|0[0-254])$[OR]
+RewriteCond%{REMOTE_ADDR}!^4.227.36.(0[0-254]|0[0-254]|0[0-254]|0[0-254])$[OR]
+RewriteCond%{REMOTE_ADDR}!^20.171.207.(0[0-254]|0[0-254]|0[0-254]|0[0-254])$[OR] 
 RewriteCond%{REMOTE_ADDR}!^52.230.(0[10-256]|0[0-255]|0[0-255]|0[0-255])$[OR] 
 RewriteCond%{REMOTE_ADDR}!^52.233.(0[10-256]|0[0-255]|0[0-255]|0[0-255])$[OR] 
 RewriteCond%{REMOTE_ADDR}!^172.203.(0[10-256]|0[0-255]|0[0-255]|0[0-255])$[OR] 
@@ -978,9 +980,9 @@ Disallow: /
 ## ALT 1: WORKS WELL: 
 
 <IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT} (facebookexternalhit|PetalBot|GPTBot) [NC]
+RewriteCond %{HTTP_USER_AGENT} (bot|bot|Bot) [NC]
 RewriteRule .* - [F,L]
-</IfModule
+</IfModule>
 
 ### EXEMPLE 1:
 
@@ -1053,7 +1055,7 @@ with IP adress  For notorius ai bots, who gets under the radar.
 
 RewriteCond %{HTTP_USER_AGENT} ^$ [OR]
 RewriteCond %{HTTP_USER_AGENT} (bot|crawl|robot)
-RewriteCond %{HTTP_USER_AGENT} !(bot|bot|bot|bot|bot|bot) [NC]
+RewriteCond %{HTTP_USER_AGENT}!(bot|bot|bot|bot|bot|bot) [NC]
 RewriteRule ^/?.*$ "http\:\/\/127\.0\.0\.1" [R,L]
 
 * Change above IP to the Notirous one not wanted ip
@@ -1095,7 +1097,7 @@ RewriteRule .* - [F]</ifModule>
 RewriteCond% {HTTP_USER_AGENT}(BOT|BOT |BOT |BOT |BOT)[NC]
 RewriteCond% {QUERY_STRING} (BOT|BOT|BOT |BOT |BOT)\:[NC]
 RewriteCond% {QUERY_STRING} (bot|bot) [NC]
-RewriteCond% {HTTP_USER_AGENT} ^.*(BOT|BOT |BOT |BOT |BOT).*[NC]
+RewriteCond %{HTTP_USER_AGENT}!(bot|bot|bot|bot|bot|bot)[NC]
 RewriteRule .* - [F,L]</ifModule>
 
 * Add: 
@@ -1109,7 +1111,7 @@ Another one:
 # RAW List:  (use  one of above thats works for you, cut and paste!)
 
 AutoGPT|Agent GPT|anthropic-ai|Aria browser AI|Aria browse Aria AI|AISearchBot|Applebot-Extended|Amazon Textract|Amazon Comprehend|Amazon Bedrock|AITraining|AISearchBot|amazon-kendraIAmazon SilkIAmazon SageMaker|AWS Trainium|Amazon Textract|Alexa|AlexaTM|AnyPicker|AlphaAI|AI2 Bot|Ai2Bot-Dolma|Brave Leo AI|bingbot-chat/2.0|Bing ai|Bytedance|cohere-training-data-crawler|cohere-ai|ClaudeBotIcrewAI|Claude 3.5 SonnetIClaude 3.5 HaikuICCBotIccbot|CCBot/2.0|CC-Crawler/2.0I|
-ChatGPT|ChatGPT-User|dataprovider|Diffbot|DialoGPT|DepolarizingGPT|Dalvik/2|Doubao AI|DuckAssistBot|Dalvik/2IDalvik/2.1.0|GPTBot|GTPBOT|GPTbot/0.1|GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3|GPT-3.5|GPT-4| gpt-4-turbo|GPT-4o|GPT-4V|GPT-4o mini|GPT-3.5 Turbo|GPT 4 Omni|GPT 4 Omni Mini|GPT-Sw3|GPTZero|ZeroGPT|ZeroCHAT|SearchGPT|Google-Extended|Google Gemini|GoogleOther|Google-CloudVertexBot|FacebookBot|FacebookBot/1.0|facebookexternalhit|flyriverbot/1.1|meta-externalfetcher/1.1|
+ChatGPT|ChatGPT-User|dataprovider|Diffbot|DialoGPT|DepolarizingGPT|Dalvik/2|Doubao AI|DuckAssistBot|Dalvik/2IDalvik/2.1.0|GPTBot|GTPBOT|GPTbot/0.1|GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3|GPT-3.5|GPT-4| gpt-4-turbo|GPT-4o|GPT-4V|GPT-4o mini|GPT-3.5 Turbo|GPT 4 Omni|GPT 4 Omni Mini|GPT-Sw3|GPTZero|ZeroGPT|ZeroCHAT|SearchGPT|Google-Extended|Google Gemini|GoogleOther|Google-CloudVertexBot|FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|flyriverbot/1.1|meta-externalfetcher/1.1|
 Meta-ExternalAgent|Meta-ExternalFetcher|Meta AI|Llama 3.2|FriendlyCrawler|FriendlyCrawler/1.0|FriendlyCrawler/Nutch-1.20-SNAPSHOT|ICC-Crawler|IntelliSeek|IntelliSeek.ai|ImagesiftBot|img2dataset|iaskspider/2.0|Kangaroo Bot|LeftWingGPT|my-tiny-bot|Nicecrawler|Microsoft|magpie-crawler|Omgilibot|Omgili|OpenAI| 
 Openbot|OpenAI GPT|OAI SearchBot|OAI-SearchBot/1.0|OpenAI o1|OpenAI o1-mini|Owler|SearchGPT|scrapy|Stability AI|ScraperGPT|ShadowGPT|thehive.ai|RightWingGPT|Timpibot|Timpibot/0.8|Timpibot/0.9|TurnitinBot| WebChatGPT|WormGPT V3.0|wpbot|wpbot/1.1|Webzio-Extended|VelenPublicWebCrawler|PaperLiBot|PaperLiBot/2.1|PanguBot|PerplexityBot|proximic|peer39_crawler/1.0|PiplBot|YouBot|YarGPT|yarchatgpt
 
@@ -1660,4 +1662,5 @@ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
 
 https://www.flyriver.com/crawler
 
+*Uppdated: 250202
 .......................................
