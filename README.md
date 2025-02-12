@@ -26,6 +26,8 @@ And ways to block ai scrapers of your content.)
 Notes:  2241125: I think clade haiku works, lots of requests from Amazon/clade denied:)
 Notes: Ai/robots.txt is on sinlge user
 
-READ MORE: https://solveo.co/top-12-ai-agents-for-content-creation-in-2025/
-           https://github.com/bytedance
-           https://www.scmp.com/tech/big-tech/article/3291201/chinese-start-zhipu-ai-raises-us412-million-new-funding-amid-crowded-market?module=perpetual_scroll_1_RM&pgtype=article
+READ MORE: * https://solveo.co/top-12-ai-agents-for-content-creation-in-2025/
+
+          *  https://github.com/bytedance
+          
+           * https://www.scmp.com/tech/big-tech/article/3291201/chinese-start-zhipu-ai-raises-us412-million-new-funding-amid-crowded-market?module=perpetual_scroll_1_RM&pgtype=article
