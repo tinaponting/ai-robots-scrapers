@@ -3,7 +3,8 @@ And ways to block ai scrapers of your content.)
 * Robots txt complete: https://github.com/tinaponting/wordpress-single-user
 
 
-* Perrishpress ultiamte list:  https://perishablepress.com/ultimate-ai-block-list/
+* Perrishpress Ultimate list:  https://perishablepress.com/ultimate-ai-block-list/
+* PLUGIN: stop Ai -very good: https://github.com/robertdevore/block-ai-crawlers
 
 # Updates:
 
