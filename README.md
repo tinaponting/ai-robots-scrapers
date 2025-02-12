@@ -1,7 +1,9 @@
 Ai crapers - Ai bots - Ai robts.txt 
 And ways to block ai scrapers of your content.)
-Robots txt complete: https://github.com/tinaponting/wordpress-single-user
-Perrishpress ultiamte list:  https://perishablepress.com/ultimate-ai-block-list/
+* Robots txt complete: https://github.com/tinaponting/wordpress-single-user
+
+
+* Perrishpress ultiamte list:  https://perishablepress.com/ultimate-ai-block-list/
 
 # Updates:
 
