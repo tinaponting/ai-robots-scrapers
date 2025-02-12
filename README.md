@@ -1,9 +1,11 @@
 Ai crapers - Ai bots - Ai robts.txt 
 And ways to block ai scrapers of your content.)
 Robots txt complete: https://github.com/tinaponting/wordpress-single-user
+Perrishpress ultiamte list:  https://perishablepress.com/ultimate-ai-block-list/
 
 # Updates:
 
+* Added: perrishpress Ultimate AI block list, very good and carefully created by one of best in .htaccess and Safty:)
 * Updated 250210, ai text updated,block ai.php updated, removed owler, only affects EU! add if needed.
 * Updated 250129, with: block Ai, php updated, robots.txt on single user with flyer ai:)
 * Updated 250123, with: block Ai, php updated, robots.txt on single user:)
