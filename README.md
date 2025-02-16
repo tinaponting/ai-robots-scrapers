@@ -8,6 +8,7 @@ And ways to block ai scrapers of your content.)
 
 # Updates:
 
+* FORK OF BLOCK AI - errors fxed:)
 * FORK OF BLOCK AI and crawlers,works well, with Perrish .tacces - Great protection:)
 * Added: perrishpress Ultimate AI block list, very good and carefully created by one of best in .htaccess and Safety:)
 * Updated 250210, ai text updated,block ai.php updated, removed owler, only affects EU! add if needed.
