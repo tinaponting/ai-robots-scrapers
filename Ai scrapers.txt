@@ -1162,7 +1162,6 @@ RewriteRule .* - [F,L]</ifModule>
 
 * Add: 
 RewriteCond%{REQUEST_URI}!robots\.txt - [F,L]
-Another one:
 ...........................................................................:)
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::)
 ## htaccess: (htaccess1)
@@ -1182,8 +1181,7 @@ Omgilibot|Omgili|Open AI| Openbot|OAI SearchBot|OAI-SearchBot/1.0|OpenAI o1|Open
 PanguBot|PaperLiBot|PaperLiBot/2.1|peer39_crawler|peer39_crawler/1.0|PerplexityBot|PetalBot|PiplBot|proximic|RightWingGPT|
 scrapy|Scrapy/2.0|Stability AI|ScraperGPT|ShadowGPT|SemrushBot-FT|SemrushBot-OCOB|ShadowGPT|Sidetrade|
 thehive.ai|The Knowledge AI|thehive.a1|Timpibot|TurnitinBot|
-Webzio|Webzio-Extended|wpbot|wpbot/1.1|wpbot/1.2|WebChatGPT|WormGPT|WormGPT V3.0|VelenPublicWebCrawler|
-Webzio|Webzio-Extended|wpbot|wpbot/1.1|wpbot/1.2|WebChatGPT|WormGPT|VelenPublicWebCrawler|
+Webzio|Webzio-Extended|wpbot|wpbot/1.1|wpbot/1.2|WebChatGPT|WormGPT|WormGPT V3.0|VelenPublicWebCrawler|WebChatGPT|WormGPT|
 xAI|XBot|x.AI|YouBot|YarGPT|yarchatgpt|ZeroGPT|ZeroCHAT
 
 Alternative if: Add: GTB  - maybe s tops all gtb?
