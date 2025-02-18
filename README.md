@@ -8,6 +8,7 @@ And ways to block ai scrapers of your content.)
 
 # Updates:
 
+* Updated 250218, Ai scrapers.txt
 * Updated 250218, block ai.php updated with the Latest.
 * FORK OF BLOCK AI - errors fxed:)  //Maybe some more??
 * FORK OF BLOCK AI and crawlers,works well, with Perrish .tacces - Great protection:)
