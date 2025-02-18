@@ -1778,7 +1778,6 @@ User-agent: YarGPT
 User-agent: YouBot
 User-agent: Zero GTP
 User-agent: ZeroCHAT
-User-agent: ZeroCHAT
 User-agent: ZeroGPT
 User-agent: ZimmWrite
 User-agent: ZimmWriter
