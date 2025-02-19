@@ -189,7 +189,6 @@ The following are the proposed meta robots directives:
 <meta name=”robots” content=”DisallowAITraining”>
 
 ## The following are the proposed * Robots.txt rules:
-
 DisallowAITraining – instructs the parser to not use the data for AI training language model.
 
 User-agent: AITraining
@@ -1179,7 +1178,7 @@ Hugging Fac|iaskspider|iaskspider/2.0|ICC-Crawler|ImagesiftBot|img2dataset|Intel
 Kangaroo|Kangaroo Bot|LeftWingGPT|magpie-crawler|Meltwater|Nicecrawler|
 Omgilibot|Omgili|Open AI| Openbot|OAI SearchBot|OAI-SearchBot/1.0|OpenAI o1|OpenAI o1-mini|OpenAI o3-mini|
 PanguBot|PaperLiBot|PaperLiBot/2.1|peer39_crawler|peer39_crawler/1.0|PerplexityBot|PetalBot|PiplBot|proximic|RightWingGPT|
-scrapy|Scrapy/2.0|Stability AI|ScraperGPT|ShadowGPT|SemrushBot-FT|SemrushBot-OCOB|ShadowGPT|Sidetrade|
+scrapy|Scrapy/2.0|Stability AI|ScraperGPT|ShadowGPT|SemrushBot-FT|SemrushBot-OCOB|ShadowGPT|Seekr|Sidetrade|
 thehive.ai|The Knowledge AI|thehive.a1|Timpibot|TurnitinBot|
 Webzio|Webzio-Extended|wpbot|wpbot/1.1|wpbot/1.2|WebChatGPT|WormGPT|WormGPT V3.0|VelenPublicWebCrawler|WebChatGPT|WormGPT|
 xAI|XBot|x.AI|YouBot|YarGPT|yarchatgpt|ZeroGPT|ZeroCHAT
@@ -1478,6 +1477,7 @@ User-agent: Stability AI
 User-agent: ScraperGPT
 User-agent: ShadowGPT
 User-agent: SemrushBot-OCOB
+User-agent: Seekr
 User-agent: Sidetrade
 User-Agent: thehive.ai
 User-agent: The Knowledge AI
@@ -1735,9 +1735,10 @@ User-agent: SemrushBot-OCOB
 User-agent: sentibot
 User-agent: SkyDancer Ai
 User-agent: SEO Content Machine
-User-agent: SEO Robott
+User-agent: SEO Robot
 User-agent: ShadowGPT
 User-agent: Sidetrade
+User-agent: Seekr
 User-agent: Simplified AI
 User-agent: SlickWrite
 User-agent: Spin Rewriter
@@ -1830,4 +1831,4 @@ URL: https://eviden.com/insights/blogs/wormgpt-when-genai-also-serves-malicious-
 
 .....................................................................
 .....................................................................
-## Updated: 250218
+## Updated: 250219
