@@ -119,19 +119,8 @@ URL: https://allgpts.co
 * Others, like facebook, Instagram and so on:
 https://pirg.org/edfund/resources/how-to-stop-your-data-from-being-used-for-ai-training/
 
-* AI2 Bot
-URL: https://allenai.org/crawler
-
-*Firecrawl
-https://firecrawl.dev
-
-* Mistral ai
-URL: https://mistral.ai/en
-
-* Useragent scrapy:
-scrapy
-Scrapy/2.0
-URL: https://www.zyte.com
+**SERDY News:
+https://seirdy.one/meta/scrapers-i-block/
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................... 
@@ -175,6 +164,7 @@ machine learning system or neural network is prohibited.
 ##Prevents Bing's bot from using the content for AI-related purposes, such as training language models.
 Prevents Bing's bot from using the content for AI purposes. 
         '<meta name="bingbot" content="nocache">
+***
 
 # CCBOT
 <meta name="CCBot" content="nofollow">
@@ -470,6 +460,22 @@ Disallow: /
 User-agent: OWLer/0.1
 Disallow: /
 
+........................
+
+* AI2 Bot
+URL: https://allenai.org/crawler
+
+*Firecrawl
+https://firecrawl.dev
+
+* Mistral ai
+URL: https://mistral.ai/en
+
+* Useragent scrapy:
+scrapy
+Scrapy/2.0
+URL: https://www.zyte.com
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................... 
 ********************************************************************
@@ -648,7 +654,6 @@ User-agent: OpenAI o1-mini
 Disallow: /
 User-agent: OpenAI o3-mini
 Disallow: /
-
 User-agent: OpenAI 
 Disallow: /
 User-agent: Openbot
@@ -761,6 +766,12 @@ Disallow: /
 User-agent: ShadowGPT
 Disallow: /
 
+# Open Web Search GenAI-targeted opt ou
+
+User-agent: GenAI
+Disallow: /
+
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................... 
 ******************************************************************** 
@@ -814,8 +825,15 @@ Cohere R+
 * https://www.librechat.ai
 LibreChat
 
-SERDY News:
-https://seirdy.one/meta/scrapers-i-block/
+#CHINA CHAT:
+
+ChatGLM
+User-Agent strings
+Mozilla/5.0 (compatible; ChatGLM-Spider/1.0; +https://chatglm.cn/)
+Official ChatGLM website
+Regex filter
+chatglm.spider|chatglm\.cn
+
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ------------------------------------------------------
@@ -890,7 +908,9 @@ Baichuan AI
 https://www.baichuan-ai.com/home
 
 
-DeepSeek AI 
+## DeepSeek AI
+
+DeepSeek-R1 
 https://www.deepseek.com
 https://github.com/deepseek-ai/DeepSeek-Coder
 DeepSeek chat: https://chat.deepseek.com/sign_in
@@ -912,8 +932,6 @@ https://gpt360.io
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................... 
-
-*New 20241104:  Added:
 *  is associated with Google Vertex AI agents. Vertex is supposedly covered by Google-Extended (above).
 * google.com
 User-agent: Google-CloudVertexBot
@@ -1169,21 +1187,23 @@ RewriteCond%{REQUEST_URI}!robots\.txt - [F,L]
 # RAW List:  (use  one of above thats works for you, cut and paste!)
 
 Agent GPT|AI2 Bot|AISearchBot|Alexa|AlexaTM|AlphaAI|Amazon Bedrock|Amazon Comprehend|Amazon SageMaker|Amazon Silk|Amazon Textract|amazon-kendra|AWS Trainium|anthropic-ai|AnyPicker|Applebot-Extended|Aria browse Aria AI|Aria browser AI|AutoGPT|AndersPinkBot|AITraining|
-Brave Leo AI|bingbot-chat/2.0|Bing ai| Bytedance|Bytespider|BardBot|
-CatBoost|cohere-ai|cohere-training-data-crawler|ClaudeBot|Claude 3.5 Sonnet|Claude 3.5 Haiku| crewAI|Chinchilla|ChatGPT|ChatGPT-User|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|
-dataprovider|Diffbot|DialoGPT|DepolarizingGPT v|Doubao AI|DuckAssistBot|Dalvik/2|Dalvik/2.1.0|DALL-E|DALL-E 2|DeepAI|DeepL|DeepMind|DeepSeek|
-FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|Firecrawl|Flyriver|flyriverbot/1.1|meta-externalfetcher/1.1|Meta-ExternalAgent|Meta-ExternalFetcher|LLaMA|Llama 3.2|Meta AI|Meta Llama|meta-externalfetcher/1.1|Mistral|FriendlyCrawler|FriendlyCrawler/1.0|FriendlyCrawler/Nutch-1.20-SNAPSHOT|
-GenAI|GTB|GTPBOT|GPTbot/0.1GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3| GPT-3.5|GPT-3.5 turbo|GPT-4|GPT-4.5|gpt-4-turbo|GPT-4o|GPT-4V|GPT-4o mini|GPT 4 Omni|GPT 4 Omni Mini|SearchGPT|GPT ScraperGPT|Zero|Grok|GrokAI|Gemini|Google Gemini|Google Bard AI|GoogleOther|Google-CloudVertexBot|Google-Extended|
+Brave Leo AI|bingbot-chat/2.0|Bing ai| Bytedance|Bytespider|BardBot|Brightbot 1.0|
+CatBoost|cohere-ai|cohere-training-data-crawler|ClaudeBot|Claude 3.5 Sonnet|Claude 3.5 Haiku| crewAI|Chinchilla|ChatGPT|ChatGPT-User|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|Cotoyogi|Content Scraper GPT|
+dataprovider|Diffbot|DialoGPT|DepolarizingGPT v|Doubao AI|DuckAssistBot|Dalvik/2|Dalvik/2.1.0|DALL-E|DALL-E 2|DeepAI|DeepL|DeepMind|DeepSeek|DeepSeek-R1|
+FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|Firecrawl|Flyriver|flyriverbot/1.1|meta-externalfetcher/1.1|Meta-ExternalAgent|Meta-ExternalFetcher|LLaMA|Llama 3.2|Meta AI|Meta Llama|meta-externalfetcher/1.1|Mistral|FraudGPT|FriendlyCrawler|FriendlyCrawler/1.0|FriendlyCrawler/Nutch-1.20-SNAPSHOT|
+GenAI|GTB|GTPBOT|GPTbot/0.1GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3| GPT-3.5|GPT-3.5 turbo|GPT-4|GPT-4.5|gpt-4-turbo|GPT-4o|GPT-4V|GPT-4o mini|GPT 4 Omni|GPT 4 Omni Mini|SearchGPT|GPT ScraperGPT|Zero|Grok|GrokAI|Gemini|Google Gemini|Google Bard AI|GoogleOther|Google-CloudVertexBot|Google-Extended|Extended GPT Scraper|
 Hugging Fac|iaskspider|iaskspider/2.0|ICC-Crawler|ImagesiftBot|img2dataset|IntelliSeek|IntelliSeek.ai|ISSCyberRiskCrawler|
 Kangaroo|Kangaroo Bot|LeftWingGPT|magpie-crawler|Meltwater|Nicecrawler|
 Omgilibot|Omgili|Open AI| Openbot|OAI SearchBot|OAI-SearchBot/1.0|OpenAI o1|OpenAI o1-mini|OpenAI o3-mini|
 PanguBot|PaperLiBot|PaperLiBot/2.1|peer39_crawler|peer39_crawler/1.0|PerplexityBot|PetalBot|PiplBot|proximic|RightWingGPT|
-scrapy|Scrapy/2.0|Stability AI|ScraperGPT|ShadowGPT|SemrushBot-FT|SemrushBot-OCOB|ShadowGPT|Seekr|Sidetrade|
+scrapy|Scrapy/2.0|Stability AI|ScraperGPT|ShadowGPT|SemrushBot-FT|SemrushBot-OCOB|ShadowGPT|Seekr|Sidetrade|StableDiffusionBot|
 thehive.ai|The Knowledge AI|thehive.a1|Timpibot|TurnitinBot|
 Webzio|Webzio-Extended|wpbot|wpbot/1.1|wpbot/1.2|WebChatGPT|WormGPT|WormGPT V3.0|VelenPublicWebCrawler|WebChatGPT|WormGPT|
 xAI|XBot|x.AI|YouBot|YarGPT|yarchatgpt|ZeroGPT|ZeroCHAT
 
-Alternative if: Add: GTB  - maybe s tops all gtb?
+
+
+## Added: GTB  - maybe s tops all gtb?
 GTB|
 ...........................................................................:)
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::)
@@ -1232,12 +1252,41 @@ Blocks SentiOne's AI-powered social media listening and analysis tools
 Note: Nothing i´ve seen so far!
 
 *
-User-agent: Node/simplecrawler
-Disallow: /
-
-*
 URL: https://catboost.ai/
 User-agent: CatBoost
+
+*
+URL: https://www.brightbot.app
+Brightbot 1.0
+
+*
+wormsGTP
+URL: https://eviden.com/insights/blogs/wormgpt-when-genai-also-serves-malicious-actors/
+URL:  https://www.inuit.se/blogg/wormgpt-och-fraudgpt-uppkomsten-av-skadliga-llm
+
+*
+FraudGPT 
+URL: https://secureops.com/blog/ai-attacks-fraudgpt
+
+*
+Content Scraper GPT
+https://gptstore.ai/gpts/ZJvDe_sHZu-website-metadata-content-scraper-gpt
+URL: https://gptstore.ai
+
+Extended GPT Scraper
+https://apify.com/drobnikj/extended-gpt-scraper
+*
+StableDiffusionBot
+URL: iffusion.gg
+*
+Cotoyogi
+GenAI training-data scraper
+URL: https://ds.rois.ac.jp/en_center8/en_crawler/
+
+User-agent: Cotoyogi
+Disallow: /
+*
+
 
 -----------------------------------------------------------------
 250113
@@ -1327,6 +1376,16 @@ https://www.flyriver.com/crawler
 # Anonymous:
 https://topai.tools/s/autonomous-gpt-agent
 
+#FraudGPT  
+URL:  https://www.inuit.se/blogg/wormgpt-och-fraudgpt-uppkomsten-av-skadliga-llm
+URL: https://secureops.com/blog/ai-attacks-fraudgpt/
+URL: https://eviden.com/insights/blogs/wormgpt-when-genai-also-serves-malicious-actors/
+
+# 
+URL: https://huggingface.co/chat/models
+URL: https://huggingface.co/chat/
+HuggingChat
+
 :::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................  
 ### A Complete Ai List ##)
@@ -1359,12 +1418,14 @@ User-agent: AITraining
 User-agent: Brave Leo AI
 User-agent: bingbot-chat/2.0
 User-agent: Bing ai 
+User-agent: Brightbot 1.0
 User-agent: Bytedance
 User-agent: Bytespider
 User-agent: BardBot
 User-agent: CatBoost
 User-agent: cohere-ai
 User-agent: cohere-training-data-crawler
+User-agent: Cotoyogi
 User-agent: ClaudeBot
 User-agent: Claude 3.5 Sonnet
 User-agent: Claude 3.5 Haiku 
@@ -1390,6 +1451,7 @@ User-agent: DeepAI
 User-agent: DeepL
 User-agent: DeepMind
 User-agent: DeepSeek
+User-agent: DeepSeek-R1
 User-agent: FacebookBot
 User-agent: FacebookBot/1.0
 User-agent: facebookexternalhit
@@ -1397,6 +1459,7 @@ User-agent: facebookexternalhit/1.1
 User-agent: Firecrawl
 User-agent: Flyriver
 User-agent: flyriverbot/1.1
+User-agent: FraudGPT
 User-agent: meta-externalfetcher/1.1
 User-agent: Meta-ExternalAgent
 User-agent: Meta-ExternalFetcher
@@ -1427,6 +1490,9 @@ User-agent: GPT-3.5 turbo
 User-agent: GPT 4 Omni	
 User-agent: GPT 4 Omni Mini
 User-agent: SearchGPT 
+User-agent: GPT Scraper
+User-agent: Content Scraper GPT
+User-agent: Extended GPT Scraper
 User-agent: GPT Scraper
 User-agent: GPTZero
 User-agent: Grok
@@ -1479,6 +1545,7 @@ User-agent: ShadowGPT
 User-agent: SemrushBot-OCOB
 User-agent: Seekr
 User-agent: Sidetrade
+User-agent: StableDiffusionBot
 User-Agent: thehive.ai
 User-agent: The Knowledge AI
 User-Agent: thehive.a1
@@ -1788,7 +1855,6 @@ Disallow: /
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................
 ### On the way: 
-Deepseek: Deepseek-R1
 * GPT-5 
 
 * ChatGPT’s Operator AI
@@ -1810,25 +1876,9 @@ PhindBot
 * https://exabot.viallance.com/
 * https://www.phind.com/
 
-
-# 
-URL: https://huggingface.co/chat/models
-URL: https://huggingface.co/chat/
-HuggingChat
-
+???
 Qwen/Qwen2.5-72B-Instruct
-DeepSeek R1
 .......................................
-250213: New:
-
-Brightbot 1.0
-errorAI ??
-
-FraudGPT  ??
-URL:  https://www.inuit.se/blogg/wormgpt-och-fraudgpt-uppkomsten-av-skadliga-llm
-URL: https://secureops.com/blog/ai-attacks-fraudgpt/
-URL: https://eviden.com/insights/blogs/wormgpt-when-genai-also-serves-malicious-actors/
-
 .....................................................................
 .....................................................................
-## Updated: 250219
+## Updated: 250221
