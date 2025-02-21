@@ -8,6 +8,8 @@ And ways to block ai scrapers of your content.)
 
 # Updates:
 
+* Updated 250221, block ai.php updated with the Latest.
+* Updated 250221, Fork of blockaai crawlers.zip updated -Latest.
 * Updated 250218, Fork of blockaai crawlers.zip
 * Updated 250218, Ai scrapers.txt
 * Updated 250218, block ai.php updated with the Latest.
