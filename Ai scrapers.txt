@@ -1188,7 +1188,7 @@ RewriteCond%{REQUEST_URI}!robots\.txt - [F,L]
 
 Agent GPT|.ai|AI2 Bot|AISearchBot|Alexa|AlexaTM|AlphaAI|Amazon Bedrock|Amazon Comprehend|Amazon SageMaker|Amazon Silk|Amazon Textract|amazon-kendra|AWS Trainium|anthropic-ai|AnyPicker|Applebot-Extended|Aria browse Aria AI|Aria browser AI|AutoGPT|AndersPinkBot|AITraining|
 Brave Leo AI|bingbot-chat/2.0|Bing ai| Bytedance|Bytespider|BardBot|Brightbot 1.0|
-CatBoost|cohere-ai|cohere-training-data-crawler|ClaudeBot|Claude 3.5 Sonnet|Claude 3.5 Haiku| crewAI|Chinchilla|ChatGPT|ChatGPT-User|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|Cotoyogi|Content Scraper GPT|
+CatBoost|cohere-ai|cohere-training-data-crawler|ClaudeBot|Claude 3.7 Sonnet|claude-web/1.0|ClaudeBot/1.0|Claude 3.5 Haiku|crewAI|Chinchilla|ChatGPT|ChatGPT-User|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|Cotoyogi|Content Scraper GPT|
 dataprovider|Diffbot|DialoGPT|DepolarizingGPT v|Doubao AI|DuckAssistBot|Dalvik/2|Dalvik/2.1.0|DALL-E|DALL-E 2|DeepAI|DeepL|DeepMind|DeepSeek|DeepSeek-R1|
 FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|Firecrawl|Flyriver|flyriverbot/1.1|meta-externalfetcher/1.1|Meta-ExternalAgent|Meta-ExternalFetcher|LLaMA|Llama 3.2|Meta AI|Meta Llama|meta-externalfetcher/1.1|Mistral|FraudGPT|FriendlyCrawler|FriendlyCrawler/1.0|FriendlyCrawler/Nutch-1.20-SNAPSHOT|
 GenAI|GTB|GTPBOT|GPTbot/0.1GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3| GPT-3.5|GPT-3.5 turbo|GPT-4|GPT-4.5|gpt-4-turbo|GPT-4o|GPT-4V|GPT-4o mini|GPT 4 Omni|GPT 4 Omni Mini|SearchGPT|GPT ScraperGPT|Zero|Grok|GrokAI|Gemini|Google Gemini|Google Bard AI|GoogleOther|Google-CloudVertexBot|Google-Extended|Extended GPT Scraper|
@@ -1431,7 +1431,9 @@ User-agent: cohere-ai
 User-agent: cohere-training-data-crawler
 User-agent: Cotoyogi
 User-agent: ClaudeBot
-User-agent: Claude 3.5 Sonnet
+User-agent: claude-web/1.0
+User-agent: ClaudeBot/1.0
+User-agent: Claude 3.7 Sonnet
 User-agent: Claude 3.5 Haiku 
 User-agent: crewAI
 User-agent: Chinchilla
@@ -1640,8 +1642,10 @@ User-agent: ChatGPT-User
 User-agent: Chinchilla
 User-agent: Chinchilla
 User-agent: Claude 3.5 Haiku
-User-agent: Claude 3.5 Sonnet
+User-agent: Claude 3.7 Sonnet
 User-agent: ClaudeBot
+User-agent: claude-web/1.0
+User-agent: ClaudeBot/1.0
 User-agent: Claude-Web
 User-agent: ClearScope
 User-agent: cohere-ai
@@ -1882,7 +1886,11 @@ PhindBot
 
 ???
 Qwen/Qwen2.5-72B-Instruct
+
+
+2503003 
+Updated: Claude 3.7 Sonnet
 .......................................
 .....................................................................
 .....................................................................
-## Updated: 250222
+## Updated: 250306
