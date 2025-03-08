@@ -8,6 +8,7 @@ And ways to block ai scrapers of your content.)
 
 # Updates:
 
+* Updated 250208, block ai.php updated with the Latest.
 * Updated 250308, block ai.php updated with the Latest.
 * Updated 250306, block ai.php updated with the Latest.
 * Updated 250221, block ai.php updated with the Latest.
