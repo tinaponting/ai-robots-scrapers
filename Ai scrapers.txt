@@ -1194,7 +1194,7 @@ FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|Firecraw
 GenAI|GTB|GTPBOT|GPTbot/0.1GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3| GPT-3.5|GPT-3.5 turbo|GPT-4|GPT-4.5|gpt-4-turbo|GPT-4o|GPT-4V|GPT-4o mini|GPT 4 Omni|GPT 4 Omni Mini|SearchGPT|GPT ScraperGPT|Zero|Grok|GrokAI|Gemini|Google Gemini|Google Bard AI|GoogleOther|Google-CloudVertexBot|Google-Extended|Extended GPT Scraper|
 Hugging Face|iaskspider|iaskspider/2.0|ICC-Crawler|ImagesiftBot|img2dataset|IntelliSeek|IntelliSeek.ai|ISSCyberRiskCrawler|
 Kangaroo|Kangaroo Bot|LeftWingGPT|magpie-crawler|Meltwater|Nicecrawler|
-Omgilibot|Omgili|Open AI| Openbot|OAI SearchBot|OAI-SearchBot/1.0|OpenAI o1|OpenAI o1-mini|OpenAI o3-mini|
+Omgilibot|Omgili|Open AI| Openbot|OAI SearchBot|OAI-SearchBot/1.0|OpenAI o1|OpenAI o1-mini|OpenAI o3-mini|OpenAI Crawler|
 PanguBot|PaperLiBot|PaperLiBot/2.1|peer39_crawler|peer39_crawler/1.0|PerplexityBot|PetalBot|PiplBot|proximic|RightWingGPT|
 scrapy|Scrapy/2.0|Stability AI|ScraperGPT|ShadowGPT|SemrushBot-FT|SemrushBot-OCOB|ShadowGPT|Seekr|Sidetrade|StableDiffusionBot|
 thehive.ai|The Knowledge AI|thehive.a1|Timpibot|TurnitinBot|
@@ -1530,6 +1530,8 @@ User-agent: Open AI
 User-agent: Openbot
 User-agent: OAI SearchBot
 User-agent: OAI-SearchBot/1.0
+User-agent: OpenAI Crawler
+User-agent: OpenAIContentCrawler
 User-agent: OpenAI o1
 User-agent: OpenAI o1-mini
 User-agent: OpenAI o3-mini
@@ -1775,6 +1777,7 @@ User-agent: OpenAI GPT
 User-agent: OpenAI o1
 User-agent: OpenAI o1-mini
 User-agent: OpenAI o3-mini
+User-agent: OpenAI Crawler
 User-agent: OpenAIContentCrawler
 User-agent: Openbot
 User-agent: OpenText AI
@@ -1888,9 +1891,14 @@ PhindBot
 Qwen/Qwen2.5-72B-Instruct
 
 
-2503003 
+2503003: 
 Updated: Claude 3.7 Sonnet
-.......................................
+:
+250308:
+User-agent: OpenAI Crawler
+Can also come from:  OAI-SearchBot|Mac OS X   (blocked in my .htacces1 with AI)
+
+# Pain in the Ass!! ##
 .....................................................................
 .....................................................................
-## Updated: 250306
+## Updated: 250308
