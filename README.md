@@ -7,7 +7,8 @@ And ways to block ai scrapers of your content.)
 * PLUGIN: stop Ai -very good: https://github.com/robertdevore/block-ai-crawlers
 
 # Updates:
-# working on a AI Stop plugin updating
+
+* Updated 250308, block ai.php updated with the Latest.
 * Updated 250306, block ai.php updated with the Latest.
 * Updated 250221, block ai.php updated with the Latest.
 * Updated 250221, Fork of blockaai crawlers.zip updated -Latest.
