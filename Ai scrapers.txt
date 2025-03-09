@@ -122,6 +122,10 @@ https://pirg.org/edfund/resources/how-to-stop-your-data-from-being-used-for-ai-t
 **SERDY News:
 https://seirdy.one/meta/scrapers-i-block/
 
+
+#* Huge List of: LLM:
+https://llmstxt.site/
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................... 
 ********************************************************************
@@ -1481,6 +1485,7 @@ User-agent: Dalvik/2
 User-agent: Dalvik/2.1.0
 User-agent: DALL-E
 User-agent: DALL-E 2
+User-agent: DALL·E 3
 User-agent: DeepAI
 User-agent: DeepL
 User-agent: DeepMind
@@ -1931,6 +1936,10 @@ User-agent: OpenAI Crawler
 Can also come from:  OAI-SearchBot|Mac OS X   (blocked in my .htacces1 with AI)
 
 # Pain in the Ass!! ##
+
+:
+250309
+User-agent: DALL·E 3
 .....................................................................
 .....................................................................
 ## Updated: 250309
