@@ -163,6 +163,7 @@ machine learning system or neural network is prohibited.
 
 ##Prevents Bing's bot from using the content for AI-related purposes, such as training language models.
 Prevents Bing's bot from using the content for AI purposes.  Be careful, can sometimes prevent indexing! 
+
         <meta name="bingbot" content="nocache">
 ***
 
@@ -184,6 +185,9 @@ DisallowAITraining – instructs the parser to not use the data for AI training 
 User-agent: AITraining
 Disallow: /
 
+
+<meta name="tdm-reservation" content="1">
+
 ............................
 ## ADD: X-Robots-Tag HTTP header:
 DeviantArt covers how to set the X-Robots-Tag header (which also has other uses to help control how search engines crawl your site) to express an opt-out.
@@ -192,11 +196,17 @@ On Apache httpd (I know, I’m old school) it’s something like this:
 
 Header Set X-Robots-Tag "noai"
 
-* OR:
+* X tags:
 X-Robots-Tag: noai
 X-Robots-Tag: noimageai
 
+tdm-reservation: 1
 
+OR:
+
+Header set X-Robots-Tag "noai, noimageai"
+Header set tdm-reservation "1"
+--------------------
 
 ## privacy opt out for servers ****
 This is the first site to include the new SPC meta tag and X-Robots-Tag header 
@@ -492,6 +502,7 @@ Disallow: /
 User-agent: facebookexternalhit/1.1
 Disallow: /
 User-agent: Meta-ExternalAgent
+User-agent: meta-externalagent
 Disallow: /
 User-agent: meta-externalfetcher/1.1
 Disallow: /
@@ -661,7 +672,24 @@ Disallow: /
 User-agent: OpenAI GPT
 Disallow: /
 
-................
+
+OpenAI IP Ranges to Block:
+
+52.230.152.0/24
+52.233.106.0/24
+23.102.140.112/28
+13.66.11.96/28
+104.210.133.240/28
+23.98.142.176/28
+40.84.180.224/28
+13.65.240.240/28
+20.97.189.96/28
+20.161.75.208/28
+52.225.75.208/28
+52.156.77.144/28
+40.84.180.64/28
+
+................................................................
 
 #WORDPress AI:
 WPBot is an easy to use, Native, No coding required, AI ChatBot for 
@@ -1468,6 +1496,7 @@ User-agent: flyriverbot/1.1
 User-agent: FraudGPT
 User-agent: meta-externalfetcher/1.1
 User-agent: Meta-ExternalAgent
+User-agent: meta-externalagent
 User-agent: Meta-ExternalFetcher
 User-agent: LLaMA
 User-agent: Llama 3.2
@@ -1479,6 +1508,7 @@ User-agent: FriendlyCrawler
 User-agent: FriendlyCrawler/1.0
 User-agent: FriendlyCrawler/Nutch-1.20-SNAPSHOT
 User-agent: GenAI
+User-agent: GTP
 User-agent: GTPBOT
 User-Agent: GPTbot/0.1
 User-Agent: GPTBot/1.0
@@ -1703,6 +1733,7 @@ User-agent: Google Gemini
 User-agent: GoogleOther
 User-agent: Google-CloudVertexBot
 User-agent: Google-Extended
+User-agent: GTP
 User-agent: GPT 4 Omni
 User-agent: GPT 4 Omni Mini
 User-agent: GPTBot
@@ -1760,6 +1791,7 @@ User-agent: MetaTagBot
 User-agent: Meta-AI
 User-agent: Meta-ExternalAgent
 User-agent: Meta-ExternalFetcher
+User-agent: meta-externalagent
 User-agent: meta-externalfetcher/1.1
 User-agent: Meta.AI
 User-agent: Mistral
@@ -1777,8 +1809,8 @@ User-agent: OpenAI GPT
 User-agent: OpenAI o1
 User-agent: OpenAI o1-mini
 User-agent: OpenAI o3-mini
-User-agent: OpenAI Crawler
 User-agent: OpenAIContentCrawler
+User-agent: OpenAI Crawler
 User-agent: Openbot
 User-agent: OpenText AI
 User-agent: Outwrite
@@ -1901,4 +1933,4 @@ Can also come from:  OAI-SearchBot|Mac OS X   (blocked in my .htacces1 with AI)
 # Pain in the Ass!! ##
 .....................................................................
 .....................................................................
-## Updated: 250308
+## Updated: 250309
