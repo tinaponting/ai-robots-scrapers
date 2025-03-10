@@ -6,7 +6,7 @@ And ways to block ai scrapers of your content.)
 
 
 * Perrishpress Ultimate list:  https://perishablepress.com/ultimate-ai-block-list/
-* PLUGIN: stop Ai -very good: https://github.com/robertdevore/block-ai-crawlers
+* PLUGIN: stop Ai -very good:https://wordpress.org/plugins/ai-scraping-protector/
 
 # Updates:
 
