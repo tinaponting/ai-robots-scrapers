@@ -12,7 +12,7 @@ And ways to block ai scrapers of your content.)
 ## Working on an uppdated robots.txt plugin
 
 * Updated 250313, block ai.php updated with the Latest Ai bots.
-* UPPDATED: perrishpress Ultimate AI block list in In collaboration, greatb tool and with my robppts.txt tool:)  
+* UPPDATED 250312: perrishpress Ultimate AI block list in In collaboration, greatb tool and with my robppts.txt tool:)  
 * Updated 250309, block ai.php updated with the Latest.
 * Updated 2509309, Fork of blockaai crawlers.zip updated -Latest.
 * Updated 250208, block ai.php updated with the Latest.
