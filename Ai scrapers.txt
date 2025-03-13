@@ -1698,7 +1698,6 @@ User-agent: bingbot-chat/2.0
 User-agent: Brave Leo
 User-agent: Brave Leo AI
 User-agent: Brightbot 1.0
-User-agent: ByteDance
 User-agent: Bytedance
 User-agent: Bytespider
 User-agent: CatBoost
@@ -1807,12 +1806,10 @@ User-agent: Grammarly
 User-agent: Grendizer
 User-agent: Grok
 User-agent: GrokAI
-User-agent: GT Bot
+User-agent: GTP Bot
 User-agent: GTBot
-User-agent: GTP
 User-agent: GTPBOT
 User-agent: Hemingway Editor
-User-agent: Hugging Fac
 User-agent: Hugging Face
 User-agent: Hypotenuse AI
 User-agent: iaskspider
@@ -1893,7 +1890,6 @@ User-agent: SaplingAI
 User-agent: Scalenut
 User-agent: Scraper
 User-agent: ScraperGPT
-User-agent: Scrapy
 User-agent: scrapy
 User-agent: Scrapy/2.0
 User-agent: ScriptBook
