@@ -1667,7 +1667,6 @@ User-agent: Amazon Bedrock
 User-agent: Amazon Comprehend
 User-agent: Amazon Lex
 User-agent: Amazon SageMaker
-User-agent: Amazon Sagemaker
 User-agent: Amazon Silk
 User-agent: Amazon Textract
 User-agent: AmazonBot
@@ -1807,7 +1806,6 @@ User-agent: Grendizer
 User-agent: Grok
 User-agent: GrokAI
 User-agent: GTP Bot
-User-agent: GTBot
 User-agent: GTPBOT
 User-agent: Hemingway Editor
 User-agent: Hugging Face
@@ -1870,7 +1868,6 @@ User-agent: OpenText AI
 User-agent: Outwrite
 User-agent: Page Analyzer AI
 User-agent: PanguBot
-User-agent: PaperLiBot
 User-agent: Paperlibot
 User-agent: PaperLiBot/2.1
 User-agent: Paraphraser.io
