@@ -282,6 +282,7 @@ Disallow: /
 Dall-E
 Dall-E 3
 DALL-E Mini
+User-agent: DALL·E 3
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................... 
@@ -635,6 +636,10 @@ User-agent: GPT-3.5
 Disallow: /
 User-agent: GPT-4 
 Disallow: /
+User-agent: GTP-4,4
+Disallow: /
+User-agent: GPT-5 
+Disallow: /
 User-agent: GPT-4V
 Disallow: /
 User-agent: gpt-4-turbo
@@ -803,7 +808,6 @@ Disallow: /
 User-agent: GenAI
 Disallow: /
 
-
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................... 
 ******************************************************************** 
@@ -962,6 +966,15 @@ https://openrouter.ai
 * Marketing
 https://gpt360.io
 
+________________________
+
+Yi-Large
+URL 01.AI
+
+The Yi Large model was designed by 01.AI with the following usecases in mind: knowledge search, 
+data classification, human-like chat bots, and customer service. 
+It stands out for its multilingual proficiency, particularly in Spanish, Chinese, Japanese, German, and French.
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................... 
 *  is associated with Google Vertex AI agents. Vertex is supposedly covered by Google-Extended (above).
@@ -977,15 +990,28 @@ Disallow: /
 User-agent: DuckAssistBot
 Disallow: /
 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+.................................................................... 
+
 * is used by used by Anthropic to gather data for their “AI” products, such as Claude.
 * https://www.anthropic.com
 
 User-agent: anthropic-ai
 Disallow: /
+User-agent: ClaudeBot
+Disallow: /
+User-agent: claude-web/1.0
+Disallow: /
+User-agent: ClaudeBot/1.0
+Disallow: /
+User-agent: Claude 3.7 Sonnet
+Disallow: /
+User-agent: Claude 3.5 Haiku 
+Disallow: /
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-.................................................................... 
 #### claudebot Hell:
+
+
 
 <IfModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}"claudebot"[NC]
@@ -1067,7 +1093,6 @@ RewriteRule .* - [F]</IfModule>
 
 
 #Alternative:
-
 #Open AI
 <IfModule mod_rewrite.c>
 RewriteCond%{REMOTE_ADDR}^20\.171.206.0/24)$[NC,OR]
@@ -1092,7 +1117,7 @@ URL: https://www.sidetrade.com/
 Extracts data for a variety of uses including training AI.	
 AI product training. Only affects if you got a shop and thoroughly.
 
-User-agent: Sidetrade indexer bot
+User-agent: Sidetrade 
 Disallow: /
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................... :)
@@ -1651,6 +1676,7 @@ User-agent: AI Dungeon
 User-agent: AI Search Engine
 User-agent: AI SEO Crawler
 User-agent: AI Training
+User-agent: AITraining
 User-agent: AI Writer
 User-agent: AI2 Bot
 User-agent: AI2Bot
@@ -1658,7 +1684,6 @@ User-agent: AI21 Labs
 User-agent: AIBot
 User-agent: AIMatrix
 User-agent: AISearchBot
-User-agent: AITraining
 User-agent: Alexa
 User-agent: AlexaTM
 User-agent: Alpha AI
@@ -1949,9 +1974,7 @@ User-agent: Zimm
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................
-### 250313 
-* GPT-5 
-
+#On the way:
 * ChatGPT’s Operator AI
 
 * Hugging Face: Open-R1
@@ -1971,28 +1994,23 @@ PhindBot
 * https://exabot.viallance.com/
 * https://www.phind.com/
 
-???
+
+# ALIBABA:
 Qwen/Qwen2.5-72B-Instruct
+Qwen2.5 72B
 
 
-2503003: 
-Updated: Claude 3.7 Sonnet
-:
 250308:
 User-agent: OpenAI Crawler
-Can also come from:  OAI-SearchBot|Mac OS X   (blocked in my .htacces1 with AI)
+* Can also come from:  OAI-SearchBot|Mac OS X   (blocked in my .htacces1 with AI)
 
 # Pain in the Ass!! ##
 
 :
-250309
-User-agent: DALL·E 3
-
-
 250312:
 MSBot (Microsoft): Used by Microsoft for various AI and language model training purposes. 
 It adheres to robots.txt directives and is designed to gather useful data while respecting website owners’ preferences.
 
 .....................................................................
 .....................................................................
-## Updated: 250313
+## Updated: 250314
