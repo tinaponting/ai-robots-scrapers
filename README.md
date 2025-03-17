@@ -5,6 +5,7 @@ And ways to block ai scrapers of your content.)
 * TDM - -my content - Do not usse my articles
 
 AI News:  https://getcoai.com/news/
+          https://aimagazine.com/
 
 * Perrishpress Ultimate list:  https://perishablepress.com/ultimate-ai-block-list/
 * PLUGIN: stop Ai -very good:https://wordpress.org/plugins/ai-scraping-protector/
