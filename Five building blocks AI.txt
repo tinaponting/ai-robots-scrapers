@@ -1,0 +1,36 @@
+URL:  https://www.linkedin.com/pulse/five-building-blocks-gen-ai-jeff-roy-sybof/
+
+1. AI Agents
+AI agents are autonomous systems designed to perform tasks, make decisions, and interact with their environment. They sense, reason, and act to achieve specific goals, often with minimal human intervention. 📽️ Watch this: How I Made AI Assistants Do My Work For Me: CrewAI
+
+2. Multimodality
+This refers to an AI system's ability to process and integrate multiple types of data (text, images, audio, video, etc.). Think of systems that can analyze an image and understand the corresponding text or speech. 📽️ Watch this: GPT-4o, AI Overviews and Our Multimodal Future
+
+3. RAG (Retrieval-Augmented Generation)
+RAG combines retrieval-based systems with generative models to produce highly relevant and grounded outputs. It’s a smart way to use AI for context-aware tasks. 📽️ Watch this: What is RAG? (Retrieval-Augmented Generation)
+
+4. Fine-Tuning
+Fine-tuning takes a pre-trained model and adapts it to a specific task or domain using additional data. It’s how AI becomes specialized for certain applications. 📽️ Watch this: Intro to Large Language Models (1-Hour Talk)
+
+5. AI Prompt Engineering
+Prompt engineering is the art of crafting precise and effective inputs to guide AI models toward desired outputs. It’s a quick and powerful way to achieve impressive results without additional training. 📽️ Watch this: AI Prompt Engineering: A Deep Dive
+
+Wishing you all Happy Holidays and an Exciting 2025 !!
+
+
+-----------------------------------------------------
+
+https://www.nvidia.com/en-us/glossary/ai-agents/
+
+
+LLM: The “brain” of the AI agent, a large language model (LLM) is responsible for coordinating decision-making. It reasons through tasks, plans actions, selects appropriate tools, and manages access to necessary data to achieve objectives. The agent core is where the agent’s overall goals and objectives are defined and orchestrated.
+Memory Modules: AI agents rely on memory to maintain context and adapt to ongoing or historical tasks:
+Short-Term Memory: Tracks the agent’s “train of thought” and recent actions, ensuring context is preserved throughout the current workflow.
+Long-Term Memory: Retains historical interactions and relevant information, allowing for deeper contextual understanding and improved decision-making over time.
+Planning Modules: Planning modules enable AI agents to break down complex tasks into actionable steps:
+Without Feedback: Uses structured techniques like “Chain of Thought” or “Tree of Thought” to decompose tasks into manageable steps.
+With Feedback: Incorporates iterative improvement methods like ReAct, Reflexion, or human-in-the-loop feedback for refined strategies and outcomes.
+Tools: AI agents can serve as tools themselves, but they also extend their capabilities by integrating with external systems such as:
+APIs: Access real-time data or executing actions programmatically.
+Databases and RAG pipelines: Retrieve relevant information and ensure accurate knowledge bases.
+Other AI Models: Collaborate with additional models for specialized tasks.
