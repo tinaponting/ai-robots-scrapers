@@ -1264,11 +1264,11 @@ RewriteCond%{REQUEST_URI}!robots\.txt - [F,L]
 # RAW List:  (use  one of above thats works for you, cut and paste!)
 
 Agent GPT|.ai|AI2 Bot|AISearchBot|Alexa|AlexaTM|AlphaAI|Amazon Bedrock|Amazon Comprehend|Amazon SageMaker|Amazon Silk|Amazon Textract|amazon-kendra|AWS Trainium|anthropic-ai|AnyPicker|Applebot-Extended|Aria browse Aria AI|Aria browser AI|AutoGPT|AndersPinkBot|AITraining|
-Brave Leo AI|bingbot-chat/2.0|Bing ai| Bytedance|Bytespider|BardBot|Brightbot 1.0|
-CatBoost|cohere-ai|cohere-training-data-crawler|ClaudeBot|Claude 3.7 Sonnet|claude-web/1.0|ClaudeBot/1.0|Claude 3.5 Haiku|crewAI|Chinchilla|ChatGPT|ChatGPT-User|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|Cotoyogi|Content Scraper GPT|
-dataprovider|Diffbot|DialoGPT|DepolarizingGPT v|Doubao AI|DuckAssistBot|Dalvik/2|Dalvik/2.1.0|DALL-E|DALL-E 2|DALL-E 3|DeepAI|DeepL|DeepMind|DeepSeek|DeepSeek-R1|
+Brave Leo AI|bingbot-chat/2.0|Bing ai| Bytedance|Bytespider|BardBot|Brightbot 1.0|ByteDance crawler|
+CatBoost|cohere-ai|cohere-training-data-crawler|Claude|ClaudeBot|Claude 3.7 Sonnet|claude-web/1.0|ClaudeBot/1.0|Claude 3.5 Haiku|Claude Opus|CrawlGPT|crewAI|Chinchilla|ChatGPT|ChatGPT-User|ChatGPT-User/1.0|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|Cotoyogi|Content Scraper GPT|
+dataprovider|Diffbot|DialoGPT|DepolarizingGPT v|Doubao AI|DuckAssistBot|Dalvik/2|Dalvik/2.1.0|DALL-E|DALL-E 2|DALL-E 3|DALL-E Mini|DeepAI|DeepL|DeepMind|DeepSeek|DeepSeek-R1|
 FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|Firecrawl|Flyriver|flyriverbot/1.1|meta-externalfetcher/1.1|Meta-ExternalAgent|Meta-ExternalFetcher|LLaMA|Llama 3.2|Meta AI|Meta Llama|meta-externalfetcher/1.1|Mistral|FraudGPT|FriendlyCrawler|FriendlyCrawler/1.0|FriendlyCrawler/Nutch-1.20-SNAPSHOT|
-GenAI|GTB|GTPBOT|GPTbot/0.1GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3| GPT-3.5|GPT-3.5 turbo|GPT-4|GPT-4.5|GPT-5|gpt-4-turbo|GPT-4o|GPT-4V|GPT-4o mini|GPT 4 Omni|GPT 4 Omni Mini|SearchGPT|GPT ScraperGPT|Zero|Grok|GrokAI|Gemini|Google Gemini|Google Bard AI|GoogleOther|Google-CloudVertexBot|Google-Extended|Extended GPT Scraper|
+Gato|GenAI|GTB|GTPBOT|GPTbot/0.1GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3| GPT-3.5|GPT-3.5 turbo|GPT-4|GPT-4.5|GPT-5|gpt-4-turbo|GPT-4o|GPT-4V|GPT-4o mini|GPT 4 Omni|GPT 4 Omni Mini|SearchGPT|GPT ScraperGPT|gpt-crawler|Zero|Grok|GrokAI|Gemini|Google Gemini|Google Bard AI|GoogleOther|Google-CloudVertexBot|Google-Extended|Extended GPT Scraper|
 Hugging Face|iaskspider|iaskspider/2.0|ICC-Crawler|ImagesiftBot|img2dataset|IntelliSeek|IntelliSeek.ai|ISSCyberRiskCrawler|
 Kangaroo|Kangaroo Bot|LeftWingGPT|magpie-crawler|Meltwater|Nicecrawler|MSBot| 
 Omgilibot|Omgili|Open AI| Openbot|OAI SearchBot|OAI-SearchBot/1.0|OpenAI o1|OpenAI o1-mini|OpenAI o3-mini|OpenAI Crawler|
@@ -1279,7 +1279,7 @@ Webzio|Webzio-Extended|wpbot|wpbot/1.1|wpbot/1.2|WebChatGPT|WormGPT|WormGPT V3.0
 xAI|XBot|x.AI|YouBot|YarGPT|yarchatgpt|ZeroGPT|ZeroCHAT
 
 
-
+.....................................
 ## Added: GTB  - maybe s tops all gtb?
 GTB
 
@@ -1467,6 +1467,31 @@ URL: https://huggingface.co/chat/models
 URL: https://huggingface.co/chat/
 HuggingChat
 
+# 
+**** CHINA
+#Manus ai
+URL :  https://manus.im/
+
+Gato
+URL: https://www.qblocks.cloud/blog/deepmind-gato-general-purpose-ai-agent
+
+#  UltimateGPT
+https://support.zendesk.com/hc/en-us/articles/8357749315098-About-the-UltimateGPT-block-in-conversation-flows-for-advanced-AI-agents
+
+ChainGPT
+URL: https://www.chaingpt.org/
+
+Oracle:
+URL: https://docs.oracle.com/en-us/iaas/releasenotes/services/generative-ai-agents/index.htm
+
+Operator:  (open AI)
+URL: https://openai.com/index/introducing-operator/
+
+
+# BAIDU:
+ERNIE 4.5
+ERNIE Bot
+
 :::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................  
 ### A Complete Ai List ##)
@@ -1501,8 +1526,10 @@ User-agent: bingbot-chat/2.0
 User-agent: Bing ai 
 User-agent: Brightbot 1.0
 User-agent: Bytedance
+User-agent: ByteDance crawler
 User-agent: Bytespider
 User-agent: BardBot
+User-agent: CrawlGPT 
 User-agent: CatBoost
 User-agent: cohere-ai
 User-agent: cohere-training-data-crawler
@@ -1512,10 +1539,12 @@ User-agent: claude-web/1.0
 User-agent: ClaudeBot/1.0
 User-agent: Claude 3.7 Sonnet
 User-agent: Claude 3.5 Haiku 
+User-agent: Claude Opus
 User-agent: crewAI
 User-agent: Chinchilla
 User-agent: ChatGPT
 User-agent: ChatGPT-User
+User-agent: ChatGPT-User/1.0
 User-agent: CCBot
 User-agent: ccbot
 User-agent: CCBot/2.0
@@ -1531,6 +1560,7 @@ User-agent: Dalvik/2.1.0
 User-agent: DALL-E
 User-agent: DALL-E 2
 User-agent: DALL·E 3
+User-agent: DALL-E Mini
 User-agent: DeepAI
 User-agent: DeepL
 User-agent: DeepMind
@@ -1557,6 +1587,7 @@ User-agent: Mistral
 User-agent: FriendlyCrawler
 User-agent: FriendlyCrawler/1.0
 User-agent: FriendlyCrawler/Nutch-1.20-SNAPSHOT
+User-agent: Gato
 User-agent: GenAI
 User-agent: GTP
 User-agent: GTPBOT
@@ -1581,6 +1612,7 @@ User-agent: SearchGPT
 User-agent: GPT Scraper
 User-agent: Content Scraper GPT
 User-agent: Extended GPT Scraper
+User-agent: gpt-crawler
 User-agent: GPT Scraper
 User-agent: GPTZero
 User-agent: Grok
@@ -1723,7 +1755,9 @@ User-agent: Brave Leo
 User-agent: Brave Leo AI
 User-agent: Brightbot 1.0
 User-agent: Bytedance
+User-agent: ByteDance crawler
 User-agent: Bytespider
+User-agent: CrawlGPT 
 User-agent: CatBoost
 User-agent: CCBot
 User-agent: ccbot
@@ -1733,10 +1767,12 @@ User-agent: CC-Crawler/2.0
 User-agent: ChatGLM
 User-agent: ChatGPT
 User-agent: ChatGPT-User
+User-agent: ChatGPT-User/1.0
 User-agent: Chinchilla
 User-agent: Claude
 User-agent: Claude 3.5 Haiku
 User-agent: Claude 3.7 Sonnet
+User-agent: Claude Opus
 User-agent: ClaudeBot
 User-agent: ClaudeBot/1.0
 User-agent: claude-web/1.0
@@ -1768,6 +1804,7 @@ User-agent: crewAI
 User-agent: DALL-E
 User-agent: DALL-E 2
 User-agent: DALL·E 3
+User-agent: DALL-E Mini
 User-agent: Dalvik/2
 User-agent: Dalvik/2.1.0
 User-agent: DataForSeoBot
@@ -1797,6 +1834,7 @@ User-agent: FraudGPT
 User-agent: FriendlyCrawler
 User-agent: FriendlyCrawler/1.0
 User-agent: FriendlyCrawler/Nutch-1.20-SNAPSHOT
+User-agent: Gato
 User-agent: Gemini
 User-agent: Gemma
 User-agent: GenAI
@@ -1807,6 +1845,7 @@ User-agent: Google-CloudVertexBot
 User-agent: Google-Extended
 User-agent: Goose
 User-agent: GPT
+User-agent: gpt-crawler
 User-agent: GPT 4 Omni
 User-agent: GPT 4 Omni Mini
 User-agent: GPT Scraper
@@ -2005,7 +2044,6 @@ User-agent: OpenAI Crawler
 * Can also come from:  OAI-SearchBot|Mac OS X   (blocked in my .htacces1 with AI)
 
 # Pain in the Ass!! ##
-
 :
 250312:
 MSBot (Microsoft): Used by Microsoft for various AI and language model training purposes. 
@@ -2013,4 +2051,4 @@ It adheres to robots.txt directives and is designed to gather useful data while 
 
 .....................................................................
 .....................................................................
-## Updated: 250314
+## Updated: 250318
