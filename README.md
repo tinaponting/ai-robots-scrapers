@@ -11,7 +11,7 @@ AI News:  https://getcoai.com/news/
 * PLUGIN: stop Ai -very good:https://wordpress.org/plugins/ai-scraping-protector/
 
 # Updates:
-
+* Updated 250318, block ai.php updated with the Latest Ai bots.
 * Updated 2503318, Fork of blockaai crawlers, updated -Latest.
 * Updated 2503314, Fork of blockaai crawlers, updated -Latest.
 * Updated 250313, block ai.php updated with the Latest Ai bots.
