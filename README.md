@@ -9,6 +9,7 @@ AI News:  https://getcoai.com/news/
 
 * Perrishpress Ultimate list:  https://perishablepress.com/ultimate-ai-block-list/
 * PLUGIN: stop Ai -very good:https://wordpress.org/plugins/ai-scraping-protector/
+* AI Great list: https://github.com/sindresorhus/awesome-chatgpt
 
 # Updates:
 * Updated 250318, block ai.php updated with the Latest Ai bots.
