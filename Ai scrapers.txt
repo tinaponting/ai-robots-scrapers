@@ -951,6 +951,7 @@ https://www.deepseek.com
 https://github.com/deepseek-ai/DeepSeek-Coder
 DeepSeek chat: https://chat.deepseek.com/sign_in
 
+:
 ByteDance Skylark
 ByteDance AI chatbot
 https://www.bytedance.com
@@ -966,7 +967,15 @@ https://openrouter.ai
 * Marketing
 https://gpt360.io
 
-________________________
+
+##MANUS AI:
+
+Open Manus
+
+Manus AI + Ollama: Build & Scrape ANYTHING (First-Ever General AI Agent) = OpenManus
+https://pub.towardsai.net/manus-ai-ollama-build-scrape-anything-first-ever-general-ai-agent-openmanus-b5728ed5e2b8
+
+_______________________
 
 Yi-Large
 URL 01.AI
@@ -1010,8 +1019,6 @@ User-agent: Claude 3.5 Haiku
 Disallow: /
 
 #### claudebot Hell:
-
-
 
 <IfModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}"claudebot"[NC]
@@ -1248,9 +1255,9 @@ RewriteRule .* - [F]</ifModule>
 
 * ALT:
 <IfModule mod_rewrite.c>
-RewriteCond% {HTTP_USER_AGENT}(BOT|BOT |BOT |BOT |BOT)[NC]
-RewriteCond% {QUERY_STRING} (BOT|BOT|BOT |BOT |BOT)\:[NC]
-RewriteCond% {QUERY_STRING} (bot|bot) [NC]
+RewriteCond % {HTTP_USER_AGENT}(BOT|BOT |BOT |BOT |BOT)[NC]
+RewriteCond % {QUERY_STRING} (BOT|BOT|BOT |BOT |BOT)\:[NC]
+RewriteCond % {QUERY_STRING} (bot|bot) [NC]
 RewriteCond %{HTTP_USER_AGENT}!(bot|bot|bot|bot|bot|bot)[NC]
 RewriteRule .* - [F,L]</ifModule>
 
@@ -1268,18 +1275,18 @@ Brave Leo AI|bingbot-chat/2.0|Bing ai| Bytedance|Bytespider|BardBot|Brightbot 1.
 CatBoost|cohere-ai|cohere-training-data-crawler|Claude|ClaudeBot|Claude 3.7 Sonnet|claude-web/1.0|ClaudeBot/1.0|Claude 3.5 Haiku|Claude Opus|CrawlGPT|crewAI|Chinchilla|ChatGPT|ChatGPT-User|ChatGPT-User/1.0|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|Cotoyogi|Content Scraper GPT|
 dataprovider|Diffbot|DialoGPT|DepolarizingGPT v|Doubao AI|DuckAssistBot|Dalvik/2|Dalvik/2.1.0|DALL-E|DALL-E 2|DALL-E 3|DALL-E Mini|DeepAI|DeepL|DeepMind|DeepSeek|DeepSeek-R1|
 FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|Firecrawl|Flyriver|flyriverbot/1.1|meta-externalfetcher/1.1|Meta-ExternalAgent|Meta-ExternalFetcher|LLaMA|Llama 3.2|Meta AI|Meta Llama|meta-externalfetcher/1.1|Mistral|FraudGPT|FriendlyCrawler|FriendlyCrawler/1.0|FriendlyCrawler/Nutch-1.20-SNAPSHOT|
-Gato|GenAI|GTB|GTPBOT|GPTbot/0.1GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3| GPT-3.5|GPT-3.5 turbo|GPT-4|GPT-4.5|GPT-5|gpt-4-turbo|GPT-4o|GPT-4V|GPT-4o mini|GPT 4 Omni|GPT 4 Omni Mini|SearchGPT|GPT ScraperGPT|gpt-crawler|Zero|Grok|GrokAI|Gemini|Google Gemini|Google Bard AI|GoogleOther|Google-CloudVertexBot|Google-Extended|Extended GPT Scraper|
+Gato|GenAI|GTB|GTPBOT|GPTbot/0.1GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3| GPT-3.5|GPT-3.5 turbo|GPT-4|GPT-4.5|GPT-5|gpt-4-turbo|GPT-4o|GPT-4V|GPT-4o mini|GPT 4 Omni|GPT 4 Omni Mini|SearchGPT|GPT ScraperGPT|gpt-crawler|Zero|Grok|GrokAI|Goose|Gemini|Google Gemini|Google Bard AI|GoogleOther|Google-CloudVertexBot|Google-Extended|Extended GPT Scraper|
 Hugging Face|iaskspider|iaskspider/2.0|ICC-Crawler|ImagesiftBot|img2dataset|IntelliSeek|IntelliSeek.ai|ISSCyberRiskCrawler|
 Kangaroo|Kangaroo Bot|LeftWingGPT|magpie-crawler|Meltwater|Nicecrawler|MSBot| 
 Omgilibot|Omgili|Open AI| Openbot|OAI SearchBot|OAI-SearchBot/1.0|OpenAI o1|OpenAI o1-mini|OpenAI o3-mini|OpenAI Crawler|
 PanguBot|PaperLiBot|PaperLiBot/2.1|peer39_crawler|peer39_crawler/1.0|PerplexityBot|PetalBot|PiplBot|proximic|RightWingGPT|
 scrapy|Scrapy/2.0|Stability AI|ScraperGPT|ShadowGPT|SemrushBot-FT|SemrushBot-OCOB|ShadowGPT|Seekr|Sidetrade|StableDiffusionBot|
-thehive.ai|The Knowledge AI|thehive.a1|Timpibot|TurnitinBot|
+thehive.ai|The Knowledge|thehive.a1|Timpibot|TurnitinBot|
 Webzio|Webzio-Extended|wpbot|wpbot/1.1|wpbot/1.2|WebChatGPT|WormGPT|WormGPT V3.0|VelenPublicWebCrawler|WebChatGPT|WormGPT|
 xAI|XBot|x.AI|YouBot|YarGPT|yarchatgpt|ZeroGPT|ZeroCHAT
 
 
-.....................................
+......
 ## Added: GTB  - maybe s tops all gtb?
 GTB
 
@@ -1475,6 +1482,15 @@ URL :  https://manus.im/
 Gato
 URL: https://www.qblocks.cloud/blog/deepmind-gato-general-purpose-ai-agent
 
+# ALIBABA:
+Qwen/Qwen2.5-72B-Instruct
+Qwen2.5 72B
+
+# BAIDU:
+ERNIE 4.5
+ERNIE Bot
+.....................
+
 #  UltimateGPT
 https://support.zendesk.com/hc/en-us/articles/8357749315098-About-the-UltimateGPT-block-in-conversation-flows-for-advanced-AI-agents
 
@@ -1486,11 +1502,6 @@ URL: https://docs.oracle.com/en-us/iaas/releasenotes/services/generative-ai-agen
 
 Operator:  (open AI)
 URL: https://openai.com/index/introducing-operator/
-
-
-# BAIDU:
-ERNIE 4.5
-ERNIE Bot
 
 :::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................  
@@ -1623,6 +1634,7 @@ User-agent: Google Bard AI
 User-agent: GoogleOther
 User-agent: Google-CloudVertexBot
 User-agent: Google-Extended
+User-agent: Goose
 User-agent: Hugging Fac
 User-agent: iaskspider
 User-agent: iaskspider/2.0
@@ -1634,6 +1646,7 @@ User-agent: IntelliSeek.ai
 User-agent: ISSCyberRiskCrawler
 User-agent: Kangaroo
 User-agent: Kangaroo Bot
+User-agent: knowledge
 User-agent: LeftWingGPT
 User-agent: magpie-crawler
 User-agent: Meltwater
@@ -2034,11 +2047,6 @@ PhindBot
 * https://www.phind.com/
 
 
-# ALIBABA:
-Qwen/Qwen2.5-72B-Instruct
-Qwen2.5 72B
-
-
 250308:
 User-agent: OpenAI Crawler
 * Can also come from:  OAI-SearchBot|Mac OS X   (blocked in my .htacces1 with AI)
@@ -2046,9 +2054,17 @@ User-agent: OpenAI Crawler
 # Pain in the Ass!! ##
 :
 250312:
-MSBot (Microsoft): Used by Microsoft for various AI and language model training purposes. 
+MSBot 
+(Microsoft),Used by Microsoft for various AI and language model training purposes. 
 It adheres to robots.txt directives and is designed to gather useful data while respecting website owners’ preferences.
 
+250325;
+KNOCK OUT all ai: knowledge
+knowledge  
+
+Goose
+URL: https://block.github.io/goose/
+ 
 .....................................................................
 .....................................................................
-## Updated: 250318
+## Updated: 250023
