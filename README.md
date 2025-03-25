@@ -11,6 +11,8 @@ AI News:  https://getcoai.com/news/
 * PLUGIN: stop Ai -very good:https://wordpress.org/plugins/ai-scraping-protector/
 * AI Great list: https://github.com/sindresorhus/awesome-chatgpt
 
+* AI Snacks and news: EMAIL: humans@mail.galaxy.ai  - very good to catch news!
+
 # Updates:
 * Updated 250323, block ai.php updated with the Latest Ai bots.
 * Updated 250323, Fork of blockaai crawlers, updated -Latest.
@@ -51,8 +53,8 @@ Notes: Ai/robots.txt is on sinlge user
 
 READ MORE: * https://solveo.co/top-12-ai-agents-for-content-creation-in-2025/
 
- https://github.com/bytedance
+* https://github.com/bytedance
           
-https://www.scmp.com/tech/big-tech/article/3291201/chinese-start-zhipu-ai-raises-us412-million-new-funding-amid-crowded-market?module=perpetual_scroll_1_RM&pgtype=article
+* https://www.scmp.com/tech/big-tech/article/3291201/chinese-start-zhipu-ai-raises-us412-million-new-funding-amid-crowded-market?module=perpetual_scroll_1_RM&pgtype=article
 
-TDM Reservation Protocol (TDMRep)  -  https://www.w3.org/community/reports/tdmrep/CG-FINAL-tdmrep-20240202/
+* TDM Reservation Protocol (TDMRep)  -  https://www.w3.org/community/reports/tdmrep/CG-FINAL-tdmrep-20240202/
