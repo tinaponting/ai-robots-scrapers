@@ -54,7 +54,5 @@ Notes: Ai/robots.txt is on sinlge user
 READ MORE: * https://solveo.co/top-12-ai-agents-for-content-creation-in-2025/
 
 * https://github.com/bytedance
-          
-* https://www.scmp.com/tech/big-tech/article/3291201/chinese-start-zhipu-ai-raises-us412-million-new-funding-amid-crowded-market?module=perpetual_scroll_1_RM&pgtype=article
 
 * TDM Reservation Protocol (TDMRep)  -  https://www.w3.org/community/reports/tdmrep/CG-FINAL-tdmrep-20240202/
