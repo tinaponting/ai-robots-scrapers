@@ -14,6 +14,8 @@ AI News:  https://getcoai.com/news/
 * AI Snacks and news: EMAIL: humans@mail.galaxy.ai  - very good to catch news!
 
 # Updates:
+
+* Updated 250329, Updated, robots.txt + .htaccess, delated, google extended, interfers with crawling!
 * Updated 250323, block ai.php updated with the Latest Ai bots.
 * Updated 250323, Fork of blockaai crawlers, updated -Latest.
 * Updated 250318, block ai.php updated with the Latest Ai bots.
