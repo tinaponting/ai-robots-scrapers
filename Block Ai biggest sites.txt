@@ -1,0 +1,33 @@
+###BLOCK Biggest AI Sites.  Add to your firewall.
+
+*Seems like a blunt and very untargeted rule. Here are the urls of some of the largest AI website:
+
+.................................................................................................
+
+OpenAI**.com**
+
+Anthropic**.com**
+
+copilot.microsoft**.com**
+
+ai.azure**.com**
+URL: https://labs.azure.com/
+
+llama**.com**
+
+ai.meta**.com**
+
+gemini.google**.com**
+
+ai.gemma**.dev**
+URL: https://blog.google/technology/developers/gemma-3/
+
+mistral**.ai**
+
+perplexity**.ai**
+
+huggingface**.co**
+
+
+Lmsis**.org**
+URL: Lmsis**.org
