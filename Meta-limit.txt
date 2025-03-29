@@ -1,0 +1,128 @@
+### META: BLOCK AI In meta and Xtags:  ! ###
+...........................................................
+
+* No AI:
+<meta name="robots" content="noai">
+<meta name="robots" content="noai, nosummary">
+
+* To not allow AI to use any images on the page:
+
+<meta name="robots" content="noimageai">
+
+**To place both directives:
+
+<meta name="robots" content="noai, noimageai">
+
+###Alternative:
+<meta name="googlebot" content="noml">
+
+* And request that Microsoft does not include a page in their Bing, does not use the page for training, with:
+
+<meta name="bingbot" content="noml">
+
+* You might also request that OpenAI, for example, does not use the page for machine learning with:
+
+<meta name="gptbot" content="noml">
+
+## Footer:
+# Add text in footer, may help?:
+# from: https://postopen.org/content-protection-project/
+
+#### Add this text to your web site terms of service and any copyright statements related to your content:
+
+Any copying, including ephemeral copying, for the purpose of training an artificial intelligence (AI), large language model (LLM), 
+machine learning system or neural network is prohibited.
+
+......................................................
+
+##Prevents Bing's bot from using the content for AI-related purposes, such as training language models.
+Prevents Bing's bot from using the content for AI purposes.  Be careful, can sometimes prevent indexing! 
+
+        <meta name="bingbot" content="nocache">
+***
+
+# CCBOT
+<meta name="CCBot" content="nofollow">
+
+......................................................
+# LLM TRAINER:
+
+H# lML Element ( Robots Meta Tag)
+* fROM: https://www.searchenginejournal.com/new-rules-will-block-ai-training-bots/532348/
+The following are the proposed meta robots directives:
+
+<meta name=”robots” content=”DisallowAITraining”>
+
+## The following are the proposed * Robots.txt rules:
+DisallowAITraining – instructs the parser to not use the data for AI training language model.
+
+User-agent: AITraining
+Disallow: /
+
+
+<meta name="tdm-reservation" content="1">
+
+............................
+## ADD: X-Robots-Tag HTTP header:
+DeviantArt covers how to set the X-Robots-Tag header (which also has other uses to help control how search engines crawl your site) to express an opt-out.
+On Apache httpd (I know, I’m old school) it’s something like this:
+
+
+Header Set X-Robots-Tag "noai"
+
+* X tags:
+X-Robots-Tag: noai
+X-Robots-Tag: noimageai
+
+tdm-reservation: 1
+
+OR:
+
+Header set X-Robots-Tag "noai, noimageai"
+Header set tdm-reservation "1"
+--------------------
+
+## privacy opt out for servers ****
+This is the first site to include the new SPC meta tag and X-Robots-Tag header 
+for a privacy opt-out that works like Global Privacy Control but for servers. 
+Basically you have legally enforceable rights in your personal information, blogs have personal information, 
+but regular GPC only works from your browser (client) to company on the server. This goes the other way, and sends a legally enforceable* 
+*yes, I know, this has not yet been tested in court, but give it a minute, we’re just getting started hereprivacy signal from a personal blog on the server 
+to an AI scraper on the client side.
+
+So the new header on here is
+
+X-Robots-Tag: noai, noimageai, SPC
+
+:::::::::::::::::::::::::::::::::::::
+
+#IN .htaccess put: Then they only can get one visit/per IP! Works great, have it on my blogs:
+
+<IfModule mod_rewrite.c>
+MaxConnPerIP 1
+</IfModule>
+
+# Another way:
+MaxClients < number-of-connections> 
+
+## I use this on .htaccess 1 - my own:)
+
+<IfModule mod_rewrite.c>
+RewriteCond %{REQUEST_URI} !^/images/
+RewriteRule ^(.*)$ - [E=RATE_LIMIT:1]
+Header set Retry-After "77550" env=RATE_LIMIT</IfModule>
+<IfModule ratelimit_module>
+SetOutputFilter RATE_LIMIT
+SetEnv rate-limit 100
+SetEnv rate-initial-burst 200
+
+</IfModule>
+<IfModule mod_rewrite.c>
+RewriteCond %{REQUEST_URI} !^/Post/
+RewriteRule ^(.*)$ - [E=RATE_LIMIT:1]
+Header set Retry-After "5" env=RATE_LIMIT</ifModule>
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Updated: 250329
