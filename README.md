@@ -8,13 +8,12 @@ AI News:  https://getcoai.com/news/
           https://aimagazine.com/
 
 * Perrishpress Ultimate list:  https://perishablepress.com/ultimate-ai-block-list/
-* PLUGIN: stop Ai -very good:https://wordpress.org/plugins/ai-scraping-protector/
 * AI Great list: https://github.com/sindresorhus/awesome-chatgpt
 
-* AI Snacks and news: EMAIL: humans@mail.galaxy.ai  - very good to catch news!
 
 # Updates:
 
+* Remake of All in this site:)  Easy to find?
 * Updated 250329, Fork of blockaai crawlers, updated -Deltaed google extended, interfers with crawling! .
 * Updated 250329, Updated, robots.txt + .htaccess, delated, google extended, interfers with crawling!
 * Updated 250323, block ai.php updated with the Latest Ai bots.
