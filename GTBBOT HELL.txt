@@ -1,0 +1,49 @@
+#GTPBOT HELL:
+
+### Added 241210 Used by scrapers! NOTE: Capital letters:
+
+User-agent: GTPBOT
+Disallow: /
+
+###Alternative when Nothing helps:
+
+#GTPBOT
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_REFERER}^https://.*microsoft\.com [F]
+RewriteCond%{HTTP_REFERER}microsoft\.com [NC]
+RewriteCond%{REMOTE_HOST}^.*\.microsoft\.com [NC,OR] 
+RewriteCond%{REMOTE_HOST}^.*\.HTTP/1.1\.microsoft\.com [NC,OR]
+RewriteCond%{HTTP_REFERER}^https://.*www.openai\.com [F]
+RewriteCond%{HTTP_REFERER}^https://.*openai\.com [F]
+RewriteCond %{HTTP_USER_AGENT}OAI-SearchBot [NC]
+RewriteCond %{HTTP_USER_AGENT}OAI-SearchBot/1.0 [NC]
+RewriteCond %{HTTP_USER_AGENT}GTPBOT  [NC]
+RewriteCond %{HTTP_USER_AGENT}gptbot [NC]
+RewriteCond %{HTTP_USER_AGENT}GPTBot/1.2 [NC]
+RewriteCond%{REQUEST_URI}!robots\.txt [NC]
+RewriteCond%{REMOTE_HOST}^.*\Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)\ [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GPTBot/1.2; +https://openai.com/gptbot)\ [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot\ [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36; compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot\ [NC,OR]
+RewriteRule .* - [F]</IfModule> 
+
+
+#Alternative:
+
+<IfModule mod_rewrite.c>
+RewriteCond%{REMOTE_ADDR}^20\.171.206.0/24)$[NC,OR]
+RewriteCond%{REMOTE_ADDR}^20\.171.207.0/24)$[NC,OR]
+RewriteCond%{REMOTE_ADDR}^20\.125.66.80/28)$[NC,OR]
+RewriteCond%{REMOTE_ADDR}^4\.227.36.0/25)$[NC,OR]
+RewriteCond%{REMOTE_ADDR}^20\.42.10.176/28)$[NC,OR]
+RewriteCond%{REMOTE_ADDR}^51\.8.102.0/24)$[NC,OR]
+RewriteCond%{REMOTE_ADDR}^52\.230.152.0/24)$[NC,OR]
+RewriteCond%{REMOTE_ADDR}^52\.233.106.0/24)$[NC,OR]
+RewriteCond%{REMOTE_ADDR}^135\.234.64.0/24)$[NC,OR]
+RewriteCond%{REMOTE_ADDR}^172\.182.193.160/28)$[NC,OR]
+RewriteCond%{REMOTE_ADDR}^172\.203.190.128/28)$ [NC,OR]
+RewriteCond%{REMOTE_ADDR}^51\.8.102.54)$ [NC,OR]         
+RewriteCond%{REMOTE_ADDR}^51\.8.102.157)$[NC]
+RewriteRule .* - [F]</IfModule>   
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
