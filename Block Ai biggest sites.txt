@@ -11,7 +11,7 @@ Anthropic**.com**
 copilot.microsoft**.com**
 
 ai.azure**.com**
-URL: https://labs.azure.com/
+* URL: https://labs.azure.com/
 
 llama**.com**
 
@@ -20,7 +20,7 @@ ai.meta**.com**
 gemini.google**.com**
 
 ai.gemma**.dev**
-URL: https://blog.google/technology/developers/gemma-3/
+*URL: https://blog.google/technology/developers/gemma-3/
 
 mistral**.ai**
 
@@ -28,6 +28,16 @@ perplexity**.ai**
 
 huggingface**.co**
 
-
 Lmsis**.org**
-URL: Lmsis**.org
+* URL: Lmsis**.org
+
+
+ chat.openai.com
+ 
+*.chat.openai.com
+
+ai.google.com
+
+bard.google.com
+
+Mightygpt.com
