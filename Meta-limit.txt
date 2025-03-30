@@ -70,9 +70,14 @@ On Apache httpd (I know, I’m old school) it’s something like this:
 
 Header Set X-Robots-Tag "noai"
 
-* X tags:
+#  X tags:
 X-Robots-Tag: noai
+
 X-Robots-Tag: noimageai
+
+X-Robots-Tag: noml
+
+X-Robots-Tag: nofollow, noml
 
 tdm-reservation: 1
 
@@ -125,4 +130,4 @@ Header set Retry-After "5" env=RATE_LIMIT</ifModule>
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Updated: 250329
+Updated: 250330
