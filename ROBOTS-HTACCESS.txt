@@ -35,12 +35,8 @@ RewriteCond %{HTTP_USER_AGENT} ^.*(bot|bot|bot).*$ [NC]
 RewriteCond %{REQUEST_URI} !^/robots\.txt$
 RewriteRule .* - [R=503,L]
 
-# ALTERNATIVE: 404:
-RewriteCond %{HTTP_USER_AGENT} ^.*(bot|bot|bot).*$ [NC]
-RewriteCond %{REQUEST_URI}!^/robots\.txt - [NC]
-RewriteRule .* - [F,L]
-
-### ### ALT 4: way to block ai bots. Block via Request URL:
+..........................................
+###### ALT 4: way to block ai bots. Block via Request URL:
 
 <IfModule mod_alias.c>
 RedirectMatch 403 /bot/
@@ -50,7 +46,7 @@ OR:
 <IfModule mod_alias.c>
 RedirectMatch 403 /(bot|bot)/
 </IfModule>
-...............
+..........................................
 ### ### ALT 5:
 
 # Apache:
@@ -61,7 +57,7 @@ Require all denied
 </If>
 </IfModule>
 
-...................
+..........................................
 
 ### STRONG ALTERATIVE: Alternative with no welcome at all:
 
@@ -143,14 +139,14 @@ RRewriteRule !^/?robots\.txt$ - [F,L]
 # RAW List:  (use  one of above thats works for you, cut and paste!)
 
 Agent|Agent GPT|.ai|AI2 Bot|AISearchBot|Alexa|AlexaTM|AlphaAI|Amazon Bedrock|Amazon Comprehend|Amazon SageMaker|Amazon Silk|Amazon Textract|amazon-kendra|AWS Trainium|anthropic-ai|AnyPicker|Applebot-Extended|Aria browse Aria AI|Aria browser AI|AutoGPT|AndersPinkBot|AITraining|
-Brave Leo AI|bingbot-chat/2.0|Bing ai| Bytedance|Bytespider|BardBot|Brightbot 1.0|ByteDance crawler|
-CatBoost|cohere-ai|cohere-training-data-crawler|Claude|ClaudeBot|Claude 3.7 Sonnet|claude-web/1.0|ClaudeBot/1.0|Claude 3.5 Haiku|Claude Opus|CrawlGPT|crewAI|Chinchilla|ChatGPT|ChatGPT-User|ChatGPT-User/1.0|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|Cotoyogi|Content Scraper GPT|
+Brave Leo AI|bingbot-chat/2.0|Bing ai| Bytedance|Bytespider|BardBot|Brightbot 1.0|ByteDance crawler|Claude-User|Claude-SearchBot|
+CatBoost|cohere-ai|cohere-training-data-crawler|Claude|ClaudeBot|Claude 3.7 Sonnet|claude-web/1.0|ClaudeBot/1.0|Claude 3.5 Haiku|Claude Opus|CrawlGPT|crewAI|Chinchilla|chatUser|ChatGPT|ChatGPT-User|ChatGPT-User/1.0|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|Cotoyogi|Content Scraper GPT|
 dataprovider|Diffbot|DialoGPT|DepolarizingGPT v|Doubao AI|DuckAssistBot|DALL-E|DALL-E 2|DALL-E 3|DALL-E Mini|DeepAI|DeepL|DeepMind|DeepSeek|DeepSeek-R1|
 FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|Firecrawl|Flyriver|flyriverbot/1.1|meta-externalfetcher/1.1|Meta-ExternalAgent|Meta-ExternalFetcher|LLaMA|Llama 3.2|Meta AI|Meta Llama|meta-externalfetcher/1.1|Mistral|FraudGPT|FriendlyCrawler|FriendlyCrawler/1.0|FriendlyCrawler/Nutch-1.20-SNAPSHOT|
 Gato|GenAI|GTB|GTPBOT|GPTbot/0.1GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3| GPT-3.5|GPT-3.5 turbo|GPT-4|GPT-4.5|GPT-5|gpt-4-turbo|GPT-4o|GPT-4V|GPT-4o mini|GPT 4 Omni|GPT 4 Omni Mini|SearchGPT|GPT ScraperGPT|gpt-crawler|Zero|Grok|GrokAI|Goose|Gemini|Google Gemini|Google Bard AI|Google-CloudVertexBot|Extended GPT Scraper|
 Hugging Face|iaskspider|iaskspider/2.0|iAskBot|ICC-Crawler|ImagesiftBot|img2dataset|IntelliSeek|IntelliSeek.ai|ISSCyberRiskCrawler|
-Kangaroo|Kangaroo Bot|LeftWingGPT|magpie-crawler|Meltwater|Nicecrawler|MSBot| 
-Omgilibot|Omgili|Open AI| Openbot|OAI SearchBot|OAI-SearchBot/1.0|OpenAI o1|OpenAI o1-mini|OpenAI o3-mini|OpenAI Crawler|
+Kangaroo|Kangaroo Bot|LeftWingGPT|magpie-crawler|Meltwater|Nicecrawler|MSBot|Nova Act| 
+Omgilibot|Omgili|Open AI| Openbot|OAI SearchBot|OAI-SearchBot/1.0|OpenAI o1|OpenAI o1-mini|OpenAI o3-mini|OpenAI Crawler|Operator|OpenAI CUA|
 PanguBot|PaperLiBot|PaperLiBot/2.1|peer39_crawler|peer39_crawler/1.0|PerplexityBot|Perplexity-User/1.0|Perplexit-User|PerplexityUser|PetalBot|PiplBot|proximic|RightWingGPT|
 scrapy|Scrapy/2.0|Stability AI|ScraperGPT|ShadowGPT|SemrushBot-FT|SemrushBot-OCOB|ShadowGPT|Seekr|Sidetrade|StableDiffusionBot|
 thehive.ai|The Knowledge|thehive.a1|Timpibot|TurnitinBot|
@@ -164,6 +160,13 @@ GTB
 
 #Get rid of all shady sites,  ending with. ai
 .ai
+
+
+#  I USE /.htaccess2:
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
+RRewriteRule !^/?robots\.txt$ - [F,L]
+RewriteRule "^.*$" - [F,L]</IfModule>
 
 .....................................................................
 ---------------------------------------------------------------------
@@ -186,6 +189,7 @@ User-agent: Amazon Silk
 User-agent: Amazon Textract
 User-agent: amazon-kendra
 User-agent: AWS Trainium
+User-agent: Nova Act 
 User-agent: anthropic-ai
 User-agent: AnyPicker
 User-agent: Applebot-Extended
@@ -213,6 +217,9 @@ User-agent: ClaudeBot/1.0
 User-agent: Claude 3.7 Sonnet
 User-agent: Claude 3.5 Haiku 
 User-agent: Claude Opus
+User-agent: chatUser
+User-agent: Claude-User
+User-agent: Claude-SearchBot
 User-agent: crewAI
 User-agent: Chinchilla
 User-agent: ChatGPT
@@ -322,6 +329,8 @@ User-agent: OpenAIContentCrawler
 User-agent: OpenAI o1
 User-agent: OpenAI o1-mini
 User-agent: OpenAI o3-mini
+User-agent: OpenAI CUA
+User-agent: Operator
 User-agent: PanguBot
 User-agent: PaperLiBot
 User-agent: PaperLiBot/2.1
@@ -404,6 +413,7 @@ User-agent: Amazon Textract
 User-agent: AmazonBot
 User-agent: Amazon-Kendra
 User-agent: amazon-kendra
+User-agent: Nova Act 
 User-agent: Amelia
 User-agent: AndersPinkBot
 User-agent: Anthropic
@@ -421,6 +431,7 @@ User-agent: Automated Writer
 User-agent: AwarioRssBot
 User-agent: AwarioSmartBot
 User-agent: AWS Trainium
+User-agent: Nova Act 
 User-agent: BardBot
 User-agent: Bing ai
 User-agent: BingAI
@@ -443,6 +454,9 @@ User-agent: ChatGLM
 User-agent: ChatGPT
 User-agent: ChatGPT-User
 User-agent: ChatGPT-User/1.0
+User-agent: chatUser
+User-agent: Claude-User
+User-agent: Claude-SearchBot
 User-agent: Chinchilla
 User-agent: Claude
 User-agent: Claude 3.5 Haiku
@@ -598,8 +612,10 @@ User-agent: OpenAI o1
 User-agent: OpenAI o1-mini
 User-agent: OpenAI o3-mini
 User-agent: OpenAIContentCrawler
+User-agent: OpenAI CUA
 User-agent: OpenBot
 User-agent: Openbot
+User-agent: Operator
 User-agent: OpenText AI
 User-agent: Outwrite
 User-agent: Page Analyzer AI
@@ -687,5 +703,4 @@ User-agent: Zimm
 
 
 :::::::::::::::::::::::::::::::::::::::::::
-
-### Updated: 250331
+### Updated: 250402
