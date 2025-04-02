@@ -257,7 +257,7 @@ Disallow: /
 User-agent: GoogleOther-Video
 Disallow: /
 
-User-agent: Google-Extended 
+User-agent: Google-Extended    //Can inteear with google crawlers!! #
 Disallow: / 
 
 #Google:
@@ -466,6 +466,17 @@ Disallow: /
 User-agent: OpenAI GPT
 Disallow: /
 
+User-agent: Operator
+Disallow: /
+https://openai.com/index/introducing-operator
+
+
+User-agent: OpenAI CUA
+Disallow: /
+
+https://scrapybara.com/blog/cua
+https://openai.com/index/new-tools-for-building-agents/
+https://openai.com/index/computer-using-agent/
 
 OpenAI IP Ranges to Block:
 
@@ -579,6 +590,11 @@ Disallow: /
 User-agent: Amazon Comprehend
 Disallow: /
 
+User-agent: Nova Act 
+Disallow: /
+
+URL: https://labs.amazon.science/blog/nova-act
+
 ??
 URL: https://aws.amazon.com/personalize/?p=ft&c=ml&z=3
 Amazon Personalize
@@ -626,15 +642,12 @@ RewriteCond%{HTTP_USER_AGENT}"Amazon Textract"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"SemrushBot"[NC,OR]    #Semrush EN
 RewriteCond%{HTTP_USER_AGENT}"Amazon Kendra"[NC,OR]
 RewriteCond%{REMOTE_ADDR}!^3\.6.)$ [NC,OR]          #ClaudeBot AI 
-RewriteCond%{REMOTE_ADDR}!^3\.21.)$ [NC,OR]         #ClaudeBot AI 
+RewriteCond%{REMOTE_ADDR}!^3\.21.)$ [NC,OR]          
 RewriteCond%{REMOTE_ADDR}!^3\.90.)$ [NC,OR] 
-RewriteCond%{REMOTE_ADDR}!^3\.145.)$ [NC,OR]        #ClaudeBot AI  
+RewriteCond%{REMOTE_ADDR}!^3\.145.)$ [NC,OR]         
 RewriteCond%{REMOTE_ADDR}!^3\.148.)$ [NC,OR]  
 RewriteCond%{REMOTE_ADDR}!^3\.238.)$ [NC,OR]        #AI Hacker
 RewriteCond%{REMOTE_ADDR}!^13\.)$ [NC,OR]           #AI Image stealer India
-RewriteCond%{REMOTE_ADDR}!^18\.)$ [NC,OR]
-RewriteCond%{REMOTE_ADDR}!^34\.)$ [NC,OR]           #Scraping
-RewriteCond%{REMOTE_ADDR}!^34\.235.)$ [NC,OR]       #Scraping
 RewriteCond%{REMOTE_ADDR}!^47.128.)$ [NC,OR]        #Bytesspider
 RewriteCond%{HTTP_USER_AGENT}"Nutch"[NC]
 RewriteRule ^(.*)$ - [F,L]</IfModule>
@@ -693,7 +706,7 @@ User-agent: claude-web/1.0
 Disallow: /
 User-agent: ClaudeBot/1.0
 Disallow: /
-User-agent: ClaudeBot 3
+User-agent: ClaudeBot 3   
 Disallow: /
 User-agent: Claude 3.7 Sonnet
 Disallow: /
@@ -701,19 +714,35 @@ User-agent: Claude 3.5 Haiku
 Disallow: /
 User-agent: Claude 3 Opus
 Disallow: /
+User-agent: Claude-User
+Disallow: /
+
+User-agent: Claude-SearchBot
+Disallow: /
+
+URL: https://support.anthropic.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler
+
 
 #### claudebot Hell:
 
 <IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}"anthropic-ai"[NC]
+RewriteCond%{HTTP_USER_AGENT}"Claude 3.7 Sonnet"[NC]
+RewriteCond%{HTTP_USER_AGENT}"Claude 3.5 Haiku"[NC] 
+RewriteCond%{HTTP_USER_AGENT}"Claude 3 Opus"[NC]
+RewriteCond%{HTTP_USER_AGENT}"Claude-User"[NC]
+RewriteCond%{HTTP_USER_AGENT}"Claude-SearchBot"[NC]
 RewriteCond%{HTTP_USER_AGENT}"claudebot"[NC]
 RewriteCond%{HTTP_USER_AGENT}"claudeBot"[NC]
 RewriteCond%{HTTP_USER_AGENT}"anthropic-ai"[NC]
 RewriteCond%{HTTP_USER_AGENT}"Claude bot"[NC] 
 RewriteCond%{HTTP_USER_AGENT}"ClaudeBot/1.0"[NC]
 RewriteCond%{HTTP_USER_AGENT}"Claude 2.0"[NC]
-RewriteCond%{HTTP_USER_AGENT}"Claude 2.1"[NC] 
+RewriteCond%{HTTP_USER_AGENT}"Claude 2.1"[NC]
+RewriteCond%{HTTP_USER_AGENT}"ClaudeBot 3"[NC] 
 RewriteCond%{HTTP_USER_AGENT}"ClaudeBot"[NC]
 RewriteCond%{HTTP_USER_AGENT}"Claude-Web"[NC]
+RewriteCond%{HTTP_USER_AGENT}"claude-web/1.0
 RewriteCond%{HTTP_USER_AGENT}"Claude-Web/1.0"[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*ClaudeBot.*$
 RewriteCond%{REQUEST_URI}!robots\.txt  - [F,L]
@@ -1306,17 +1335,16 @@ User-agent: knowledge
 			 
 * KNOCKS OUT all ai Chat:
 
-User-agent: Chat 
-            Disallow: /  
+User-agent: chatUser 
+            Disallow: /			
 			
 * KNOCKS OUT  Agent
-            Disallow: /  
+              Disallow: /  
 	
 	
 # Open Web Search/ LLM - GenAI-targeted opt ou
 User-agent: GenAI
 Disallow: /
-
 
 * KNOCKS OUT ALL ai sites: 
 User-agent: .ai
@@ -1324,13 +1352,4 @@ User-agent: .AI
 
 .....................................................................
 ---------------------------------------------------------------------
-
-
-
-
-
-
- 
-
-
-
+# UPDATED:  250402
