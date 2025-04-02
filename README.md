@@ -12,6 +12,8 @@ And ways to block ai scrapers of your content.)
   
 * AI Great list: https://github.com/sindresorhus/awesome-chatgpt
 
+* IF YOU WANT to change something: use: Notepad ++ -to your taste:)
+
 
 # Updates:
 
