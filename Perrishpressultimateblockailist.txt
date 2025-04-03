@@ -217,5 +217,5 @@ RewriteRule (.*) - [F,L]
 
 More read:  wild  cards,
 https://perishablepress.com/blacklist/ai-bots-wild-card-blocked.txt
-
+LIST URL:  https://perishablepress.com/ultimate-ai-block-list/
 #updated: 250403
