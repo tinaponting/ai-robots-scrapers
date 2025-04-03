@@ -199,7 +199,7 @@ Disallow: /
 appache htaccess:
 
 <IfModule mod_rewrite.c>
-	RewriteEngine On
+RewriteEngine On
 RewriteCond %{HTTP_USER_AGENT} (\.ai\ |Agentic|AI\ Article\ Writer|AI\ Content\ Detector|AI\ Dungeon|AI\ Search\ Engine|AI\ SEO\ Crawler|AI\ Writer|AI21\ Labs|AI2Bot|AIBot|AIMatrix|AISearchBot|AI\ Training|AITraining|Alexa|Alpha\ AI|AlphaAI|Amazon\ Bedrock|Amazon-Kendra) [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} (Amazon\ Lex|Amazon\ Comprehend|Amazon\ Sagemaker|Amazon\ Silk|Amazon\ Textract|AmazonBot|Amelia|AndersPinkBot|Anthropic|AnyPicker|Anyword|Applebot|Aria\ Browse|Articoolo|Automated\ Writer|AwarioRssBot|AwarioSmartBot|BardBot|BingAI|Bingbot-chat) [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} (Brave\ Leo|ByteDance|Bytespider|CatBoost|CC-Crawler|CCBot|ChatGLM|Chinchilla|Claude|ClearScope|Cohere|Common\ Crawl|CommonCrawl|Content\ Harmony|Content\ King|Content\ Optimizer|Content\ Samurai|ContentAtScale|ContentBot|Contentedge) [NC,OR]
@@ -216,5 +216,6 @@ RewriteRule (.*) - [F,L]
 
 
 More read:  wild  cards,
-
 https://perishablepress.com/blacklist/ai-bots-wild-card-blocked.txt
+
+#updated: 250403
