@@ -5,8 +5,10 @@ And ways to block ai scrapers of your content.)
 * TDM - -my content - Do not usse my articles
 
 * AI. TXT GENERATOR: https://tylerhalltech.com/ai-txt-generator/
+
+ 
 * AI News:  https://getcoai.com/news/
-          https://aimagazine.com/
+            https://aimagazine.com/
 
 * Perrishpress Ultimate list:  https://perishablepress.com/ultimate-ai-block-list/
   
