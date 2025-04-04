@@ -60,6 +60,7 @@ TinEye
 TinEye-bot
 TinEye-bot-live/1.31
 TestNutchBot/0.1)/Nutch-1.21-SNAPSHOT
+TikTokSpider
 woorank
 WPScan
 WebImageCollector 
@@ -86,15 +87,18 @@ Java-http-client|libwww 6.05|libwww-perl-6.77|
 MJ12bot|Nikto|Ninja|Nmap Nuclei|Nutch|Nicecrawler/1.1|
 OnCrawl|OpenVAS| 
 Python|python-http|python-requests|Python-urllib|python aiohttp|python-httpx|Prometheus|Rogerbot| 
-SiteimproveBot-Crawler|SEOkicks|serpstatbot|Screaming Frog SEO Spider|SemrushBot| SemrushBot-BA|SemrushBot-SA|SemrushBot-SI|SemrushBot-SWA|SemrushBot-CT|SemrushBot-BM|SiteAuditBot|SplitSignalBot|SeoSiteCheckup|SiteCheckerBotCrawler|seobility|
-TinEye| TinEye-bot|TinEye-bot-live/1.31|TestNutchBot/0.1)/Nutch-1.21|
-woorank|WPScan|WebImageCollector|libwww-perl|Wge|wget| Web Image Collector| 
+SiteimproveBot-Crawler|SEOkicks|serpstatbot|Screaming Frog SEO Spider|SemrushBot| SemrushBot-BA|SemrushBot-SA|
+SemrushBot-SI|SemrushBot-SWA|SemrushBot-CT|SemrushBot-BM|SiteAuditBot|SplitSignalBot|SeoSiteCheckup|SiteCheckerBotCrawler|seobility|
+TinEye| TinEye-bot|TinEye-bot-live/1.31|TestNutchBot/0.1)/Nutch-1.21|TikTokSpider|
+woorank|WPScan|WebImageCollector|libwww-perl|Wge|wget|Web Image Collector| 
 Xenu|Zeus|Zgrab| YaK|ZmEu
 
 *# Use of of my scripts - in Ai scrapers, if you not want theem pooking around!   ###'
 
 
 :::::::::::::::::::::::::::::::::
+250404:
 
-Updated and checked every Useragent!  2502020  (working useragent)
-Check: Sinlge user if you want a roboots.txt file.
+# TikTokSpider
+https://github.com/meetmr/TiktokSpider    //BOGUS Spider!!!!
+
