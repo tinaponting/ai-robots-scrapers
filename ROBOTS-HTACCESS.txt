@@ -138,19 +138,19 @@ RRewriteRule !^/?robots\.txt$ - [F,L]
 
 # RAW List:  (use  one of above thats works for you, cut and paste!)
 
-Agent|Agent GPT|.ai|AI2 Bot|AISearchBot|Alexa|AlexaTM|AlphaAI|Amazon Bedrock|Amazon Comprehend|Amazon SageMaker|Amazon Silk|Amazon Textract|amazon-kendra|AWS Trainium|anthropic-ai|AnyPicker|Applebot-Extended|Aria browse Aria AI|Aria browser AI|AutoGPT|AndersPinkBot|AITraining|
+Agent|Agent GPT|.ai|AI agents /|AI2 Bot|AISearchBot|Alexa|AlexaTM|AlphaAI|Amazon Bedrock|Amazon Comprehend|Amazon SageMaker|Amazon Silk|Amazon Textract|amazon-kendra|AWS Trainium|anthropic-ai|AnyPicker|Applebot-Extended|Aria browse Aria AI|Aria browser AI|AutoGPT|AndersPinkBot|AITraining|
 Brave Leo AI|bingbot-chat/2.0|Bing ai| Bytedance|Bytespider|BardBot|Brightbot 1.0|ByteDance crawler|Claude-User|Claude-SearchBot|
 CatBoost|cohere-ai|cohere-training-data-crawler|Claude|ClaudeBot|Claude 3.7 Sonnet|claude-web/1.0|ClaudeBot/1.0|Claude 3.5 Haiku|Claude Opus|CrawlGPT|crewAI|Chinchilla|chatUser|ChatGPT|ChatGPT-User|ChatGPT-User/1.0|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|Cotoyogi|Content Scraper GPT|
 dataprovider|Diffbot|DialoGPT|DepolarizingGPT v|Doubao AI|DuckAssistBot|DALL-E|DALL-E 2|DALL-E 3|DALL-E Mini|DeepAI|DeepL|DeepMind|DeepSeek|DeepSeek-R1|
-FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|Firecrawl|Flyriver|flyriverbot/1.1|meta-externalfetcher/1.1|Meta-ExternalAgent|Meta-ExternalFetcher|LLaMA|Llama 3.2|Meta AI|Meta Llama|meta-externalfetcher/1.1|Mistral|FraudGPT|FriendlyCrawler|FriendlyCrawler/1.0|FriendlyCrawler/Nutch-1.20-SNAPSHOT|
-Gato|GenAI|GTB|GTPBOT|GPTbot/0.1GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3| GPT-3.5|GPT-3.5 turbo|GPT-4|GPT-4.5|GPT-5|gpt-4-turbo|GPT-4o|GPT-4V|GPT-4o mini|GPT 4 Omni|GPT 4 Omni Mini|SearchGPT|GPT ScraperGPT|gpt-crawler|Zero|Grok|GrokAI|Goose|Gemini|Google Gemini|Google Bard AI|Google-CloudVertexBot|Extended GPT Scraper|
+FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|Firecrawl|Flyriver|flyriverbot/1.1|meta-externalfetcher/1.1|Meta-ExternalAgent|Meta-ExternalFetcher|LLaMA|Llama 3.2|Llama 4|Meta AI|Meta Llama|meta-externalfetcher/1.1|Mistral|FraudGPT|FriendlyCrawler|FriendlyCrawler/1.0|FriendlyCrawler/Nutch-1.20-SNAPSHOT|
+Gato|GenAI|GTB|GTPBOT|GPT /|GPT-2|GPT-3| GPT-3.5|GPT-3.5 turbo|GPT-4|GPT-4.5|GPT-5|gpt-4-turbo|GPT-4o|GPT-4V|GPT-4o mini|GPT 4 Omni|GPT 4 Omni Mini|SearchGPT|GPT ScraperGPT|gpt-crawler|Zero|Grok|GrokAI|Goose|Gemini|Google Gemini|Google Bard AI|Google-CloudVertexBot|Extended GPT Scraper|
 Hugging Face|iaskspider|iaskspider/2.0|iAskBot|ICC-Crawler|ImagesiftBot|img2dataset|IntelliSeek|IntelliSeek.ai|ISSCyberRiskCrawler|
 Kangaroo|Kangaroo Bot|LeftWingGPT|magpie-crawler|Meltwater|Nicecrawler|MSBot|Nova Act| 
 Omgilibot|Omgili|Open AI| Openbot|OAI SearchBot|OAI-SearchBot/1.0|OpenAI o1|OpenAI o1-mini|OpenAI o3-mini|OpenAI Crawler|Operator|OpenAI CUA|
 PanguBot|PaperLiBot|PaperLiBot/2.1|peer39_crawler|peer39_crawler/1.0|PerplexityBot|Perplexity-User/1.0|Perplexit-User|PerplexityUser|PetalBot|PiplBot|proximic|RightWingGPT|
 scrapy|Scrapy/2.0|Stability AI|ScraperGPT|ShadowGPT|SemrushBot-FT|SemrushBot-OCOB|ShadowGPT|Seekr|Sidetrade|StableDiffusionBot|
 thehive.ai|The Knowledge|thehive.a1|Timpibot|TurnitinBot|
-Webzio|Webzio-Extended|wpbot|wpbot/1.1|wpbot/1.2|WebChatGPT|WormGPT|WormGPT V3.0|VelenPublicWebCrawler|WebChatGPT|WormGPT|
+Webzio|Webzio-Extended|WebText /|wpbot|wpbot/1.1|wpbot/1.2|WebChatGPT|WormGPT|WormGPT V3.0|VelenPublicWebCrawler|WebChatGPT|WormGPT|
 xAI|XBot|x.AI|YouBot|YarGPT|yarchatgpt|ZeroGPT|ZeroCHAT
 
 
@@ -176,6 +176,8 @@ RewriteRule "^.*$" - [F,L]</IfModule>
 SLIM: #Ai - scrapers -Robots. txt:  
 
 User-agent: * 
+User-agent: .ai
+User-agent: AI agents /
 User-agent: Agent GPT
 User-agent: AI2 Bot
 User-agent: AISearchBot
@@ -258,6 +260,7 @@ User-agent: meta-externalagent
 User-agent: Meta-ExternalFetcher
 User-agent: LLaMA
 User-agent: Llama 3.2
+User-agent: Llama 4
 User-agent: Meta AI
 User-agent: Meta Llama
 User-agent: meta-externalfetcher/1.1
@@ -269,9 +272,7 @@ User-agent: Gato
 User-agent: GenAI
 User-agent: GTP
 User-agent: GTPBOT
-User-Agent: GPTbot/0.1
-User-Agent: GPTBot/1.0
-User-Agent: GPTBot/1.2
+User-agent: GPTBot /
 User-agent: GPT-1
 User-agent: GPT-2
 User-agent: GPT-3 
@@ -359,6 +360,7 @@ User-Agent: thehive.a1
 User-agent: Timpibot
 User-agent: TurnitinBot
 User-agent: Webzio
+User-agent: WebText /
 User-agent: wpbot
 User-agent: wpbot/1.1
 User-agent: wpbot/1.2
@@ -384,6 +386,7 @@ Disallow: /
 
 User-agent: * 
 User-agent: .ai
+User-agent: AI agents /
 User-agent: Agent GPT
 User-agent: Agentic
 User-agent: AI Article Writer
@@ -392,7 +395,7 @@ User-agent: AI Dungeon
 User-agent: AI Search Engine
 User-agent: AI SEO Crawler
 User-agent: AI Training
-User-agent: AITraining
+User-agent: AITraining /
 User-agent: AI Writer
 User-agent: AI2 Bot
 User-agent: AI2Bot
@@ -534,11 +537,10 @@ User-agent: gpt-crawler
 User-agent: GPT 4 Omni
 User-agent: GPT 4 Omni Mini
 User-agent: GPT Scraper
-User-Agent: GPTbot/0.1
-User-Agent: GPTBot/1.0
-User-Agent: GPTBot/1.2
 User-agent: GPTZero
 User-agent: GPT-1
+User-agent: GPTBot
+User-agent: GPTBot /
 User-agent: GPT-2
 User-agent: GPT-3
 User-agent: GPT-3.5
@@ -580,6 +582,7 @@ User-agent: KomoBot
 User-agent: LeftWingGPT
 User-agent: LLaMA
 User-agent: Llama 3.2
+User-agent: Llama 4
 User-agent: magpie-crawler
 User-agent: MarketMuse
 User-agent: Meltwater
@@ -674,6 +677,7 @@ User-agent: Vidnami AI
 User-agent: WebChatGPT
 User-agent: Webzio
 User-agent: Webzio-Extended
+User-agent: WebText /
 User-agent: Whisper
 User-agent: WordAI
 User-agent: Wordtune
@@ -703,4 +707,24 @@ User-agent: Zimm
 
 
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 250402
+NEW: 250408:
+	  
+	  *
+	  User Agent changed:
+	  User-agent: AITraining /
+	  
+	  *
+	  Meta:
+	  Llama 4
+	  
+	  *
+	 AI agents /
+	 URL: https://www.analyticsvidhya.com/blog/2025/03/ai-agents-terms/
+	 
+	 *
+	 
+	 WebText /       #openAI
+	 URL: https://paperswithcode.com/dataset/webtext
+	 
+:::::::::::::::::::::::::::::::::::::::::::
+### Updated: 250408	 
