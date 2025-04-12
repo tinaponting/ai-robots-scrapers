@@ -56,7 +56,8 @@ https://www.lunascape.org   AI: ??
 https://www.waterfox.net    AI:  Heliopas AI
 https://duckduckgo.com      AI: AI Chat 
 https://ghostbrowser.com    AI: ?
-Lightpanda:https://github.com/lightpanda-io/browser URL: https://lightpanda.io
+Lightpanda: https://github.com/lightpanda-io/browser URL: https://lightpanda.io
+AI LIST: https://aiagentslist.com/
 
 # Keep an eye on!:
 * User-agent: Kagibot https://kagi.com/     Only works on:Mac OS
@@ -1330,15 +1331,15 @@ PhindBot
 ---------------------------------------------------------------------
 ##  KNOCKS OUT all ai: knowledge
 
-User-agent: knowledge
+User-agent: knowledge /
             Disallow: /  
 			 
 * KNOCKS OUT all ai Chat:
 
-User-agent: chatUser 
+User-agent: chatUser / 
             Disallow: /			
 			
-* KNOCKS OUT  Agent
+* KNOCKS OUT  AI agents /
               Disallow: /  
 	
 	
@@ -1348,8 +1349,105 @@ Disallow: /
 
 * KNOCKS OUT ALL ai sites: 
 User-agent: .ai
-User-agent: .AI
+User-agent: AI /
 
 .....................................................................
 ---------------------------------------------------------------------
-# UPDATED:  250402
+.....................................................................
+# UPDATED:  250412:  ##
+
+https://imgproxy.net/
+
+User-agent: imgproxy /
+
+Txt: streamline image management and optimize website performance
+NOTE: Can come from amany domains
+
+
+BLOCK AI: -  BBQ:   https://plugin-planet.com/bbq-pro/   Great plugin with lots custom rules:)
+ 
+https://roboflow.com/
+https://labelbox.com/
+https://www.cvat.ai/   ///blocked by .ai
+
+
+# Datasets:  ? affecting sites.
+https://www.kaggle.com/
+https://www.kaggle.com/models
+
+....................................
+
+User-agent: Slack-ImgProxy
+Disallow: /
+
+URL: https://api.slack.com/robots
+
+....................................
+
+URL: https://spider.cloud/
+User Agent: spider
+
+....................................
+AI PROXY:
+URL: https://www.braintrust.dev/docs/guides/proxy
+AI proxy
+
+https://docs.konghq.com/hub/kong-inc/ai-proxy/
+AI proxy
+
+....................................
+## BLOCK AI (Scraping) Proxies:
+
+<IfModule mod_alias.c>
+RedirectMatch 403 AI proxydeny
+RedirectMatch 403 API Proxydeny
+RedirectMatch 403 HTTP Proxiesdeny
+Redirectmatch 403 proxydenydeny
+Redirectmatch 403 google-proxydeny
+Redirectmatch 403 forward proxydeny
+Redirectmatch 403 Server proxiesdeny
+Redirectmatch 403 residential proxiesdeny
+Redirectmatch 403 reverse proxydeny
+Redirectmatch 403 proxy requestsdeny
+Redirectmatch 403 IPv4 Proxiesdeny
+Redirectmatch 403 IPv6 Proxiesdeny
+Redirectmatch 403 Mobile Proxiesdeny
+Redirectmatch 403 Virgin proxiesdeny
+Redirectmatch 403 Proxy Serversdeny 
+Redirectmatch 403 sproxiesdeny
+Redirectmatch 403 Static ISP Proxiesdeny
+Redirectmatch 403 ISP Proxiesdeny
+RedirectMatch 403 check\_proxydeny
+</IfModule>
+
+OR: <IfModule mod_php8.c>  or if:  <IfModule mod_php7.c>  
+Add: ProxyRequests Off
+</IfModule>
+
+Proxi Lists:
+* https://spys.one/en/anonymous-proxy-list/
+* https://spys.one/en/
+* https://proxyscrape.com/free-proxy-list
+
+RAW:
+AI proxy
+API Proxy
+HTTP Proxies
+proxydeny
+google-proxy
+forward proxy
+Server proxies
+residential proxies
+reverse proxy
+proxy request
+IPv4 Proxies
+IPv6 Proxies
+Mobile Proxies
+Virgin proxies
+Proxy Servers 
+sproxiesd
+Static ISP Proxies
+ISP Proxies
+proxy
+
+....................................
