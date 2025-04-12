@@ -139,7 +139,7 @@ RRewriteRule !^/?robots\.txt$ - [F,L]
 # RAW List:  (use  one of above thats works for you, cut and paste!)
 
 Agent|Agent GPT|.ai|AI agents /|AI2 Bot|AISearchBot|Alexa|AlexaTM|AlphaAI|Amazon Bedrock|Amazon Comprehend|Amazon SageMaker|Amazon Silk|Amazon Textract|amazon-kendra|AWS Trainium|anthropic-ai|AnyPicker|Applebot-Extended|Aria browse Aria AI|Aria browser AI|AutoGPT|AndersPinkBot|AITraining|
-Brave Leo AI|bingbot-chat/2.0|Bing ai| Bytedance|Bytespider|BardBot|Brightbot 1.0|ByteDance crawler|Claude-User|Claude-SearchBot|
+Brave Leo AI|bingbot-chat/2.0|Bing ai| Bytedance|Bytespider|BardBot|Brightbot 1.0|ByteDance crawler| Claude-User|Claude-SearchBot|
 CatBoost|cohere-ai|cohere-training-data-crawler|Claude|ClaudeBot|Claude 3.7 Sonnet|claude-web/1.0|ClaudeBot/1.0|Claude 3.5 Haiku|Claude Opus|CrawlGPT|crewAI|Chinchilla|chatUser|ChatGPT|ChatGPT-User|ChatGPT-User/1.0|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|Cotoyogi|Content Scraper GPT|
 dataprovider|Diffbot|DialoGPT|DepolarizingGPT v|Doubao AI|DuckAssistBot|DALL-E|DALL-E 2|DALL-E 3|DALL-E Mini|DeepAI|DeepL|DeepMind|DeepSeek|DeepSeek-R1|
 FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|Firecrawl|Flyriver|flyriverbot/1.1|meta-externalfetcher/1.1|Meta-ExternalAgent|Meta-ExternalFetcher|LLaMA|Llama 3.2|Llama 4|Meta AI|Meta Llama|meta-externalfetcher/1.1|Mistral|FraudGPT|FriendlyCrawler|FriendlyCrawler/1.0|FriendlyCrawler/Nutch-1.20-SNAPSHOT|
@@ -177,6 +177,7 @@ SLIM: #Ai - scrapers -Robots. txt:
 
 User-agent: * 
 User-agent: .ai
+User-agent: AI /
 User-agent: AI agents /
 User-agent: Agent GPT
 User-agent: AI2 Bot
@@ -219,7 +220,7 @@ User-agent: ClaudeBot/1.0
 User-agent: Claude 3.7 Sonnet
 User-agent: Claude 3.5 Haiku 
 User-agent: Claude Opus
-User-agent: chatUser
+User-agent: chatUser /
 User-agent: Claude-User
 User-agent: Claude-SearchBot
 User-agent: crewAI
@@ -308,12 +309,13 @@ User-agent: iAskBot
 User-agent: ICC-Crawler
 User-agent: ImagesiftBot
 User-agent: img2dataset
+User-agent: imgproxy /
 User-agent: IntelliSeek
 User-agent: IntelliSeek.ai
 User-agent: ISSCyberRiskCrawler
 User-agent: Kangaroo
 User-agent: Kangaroo Bot
-User-agent: knowledge
+User-agent: knowledge /
 User-agent: LeftWingGPT
 User-agent: magpie-crawler
 User-agent: Meltwater
@@ -354,8 +356,8 @@ User-agent: SemrushBot-OCOB
 User-agent: Seekr
 User-agent: Sidetrade
 User-agent: StableDiffusionBot
+User-agent: Slack-ImgProxy
 User-Agent: thehive.ai
-User-agent: The Knowledge AI
 User-Agent: thehive.a1
 User-agent: Timpibot
 User-agent: TurnitinBot
@@ -381,11 +383,13 @@ Disallow: /
 
 .............................
 .............................
+-----------------------------
 
-## Ultimate Ai + scrapers not wanted List:
+## Ultimate Ai + scrapers not wanted List: Based on: perrishpress AI LIst:
 
 User-agent: * 
 User-agent: .ai
+User-agent: AI /
 User-agent: AI agents /
 User-agent: Agent GPT
 User-agent: Agentic
@@ -567,6 +571,7 @@ User-agent: iAskBot
 User-agent: ICC-Crawler
 User-agent: ImagesiftBot
 User-agent: img2dataset
+User-agent: imgproxy /
 User-agent: Inferkit
 User-agent: INK Editor
 User-agent: INKforall
@@ -578,6 +583,7 @@ User-agent: Kafkai
 User-agent: Kangaroo
 User-agent: Kangaroo Bot
 User-agent: Keyword Density AI
+User-agent: Knowledge /
 User-agent: KomoBot
 User-agent: LeftWingGPT
 User-agent: LLaMA
@@ -664,6 +670,7 @@ User-agent: Spinbot
 User-agent: Stability
 User-agent: Stability AI
 User-agent: StableDiffusionBot
+User-agent: Slack-ImgProxy
 User-agent: Sudowrite
 User-agent: Surfer AI
 User-agent: Text Blaze
@@ -709,22 +716,39 @@ User-agent: Zimm
 :::::::::::::::::::::::::::::::::::::::::::
 NEW: 250408:
 	  
-	  *
-	  User Agent changed:
-	  User-agent: AITraining /
+*
+User Agent changed:
+User-agent: AITraining /
 	  
-	  *
-	  Meta:
-	  Llama 4
+*
+Meta:
+Llama 4
 	  
-	  *
-	 AI agents /
-	 URL: https://www.analyticsvidhya.com/blog/2025/03/ai-agents-terms/
+*
+AI agents /
+URL: https://www.analyticsvidhya.com/blog/2025/03/ai-agents-terms/
 	 
-	 *
-	 
-	 WebText /       #openAI
-	 URL: https://paperswithcode.com/dataset/webtext
+* 
+WebText /       #openAI
+URL: https://paperswithcode.com/dataset/webtext
+
+...........................
+Updated: 250412: 
+
+
+https://imgproxy.net/
+
+User-agent: imgproxy /
+
+Txt: streamline image management and optimize website performance
+NOTE: Can come from amany domains
+
+....................................
+
+User-agent: Slack-ImgProxy
+Disallow: /
+
+URL: https://api.slack.com/robots
 	 
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 250408	 
+### Updated: 250412 
