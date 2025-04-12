@@ -19,6 +19,7 @@ And ways to block ai scrapers of your content.)
 
 # Updates:
 
+* Updated: 250412, block ai.php updated with the Latest Ai bots.
 * Updated: 250412, Fork of blockaai crawlers, updated with the Latests AI bots.
 * Updated: 250408 Robots.txt/htaccess with Latest AI to block/ fork of -updated!
 * Updated: 250402 Robots.txt/htaccess with newest AI to block!
