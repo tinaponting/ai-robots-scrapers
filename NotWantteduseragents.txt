@@ -50,7 +50,8 @@ SemrushBot-SA
 SemrushBot-SI 
 SemrushBot-SWA
 SemrushBot-CT
-SemrushBot-BM  
+SemrushBot-BM 
+SemrushBot/7~bl 
 SiteAuditBot      
 SplitSignalBot   
 SeoSiteCheckup 
@@ -87,7 +88,7 @@ Java-http-client|libwww 6.05|libwww-perl-6.77|
 MJ12bot|Nikto|Ninja|Nmap Nuclei|Nutch|Nicecrawler/1.1|
 OnCrawl|OpenVAS| 
 Python|python-http|python-requests|Python-urllib|python aiohttp|python-httpx|Prometheus|Rogerbot| 
-SiteimproveBot-Crawler|SEOkicks|serpstatbot|Screaming Frog SEO Spider|SemrushBot| SemrushBot-BA|SemrushBot-SA|
+SiteimproveBot-Crawler|SEOkicks|serpstatbot|Screaming Frog SEO Spider|SemrushBot| SemrushBot-BA|SemrushBot-SA|SemrushBot/7~bl| 
 SemrushBot-SI|SemrushBot-SWA|SemrushBot-CT|SemrushBot-BM|SiteAuditBot|SplitSignalBot|SeoSiteCheckup|SiteCheckerBotCrawler|seobility|
 TinEye| TinEye-bot|TinEye-bot-live/1.31|TestNutchBot/0.1)/Nutch-1.21|TikTokSpider|
 woorank|WPScan|WebImageCollector|libwww-perl|Wge|wget|Web Image Collector| 
@@ -102,3 +103,42 @@ Xenu|Zeus|Zgrab| YaK|ZmEu
 # TikTokSpider
 https://github.com/meetmr/TiktokSpider    //BOGUS Spider!!!!
 
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+###SEARCH ENGINE CHINA:  //very aggresive:
+
+RAW:
+baidu|MicroMessenger
+Weixin QQ|AspiegelBot|bytesdance|Bytespider|
+Mb2345Browser|MQQBrowserLieBaoFast|Datanyze|
+QQ Browser Mobile|Sogou|X Browser|115 Browser|
+360 Browser|ChinaClaw|360Spider|petalbot|petalSearch|PetalBot|
+;zh-cn|zh\-CN|zh_CN|zh-CN|ZHCN|zh|zh_CN|Openbot|zh|zh-CN|zh-SG|zh-TW|zh-HK|zh-CHS|zh-CHT|zhi-CN|ZHCN|zh-MO|
+Haosou 360 spider|Sosospider|YisouSpider|YoudaoBot /|Test-Spider|testspider
+
+#Aggresive china Terror:
+
+chinamobile.com\.cn
+chinamobile.com\.cn
+chinatelecom.com\.cn
+chinaunicom\.com 
+chinaunicom\.cn
+aliyun\.com 
+alibaba\.com 
+AliyunSecBot/Nutch-1.21-SNAPSHOT 
+huawei\.com 
+
+RAW:
+chinamobile.com\.cn|chinamobile.com\.cn|chinatelecom.com\.cn|
+chinaunicom\.com|chinaunicom\.cn|aliyun\.com|alibaba\.com|AliyunSecBot/Nutch-1.21-SNAPSHOT| huawei\.com 
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+#  I USE:  (/.htaccess2: )
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
+RewriteRule !^/?robots\.txt$ - [F,L]
+RewriteRule "^.*$" - [F,L]</IfModule>
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+Updated: 250413
