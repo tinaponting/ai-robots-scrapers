@@ -147,7 +147,7 @@ Gato|GenAI|GTB|GTPBOT|GPT /|GPT-2|GPT-3| GPT-3.5|GPT-3.5 turbo|GPT-4|GPT-4.5|GPT
 Hugging Face|iaskspider|iaskspider/2.0|iAskBot|ICC-Crawler|ImagesiftBot|img2dataset|IntelliSeek|IntelliSeek.ai|ISSCyberRiskCrawler|
 Kangaroo|Kangaroo Bot|LeftWingGPT|magpie-crawler|Meltwater|Nicecrawler|MSBot|Nova Act| 
 Omgilibot|Omgili|Open AI| Openbot|OAI SearchBot|OAI-SearchBot/1.0|OpenAI o1|OpenAI o1-mini|OpenAI o3-mini|OpenAI Crawler|Operator|OpenAI CUA|
-PanguBot|PaperLiBot|PaperLiBot/2.1|peer39_crawler|peer39_crawler/1.0|PerplexityBot|Perplexity-User/1.0|Perplexit-User|PerplexityUser|PetalBot|PiplBot|proximic|RightWingGPT|
+PanguBot|PaperLiBot|PaperLiBot/2.1|peer39_crawler|peer39_crawler/1.0|PerplexityBot|PerplexityBot/1.0|Perplexity-User/1.0|Perplexit-User|PerplexityUser|PetalBot|PiplBot|proximic|RightWingGPT|
 scrapy|Scrapy/2.0|Stability AI|ScraperGPT|ShadowGPT|SemrushBot-FT|SemrushBot-OCOB|ShadowGPT|Seekr|Sidetrade|StableDiffusionBot|
 thehive.ai|The Knowledge|thehive.a1|Timpibot|TurnitinBot|
 Webzio|Webzio-Extended|WebText /|wpbot|wpbot/1.1|wpbot/1.2|WebChatGPT|WormGPT|WormGPT V3.0|VelenPublicWebCrawler|WebChatGPT|WormGPT|
@@ -162,10 +162,10 @@ GTB
 .ai
 
 
-#  I USE /.htaccess2:
+#  I USE:  (/.htaccess2: )
 <IfModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
-RRewriteRule !^/?robots\.txt$ - [F,L]
+RewriteRule !^/?robots\.txt$ - [F,L]
 RewriteRule "^.*$" - [F,L]</IfModule>
 
 .....................................................................
@@ -340,6 +340,7 @@ User-agent: PaperLiBot/2.1
 User-agent: peer39_crawler
 User-agent: peer39_crawler/1.0
 User-agent: PerplexityBot
+User-agent: PerplexityBot/1.0
 User-agent: Perplexity-User/1.0
 User-agent: Perplexit-User
 User-agent: PerplexityUser
@@ -635,6 +636,7 @@ User-agent: Paraphraser.io
 User-agent: peer39_crawler
 User-agent: peer39_crawler/1.0
 User-agent: PerplexityBot
+User-agent: PerplexityBot/1.0
 User-agent: Perplexity-User/1.0
 User-agent: Perplexit-User
 User-agent: PerplexityUser
@@ -715,6 +717,29 @@ User-agent: Zimm
 
 :::::::::::::::::::::::::::::::::::::::::::
 NEW: 250408:
+
+##  KNOCKS OUT all ai: knowledge
+
+User-agent: knowledge /
+            Disallow: /  
+			 
+* KNOCKS OUT all ai Chat:
+
+User-agent: chatUser / 
+            Disallow: /			
+			
+* KNOCKS OUT  AI agents /
+              Disallow: /  
+	
+	
+# Open Web Search/ LLM - GenAI-targeted opt ou
+User-agent: GenAI
+Disallow: /
+
+* KNOCKS OUT ALL ai sites: 
+User-agent: .ai
+User-agent: AI /
+
 	  
 *
 User Agent changed:
@@ -749,6 +774,10 @@ User-agent: Slack-ImgProxy
 Disallow: /
 
 URL: https://api.slack.com/robots
+
+
+250414:
+Added: User-agent: PerplexityBot/1.0
 	 
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 250412 
+### Updated: 250414 
