@@ -819,6 +819,8 @@ SONAR: https://github.com/ppl-ai/api-cookbook
 
 User-agent: PerplexityBot
 Disallow: /
+User-agent: PerplexityBot/1.0    (added: 250414)
+Disallow: /
 User-agent: Perplexity-User/1.0
 Disallow: /
 User-agent: Perplexit-User
@@ -1228,7 +1230,7 @@ https://support.zendesk.com/hc/en-us/articles/8357749315098-About-the-UltimateGP
 UltimateGPT
 
 
-FraudGPT  
+#  FraudGPT  
 URL:  https://www.inuit.se/blogg/wormgpt-och-fraudgpt-uppkomsten-av-skadliga-llm
 URL: https://secureops.com/blog/ai-attacks-fraudgpt/
 URL: https://eviden.com/insights/blogs/wormgpt-when-genai-also-serves-malicious-actors/
@@ -1295,6 +1297,30 @@ https://www.dataiku.com/product/
 
 .....................................................................
 ---------------------------------------------------------------------
+##  KNOCKS OUT all ai: knowledge
+
+User-agent: knowledge /
+            Disallow: /  
+			 
+* KNOCKS OUT all ai Chat:
+
+User-agent: chatUser / 
+            Disallow: /			
+			
+* KNOCKS OUT  AI agents /
+              Disallow: /  
+	
+	
+# Open Web Search/ LLM - GenAI-targeted opt ou
+User-agent: GenAI
+Disallow: /
+
+* KNOCKS OUT ALL ai sites: 
+User-agent: .ai
+User-agent: AI /
+
+.....................................................................
+---------------------------------------------------------------------
 * AI chatbot - Texts:
 Copy.ai
 Jasper Chat
@@ -1328,33 +1354,7 @@ ExaBot
 PhindBot
 
 .....................................................................
----------------------------------------------------------------------
-##  KNOCKS OUT all ai: knowledge
 
-User-agent: knowledge /
-            Disallow: /  
-			 
-* KNOCKS OUT all ai Chat:
-
-User-agent: chatUser / 
-            Disallow: /			
-			
-* KNOCKS OUT  AI agents /
-              Disallow: /  
-	
-	
-# Open Web Search/ LLM - GenAI-targeted opt ou
-User-agent: GenAI
-Disallow: /
-
-* KNOCKS OUT ALL ai sites: 
-User-agent: .ai
-User-agent: AI /
-
-.....................................................................
----------------------------------------------------------------------
-.....................................................................
-# UPDATED:  250412:  ##
 
 https://imgproxy.net/
 
@@ -1450,4 +1450,6 @@ Static ISP Proxies
 ISP Proxies
 proxy
 
-....................................
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+............................................................................
+# Updated: 240414
