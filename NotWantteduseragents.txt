@@ -74,7 +74,7 @@ Zgrab
 YaK
 ZmEu 
 
-
+..........................................
 RAW FILE:
 
 2ip bot|80legs|404checker 
@@ -132,6 +132,33 @@ RAW:
 chinamobile.com\.cn|chinamobile.com\.cn|chinatelecom.com\.cn|
 chinaunicom\.com|chinaunicom\.cn|aliyun\.com|alibaba\.com|AliyunSecBot/Nutch-1.21-SNAPSHOT| huawei\.com 
 
+......................................................
+#Other not wanted:
+
+RAW:
+
+Apachebench|apache-auth|apache-bow-scanners|apache-scanners|apache-useragents|Apache-HttpClient|apache|
+GuzzleHttp|GuzzleHttp/7|Go|Go1.1packagehttp|golang|Golang Scraper|Go Web Scraping||Go-http-client|
+Go-http-client/1.1|Go-http-client/2.0|httplib|
+SF|R|php|Prometheus|perl|libwww-perl|test|
+python-async|python-requests|Python aiohttp|
+python|python-httpx|PycURL|Python-urllibPython-urllib/3.8|Pyth|py|PyQ|
+Apache-HttpClient/4.5.2 (Java/1.8.0_151|Java|urllib|
+php://input|Zend_Http_Client|Wget
+
+
+#No thanks!:
+
+RAW:
+
+ALittle Client|Headless scraping|HeadlessChrome|
+CFNetwork|BLEXBot|DotBot|
+DataForSeoBot|
+GoogleScraper|Fetch|HtmlRequestScraper|Headless|Scan|headless.py|?p=[page_no]|
+SSL/TLS Scan|SSL Scanner|tls-scan|scan|Replication Cockpit|
+Rome Client|MJ12Bot|wp_is_mobile
+
+
 ::::::::::::::::::::::::::::::::::::::::::::::::
 #  I USE:  (/.htaccess2: )
 
@@ -141,4 +168,8 @@ RewriteRule !^/?robots\.txt$ - [F,L]
 RewriteRule "^.*$" - [F,L]</IfModule>
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 250413
+Updated: 250414
+
+
+
+
