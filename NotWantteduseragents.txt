@@ -137,13 +137,13 @@ chinaunicom\.com|chinaunicom\.cn|aliyun\.com|alibaba\.com|AliyunSecBot/Nutch-1.2
 
 RAW:
 
-Apachebench|apache-auth|apache-bow-scanners|apache-scanners|apache-useragents|Apache-HttpClient|apache|
+Apachebench|apache-auth|apache-bow-scanners|apache-scanners|
 GuzzleHttp|GuzzleHttp/7|Go|Go1.1packagehttp|golang|Golang Scraper|Go Web Scraping||Go-http-client|
 Go-http-client/1.1|Go-http-client/2.0|httplib|
 SF|R|php|Prometheus|perl|libwww-perl|test|
 python-async|python-requests|Python aiohttp|
 python|python-httpx|PycURL|Python-urllibPython-urllib/3.8|Pyth|py|PyQ|
-Apache-HttpClient/4.5.2 (Java/1.8.0_151|Java|urllib|
+Java|urllib|
 php://input|Zend_Http_Client|Wget
 
 
@@ -168,8 +168,5 @@ RewriteRule !^/?robots\.txt$ - [F,L]
 RewriteRule "^.*$" - [F,L]</IfModule>
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 250414
-
-
-
+Updated: 250415
 
