@@ -1,3 +1,4 @@
+
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Ai bots/scrapers:
 .................................................................
@@ -54,10 +55,12 @@ https://www.comodo.com/home/browsers-toolbars/browser.php *Comodo IceDragon / Co
 https://epicbrowser.com     AI: Epic AI?
 https://www.lunascape.org   AI: ?? 
 https://www.waterfox.net    AI:  Heliopas AI
-https://duckduckgo.com      AI: AI Chat 
+https://duckduckgo.com      AI: AI Chat
+CHINA: QQ Browser   // Yuanbao Quick Answer 
 https://ghostbrowser.com    AI: ?
 Lightpanda: https://github.com/lightpanda-io/browser URL: https://lightpanda.io
-AI LIST: https://aiagentslist.com/
+
+* AI LIST: https://aiagentslist.com/
 
 # Keep an eye on!:
 * User-agent: Kagibot https://kagi.com/     Only works on:Mac OS
@@ -1430,26 +1433,42 @@ Proxi Lists:
 * https://proxyscrape.com/free-proxy-list
 
 RAW:
-AI proxy
-API Proxy
-HTTP Proxies
-proxydeny
-google-proxy
-forward proxy
-Server proxies
-residential proxies
-reverse proxy
-proxy request
-IPv4 Proxies
-IPv6 Proxies
-Mobile Proxies
-Virgin proxies
-Proxy Servers 
-sproxiesd
-Static ISP Proxies
-ISP Proxies
-proxy
+AI proxy|API Proxy|HTTP Proxies|proxydeny|
+google-proxy|forward proxy|Server proxies|residential proxies|reverse proxy|proxy request|
+IPv4 Proxies|IPv6 Proxies|Mobile Proxies|Virgin proxies|Proxy Servers| sproxiesd|Static ISP Proxies|ISP Proxies|proxy
 
+....................................
+## ADDED: 250412 
+have sent it tp Perrishpress to look at it,comes on his list sometime near future
+Falcon AI:: Affecting us???
+
+https://falconllm.tii.ae/
+https://huggingface.co/datasets/tiiuae/falcon-refinedweb
+
+Falcons Ai:
+https://falcons.ai/   
+https://github.com/Falcons-ai/
+
+
+* GAVE IT to Perrishpress to look at: llms.txt -Requests like;comcast.net, from: ie, sa and.com sites.
+
+...................................
+?.
+* BabyAGI
+Txt: lightweight, open-source autonomous agent 
+URL: https://babyagi.org/
+
+
+* MultiOn's Agent API
+URL: https://theagi.company/
+LLM frameworks
+ LangChain
+ LlamaIndex
+ Agentic RAG
+ RAG
+ txt: custom AI applications that can navigate, scrape, and manipulate web content with ease
+ 
+ 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ............................................................................
 # Updated: 240414
