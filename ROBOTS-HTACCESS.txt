@@ -113,24 +113,9 @@ function my_robots_commands($output, $public) {
 
 .....................................................................
 ---------------------------------------------------------------------
-#STRONGEST ALTERNATIVE####:  
-
-<IfModule mod_rewrite.c>
-RewriteCond% {HTTP_USER_AGENT}(BOT|BOT |BOT |BOT |BOT)[NC,OR]
-RewriteCond% {QUERY_STRING} (BOT|BOT|BOT |BOT |BOT)\:[NC,OR]
-RewriteCond% {HTTP_USER_AGENT} ^.*(BOT|BOT |BOT |BOT |BOT).*[NC]
-RewriteRule .* - [F]</ifModule>
-
-* ALT:
-<IfModule mod_rewrite.c>
-RewriteCond % {HTTP_USER_AGENT}(BOT|BOT |BOT |BOT |BOT)[NC]
-RewriteCond % {QUERY_STRING} (BOT|BOT|BOT |BOT |BOT)\:[NC]
-RewriteCond % {QUERY_STRING} (bot|bot) [NC]
-RewriteCond %{HTTP_USER_AGENT}!(bot|bot|bot|bot|bot|bot)[NC]
-RewriteRule .* - [F,L]</ifModule>
-
 * Add - IF needed: 
 RRewriteRule !^/?robots\.txt$ - [F,L]
+
 ...........................................................................:)
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::)
 ## htaccess: (htaccess1)
@@ -780,4 +765,4 @@ URL: https://api.slack.com/robots
 Added: User-agent: PerplexityBot/1.0
 	 
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 250414 
+### Updated: 250415 
