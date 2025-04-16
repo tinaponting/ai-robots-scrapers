@@ -16,7 +16,13 @@ And ways to block ai scrapers of your content.)
 
 * IF YOU WANT to change something: use: Notepad ++ -to your taste:)
 
+READ MORE: 
+* https://solveo.co/top-12-ai-agents-for-content-creation-in-2025/
+* 
+* https://github.com/bytedance
 
+* TDM Reservation Protocol (TDMRep)  -  https://www.w3.org/community/reports/tdmrep/CG-FINAL-tdmrep-20240202/
+* 
 # Updates:
 
 * Updated 250416, Fork of blockaai crawlers.zip updated -Latest.
@@ -59,17 +65,8 @@ And ways to block ai scrapers of your content.)
 * Updated 250110, ai robots.txt.
 * 250109, GTBOT - a pain in the ass!
 * 241225 All updated ith the Latest:)
-* 241210: Updated: BLock ai.php
-* 241210: addded: one more bot.
-* 241126: new ChinaAi added in script and robots.txt, /whole Robots.txt avaible at: Wordpress single user.
-* 241119, updated, block ai + ai scrapers list.
-* 241118, updated, aiscrapers list, with more alternatives to block ai.
+* 240111 - 241225, updated All:)
 
-Notes:  2241125: I think clade haiku works, lots of requests from Amazon/clade denied:)
-Notes: Ai/robots.txt is on sinlge user
+****************************************
 
-READ MORE: * https://solveo.co/top-12-ai-agents-for-content-creation-in-2025/
 
-* https://github.com/bytedance
-
-* TDM Reservation Protocol (TDMRep)  -  https://www.w3.org/community/reports/tdmrep/CG-FINAL-tdmrep-20240202/
