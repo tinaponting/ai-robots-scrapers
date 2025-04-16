@@ -1,4 +1,3 @@
-
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Ai bots/scrapers:
 .................................................................
@@ -1406,7 +1405,6 @@ RedirectMatch 403 AI proxydeny
 RedirectMatch 403 API Proxydeny
 RedirectMatch 403 HTTP Proxiesdeny
 Redirectmatch 403 proxydenydeny
-Redirectmatch 403 google-proxydeny
 Redirectmatch 403 forward proxydeny
 Redirectmatch 403 Server proxiesdeny
 Redirectmatch 403 residential proxiesdeny
@@ -1433,8 +1431,7 @@ Proxi Lists:
 * https://proxyscrape.com/free-proxy-list
 
 RAW:
-AI proxy|API Proxy|HTTP Proxies|proxydeny|
-google-proxy|forward proxy|Server proxies|residential proxies|reverse proxy|proxy request|
+AI proxy|API Proxy|HTTP Proxies|proxydeny|forward proxy|Server proxies|residential proxies|reverse proxy|proxy request|
 IPv4 Proxies|IPv6 Proxies|Mobile Proxies|Virgin proxies|Proxy Servers| sproxiesd|Static ISP Proxies|ISP Proxies|proxy
 
 ....................................
@@ -1468,7 +1465,6 @@ LLM frameworks
  RAG
  txt: custom AI applications that can navigate, scrape, and manipulate web content with ease
  
- 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ............................................................................
-# Updated: 240414
+# Updated: 240416
