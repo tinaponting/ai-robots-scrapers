@@ -1,1304 +1,718 @@
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Ai bots/scrapers:
-.................................................................
-## Ai (important) Adresses:  ###
-.
-* Alpha AI: https://www.alphaai.capital
-* anthropic-ai: https://www.anthropic.com
-        Claude ai news: https://claude.ai
-* Auto-GPT: https://agpt.co
-* Agent GTP: https://agentgpt.reworkd.ai
-* Apple/Safari: https://support.apple.com/en-us/119829
-* Anthropic: https://www.anthropic.com
-* Boomi AI: https://boomi.com/resources/resources-library/boomi-launches-ai-agents
-* Hugging face:  https://huggingface.co
-* Open ai: https://openai.com
-           https://platform.openai.com/docs/overview
-* Common Crawl: https://commoncrawl.org
-* crew AI: https://www.crewai.com
-* Crew ai: spider scraper: https://spider.cloud   Useragent: spider
-* Cohere: https://cohere.com
-* Grok: https://x.ai
-* Google: https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers?hl=en
-* Gemini: https://gemini.google.com
-* Meta ai (facebook): https://ai.meta.com
-* Mistral Ai:  https://docs.mistral.ai/capabilities/agents
-* Perplexity:  https://www.perplexity.ai
-* Webz.io:  https://webz.io
-* Zero GTP: https://www.zerogpt.com
-* Webzio * User agent: Webzio-extended  https://webz.io/bot.html
+.HTACCESSS - NOWWAY- AI!
+# Block “Scrapers, image stealers AI” bots:
+******************************************************************** :)
+#### Put in .htaccess2,1 or htaccess:   ###
+
+## ALT 1: WORKS WELL ###: 
+
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT} (bot|bot|Bot) [NC]
+RewriteRule .* - [F,L]
+</IfModule>
+
+### ALT 2:
+
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT}"(bot|bot|bot|bot|bot|bot|bot)"[NC]
+RewriteRule "^.*$" - [F,L]
+</IfModule>
+
+### ALT 3:
+
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT}^.*(BotToBlock1|BotToBlock2|BotToBlock3).*$ [NC] 
+RewriteRule .* – [F,L]</IfModule>
+
+## Or if you want: 403:
+
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT} (bot|bot|bot) [NC]
+RewriteRule .* - [R=403,L]</IfModule>
+
+## IF you want a: 503:
+
+RewriteCond %{HTTP_USER_AGENT} ^.*(bot|bot|bot).*$ [NC]
+RewriteCond %{REQUEST_URI} !^/robots\.txt$
+RewriteRule .* - [R=503,L]
+
+..........................................
+###### ALT 4: way to block ai bots. Block via Request URL:
+
+<IfModule mod_alias.c>
+RedirectMatch 403 /bot/
+</IfModule>
+
+OR: 
+<IfModule mod_alias.c>
+RedirectMatch 403 /(bot|bot)/
+</IfModule>
+..........................................
+### ### ALT 5:
+
+# Apache:
+
+<IfModule authz_core_module>
+<If "%{HTTP_USER_AGENT} == 'BOT'">
+Require all denied
+</If>
+</IfModule>
+
+..........................................
+
+### STRONG ALTERATIVE: Alternative with no welcome at all:
+
+<IfModule authz_core_module>
+<If "%{HTTP_USER_AGENT} == 'GPTBot'">
+<If "%{HTTP_USER_AGENT} == 'robots.txt'">
+Require all denied
+</If></IfModule>
+
+............................
+### ### ALT 6:, Block via Query String:
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{QUERY_STRING} (bot|bot) [NC]
+RewriteRule (.*) - [F,L]
+</IfModule>
+
+............................
+####### ALT 7: 
+with IP adress  For notorius ai bots, who gets under the radar.
+
+RewriteCond %{HTTP_USER_AGENT} ^$ [OR]
+RewriteCond %{HTTP_USER_AGENT} (bot|crawl|robot)
+RewriteCond %{HTTP_USER_AGENT}!(bot|bot|bot|bot|bot|bot) [NC]
+RewriteRule ^/?.*$ "http\:\/\/127\.0\.0\.1" [R,L]
+
+* Change above IP to the Notirous one not wanted ip
+...................................
+### Block AI bots on a NGINX*  web server ##
+
+NGINX web servers do not use .htaccess files, but instead nginx.conf (or Vhost files). T
+o block bad bots on your NGINX server, add a list of user agents to your nginx.conf, like this:
+If more bots, add:  Bot|Bot|BotBot|Bot|Bot and so on.
+
+
+if ($http_user_agent ~* (Bot|Bot|Bot) ) { 
+return 403; 
+}
 
 .....................................................................
 ---------------------------------------------------------------------
-### Browsers (with AI):
+#From sixcolurs /  https://sixcolors.com/post/2024/06/excluding-your-website-from-apples-ai-crawler/
 
-https://arc.net     AI: Max
-https://brave.com   AI: Leo
-https://www.mozilla.org/sv-SE/firefox   AI: mozilla.ai 
-https://www.opera.com     AI: Aria AI
-https://www.microsoft.com/sv-se/edge   AI: Edge AI
-https://vivaldi.com    AI: Bing AI
-https://www.torproject.or   AI: Tor.ai 
-https://mullvad.net/en/browser    AI: NON YET?
-https://www.apple.com/safari:  AI:  Safari AI
-https://sigmaos.com  AI: Airis
+add the following snippet of code to your functions.php file by going to the administration interface and choosing Appearance > 
+Theme File Editor and selecting functions.php from the sidebar. (You can also do this via a plugin like Code Snippets, which I use.
 
-#Less Known AI browsers:
-https://astian.org/midori-browser/  AI: Midori-AI
-https://www.palemoon.org/    AI: Non yet?
-https://www.seamonkey-project.org  AI: Non yet?
-https://www.falkon.org  AI: Falkon AI
-https://www.maxthon.com   AI: AIChat
-https://apps.kde.org/sv/konqueror  AI: Kfind Ai
-https://www.comodo.com/home/browsers-toolbars/browser.php *Comodo IceDragon / Comodo Dragon Internet Browser  AI: ?
-https://epicbrowser.com     AI: Epic AI?
-https://www.lunascape.org   AI: ?? 
-https://www.waterfox.net    AI:  Heliopas AI
-https://duckduckgo.com      AI: AI Chat
-CHINA: QQ Browser   // Yuanbao Quick Answer 
-https://ghostbrowser.com    AI: ?
-Lightpanda: https://github.com/lightpanda-io/browser URL: https://lightpanda.io
-
-* AI LIST: https://aiagentslist.com/
-
-# Keep an eye on!:
-* User-agent: Kagibot https://kagi.com/     Only works on:Mac OS
-
-
-* Oracle:  RAG / LLMS
-URL: https://docs.oracle.com/en-us/iaas/releasenotes/services/generative-ai-agents/index.htm
-
-* Good to know: https://virtualizationreview.com/Articles/2025/01/13/Top-10-GenAI-Apps-Most-Often-Blocked-by-Orgs.aspx
+add_filter('robots_txt', 'my_robots_commands', 99, 2); // filter to add robots
+function my_robots_commands($output, $public) {
+  $output .= "User-agent: Applebot-Extended\nDisallow: /";
+  return $output;
+}
 
 .....................................................................
 ---------------------------------------------------------------------
-## Blogs, News and intresting sites:
+* Add - IF needed: 
+RRewriteRule !^/?robots\.txt$ - [F,L]
 
-#* Huge List of: LLM:
-https://llmstxt.site/
+...........................................................................:)
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::)
+## htaccess: (htaccess1)
+# AI Content/webscraping #: 
 
-**SERDY News:
-https://seirdy.one/meta/scrapers-i-block/
+# RAW List:  (use  one of above thats works for you, cut and paste!)
 
-AI News: (all stuffs)
-https://www.artificialintelligence-news.com/artificial-intelligence-news/
-URL 2: https://www.artificialintelligence-news.com/
-
-Google AI news:
-https://ai.google/latest-news/
-https://deepmind.google
-https://deepmind.google/discover/blog
-
-AI Today:
-https://aitoday.com/
-
-AI weekly:
-https://aiweekly.co/
-
-AI News:
-https://www.ainews.com/
-
-Ai News: 
-https://www.aibase.com
-
-Amazon AI news:
-https://www.aboutamazon.com/artificial-intelligence-ai-news
-
-Verge news:
-https://www.theverge.com/ai-artificial-intelligence
-
-Mistral News:
-https://mistral.ai/news
-
-.....................................................................
----------------------------------------------------------------------
-##Others:
-
-Blogs: 
-Neil CLarke: https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website
-Krassno: https://www.krasamo.com/block-gptbot
-Botpress: https://botpress.com/blog/what-is-an-ai-agent
+Agent|Agent GPT|.ai|AI agents /|AI2 Bot|AISearchBot|Alexa|AlexaTM|AlphaAI|Amazon Bedrock|Amazon Comprehend|Amazon SageMaker|Amazon Silk|Amazon Textract|amazon-kendra|AWS Trainium|anthropic-ai|AnyPicker|Applebot-Extended|Aria browse Aria AI|Aria browser AI|AutoGPT|AndersPinkBot|AITraining|
+Brave Leo AI|bingbot-chat/2.0|Bing ai| Bytedance|Bytespider|BardBot|Brightbot 1.0|ByteDance crawler| Claude-User|Claude-SearchBot|
+CatBoost|cohere-ai|cohere-training-data-crawler|Claude|ClaudeBot|Claude 3.7 Sonnet|claude-web/1.0|ClaudeBot/1.0|Claude 3.5 Haiku|Claude Opus|CrawlGPT|crewAI|Chinchilla|chatUser|ChatGPT|ChatGPT-User|ChatGPT-User/1.0|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|Cotoyogi|Content Scraper GPT|
+dataprovider|Diffbot|DialoGPT|DepolarizingGPT v|Doubao AI|DuckAssistBot|DALL-E|DALL-E 2|DALL-E 3|DALL-E Mini|DeepAI|DeepL|DeepMind|DeepSeek|DeepSeek-R1|
+FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|Firecrawl|Flyriver|flyriverbot/1.1|meta-externalfetcher/1.1|Meta-ExternalAgent|Meta-ExternalFetcher|LLaMA|Llama 3.2|Llama 4|Meta AI|Meta Llama|meta-externalfetcher/1.1|Mistral|FraudGPT|FriendlyCrawler|FriendlyCrawler/1.0|FriendlyCrawler/Nutch-1.20-SNAPSHOT|
+Gato|GenAI|GTB|GTPBOT|GPT /|gpt-crawler|GPT-1|GPT-2|GPT-3|GPT-1|GPT-2|GPT-3.5|GPT-3.5 turbo|GPT-4|GPT-4.5|GPT-5|gpt-4-turbo|GPT-4o|GPT-4V|GPT-4o mini|GPT 4 Omni|GPT 4 Omni Mini|GPT-4.1
+GPT-4.1-miniGPT-4.1|GPT-4.1-mini|GPT-4.1-nano||SearchGPT|GPT ScraperGPT|gpt-crawler|Zero|Grok|GrokAI|Goose|Gemini|Google Gemini|Google Bard AI|Google-CloudVertexBot|Extended GPT Scraper|
+Hugging Face|iaskspider|iaskspider/2.0|iAskBot|ICC-Crawler|ImagesiftBot|img2dataset|IntelliSeek|IntelliSeek.ai|ISSCyberRiskCrawler|ImageGen /|imgproxy /|
+Kangaroo|Kangaroo Bot|LeftWingGPT|magpie-crawler|Meltwater|Nicecrawler|MSBot|Nova Act| 
+Omgilibot|Omgili|Open AI| Openbot|OAI SearchBot|OAI-SearchBot/1.0|OpenAI o1|OpenAI o1-mini|OpenAI o3-mini|OpenAI Crawler|Operator|OpenAI CUA|
+PanguBot|PaperLiBot|PaperLiBot/2.1|peer39_crawler|peer39_crawler/1.0|PerplexityBot|PerplexityBot/1.0|Perplexity-User/1.0|Perplexit-User|PerplexityUser|PetalBot|PiplBot|proximic|RightWingGPT|
+scrapy|Scrapy/2.0|Stability AI|ScraperGPT|ShadowGPT|SemrushBot-FT|SemrushBot-OCOB|ShadowGPT|Seekr|Sidetrade|StableDiffusionBot|Slack-ImgProxy|
+thehive.ai|The Knowledge|thehive.a1|Timpibot|TurnitinBot|
+Webzio|Webzio-Extended|WebText /|wpbot|wpbot/1.1|wpbot/1.2|WebChatGPT|WormGPT|WormGPT V3.0|VelenPublicWebCrawler|WebChatGPT|WormGPT|
+xAI|XBot|x.AI|YouBot|YarGPT|yarchatgpt|ZeroGPT|ZeroCHAT
 
 
-Control of AI Spiders:
-   https://darkvisitors.com
+......
+## Added: GTB  - maybe s tops all gtb?
+GTB
+
+#Get rid of all shady sites,  ending with. ai
+.ai
 
 
-Spawning AI txt:  https://spawning.ai/ai-txt 
-
-Google Extended:  https://searchengineland.com/google-extended-does-not-stop-google-search-generative-experience-from-using-your-sites-content-433058
-
-* LEARN MORE:  https://www.mongodb.com/resources/basics/artificial-intelligence/ai-agents
-               https://zapier.com/blog/ai-agent
+#  I USE:  (/.htaccess2: )
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
+RewriteRule !^/?robots\.txt$ - [F,L]
+RewriteRule "^.*$" - [F,L]</IfModule>
 
 .....................................................................
 ---------------------------------------------------------------------
-## Ai - OTHERS (of intrests: Adresses:  ###
+### A Complete Ai List ##)
+#Ai/BOTS - scrapers: 
+**
+SLIM: #Ai - scrapers -Robots. txt:  
 
-#OTHERS (of intrests):
-SuperAgent: https://github.com/superagent-ai/superagent
-BabyAGI: https://github.com/yoheinakajima/babyagi
-Aomni:  https://www.aomni.com
-MetaGPT: https://www.deepwisdom.ai
-Tusk AI: https://usetusk.ai
-Superagent (BUILD YOUR OWN CHAT): https://www.superagent.sh
-Devin AI: https://preview.devin.ai
-
-
-LAION-AI: https://laion.ai   //open source AI.  
-       https://github.com/laion-ai
-
-GPT-J: https://huggingface.co/EleutherAI/gpt-j-6b   //open source AI. 
-       https://github.com/graphcore/gpt-j
-	   
-GPTNeo: https://huggingface.co/togethercomputer/GPT-NeoXT-Chat-Base-20B  //open source AI. 
-Cerebras-GPT  https://cerebras.ai/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models/
-
-Pythia:  https://askpythia.ai  
-         https://projectpythia.org
-		 *
-LOTS of more Ai: https://sapling.ai/llm/gpt-j-vs-gptneo
-And More: https://github.com/e2b-dev/awesome-ai-agents
-Integuru: https://github.com/Integuru-AI/Integuru
-DeepSEEK: https://github.com/deepseek-ai/DeepSeek-V3
-     URL: https://www.deepseek.com
-
-*Eleuther.ai
-https://www.eleuther.ai/releases
-
-
-# Anomymous:
-* All kindsofAgents: https://e2b.dev/ai-agents/general-purpose
-* https://theresanaiforthat.com/s/gpt+agents/
-
--
-* Others, like facebook, Instagram and so on:
-https://pirg.org/edfund/resources/how-to-stop-your-data-from-being-used-for-ai-training/
-
-* Good to know:
-https://www.dev4press.com/kb/user-guide/coresecurity-block-ai-crawlers-and-scrappers/
-* https://www.synthesia.io/post/ai-tools
-* SEARCH ENGINE 2025 -ai:  https://www.zdnet.com/article/best-ai-search-engine/
-* AI WEBSITES -2025: https://dorik.com/blog/best-ai-websites
-* Slack AI   https://slack.com/features/ai
-.....................................................................
----------------------------------------------------------------------
-## Agents:
-
-### Only affects SWEDEN:
-URL: https://chat-gpt-sverige.se/
-URL: https://huggingface.co/docs/transformers/model_doc/gpt-sw3
-URL: https://huggingface.co/AI-Sweden-Models/gpt-sw3-20b-instruct
-
-User-agent: GPT-Sw3
-Disallow: /
-
-.....................................................................
----------------------------------------------------------------------
-## Affects mostly europe // Add if needed! Not AI?
-
-#https://openwebsearch.eu
-User-agent: Owler
-Disallow: /
-User-agent: OWLer/0.1
-Disallow: /
-
-.....................................................................
----------------------------------------------------------------------
-# Accona business (Business USA):  Active?
-https://www.accoona.com
-User-agent: Accoona-AI-Agent/1.1.1 
-Disallow: /
-User-agent: Accoona-AI-Agent/1.1.2 
-Disallow: /
-User-agent: Accoona-AI-Agent
-Disallow: /
-
-.....................................................................
----------------------------------------------------------------------
-#### SEARCH ENGINE  AI:  ##
-
-DuckDuckGo Search:
-DuckDuckGo Search used by DuckAssist (AI tool), which reportedly cites its sources.
-URL: https://duckduckgo.com
-URL: https://duckduckgo.com/duckduckgo-help-pages/results/duckassistbot/
-
+User-agent: * 
+User-agent: .ai
+User-agent: AI /
+User-agent: AI agents /
+User-agent: Agent GPT
+User-agent: AI2 Bot
+User-agent: AISearchBot
+User-agent: Alexa
+User-agent: AlexaTM
+User-agent: AlphaAI
+User-agent: Amazon Bedrock
+User-agent: Amazon Comprehend
+User-agent: Amazon SageMaker
+User-agent: Amazon Silk
+User-agent: Amazon Textract
+User-agent: amazon-kendra
+User-agent: AWS Trainium
+User-agent: Nova Act 
+User-agent: anthropic-ai
+User-agent: AnyPicker
+User-agent: Applebot-Extended
+User-agent: Aria browse Aria AI
+User-agent: Aria browser AI
+User-agent: AutoGPT
+User-agent: AndersPinkBot
+User-agent: AITraining
+User-agent: Brave Leo AI
+User-agent: bingbot-chat/2.0
+User-agent: Bing ai 
+User-agent: Brightbot 1.0
+User-agent: Bytedance
+User-agent: ByteDance crawler
+User-agent: Bytespider
+User-agent: BardBot
+User-agent: CrawlGPT 
+User-agent: CatBoost
+User-agent: cohere-ai
+User-agent: cohere-training-data-crawler
+User-agent: Cotoyogi
+User-agent: ClaudeBot
+User-agent: claude-web/1.0
+User-agent: ClaudeBot/1.0
+User-agent: Claude 3.7 Sonnet
+User-agent: Claude 3.5 Haiku 
+User-agent: Claude Opus
+User-agent: chatUser /
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: crewAI
+User-agent: Chinchilla
+User-agent: ChatGPT
+User-agent: ChatGPT-User
+User-agent: ChatGPT-User/1.0
+User-agent: CCBot
+User-agent: ccbot
+User-agent: CCBot/2.0
+User-agent: CC-Crawler/2.0
+User-agent: dataprovider
+User-agent: Diffbot
+User-agent: DialoGPT
+User-agent: DepolarizingGPT
+User-agent: Doubao AI
 User-agent: DuckAssistBot
-Disallow: /
-
-.....................................................................
----------------------------------------------------------------------
-* AI: LISTS:
-URL: https://justdataplease.com/product/github-repos-research/5/dashboard
-URL:https://aiagentslist.com
-URL:https://www.aevummachinae.com/All-GPTs
-URL: https://allgpts.co
-
-.....................................................................
----------------------------------------------------------------------
-### Google:
-*  is associated with Google Vertex AI agents. Vertex is supposedly covered by Google-Extended (above).
-* google.com
-
-User-agent: Google-CloudVertexBot
-Disallow: /
-
-#Google:
-Google Gemini
-
-## GoogleOther is a new set of data crawlers from Google, used for web scraping. “GoogleOther is the 
-generic crawler that may be used by various product teams for fetching publicly accessible 
-content from sites”. Besides the generic GoogleOther, 
-they also use GoogleOther-Image and GoogleOther-Video. 
-If you block the user agent string “GoogleOther” you will block all of them.
-
-# Google Other: (Mostly robots.txt works if not wanted):
-User-agent: GoogleOther
-Disallow: / 
-User-agent: GoogleOther-Image
-Disallow: /
-User-agent: GoogleOther-Video
-Disallow: /
-
-User-agent: Google-Extended    //Can inteear with google crawlers!! #
-Disallow: / 
-
-#Google:
-Google - Not affecting ordinary blogs yet.
-Gemini 1.5 Pro	
-Gemini 1.5 Pro (Vertex AI)	
-Gemini 1.5 Flash
-
-## MACHINE Ai: Not affecting blogs, but good to know in case ....
-(google - It allows you to train, deploy, 
-and customize ML models and AI applications, including large language models (LLMs)
-
-https://cloud.google.com/vertex-ai/
-Vertex AI  
-
-Google PaLM2
-https://ai.google/discover/palm2
-https://cloud.google.com/blog/products/ai-machine-learning/generative-ai-applications-with-vertex-ai-palm-2-models-and-langchain 
-
-
+User-agent: DALL-E
+User-agent: DALL-E 2
+User-agent: DALL·E 3
+User-agent: DALL-E Mini
+User-agent: DeepAI
+User-agent: DeepL
+User-agent: DeepMind
+User-agent: DeepSeek
+User-agent: DeepSeek-R1
+User-agent: FacebookBot
+User-agent: FacebookBot/1.0
+User-agent: facebookexternalhit
+User-agent: facebookexternalhit/1.1
+User-agent: Firecrawl
+User-agent: Flyriver
+User-agent: flyriverbot/1.1
+User-agent: FraudGPT
+User-agent: meta-externalfetcher/1.1
+User-agent: Meta-ExternalAgent
+User-agent: meta-externalagent
+User-agent: Meta-ExternalFetcher
+User-agent: LLaMA
+User-agent: Llama 3.2
+User-agent: Llama 4
+User-agent: Meta AI
+User-agent: Meta Llama
+User-agent: meta-externalfetcher/1.1
+User-agent: Mistral
+User-agent: FriendlyCrawler
+User-agent: FriendlyCrawler/1.0
+User-agent: FriendlyCrawler/Nutch-1.20-SNAPSHOT
+User-agent: Gato
+User-agent: GenAI
+User-agent: GTP
+User-agent: GTPBOT
+User-agent: GPTBot /
+User-agent: gpt-crawler
+User-agent: GPT-1
+User-agent: GPT-2
+User-agent: GPT-3 
+User-agent: GPT-3.5
+User-agent: GPT-4 
+User-agent: GPT-4,5
+User-agent: GPT-5
+User-agent: GPT-3.5 turbo
+User-agent: gpt-4-turbo
+User-agent: GPT-4o
+User-agent: GPT-4V
+User-agent: GPT-4o mini
+User-agent: GPT 4 Omni	
+User-agent: GPT 4 Omni Mini
+User-agent: GPT-4.1
+User-agent: GPT-4.1-mini
+User-agent: GPT-4.1-nano
+User-agent: SearchGPT 
+User-agent: GPT Scraper
+User-agent: Content Scraper GPT
+User-agent: Extended GPT Scraper
+User-agent: gpt-crawler
+User-agent: GPT Scraper
+User-agent: GPTZero
+User-agent: Grok
+User-agent: GrokAI
 User-agent: Gemini  
 User-agent: Google Gemini
 User-agent: Google Bard AI
-User-agent: BardBot
-
-User-agent: GoogleOther
 User-agent: Google-CloudVertexBot
-
-
-User-agent: Google-Extended  - Can block google to index site!!  
-.....................................................................
----------------------------------------------------------------------
-##  BING (MICROSOFT):
-
-User-agent: bingbot-chat/2.0
-User-agent: Bing ai 
-
-Azure OpenAI 
-https://azure.microsoft.com/en-us/products/ai-services/openai-service
-https://ai.azure.com/
-
-# Blockera Microsofts AI-robot Tay
-
-User-agent: bingbot/2.0
-Disallow: /
-
-User-agent: Microsoft Copilot
-Disallow: /
-
-* MSBot 
-(Microsoft),Used by Microsoft for various AI and language model training purposes. 
-It adheres to robots.txt directives and is designed to gather useful data while respecting website owners’ preferences.
-
-User-agent: MSBot 
-Disallow: /
-
-.....................................................................
----------------------------------------------------------------------
-# AI Scraper:
-
-DOWNLOADER:
-URL: https://www.microsystools.com/products/website-download/all-versions.php
-
-RewriteCond%{HTTP_USER_AGENT}^A1 Website download [NC,OR]
-RewriteCond%{HTTP_USER_AGENT}^A1 Website Scraper [NC,OR]
-
-.....................................................................
----------------------------------------------------------------------
-## AI Images creator/Video AI:downmloader - stealers:
-
-Midjourney  - images creator
-URL: https://www.midjourney.com
-
-Ideogram  images creator
-URL:  https://ideogram.ai/t
-
-Luma  all kins of Ai
-URL: https://lumalabs.ai/
-
-Hailuo - video creator
-URL: https://hailuoai.video/
-
-Kling - txt to video
-URL: https://klingai.com/
-
-ElevenLabs - voice generator
-URL: https://elevenlabs.io/
-
-
-HeyGen - Ai video creator
-URL: https://www.heygen.com
-
-*img2dataset
-#https://github.com/rom1504/img2dataset:
-
-User-agent: img2dataset
-Disallow: /
-
-website image creator
-User-agent: Nicecrawler
-Disallow: /
-
- Image Stealer AI:
-User-Agent: ImagesiftBot
-Disallow: /
-
-ADRESS: https://imagesift.com
-
-* Ai image grabber:
-ADRESS: https://thehive.ai/
-
-User-Agent: thehive.ai
-Disallow: /
-
-* text to Imagages AI:
-Midjourney 
-https://www.midjourneyfree.ai
-
-* StableDiffusionBot
-URL: https://www.diffusion.gg/
-
-User-agent: StableDiffusionBot
-Disallow: /
-
-*Video:
-V-JEPA
-URL: https://ai.meta.com/blog/v-jepa-yann-lecun-ai-model-video-joint-embedding-predictive-architecture/
-
-User-agent: V-JEPA
-            Disallow: /
-
-.....................................................................
----------------------------------------------------------------------
-# Open AI:
-URL: https://openai.com
-
-* GTP:
-https://platform.openai.com/docs/bots GTP:
-GPT-4V(ision) (251025)
-
-User-agent: ChatGPT
-disallow: /
-User-agent: ChatGPT-User
-Disallow: /
-User-agent: GPTBot
-Disallow: /
-User-agent: GTPBOT    #YSES by content scrapers!
-Disallow: /
-User-Agent: GPTbot/0.1
-Disallow: /
-User-Agent: GPTBot/1.0
-Disallow: /
-User-Agent: GPTBot/1.2
-Disallow: /
-User-agent: GPT-1
-Disallow: /
-User-agent: GPT-2
-Disallow: /
-User-agent: GPT-3 
-Disallow: /
-User-agent: GPT-3.5
-Disallow: /
-User-agent: GPT-4 
-Disallow: /
-User-agent: GTP-4,4
-Disallow: /
-User-agent: GPT-5 
-Disallow: /
-User-agent: GPT-4V
-Disallow: /
-User-agent: gpt-4-turbo
-Disallow: /
-User-agent: GPT-4o
-Disallow: /
-User-agent: GPT-4o mini
-Disallow: /
-User-agent: GPT-3.5 Turbo
-Disallow: /
-User-agent: SearchGPT 
-Disallow: /
-User-agent: WebChatGPT
-Disallow: /
-
-*
-Chat GPT Search  
-URL: https://openai.com/index/introducing-chatgpt-search/
-*
-
-#OPEN AI:
-https://platform.openai.com/docs/bots
-
-User-agent: OAI SearchBot
-Disallow: /
-User-agent: OAI-SearchBot/1.0
-Disallow: /
-User-agent: OpenAI o1
-Disallow: /
-User-agent: OpenAI o1-mini
-Disallow: /
-User-agent: OpenAI o3-mini
-Disallow: /
-User-agent: OpenAI 
-Disallow: /
-User-agent: Openbot
-Disallow: /
-User-agent: OpenAI GPT
-Disallow: /
-
-User-agent: Operator
-Disallow: /
-https://openai.com/index/introducing-operator
-
-
-User-agent: OpenAI CUA
-Disallow: /
-
-https://scrapybara.com/blog/cua
-https://openai.com/index/new-tools-for-building-agents/
-https://openai.com/index/computer-using-agent/
-
-OpenAI IP Ranges to Block:
-
-# ipv4.txt:
-
-4.196.118.112/28
-4.197.22.112/28
-4.227.36.0/25
-13.83.167.128/28
-20.42.10.176/28
-20.97.189.96/28
-20.125.66.80/28
-20.161.75.208/28
-20.171.206.0/23
-20.215.188.192/28
-23.98.179.16/28
-23.98.186.176/28
-23.98.186.192/28
-40.84.221.208/28
-40.84.221.224/28
-51.8.102.0/24
-51.8.155.48/28
-51.8.155.64/28
-51.8.155.112/28
-52.156.77.144/28
-52.159.249.96/28
-52.190.190.16/28
-52.225.75.208/28
-52.230.152.0/24
-52.236.94.144/28
-57.154.175.0/28
-68.221.67.192/28
-135.234.64.0/24
-135.237.131.208/28
-172.178.140.144/28
-172.178.141.112/28
-172.178.141.128/28
-172.182.204.0/24
-172.183.222.128/28
-172.203.190.128/28
-172.213.12.112/28
-172.213.21.16/28
-
-
-
-#Image AI:
-* https://openai.com/index/dall-e-2  (uses Machine learning)
-
-User-agent: Dall-E
-User-agent: Dall-E 3
-User-agent: DALL-E Mini
-User-agent: DALL·E 3
-
-*
-Open AI news:  https://x.com/openai
-
-
-User-agent: OpenAI ChatGPT
-            Disallow: /
-
-User-agent: OpenAI Crawler
-            Disallow: /
-* Can also come from:  OAI-SearchBot|Mac OS X 
-
-* Operator:  (open AI)
-URL: https://openai.com/index/introducing-operator/
-
-* Sora (text-to-video) - https://openai.com/sora (FB) Sora - ny text-to-video modell från OpenAI
-Whisper (speech-to-text)
-
-.....................................................................
----------------------------------------------------------------------
-### AMAZON AI (also #claudebot is on Amazon!
-URL: https://aws.amazon.com/free/machine-learning/
-:
-# Speaking AI:
-User-agent: Amazon Lex
-Disallow: /
-
-* The rest: 
-User-agent: AISearchBot
-Disallow: /
-
-User-agent: amazon-kendra
-Disallow: /
-
-User-agent: Amazon Silk
-Disallow: /
-
-User-agent: Amazon SageMaker
-Disallow: /
-
-User-agent: AWS Trainium 
-Disallow: /
-
-User-agent: amazon-kendra
-Disallow: /
-
-User-agent: Amazon Bedrock
-Disallow: /
-
-User-agent: Alexa
-Disallow: /
-
-User-agent: AlexaTM
-Disallow: /
-
-User-agent: Amazon Textract
-Disallow: /
-
-User-agent: Amazon Comprehend
-Disallow: /
-
-User-agent: Nova Act 
-Disallow: /
-
-URL: https://labs.amazon.science/blog/nova-act
-
-??
-URL: https://aws.amazon.com/personalize/?p=ft&c=ml&z=3
-Amazon Personalize
-
-.................................................
-### Antoher Way, if they do not give up!:   "UPDAED: 2500329, hates: bytesspider....
-
-
-<IfModule mod_rewrite.c>
-RewriteCond%{HTTP_REFERER}^https://.*amazonaws\.com [NC] 
-RewriteCond%{HTTP_REFERER}^https://.*amazon\.com [NC]
-RewriteCond%{HTTP_REFERER}^https://(([^.]+\.)+)?amazonaws\.com[NC]
-RewriteCond%{HTTP_REFERER}amazonaws\.com [NC]  
-RewriteCond%{HTTP_REFERER}aws.amazon\.com [NC]
-RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?amazonaws\.com" [NC,OR]
-RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?amazon\.com" [NC,OR]
-RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?Amazon\.com" [NC] 
-RewriteCond%{REMOTE_HOST}^.*\.compute-1\.amazonaws\.com [NC,OR] 
-RewriteCond%{REMOTE_HOST}^.*\1.compute.amazonaws\.com [NC,OR] 
-RewriteCond%{REMOTE_HOST}^.*\2.compute.amazonaws\.com [NC,OR] 
-RewriteCond%{REMOTE_HOST}^.*\.compute-2\.amazonaws\.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\.us-west-2.compute.amazonaws\.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\.eu-west-1.compute.amazonaws\.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\.ec2-3-90-183-230.compute-1.amazonaws\.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\.ap-south-1.compute.amazonaws\.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\.cn-north-1.compute.amazonaws.com\.cn [NC,OR] 
-RewriteCond%{HTTP_USER_AGENT}"AISearchBot"[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}"Alexa"[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}"AlexaTM"[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}"Amazonbot"[NC,OR]  
-RewriteCond%{HTTP_USER_AGENT}"Amazonbot/0.1"[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}".crawl.amazonbot.amazon"[NC,OR] 
-RewriteCond%{HTTP_USER_AGENT}"Amazon Textract"[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}"Amazon Comprehend"[NC,OR]  
-RewriteCond%{HTTP_USER_AGENT}"amazonbot"[NC,OR]   
-RewriteCond%{HTTP_USER_AGENT}"Amazonbot"[NC,OR]  
-RewriteCond%{HTTP_USER_AGENT}"Amazon Silk"[NC,OR] 
-RewriteCond%{HTTP_USER_AGENT}"AMAZON-02"[NC,OR]  
-RewriteCond%{HTTP_USER_AGENT}"Amazon Bedrock"[NC,OR] 
-RewriteCond%{HTTP_USER_AGENT}"Amazon SageMaker"[NC,OR] 
-RewriteCond%{HTTP_USER_AGENT}"Amazon: AWS"[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}"AWS Trainium"[NC,OR] 
-RewriteCond%{HTTP_USER_AGENT}"Amazon Kendra"[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}"Amazon Textract"[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}"SemrushBot"[NC,OR]    #Semrush EN
-RewriteCond%{HTTP_USER_AGENT}"Amazon Kendra"[NC,OR]
-RewriteCond%{REMOTE_ADDR}!^3\.6.)$ [NC,OR]          #ClaudeBot AI 
-RewriteCond%{REMOTE_ADDR}!^3\.21.)$ [NC,OR]          
-RewriteCond%{REMOTE_ADDR}!^3\.90.)$ [NC,OR] 
-RewriteCond%{REMOTE_ADDR}!^3\.145.)$ [NC,OR]         
-RewriteCond%{REMOTE_ADDR}!^3\.148.)$ [NC,OR]  
-RewriteCond%{REMOTE_ADDR}!^3\.238.)$ [NC,OR]        #AI Hacker
-RewriteCond%{REMOTE_ADDR}!^13\.)$ [NC,OR]           #AI Image stealer India
-RewriteCond%{REMOTE_ADDR}!^47.128.)$ [NC,OR]        #Bytesspider
-RewriteCond%{HTTP_USER_AGENT}"Nutch"[NC]
-RewriteRule ^(.*)$ - [F,L]</IfModule>
-
-.....................................................................
----------------------------------------------------------------------
-###FACEBOOOK - META AI: 
-
-** FacebookBot  * BLOCK:
-
-User-agent: FacebookBot
-Disallow: /
-User-agent: FacebookBot/1.0
-Disallow: /
-User-agent: facebookexternalhit
-Disallow: /
-User-agent: facebookexternalhit/1.1
-Disallow: /
-User-agent: meta-externalagent
-Disallow: /
-User-agent: meta-externalfetcher/1.1
-Disallow: /
-
-
-* Language training
-User-agent: Llama 3.2
-Disallow: /
-
-User-agent: Meta AI
-Disallow: /
-
-
-* Meta (Facebook) Llama
-https://ai.meta.com
-https://www.llama.com
-https://developers.facebook.com/docs/sharing/webmasters/web-crawlers
-
-Meta AI: https://www.meta.ai
-URL: https://ai.meta.com
-
-SAM2: https://ai.meta.com/blog/segment-anything-2/
-User-agent: SAM 2
-
-Meta - OPT
-
-.....................................................................
----------------------------------------------------------------------
-* Anthropic AI: to gather data for their “AI” products, such as Claude.
-* https://www.anthropic.com
-
-User-agent: anthropic-ai
-Disallow: /
-User-agent: ClaudeBot
-Disallow: /
-User-agent: claude-web/1.0
-Disallow: /
-User-agent: ClaudeBot/1.0
-Disallow: /
-User-agent: ClaudeBot 3   
-Disallow: /
-User-agent: Claude 3.7 Sonnet
-Disallow: /
-User-agent: Claude 3.5 Haiku 
-Disallow: /
-User-agent: Claude 3 Opus
-Disallow: /
-User-agent: Claude-User
-Disallow: /
-
-User-agent: Claude-SearchBot
-Disallow: /
-
-URL: https://support.anthropic.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler
-
-
-#### claudebot Hell:
-
-<IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"anthropic-ai"[NC]
-RewriteCond%{HTTP_USER_AGENT}"Claude 3.7 Sonnet"[NC]
-RewriteCond%{HTTP_USER_AGENT}"Claude 3.5 Haiku"[NC] 
-RewriteCond%{HTTP_USER_AGENT}"Claude 3 Opus"[NC]
-RewriteCond%{HTTP_USER_AGENT}"Claude-User"[NC]
-RewriteCond%{HTTP_USER_AGENT}"Claude-SearchBot"[NC]
-RewriteCond%{HTTP_USER_AGENT}"claudebot"[NC]
-RewriteCond%{HTTP_USER_AGENT}"claudeBot"[NC]
-RewriteCond%{HTTP_USER_AGENT}"anthropic-ai"[NC]
-RewriteCond%{HTTP_USER_AGENT}"Claude bot"[NC] 
-RewriteCond%{HTTP_USER_AGENT}"ClaudeBot/1.0"[NC]
-RewriteCond%{HTTP_USER_AGENT}"Claude 2.0"[NC]
-RewriteCond%{HTTP_USER_AGENT}"Claude 2.1"[NC]
-RewriteCond%{HTTP_USER_AGENT}"ClaudeBot 3"[NC] 
-RewriteCond%{HTTP_USER_AGENT}"ClaudeBot"[NC]
-RewriteCond%{HTTP_USER_AGENT}"Claude-Web"[NC]
-RewriteCond%{HTTP_USER_AGENT}"claude-web/1.0
-RewriteCond%{HTTP_USER_AGENT}"Claude-Web/1.0"[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*ClaudeBot.*$
-RewriteCond%{REQUEST_URI}!robots\.txt  - [F,L]
-RewriteRule ^(.*)$ - [F]</IfModule>
-
-#OR:
-# Claudebot:
-Order Allow,Deny	
-Deny from 69.171.*.*
-Deny from 3.12.0.0/16
-Deny from 3.14.0.0/15
-Deny from 3.20.0.0/14
-Deny from 3.128.0.0/15
-Deny from 3.132.0.0/14
-Deny from 3.136.0.0/13
-Deny from 3.144.0.0/13
-Deny from 13.58.0.0/15
-Deny from 18.116.0.0/14
-Deny from 18.188.0.0/16
-Deny from 18.189.0.0/16
-Deny from 18.190.0.0/16
-Deny from 18.191.0.0/16
-Deny from 18.216.0.0/14
-Deny from 18.220.0.0/14
-Deny from 18.224.0.0/14
-Deny from 52.14.0.0/16
-Deny from 173.252.*.*
-Allow from all
-
-# ANOTHER WAY;
-<IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT} ^.*ClaudeBot.*$
-RewriteCond %{REQUEST_URI} !robots\.txt  - [F,L]
-RewriteRule .* http://www.anthropic.com [R,L]
-</IfModule>
-https://www.anthropic.com/
-
-.....................................................................
----------------------------------------------------------------------
-## Cohere ai.
-URL: https://cohere.com/
-
-User-agent: cohere-training-data-crawler
-Disallow: /
-
-User-agent: cohere-ai
-Disallow: /
-
-* LLM:
- Command A
- Command R7B
- Cohere R+
- 
- .....................................................................
----------------------------------------------------------------------
-## I ASK:
-URL: https://iask.ai/
-
+User-agent: Goose
+User-agent: Hugging Face
+User-agent: iaskspider
 User-agent: iaskspider/2.0
-Disallow: /
 User-agent: iAskBot
-Disallow: /
-User-agent: iAskBot/1.0
-Disallow: /
-
-.....................................................................
----------------------------------------------------------------------
-## Perplexity  Ai
-URL: https://www.perplexity.ai/
-URL UA: https://docs.perplexity.ai/guides/bots
-IP LIST: https://www.perplexity.ai/perplexitybot.json
-SONAR: https://github.com/ppl-ai/api-cookbook
-
-User-agent: PerplexityBot
-Disallow: /
-User-agent: PerplexityBot/1.0    (added: 250414)
-Disallow: /
-User-agent: Perplexity-User/1.0
-Disallow: /
-User-agent: Perplexit-User
-Disallow: /
-User-agent: 
-User-agent: PerplexityUser
-Disallow: /
-
-.....................................................................
----------------------------------------------------------------------
-#Apple AI:
-# https://support.apple.com/en-us/119829
-User-agent: Applebot-Extended
-Disallow: /
-
-OTHER apple (siri) #May: Affect Safari! Browser! Be carful!
-User-agent: Applebot
-Disallow: /
-
-User-agent: Applebot-Extended
-Disallow: /
-
-.....................................................................
----------------------------------------------------------------------
-Yandex Search engine:
-URL: http://yarchatgpt.ru
-
-#Yandex:
-# Machine learning
-  CatBoost
-  Yandex - YaLM
-
-User-agent: YarGPT
-Disallow: /
-
-Also: User-agent: yarchatgpt
-      Disallow: /
-
-.....................................................................
----------------------------------------------------------------------
-#WORDPress AI:
-WPBot is an easy to use, Native, No coding required, AI ChatBot for 
-WordPress websites to provide automated Live Chat Support, 
-This ChatBot can be also be powered by OpenAI ChatGPT, DialogFlow, 
-or simply use the built-in features to 
-provide Live Customer support and collect data without any extra cost. 
-Own and Manage this Native WordPress ChatBot directly from your 
-
-https://sv.wordpress.org/plugins/chatbot/
-
-
-User-agent: wpbot
-Disallow: /
-User-agent: wpbot/1.1
-Disallow: /
-
-User-agent: DialogFlow
-Disallow: /
-
-.....................................................................
----------------------------------------------------------------------
-## AI SCRAPERS - AI And AI datascrapers: 
-
-User-agent: FriendlyCrawler
-Disallow: /
-
-User-agent: FriendlyCrawler/1.0
-Disallow: /
-
-User-agent: FriendlyCrawler/Nutch-1.20-SNAPSHOT
-Disallow: /
-
-# Scraper (scrapes your blog for everything:
-User-agent: scrapy
-Disallow: /
-
-User-agent: AlphaAI
-Disallow: /
-
-# Collect all data:
-User-agent: PiplBot
-Disallow: /
-
-# peer crawler:
-An open source and collaborative framework for extracting the data you need from websites.
-
-Site: https://www.peer39.com/
-
+User-agent: ICC-Crawler
+User-agent: ImagesiftBot
+User-agent: img2dataset
+User-agent: imgproxy /
+User-agent: ImageGen /
+User-agent: IntelliSeek
+User-agent: IntelliSeek.ai
+User-agent: ISSCyberRiskCrawler
+User-agent: Kangaroo
+User-agent: Kangaroo Bot
+User-agent: knowledge /
+User-agent: LeftWingGPT
+User-agent: magpie-crawler
+User-agent: Meltwater
+User-agent: Nicecrawler
+User-agent: MSBot 
+User-agent: Omgilibot
+User-agent: Omgili
+User-agent: Open AI 
+User-agent: Openbot
+User-agent: OAI SearchBot
+User-agent: OAI-SearchBot/1.0
+User-agent: OpenAI Crawler
+User-agent: OpenAIContentCrawler
+User-agent: OpenAI o1
+User-agent: OpenAI o1-mini
+User-agent: OpenAI o3-mini
+User-agent: OpenAI CUA
+User-agent: Operator
+User-agent: PanguBot
+User-agent: PaperLiBot
+User-agent: PaperLiBot/2.1
+User-agent: peer39_crawler
 User-agent: peer39_crawler/1.0
-Disallow: /
-
-# AI Data Scraper
-# https://darkvisitors.com/agents/timpibot
-
+User-agent: PerplexityBot
+User-agent: PerplexityBot/1.0
+User-agent: Perplexity-User/1.0
+User-agent: Perplexit-User
+User-agent: PerplexityUser
+User-agent: PetalBot
+User-agent: PiplBot
+User-agent: proximic 
+User-agent: RightWingGPT
+User-agent: scrapy
+User-agent: Scrapy/2.0
+User-agent: Stability AI
+User-agent: ScraperGPT
+User-agent: ShadowGPT
+User-agent: SemrushBot-OCOB
+User-agent: Seekr
+User-agent: Sidetrade
+User-agent: StableDiffusionBot
+User-agent: Slack-ImgProxy
+User-Agent: thehive.ai
+User-Agent: thehive.a1
 User-agent: Timpibot
-Disallow: /
-User-agent: Timpibot
-Disallow: /
-User-agent: Timpibot/0.8 
-Disallow: /    
-User-agent: Timpibot/0.9 
-Disallow: /
-
-## Hard to block:
-Timpibot/0.8     Mozilla/5.0 (compatible; Timpibot/0.8; +http://www.timpi.io)
-Timpibot/0.9     Timpibot/0.9 (+http://www.timpi.io)
-
-https://timpi.io/
-I blocked whole user string!
-
-# AI + HACKING:
-https://flowgpt.com/p/wormgpt-v30
-# WormGPT V3.0 is a powerful and ruthless AI chatbot designed to assist 
-hackers with their hacking and programming endeavors
-
+User-agent: TurnitinBot
+User-agent: Webzio
+User-agent: WebText /
+User-agent: wpbot
+User-agent: wpbot/1.1
+User-agent: wpbot/1.2
+User-agent: WebChatGPT
+User-agent: WormGPT
 User-agent: WormGPT V3.0
-Disallow: /
-User-agent: WormGPT 
-Disallow: /
-
-#THIS Is blocked by: common hackers tools
-https://www.dataprovider.com/spider/
-User-agent: dataprovider
-Disallow: /
-
-* https://gptzero.me/
-# ByPasser of ai: Can by pass allrobots.txt, scurity to steal your stuff:(
-
-User-agent: GPTZero
-Disallow: /
+User-agent: Webzio-Extended
+User-agent: VelenPublicWebCrawler
+User-agent: xAI
+User-agent: XBot
+User-agent: x.AI
+User-agent: YouBot
+User-agent: YarGPT
+User-agent: yarchatgpt
+User-agent: ZeroGPT
 User-agent: ZeroCHAT
 Disallow: /
 
-* https://www.zerogpt.com
-User-agent: ZeroGPT
-Disallow: /
+.............................
+.............................
+-----------------------------
 
-........................................................
-#Allenai ai:
-https://allenai.org/crawler
-https://allenai.org
-User-agent: AI2Bot
-Disallow: /
+## Ultimate Ai + scrapers not wanted List: Based on: perrishpress AI LIst:
 
-........................................................
-* Scrapy:
-URL: https://scrapy.org/
-ALSO: URL: https://www.zyte.com
-SPIDERS/User agents: https://docs.scrapy.org/en/latest/topics/spiders.html
-
-User-agent: scrapy
-Disallow: /
-User-agent: Scrapy/2.0
-Disallow: /
-
-??? But anyway!
-XMLFeedSpider
-
-.....................................................................
----------------------------------------------------------------------
-### LLMS trainering bots:  GONE??  
-
-# LLMS - Dalvik is a virtual machine (VM) for the Android operating system. 
-Usually used on mobile click farms for automated tasks. 
-No sane human will be using this browser agent. 
-Works mostly on: Android OS.
-
-URL: https://en.wikipedia.org/wiki/Dalvik_(software)
-URL: https://source.android.com/docs/core/runtime/dalvik-bytecode
-User agent Info:  https://useragents.io/uas/dalvik-2-1-0-linux-u-android-14-sm-s918b-build-up1a-231005-007_8c5110c0e19bc84a14542b3da3db568a#google_vignette
-More: https://www.geeksforgeeks.org/what-is-dvmdalvik-virtual-machine/
-
-
-User-agent: Dalvik/2
-Disallow: / 
-
-User-agent: Dalvik/2.1.0
-Disallow: / 
-
------------------------------------------------------
-LLMS trainer:
-
-https://allenai.org
-https://github.com/allenai
-
-URL: https://allenai.org/crawler
+User-agent: * 
+User-agent: .ai
+User-agent: AI /
+User-agent: AI agents /
+User-agent: Agent GPT
+User-agent: Agentic
+User-agent: AI Article Writer
+User-agent: AI Content Detector
+User-agent: AI Dungeon
+User-agent: AI Search Engine
+User-agent: AI SEO Crawler
+User-agent: AI Training
+User-agent: AITraining /
+User-agent: AI Writer
 User-agent: AI2 Bot
-Disallow: /
-
-
-* Cotoyogi
-GenAI training-data scraper
-URL: https://ds.rois.ac.jp/en_center8/en_crawler/
-
+User-agent: AI2Bot
+User-agent: AI21 Labs
+User-agent: AIBot
+User-agent: AIMatrix
+User-agent: AISearchBot
+User-agent: Alexa
+User-agent: AlexaTM
+User-agent: Alpha AI
+User-agent: AlphaAI
+User-agent: Amazon Bedrock
+User-agent: Amazon Comprehend
+User-agent: Amazon Lex
+User-agent: Amazon SageMaker
+User-agent: Amazon Silk
+User-agent: Amazon Textract
+User-agent: AmazonBot
+User-agent: Amazon-Kendra
+User-agent: amazon-kendra
+User-agent: Nova Act 
+User-agent: Amelia
+User-agent: AndersPinkBot
+User-agent: Anthropic
+User-agent: anthropic-ai
+User-agent: AnyPicker
+User-agent: Anyword
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: Aria Browse
+User-agent: Aria browse Aria AI
+User-agent: Aria browser AI
+User-agent: Articoolo
+User-agent: AutoGPT
+User-agent: Automated Writer
+User-agent: AwarioRssBot
+User-agent: AwarioSmartBot
+User-agent: AWS Trainium
+User-agent: Nova Act 
+User-agent: BardBot
+User-agent: Bing ai
+User-agent: BingAI
+User-agent: Bingbot-chat
+User-agent: bingbot-chat/2.0
+User-agent: Brave Leo
+User-agent: Brave Leo AI
+User-agent: Brightbot 1.0
+User-agent: Bytedance
+User-agent: ByteDance crawler
+User-agent: Bytespider
+User-agent: CrawlGPT 
+User-agent: CatBoost
+User-agent: CCBot
+User-agent: ccbot
+User-agent: CCBot/2.0
+User-agent: CC-Crawler
+User-agent: CC-Crawler/2.0
+User-agent: ChatGLM
+User-agent: ChatGPT
+User-agent: ChatGPT-User
+User-agent: ChatGPT-User/1.0
+User-agent: chatUser
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: Chinchilla
+User-agent: Claude
+User-agent: Claude 3.5 Haiku
+User-agent: Claude 3.7 Sonnet
+User-agent: Claude Opus
+User-agent: ClaudeBot
+User-agent: ClaudeBot/1.0
+User-agent: claude-web/1.0
+User-agent: ClearScope
+User-agent: Cohere
+User-agent: cohere-ai
+User-agent: cohere-training-data-crawler
+User-agent: Common Crawl
+User-agent: CommonCrawl
+User-agent: Content Harmony
+User-agent: Content King
+User-agent: Content Optimizer
+User-agent: Content Samurai
+User-agent: Content Scraper GPT
+User-agent: ContentAtScale
+User-agent: ContentBot
+User-agent: Contentedge
+User-agent: Conversion AI
+User-agent: Copilot
+User-agent: CopyAI
+User-agent: Copymatic
+User-agent: Copyscape
 User-agent: Cotoyogi
-Disallow: /
-
-LiteLLM    https://www.litellm.ai
-URL: https://docs.litellm.ai/docs/
-
-
-* ON GITHUB:
-reliableGPT   https://github.com/BerriAI/reliableGPT  
-
-.....................................................................
----------------------------------------------------------------------
-* Mistral ai
-URL: https://mistral.ai
-URL: http://chat.mistral.ai
-URL: https://mistral.ai/en
-URL: https://docs.mistral.ai/capabilities/agents/
-
+User-agent: CrawlQ AI
+User-agent: Crawlspace
+User-agent: Crew AI
+User-agent: CrewAI
+User-agent: crewAI
+User-agent: DALL-E
+User-agent: DALL-E 2
+User-agent: DALL·E 3
+User-agent: DALL-E Mini
+User-agent: DataForSeoBot
+User-agent: DataProvider
+User-agent: dataprovider
+User-agent: DeepAI
+User-agent: DeepL
+User-agent: DeepMind
+User-agent: DeepSeek
+User-agent: DeepSeek-R1
+User-agent: DepolarizingGPT
+User-agent: DialoGPT
+User-agent: Diffbot
+User-agent: Doubao AI
+User-agent: DuckAssistBot
+User-agent: Extended GPT Scraper
+User-agent: FacebookBot
+User-agent: FacebookBot/1.0
+User-agent: FacebookExternalHit
+User-agent: facebookexternalhit
+User-agent: facebookexternalhit/1.1
+User-agent: Firecrawl
+User-agent: Flyriver
+User-agent: flyriverbot/1.1
+User-agent: Frase AI
+User-agent: FraudGPT
+User-agent: FriendlyCrawler
+User-agent: FriendlyCrawler/1.0
+User-agent: FriendlyCrawler/Nutch-1.20-SNAPSHOT
+User-agent: Gato
+User-agent: Gemini
+User-agent: Gemma
+User-agent: GenAI
+User-agent: Google Bard AI
+User-agent: Google Gemini
+User-agent: Google-CloudVertexBot
+User-agent: Goose
+User-agent: GPT
+User-agent: gpt-crawler
+User-agent: GPT 4 Omni
+User-agent: GPT 4 Omni Mini
+User-agent: GPT Scraper
+User-agent: GPTZero
+User-agent: GPT-1
+User-agent: GPTBot
+User-agent: GPTBot /
+User-agent: GPT-2
+User-agent: GPT-3
+User-agent: GPT-3.5
+User-agent: GPT-3.5 turbo
+User-agent: GPT-4
+User-agent: GPT-4o
+User-agent: GPT-4o mini
+User-agent: GPT-4V
+User-agent: gpt-4-turbo
+User-agent: GPT-4.1
+User-agent: GPT-4.1-mini
+User-agent: GPT-4.1-nano
+User-agent: GPT-4,5
+User-agent: GPT-5
+User-agent: Grammarly
+User-agent: Grendizer
+User-agent: Grok
+User-agent: GrokAI
+User-agent: GTP Bot
+User-agent: GTPBOT
+User-agent: Hemingway Editor
+User-agent: Hugging Face
+User-agent: Hypotenuse AI
+User-agent: iaskspider
+User-agent: iaskspider/2.0
+User-agent: iAskBot
+User-agent: ICC-Crawler
+User-agent: ImagesiftBot
+User-agent: img2dataset
+User-agent: imgproxy /
+User-agent: ImageGen /
+User-agent: Inferkit
+User-agent: INK Editor
+User-agent: INKforall
+User-agent: IntelliSeek
+User-agent: IntelliSeek.ai
+User-agent: ISSCyberRiskCrawler
+User-agent: JasperAI
+User-agent: Kafkai
+User-agent: Kangaroo
+User-agent: Kangaroo Bot
+User-agent: Keyword Density AI
+User-agent: Knowledge /
+User-agent: KomoBot
+User-agent: LeftWingGPT
+User-agent: LLaMA
+User-agent: Llama 3.2
+User-agent: Llama 4
+User-agent: magpie-crawler
+User-agent: MarketMuse
+User-agent: Meltwater
+User-agent: Meta AI
+User-agent: Meta Llama
+User-agent: MetaAI
+User-agent: MetaTagBot
+User-agent: Meta-AI
+User-agent: Meta-External
+User-agent: Meta-ExternalAgent
+User-agent: meta-externalagent
+User-agent: Meta-ExternalFetcher
+User-agent: meta-externalfetcher/1.1
 User-agent: Mistral
-User-agent: LeChat
-User-agent: Mistral Chat
-
-
-Open source modeller
-https://huggingface.co/mistralai/Mistral-7B-v0.1
-https://huggingface.co/mistralai/Mix...-Instruct-v0.1
-
-.....................................................................
----------------------------------------------------------------------
-# Sidetrade indexer bot - training AI: 
-URL: https://www.sidetrade.com/	
-Extracts data for a variety of uses including training AI.	
-AI product training. Only affects if you got a shop and thoroughly.
-
-User-agent: Sidetrade 
-Disallow: /
-
-.....................................................................
----------------------------------------------------------------------
-### Grok: https://x.ai/
-URL: https://groq.com
-
-Grok-1.5	
-Grok-2 mini	
-Grok-2
-Grok-2‡
-GroqChat
-
-Groq Cloud AI
-
-.....................................................................
----------------------------------------------------------------------
-# OTHER AI:
-
-* https://www.peer39.com/
-
+User-agent: MSBot 
+User-agent: Narrative
+User-agent: NeevaBot
+User-agent: Neural Text
+User-agent: NeuralSEO
+User-agent: Nicecrawler
+User-agent: OAI SearchBot
+User-agent: OAI-SearchBot
+User-agent: OAI-SearchBot/1.0
+User-agent: Omgili
+User-agent: Omgilibot
+User-agent: Open AI
+User-agent: OpenAI
+User-agent: OpenAI Crawler
+User-agent: OpenAI o1
+User-agent: OpenAI o1-mini
+User-agent: OpenAI o3-mini
+User-agent: OpenAIContentCrawler
+User-agent: OpenAI CUA
+User-agent: OpenBot
+User-agent: Openbot
+User-agent: Operator
+User-agent: OpenText AI
+User-agent: Outwrite
+User-agent: Page Analyzer AI
+User-agent: PanguBot
+User-agent: Paperlibot
+User-agent: PaperLiBot/2.1
+User-agent: Paraphraser.io
 User-agent: peer39_crawler
 User-agent: peer39_crawler/1.0
-
-
-## TurnitinBot
-* A web crawler (aka spider, robot or bot) is a computer program that scours the web gathering content.
-https://www.turnitin.com/robot/crawlerinfo.html
-
-User-agent: TurnitinBot
-Disallow: /   
-
-# AndersPinkBot
-* curated content for learning  LLM!
-https://anderspink.com
-
-User-agent: AndersPinkBot
-Disallow: /
-
-
-ISSCyberRiskCrawler  
-URL: https://iss-cyber.com/
-
-User-agent: ISSCyberRiskCrawler
-Disallow: /
-
-URL: https://crawlspace.dev
-DOES:  Scrapes data, images and so on
-User-agent: Crawlspace
-Disallow: /
-
-# SEMRUSCH AI:
-URL:  https://sv.semrush.com/bot/
-SemrushBot-OCOB 
-
-User-agent: SemrushBot-OCOB 
-Disallow: /
-
-# Goose
-URL: https://block.github.io/goose/
-
-User-agent: Goose
-Disallow: /
-
-.....................................................................
----------------------------------------------------------------------
-* Hugging Face:
-https://huggingface.co/blog/open-r1
-URL: https://huggingface.co/chat/models
-URL: https://huggingface.co/chat/
-
-User-agent: Hugging Face
-User-agent: HuggingChat
-User-agent: Open-R1
- 
-.....................................................................
----------------------------------------------------------------------
-# AUSTRAILA:
-* Operator	Kangaroo LLM
-Documentation	https://kangaroollm.com.au/kangaroo-bot/
-
-User-agent: Kangaroo Bot
-            Disallow: /
-
-.....................................................................
----------------------------------------------------------------------
-* https://you.com/
-YouChat  
-
-User-agent: YouBot
-Disallow: /	
-.....................................................................
----------------------------------------------------------------------
-
-*Firecrawl
-https://firecrawl.dev	
-URL: https://docs.firecrawl.dev/integrations/crewai
-
-User-agent: Firecrawl
-            Disallow: /	
-User-agent: FirecrawlAgent
-            Disallow: /	
-.....................................................................
----------------------------------------------------------------------		
-
-# RIGHT/LEFT wing Ai: 
-https://www.wingai.app
- 
-RightWingGPT
-LeftWingGPT
-DepolarizingGPT
-.....................................................................
----------------------------------------------------------------------
-# The Common Crawl crawler bot  / CommonCrawl.org 
-Disallow: /
-User-agent: CCBot
-Disallow: /
-
-User-agent: ccbot
-Disallow: /
-
-.....................................................................
----------------------------------------------------------------------
-* https://finity.ai
-User-agent: PaperLiBot/2
-Disallow: /
-User-agent: PaperLiBot/2.1
-Disallow: /
-
-.....................................................................
----------------------------------------------------------------------
-## AI - not sorted:
-
-* https://docs.writesonic.com
-User-agent: Chatsonic  (GTP4.0?`)
-Disallow: /
-*
-
-## Downloader:
-https://www.brandwatch.com/legal/magpie-crawler/
-User-agent: magpie-crawler
-Disallow:/
-
-
-# Japan: https://ucri.nict.go.jp/en/icccrawler/
-User-agent: ICC-Crawler
-Disallow: /
-
-' Stability AI
-User-agent: Stability AI
-Disallow: /
-* https://stability.ai/
-
-* Agent GPT
-https://agentgpt.reworkd.ai/
-* Scrapers of content!
-
-User-agent: Agent GPT
-Disallow: /
-
-* ScraperGPT
+User-agent: PerplexityBot
+User-agent: PerplexityBot/1.0
+User-agent: Perplexity-User/1.0
+User-agent: Perplexit-User
+User-agent: PerplexityUser
+User-agent: PetalBot
+User-agent: Phindbot
+User-agent: PiplBot
+User-agent: ProWritingAid
+User-agent: proximic
+User-agent: QuillBot
+User-agent: RightWingGPT
+User-agent: RobotSpider
+User-agent: Rytr
+User-agent: SaplingAI
+User-agent: Scalenut
+User-agent: Scraper
 User-agent: ScraperGPT
-Disallow: /
-
-* https://shadowgpt.ai
+User-agent: scrapy
+User-agent: Scrapy/2.0
+User-agent: ScriptBook
+User-agent: SearchGPT
+User-agent: Seekr
+User-agent: SemrushBot-OCOB
+User-agent: Sentibot
+User-agent: SEO Content Machine
+User-agent: SEO Robot
 User-agent: ShadowGPT
-Disallow: /
-
-* https://www.librechat.ai
-LibreChat
-
-* ChainGPT
-URL: https://www.chaingpt.org/
-ChainGPT
-
-#  UltimateGPT
-https://support.zendesk.com/hc/en-us/articles/8357749315098-About-the-UltimateGPT-block-in-conversation-flows-for-advanced-AI-agents
-UltimateGPT
-
-
-#  FraudGPT  
-URL:  https://www.inuit.se/blogg/wormgpt-och-fraudgpt-uppkomsten-av-skadliga-llm
-URL: https://secureops.com/blog/ai-attacks-fraudgpt/
-URL: https://eviden.com/insights/blogs/wormgpt-when-genai-also-serves-malicious-actors/
-
-.....................................................................
----------------------------------------------------------------------
-## AI SCRAPERS:
-
-360 GPT
-* Marketing
-https://gpt360.io
-
-
-* SentiBot
-URL: https://sites.google.com/senti1.com/sentibot-eu/home
-URL 2: https://sentione.com/
-Blocks SentiOne's AI-powered social media listening and analysis tools
-
-
-URL: https://catboost.ai/
-User-agent: CatBoost
-
-
-URL: https://www.brightbot.app
-Brightbot 1.0
-
-wormsGTP
-URL: https://eviden.com/insights/blogs/wormgpt-when-genai-also-serves-malicious-actors/
-URL:  https://www.inuit.se/blogg/wormgpt-och-fraudgpt-uppkomsten-av-skadliga-llm
-
-
-Content Scraper GPT
-https://gptstore.ai/gpts/ZJvDe_sHZu-website-metadata-content-scraper-gpt
-URL: https://gptstore.ai
-
-Extended GPT Scraper
-https://apify.com/drobnikj/extended-gpt-scraper
+User-agent: Sidetrade
+User-agent: Simplified AI
+User-agent: Skydancer
+User-agent: SlickWrite
+User-agent: Spin Rewriter
+User-agent: Spinbot
+User-agent: Stability
+User-agent: Stability AI
+User-agent: StableDiffusionBot
+User-agent: Slack-ImgProxy
+User-agent: Sudowrite
+User-agent: Surfer AI
+User-agent: Text Blaze
+User-agent: TextCortex
+User-agent: The Knowledge AI
+User-Agent: thehive.ai
+User-agent: Timpibot
+User-agent: TurnitinBot
+User-agent: VelenPublicWebCrawler
+User-agent: Vidnami AI
+User-agent: WebChatGPT
+User-agent: Webzio
+User-agent: Webzio-Extended
+User-agent: WebText /
+User-agent: Whisper
+User-agent: WordAI
+User-agent: Wordtune
+User-agent: WormGPT
+User-agent: WormGPT V3.0
+User-agent: WormsGTP
+User-agent: WPBot
+User-agent: wpbot
+User-agent: wpbot/1.1
+User-agent: wpbot/1.2
+User-agent: Writecream
+User-agent: WriterZen
+User-agent: Writescope
+User-agent: Writesonic
+User-agent: xAI
+User-agent: XBot
+User-agent: xBot
+User-agent: x.AI
+User-agent: yarchatgpt
+User-agent: YarGPT
+User-agent: YouBot
+User-agent: Zero GTP
+User-agent: ZeroCHAT
+User-agent: Zerochat
+User-agent: ZeroGPT
+User-agent: Zimm
 
 
-ScrapeGPT
-URL: https://gptstore.ai/gpts/re5RLeMZTc-scrapegpt
+:::::::::::::::::::::::::::::::::::::::::::
+NEW: 250408:
 
-
-GPT Scraper
-https://apify.com/drobnikj/gpt-scraper
-
-https://www.flyriver.com/crawler
-Flyriverbot 
-
-
-# Anonymous:  Lots of tools:
-URL: https://topai.tools/
-URL: https://topai.tools/s/autonomous-gpt-agent
-Autonomous Gpt Agent  ?
-
-
-* OpenRouter  Toolbox:
-URL: https://openrouter.ai
-URL: https://openrouter.ai/models
-
-* Dataiku for Enterprise AI:
-https://www.dataiku.com/product/
-
-
-.....................................................................
----------------------------------------------------------------------
 ##  KNOCKS OUT all ai: knowledge
 
 User-agent: knowledge /
@@ -1321,41 +735,25 @@ Disallow: /
 User-agent: .ai
 User-agent: AI /
 
-.....................................................................
----------------------------------------------------------------------
-* AI chatbot - Texts:
-Copy.ai
-Jasper Chat
-SpinBot
+	  
+*
+User Agent changed:
+User-agent: AITraining /
+	  
+*
+Meta:
+Llama 4
+	  
+*
+AI agents /
+URL: https://www.analyticsvidhya.com/blog/2025/03/ai-agents-terms/
+	 
+* 
+WebText /       #openAI
+URL: https://paperswithcode.com/dataset/webtext
 
-.....................................................................
----------------------------------------------------------------------
-Not sorted AI:
-PaLM 
-Gemma
-Pi, your personal AI
-Poe
-Galactica, LLaMA
-Aya 23
-
-
-#Stolen fron: airobots.txt  - On the way? AI?
-
-PhindBot
-
-* https://www.firecrawl.dev/
-firecrawlAgent
-
-* https://andisearch.com/
-AndiBot
-
-* https://exabot.viallance.com/
-ExaBot
-
-* https://www.phind.com/
-PhindBot
-
-.....................................................................
+...........................
+Updated: 250412: 
 
 
 https://imgproxy.net/
@@ -1365,18 +763,6 @@ User-agent: imgproxy /
 Txt: streamline image management and optimize website performance
 NOTE: Can come from amany domains
 
-
-BLOCK AI: -  BBQ:   https://plugin-planet.com/bbq-pro/   Great plugin with lots custom rules:)
- 
-https://roboflow.com/
-https://labelbox.com/
-https://www.cvat.ai/   ///blocked by .ai
-
-
-# Datasets:  ? affecting sites.
-https://www.kaggle.com/
-https://www.kaggle.com/models
-
 ....................................
 
 User-agent: Slack-ImgProxy
@@ -1384,94 +770,24 @@ Disallow: /
 
 URL: https://api.slack.com/robots
 
-....................................
 
-URL: https://spider.cloud/
-User Agent: spider
+250414:
+Added: User-agent: PerplexityBot/1.0
 
-....................................
-AI PROXY:
-URL: https://www.braintrust.dev/docs/guides/proxy
-AI proxy
+250416:
+* NEW:
+GPT-4.1
+GPT-4.1-mini
+GPT-4.1-nano 
 
-https://docs.konghq.com/hub/kong-inc/ai-proxy/
-AI proxy
+Llama 3.2
+Llama 4
 
-....................................
-## BLOCK AI (Scraping) Proxies:
+ImageGen /
 
-<IfModule mod_alias.c>
-RedirectMatch 403 AI proxydeny
-RedirectMatch 403 API Proxydeny
-RedirectMatch 403 HTTP Proxiesdeny
-Redirectmatch 403 proxydenydeny
-Redirectmatch 403 forward proxydeny
-Redirectmatch 403 Server proxiesdeny
-Redirectmatch 403 residential proxiesdeny
-Redirectmatch 403 reverse proxydeny
-Redirectmatch 403 proxy requestsdeny
-Redirectmatch 403 IPv4 Proxiesdeny
-Redirectmatch 403 IPv6 Proxiesdeny
-Redirectmatch 403 Mobile Proxiesdeny
-Redirectmatch 403 Virgin proxiesdeny
-Redirectmatch 403 Proxy Serversdeny 
-Redirectmatch 403 sproxiesdeny
-Redirectmatch 403 Static ISP Proxiesdeny
-Redirectmatch 403 ISP Proxiesdeny
-RedirectMatch 403 check\_proxydeny
-</IfModule>
-
-OR: <IfModule mod_php8.c>  or if:  <IfModule mod_php7.c>  
-Add: ProxyRequests Off
-</IfModule>
-
-Proxi Lists:
-* https://spys.one/en/anonymous-proxy-list/
-* https://spys.one/en/
-* https://proxyscrape.com/free-proxy-list
-
-RAW:
-AI proxy|API Proxy|HTTP Proxies|proxydeny|forward proxy|Server proxies|residential proxies|reverse proxy|proxy request|
-IPv4 Proxies|IPv6 Proxies|Mobile Proxies|Virgin proxies|Proxy Servers| sproxiesd|Static ISP Proxies|ISP Proxies|proxy
-
-....................................
-## ADDED: 250412 
-have sent it tp Perrishpress to look at it,comes on his list sometime near future
-Falcon AI:: Affecting us???
-
-https://falconllm.tii.ae/
-https://huggingface.co/datasets/tiiuae/falcon-refinedweb
-
-Falcons Ai:
-https://falcons.ai/   
-https://github.com/Falcons-ai/
-
-
-* GAVE IT to Perrishpress to look at: llms.txt -Requests like;comcast.net, from: ie, sa and.com sites.
-
-...................................
-?.
-* BabyAGI
-Txt: lightweight, open-source autonomous agent 
-URL: https://babyagi.org/
-
-
-* MultiOn's Agent API
-URL: https://theagi.company/
-LLM frameworks
- LangChain
- LlamaIndex
- Agentic RAG
- RAG
- txt: custom AI applications that can navigate, scrape, and manipulate web content with ease
- 
-## Perrishpress to Look at:
-
-Nova
-https://nova.amazon.com/
-
-Zhipu AI : GLM4 (claimed to rival GPT-4)
- 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-............................................................................
-# Updated: 240416
+## Delated:  
+GPTbot/0.1
+GPTBot/1.0
+GPTBot/1.2
+:::::::::::::::::::::::::::::::::::::::::::
+### Updated: 250416
