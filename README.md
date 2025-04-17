@@ -25,6 +25,7 @@ READ MORE:
 * 
 # Updates:
 
+* Updated 250417, NotWantteduseragents.txt - gone through, checked with datadome list.
 * Updated 250416, Fork of blockaai crawlers.zip updated -Latest.
 * Updated 250416, block ai.php updated with the Latest.
 * Updated: 250414, block ai.php + Fork of blockaai crawlers updated with new perpl AI:(
