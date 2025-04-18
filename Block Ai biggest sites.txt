@@ -1,5 +1,4 @@
 ###BLOCK Biggest AI Sites.  Add to your firewall.
-
 *Seems like a blunt and very untargeted rule. Here are the urls of some of the largest AI website:
 
 .................................................................................................
@@ -32,12 +31,14 @@ Lmsis**.org**
 * URL: Lmsis**.org
 
 
- chat.openai.com
+chat.openai.com
  
 *.chat.openai.com
 
+# Can interfere with chrome:
 ai.google.com
-
 bard.google.com
+
+*
 
 Mightygpt.com
