@@ -121,15 +121,12 @@ RRewriteRule !^/?robots\.txt$ - [F,L]
 ## htaccess: (htaccess1)
 # AI Content/webscraping #: 
 
-# RAW List:  (use  one of above thats works for you, cut and paste!)
-
-Agent|Agent GPT|.ai|AI agents /|AI2 Bot|AISearchBot|Alexa|AlexaTM|AlphaAI|Amazon Bedrock|Amazon Comprehend|Amazon SageMaker|Amazon Silk|Amazon Textract|amazon-kendra|AWS Trainium|anthropic-ai|AnyPicker|Applebot-Extended|Aria browse Aria AI|Aria browser AI|AutoGPT|AndersPinkBot|AITraining|
-Brave Leo AI|bingbot-chat/2.0|Bing ai| Bytedance|Bytespider|BardBot|Brightbot 1.0|ByteDance crawler| Claude-User|Claude-SearchBot|
+# RAW List:  Bytedance|Bytespider|BardBot|Brightbot 1.0|ByteDance crawler| Claude-User|Claude-SearchBot|
 CatBoost|cohere-ai|cohere-training-data-crawler|Claude|ClaudeBot|Claude 3.7 Sonnet|claude-web/1.0|ClaudeBot/1.0|Claude 3.5 Haiku|Claude Opus|CrawlGPT|crewAI|Chinchilla|ChatGLM|chatUser|ChatGPT|ChatGPT-User|ChatGPT-User/1.0|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|Cotoyogi|Content Scraper GPT|
 dataprovider|Diffbot|DialoGPT|DepolarizingGPT v|Doubao AI|DuckAssistBot|DALL-E|DALL-E 2|DALL-E 3|DALL-E Mini|DeepAI|DeepL|DeepMind|DeepSeek|DeepSeek-R1|
 FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|Firecrawl|Flyriver|flyriverbot/1.1|meta-externalfetcher/1.1|Meta-ExternalAgent|Meta-ExternalFetcher|LLaMA|Llama 3.2|Llama 4|Meta AI|Meta Llama|meta-externalfetcher/1.1|Mistral|FraudGPT|FriendlyCrawler|FriendlyCrawler/1.0|FriendlyCrawler/Nutch-1.20-SNAPSHOT|
 Gato|GenAI|GTB|GTPBOT|GPT /|gpt-crawler|GPT-1|GPT-2|GPT-3|GPT-1|GPT-2|GPT-3.5|GPT-3.5 turbo|GPT-4|GPT-4.5|GPT-5|gpt-4-turbo|GPT-4o|GPT-4V|GPT-4o mini|GPT 4 Omni|GPT 4 Omni Mini|GPT-4.1
-GPT-4.1-miniGPT-4.1|GPT-4.1-mini|GPT-4.1-nano||SearchGPT|GPT ScraperGPT|gpt-crawler|Zero|Grok|GrokAI|Goose|Gemini|Google Gemini|Google Bard AI|Google-CloudVertexBot|Extended GPT Scraper|
+GPT-4.1-miniGPT-4.1|GPT-4.1-mini|GPT-4.1-nano||SearchGPT|GPT ScraperGPT|gpt-crawler|Zero|Grok|GrokAI|Goose|Gemini|Google Gemini|Extended GPT Scraper|
 Hugging Face|iaskspider|iaskspider/2.0|iAskBot|ICC-Crawler|ImagesiftBot|img2dataset|IntelliSeek|IntelliSeek.ai|ISSCyberRiskCrawler|ImageGen /|imgproxy /|
 Kangaroo|Kangaroo Bot|LeftWingGPT|magpie-crawler|Meltwater|Nicecrawler|MSBot|Nova Act| 
 Omgilibot|Omgili|Open AI| Openbot|OAI SearchBot|OAI-SearchBot/1.0|OpenAI o1|OpenAI o1-mini|OpenAI o3-mini|OpenAI Crawler|Operator|OpenAI CUA|
@@ -151,7 +148,6 @@ GTB
 #  I USE:  (/.htaccess2: )
 <IfModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
-RewriteRule !^/?robots\.txt$ - [F,L]
 RewriteRule "^.*$" - [F,L]</IfModule>
 
 .....................................................................
@@ -187,13 +183,10 @@ User-agent: AutoGPT
 User-agent: AndersPinkBot
 User-agent: AITraining
 User-agent: Brave Leo AI
-User-agent: bingbot-chat/2.0
-User-agent: Bing ai 
 User-agent: Brightbot 1.0
 User-agent: Bytedance
 User-agent: ByteDance crawler
 User-agent: Bytespider
-User-agent: BardBot
 User-agent: CrawlGPT 
 User-agent: CatBoost
 User-agent: cohere-ai
@@ -289,8 +282,6 @@ User-agent: Grok
 User-agent: GrokAI
 User-agent: Gemini  
 User-agent: Google Gemini
-User-agent: Google Bard AI
-User-agent: Google-CloudVertexBot
 User-agent: Goose
 User-agent: Hugging Face
 User-agent: iaskspider
@@ -404,21 +395,15 @@ User-agent: AlexaTM
 User-agent: Alpha AI
 User-agent: AlphaAI
 User-agent: Amazon Bedrock
-User-agent: Amazon Bedrock
-User-agent: Amazon Comprehend
 User-agent: Amazon Comprehend
 User-agent: Amazon Lex
 User-agent: Amazon SageMaker
 User-agent: Amazon Sagemaker
 User-agent: Amazon Silk
-User-agent: Amazon Silk
-User-agent: Amazon Textract
 User-agent: Amazon Textract
 User-agent: AmazonBot
 User-agent: Amazon-Kendra
-User-agent: amazon-kendra
 User-agent: Amelia
-User-agent: AndersPinkBot
 User-agent: AndersPinkBot
 User-agent: Anthropic
 User-agent: anthropic-ai
@@ -435,9 +420,6 @@ User-agent: AwarioRssBot
 User-agent: AwarioSmartBot
 User-agent: AWS Trainium
 User-agent: Azure
-User-agent: BardBot
-User-agent: Bing ai
-User-agent: bingbot-chat/2.0
 User-agent: Brave Leo
 User-agent: Brave Leo AI
 User-agent: Brightbot 1.0
@@ -796,5 +778,16 @@ ImageGen /
 GPTbot/0.1
 GPTBot/1.0
 GPTBot/1.2
+
+# FROM Perrishpress/ ultamte list, Note: If you don’t care about search results,
+ you can restore the removed blocks for Google, Bing, and Apple:
+
+User-agent: Applebot
+User-agent: BingAI
+User-agent: Bingbot-chat
+User-agent: Google Bard AI
+User-agent: Google-CloudVertexBot
+User-agent: Google-Extended
+User-agent: GoogleOther
 :::::::::::::::::::::::::::::::::::::::::::
 ### Updated: 250418
