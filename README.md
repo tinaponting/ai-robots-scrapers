@@ -19,7 +19,7 @@ And ways to block ai scrapers of your content.)
 READ MORE: 
 * https://solveo.co/top-12-ai-agents-for-content-creation-in-2025/
 * 
-* https://github.com/bytedance
+* AI Scraping protection:  https://wordpress.org/plugins/ai-scraping-protector/
 
 * TDM Reservation Protocol (TDMRep)  -  https://www.w3.org/community/reports/tdmrep/CG-FINAL-tdmrep-20240202/
 * 
