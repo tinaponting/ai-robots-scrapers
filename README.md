@@ -25,7 +25,8 @@ READ MORE:
 * 
 # Updates:
 
-** 2404018 working on fork plugins, ai block.
+** 2404018 working on  ai block.
+* Updated 250418, Fork of blockaai crawlers.zip updated -Latest.
 * Updated 250418 Robots.txt/htaccess with Latest AI Bots.
 * Updated 250418, Latest: Perrish Press List
 * Updated 250417, NotWantteduseragents.txt - gone through, checked with datadome list.
