@@ -163,7 +163,6 @@ SLIM: #Ai - scrapers -Robots. txt:
 
 User-agent: * 
 User-agent: .ai
-User-agent: AI /
 User-agent: AI agents /
 User-agent: Agent GPT
 User-agent: AI2 Bot
@@ -377,22 +376,21 @@ Disallow: /
 .............................
 .............................
 -----------------------------
-
 ## Ultimate Ai + scrapers not wanted List: Based on: perrishpress AI LIst:
 
-User-agent: * 
+# Ultimate AI Block List v1.4 20250417
+# https://perishablepress.com/ultimate-ai-block-list/
+
 User-agent: .ai
-User-agent: AI /
-User-agent: AI agents /
 User-agent: Agent GPT
 User-agent: Agentic
+User-agent: AI agents /
 User-agent: AI Article Writer
 User-agent: AI Content Detector
 User-agent: AI Dungeon
 User-agent: AI Search Engine
 User-agent: AI SEO Crawler
 User-agent: AI Training
-User-agent: AITraining /
 User-agent: AI Writer
 User-agent: AI2 Bot
 User-agent: AI2Bot
@@ -400,27 +398,32 @@ User-agent: AI21 Labs
 User-agent: AIBot
 User-agent: AIMatrix
 User-agent: AISearchBot
+User-agent: AITraining
 User-agent: Alexa
 User-agent: AlexaTM
 User-agent: Alpha AI
 User-agent: AlphaAI
 User-agent: Amazon Bedrock
+User-agent: Amazon Bedrock
+User-agent: Amazon Comprehend
 User-agent: Amazon Comprehend
 User-agent: Amazon Lex
 User-agent: Amazon SageMaker
+User-agent: Amazon Sagemaker
 User-agent: Amazon Silk
+User-agent: Amazon Silk
+User-agent: Amazon Textract
 User-agent: Amazon Textract
 User-agent: AmazonBot
 User-agent: Amazon-Kendra
 User-agent: amazon-kendra
-User-agent: Nova Act 
 User-agent: Amelia
+User-agent: AndersPinkBot
 User-agent: AndersPinkBot
 User-agent: Anthropic
 User-agent: anthropic-ai
 User-agent: AnyPicker
 User-agent: Anyword
-User-agent: Applebot
 User-agent: Applebot-Extended
 User-agent: Aria Browse
 User-agent: Aria browse Aria AI
@@ -431,19 +434,16 @@ User-agent: Automated Writer
 User-agent: AwarioRssBot
 User-agent: AwarioSmartBot
 User-agent: AWS Trainium
-User-agent: Nova Act 
+User-agent: Azure
 User-agent: BardBot
 User-agent: Bing ai
-User-agent: BingAI
-User-agent: Bingbot-chat
 User-agent: bingbot-chat/2.0
 User-agent: Brave Leo
 User-agent: Brave Leo AI
 User-agent: Brightbot 1.0
-User-agent: Bytedance
+User-agent: ByteDance
 User-agent: ByteDance crawler
 User-agent: Bytespider
-User-agent: CrawlGPT 
 User-agent: CatBoost
 User-agent: CCBot
 User-agent: ccbot
@@ -454,9 +454,7 @@ User-agent: ChatGLM
 User-agent: ChatGPT
 User-agent: ChatGPT-User
 User-agent: ChatGPT-User/1.0
-User-agent: chatUser
-User-agent: Claude-User
-User-agent: Claude-SearchBot
+User-agent: chatUser /
 User-agent: Chinchilla
 User-agent: Claude
 User-agent: Claude 3.5 Haiku
@@ -464,6 +462,8 @@ User-agent: Claude 3.7 Sonnet
 User-agent: Claude Opus
 User-agent: ClaudeBot
 User-agent: ClaudeBot/1.0
+User-agent: Claude-SearchBot
+User-agent: Claude-User
 User-agent: claude-web/1.0
 User-agent: ClearScope
 User-agent: Cohere
@@ -485,15 +485,15 @@ User-agent: CopyAI
 User-agent: Copymatic
 User-agent: Copyscape
 User-agent: Cotoyogi
+User-agent: CrawlGPT
 User-agent: CrawlQ AI
 User-agent: Crawlspace
 User-agent: Crew AI
 User-agent: CrewAI
-User-agent: crewAI
 User-agent: DALL-E
 User-agent: DALL-E 2
-User-agent: DALL·E 3
 User-agent: DALL-E Mini
+User-agent: DALL·E 3
 User-agent: DataForSeoBot
 User-agent: DataProvider
 User-agent: dataprovider
@@ -511,8 +511,8 @@ User-agent: Extended GPT Scraper
 User-agent: FacebookBot
 User-agent: FacebookBot/1.0
 User-agent: FacebookExternalHit
-User-agent: facebookexternalhit
 User-agent: facebookexternalhit/1.1
+User-agent: Falcon
 User-agent: Firecrawl
 User-agent: Flyriver
 User-agent: flyriverbot/1.1
@@ -525,19 +525,20 @@ User-agent: Gato
 User-agent: Gemini
 User-agent: Gemma
 User-agent: GenAI
+User-agent: Genspark
+User-agent: GLM
 User-agent: Google Bard AI
 User-agent: Google Gemini
 User-agent: Google-CloudVertexBot
 User-agent: Goose
 User-agent: GPT
-User-agent: gpt-crawler
 User-agent: GPT 4 Omni
 User-agent: GPT 4 Omni Mini
 User-agent: GPT Scraper
+User-agent: GPT Scraper
+User-agent: GPTBot /
 User-agent: GPTZero
 User-agent: GPT-1
-User-agent: GPTBot
-User-agent: GPTBot /
 User-agent: GPT-2
 User-agent: GPT-3
 User-agent: GPT-3.5
@@ -546,29 +547,33 @@ User-agent: GPT-4
 User-agent: GPT-4o
 User-agent: GPT-4o mini
 User-agent: GPT-4V
+User-agent: GPT-4,5
 User-agent: gpt-4-turbo
 User-agent: GPT-4.1
 User-agent: GPT-4.1-mini
 User-agent: GPT-4.1-nano
-User-agent: GPT-4,5
 User-agent: GPT-5
+User-agent: gpt-crawler
 User-agent: Grammarly
 User-agent: Grendizer
 User-agent: Grok
 User-agent: GrokAI
-User-agent: GTP Bot
+User-agent: GT Bot
+User-agent: GTBot
+User-agent: GTP
 User-agent: GTPBOT
 User-agent: Hemingway Editor
 User-agent: Hugging Face
 User-agent: Hypotenuse AI
+User-agent: iAskBot
 User-agent: iaskspider
 User-agent: iaskspider/2.0
-User-agent: iAskBot
 User-agent: ICC-Crawler
+User-agent: ImageGen
+User-agent: ImageGen /
 User-agent: ImagesiftBot
 User-agent: img2dataset
 User-agent: imgproxy /
-User-agent: ImageGen /
 User-agent: Inferkit
 User-agent: INK Editor
 User-agent: INKforall
@@ -580,12 +585,13 @@ User-agent: Kafkai
 User-agent: Kangaroo
 User-agent: Kangaroo Bot
 User-agent: Keyword Density AI
-User-agent: Knowledge /
+User-agent: knowledge /
 User-agent: KomoBot
 User-agent: LeftWingGPT
 User-agent: LLaMA
 User-agent: Llama 3.2
 User-agent: Llama 4
+User-agent: LLMs
 User-agent: magpie-crawler
 User-agent: MarketMuse
 User-agent: Meltwater
@@ -600,42 +606,36 @@ User-agent: meta-externalagent
 User-agent: Meta-ExternalFetcher
 User-agent: meta-externalfetcher/1.1
 User-agent: Mistral
-User-agent: MSBot 
+User-agent: MSBot
 User-agent: Narrative
 User-agent: NeevaBot
 User-agent: Neural Text
 User-agent: NeuralSEO
 User-agent: Nicecrawler
+User-agent: Nova Act
 User-agent: OAI SearchBot
-User-agent: OAI-SearchBot
 User-agent: OAI-SearchBot/1.0
 User-agent: Omgili
 User-agent: Omgilibot
 User-agent: Open AI
 User-agent: OpenAI
-User-agent: OpenAI Crawler
-User-agent: OpenAI o1
-User-agent: OpenAI o1-mini
-User-agent: OpenAI o3-mini
 User-agent: OpenAIContentCrawler
-User-agent: OpenAI CUA
 User-agent: OpenBot
-User-agent: Openbot
-User-agent: Operator
 User-agent: OpenText AI
+User-agent: Operator
 User-agent: Outwrite
 User-agent: Page Analyzer AI
 User-agent: PanguBot
-User-agent: Paperlibot
+User-agent: PaperLiBot
 User-agent: PaperLiBot/2.1
 User-agent: Paraphraser.io
 User-agent: peer39_crawler
 User-agent: peer39_crawler/1.0
+User-agent: Perplexity
 User-agent: PerplexityBot
 User-agent: PerplexityBot/1.0
-User-agent: Perplexity-User/1.0
-User-agent: Perplexit-User
 User-agent: PerplexityUser
+User-agent: Perplexit-User
 User-agent: PetalBot
 User-agent: Phindbot
 User-agent: PiplBot
@@ -649,7 +649,7 @@ User-agent: SaplingAI
 User-agent: Scalenut
 User-agent: Scraper
 User-agent: ScraperGPT
-User-agent: scrapy
+User-agent: Scrapy
 User-agent: Scrapy/2.0
 User-agent: ScriptBook
 User-agent: SearchGPT
@@ -661,28 +661,33 @@ User-agent: SEO Robot
 User-agent: ShadowGPT
 User-agent: Sidetrade
 User-agent: Simplified AI
+User-agent: Sitefinity
 User-agent: Skydancer
+User-agent: Slack-ImgProxy
 User-agent: SlickWrite
+User-agent: Sonic
 User-agent: Spin Rewriter
 User-agent: Spinbot
 User-agent: Stability
 User-agent: Stability AI
 User-agent: StableDiffusionBot
-User-agent: Slack-ImgProxy
 User-agent: Sudowrite
+User-agent: Super Agent
 User-agent: Surfer AI
 User-agent: Text Blaze
 User-agent: TextCortex
 User-agent: The Knowledge AI
-User-Agent: thehive.ai
+User-Agent: thehive.a1
+User-agent: Timpibot
 User-agent: Timpibot
 User-agent: TurnitinBot
 User-agent: VelenPublicWebCrawler
 User-agent: Vidnami AI
 User-agent: WebChatGPT
+User-agent: WebText /
+User-agent: Webzio
 User-agent: Webzio
 User-agent: Webzio-Extended
-User-agent: WebText /
 User-agent: Whisper
 User-agent: WordAI
 User-agent: Wordtune
@@ -696,7 +701,6 @@ User-agent: wpbot/1.2
 User-agent: Writecream
 User-agent: WriterZen
 User-agent: Writescope
-User-agent: Writesonic
 User-agent: xAI
 User-agent: XBot
 User-agent: xBot
@@ -708,7 +712,9 @@ User-agent: Zero GTP
 User-agent: ZeroCHAT
 User-agent: Zerochat
 User-agent: ZeroGPT
+User-agent: Zhipu
 User-agent: Zimm
+Disallow: /
 
 
 :::::::::::::::::::::::::::::::::::::::::::
@@ -734,8 +740,6 @@ Disallow: /
 
 * KNOCKS OUT ALL ai sites: 
 User-agent: .ai
-User-agent: AI /
-
 	  
 *
 User Agent changed:
@@ -784,6 +788,8 @@ GPT-4.1-nano
 Llama 3.2
 Llama 4
 
+* Steal your images:
+ImageGen
 ImageGen /
 
 ## Delated:  
@@ -791,4 +797,4 @@ GPTbot/0.1
 GPTBot/1.0
 GPTBot/1.2
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 250416
+### Updated: 250418
