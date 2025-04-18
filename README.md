@@ -25,17 +25,18 @@ READ MORE:
 * 
 # Updates:
 
+* Updated 250418 Robots.txt/htaccess with Latest AI Bots.
 * Updated 250418, Latest: Perrish Press List
 * Updated 250417, NotWantteduseragents.txt - gone through, checked with datadome list.
 * Updated 250416, Fork of blockaai crawlers.zip updated -Latest.
 * Updated 250416, block ai.php updated with the Latest.
-* Updated: 250414, block ai.php + Fork of blockaai crawlers updated with new perpl AI:(
-* Updated: 250412, block ai.php updated with the Latest Ai bots.
-* Updated: 250412, Fork of blockaai crawlers, updated with the Latests AI bots.
-* Updated: 250408 Robots.txt/htaccess with Latest AI to block/ fork of -updated!
-* Updated: 250402 Robots.txt/htaccess with newest AI to block!
-* Updated: 250402, block ai.php updated with the Latest Ai bots.
-* Updated: 250402, Fork of blockaai crawlers, updated with the Latests AI bots.
+* Updated 250414, block ai.php + Fork of blockaai crawlers updated with new perpl AI:(
+* Updated 250412, block ai.php updated with the Latest Ai bots.
+* Updated 250412, Fork of blockaai crawlers, updated with the Latests AI bots.
+* Updated 250408 Robots.txt/htaccess with Latest AI to block/ fork of -updated!
+* Updated 250402 Robots.txt/htaccess with newest AI to block!
+* Updated 250402, block ai.php updated with the Latest Ai bots.
+* Updated 250402, Fork of blockaai crawlers, updated with the Latests AI bots.
 * Remake of All in this site:)  Easy to find?
  -Deltated google extended, interfers with crawling! .
 * Updated 250329, Updated, robots.txt + .htaccess, delated, google extended, interfers with crawling!
