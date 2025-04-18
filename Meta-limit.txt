@@ -118,6 +118,9 @@ MaxConnPerIP 1
 # Another way:
 MaxClients < number-of-connections> 
 
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 ## I use this on .htaccess 1 - my own:)
 
 <IfModule mod_rewrite.c>
@@ -138,4 +141,4 @@ Header set Retry-After "5" env=RATE_LIMIT</ifModule>
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Updated: 250408
+Updated: 250418
