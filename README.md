@@ -74,4 +74,20 @@ READ MORE:
 
 ****************************************
 
+# Contributing to MyProject
 
+Hi! Thanks for contributing to **MyProject** – we really appreciate it! 💖
+
+## Get started
+
+Submit a pull request   EX: some useragent missed, somethimng wrong?  Just say Hello!
+When you're done: 
+
+* Submit your pull request
+
+Describe what should changed and why
+
+We'll review it as soon as we can!
+
+Thanks for contributing! 🙌
+Love to hear from you:) Teskedsgumman sweden
