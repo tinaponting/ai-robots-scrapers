@@ -150,6 +150,9 @@ GTB
 RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
 RewriteRule "^.*$" - [F,L]</IfModule>
 
+# BASED ON SLIM list #
+# Big list, see: Perishpress List #
+
 .....................................................................
 ---------------------------------------------------------------------
 ### A Complete Ai List ##)
@@ -790,4 +793,4 @@ User-agent: Google-CloudVertexBot
 User-agent: Google-Extended
 User-agent: GoogleOther
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 250418
+### Updated: 250419
