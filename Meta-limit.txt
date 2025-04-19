@@ -145,6 +145,7 @@ SetOutputFilter RATE_LIMIT
 SetEnv rate-limit 100
 SetEnv rate-initial-burst 200
 
+#OR:
 </IfModule>
 <IfModule mod_rewrite.c>
 RewriteCond %{REQUEST_URI} !^/Post/
