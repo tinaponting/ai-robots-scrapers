@@ -93,6 +93,19 @@ Header set X-Robots-Tag "noai, noimageai"
 Header set tdm-reservation "1"
 
 X-Robots-Tag:noAIPreferenceVocabularyTerm
+
+......................................
+
+#  TDM HEAD:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="robots" content="noai, noimageai">
+  <meta name="tdm-reservation" content="1">
+  <meta name="tdm-policy" content="">
+</head>
+</html>
 --------------------
 
 ## privacy opt out for servers ****
@@ -141,4 +154,4 @@ Header set Retry-After "5" env=RATE_LIMIT</ifModule>
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Updated: 250418
+Updated: 250419
