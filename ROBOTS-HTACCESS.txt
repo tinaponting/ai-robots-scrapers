@@ -521,8 +521,8 @@ User-agent: GPT
 User-agent: GPT 4 Omni
 User-agent: GPT 4 Omni Mini
 User-agent: GPT Scraper
-User-agent: GPT Scraper
 User-agent: GPTBot /
+User-agent: GTP 
 User-agent: GPTZero
 User-agent: GPT-1
 User-agent: GPT-2
@@ -546,7 +546,6 @@ User-agent: Grok
 User-agent: GrokAI
 User-agent: GT Bot
 User-agent: GTBot
-User-agent: GTP
 User-agent: GTPBOT
 User-agent: Hemingway Editor
 User-agent: Hugging Face
@@ -794,4 +793,4 @@ User-agent: Google-CloudVertexBot
 User-agent: Google-Extended
 User-agent: GoogleOther
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 2504201
+### Updated: 250421
