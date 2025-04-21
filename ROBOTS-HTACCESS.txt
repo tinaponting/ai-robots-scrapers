@@ -1,4 +1,4 @@
-.HTACCESSS - NOWWAY- AI!
+.HTACCESSS - NO WAY- AI!
 # Block “Scrapers, image stealers AI” bots:
 ******************************************************************** :)
 #### Put in .htaccess2,1 or htaccess:   ###
@@ -139,7 +139,7 @@ GTB
  FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|Firecrawl|Flyriver|flyriverbot/1.1|FraudGPT|
  meta-externalfetcher/1.1|Meta-ExternalAgent|meta-externalagent|Meta-ExternalFetcher|LLaMA|Llama 3.2|Llama 4|Meta AI|Meta Llama|meta-externalfetcher/1.1|FriendlyCrawler|
  Gato|GenAI|GTP|GTPBOT|GPTBot /|GTB|gpt-crawler|GPT-1|GPT-2|GPT-3| GPT-3.5|GPT-3.5 turbo|GPT-4| GPT-4,5|GPT-5|gpt-4-turbo|GPT-4o|GPT-4V|GPT-4o mini|GPT 4 Omni|GPT 4 Omni Mini|
- GPT-4.1|GPT-4.1-mini|GPT-4.1-nano|SearchGPT| GPT Scraper|Content Scraper GPT|Extended GPT Scraper|gpt-crawler|GPT Scraper|GPTZero|Grok|GrokAI|Gemini|Google Gemini|Goose|
+ GPT-4.1|GPT-4.1-mini|GPT-4.1-nano|SearchGPT|Content Scraper GPT|Extended GPT Scraper|gpt-crawler|GPT Scraper|GPTZero|Grok|GrokAI|Gemini|Google Gemini|Goose|
  Hugging Face|iaskspider|iaskspider/2.0|iAskBot|ICC-Crawler|ImagesiftBot|img2dataset|imgproxy /|ImageGen /|IntelliSeek|IntelliSeek.ai|ISSCyberRiskCrawler|
  Kangaroo|Kangaroo Bot|knowledge /|
  LeftWingGPT|magpie-crawler|Meltwater|Nicecrawler|MSBot|Mistral| 
@@ -284,7 +284,6 @@ User-agent: GPT Scraper
 User-agent: Content Scraper GPT
 User-agent: Extended GPT Scraper
 User-agent: gpt-crawler
-User-agent: GPT Scraper
 User-agent: GPTZero
 User-agent: Grok
 User-agent: GrokAI
@@ -515,7 +514,6 @@ User-agent: Gemma
 User-agent: GenAI
 User-agent: Genspark
 User-agent: GLM
-User-agent: Google Bard AI
 User-agent: Google Gemini
 User-agent: Google-CloudVertexBot
 User-agent: Goose
@@ -796,4 +794,4 @@ User-agent: Google-CloudVertexBot
 User-agent: Google-Extended
 User-agent: GoogleOther
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 250420
+### Updated: 2504201
