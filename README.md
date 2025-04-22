@@ -151,7 +151,9 @@ Firewall, does not affect bandwidth or speed!
 
 With your own bots to add: https://plugin-planet.com/bbq-pro/
 
-Describe what should changed and why
+-----------------------------------------------------------
+PULL A Request:
+** Describe what should changed and why
 
 We'll review it as soon as we can!
 
