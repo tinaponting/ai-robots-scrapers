@@ -86,6 +86,71 @@ When you're done:
 
 * Submit your pull request
 
+* .............................................
+In swedish:
+
+* ATT ANVÄNDA:  .htaccess och plugins på Protect Wordpress:
+URL: https://github.com/tinaponting/protect-wordpress
+
+Alltid: "raw file" - använd raw filen, tadet script du gillar och vet funkar för din blogg/sajt, lägg in filen,
+Eller använd: htaccess1 eller htaccess2 färdiga brandväggar, lägg upp i roten på din sajt.
+
+AI BOT HELL:
+URL: https://github.com/tinaponting/ai-robots-scrapers
+
+Plugins: Lägg upp i in plugin mapp - Aktivera -klart, evt.inställningar.
+
+VIKTIGT: Håll koll på uppdateringar på sajterna! På AI händer det mycket! Det går fort med utveckligen
+inom AI, så håll ett öga på uppdateringar!
+
+PLUGINS:
+
+* Fork Plugin URI: https://github.com/tinaponting/ai-robots-scrapers
+Ger dig Ai robots.txt, med WP inbyggda robots.txt, inverkar ej på fart!
+
+**
+BLOCK ai php.zip
+Välj vilken du vill ha, Lägg in i roten som extra trygghet.
+
+FORK of: ANTBOTAEDTION
+FORK OFF: anybot, Ai edition,blocks Ai bot and others:)
+
+HÅLL KOLL PÅ: https://perishablepress.com/ultimate-ai-block-list/
+Brandvägg, inverkar ej på bandbredd eller fart! Med egna botar att lägga in: https://plugin-planet.com/bbq-pro/
+
+____________________________________________________________________________________________________
+
+IN English:
+
+TO USE .htaccess and plugins on Protect Wordpress:
+URL: https://github.com/tinaponting/protect-wordpress
+
+Always: "raw file" - use the raw file, the script you like and know works for your blog/site, upload the file,
+Or use: htaccess1 or htaccess2 ready firewalls, upload to the root of your site.
+
+AI BOT HELL:
+URL: https://github.com/tinaponting/ai-robots-scrapers
+
+Plugins: Upload to plugin folder - Activate - done, any settings.
+
+IMPORTANT: Keep an eye on updates on the sites! A lot is happening on AI! Development is fast within AI, so keep an eye on updates!
+
+PLUGINS:
+
+* Fork Plugin URI: https://github.com/tinaponting/ai-robots-scrapers
+Gives you Ai robots.txt, with WP built-in robots.txt, does not affect speed!
+
+**
+BLOCK: ai php.zip
+Choose which one you want, Add to the root for extra security.
+
+ANTBOTAEDTION FORK OFF: anybot, Ai edition,blocks Ai bot and others:)
+
+KEEP WATCHING: https://perishablepress.com/ultimate-ai-block-list/
+Firewall, does not affect bandwidth or speed! 
+
+With your own bots to add: https://plugin-planet.com/bbq-pro/
+
 Describe what should changed and why
 
 We'll review it as soon as we can!
