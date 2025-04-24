@@ -39,6 +39,8 @@ machine learning system or neural network is prohibited.
 Prevents Bing's bot from using the content for AI purposes.  Be careful, can sometimes prevent indexing! 
 
         <meta name="bingbot" content="nocache">
+		
+		X-Robots-Tag:bingbot" content="nocache
 ***
 
 # CCBOT
@@ -56,14 +58,13 @@ The following are the proposed meta robots directives:
 ## The following are the proposed * Robots.txt rules:
 DisallowAITraining – instructs the parser to not use the data for AI training language model.
 
-User-agent: AITraining
+User-agent: AITraining /
 Disallow: /
-
 
 <meta name="tdm-reservation" content="1">
 
 
-LLM, training:
+# LLM, training:
 
 250408:
 <meta name="robots" content="noAIPreferenceVocabularyTerm">
@@ -85,14 +86,17 @@ X-Robots-Tag: noml
 
 X-Robots-Tag: nofollow, noml
 
-tdm-reservation: 1
+X-Robots-Tag: tdm-reservation: 1
 
 OR:
+X-Robots-Tag: DisallowAITraining
 
 Header set X-Robots-Tag "noai, noimageai"
-Header set tdm-reservation "1"
 
+Header set tdm-reservation "1"
 X-Robots-Tag:noAIPreferenceVocabularyTerm
+
+Header set X-Robots-Tag "noai, noimageai, nosummary"
 
 ......................................
 
@@ -116,7 +120,7 @@ but regular GPC only works from your browser (client) to company on the server. 
 *yes, I know, this has not yet been tested in court, but give it a minute, we’re just getting started hereprivacy signal from a personal blog on the server 
 to an AI scraper on the client side.
 
-So the new header on here is
+So the new header on here is:
 
 X-Robots-Tag: noai, noimageai, SPC
 
@@ -125,12 +129,11 @@ X-Robots-Tag: noai, noimageai, SPC
 #IN .htaccess put: Then they only can get one visit/per IP! Works great, have it on my blogs:
 
 <IfModule mod_rewrite.c>
-MaxConnPerIP 1
+MaxConnPerIP 2
 </IfModule>
 
 # Another way:
 MaxClients < number-of-connections> 
-
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -145,14 +148,13 @@ SetOutputFilter RATE_LIMIT
 SetEnv rate-limit 100
 SetEnv rate-initial-burst 200
 
-#OR:
+OR:
 </IfModule>
 <IfModule mod_rewrite.c>
 RewriteCond %{REQUEST_URI} !^/Post/
 RewriteRule ^(.*)$ - [E=RATE_LIMIT:1]
 Header set Retry-After "5" env=RATE_LIMIT</ifModule>
 
-
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Updated: 250419
+Updated: 250424
