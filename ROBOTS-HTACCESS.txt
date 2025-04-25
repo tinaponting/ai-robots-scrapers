@@ -130,11 +130,11 @@ GTB
 
 # RAW List:  
 
- .ai|AI agents /|Agent GPT|AI2 Bot|AISearchBot|AIBot|Alexa|AlexaTM|AlphaAI|Amazon Bedrock|Amazon Comprehend|Amazon SageMaker|Amazon Silk|
+ .ai|AI agents /|Agent GPT|AI2 Bot|AISearchBot|AIBot|Alexa|AlexaTM|AlphaAI|Amazon Bedrock|Amazon Comprehend|Amazon SageMaker|Amazon Silk|AutoMLaiHitBot|ai-proxy|
  Amazon Textract|amazon-kendra|AWS Trainium|Nova Act|anthropic-ai|AnyPicker|Applebot-Extended|Aria AI|Aria browser AI|AutoGPT|AndersPinkBot|AITraining/|
- Brave Leo AI|Brightbot 1.0|Bytedance|ByteDance crawler|Bytespider|
- CrawlGPT |CatBoost|cohere-ai|cohere-training-data-crawler|Cotoyogi|ClaudeBot|claude-web/1.0|ClaudeBot/1.0|Claude 3.7 Sonnet|
- Claude 3.5 Haiku|Claude Opus|chatUser /|Claude-User|Claude-SearchBot|crewAI|ChatGLM|Chinchilla|ChatGPT|ChatGPT-User|ChatGPT-User/1.0|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|
+ BabyAGI|Brave Leo AI|Brightbot 1.0|Bytedance|ByteDance crawler|Bytespider|
+ CrawlGPT|CatBoost|cohere-ai|cohere-training-data-crawler|Cotoyogi|ClaudeBot|claude-web/1.0|ClaudeBot/1.0|Claude 3.7 Sonnet|
+ Claude 3.5 Haiku|Claude Opus|chatUser /|Claude-User|Claude-SearchBot|crewAI|ChatGLM|Chinchilla|ChatGPT|ChatGPT search|ChatGPT-User|ChatGPT-User/1.0|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|
  dataprovider|Diffbo|DialoGPT|DepolarizingGPT|Doubao AI|DuckAssistBot|DALL-E|DALL-E 2|DALL·E 3|DALL-E Mini|DeepAI|DeepL|DeepMind|DeepSeek|DeepSeek-R1|
  FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|Firecrawl|Flyriver|flyriverbot/1.1|FraudGPT|
  meta-externalfetcher/1.1|Meta-ExternalAgent|meta-externalagent|Meta-ExternalFetcher|LLaMA|Llama 3.2|Llama 4|Meta AI|Meta Llama|meta-externalfetcher/1.1|FriendlyCrawler|
@@ -142,12 +142,12 @@ GTB
  GPT-4.1|GPT-4.1-mini|GPT-4.1-nano|SearchGPT|Content Scraper GPT|Extended GPT Scraper|gpt-crawler|GPT Scraper|GPTZero|Grok|GrokAI|Gemini|Google Gemini|Goose|
  Hugging Face|iaskspider|iaskspider/2.0|iAskBot|ICC-Crawler|ImagesiftBot|img2dataset|imgproxy /|ImageGen /|IntelliSeek|IntelliSeek.ai|ISSCyberRiskCrawler|
  Kangaroo|Kangaroo Bot|knowledge /|
- LeftWingGPT|magpie-crawler|Meltwater|Nicecrawler|MSBot|Mistral| 
+ LeftWingGPT|magpie-crawler|Meltwater|Nicecrawler|MSBot|Mistral|Manus| 
  Omgilibot|Omgili|Open AI| Openbot|OAI SearchBot|OAI-SearchBot/1.0|OpenAI Crawler|OpenAIContentCrawler|OpenAI o1|OpenAI o1-mini|OpenAI o3-mini|OpenAI CUA|Operator|
  PanguBot|PaperLiBot|PaperLiBot/2.1|peer39_crawler|peer39_crawler/1.0|PerplexityBot|PerplexityBot/1.0|Perplexity-User/1.0|Perplexit-User|PerplexityUser|PetalBot|PiplBot|proximic| 
  RightWingGPT|scrapy|Scrapy/2.0|Stability AI|ScraperGPT|ShadowGPT|SemrushBot-OCOB|Seekr|Sidetrade|StableDiffusionBot|Slack-ImgProxy|
  thehive.ai|Timpibot|TurnitinBot|
- Webzio|WebText /|wpbot|wpbot/1.1|wpbot/1.2|WebChatGPT|WormGPT|WormGPT V3.0|Webzio-Extended|VelenPublicWebCrawler|xAI|XBot|x.AI|YouBot|YarGPT|yarchatgpt|ZeroGPT|ZeroCHAT
+ Webzio|WebText /|wpbot|wpbot/1.1|wpbot/1.2|WebChatGPT|WormGPT|WormGPT V3.0|Webzio-Extended|VelenPublicWebCrawler|xAI|XBot|x.AI|YouBot|YaLM|YarGPT|yarchatgpt|ZeroGPT|ZeroCHAT
  
  # BASED ON SLIM list #
  
@@ -170,6 +170,9 @@ SLIM: #Ai - scrapers -Robots. txt:
 User-agent: * 
 User-agent: .ai
 User-agent: AI agents /
+User-agent: AutoML
+User-agent: aiHitBot
+User-agent: ai-proxy
 User-agent: Agent GPT
 User-agent: AI2 Bot
 User-agent: AISearchBot
@@ -193,6 +196,7 @@ User-agent: Aria browser AI
 User-agent: AutoGPT
 User-agent: AndersPinkBot
 User-agent: AITraining /
+User-agent: BabyAGI
 User-agent: Brave Leo AI
 User-agent: Brightbot 1.0
 User-agent: Bytedance
@@ -218,6 +222,7 @@ User-agent: Chinchilla
 User-agent: ChatGPT
 User-agent: ChatGPT-User
 User-agent: ChatGPT-User/1.0
+User-agent: ChatGPT search
 User-agent: CCBot
 User-agent: ccbot
 User-agent: CCBot/2.0
@@ -245,6 +250,7 @@ User-agent: Firecrawl
 User-agent: Flyriver
 User-agent: flyriverbot/1.1
 User-agent: FraudGPT
+User-agent: Manus
 User-agent: meta-externalfetcher/1.1
 User-agent: Meta-ExternalAgent
 User-agent: meta-externalagent
@@ -365,6 +371,7 @@ User-agent: xAI
 User-agent: XBot
 User-agent: x.AI
 User-agent: YouBot
+User-agent: YaLM
 User-agent: YarGPT
 User-agent: yarchatgpt
 User-agent: ZeroGPT
@@ -380,6 +387,9 @@ Disallow: /
 # https://perishablepress.com/ultimate-ai-block-list/
 
 User-agent: .ai
+User-agent: AutoML
+User-agent: aiHitBot
+User-agent: ai-proxy
 User-agent: Agent GPT
 User-agent: Agentic
 User-agent: AI agents /
@@ -427,6 +437,7 @@ User-agent: AwarioRssBot
 User-agent: AwarioSmartBot
 User-agent: AWS Trainium
 User-agent: Azure
+User-agent: BabyAGI
 User-agent: Brave Leo
 User-agent: Brave Leo AI
 User-agent: Brightbot 1.0
@@ -443,6 +454,7 @@ User-agent: ChatGLM
 User-agent: ChatGPT
 User-agent: ChatGPT-User
 User-agent: ChatGPT-User/1.0
+User-agent: ChatGPT search
 User-agent: chatUser /
 User-agent: Chinchilla
 User-agent: Claude
@@ -573,6 +585,7 @@ User-agent: Keyword Density AI
 User-agent: knowledge /
 User-agent: KomoBot
 User-agent: LeftWingGPT
+User-agent: Manus
 User-agent: LLaMA
 User-agent: Llama 3.2
 User-agent: Llama 4
@@ -691,6 +704,7 @@ User-agent: XBot
 User-agent: xBot
 User-agent: x.AI
 User-agent: yarchatgpt
+User-agent: YaLM
 User-agent: YarGPT
 User-agent: YouBot
 User-agent: Zero GTP
