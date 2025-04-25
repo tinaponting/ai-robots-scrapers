@@ -27,6 +27,8 @@ READ MORE:
 # Updates:
 ##  Working on my scripts, robots.txt, new Ai to include, 250425##
 
+* Updated 250425, Fork of blockaai crawlers.zip updated -Latest.
+* Updated 250425, block ai.php updated with the Latest.
 * Updated 250420, Fork of blockaai crawlers.zip updated -Latest.
 * Updated 250420 Robots.txt/htaccess with newest AI to block!
 * Updated 250418, Fork of blockaai crawlers.zip updated -Latest.
