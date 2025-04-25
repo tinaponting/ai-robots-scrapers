@@ -25,6 +25,7 @@ READ MORE:
 *  Fork of blockaai crawlers.zip   Anibot - can be a bit bandwith eater! I use on only on nights, see if I can find something lighter:)
 *  
 # Updates:
+##  Working on my scripts, robots.txt, new Ai to include, 250425##
 
 * Updated 250420, Fork of blockaai crawlers.zip updated -Latest.
 * Updated 250420 Robots.txt/htaccess with newest AI to block!
