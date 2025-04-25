@@ -181,6 +181,11 @@ https://www.dev4press.com/kb/user-guide/coresecurity-block-ai-crawlers-and-scrap
 * SEARCH ENGINE 2025 -ai:  https://www.zdnet.com/article/best-ai-search-engine/
 * AI WEBSITES -2025: https://dorik.com/blog/best-ai-websites
 * Slack AI   https://slack.com/features/ai
+
+# Strong  Ai
+URL: https://www.moveworks.com/us/en/resources/ai-terms-glossary/strong-ai
+URL 2: https://botpenguin.com/glossary/strong-ai
+
 .....................................................................
 ---------------------------------------------------------------------
 ## Agents:
@@ -213,6 +218,30 @@ User-agent: Accoona-AI-Agent/1.1.2
 Disallow: /
 User-agent: Accoona-AI-Agent
 Disallow: /
+
+.....................................................................
+---------------------------------------------------------------------
+# CHINA:
+Zhipu AI : GLM4 (claimed to rival GPT-4)
+
+ManusAI
+URL: https://manus.im/
+Agent: Manus
+
+Baidu (Tencent): R1 
+       Ernie 4.5
+	   
+Alibaba:
+Qwen
+
+CHINA:
+Works in all language 
+ChatGLM
+URL: https://chatglm.cn/
+
+QwQ
+Yi Chat
+Alpaca
 
 .....................................................................
 ---------------------------------------------------------------------
@@ -283,14 +312,27 @@ https://cloud.google.com/blog/products/ai-machine-learning/generative-ai-applica
 
 User-agent: Gemini  
 User-agent: Google Gemini
-User-agent: Google Bard AI
-User-agent: BardBot
 
 User-agent: GoogleOther
 User-agent: Google-CloudVertexBot
 
 
-User-agent: Google-Extended  - Can block google to index site!!  
+User-agent: Google-Extended  - Can block google to index site!!
+
+Imagen3
+Imagen3-Fast
+
+Phi 4	
+Phi 4 Min
+URL: https://huggingface.co/microsoft/phi-4
+
+Gato
+# Gato (DeepMind)
+URL:  https://deepmind.google/discover/blog/a-generalist-agent/
+
+*TXT: Generating text: Gato can write different kinds of creative text formats, 
+ like poems, code, scripts, musical pieces, email, letters, etc., 
+ showcasing its understanding of language and ability to generate creative content. 
 .....................................................................
 ---------------------------------------------------------------------
 ##  BING (MICROSOFT):
@@ -392,6 +434,35 @@ URL: https://ai.meta.com/blog/v-jepa-yann-lecun-ai-model-video-joint-embedding-p
 User-agent: V-JEPA
             Disallow: /
 
+# Auto ML
+Automated Machine Learning (AutoML)  //VARIUS 
+
+.....................................................................
+---------------------------------------------------------------------
+## AI Framework:
+LangChain 
+AutoGen
+Semantic Kernel
+Atomic Agents 
+CrewAI
+RASA
+Hugging Face Transformers Agents
+Langflow
+Lyzer
+LlamaIndex
+Haystack
+Langroid
+Flowise
+Model Context Protocol   /Anthropic
+Neural Chat
+
+* LLM frameworks
+LangChain
+LlamaIndex
+Agentic RAG
+RAG
+txt: custom AI applications that can navigate, scrape, and manipulate web content with ease
+ 
 .....................................................................
 ---------------------------------------------------------------------
 # Open AI:
@@ -401,48 +472,41 @@ URL: https://openai.com
 https://platform.openai.com/docs/bots GTP:
 GPT-4V(ision) (251025)
 
-User-agent: ChatGPT
-disallow: /
-User-agent: ChatGPT-User
-Disallow: /
-User-agent: GPTBot
-Disallow: /
 User-agent: GTPBOT    #YSES by content scrapers!
-Disallow: /
+
 User-Agent: GPTbot/0.1
-Disallow: /
 User-Agent: GPTBot/1.0
-Disallow: /
 User-Agent: GPTBot/1.2
-Disallow: /
-User-agent: GPT-1
-Disallow: /
-User-agent: GPT-2
-Disallow: /
-User-agent: GPT-3 
-Disallow: /
-User-agent: GPT-3.5
-Disallow: /
-User-agent: GPT-4 
-Disallow: /
-User-agent: GTP-4,4
-Disallow: /
-User-agent: GPT-5 
-Disallow: /
-User-agent: GPT-4V
-Disallow: /
-User-agent: gpt-4-turbo
-Disallow: /
+
+User-agent: ChatGPT
+User-agent: ChatGPT-User
+User-agent: GPTBot
+
 User-agent: GPT-4o
-Disallow: /
 User-agent: GPT-4o mini
-Disallow: /
 User-agent: GPT-3.5 Turbo
-Disallow: /
 User-agent: SearchGPT 
-Disallow: /
 User-agent: WebChatGPT
-Disallow: /
+User-agent: GPTBot /
+User-agent: gpt-crawler
+User-agent: GPT-1
+User-agent: GPT-2
+User-agent: GPT-3 
+User-agent: GPT-3.5
+User-agent: GPT-3.5 turbo
+User-agent: GPT-4 
+User-agent: GPT-4,5
+User-agent: GPT-5
+User-agent: gpt-4-turbo
+User-agent: GPT-4o
+User-agent: GPT-4V
+User-agent: GPT-4o mini
+User-agent: GPT 4 Omni	
+User-agent: GPT 4 Omni Mini
+User-agent: GPT-4.1
+User-agent: GPT-4.1-mini
+User-agent: GPT-4.1-nano   
+	
 
 *
 Chat GPT Search  
@@ -524,7 +588,6 @@ OpenAI IP Ranges to Block:
 172.213.21.16/28
 
 
-
 #Image AI:
 * https://openai.com/index/dall-e-2  (uses Machine learning)
 
@@ -535,7 +598,6 @@ User-agent: DALL·E 3
 
 *
 Open AI news:  https://x.com/openai
-
 
 User-agent: OpenAI ChatGPT
             Disallow: /
@@ -557,10 +619,6 @@ URL: https://aws.amazon.com/free/machine-learning/
 :
 # Speaking AI:
 User-agent: Amazon Lex
-Disallow: /
-
-* The rest: 
-User-agent: AISearchBot
 Disallow: /
 
 User-agent: amazon-kendra
@@ -602,63 +660,68 @@ URL: https://labs.amazon.science/blog/nova-act
 URL: https://aws.amazon.com/personalize/?p=ft&c=ml&z=3
 Amazon Personalize
 
+Constitutional AI (CAI)  (claude)
+Sophos 2
+Claude-SearchBot
+
 .................................................
-### Antoher Way, if they do not give up!:   "UPDAED: 2500329, hates: bytesspider....
+### Antoher Way, if they do not give up!:   "UPDAED: 250421, hates: bytesspider....
 
 
 <IfModule mod_rewrite.c>
 RewriteCond%{HTTP_REFERER}^https://.*amazonaws\.com [NC] 
 RewriteCond%{HTTP_REFERER}^https://.*amazon\.com [NC]
 RewriteCond%{HTTP_REFERER}^https://(([^.]+\.)+)?amazonaws\.com[NC]
-RewriteCond%{HTTP_REFERER}amazonaws\.com [NC]  
+RewriteCond%{HTTP_REFERER}^amazonaws\.com$ [OR,NC]  
 RewriteCond%{HTTP_REFERER}aws.amazon\.com [NC]
-RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?amazonaws\.com" [NC,OR]
-RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?amazon\.com" [NC,OR]
-RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?Amazon\.com" [NC] 
-RewriteCond%{REMOTE_HOST}^.*\.compute-1\.amazonaws\.com [NC,OR] 
+RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?amazonaws\.com"[NC,OR]
+RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?amazon\.com"[NC,OR]
+RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?Amazon\.com"[NC] 
+RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?^amazon.com.au"[NC]
+RewriteCond%{REMOTE_HOST}^.*\.compute-1\.amazonaws\.com [NC,OR]
+RewriteCond%{HTTP_REFERER}^compute-1.amazonaws\.com$ [OR,NC] 
 RewriteCond%{REMOTE_HOST}^.*\1.compute.amazonaws\.com [NC,OR] 
-RewriteCond%{REMOTE_HOST}^.*\2.compute.amazonaws\.com [NC,OR] 
-RewriteCond%{REMOTE_HOST}^.*\.compute-2\.amazonaws\.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\.us-west-2.compute.amazonaws\.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\.eu-west-1.compute.amazonaws\.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\.ec2-3-90-183-230.compute-1.amazonaws\.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\.ap-south-1.compute.amazonaws\.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\.cn-north-1.compute.amazonaws.com\.cn [NC,OR] 
-RewriteCond%{HTTP_USER_AGENT}"AISearchBot"[NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\2.compute.amazonaws\.com [NC,OR]
+RewriteCond %{REMOTE_HOST} ^compute-2.amazonaws\.com$ [OR,NC]  
 RewriteCond%{HTTP_USER_AGENT}"Alexa"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"AlexaTM"[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}"Amazonbot"[NC,OR]  
-RewriteCond%{HTTP_USER_AGENT}"Amazonbot/0.1"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"Amazonbot /"[NC,OR]  
+RewriteCond%{HTTP_USER_AGENT}"amazonbot"[NC,OR] 
 RewriteCond%{HTTP_USER_AGENT}".crawl.amazonbot.amazon"[NC,OR] 
 RewriteCond%{HTTP_USER_AGENT}"Amazon Textract"[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}"Amazon Comprehend"[NC,OR]  
-RewriteCond%{HTTP_USER_AGENT}"amazonbot"[NC,OR]   
-RewriteCond%{HTTP_USER_AGENT}"Amazonbot"[NC,OR]  
+RewriteCond%{HTTP_USER_AGENT}"Amazon Comprehend"[NC,OR]     
 RewriteCond%{HTTP_USER_AGENT}"Amazon Silk"[NC,OR] 
 RewriteCond%{HTTP_USER_AGENT}"AMAZON-02"[NC,OR]  
 RewriteCond%{HTTP_USER_AGENT}"Amazon Bedrock"[NC,OR] 
 RewriteCond%{HTTP_USER_AGENT}"Amazon SageMaker"[NC,OR] 
-RewriteCond%{HTTP_USER_AGENT}"Amazon: AWS"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"AWS Trainium"[NC,OR] 
 RewriteCond%{HTTP_USER_AGENT}"Amazon Kendra"[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}"Amazon Textract"[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}"SemrushBot"[NC,OR]    #Semrush EN
-RewriteCond%{HTTP_USER_AGENT}"Amazon Kendra"[NC,OR]
-RewriteCond%{REMOTE_ADDR}!^3\.6.)$ [NC,OR]          #ClaudeBot AI 
-RewriteCond%{REMOTE_ADDR}!^3\.21.)$ [NC,OR]          
+RewriteCond%{HTTP_USER_AGENT}"Amazon Lex"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"Claude-User"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"Claude-SearchBot"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"Nova Act"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"PerplexityBot"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"PerplexityBot/1.0"[NC,OR]
+RewriteCond%{REMOTE_ADDR}!^3\.6.)$ [NC,OR]          #ClaudeBot AI
+RewriteCond%{REMOTE_ADDR}!^3\.107.)$ [NC,OR]        #ClaudeBot AI 
+RewriteCond%{REMOTE_ADDR}!^3\.21.)$ [NC,OR]         #ClaudeBot AI 
 RewriteCond%{REMOTE_ADDR}!^3\.90.)$ [NC,OR] 
-RewriteCond%{REMOTE_ADDR}!^3\.145.)$ [NC,OR]         
+RewriteCond%{REMOTE_ADDR}!^3\.145.)$ [NC,OR]        #ClaudeBot AI  
 RewriteCond%{REMOTE_ADDR}!^3\.148.)$ [NC,OR]  
 RewriteCond%{REMOTE_ADDR}!^3\.238.)$ [NC,OR]        #AI Hacker
 RewriteCond%{REMOTE_ADDR}!^13\.)$ [NC,OR]           #AI Image stealer India
-RewriteCond%{REMOTE_ADDR}!^47.128.)$ [NC,OR]        #Bytesspider
+RewriteCond%{REMOTE_ADDR}!^18\.210.92.235)$ [NC,OR]           #AI Image stealer India
+RewriteCond%{REMOTE_ADDR}!^18\.223.)$ [NC,OR]          #PerplexityBot
+RewriteCond%{REMOTE_ADDR}!^34\.)$ [NC,OR]              #Scraping
+RewriteCond%{REMOTE_ADDR}!^34\.235.)$ [NC,OR]          #Scraping
+RewriteCond%{REMOTE_ADDR}!^35\.166.195.)$ [NC,OR]      #Scraping
+RewriteCond%{REMOTE_ADDR}!^54.217.11.)$ [NC,OR]        #ClaudeBot AI 
 RewriteCond%{HTTP_USER_AGENT}"Nutch"[NC]
 RewriteRule ^(.*)$ - [F,L]</IfModule>
 
 .....................................................................
 ---------------------------------------------------------------------
 ###FACEBOOOK - META AI: 
-
 ** FacebookBot  * BLOCK:
 
 User-agent: FacebookBot
@@ -719,7 +782,6 @@ User-agent: Claude 3 Opus
 Disallow: /
 User-agent: Claude-User
 Disallow: /
-
 User-agent: Claude-SearchBot
 Disallow: /
 
@@ -835,8 +897,6 @@ Disallow: /
 ---------------------------------------------------------------------
 #Apple AI:
 # https://support.apple.com/en-us/119829
-User-agent: Applebot-Extended
-Disallow: /
 
 OTHER apple (siri) #May: Affect Safari! Browser! Be carful!
 User-agent: Applebot
@@ -878,6 +938,9 @@ User-agent: wpbot
 Disallow: /
 User-agent: wpbot/1.1
 Disallow: /
+
+.....................................................................
+---------------------------------------------------------------------
 
 User-agent: DialogFlow
 Disallow: /
@@ -978,9 +1041,6 @@ Disallow: /
 User-agent: Scrapy/2.0
 Disallow: /
 
-??? But anyway!
-XMLFeedSpider
-
 .....................................................................
 ---------------------------------------------------------------------
 ### LLMS trainering bots:  GONE??  
@@ -1063,8 +1123,8 @@ Grok-1.5
 Grok-2 mini	
 Grok-2
 Grok-2‡
+Grok 3
 GroqChat
-
 Groq Cloud AI
 
 .....................................................................
@@ -1091,7 +1151,6 @@ https://anderspink.com
 User-agent: AndersPinkBot
 Disallow: /
 
-
 ISSCyberRiskCrawler  
 URL: https://iss-cyber.com/
 
@@ -1116,6 +1175,49 @@ URL: https://block.github.io/goose/
 User-agent: Goose
 Disallow: /
 
+# Falcons Ai:
+https://falcons.ai/  
+https://github.com/Falcons-ai/
+https://falconllm.tii.ae/
+https://huggingface.co/datasets/tiiuae/falcon-refinedweb
+
+aiHitBot:
+https://www.aihitdata.com/about
+"aiHitdata is a massive, artificial intelligence/machine learning, automated system"
+
+Cotoyogi:
+https://ds.rois.ac.jp/en_center8/en_crawler/
+AI LLM scraper, more info (in Japanese): https://ds.rois.ac.jp/center8/
+
+FirecrawlAgent:
+https://www.firecrawl.dev/
+AI LLM scraper: "Firecrawl turns entire websites into clean, LLM-ready markdown or structured data. Scrape, crawl and extract the web with a single API. Ideal for AI companies looking to empower their LLM applications with web data."
+
+# COMPANY:
+Text.cortex
+URL: https://textcortex.com/
+
+starling   /customer Reacher Ai
+https://getstarling.ai/
+
+Moondream 2
+URL: https://moondream.ai/
+
+LLaVA
+URL: https://huggingface.co/docs/transformers/main/model_doc/llava
+
+Granite-3.2
+URL: https://www.ibm.com/new/announcements/ibm-granite-3-2-open-source-reasoning-and-vision
+
+spider
+URL: https://spider.cloud
+
+PyTorch 
+AstrBot (User-friendly LLM-based multi-platform chatbot with a WebUI, supporting RAG, LLM agents, and plugins integration)
+
+* MultiOn's Agent API
+URL: https://theagi.company/
+
 .....................................................................
 ---------------------------------------------------------------------
 * Hugging Face:
@@ -1135,7 +1237,10 @@ Documentation	https://kangaroollm.com.au/kangaroo-bot/
 
 User-agent: Kangaroo Bot
             Disallow: /
-
+			
+User-agent: Kangaroo 			
+            Disallow: /
+			
 .....................................................................
 ---------------------------------------------------------------------
 * https://you.com/
@@ -1145,18 +1250,17 @@ User-agent: YouBot
 Disallow: /	
 .....................................................................
 ---------------------------------------------------------------------
-
 *Firecrawl
 https://firecrawl.dev	
 URL: https://docs.firecrawl.dev/integrations/crewai
 
 User-agent: Firecrawl
-            Disallow: /	
+            Disallow: /
+			
 User-agent: FirecrawlAgent
             Disallow: /	
 .....................................................................
 ---------------------------------------------------------------------		
-
 # RIGHT/LEFT wing Ai: 
 https://www.wingai.app
  
@@ -1231,7 +1335,6 @@ ChainGPT
 https://support.zendesk.com/hc/en-us/articles/8357749315098-About-the-UltimateGPT-block-in-conversation-flows-for-advanced-AI-agents
 UltimateGPT
 
-
 #  FraudGPT  
 URL:  https://www.inuit.se/blogg/wormgpt-och-fraudgpt-uppkomsten-av-skadliga-llm
 URL: https://secureops.com/blog/ai-attacks-fraudgpt/
@@ -1296,6 +1399,13 @@ URL: https://openrouter.ai/models
 * Dataiku for Enterprise AI:
 https://www.dataiku.com/product/
 
+* https://www.phind.com/
+PhindBot
+
+* BabyAGI
+Txt: lightweight, open-source autonomous agent 
+URL: https://babyagi.org/
+
 
 .....................................................................
 ---------------------------------------------------------------------
@@ -1319,14 +1429,16 @@ Disallow: /
 
 * KNOCKS OUT ALL ai sites: 
 User-agent: .ai
-User-agent: AI /
 
 .....................................................................
 ---------------------------------------------------------------------
 * AI chatbot - Texts:
 Copy.ai
-Jasper Chat
+Jasper Chat  //jasper
 SpinBot
+
+ai-proxy
+Insomnia AI
 
 .....................................................................
 ---------------------------------------------------------------------
@@ -1338,58 +1450,39 @@ Poe
 Galactica, LLaMA
 Aya 23
 
-
-#Stolen fron: airobots.txt  - On the way? AI?
-
-PhindBot
-
-* https://www.firecrawl.dev/
-firecrawlAgent
-
-* https://andisearch.com/
-AndiBot
-
-* https://exabot.viallance.com/
-ExaBot
-
-* https://www.phind.com/
-PhindBot
-
+# aiHitBot   =   gathering business information from websites.
 .....................................................................
-
+---------------------------------------------------------------------
 
 https://imgproxy.net/
 
 User-agent: imgproxy /
-
 Txt: streamline image management and optimize website performance
 NOTE: Can come from amany domains
 
-
-BLOCK AI: -  BBQ:   https://plugin-planet.com/bbq-pro/   Great plugin with lots custom rules:)
- 
 https://roboflow.com/
 https://labelbox.com/
-https://www.cvat.ai/   ///blocked by .ai
+https://www.cvat.ai/   
 
 
 # Datasets:  ? affecting sites.
 https://www.kaggle.com/
 https://www.kaggle.com/models
 
-....................................
-
+.....................................................................
+---------------------------------------------------------------------
 User-agent: Slack-ImgProxy
 Disallow: /
 
 URL: https://api.slack.com/robots
 
-....................................
+.....................................................................
+---------------------------------------------------------------------
 
 URL: https://spider.cloud/
 User Agent: spider
-
-....................................
+.....................................................................
+---------------------------------------------------------------------
 AI PROXY:
 URL: https://www.braintrust.dev/docs/guides/proxy
 AI proxy
@@ -1397,7 +1490,8 @@ AI proxy
 https://docs.konghq.com/hub/kong-inc/ai-proxy/
 AI proxy
 
-....................................
+.....................................................................
+---------------------------------------------------------------------
 ## BLOCK AI (Scraping) Proxies:
 
 <IfModule mod_alias.c>
@@ -1433,38 +1527,13 @@ Proxi Lists:
 RAW:
 AI proxy|API Proxy|HTTP Proxies|proxydeny|forward proxy|Server proxies|residential proxies|reverse proxy|proxy request|
 IPv4 Proxies|IPv6 Proxies|Mobile Proxies|Virgin proxies|Proxy Servers| sproxiesd|Static ISP Proxies|ISP Proxies|proxy
-
-....................................
-## ADDED: 250412 
-have sent it tp Perrishpress to look at it,comes on his list sometime near future
-Falcon AI:: Affecting us???
-
-https://falconllm.tii.ae/
-https://huggingface.co/datasets/tiiuae/falcon-refinedweb
-
-Falcons Ai:
-https://falcons.ai/   
-https://github.com/Falcons-ai/
+.....................................................................
+---------------------------------------------------------------------
+# RECOMMENDATIONS to use plugins:
+## BLOCK AI: -  BBQ:   https://plugin-planet.com/bbq-pro/   Great plugin with lots custom rules:)
+# Content scraper block plugin, lots to choose from.
 
 
-* GAVE IT to Perrishpress to look at: llms.txt -Requests like;comcast.net, from: ie, sa and.com sites.
-
-...................................
-?.
-* BabyAGI
-Txt: lightweight, open-source autonomous agent 
-URL: https://babyagi.org/
-
-
-* MultiOn's Agent API
-URL: https://theagi.company/
-LLM frameworks
- LangChain
- LlamaIndex
- Agentic RAG
- RAG
- txt: custom AI applications that can navigate, scrape, and manipulate web content with ease
- 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ............................................................................
-# Updated: 240416
+# Updated: 240425
