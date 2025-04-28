@@ -3,13 +3,11 @@
 ******************************************************************** :)
 #### Put in .htaccess2,1 or htaccess:   ###
 
-## ALT 1: WORKS WELL ###: 
+## ALT 1: 
 
 <IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT} (bot|bot|Bot) [NC]
-RewriteRule .* - [F,L]
-</IfModule>
-
+RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
+RewriteRule "^.*$" - [F,L]</IfModule>
 ### ALT 2:
 
 <IfModule mod_rewrite.c>
@@ -153,13 +151,19 @@ GTB
  
 # Big list, see: Perishpress List #
 
-**
-
+***************************
 #  I USE:  (/.htaccess2: )
 <IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
-RewriteRule "^.*$" - [F,L]</IfModule>
+RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent) [NC]
+RewriteRule (.*) - [F,L]
+</IfModule>
 
+* IF NEEDED:
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent) [NC]
+RewriteRule (.*) - [F,L]
+</IfModule>
 .....................................................................
 ---------------------------------------------------------------------
 ### A Complete Ai List ##)
@@ -807,4 +811,4 @@ User-agent: Google-CloudVertexBot
 User-agent: Google-Extended
 User-agent: GoogleOther
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 250421
+### Updated: 250428
