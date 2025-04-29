@@ -26,6 +26,7 @@ READ MORE:
 *  
 # Updates:
 
+* Updated: 250429, robots-htaccess updaded, one delated.
 * Updated 250425, FORKOFAI PLUGINSANTIBOT.zip OBS: antibot may cosume power!
 * Updated 250425, Fork of blockaai crawlers.zip updated -Latest.
 * Updated 250425, block ai.php updated with the Latest.
