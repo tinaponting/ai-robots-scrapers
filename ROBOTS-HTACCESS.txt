@@ -121,6 +121,42 @@ GTB
 *
 #Get rid of all shady sites,  ending with. ai
 .ai
+
+##  KNOCKS OUT all ai: knowledge
+
+User-agent: knowledge /
+            Disallow: /  
+			 
+* KNOCKS OUT all ai Chat:
+
+User-agent: chatUser / 
+            Disallow: /			
+
+.....................................................................
+---------------------------------------------------------------------			
+* KNOCKS OUT  AI agents /
+              Disallow: /  
+	
+	
+# Open Web Search/ LLM - GenAI-targeted opt ou
+User-agent: GenAI
+Disallow: /
+
+* KNOCKS OUT ALL ai sites: 
+User-agent: .ai
+
+.....................................................................
+---------------------------------------------------------------------
+# FROM Perrishpress/ ultamte list, Note: If you don’t care about search results,
+ you can restore the removed blocks for Google, Bing, and Apple:
+User-agent: Applebot
+User-agent: BingAI
+User-agent: Bingbot-chat
+User-agent: Google Bard AI
+User-agent: Google-CloudVertexBot
+User-agent: Google-Extended
+User-agent: GoogleOther
+
 ...........................................................................:)
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::)
 ## htaccess List:
@@ -138,7 +174,7 @@ GTB
  meta-externalfetcher/1.1|Meta-ExternalAgent|meta-externalagent|Meta-ExternalFetcher|LLaMA|Llama 3.2|Llama 4|Meta AI|Meta Llama|meta-externalfetcher/1.1|FriendlyCrawler|
  Gato|GenAI|GTP|GTPBOT|GPTBot /|GTB|gpt-crawler|GPT-1|GPT-2|GPT-3| GPT-3.5|GPT-3.5 turbo|GPT-4| GPT-4,5|GPT-5|gpt-4-turbo|GPT-4o|GPT-4V|GPT-4o mini|GPT 4 Omni|GPT 4 Omni Mini|
  GPT-4.1|GPT-4.1-mini|GPT-4.1-nano|SearchGPT|Content Scraper GPT|Extended GPT Scraper|gpt-crawler|GPT Scraper|GPTZero|Grok|GrokAI|Gemini|Google Gemini|Goose|
- Hugging Face|iaskspider|iaskspider/2.0|iAskBot|ICC-Crawler|ImagesiftBot|img2dataset|imgproxy /|ImageGen /|IntelliSeek|IntelliSeek.ai|ISSCyberRiskCrawler|
+ Hugging Face|iaskspider|iaskspider/2.0|iAskBot|ICC-Crawler|ImagesiftBot|img2dataset|ImageGen /|IntelliSeek|IntelliSeek.ai|ISSCyberRiskCrawler|
  Kangaroo|Kangaroo Bot|knowledge /|
  LeftWingGPT|magpie-crawler|Meltwater|Nicecrawler|MSBot|Mistral|Manus| 
  Omgilibot|Omgili|Open AI| Openbot|OAI SearchBot|OAI-SearchBot/1.0|OpenAI Crawler|OpenAIContentCrawler|OpenAI o1|OpenAI o1-mini|OpenAI o3-mini|OpenAI CUA|Operator|
@@ -307,7 +343,6 @@ User-agent: iAskBot
 User-agent: ICC-Crawler
 User-agent: ImagesiftBot
 User-agent: img2dataset
-User-agent: imgproxy /
 User-agent: ImageGen /
 User-agent: IntelliSeek
 User-agent: IntelliSeek.ai
@@ -574,7 +609,6 @@ User-agent: ImageGen
 User-agent: ImageGen /
 User-agent: ImagesiftBot
 User-agent: img2dataset
-User-agent: imgproxy /
 User-agent: Inferkit
 User-agent: INK Editor
 User-agent: INKforall
@@ -720,31 +754,8 @@ User-agent: Zimm
 Disallow: /
 
 
-:::::::::::::::::::::::::::::::::::::::::::
-NEW: 250408:
-
-##  KNOCKS OUT all ai: knowledge
-
-User-agent: knowledge /
-            Disallow: /  
-			 
-* KNOCKS OUT all ai Chat:
-
-User-agent: chatUser / 
-            Disallow: /			
-			
-* KNOCKS OUT  AI agents /
-              Disallow: /  
-	
-	
-# Open Web Search/ LLM - GenAI-targeted opt ou
-User-agent: GenAI
-Disallow: /
-
-* KNOCKS OUT ALL ai sites: 
-User-agent: .ai
-	  
-*
+:::::::::::::::::::::::::::::::::::::::::	  
+* Updated: 250412: 
 User Agent changed:
 User-agent: AITraining /
 	  
@@ -760,19 +771,7 @@ URL: https://www.analyticsvidhya.com/blog/2025/03/ai-agents-terms/
 WebText /       #openAI
 URL: https://paperswithcode.com/dataset/webtext
 
-...........................
-Updated: 250412: 
-
-
-https://imgproxy.net/
-
-User-agent: imgproxy /
-
-Txt: streamline image management and optimize website performance
-NOTE: Can come from amany domains
-
 ....................................
-
 User-agent: Slack-ImgProxy
 Disallow: /
 
@@ -800,15 +799,24 @@ GPTbot/0.1
 GPTBot/1.0
 GPTBot/1.2
 
-# FROM Perrishpress/ ultamte list, Note: If you don’t care about search results,
- you can restore the removed blocks for Google, Bing, and Apple:
 
-User-agent: Applebot
-User-agent: BingAI
-User-agent: Bingbot-chat
-User-agent: Google Bard AI
-User-agent: Google-CloudVertexBot
-User-agent: Google-Extended
-User-agent: GoogleOther
+# Check - Perrsihpress - is checking:
+
+Lightpanda
+Scraper AI  ?
+URL: https://lightpanda.io/
+TXT:  Lightpanda is a headless browser intended for 'AI agents, LLM training, scraping and testing': https://github.com/lightpanda-io/browse
+
+* Under Progress, not yet ant threat? and not AI, it is scraper!  
+
+?
+AI Chatbot
+https://www.semrush.com/free-tools/ai-text-generator/
+
+?
+com/bot
+URL: https://com.bot/
+chatbot
+
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 250428
+### Updated: 2504229
