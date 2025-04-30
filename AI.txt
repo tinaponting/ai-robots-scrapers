@@ -60,6 +60,7 @@ https://ghostbrowser.com    AI: ?
 Lightpanda: https://github.com/lightpanda-io/browser URL: https://lightpanda.io
 
 * AI LIST: https://aiagentslist.com/
+           https://github.com/topics/artificial-intelligence
 
 # Keep an eye on!:
 * User-agent: Kagibot https://kagi.com/     Only works on:Mac OS
@@ -69,6 +70,9 @@ Lightpanda: https://github.com/lightpanda-io/browser URL: https://lightpanda.io
 URL: https://docs.oracle.com/en-us/iaas/releasenotes/services/generative-ai-agents/index.htm
 
 * Good to know: https://virtualizationreview.com/Articles/2025/01/13/Top-10-GenAI-Apps-Most-Often-Blocked-by-Orgs.aspx
+
+*TDM Reservation Protocol (TDMRep): https://www.w3.org/community/reports/tdmrep/CG-FINAL-tdmrep-20240202/#sec-properties
+
 
 .....................................................................
 ---------------------------------------------------------------------
@@ -437,6 +441,11 @@ User-agent: V-JEPA
 # Auto ML
 Automated Machine Learning (AutoML)  //VARIUS 
 
+# Imageproxy
+URL: https://www.aibase.com/repos/project/docker-nginx-image-proxy
+URL 2: https://www.netify.ai/resources/hostnames/imageproxy.as.criteo.net
+URL 3:https://github.com/imgproxy/imgproxy
+
 .....................................................................
 ---------------------------------------------------------------------
 ## AI Framework:
@@ -587,6 +596,20 @@ OpenAI IP Ranges to Block:
 172.213.12.112/28
 172.213.21.16/28
 
+.................................................
+#Another way:GTBBOT:
+
+<IfModule mod_rewrite.c>	
+RewriteCond %{REMOTE_ADDR} ^52\.230\.152\. [OR]
+RewriteCond %{REMOTE_ADDR} ^52\.233\.106\. [OR]
+RewriteCond %{REMOTE_ADDR} ^20\.171\.206\. [OR]
+RewriteCond %{REMOTE_ADDR} ^20\.171\.207\. [OR]
+RewriteCond %{REMOTE_ADDR} ^4\.227\.36\.([0-9]|[0-9][0-9]|1[0-1][0-9]|12[0-5])$ [OR]
+RewriteCond %{REMOTE_ADDR} ^20\.42\.10\.1(7[6-9]|8[0-3])$ [OR]
+RewriteCond %{REMOTE_ADDR} ^172\.203\.190\.1(2[8-9]|3[0-9])$ [OR]
+RewriteCond %{REMOTE_ADDR} ^51\.8\.102\. [OR]
+RewriteCond %{REMOTE_ADDR} ^189\.89\.12\.150$
+RewriteRule ^ - [F,L]</IfModule>
 
 #Image AI:
 * https://openai.com/index/dall-e-2  (uses Machine learning)
@@ -1220,6 +1243,23 @@ URL: https://theagi.company/
 
 .....................................................................
 ---------------------------------------------------------------------
+KEEP AN EYE ON:
+
+https://github.com/ItzCrazyKns/Perplexica
+https://github.com/The-Art-of-Hacking/h4cker
+https://github.com/jingyaogong/minimind
+https://github.com/TransformerOptimus/SuperAGI
+https://github.com/e2b-dev/awesome-ai-agents
+https://github.com/camel-ai/owl
+https://github.com/yamadashy/repomix
+https://www.camel-ai.org
+https://github.com/Lightning-AI
+https://github.com/facebookarchive/caffe2
+https://github.com/e2b-dev/awesome-ai-agents
+
+
+.....................................................................
+---------------------------------------------------------------------
 * Hugging Face:
 https://huggingface.co/blog/open-r1
 URL: https://huggingface.co/chat/models
@@ -1536,4 +1576,4 @@ IPv4 Proxies|IPv6 Proxies|Mobile Proxies|Virgin proxies|Proxy Servers| sproxiesd
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ............................................................................
-# Updated: 240425
+# Updated: 240430
