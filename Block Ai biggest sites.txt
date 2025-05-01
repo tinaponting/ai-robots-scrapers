@@ -2,7 +2,6 @@
 *Seems like a blunt and very untargeted rule. Here are the urls of some of the largest AI website:
 
 .................................................................................................
-
 OpenAI**.com**
 
 Anthropic**.com**
@@ -35,10 +34,95 @@ chat.openai.com
  
 *.chat.openai.com
 
-# Can interfere with chrome:
+#Can interfere with chrome:
 ai.google.com
 bard.google.com
 
-*
-
 Mightygpt.com
+bytedance.com
+midjourney.com
+aitools.fyi
+comfy.org
+
+:::::::::::::::::::::::::::::::::::
+# BLOCK LIST AI: (domains)
+
+.br	
+.cn	
+.gg	
+.ru
+.ai
+.uz
+.pl
+.in
+.io
+.tw	
+.xyz
+.dev	
+.icu	
+.rn	
+.ga	
+.cf	
+.pw	
+.top
+.tools	
+.ng	
+.rs	
+.xxx	
+.app		
+.co	
+.edu.vn
+.pub
+
+::::::::::::::::::::::::::::::::::::::::::::
+# Tired of china:
+
+bot.*.cn
+
+::::::::::::::::::::::::::::::::::::::::::::
+AI Searches:
+-intext:"ai art", -intext:lora, -intext:"stable diffusion"
+
+::::::::::::::::::::::::::::::::::::::::::::
+# Research & Knowledge Discovery AI To block:
+https://chat.openai.com
+https://perplexity.ai
+https://you.com/youchat
+https://abacus.ai
+https://gemini.google
+https://elicit.org
+https://consensus.app
+https://researchrabbit.ai
+
+
+#Image Generation & Editing
+https://fotor.com
+https://preview.reve.art/
+https://stability.ai
+https://midjourney.com
+https://artbreeder.com
+https://deepdreamgenerator.com
+https://deepai.org
+https://nightcafe.studio
+
+# Copywriting & Content Generation
+https://rytr.me
+https://copy.ai
+https://writesonic.com
+https://adcreative.ai
+https://anyword.com
+https://closerscopy.com
+https://copysmith.ai
+
+# Chatbots & Customer Engagement
+https://droxy.ai
+https://chatbase.co
+https://mutualinformation.com
+https://chatsimple.ai
+https://manychat.com
+https://landbot.io
+https://mobilemonkey.com
+https://tars.com
+
+:::::::::::::::::::::::::::::::::::::::::::::::
+#* UPDATED: 250501
