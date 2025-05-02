@@ -485,7 +485,6 @@ User-agent: GTPBOT    #YSES by content scrapers!
 
 User-Agent: GPTbot/0.1
 User-Agent: GPTBot/1.0
-User-Agent: GPTBot/1.2
 
 User-agent: ChatGPT
 User-agent: ChatGPT-User
@@ -499,6 +498,7 @@ User-agent: WebChatGPT
 User-agent: GPTBot /
 User-agent: gpt-crawler
 User-agent: GPT-1
+User-Agent: GPTBot/1.2
 User-agent: GPT-2
 User-agent: GPT-3 
 User-agent: GPT-3.5
@@ -1493,8 +1493,7 @@ Aya 23
 # aiHitBot   =   gathering business information from websites.
 .....................................................................
 ---------------------------------------------------------------------
-
-https://imgproxy.net/
+https://imgproxy.net/  AI?
 
 User-agent: imgproxy /
 Txt: streamline image management and optimize website performance
@@ -1518,7 +1517,6 @@ URL: https://api.slack.com/robots
 
 .....................................................................
 ---------------------------------------------------------------------
-
 URL: https://spider.cloud/
 User Agent: spider
 .....................................................................
@@ -1576,4 +1574,4 @@ IPv4 Proxies|IPv6 Proxies|Mobile Proxies|Virgin proxies|Proxy Servers| sproxiesd
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ............................................................................
-# Updated: 240430
+# Updated: 240501
