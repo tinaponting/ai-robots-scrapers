@@ -21,6 +21,12 @@ RewriteRule "^.*$" - [F,L]
 RewriteCond %{HTTP_USER_AGENT}^.*(BotToBlock1|BotToBlock2|BotToBlock3).*$ [NC] 
 RewriteRule .* – [F,L]</IfModule>
 
+## ALT 4:
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent) [NC]
+RewriteRule (.*) - [F,L]
+</IfModule>
+
 ## Or if you want: 403:
 
 <IfModule mod_rewrite.c>
@@ -172,8 +178,8 @@ User-agent: GoogleOther
  dataprovider|Diffbo|DialoGPT|DepolarizingGPT|Doubao AI|DuckAssistBot|DALL-E|DALL-E 2|DALL·E 3|DALL-E Mini|DeepAI|DeepL|DeepMind|DeepSeek|DeepSeek-R1|
  FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|Firecrawl|Flyriver|flyriverbot/1.1|FraudGPT|
  meta-externalfetcher/1.1|Meta-ExternalAgent|meta-externalagent|Meta-ExternalFetcher|LLaMA|Llama 3.2|Llama 4|Meta AI|Meta Llama|meta-externalfetcher/1.1|FriendlyCrawler|
- Gato|GenAI|GTP|GTPBOT|GPTBot /|GTB|gpt-crawler|GPT-1|GPT-2|GPT-3| GPT-3.5|GPT-3.5 turbo|GPT-4| GPT-4,5|GPT-5|gpt-4-turbo|GPT-4o|GPT-4V|GPT-4o mini|GPT 4 Omni|GPT 4 Omni Mini|
- GPT-4.1|GPT-4.1-mini|GPT-4.1-nano|SearchGPT|Content Scraper GPT|Extended GPT Scraper|gpt-crawler|GPT Scraper|GPTZero|Grok|GrokAI|Gemini|Google Gemini|Goose|
+ Gato|GenAI|GTP|GTPBOT|GPTBot /|GTB|gpt-crawler|GPT-1|GPTBot/1.2|GPT-2|GPT-3| GPT-3.5|GPT-3.5 turbo|GPT-4|GPT-4,5|GPT-5|gpt-4-turbo|GPT-4o|GPT-4V|GPT-4o mini|GPT 4 Omni|GPT 4 Omni Mini|
+ GPT-4.1|GPT-4.1-mini|GPT-4.1-nano|Search GPT|Content Scraper GPT|Extended GPT Scraper|gpt-crawler|GPT Scraper|GPTZero|Grok|GrokAI|Gemini|Google Gemini|Goose|
  Hugging Face|iaskspider|iaskspider/2.0|iAskBot|ICC-Crawler|ImagesiftBot|img2dataset|ImageGen /|IntelliSeek|IntelliSeek.ai|ISSCyberRiskCrawler|
  Kangaroo|Kangaroo Bot|knowledge /|
  LeftWingGPT|magpie-crawler|Meltwater|Nicecrawler|MSBot|Mistral|Manus| 
@@ -188,18 +194,13 @@ User-agent: GoogleOther
 # Big list, see: Perishpress List #
 
 ***************************
-#  I USE:  (/.htaccess2: )
-<IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent) [NC]
-RewriteRule (.*) - [F,L]
-</IfModule>
+#I USE /.htaccess2:
 
-* IF NEEDED:
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent) [NC]
-RewriteRule (.*) - [F,L]
-</IfModule>
+RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
+RRewriteRule !^/?robots\.txt$ - [F,L]
+RewriteRule "^.*$" - [F,L]</IfModule>
+
 .....................................................................
 ---------------------------------------------------------------------
 ### A Complete Ai List ##)
@@ -262,6 +263,7 @@ User-agent: Chinchilla
 User-agent: ChatGPT
 User-agent: ChatGPT-User
 User-agent: ChatGPT-User/1.0
+User-agent: ChatGPT-User/2.0
 User-agent: ChatGPT search
 User-agent: CCBot
 User-agent: ccbot
@@ -309,6 +311,7 @@ User-agent: GTPBOT
 User-agent: GPTBot /
 User-agent: gpt-crawler
 User-agent: GPT-1
+User-agent: GPTBot/1.2
 User-agent: GPT-2
 User-agent: GPT-3 
 User-agent: GPT-3.5
@@ -325,7 +328,7 @@ User-agent: GPT 4 Omni Mini
 User-agent: GPT-4.1
 User-agent: GPT-4.1-mini
 User-agent: GPT-4.1-nano
-User-agent: SearchGPT 
+User-agent: Search GPT 
 User-agent: GPT Scraper
 User-agent: Content Scraper GPT
 User-agent: Extended GPT Scraper
@@ -356,6 +359,7 @@ User-agent: Meltwater
 User-agent: Nicecrawler
 User-agent: MSBot 
 User-agent: Mistral
+User-agent: MistralAI-User/1.0
 User-agent: Omgilibot
 User-agent: Omgili
 User-agent: Open AI 
@@ -493,6 +497,7 @@ User-agent: ChatGLM
 User-agent: ChatGPT
 User-agent: ChatGPT-User
 User-agent: ChatGPT-User/1.0
+User-agent: ChatGPT-User/2.0
 User-agent: ChatGPT search
 User-agent: chatUser /
 User-agent: Chinchilla
@@ -576,6 +581,7 @@ User-agent: GPTBot /
 User-agent: GTP 
 User-agent: GPTZero
 User-agent: GPT-1
+User-agent: GPTBot/1.2
 User-agent: GPT-2
 User-agent: GPT-3
 User-agent: GPT-3.5
@@ -590,6 +596,7 @@ User-agent: GPT-4.1
 User-agent: GPT-4.1-mini
 User-agent: GPT-4.1-nano
 User-agent: GPT-5
+User-agent: ChatGPT search
 User-agent: gpt-crawler
 User-agent: Grammarly
 User-agent: Grendizer
@@ -642,6 +649,7 @@ User-agent: meta-externalagent
 User-agent: Meta-ExternalFetcher
 User-agent: meta-externalfetcher/1.1
 User-agent: Mistral
+User-agent: MistralAI-User/1.0
 User-agent: MSBot
 User-agent: Narrative
 User-agent: NeevaBot
@@ -797,9 +805,15 @@ ImageGen /
 ## Delated:  
 GPTbot/0.1
 GPTBot/1.0
+
+NEW ADDDED: 250502
 GPTBot/1.2
+ChatGPT-User/2.0
+ChatGPT search
+MistralAI-User/1.0	    Mistral — fetches citations for Le Chat.	
 
 
+.......................................
 # Check - Perrsihpress - is checking:
 
 Lightpanda
@@ -819,4 +833,4 @@ URL: https://com.bot/
 chatbot
 
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 2504229
+### Updated: 250502
