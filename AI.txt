@@ -363,6 +363,11 @@ It adheres to robots.txt directives and is designed to gather useful data while 
 User-agent: MSBot 
 Disallow: /
 
+....................................
+# New Agent:
+Flower AI
+Collective-1. 
+URL: https://flower.ai/
 .....................................................................
 ---------------------------------------------------------------------
 # AI Scraper:
