@@ -27,6 +27,7 @@ READ MORE:
 *  
 # Updates: * working on a update!  Ready sometimes this week:25010)
 
+* Updated: 250512, robots-htaccess updaded, block ai.php, Fork of blockaai crawlers, FORKOFAI PLUGINSANTIBOT
 * Updated: 250502, robots-htaccess updaded, block ai.php, Fork of blockaai crawlers, FORKOFAI PLUGINSANTIBOT
 * Updated: 250429, robots-htaccess updaded, block ai.php, Fork of blockaai crawlers, FORKOFAI PLUGINSANTIBOT - one delated.
 * Updated: 250429, robots-htaccess updaded, one delated.
