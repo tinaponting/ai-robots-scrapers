@@ -23,6 +23,7 @@ READ MORE:
 
 * TDM Reservation Protocol (TDMRep)  -  https://www.w3.org/community/reports/tdmrep/CG-FINAL-tdmrep-20240202/
 *  Fork of blockaai crawlers.zip   Anibot - can be a bit bandwith eater! I use on only on nights, see if I can find something lighter:)
+*  AI Scraping Protector:  https://wordpress.org/plugins/ai-scraping-protector/
 *  
 # Updates: * working on a update!  Ready sometimes this week:25010)
 
