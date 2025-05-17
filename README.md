@@ -25,7 +25,7 @@ READ MORE:
 *  Fork of blockaai crawlers.zip   Anibot - can be a bit bandwith eater! I use on only on nights, see if I can find something lighter:)
 *  AI Scraping Protector:  https://wordpress.org/plugins/ai-scraping-protector/
 *  
-# Updates: 
+# Updates:  * 200517 An update is on the way, togheter with PerrishPress:)  Ai - no thanks! 
 
 * Updated: 250512, robots-htaccess updaded, block ai.php, Fork of blockaai crawlers, FORKOFAI PLUGINSANTIBOT
 * Updated: 250502, robots-htaccess updaded, block ai.php, Fork of blockaai crawlers, FORKOFAI PLUGINSANTIBOT
