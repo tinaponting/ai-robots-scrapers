@@ -27,6 +27,7 @@ READ MORE:
 *  
 # Updates:  * 200517 An update is on the way, togheter with PerrishPress:)  Ai - no thanks! 
 
+* Updated: 250519, Diffrent files likecaddy, ngix,htcces.
 * Updated: 250512, robots-htaccess updaded, block ai.php, Fork of blockaai crawlers, FORKOFAI PLUGINSANTIBOT
 * Updated: 250502, robots-htaccess updaded, block ai.php, Fork of blockaai crawlers, FORKOFAI PLUGINSANTIBOT
 * Updated: 250429, robots-htaccess updaded, block ai.php, Fork of blockaai crawlers, FORKOFAI PLUGINSANTIBOT - one delated.
