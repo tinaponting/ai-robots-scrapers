@@ -1496,6 +1496,17 @@ Galactica, LLaMA
 Aya 23
 
 # aiHitBot   =   gathering business information from websites.
+
+QuillBot  
+URL: https://quillbot.com/
+
+URL: https://mondaygpt.com/
+
+AndiBot   https://andisearch.com/ or: https://www.andi.co/
+PhindBot  https://www.phind.com/
+
+Flux
+URL: https://flux1.ai 
 .....................................................................
 ---------------------------------------------------------------------
 https://imgproxy.net/  AI?
@@ -1579,4 +1590,4 @@ IPv4 Proxies|IPv6 Proxies|Mobile Proxies|Virgin proxies|Proxy Servers| sproxiesd
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ............................................................................
-# Updated: 240501
+# Updated: 240525
