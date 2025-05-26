@@ -52,7 +52,6 @@ RedirectMatch 403 /(bot|bot)/
 </IfModule>
 ..........................................
 ### ### ALT 5:
-
 # Apache:
 
 <IfModule authz_core_module>
@@ -93,8 +92,9 @@ RewriteRule ^/?.*$ "http\:\/\/127\.0\.0\.1" [R,L]
 ...................................
 ### Block AI bots on a NGINX*  web server ##
 
-NGINX web servers do not use .htaccess files, but instead nginx.conf (or Vhost files). T
-o block bad bots on your NGINX server, add a list of user agents to your nginx.conf, like this:
+NGINX web servers do not use .htaccess files, but instead nginx.conf (or Vhost files). 
+
+To block bad bots on your NGINX server, add a list of user agents to your nginx.conf, like this:
 If more bots, add:  Bot|Bot|BotBot|Bot|Bot and so on.
 
 
@@ -102,6 +102,35 @@ if ($http_user_agent ~* (Bot|Bot|Bot) ) {
 return 403; 
 }
 
+#OR:
+if ($http_user_agent ~* "( )") {
+    return 403;
+}
+
+# case insensitive ###
+
+if ($http_user_agent ~* (BadBotOne|BadBotTwo)) {
+	return 403
+}
+-------------
+# No scrapers
+if ($scraper = 1) {
+return 418 "?";
+}
+
+If you prefer to redirect them somewhere, just use a return 301 instead:
+
+ # case insensitive matching
+    if ($http_user_agent ~* (netcrawl|npbot|malicious)) {
+        return 301 https://yoursite.com;
+    }
+
+# WITH referers. 
+
+if ($http_referer ~ "domain\.com|badsite\.net|example\.com")  {
+  return 403;
+
+}
 .....................................................................
 ---------------------------------------------------------------------
 #From sixcolurs /  https://sixcolors.com/post/2024/06/excluding-your-website-from-apples-ai-crawler/
@@ -141,10 +170,9 @@ User-agent: chatUser /
 .....................................................................
 ---------------------------------------------------------------------			
 * KNOCKS OUT  AI agents /
-              Disallow: /  
-	
 	
 # Open Web Search/ LLM - GenAI-targeted opt ou
+
 User-agent: GenAI
 Disallow: /
 
@@ -168,32 +196,61 @@ User-agent: GoogleOther
 ## htaccess List:
 # AI Content/webscraping #: 
 
-# RAW List:  
+# RAW LIST:  
 
- .ai|AI agents /|AI Chat|AI Chatbot|Agent GPT|AI2 Bot|AISearchBot|AIBot|Alexa|AlexaTM|AlphaAI|Amazon Bedrock|Amazon Comprehend|Amazon SageMaker|Amazon Silk|AutoML|aiHitBot|ai-proxy|
- Amazon Textract|amazon-kendra|AWS Trainium|Nova Act|anthropic-ai|AnyPicker|Applebot-Extended|Aria AI|Aria browser AI|AutoGPT|AndersPinkBot|AITraining/|
- BabyAGI|Brave Leo AI|Brightbot 1.0|Bytedance|ByteDance crawler|Bytespider|
- CrawlGPT|CatBoost|cohere-ai|cohere-training-data-crawler|Cotoyogi|ClaudeBot|claude-web/1.0|ClaudeBot/1.0|Claude 3.7 Sonnet|
- Claude 3.5 Haiku|Claude Opus|chatUser /|Claude-User|Claude-SearchBot|crewAI|ChatGLM|ChatLLM|Chinchilla|ChatGPT|ChatGPT search|ChatGPT-User|ChatGPT-User/1.0|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|
- dataprovider|Diffbo|DialoGPT|DepolarizingGPT|Doubao AI|DuckAssistBot|DALL-E|DALL-E 2|DALL·E 3|DALL-E Mini|DeepAI|DeepL|DeepMind|DeepSeek|DeepSeek-R1|
- FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|Firecrawl|Flyriver|flyriverbot/1.1|FraudGPT|
- meta-externalfetcher/1.1|Meta-ExternalAgent|meta-externalagent|Meta-ExternalFetcher|LLaMA|Llama 3.2|Llama 4|Meta AI|Meta Llama|meta-externalfetcher/1.1|FriendlyCrawler|
- Gato|GenAI|GTP|GTPBOT|GPTBot /|GTB|gpt-crawler|GPT-1|GPTBot/1.2|GPT-2|GPT-3| GPT-3.5|GPT-3.5 turbo|GPT-4|GPT-4,5|GPT-5|gpt-4-turbo|GPT-4o|GPT-4V|GPT-4o mini|GPT 4 Omni|GPT 4 Omni Mini|
- GPT-4.1|GPT-4.1-mini|GPT-4.1-nano|Search GPT|Content Scraper GPT|Extended GPT Scraper|gpt-crawler|GPT Scraper|GPTZero|Grok|GrokAI|Gemini|Google Gemini|Goose|
- Hugging Face|iaskspider|iaskspider/2.0|iAskBot|ICC-Crawler|ImagesiftBot|img2dataset|ImageGen /|IntelliSeek|IntelliSeek.ai|ISSCyberRiskCrawler|
- Kangaroo|Kangaroo Bot|knowledge /|
- LeftWingGPT|Le Chat|magpie-crawler|Meltwater|Nicecrawler|MSBot|Mistral|Manus| 
- Omgilibot|Omgili|Open AI| Openbot|OAI SearchBot|OAI-SearchBot/1.0|OpenAI Crawler|OpenAIContentCrawler|OpenAI o1|OpenAI o1-mini|OpenAI o3-mini|OpenAI CUA|Operator|
- PanguBot|PaperLiBot|PaperLiBot/2.1|peer39_crawler|peer39_crawler/1.0|PerplexityBot|PerplexityBot/1.0|Perplexity-User/1.0|Perplexit-User|PerplexityUser|PetalBot|PiplBot|proximic| 
- qwen /|RightWingGPT|scrapy|Scrapy/2.0|Stability AI|ScraperGPT|ShadowGPT|SemrushBot-OCOB|Seekr|Sidetrade|StableDiffusionBot|Slack-ImgProxy|
- thehive.ai|Timpibot|TurnitinBot|
- Webzio|WebText /|wpbot|wpbot/1.1|wpbot/1.2|WebChatGPT|WormGPT|WormGPT V3.0|Webzio-Extended|VelenPublicWebCrawler|xAI|XBot|x.AI|YouBot|YaLM|YarGPT|yarchatgpt|ZeroGPT|ZeroCHAT
- 
+ .ai|AI agents /|Agentic Deep Research|AutoML|AI Chat |AI Chatbot|aiHitBot|ai-proxy|Agent GPT|AI2 Bot|AISearchBot|AIBot|Alexa|AlexaTM|
+AlphaAI|Amazon Bedrock|Amazon Comprehend|Amazon SageMaker|Amazon Silk|Amazon Textract|amazon-kendra|AWS Trainium|Nova Act| 
+anthropic-ai|AnyPicker|AndiBot|Applebot-Extended|Aria AI|Aria browser AI|AutoGPT|AndersPinkBot|AITraining /|
+BabyAGI|Brave Leo AI|Brightbot 1.0|Bytedance|ByteDance crawler|Bytespider|
+CrawlGPT|CatBoost|cohere-ai|cohere-ai/1.0|cohere-training-data-crawler|Cotoyogi|
+ClaudeBot|Claude 3.5|Claude 4|claude-web/1.0|ClaudeBot/1.0|Claude 3.7 Sonnet|Claude Sonnet 4|Claude 3.5 Haiku|Claude Opus|Claude Opus 4|chatUser /|Claude-User|Claude-SearchBot|
+crewAI|ChatGLM|ChatLLM|Chinchilla|ChatGPT|ChatGPT-User|ChatGPT-User/1.0|ChatGPT-User/2.0|ChatGPT search|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|
+dataprovider|Diffbot|DialoGPT|DepolarizingGPT|Doubao AI|DuckAssistBot|DALL-E|DALL-E 2|DALL·E 3|DALL-E Mini|DeepAI|DeepL|DeepMind|DeepSeek|DeepSeek-R1|
+FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|Flux|Firecrawl|Flyriver|flyriverbot/1.1|FraudGPT|
+meta-externalfetcher/1.1|Meta-ExternalAgent|meta-externalagent|Meta-ExternalFetcher|LLaMA|Llama 3.2|Llama 4|Meta AI|Meta Llama|meta-externalfetcher/1.1|FriendlyCrawler|
+Gato|GenAI|GTP|GTPBOT|GPTBot /|gpt-crawler|GPT-1|GPTBot/1.2|GPT-2|GPT-3|GPT-3.5|GPT-3.5 turbo|GPT-4|GPT-4,5|
+GPT-5|gpt-4-turbo|GPT-4o|GPT-4V|GPT-4o mini|GPT 4 Omni|GPT 4 Omni Mini|GPT-4.1|GPT-4.1-mini|GPT-4.1-nano|Search GPT|GPT Scraper|
+Content Scraper GPT|Extended GPT Scraper|gpt-crawler|GPTZero|Grok|GrokAI|Gemini|Google Gemini|Goose|
+Hugging Face|iaskspider|iaskspider/2.0|iAskBot|ICC-Crawler|ImagesiftBot|img2dataset|ImageGen /|IntelliSeek|IntelliSeek.ai|ISSCyberRiskCrawler|
+Kangaroo|Kangaroo Bot|knowledge /|LeftWingGPT|Le Chat|Manus|magpie-crawler|Meltwater|Nicecrawler|MSBot| Mistral|MistralAI-User/1.0|
+Omgilibot|Omgili|Open AI Openbot|OAI SearchBot|OAI-SearchBot/1.0|OpenAI Crawler|OpenAIContentCrawler|OpenAI o1|OpenAI o1-mini|OpenAI o3-mini|OpenAI CUA|OpenAI Operator|Operator|
+PanguBot|PaperLiBot|PaperLiBot/2.1|peer39_crawler|peer39_crawler/1.0|PerplexityBot|PerplexityBot/1.0|Perplexity-User/1.0|Perplexit-User|PerplexityUser|PetalBot|PiplBot|PhindBot|proximic| 
+qwen /|RightWingGPT|scrapy|Scrapy/2.0|Stability AI|ScraperGPT|ShadowGPT|SemrushBot-OCOB|Seekr|Sidetrade|StableDiffusionBot|Slack-ImgProxy|
+thehive.aiTimpibot|TurnitinBot|Webzio|WebText /|WebChatGPT|WormGPT|WormGPT V3.0|Webzio-Extended|VelenPublicWebCrawler|
+xAI|XBot|x.AI|YouBot|YaLM|YarGPT|yarchatgpt|ZeroGPT|ZeroCHAT
  
 ## BASED ON SLIM list ###
  
+## Big list, also see: Perishpress List ###
 
-## Big list, see: Perishpress List ###
+## ULTIMATE LIST RAW:
+
+.ai|AutoML|aiHitBot|ai-proxy|Agent GPT|Agentic|Agentic Deep Research|AI agents /|AI Article Writer|AI Content Detector|AI Dungeon|AI Search Engine|
+AI SEO Crawler|AI Training|AITraining /|AI Writer|AI2 Bot|AI2Bot|AI21 Labs|AIBot|AndiBot|AIMatrix|AISearchBot|Alexa|AlexaTM|Alpha AI|AlphaAI|
+Amazon Bedrock|Amazon Comprehend|Amazon Lex|Amazon SageMaker|Amazon Sagemaker|Amazon Silk|Amazon Textract|AmazonBot|Amazon-Kendra|Amelia|AndersPinkBot|Anthropic|anthropic-ai|
+AnyPicker|Anyword|Applebot-Extended|Aria Browse|Aria browse Aria AI|Aria browser AI|Articoolo|AutoGPT|Automated Writer|AwarioRssBot|AwarioSmartBot|AWS Trainium|Azure|
+BabyAGI|Brave Leo|Brave Leo AI|Brightbot 1.0|ByteDance|ByteDance crawler|Bytespider|
+CatBoost|CCBot|ccbot|CCBot/2.0|CC-Crawler|CC-Crawler/2.0|ChatGLM|ChatGPT|ChatGPT-User|ChatGPT-User/1.0|ChatGPT-User/2.0|ChatGPT search|chatUser /|
+Chinchilla|Claude|Claude 3.5|Claude 4|Claude 3.5 Haiku|Claude 3.7 Sonnet|Claude Claude Sonnet 4|Claude Opus|Claude Opus 4| ClaudeBot|ClaudeBot/1.0|Claude-SearchBot|Claude-User|claude-web/1.0|
+ClearScope|Cohere|cohere-ai|cohere-ai/1.0|cohere-training-data-crawler|Common Crawl|CommonCrawl|Content Harmony|Content King|Content Optimizer|
+Content Samurai|Content Scraper GPT|ContentAtScale|ContentBot|Contentedge|Conversion AI|Copilot|CopyAI|Copymatic|Copyscape|Cotoyogi|CrawlGPT|CrawlQ AI|Crawlspace|Crew AI|CrewAI|
+DALL-E|DALL-E 2|DALL-E Mini|DALL·E 3|DataForSeoBot|DataProvider|dataprovider|DeepAI|DeepL|DeepMindDeepSeek|DeepSeek-R1|DepolarizingGPT|DialoGPT|Diffbot|Doubao AI|DuckAssistBot|Extended GPT Scraper|
+FacebookBot|FacebookBot/1.0|FacebookExternalHit|facebookexternalhit/1.1|Falcon|Firecrawl|Flyriver|flyriverbot/1.1|Frase AI|FraudGPT|FriendlyCrawler|
+Gato|Gemini|Gemma|GenAI|Genspark|GLM|Google Gemini|Google-CloudVertexBot|Goose|GPT|GPT 4 Omni|GPT 4 Omni Mini|GPT Scraper|GPTBot /|GTP|GPTZero|GPT-1|
+GPTBot/1.2|GPT-2|GPT-3|GPT-3.5|GPT-3.5 turbo|GPT-4|GPT-4o|GPT-4o mini|GPT-4V|GPT-4,5|gpt-4-turbo|GPT-4.1|GPT-4.1-mini|GPT-4.1-nano|
+GPT-5|ChatGPT search|gpt-crawler|Grammarly|Grendizer|Grok|GrokAI|GT Bot|GTBot|GTPBOT|Hemingway Editor|Hugging Face|Hypotenuse AI|
+iAskBot|iaskspider|iaskspider/2.0|ICC-Crawler|ImageGen|ImageGen /|ImagesiftBot|img2dataset|Inferkit|INK Editor|INKforall|IntelliSeek|IntelliSeek.ai|ISSCyberRiskCrawler|
+JasperAI|Kafkai|Kangaroo|Kangaroo Bot|Keyword Density AI|knowledge /|KomoBot|
+LeftWingGPT|Manus|LLaMA|Llama 3.2|Llama 4|LLMs|magpie-crawler|MarketMuse|Meltwater|Meta AI|Meta Llama|MetaAI|MetaTagBot|Meta-AI|
+Meta-External|Meta-ExternalAgent|meta-externalagent|Meta-ExternalFetcher|meta-externalfetcher/1.1|Mistral|MistralAI-User/1.0|MSBot|Narrative|NeevaBot|Neural Text|NeuralSEO|Nicecrawler|Nova Act|
+OAI SearchBot|OAI-SearchBot/1.0|Omgili|Omgilibot|Open AI|OpenAI|OpenAIContentCrawler|OpenAI Operator|OpenBot|OpenText AI|Operator|Outwrite|Page Analyzer AI|PanguBot|PaperLiBot|PaperLiBot/2.1|
+Paraphraser.io|peer39_crawler|peer39_crawler/1.0|Perplexity|PerplexityBot|PerplexityBot/1.0|PerplexityUser|Perplexit-User|PetalBot|Phindbot|PiplBot|ProWritingAid|proximic|
+QuillBot|RightWingGPT|RobotSpider|Rytr|SaplingAI|Scalenut|Scraper|ScraperGPT|Scrapy|Scrapy/2.0|ScriptBook|
+SearchGPT|Seekr|SemrushBot-OCOB|Sentibot|SEO Content Machine|SEO Robot|ShadowGPT|Sidetrade|Simplified AI|Sitefinity|Skydancer|Slack-ImgProxy|SlickWrite|
+Sonic|Spin Rewriter|Spinbot|Stability|Stability AI|StableDiffusionBot|Sudowrite|Super Agent|Surfer AI|Text Blaze|TextCortex|The Knowledge AI|thehive.a1Timpibot|TurnitinBot|
+VelenPublicWebCrawler|Vidnami AI|WebChatGPT|WebText /|Webzio|Webzio-Extended|Whisper|WordAI|Wordtune|WormGPT|WormGPT V3.0|WormsGTP|Writecream|WriterZen|Writescope|
+xAI|XBot|xBot|x.AI|yarchatgpt|YaLM|YarGPT|YouBot|Zero GTP|ZeroCHAT|Zerochat|ZeroGPT|Zhipu|Zimm
+
 
 ***************************
 #I USE /.htaccess2:
@@ -205,6 +262,89 @@ RewriteRule "^.*$" - [F,L]</IfModule>
 
 .....................................................................
 ---------------------------------------------------------------------
+* Updated: 250412: 
+User Agent changed:
+User-agent: AITraining /
+	  
+*
+Meta:
+Llama 4
+	  
+*
+AI agents /
+URL: https://www.analyticsvidhya.com/blog/2025/03/ai-agents-terms/
+	 
+* 
+WebText /       #openAI
+URL: https://paperswithcode.com/dataset/webtext
+
+....................................
+User-agent: Slack-ImgProxy
+Disallow: /
+
+URL: https://api.slack.com/robots
+
+
+250414:
+Added: User-agent: PerplexityBot/1.0
+
+250416:
+* NEW:
+GPT-4.1
+GPT-4.1-mini
+GPT-4.1-nano 
+
+Llama 3.2
+Llama 4
+
+* Steal your images:
+ImageGen
+ImageGen /
+
+## Delated:  
+GPTbot/0.1
+GPTBot/1.0
+
+NEW ADDDED: 250502
+GPTBot/1.2
+ChatGPT-User/2.0
+ChatGPT search
+MistralAI-User/1.0	    Mistral — fetches citations for Le Chat.	
+
+.......................................
+# Check - Perrsihpress - is checking:
+
+Lightpanda
+Scraper AI  ?
+URL: https://lightpanda.io/
+TXT:  Lightpanda is a headless browser intended for 'AI agents, LLM training, scraping and testing': https://github.com/lightpanda-io/browse
+## * Under Progress, not yet ant threat? and not AI, it is scraper!  ***
+
+................................................................................
+
+## Added: 250512:
+Grammarly
+URL: https://www.grammarly.com
+
+ChatLLM 
+URL: https://chatllm.abacus.ai
+
+Le Chat
+URL: https://mistral.ai
+
+#LLM (alibaba open source)*
+Useragent: qwen /
+qwen3
+Qwen3-VL
+Qwen Chat
+URL: https://qwen3.org/
+
+AI Chat  https://deepai.org/chat
+AI Chatbot https://www.semrush.com/free-tools/ai-text-generator/
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+..........................................................................
 ### A Complete Ai List ##)
 #Ai/BOTS - scrapers: 
 **
@@ -213,6 +353,7 @@ SLIM: #Ai - scrapers -Robots. txt:
 User-agent: * 
 User-agent: .ai
 User-agent: AI agents /
+User-agent: Agentic Deep Research
 User-agent: AutoML
 User-agent: AI Chat 
 User-agent: AI Chatbot
@@ -235,11 +376,13 @@ User-agent: AWS Trainium
 User-agent: Nova Act 
 User-agent: anthropic-ai
 User-agent: AnyPicker
+User-agent: AndiBot
 User-agent: Applebot-Extended
 User-agent: Aria AI
 User-agent: Aria browser AI
 User-agent: AutoGPT
 User-agent: AndersPinkBot
+User-agent: AITraining 
 User-agent: AITraining /
 User-agent: BabyAGI
 User-agent: Brave Leo AI
@@ -250,14 +393,19 @@ User-agent: Bytespider
 User-agent: CrawlGPT 
 User-agent: CatBoost
 User-agent: cohere-ai
+User-agent: cohere-ai/1.0
 User-agent: cohere-training-data-crawler
 User-agent: Cotoyogi
 User-agent: ClaudeBot
+User-agent: Claude 3.5
+User-agent: Claude 4 
 User-agent: claude-web/1.0
 User-agent: ClaudeBot/1.0
 User-agent: Claude 3.7 Sonnet
+User-agent: Claude Sonnet 4
 User-agent: Claude 3.5 Haiku 
 User-agent: Claude Opus
+User-agent: Claude Opus 4 
 User-agent: chatUser /
 User-agent: Claude-User
 User-agent: Claude-SearchBot
@@ -293,6 +441,7 @@ User-agent: FacebookBot
 User-agent: FacebookBot/1.0
 User-agent: facebookexternalhit
 User-agent: facebookexternalhit/1.1
+User-agent: Flux
 User-agent: Firecrawl
 User-agent: Flyriver
 User-agent: flyriverbot/1.1
@@ -378,6 +527,7 @@ User-agent: OpenAI o1
 User-agent: OpenAI o1-mini
 User-agent: OpenAI o3-mini
 User-agent: OpenAI CUA
+User-agent: OpenAI Operator
 User-agent: Operator
 User-agent: PanguBot
 User-agent: PaperLiBot
@@ -391,6 +541,7 @@ User-agent: Perplexit-User
 User-agent: PerplexityUser
 User-agent: PetalBot
 User-agent: PiplBot
+User-agent: PhindBot  
 User-agent: proximic
 User-agent: qwen / 
 User-agent: RightWingGPT
@@ -409,9 +560,6 @@ User-agent: Timpibot
 User-agent: TurnitinBot
 User-agent: Webzio
 User-agent: WebText /
-User-agent: wpbot
-User-agent: wpbot/1.1
-User-agent: wpbot/1.2
 User-agent: WebChatGPT
 User-agent: WormGPT
 User-agent: WormGPT V3.0
@@ -442,6 +590,7 @@ User-agent: aiHitBot
 User-agent: ai-proxy
 User-agent: Agent GPT
 User-agent: Agentic
+User-agent: Agentic Deep Research
 User-agent: AI agents /
 User-agent: AI Article Writer
 User-agent: AI Content Detector
@@ -454,6 +603,7 @@ User-agent: AI2 Bot
 User-agent: AI2Bot
 User-agent: AI21 Labs
 User-agent: AIBot
+User-agent: AndiBot 
 User-agent: AIMatrix
 User-agent: AISearchBot
 User-agent: AITraining
@@ -509,9 +659,13 @@ User-agent: ChatGPT search
 User-agent: chatUser /
 User-agent: Chinchilla
 User-agent: Claude
+User-agent: Claude 3.5
+User-agent: Claude 4
 User-agent: Claude 3.5 Haiku
 User-agent: Claude 3.7 Sonnet
+User-agent: Claude Claude Sonnet 4
 User-agent: Claude Opus
+User-agent: Claude Opus 4  
 User-agent: ClaudeBot
 User-agent: ClaudeBot/1.0
 User-agent: Claude-SearchBot
@@ -520,6 +674,7 @@ User-agent: claude-web/1.0
 User-agent: ClearScope
 User-agent: Cohere
 User-agent: cohere-ai
+User-agent: cohere-ai/1.0
 User-agent: cohere-training-data-crawler
 User-agent: Common Crawl
 User-agent: CommonCrawl
@@ -671,6 +826,7 @@ User-agent: Omgilibot
 User-agent: Open AI
 User-agent: OpenAI
 User-agent: OpenAIContentCrawler
+User-agent: OpenAI Operator
 User-agent: OpenBot
 User-agent: OpenText AI
 User-agent: Operator
@@ -730,13 +886,11 @@ User-agent: TextCortex
 User-agent: The Knowledge AI
 User-Agent: thehive.a1
 User-agent: Timpibot
-User-agent: Timpibot
 User-agent: TurnitinBot
 User-agent: VelenPublicWebCrawler
 User-agent: Vidnami AI
 User-agent: WebChatGPT
 User-agent: WebText /
-User-agent: Webzio
 User-agent: Webzio
 User-agent: Webzio-Extended
 User-agent: Whisper
@@ -745,10 +899,6 @@ User-agent: Wordtune
 User-agent: WormGPT
 User-agent: WormGPT V3.0
 User-agent: WormsGTP
-User-agent: WPBot
-User-agent: wpbot
-User-agent: wpbot/1.1
-User-agent: wpbot/1.2
 User-agent: Writecream
 User-agent: WriterZen
 User-agent: Writescope
@@ -770,86 +920,5 @@ Disallow: /
 
 
 :::::::::::::::::::::::::::::::::::::::::	  
-* Updated: 250412: 
-User Agent changed:
-User-agent: AITraining /
-	  
-*
-Meta:
-Llama 4
-	  
-*
-AI agents /
-URL: https://www.analyticsvidhya.com/blog/2025/03/ai-agents-terms/
-	 
-* 
-WebText /       #openAI
-URL: https://paperswithcode.com/dataset/webtext
-
-....................................
-User-agent: Slack-ImgProxy
-Disallow: /
-
-URL: https://api.slack.com/robots
-
-
-250414:
-Added: User-agent: PerplexityBot/1.0
-
-250416:
-* NEW:
-GPT-4.1
-GPT-4.1-mini
-GPT-4.1-nano 
-
-Llama 3.2
-Llama 4
-
-* Steal your images:
-ImageGen
-ImageGen /
-
-## Delated:  
-GPTbot/0.1
-GPTBot/1.0
-
-NEW ADDDED: 250502
-GPTBot/1.2
-ChatGPT-User/2.0
-ChatGPT search
-MistralAI-User/1.0	    Mistral — fetches citations for Le Chat.	
-
-.......................................
-# Check - Perrsihpress - is checking:
-
-Lightpanda
-Scraper AI  ?
-URL: https://lightpanda.io/
-TXT:  Lightpanda is a headless browser intended for 'AI agents, LLM training, scraping and testing': https://github.com/lightpanda-io/browse
-## * Under Progress, not yet ant threat? and not AI, it is scraper!  ***
-
-................................................................................
-
-## Added: 250512:
-Grammarly
-URL: https://www.grammarly.com
-
-ChatLLM 
-URL: https://chatllm.abacus.ai
-
-Le Chat
-URL: https://mistral.ai
-
-#LLM (alibaba open source)*
-Useragent: qwen /
-qwen3
-Qwen3-VL
-Qwen Chat
-URL: https://qwen3.org/
-
-AI Chat  https://deepai.org/chat
-AI Chatbot https://www.semrush.com/free-tools/ai-text-generator/
-
-
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 250512
+### Updated: 250526
