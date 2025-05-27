@@ -28,6 +28,7 @@ READ MORE:
 *  
 # Updates:  * 200517 An update is on the way, togheter with PerrishPress:)  Ai - no thanks! 
 
+* Added: 250527, Hugo-config.yaml-nothanksAI.zip - based on ultimate list.
 * Updated 250527,Forkof-kirby-block-ai-master - Latest AI -no thanks:)
 * Updated 250527, block ai.php updated with the Latest AI.
 * Updated 250526, FORKOFAI PLUGINSANTIBOT.zip #OBS: antibot may cosume power!#
