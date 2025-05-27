@@ -28,6 +28,7 @@ READ MORE:
 *  
 # Updates:  * 200517 An update is on the way, togheter with PerrishPress:)  Ai - no thanks! 
 
+* Updated 250527, block ai.php updated with the Latest AI.
 * Updated 250526, FORKOFAI PLUGINSANTIBOT.zip #OBS: antibot may cosume power!#
 * Updated 250526 Robots.txt/htaccess with new AI to block!
 * Updated: 250519, BLOCK by js.zip
