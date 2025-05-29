@@ -26,7 +26,7 @@ READ MORE:
 *  Fork of blockaai crawlers.zip   Anibot - can be a bit bandwith eater! I use on only on nights, see if I can find something lighter:)
 *  AI Scraping Protector:  https://wordpress.org/plugins/ai-scraping-protector/
 *  
-# Updates:  * 200517 An update is on the way, togheter with PerrishPress:)  Ai - no thanks! 
+# Updates:  * 200529 all Done, waiting for Perrish list:)  Ai - no thanks! 
 
 * Added: 250527, Hugo-config.yaml-nothanksAI.zip - based on ultimate list.
 * Updated 250527,Forkof-kirby-block-ai-master - Latest AI -no thanks:)
