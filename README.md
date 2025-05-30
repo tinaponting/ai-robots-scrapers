@@ -1,5 +1,5 @@
 # Over 400 AI bots - scrapers to block/not wanted on my sites: 
-
+# Free to us as you please:)
 
 Ai crapers - Ai bots - Ai robts.txt 
 And ways to block ai scrapers of your content.)
