@@ -4,6 +4,7 @@
 Ai crapers - Ai bots - Ai robts.txt 
 And ways to block ai scrapers of your content.)
 ....................................
+If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepress.com8g-firewall with Latest Aibots  - I use this:)  Not taking power from your blog!
 ....................................
 
 * TDM - -my content - Do not usse my articles
