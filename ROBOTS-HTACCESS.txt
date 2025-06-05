@@ -259,7 +259,7 @@ Zero /|Zero GTP|ZeroCHAT|Zerochat|ZeroGPT|Zhipu|XXXGPT|Zimm
 
 <IfModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
-RRewriteRule !^/?robots\.txt$ - [F,L]
+RewriteRule !^/?robots\.txt$ - [F,L]
 RewriteRule "^.*$" - [F,L]</IfModule>
 
 .....................................................................
