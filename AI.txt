@@ -451,6 +451,8 @@ URL: https://www.aibase.com/repos/project/docker-nginx-image-proxy
 URL 2: https://www.netify.ai/resources/hostnames/imageproxy.as.criteo.net
 URL 3:https://github.com/imgproxy/imgproxy
 
+Lensa AI - images
+
 .....................................................................
 ---------------------------------------------------------------------
 ## AI Framework:
@@ -894,11 +896,11 @@ Disallow: /
 ## I ASK:
 URL: https://iask.ai/
 
-User-agent: iaskspider/2.0
-Disallow: /
 User-agent: iAskBot
 Disallow: /
 User-agent: iAskBot/1.0
+Disallow: /
+User-agent: iaskspider/2.0
 Disallow: /
 
 .....................................................................
@@ -920,6 +922,8 @@ Disallow: /
 User-agent: 
 User-agent: PerplexityUser
 Disallow: /
+User-agent: Perplexity Deep Research
+Disallow: /
 
 .....................................................................
 ---------------------------------------------------------------------
@@ -935,11 +939,11 @@ Disallow: /
 
 .....................................................................
 ---------------------------------------------------------------------
-Yandex Search engine:
+#Yandex  - #ANDEX: Search engine:
 URL: http://yarchatgpt.ru
 
 #Yandex:
-# Machine learning
+# Machine learning:
   CatBoost
   Yandex - YaLM
 
@@ -948,6 +952,14 @@ Disallow: /
 
 Also: User-agent: yarchatgpt
       Disallow: /
+	  
+User-agent: YaML
+User-agent: YandexGPT
+User-agent: YandexLLM
+User-agent: YandexAdditional
+User-agent: YandexAdditionalBot
+User-agent: yarchatgpt
+User-agent: YarGPT
 
 .....................................................................
 ---------------------------------------------------------------------
@@ -1154,6 +1166,8 @@ Grok-2‡
 Grok 3
 GroqChat
 Groq Cloud AI
+Grok AI chatbot
+
 
 .....................................................................
 ---------------------------------------------------------------------
@@ -1243,8 +1257,45 @@ URL: https://spider.cloud
 PyTorch 
 AstrBot (User-friendly LLM-based multi-platform chatbot with a WebUI, supporting RAG, LLM agents, and plugins integration)
 
+
+#Browser: Tor
+TorChat
+
 * MultiOn's Agent API
 URL: https://theagi.company/
+
+* XXXGPT  -very Danrous:
+TXT: adversarial AI tool that came on the black hat scene shortly after WormGPT and FraudGPT. 
+This tool focuses more on facilitating technical, code-based hacks by writing remote access trojans (RATs), 
+keyloggers, infostealers, cryptostealers, and more. 
+
+User-agent: XXXGPT
+
+* LLM:
+User-agent: Panscient
+Disallow: /
+
+* facset:
+User-agent: Factset_spyderbot
+Disallow: /
+
+* English scraper AI:
+SBIntuitionsBot 
+URL: https://www.sbintuitions.co.jp/en/bot/
+
+ASK:
+User-agent: Ask AI
+Disallow: /
+
+.....................................................................
+---------------------------------------------------------------------
+# Ahrefs:
+https://ahrefs.com/blog/ai-features/
+https://ahrefs.com/writing-tools
+
+AI copilot 
+AI Search Intent 
+AI Chat 
 
 .....................................................................
 ---------------------------------------------------------------------
@@ -1312,6 +1363,7 @@ https://www.wingai.app
 RightWingGPT
 LeftWingGPT
 DepolarizingGPT
+
 .....................................................................
 ---------------------------------------------------------------------
 # The Common Crawl crawler bot  / CommonCrawl.org 
@@ -1385,6 +1437,10 @@ URL:  https://www.inuit.se/blogg/wormgpt-och-fraudgpt-uppkomsten-av-skadliga-llm
 URL: https://secureops.com/blog/ai-attacks-fraudgpt/
 URL: https://eviden.com/insights/blogs/wormgpt-when-genai-also-serves-malicious-actors/
 
+Monica 
+*is a new entrant. This service offers an all-in-one AI assistant with a wide range of services. 
+Users can choose from various large language models.
+
 .....................................................................
 ---------------------------------------------------------------------
 ## AI SCRAPERS:
@@ -1451,6 +1507,11 @@ PhindBot
 Txt: lightweight, open-source autonomous agent 
 URL: https://babyagi.org/
 
+Lightpanda
+Scraper AI  
+URL: https://lightpanda.io/
+TXT:  Lightpanda is a headless browser intended for 'AI agents, LLM training, scraping and testing': https://github.com/lightpanda-io/browse
+## * Under Progress, not yet ant threat? and not AI, it is scraper!  ***
 
 .....................................................................
 ---------------------------------------------------------------------
@@ -1507,6 +1568,10 @@ PhindBot  https://www.phind.com/
 
 Flux
 URL: https://flux1.ai 
+
+* AutoGLM  - Zhipu AI for deep research and autonomous task execution
+User-agent: AutoGLM
+
 .....................................................................
 ---------------------------------------------------------------------
 https://imgproxy.net/  AI?
@@ -1585,9 +1650,10 @@ IPv4 Proxies|IPv6 Proxies|Mobile Proxies|Virgin proxies|Proxy Servers| sproxiesd
 ---------------------------------------------------------------------
 # RECOMMENDATIONS to use plugins:
 ## BLOCK AI: -  BBQ:   https://plugin-planet.com/bbq-pro/   Great plugin with lots custom rules:)
+
 # Content scraper block plugin, lots to choose from.
 
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ............................................................................
-# Updated: 240525
+# Updated: 240605
