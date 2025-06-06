@@ -218,7 +218,8 @@ User-agent: GoogleOther
 .ai|ai=n|Agent GPT|Agentic|Agentic-RAG|Agentic Deep Research|
 AI agents /|AI Article Writer|AI Chat|AI Chatbot|AI copilot |AI Search Intent| AI Chat|AI Content Detector|AI Dungeon|
 AI Search|AI Search Engine|AI SEO Crawler|Ask AI|AI Writer|AI2 Bot|AI2Bot|AI21 Labs|AIBot|aiHitBot|AIMatrix|AISearchBot|AITraining|AI Training|
-AITraining /|ai-proxy|Alexa|AlexaTM|Alpha AI|AlphaAI|Amazon Bedrock|Amazon Comprehend|Amazon Lex|Amazon SageMaker|Amazon Silk|Amazon Textract|AmazonBot|amazonBot|Amazon-Kendra|amazon-kendra|Amelia|AndersPinkBot|AndiBot|Anthropic|anthropic-ai|AnyPicker|Anyword|Applebot|Applebot-Extended|
+AITraining /|ai-proxy|Alexa|AlexaTM|Alpha AI|AlphaAI|
+Amazon Athena|bedrock-chat|AWS bedrock|bedrock-chatbot|bedrock-claude-chatbot|Bedrock Claude|Amazon Bedrock|Amazon Comprehend|Amazon Lex|Amazon SageMaker|Amazon Silk|Amazon Textract|AmazonBot|amazonBot|Amazon-Kendra|amazon-kendra|Amelia|AndersPinkBot|AndiBot|Anthropic|anthropic-ai|AnyPicker|Anyword|Applebot|Applebot-Extended|
 Aria AI|Aria Browse|Aria browse Aria AI|Aria browser AI|Articoolo|AutoGLM|AutoGPT|Automated Writer|AutoML|AutoGLM|AwarioRssBot|AwarioSmartBot|AWS Trainium|AcademicBotRTU|Azure|
 BabyAGI|BardBot|Brave Leo|Brave Leo AI|Brightbot|Brightbot 1.0|ByteDance|byteDance|ByteDance crawler|Bytespider|CatBoost|CCBot|ccbot|CCBot/2.0|CC-Crawler|CC-Crawler/2.0|chatbot|ChatGLM|ChatGPT|ChatGPT search|ChatGPT-User|ChatGPT-User/1.0|ChatGPT-User/2.0|ChatLLM|chatUser /|Chinchilla|
 Claude|Claude 3.5|Claude 3.5 Haiku|Claude 3.5 Sonnet|Claude 3.7 Sonnet|
@@ -230,14 +231,14 @@ DALL-E|DALL-E 2|DALL-E Mini|DALL·E 3|Dall-E 4|
 DataForSeoBot|DataProvider|dataprovider|
 DeepAI|DeepL|DeepMind|DeepSeek|DeepSeek-R1|DepolarizingGPT|DialoGPT|Diffbot|Doubao AI|DuckAssistBot|Extended GPT Scraper|
 FacebookBot|FacebookBot/1.0|FacebookExternalHit|facebookexternalhit/1.1|Factset|Factset_spyderbot|Falcon|Firecrawl|FirecrawlAgent|Flux|Flyriver|flyriverbot/1.1|Frase AI|FraudGPT|FriendlyCrawler|
-Gato|Gemini|Gemma|Gen AI|Genspark|GLM|Google Gemini|Google-CloudVertexBot|Google-Extended|
+Gato|Gemini|Gemma|Gen AI|GenAI Chat| Genspark|GLM|Google Gemini|Google-CloudVertexBot|Google-Extended|
 Goose|GPT|GPT/|GPT 4 Omni|GPT 4 Omni Mini|GPT Scraper|GPTBot|GPTBot /|GPTBot/1.2|GPTZero|
 GPT-1|GPT-2|GPT-3|GPT-3.5|GPT-3.5 turbo|GPT-4|GPT-4o|GPT-4o mini|GPT-4V|GPT-4,5|gpt-4-turbo|GPT-4.1|GPT-4.1-mini|GPT-4.1-nano|GPT-5|
 gpt-crawler|Grammarly|Grendizer|Grok|GrokAI|Grok AI chatbot|GT Bot|GTBot|GTP|GTPBOT|GenAI|
 Hemingway Editor|Hugging Face|Hypotenuse AI|
 iAskBot|iaskspider|iaskspider/2.0|ICC-Crawler|ImageGen|ImageGen /|ImagesiftBot|img2dataset|imgproxy|Inferkit|INK Editor|INKforall|IntelliSeek|IntelliSeek.ai|ISSCyberRiskCrawler|JasperAI|
 Kafkai|Kangaroo|Kangaroo Bot|Keyword Density AI|Knowledge|knowledge /|KomoBot|
-Le Chat|LeftWingGPT|Lensa|Lightpanda|LLaMA|Llama 3.2|Llama 4|LLMs|
+Le Chat|LeftWingGPT|LangChain|Lensa|Lightpanda|LLaMA|Llama 3.2|Llama 4|LLMs|
 magpie-crawler|Manus|MarketMuse|Meltwater|Meta AI|Meta Llama|MetaAI|MetaTagBot|Meta-AI|
 Meta-External|Meta-ExternalAgent|meta-externalagent|Meta-ExternalFetcher|meta-externalfetcher|meta-externalfetcher/1.1|Mistral|MistralAI-User/1.0|midjourney|Monica|MSBot|
 Narrative|NeevaBot|Neural Text|NeuralSEO|Nicecrawler|NinjaAIBot/1.0|Nova Act|NovaAct|
@@ -381,6 +382,12 @@ User-agent: Alexa
 User-agent: AlexaTM
 User-agent: Alpha AI
 User-agent: AlphaAI
+User-agent: Amazon Athena
+User-agent: bedrock-chat
+User-agent: AWS bedrock
+User-agent: bedrock-chatbot
+User-agent: bedrock-claude-chatbot
+User-agent: Bedrock Claude 
 User-agent: Amazon Bedrock
 User-agent: Amazon Comprehend
 User-agent: Amazon Lex
@@ -562,6 +569,7 @@ User-agent: GTBot
 User-agent: GTP
 User-agent: GTPBOT
 User-agent: GenAI
+User-agent: GenAI Chat
 User-agent: Hemingway Editor
 User-agent: Hugging Face
 User-agent: Hypotenuse AI
@@ -588,6 +596,7 @@ User-agent: Keyword Density AI
 User-agent: Knowledge
 User-agent: knowledge /
 User-agent: KomoBot
+User-agent: LangChain
 User-agent: Le Chat
 User-agent: LeftWingGPT
 User-agent: Lensa
@@ -768,4 +777,4 @@ Disallow: /
 
 :::::::::::::::::::::::::::::::::::::::::	  
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 250605
+### Updated: 250606
