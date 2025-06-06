@@ -226,7 +226,7 @@ Claude|Claude 3.5|Claude 3.5 Haiku|Claude 3.5 Sonnet|Claude 3.7 Sonnet|
 Claude 4|Claude Opus|Claude Opus 4|Claude Sonnet 4|ClaudeBot|ClaudeBot/1.0|Claude-SearchBot|Claude-User|Claude-Web|claude-web/1.0|
 ClearScope|Cohere|cohere-ai|cohere-ai/1.0|cohere-training-data-crawler|
 Common Crawl|CommonCrawl|Content Harmony|Content King|Content Optimizer|Content Samurai|Content Scraper GPT|ContentAtScale|ContentBot|
-Contentedge|Conversion AI|Copilot|CopyAI|Copymatic|Copyscape|Cotoyogi|CrawlGPT|CrawlQ AI|Crawlspace|Crew AI|CrewAI|crewAI|
+Contentedge|Conversion AI|Copilot|CopyAI|Copymatic|Copyscape|Cotoyogi|CrawlGPT|CrawlQ AI|Crawlspace|Crew AI|CrewAI|
 DALL-E|DALL-E 2|DALL-E Mini|DALL·E 3|Dall-E 4|
 DataForSeoBot|DataProvider|dataprovider|
 DeepAI|DeepL|DeepMind|DeepSeek|DeepSeek-R1|DepolarizingGPT|DialoGPT|Diffbot|Doubao AI|DuckAssistBot|Extended GPT Scraper|
@@ -488,7 +488,6 @@ User-agent: CrawlQ AI
 User-agent: Crawlspace
 User-agent: Crew AI
 User-agent: CrewAI
-User-agent: crewAI
 User-agent: DALL-E
 User-agent: DALL-E 2
 User-agent: DALL-E Mini
