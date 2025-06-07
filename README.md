@@ -33,9 +33,11 @@ READ MORE:
 # Updates:  *250607 nginx files, Choose, my or Perrishpress. htaccess:)*****
 # Updates:  *250607 Caddy files, Choose, my or Perrishpress. htaccess:)*****
 # Updates:  *250607 HAproxy files, Choose, my or Perrishpress. htaccess:)*****
+# Updates:  *250607 HAproxy files, Choose, my or Perrishpress. htaccess:)*****
+# Updates:  *250607Fork of blockaai crawlers.zip - PLUGIN) 
 
-*  
-# Updates:  * 250606 _working on new php.forks Lists:)  Ai - no thanks! 
+
+# Updates:  * 250607 - working on some more to do...:)  Ai - no thanks! 
 
 * Updated 250606: ROBOTS-HTACCESS.txt / New AI _ not wanted
 * Updated 250605: Perrish list Updated:) With the Latest.
