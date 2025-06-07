@@ -31,6 +31,7 @@ READ MORE:
 *  
 # Updates: **
 
+* Updates: 250607 - Hugo Ai block)
 * Updates: 250607 - AI Alternative to use - If stubborn:)
 * Updates: 250607 - working on some more, hugo,kirby to do...:)  Ai - no thanks! 
 * Updates: 250606 My htaccess, Choose, my or Perrishpress. htaccess:)**
