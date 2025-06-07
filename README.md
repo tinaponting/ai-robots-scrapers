@@ -30,6 +30,9 @@ READ MORE:
 *  AI Scraping Protector:  https://wordpress.org/plugins/ai-scraping-protector/
 
 # Updates:  *250606 My htaccess, Choose, my or Perrishpress. htaccess:)*****
+# Updates:  *250607 nginx files, Choose, my or Perrishpress. htaccess:)*****
+
+
 *  
 # Updates:  * 250606 _working on new php.forks Lists:)  Ai - no thanks! 
 
