@@ -36,7 +36,7 @@ READ MORE:
 # Updates: 250607 Protect by JS,. htaccess:)**
 # Updates: 250607 Fork of blockaai crawlers.zip - PLUGIN:)*
 # Updates: 250607 Block ai-sheild, made it better, not foolproof, but gives Ai a hard time - PLUGIN:)*
-
+# Updates: 250607block ai.php - Use as an extra at the root of the blog, don't make the blog sticky!
 
 # Updates:  * 250607 - working on some more, hugo,kirby to do...:)  Ai - no thanks! 
 
