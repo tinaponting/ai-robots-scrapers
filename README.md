@@ -29,16 +29,16 @@ READ MORE:
 *  Fork of blockaai crawlers.zip   Anibot - can be a bit bandwith eater! I use on only on nights, see if I can find something lighter:)
 *  AI Scraping Protector:  https://wordpress.org/plugins/ai-scraping-protector/
 
-# Updates:  *250606 My htaccess, Choose, my or Perrishpress. htaccess:)*****
-# Updates:  *250607 nginx files, Choose, my or Perrishpress. htaccess:)*****
-# Updates:  *250607 Caddy files.. htaccess:)*****
-# Updates:  *250607 HAproxy files. htaccess:)*****
-# Updates:  *250607 Protect by JS,. htaccess:)*****
-# Updates:  *250607 Fork of blockaai crawlers.zip - PLUGIN)
-# Updates:  *250607 Block ai-sheild, made it better, not foolproof, but gives Ai a hard time - PLUGIN) 
+# Updates: 250606 My htaccess, Choose, my or Perrishpress. htaccess:)**
+# Updates: 250607 nginx files, Choose, my or Perrishpress. htaccess:)**
+# Updates:: 250607 Caddy files.. htaccess:)**
+# Updates: 250607 HAproxy files. htaccess:)**
+# Updates: 250607 Protect by JS,. htaccess:)**
+# Updates: 250607 Fork of blockaai crawlers.zip - PLUGIN:)*
+# Updates: 250607 Block ai-sheild, made it better, not foolproof, but gives Ai a hard time - PLUGIN:)*
 
 
-# Updates:  * 250607 - working on some more to do...:)  Ai - no thanks! 
+# Updates:  * 250607 - working on some more, hugo,kirby to do...:)  Ai - no thanks! 
 
 * Updated 250606: ROBOTS-HTACCESS.txt / New AI _ not wanted
 * Updated 250605: Perrish list Updated:) With the Latest.
