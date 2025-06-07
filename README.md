@@ -33,7 +33,7 @@ READ MORE:
 # Updates:  *250607 nginx files, Choose, my or Perrishpress. htaccess:)*****
 # Updates:  *250607 Caddy files.. htaccess:)*****
 # Updates:  *250607 HAproxy files. htaccess:)*****
-# Updates:  *250607 HAproxy file,. htaccess:)*****
+# Updates:  *250607 Protect by JS,. htaccess:)*****
 # Updates:  *250607 Fork of blockaai crawlers.zip - PLUGIN)
 # Updates:  *250607 Block ai-sheild, made it better, not foolproof, but gives Ai a hard time - PLUGIN) 
 
