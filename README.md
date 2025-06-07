@@ -34,7 +34,8 @@ READ MORE:
 # Updates:  *250607 Caddy files, Choose, my or Perrishpress. htaccess:)*****
 # Updates:  *250607 HAproxy files, Choose, my or Perrishpress. htaccess:)*****
 # Updates:  *250607 HAproxy files, Choose, my or Perrishpress. htaccess:)*****
-# Updates:  *250607Fork of blockaai crawlers.zip - PLUGIN) 
+# Updates:  *250607 Fork of blockaai crawlers.zip - PLUGIN)
+# Updates:  *250607 Block ai-sheild, made it better, not foolproof, but gives Ai a hard time - PLUGIN) 
 
 
 # Updates:  * 250607 - working on some more to do...:)  Ai - no thanks! 
