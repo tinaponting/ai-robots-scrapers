@@ -105,8 +105,7 @@ READ MORE:
 * Updated 250113, with bytesdance LLM
 * Updated 250110, ai robots.txt.
 * 250109, GTBOT - a pain in the ass!
-* 241225 All updated ith the Latest:)
-* 240111 - 241225, updated All:)
+* 240101 - 241230, updated All:)
 
 ****************************************
 
