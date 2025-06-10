@@ -26,7 +26,6 @@ READ MORE:
 * AI Scraping protection:  https://wordpress.org/plugins/ai-scraping-protector/   // don´t know howm hutch this helps // and I did get a extra page, containing: visit Kosovo = not wanted!
 
 * TDM Reservation Protocol (TDMRep)  -  https://www.w3.org/community/reports/tdmrep/CG-FINAL-tdmrep-20240202/
-*  Fork of blockaai crawlers.zip   Anibot - can be a bit bandwith eater! I use on only on nights, see if I can find something lighter:)
 *  AI Scraping Protector:  https://wordpress.org/plugins/ai-scraping-protector/
 
 *  IF YOU WANT A strong firewall, aho also protect againtst scrapers: perishablepress.com8g-firewall with Latest Aibots - not wanted:) 
