@@ -152,8 +152,7 @@ FORK OFF: anybot, Ai edition,blocks Ai bot and others:)
 HÅLL KOLL PÅ: https://perishablepress.com/ultimate-ai-block-list/
 Brandvägg, inverkar ej på bandbredd eller fart! Med egna botar att lägga in: https://plugin-planet.com/bbq-pro/
 
-____________________________________________________________________________________________________
-
+-----------------------------------------------------------
 IN English:
 
 TO USE .htaccess and plugins on Protect Wordpress:
@@ -186,6 +185,61 @@ Firewall, does not affect bandwidth or speed!
 With your own bots to add: https://plugin-planet.com/bbq-pro/
 
 -----------------------------------------------------------
+Auf Deutsch:
+NUTZUNG VON .htaccess und Plugins auf Protect Wordpress: URL: https://github.com/tinaponting/protect-wordpress
+
+Immer: „Rohdatei“ – verwenden Sie die Rohdatei und das Skript, das Ihnen gefällt und von dem Sie wissen, dass es für Ihren Blog/Ihre Website funktioniert. Laden Sie die Datei hoch. Oder verwenden Sie htaccess1- oder htaccess2-fähige Firewalls und laden Sie sie in das Stammverzeichnis Ihrer Website hoch.
+
+AI BOT HELL: URL: https://github.com/tinaponting/ai-robots-scrapers
+
+Plugins: In den Plugin-Ordner hochladen – Aktivieren – Fertig, alle Einstellungen.
+
+WICHTIG: Behalten Sie Updates auf den Websites im Auge! Im Bereich KI tut sich viel! Die Entwicklung von KI schreitet schnell voran, also behalten Sie Updates im Auge!
+
+PLUGINS:
+
+Fork-Plugin-URI: https://github.com/tinaponting/ai-robots-scrapers. Bietet Ihnen eine AI-Robots.txt-Datei mit der in WordPress integrierten Robots.txt-Datei. Die Geschwindigkeit wird dadurch nicht beeinträchtigt!
+** BLOCK: ai php.zip. Wähle die gewünschte Datei aus und füge sie für zusätzliche Sicherheit zum Stammverzeichnis hinzu.
+
+ANTBOTAEDTION FORK OFF: anybot, Ai Edition, blockiert Ai Bots und andere :)
+
+WEITERLESEN: https://perishablepress.com/ultimate-ai-block-list/ Firewall, beeinträchtigt weder Bandbreite noch Geschwindigkeit!
+
+Mit eigenen Bots zum Hinzufügen: https://plugin-planet.com/bbq-pro/
+.........................................................................................
+En español::
+
+PARA USAR .htaccess y plugins en Protect Wordpress:
+URL: https://github.com/tinaponting/protect-wordpress
+
+Siempre: "archivo raw": usa el archivo raw, el script que te guste y sepas que funciona para tu blog/sitio web, y sube el archivo.
+O usa firewalls compatibles con htaccess1 o htaccess2 y sube el archivo a la raíz de tu sitio web.
+
+INFIERNO DE BOTS DE IA:
+URL: https://github.com/tinaponting/ai-robots-scrapers
+
+Plugins: Subir a la carpeta de plugins - Activar - listo, cualquier configuración.
+
+IMPORTANTE: ¡Mantente al tanto de las actualizaciones de los sitios! ¡Hay mucho que hacer en IA! El desarrollo es rápido en IA, así que mantente al tanto de las actualizaciones.
+
+PLUGINS:
+
+* URI del plugin de bifurcación: https://github.com/tinaponting/ai-robots-scrapers
+Te proporciona el archivo robots.txt de Ai, con el robots.txt integrado de WP. ¡No afecta la velocidad!
+
+**
+BLOQUE: ai php.zip
+Elige el que quieras. Añádelo a la raíz para mayor seguridad.
+
+ANTIBOTACIÓN DE BIFURCACIÓN DESACTIVADA: anybot, Ai edition, bloquea el bot de Ai y otros.
+
+SIGUE VIENDO: https://perishablepress.com/ultimate-ai-block-list/
+¡Cortafuegos! No afecta el ancho de banda ni la velocidad.
+
+Con tus propios bots para añadir: https://plugin-planet.com/bbq-pro/
+
+-----------------------------------------------------------
+...........................................................
 PULL A Request:
 ** Describe what should changed and why
 
@@ -193,3 +247,6 @@ We'll review it as soon as we can!
 
 Thanks for contributing! 🙌
 Love to hear from you:) Teskedsgumman sweden
+
+.......................................................
+.......................................................
