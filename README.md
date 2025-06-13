@@ -32,6 +32,7 @@ READ MORE:
 *  
 # Updates: **
 
+* ADDED: DRUPAL - jOOMLA PLUGINS - add your ai, plugins:)
 * Updates: 250607 - Hugo Ai block)
 * Updates: 250607 - AI Alternative to use - If stubborn:)
 * Updates: 250607 - working on some more, hugo,kirby to do...:)  Ai - no thanks! 
