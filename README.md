@@ -23,7 +23,7 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 READ MORE: 
 * https://solveo.co/top-12-ai-agents-for-content-creation-in-2025/
 * 
-* AI Scraping protection:  https://wordpress.org/plugins/ai-scraping-protector/   // don´t know howm hutch this helps // and I did get a extra page, containing: visit Kosovo = not wanted!
+* AI Scraping protection:  https://wordpress.org/plugins/ai-scraping-protector/   // don´t know howm mhutch this helps // and I did get a extra page, containing: visit Kosovo = not wanted!
 
 * TDM Reservation Protocol (TDMRep)  -  https://www.w3.org/community/reports/tdmrep/CG-FINAL-tdmrep-20240202/
 *  AI Scraping Protector:  https://wordpress.org/plugins/ai-scraping-protector/
