@@ -83,6 +83,9 @@ URL: https://research.aimultiple.com/llmops-tools/
 Databricks:
 URL: https://www.databricks.com/product/artificial-intelligence
 
+Ollama /various AI:
+URL: https://ollama.com
+
 .....................................................................
 ---------------------------------------------------------------------
 ## Blogs, News and intresting sites:
