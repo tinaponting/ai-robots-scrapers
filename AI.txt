@@ -373,6 +373,19 @@ It adheres to robots.txt directives and is designed to gather useful data while 
 User-agent: MSBot 
 Disallow: /
 
+Microsoft Copilot  /video
+Llama 3.1 70B 	
+Llama 3.1 405B
+Llama 3.3 70B 	
+Llama 4 Scout 17B 1	
+Llama 4 Maverick 17B 128E 
+LlamaIndex 
+Llama-3.2-3B-Chat
+
+Gemini 1.5 Flash	
+Gemini 2.0 Flash	
+Gemini 2.5 Pro Preview
+
 ....................................
 # New Agent:
 Flower AI
