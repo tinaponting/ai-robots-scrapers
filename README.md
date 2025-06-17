@@ -20,13 +20,10 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 
 * IF YOU WANT to change something: use: Notepad ++ -to your taste:)
 
-READ MORE: 
-* https://solveo.co/top-12-ai-agents-for-content-creation-in-2025/
-* 
 * AI Scraping protection:  https://wordpress.org/plugins/ai-scraping-protector/   // don´t know howm mhutch this helps // and I did get a extra page, containing: visit Kosovo = not wanted!
 
 * TDM Reservation Protocol (TDMRep)  -  https://www.w3.org/community/reports/tdmrep/CG-FINAL-tdmrep-20240202/
-*  AI Scraping Protector:  https://wordpress.org/plugins/ai-scraping-protector/
+* AI Scraping Protector:  https://wordpress.org/plugins/ai-scraping-protector/
 
 *  IF YOU WANT A strong firewall, aho also protect againtst scrapers: perishablepress.com8g-firewall with Latest Aibots - not wanted:) 
 *  
