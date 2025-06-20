@@ -28,6 +28,7 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 *  IF YOU WANT A strong firewall, aho also protect againtst scrapers: perishablepress.com8g-firewall with Latest Aibots - not wanted:) 
 *  
 # Updates: **
+* Working on Updates, 250620 but need to have sunshine to:)
 
 * ADDED: DRUPAL - jOOMLA PLUGINS - add your ai, plugins:)
 * Updates: 250607 - Hugo Ai block)
