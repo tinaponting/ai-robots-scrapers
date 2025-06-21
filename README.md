@@ -29,7 +29,8 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 *  
 # Updates: **
 * Working on Updates, 250620 but need to have sunshine to:)
-
+* 
+* Updated 250621: ROBOTS-HTACCESS.txt / New AI- ADDESd, Myhtacces new Aiadded.
 * ADDED: DRUPAL - jOOMLA PLUGINS - add your ai, plugins:)
 * Updates: 250607 - Hugo Ai block)
 * Updates: 250607 - AI Alternative to use - If stubborn:)
