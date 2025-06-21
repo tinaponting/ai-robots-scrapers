@@ -30,6 +30,7 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 # Updates: **
 * Working on Updates, 250620 but need to have sunshine to:)
 
+* Updated 250621,Forkof-kirby-block-ai-master - With Latest AI -no thanks:)
 * Updates: 250621 Fork of blockaai crawlers.zip - PLUGIN - new AI - No thanks:)*
 * Updates: 250621 Perrishpresss 8G My hraccess added AI, if your want a protection for Scaping aswell, on: https://github.com/tinaponting/protect-wordpress
 * Updated 250621: ROBOTS-HTACCESS.txt / New AI- ADDESd, Myhtacces new Aiadded.
