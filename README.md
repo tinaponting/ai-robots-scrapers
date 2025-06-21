@@ -30,6 +30,7 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 # Updates: **
 * Working on Updates, 250620 but need to have sunshine to:)
 
+* Updates: 250621 - Block ai - extra protection - Light:)
 * Updates: 250621 - Hugo Ai block)
 * Updates: 250621 Caddy files . No AI :)**
 * Updates: 250621 HAproxy files - No Ai:)*
@@ -53,18 +54,18 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 * Updated 250605: Perrish list Updated:) With the Latest.
 * Updated:250605 Perrish list Updated:) With the Latest.
 * Added: 250527, Hugo-config.yaml-nothanksAI.zip - based on ultimate list.
-* Updated 250527,Forkof-kirby-block-ai-master - Latest AI -no thanks:)
-* Updated 250527, block ai.php updated with the Latest AI.
-* Updated 250526, FORKOFAI PLUGINSANTIBOT.zip #OBS: antibot may cosume power!#
+* Updated 250527 Forkof-kirby-block-ai-master - Latest AI -no thanks:)
+* Updated 250527  block ai.php updated with the Latest AI.
+* Updated 250526  FORKOFAI PLUGINSANTIBOT.zip #OBS: antibot may cosume power!#
 * Updated 250526 Robots.txt/htaccess with new AI to block!
-* Updated: 250519, BLOCK by js.zip
-* Updated: 250519, Diffrent files likecaddy, ngix,htcces.
-* Updated: 250512, robots-htaccess updaded, block ai.php, Fork of blockaai crawlers, FORKOFAI PLUGINSANTIBOT
-* Updated: 250502, robots-htaccess updaded, block ai.php, Fork of blockaai crawlers, FORKOFAI PLUGINSANTIBOT
+* Updated: 250519  BLOCK by js.zip
+* Updated: 250519 Diffrent files likecaddy, ngix,htcces.
+* Updated: 250512  robots-htaccess updaded, block ai.php, Fork of blockaai crawlers, FORKOFAI PLUGINSANTIBOT
+* Updated: 250502 robots-htaccess updaded, block ai.php, Fork of blockaai crawlers, FORKOFAI PLUGINSANTIBOT
 * Updated: 250429, robots-htaccess updaded, block ai.php, Fork of blockaai crawlers, FORKOFAI PLUGINSANTIBOT - one delated.
-* Updated: 250429, robots-htaccess updaded, one delated.
-* Updated 250425, FORKOFAI PLUGINSANTIBOT.zip OBS: antibot may cosume power!
-* Updated 250425, Fork of blockaai crawlers.zip updated -Latest.
+* Updated: 250429  robots-htaccess updaded, one delated.
+* Updated 250425  FORKOFAI PLUGINSANTIBOT.zip OBS: antibot may cosume power!
+* Updated 250425  Fork of blockaai crawlers.zip updated -Latest.
 * Updated 250425, block ai.php updated with the Latest.
 * Updated 250420, Fork of blockaai crawlers.zip updated -Latest.
 * Updated 250420 Robots.txt/htaccess with newest AI to block!
