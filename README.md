@@ -28,8 +28,8 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 *  IF YOU WANT A strong firewall, aho also protect againtst scrapers: perishablepress.com8g-firewall with Latest Aibots - not wanted:) 
 *  
 # Updates: **
-* Working on Updates, 250620 but need to have sunshine to:)
-
+*
+* Updates: 250621 - AI Alternativetouse Updated:)
 * Updates: 250621 - Block ai - extra protection - Light:)
 * Updates: 250621 - Hugo Ai block)
 * Updates: 250621 Caddy files . No AI :)**
