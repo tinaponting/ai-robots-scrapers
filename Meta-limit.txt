@@ -3,7 +3,7 @@
 
 * No AI:
 <meta name="robots" content="noai">
-<meta name="robots" content="noai, nosummary">
+<meta name="robots" content="noai, nosummary,">
 
 * To not allow AI to use any images on the page:
 
@@ -23,6 +23,9 @@
 * You might also request that OpenAI, for example, does not use the page for machine learning with:
 
 <meta name="gptbot" content="noml">
+
+#ALL togheter:
+<meta name="robots" content="noai, nosummary,noimageai">
 
 ## Footer:
 # Add text in footer, may help?:
@@ -78,28 +81,31 @@ On Apache httpd (I know, I’m old school) it’s something like this:
 Header Set X-Robots-Tag "noai"
 
 #  X tags:
-X-Robots-Tag: noai
+Header set X-Robots-Tag: noai"
 
-X-Robots-Tag: noimageai
+Header set X-Robots-Tag: noimageai"
 
-X-Robots-Tag: noml
+Header set X-Robots-Tag: noml"
 
-X-Robots-Tag: nofollow, noml
+Header set X-Robots-Tag: nofollow, noml"
 
-X-Robots-Tag: tdm-reservation: 1
+Header set X-Robots-Tag: tdm-reservation: 1"
 
 OR:
-X-Robots-Tag: DisallowAITraining
+Header set X-Robots-Tag: DisallowAITraining"
 
 Header set X-Robots-Tag "noai, noimageai"
 
 Header set tdm-reservation "1"
-X-Robots-Tag:noAIPreferenceVocabularyTerm
+Header set X-Robots-Tag:noAIPreferenceVocabularyTerm"
 
 Header set X-Robots-Tag "noai, noimageai, nosummary"
 
-......................................
+#ALl togheter:
 
+Header set X-Robots-Tag "noai, noimageai, nosummary, noml"
+
+......................................
 #  TDM HEAD:
 
 <!DOCTYPE html>
@@ -122,7 +128,14 @@ to an AI scraper on the client side.
 
 So the new header on here is:
 
-X-Robots-Tag: noai, noimageai, SPC
+Header set X-Robots-Tag: noai, noimageai, SPC"
+
+
+## VCL powered Fastly service:
+
+set resp.http.x-robots-tag = "noai";
+
+resp.headers.set("x-robots-tag", "noai");
 
 :::::::::::::::::::::::::::::::::::::
 
@@ -156,5 +169,4 @@ RewriteRule ^(.*)$ - [E=RATE_LIMIT:1]
 Header set Retry-After "5" env=RATE_LIMIT</ifModule>
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-Updated: 250424
+Updated: 2500622
