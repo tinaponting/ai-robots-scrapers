@@ -25,7 +25,9 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 * TDM Reservation Protocol (TDMRep)  -  https://www.w3.org/community/reports/tdmrep/CG-FINAL-tdmrep-20240202/
 * AI Scraping Protector:  https://wordpress.org/plugins/ai-scraping-protector/
 
-*  IF YOU WANT A strong firewall, aho also protect againtst scrapers: perishablepress.com8g-firewall with Latest Aibots - not wanted:) 
+*  IF YOU WANT A strong firewall, aho also protect againtst scrapers: perishablepress.com8g-firewall with Latest Aibots - not wanted:)
+
+*  GREAT BLOG:  Pivot to AI: https://pivot-to-ai.com/   News about  AI.
 *  
 # Updates: **
 *
