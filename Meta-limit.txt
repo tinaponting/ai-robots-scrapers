@@ -138,7 +138,6 @@ set resp.http.x-robots-tag = "noai";
 resp.headers.set("x-robots-tag", "noai");
 
 :::::::::::::::::::::::::::::::::::::
-
 #IN .htaccess put: Then they only can get one visit/per IP! Works great, have it on my blogs:
 
 <IfModule mod_rewrite.c>
@@ -149,7 +148,7 @@ MaxConnPerIP 2
 MaxClients < number-of-connections> 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-
+#### RATE LIMIT: 
 ## I use this on .htaccess 1 - my own:)
 
 <IfModule mod_rewrite.c>
@@ -168,5 +167,9 @@ RewriteCond %{REQUEST_URI} !^/Post/
 RewriteRule ^(.*)$ - [E=RATE_LIMIT:1]
 Header set Retry-After "5" env=RATE_LIMIT</ifModule>
 
+# NGINX-Rate Limit:
+
+limit_req_zone $binary_remote_addr zone=req_limit_per_ip:10m rate=10r/s;
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 2500622
+Updated: 2500625
