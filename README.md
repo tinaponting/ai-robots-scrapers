@@ -31,7 +31,7 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 *  
 # Updates: **
 *
-* Updated 2500701 ROBOTS-HTACCESS.txt / New AI + Fork of blockaai crawlers.zip   added 1 new, delated one/not in use)
+* Updated 2500701 ROBOTS-HTACCESS.txt / New AI + Fork of blockaai crawlers.zip,Myhtacces, Kirby,   added 1 new, delated one/not in use)
 * Updates: 250621 - AI Alternativetouse Updated:)
 * Updates: 250621 - Block ai - extra protection - Light:)
 * Updates: 250621 - Hugo Ai block)
