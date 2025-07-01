@@ -31,15 +31,16 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 *  
 # Updates: **
 *
+* Updated 2500701 ROBOTS-HTACCESS.txt / New AI + Fork of blockaai crawlers.zip   added 1 new, delated one/not in use)
 * Updates: 250621 - AI Alternativetouse Updated:)
 * Updates: 250621 - Block ai - extra protection - Light:)
 * Updates: 250621 - Hugo Ai block)
 * Updates: 250621 Caddy files . No AI :)**
 * Updates: 250621 HAproxy files - No Ai:)*
-* Updated 250621,Forkof-kirby-block-ai-master - With Latest AI -no thanks:)
+* Updated 250621, Forkof-kirby-block-ai-master - With Latest AI -no thanks:)
 * Updates: 250621 Fork of blockaai crawlers.zip - PLUGIN - new AI - No thanks:)*
 * Updates: 250621 Perrishpresss 8G My hraccess added AI, if your want a protection for Scaping aswell, on: https://github.com/tinaponting/protect-wordpress
-* Updated 250621: ROBOTS-HTACCESS.txt / New AI- ADDESd, Myhtacces new Aiadded.
+* Updated 250621 ROBOTS-HTACCESS.txt / New AI- ADDED, Myhtacces new Aiadded.
 * ADDED: DRUPAL - jOOMLA PLUGINS - add your ai, plugins:)
 * Updates: 250607 - Hugo Ai block)
 * Updates: 250607 - AI Alternative to use - If stubborn:)
@@ -55,7 +56,7 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 * Updated 250606: ROBOTS-HTACCESS.txt / New AI _ not wanted
 * Updated 250605: Perrish list Updated:) With the Latest.
 * Updated:250605 Perrish list Updated:) With the Latest.
-* Added: 250527, Hugo-config.yaml-nothanksAI.zip - based on ultimate list.
+* Added: 250527  Hugo-config.yaml-nothanksAI.zip - based on ultimate list.
 * Updated 250527 Forkof-kirby-block-ai-master - Latest AI -no thanks:)
 * Updated 250527  block ai.php updated with the Latest AI.
 * Updated 250526  FORKOFAI PLUGINSANTIBOT.zip #OBS: antibot may cosume power!#
@@ -68,10 +69,10 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 * Updated: 250429  robots-htaccess updaded, one delated.
 * Updated 250425  FORKOFAI PLUGINSANTIBOT.zip OBS: antibot may cosume power!
 * Updated 250425  Fork of blockaai crawlers.zip updated -Latest.
-* Updated 250425, block ai.php updated with the Latest.
-* Updated 250420, Fork of blockaai crawlers.zip updated -Latest.
+* Updated 250425  block ai.php updated with the Latest.
+* Updated 250420  Fork of blockaai crawlers.zip updated -Latest.
 * Updated 250420 Robots.txt/htaccess with newest AI to block!
-* Updated 250418, Fork of blockaai crawlers.zip updated -Latest.
+* Updated 250418  Fork of blockaai crawlers.zip updated -Latest.
 * Updated 250418 Robots.txt/htaccess with Latest AI Bots.
 * Updated 250418, Latest: Perrish Press List
 * Updated 250417, NotWantteduseragents.txt - gone through, checked with datadome list.
