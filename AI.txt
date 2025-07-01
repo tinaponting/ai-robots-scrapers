@@ -126,18 +126,19 @@ https://www.theverge.com/ai-artificial-intelligence
 Mistral News:
 https://mistral.ai/news
 
+AI agents /
+https://www.analyticsvidhya.com/blog/2025/03/ai-agents-terms/
+
 .....................................................................
 ---------------------------------------------------------------------
 ##Others:
 
 Blogs: 
-Neil CLarke: https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website
 Krassno: https://www.krasamo.com/block-gptbot
 Botpress: https://botpress.com/blog/what-is-an-ai-agent
 
-
 Control of AI Spiders:
-   https://darkvisitors.com
+https://darkvisitors.com
 
 
 Spawning AI txt:  https://spawning.ai/ai-txt 
@@ -205,23 +206,13 @@ URL 2: https://botpenguin.com/glossary/strong-ai
 .....................................................................
 ---------------------------------------------------------------------
 ## Agents:
-
 ### Only affects SWEDEN:
+
 URL: https://chat-gpt-sverige.se/
 URL: https://huggingface.co/docs/transformers/model_doc/gpt-sw3
 URL: https://huggingface.co/AI-Sweden-Models/gpt-sw3-20b-instruct
 
 User-agent: GPT-Sw3
-Disallow: /
-
-.....................................................................
----------------------------------------------------------------------
-## Affects mostly europe // Add if needed! Not AI?
-
-#https://openwebsearch.eu
-User-agent: Owler
-Disallow: /
-User-agent: OWLer/0.1
 Disallow: /
 
 .....................................................................
@@ -260,17 +251,12 @@ QwQ
 Yi Chat
 Alpaca
 
-.....................................................................
----------------------------------------------------------------------
-#### SEARCH ENGINE  AI:  ##
-
-DuckDuckGo Search:
-DuckDuckGo Search used by DuckAssist (AI tool), which reportedly cites its sources.
-URL: https://duckduckgo.com
-URL: https://duckduckgo.com/duckduckgo-help-pages/results/duckassistbot/
-
-User-agent: DuckAssistBot
-Disallow: /
+#LLM (alibaba open source)*
+Useragent: qwen /
+qwen3
+Qwen3-VL
+Qwen Chat
+URL: https://qwen3.org/
 
 .....................................................................
 ---------------------------------------------------------------------
@@ -390,15 +376,16 @@ Gemini 2.0 Flash
 Gemini 2.5 Pro Preview
 
 ....................................
-# New Agent:
+# FLOWER AI:
+
 Flower AI
 Collective-1. 
 URL: https://flower.ai/
+
 .....................................................................
 ---------------------------------------------------------------------
 # AI Scraper:
-
-DOWNLOADER:
+* DOWNLOADER:
 URL: https://www.microsystools.com/products/website-download/all-versions.php
 
 RewriteCond%{HTTP_USER_AGENT}^A1 Website download [NC,OR]
@@ -479,6 +466,10 @@ URL 3:https://github.com/imgproxy/imgproxy
 
 Lensa AI - images
 
+* Steal your images:
+ImageGen
+ImageGen /
+
 .....................................................................
 ---------------------------------------------------------------------
 ## AI Framework:
@@ -531,6 +522,8 @@ User-agent: WebChatGPT
 User-agent: GPTBot /
 User-agent: gpt-crawler
 User-agent: GPT-1
+User-Agent: GPTbot/0.1
+User-Agent: GPTBot/1.0
 User-Agent: GPTBot/1.2
 User-agent: GPT-2
 User-agent: GPT-3 
@@ -547,14 +540,16 @@ User-agent: GPT 4 Omni
 User-agent: GPT 4 Omni Mini
 User-agent: GPT-4.1
 User-agent: GPT-4.1-mini
-User-agent: GPT-4.1-nano   
+User-agent: GPT-4.1-nano    
 	
-
 *
 Chat GPT Search  
 URL: https://openai.com/index/introducing-chatgpt-search/
-*
 
+ChatGPT-User/2.0
+ChatGPT search
+
+*
 #OPEN AI:
 https://platform.openai.com/docs/bots
 
@@ -587,47 +582,6 @@ https://scrapybara.com/blog/cua
 https://openai.com/index/new-tools-for-building-agents/
 https://openai.com/index/computer-using-agent/
 
-OpenAI IP Ranges to Block:
-
-# ipv4.txt:
-
-4.196.118.112/28
-4.197.22.112/28
-4.227.36.0/25
-13.83.167.128/28
-20.42.10.176/28
-20.97.189.96/28
-20.125.66.80/28
-20.161.75.208/28
-20.171.206.0/23
-20.215.188.192/28
-23.98.179.16/28
-23.98.186.176/28
-23.98.186.192/28
-40.84.221.208/28
-40.84.221.224/28
-51.8.102.0/24
-51.8.155.48/28
-51.8.155.64/28
-51.8.155.112/28
-52.156.77.144/28
-52.159.249.96/28
-52.190.190.16/28
-52.225.75.208/28
-52.230.152.0/24
-52.236.94.144/28
-57.154.175.0/28
-68.221.67.192/28
-135.234.64.0/24
-135.237.131.208/28
-172.178.140.144/28
-172.178.141.112/28
-172.178.141.128/28
-172.182.204.0/24
-172.183.222.128/28
-172.203.190.128/28
-172.213.12.112/28
-172.213.21.16/28
 
 .................................................
 #Another way:GTBBOT:
@@ -781,26 +735,21 @@ RewriteRule ^(.*)$ - [F,L]</IfModule>
 ** FacebookBot  * BLOCK:
 
 User-agent: FacebookBot
-Disallow: /
 User-agent: FacebookBot/1.0
-Disallow: /
 User-agent: facebookexternalhit
-Disallow: /
 User-agent: facebookexternalhit/1.1
-Disallow: /
 User-agent: meta-externalagent
-Disallow: /
 User-agent: meta-externalfetcher/1.1
 Disallow: /
 
 
 * Language training
 User-agent: Llama 3.2
+User-agent: Llama 4
 Disallow: /
 
 User-agent: Meta AI
 Disallow: /
-
 
 * Meta (Facebook) Llama
 https://ai.meta.com
@@ -868,30 +817,6 @@ RewriteCond%{HTTP_USER_AGENT}"Claude-Web/1.0"[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*ClaudeBot.*$
 RewriteCond%{REQUEST_URI}!robots\.txt  - [F,L]
 RewriteRule ^(.*)$ - [F]</IfModule>
-
-#OR:
-# Claudebot:
-Order Allow,Deny	
-Deny from 69.171.*.*
-Deny from 3.12.0.0/16
-Deny from 3.14.0.0/15
-Deny from 3.20.0.0/14
-Deny from 3.128.0.0/15
-Deny from 3.132.0.0/14
-Deny from 3.136.0.0/13
-Deny from 3.144.0.0/13
-Deny from 13.58.0.0/15
-Deny from 18.116.0.0/14
-Deny from 18.188.0.0/16
-Deny from 18.189.0.0/16
-Deny from 18.190.0.0/16
-Deny from 18.191.0.0/16
-Deny from 18.216.0.0/14
-Deny from 18.220.0.0/14
-Deny from 18.224.0.0/14
-Deny from 52.14.0.0/16
-Deny from 173.252.*.*
-Allow from all
 
 # ANOTHER WAY;
 <IfModule mod_rewrite.c>
@@ -989,6 +914,23 @@ User-agent: YarGPT
 
 .....................................................................
 ---------------------------------------------------------------------
+# Duck.ai
+anonymous AI chatbot
+DuckDuckGo Chat
+DuckAssistBot 
+DuckDuckGo-Enhanced
+
+#### SEARCH ENGINE  AI:  ##
+DuckDuckGo Search:
+DuckDuckGo Search used by DuckAssist (AI tool), which reportedly cites its sources.
+URL: https://duckduckgo.com
+URL: https://duckduckgo.com/duckduckgo-help-pages/results/duckassistbot/
+
+User-agent: DuckAssistBot
+Disallow: /
+
+.....................................................................
+---------------------------------------------------------------------
 #WORDPress AI:
 WPBot is an easy to use, Native, No coding required, AI ChatBot for 
 WordPress websites to provide automated Live Chat Support, 
@@ -1007,6 +949,7 @@ Disallow: /
 
 .....................................................................
 ---------------------------------------------------------------------
+# DialogFlow
 
 User-agent: DialogFlow
 Disallow: /
@@ -1165,7 +1108,6 @@ User-agent: Mistral
 User-agent: LeChat
 User-agent: Mistral Chat
 
-
 Open source modeller
 https://huggingface.co/mistralai/Mistral-7B-v0.1
 https://huggingface.co/mistralai/Mix...-Instruct-v0.1
@@ -1193,7 +1135,6 @@ Grok 3
 GroqChat
 Groq Cloud AI
 Grok AI chatbot
-
 
 .....................................................................
 ---------------------------------------------------------------------
@@ -1402,7 +1343,7 @@ Disallow: /
 
 .....................................................................
 ---------------------------------------------------------------------
-* https://finity.ai
+* https://finity.ai  NOT WORKING??
 User-agent: PaperLiBot/2
 Disallow: /
 User-agent: PaperLiBot/2.1
@@ -1467,6 +1408,103 @@ Monica
 *is a new entrant. This service offers an all-in-one AI assistant with a wide range of services. 
 Users can choose from various large language models.
 
+Not sorted AI:
+PaLM 
+Gemma
+Pi, your personal AI
+Poe
+Galactica, LLaMA
+Aya 23
+
+# aiHitBot   =   gathering business information from websites.
+
+QuillBot  
+URL: https://quillbot.com/
+
+URL: https://mondaygpt.com/
+
+AndiBot   https://andisearch.com/ or: https://www.andi.co/
+PhindBot  https://www.phind.com/
+
+Flux
+URL: https://flux1.ai 
+
+* AutoGLM  - Zhipu AI for deep research and autonomous task execution
+User-agent: AutoGLM
+
+PUH:.....
+
+OpenAI o3
+ChatGPT 4o-mini	
+ChatGPT 4o	
+ChatGPT 4.5 
+ChatGPT 4.1	
+ChatGPT o1	
+ChatGPT o3-mini	
+
+Azure AI Search
+ai-crawlers-training
+ChatGPT Operator
+gentoo-chat
+ChatOpenAI
+
+webscraping-ai-ruby
+webscraping-ai-php
+webscraping-ai-python
+Scrapegraph-ai
+Node.js
+Webscrape AI
+AI Web Scraper
+ScrapeGraphAI
+SmartScraperGraph
+
+WeChat
+
+ImageGPT
+GPT-4o Image
+Open Deep Research
+Open Perflexity 
+Kaggle agent
+AI Journalist Agent
+Browser MCP Agent
+FastGPT
+BraveGPT
+YourGPT  
+
+skrape.ai
+Anonymous AI
+AnythingLLM
+
+OpenAI GPTBot
+OpenAI Image Downloader
+
+WRTNBot/1.0 
+WRTNBot
+ZeroSearch
+
+GigaChat
+Cognitive AI engine
+LLM Scraper
+AI-Crawler
+DataForAI
+gen-ai
+PoeBot
+Apple-GenAI
+WebCrawler-AI
+CopilotBot
+	
+DeepSeek V3	
+DeepSeek R1	Y
+Qwen2.5 72B	
+Qwen 2.5‑VL
+Mistral AI:
+Mixtral 8x22B
+Magistral 
+Gemma 3
+
+AI Ghostwriter
+Ghostwriter 
+FIRE-1 Agent
 .....................................................................
 ---------------------------------------------------------------------
 ## AI SCRAPERS:
@@ -1569,52 +1607,76 @@ Copy.ai
 Jasper Chat  //jasper
 SpinBot
 
-ai-proxy
-Insomnia AI
+AI Chat  https://deepai.org/chat
+AI Chatbot https://www.semrush.com/free-tools/ai-text-generator/
 
 .....................................................................
 ---------------------------------------------------------------------
-Not sorted AI:
-PaLM 
-Gemma
-Pi, your personal AI
-Poe
-Galactica, LLaMA
-Aya 23
+##RAG:
 
-# aiHitBot   =   gathering business information from websites.
+Autonomous RAG
+Agentic RAG
+Claude-RAG
+ReAct AI Agent 
+ScrapeGraphAI
+RAG Agent
+RAG Search
+RAG_VertexAI
+RAG_search
+RAG ChatGPT
+RAG LLM
+RAG 
+RAG Azure AI
+GenAI RAG
+RAG Chatbot
+RAG pipeline
+Cohere RAG
+Agentic RAG LangGraph
+together AI
+Corrective RAG 
+Deepseek Local RAG Agent
+Gemini Agentic RAG
+Hybrid Search RAG 
+Llama 3.1 Local RAG
+Local Hybrid Search RAG
+Local RAG Agent
+RAG-as-a-Service
+RAG Agent Cohere
+Basic RAG Chain
+RAG Database Routing
+Vision RAG
+Redis AI RAG 
+GenAI RAG
+Basic RAG
 
-QuillBot  
-URL: https://quillbot.com/
-
-URL: https://mondaygpt.com/
-
-AndiBot   https://andisearch.com/ or: https://www.andi.co/
-PhindBot  https://www.phind.com/
-
-Flux
-URL: https://flux1.ai 
-
-* AutoGLM  - Zhipu AI for deep research and autonomous task execution
-User-agent: AutoGLM
+Langchain raptor
+RAPTOR LLM
+langchain-google-genai
+langchain-perplexity
+langchain-openai
 
 .....................................................................
 ---------------------------------------------------------------------
-https://imgproxy.net/  AI?
+# AI TRAINING:  Use both!
+
+User Agent: AITraining
+User-agent: AITraining /
+
+User-Agent: .*?-ai$ Disallow: /
+
+Content-Usage: ai=n
+Disallow: /
+
+user-agent: *
+model-training: disallow
+
+.....................................................................
+---------------------------------------------------------------------
+https://imgproxy.net/  AI? Prove me wrong, to not have it?
 
 User-agent: imgproxy /
 Txt: streamline image management and optimize website performance
 NOTE: Can come from amany domains
-
-https://roboflow.com/
-https://labelbox.com/
-https://www.cvat.ai/   
-
-
-# Datasets:  ? affecting sites.
-https://www.kaggle.com/
-https://www.kaggle.com/models
-
 .....................................................................
 ---------------------------------------------------------------------
 User-agent: Slack-ImgProxy
@@ -1624,19 +1686,46 @@ URL: https://api.slack.com/robots
 
 .....................................................................
 ---------------------------------------------------------------------
+
+https://roboflow.com/
+https://labelbox.com/
+https://www.cvat.ai/   
+.....................................................................
+---------------------------------------------------------------------
+# Datasets:  ? affecting sites.
+https://www.kaggle.com/
+https://www.kaggle.com/models
+
+.....................................................................
+---------------------------------------------------------------------
 URL: https://spider.cloud/
 User Agent: spider
+.....................................................................
+---------------------------------------------------------------------
+
+## LLM:S 
+ChatLLM 
+URL: https://chatllm.abacus.ai
+.....................................................................
+---------------------------------------------------------------------
+## TEXT STEALERS:
+:
+Grammarly
+URL: https://www.grammarly.com
+
+WebText /     
+URL: https://paperswithcode.com/dataset/webtext
+
 .....................................................................
 ---------------------------------------------------------------------
 AI PROXY:
 URL: https://www.braintrust.dev/docs/guides/proxy
 AI proxy
-
 https://docs.konghq.com/hub/kong-inc/ai-proxy/
 AI proxy
 
-.....................................................................
----------------------------------------------------------------------
+ai-proxy
+
 ## BLOCK AI (Scraping) Proxies:
 
 <IfModule mod_alias.c>
@@ -1682,4 +1771,4 @@ IPv4 Proxies|IPv6 Proxies|Mobile Proxies|Virgin proxies|Proxy Servers| sproxiesd
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ............................................................................
-# Updated: 240616
+# Updated: 240701
