@@ -162,8 +162,21 @@ exit();
 
 .....................................................................
 ---------------------------------------------------------------------
+#fail2ban
+# /etc/fail2ban/filter.d/nginx-badbots.conf
+[Definition]
 
-For Express.js (Node.js) applications, modify the response headers:
+badbots = ADD your rawfile here
+
+failregex = (?i)<HOST> -.*"(GET|POST|HEAD) (.*?)" \d+ \d+ "(.*?)" ".*(?:%(badbots)s).*"$
+
+ignoreregex =
+
+.....................................................................
+---------------------------------------------------------------------
+
+# For Express.js (Node.js) applications, modify the response headers:
+
 app.use((req, res, next) => {
 res.setHeader(“X-Robots-Tag”, “noai, noimageai”);
 next();
@@ -171,7 +184,7 @@ next();
 
 .....................................................................
 ---------------------------------------------------------------------
-### RATE LIMTIT: 
+### RATE LIMTIT: (Nginx) 
 22w2q2
 Enable Rate Limiting on Your Server For Apache (Using mod_evasive):
 Install mod_evasive (assuming it’s not installed):
@@ -216,6 +229,7 @@ Add a Hidden Honeypot Link by placing this hidden link in your HTML:
 <style>.honeypot { display: none; }</style>
 Humans won’t see it due to display: none;.
 Bots may still follow it, exposing themselves.
+
 Create a Trap Page (trap-page.html):
 Log visits to this page to identify scrapers (php example):
 
@@ -225,7 +239,7 @@ $file = ‘honeypot_log.txt’;
 file_put_contents($file, “$ip\n”, FILE_APPEND);
 ?>
 <html>
-<head><meta name=”robots” content=”noindex, nofollow”></head>
+<head><meta name=”robots” content=”noiai, nofollow”></head>
 <body>
 Nothing to see here.
 </body>
@@ -236,39 +250,28 @@ Prevents indexing so search engines ignore it.
 
 .....................................................................
 ---------------------------------------------------------------------
-* Add - IF needed: 
-RRewriteRule !^/?robots\.txt$ - [F,L]
+## OWASP’s crawlers-user-agents.data to the Cloudflare WAF custom rule expression:
 
--
-........................................
-## Added: GTB  - maybe s tops all gtb?
-GTB
-*
-#Get rid of all shady sites,  ending with. ai
-.ai
-
-##  KNOCKS OUT all ai: knowledge
-
-User-agent: knowledge /
-            Disallow: /  
-			 
-* KNOCKS OUT all ai Chat:
-
-User-agent: chatUser / 
-            Disallow: /			
-
-.....................................................................
----------------------------------------------------------------------			
-* KNOCKS OUT  AI agents /
-	
-# Open Web Search/ LLM - GenAI-targeted opt ou
-
-User-agent: GenAI
-Disallow: /
-
-* KNOCKS OUT ALL ai sites: 
-User-agent: .ai
-
+// path may be different on your server
+pathUserAgents = "/etc/apache2/conf.d/modsec_vendor_configs/OWASP3/rules/crawlers-user-agents.data";
+str = "";
+F = FileOpen(pathUserAgents, "read");
+while (!FileIsEOF(F)) parseLine(FileReadLine(F).trim());
+FileClose(F);
+echo(str);
+function parseLine(line) {
+	// ignore empty lines and comments
+	if (line == "" || line.left(1) == "##") return;
+	if (str != "") str &= " or ";
+	str &= '(lower(http.user_agent) contains "#line.lcase()#")';
+}
+/* Example output:
+(lower(http.user_agent) contains "claude-web")
+or (lower(http.user_agent) contains "claudebot")
+or (lower(http.user_agent) contains "dataforseobot")
+[...]
+*/
+			
 .....................................................................
 ---------------------------------------------------------------------
 # FROM Perrishpress/ ultamte list, Note: If you don’t care about search results,
@@ -288,7 +291,7 @@ User-agent: GoogleOther
 
 ## ULTIMATE LIST RAW:
 
-.ai|ai=n|Agent GPT|Agentic|Agentic-RAG|Agentic Deep Research|AI Journalist Agent|Anonymous AI|AnythingLLM|
+.ai|.*?-ai$|Agent GPT|Agentic|Agentic-RAG|Agentic Deep Research|AI Journalist Agent|Anonymous AI|AnythingLLM|
 AI agents /|AI Article Writer|AI Chat|AI Chatbot|AI copilot |AI Search Intent|AI Chat|AI Content Detector|AI Dungeon|
 AI Search|AI Search Engine|AI SEO Crawler|Ask AI|AI Writer|AI2 Bot|AI2Bot|AI21 Labs|AIBot|aiHitBot|AIMatrix|AISearchBot|AITraining|AI Training|ai-crawlers-training|
 AITraining /|ai-proxy|Alexa|AlexaTM|Alpha AI|AlphaAI|AI-Crawler|Apple-GenAI|anonymous AI chatbot|
@@ -317,11 +320,11 @@ JasperAI|
 Kaggle agent|Kafkai|Kangaroo|Kangaroo Bot|Keyword Density AI|Knowledge|knowledge /|KomoBot|
 Le Chat|LeftWingGPT|LangChain|Lensa|Lightpanda|LLaMA|Llama 3.2|Llama 4|LLMs|LLM Scraper|Langchain raptor|langchain-google-genai|langchain-perplexity|langchain-openai|
 magpie-crawler|Manus|MarketMuse|Meltwater|Meta AI|Meta Llama|MetaAI|MetaTagBot|Meta-AI|
-Meta-External|Meta-ExternalAgent|meta-externalagent|Meta-ExternalFetcher|meta-externalfetcher|meta-externalfetcher/1.1|Mistral|MistralAI-User/1.0|midjourney|Monica|MSBot|Mixtral 8x22B|Magistral| 
+Meta-External|Meta-ExternalAgent|meta-externalagent|Meta-ExternalFetcher|meta-externalfetcher|meta-externalfetcher/1.1|Mistral|MistralAI-User/1.0|midjourney|Monica|MSBot|Mixtral 8x22B|Magistral|model-training| 
 Narrative|NeevaBot|Neural Text|NeuralSEO|Nicecrawler|NinjaAIBot/1.0|Nova Act|NovaAct|
 OpenAI o3|OAI SearchBot|OAI-SearchBot|OAI-SearchBot/1.0|compatible; OAI-SearchBot/1.0|Omgili|omgili|Omgilibot|Open AI|OpenAI|OpenAI Crawler|OpenAI CUA|OpenAI o1|
 OpenAI o1-mini|OpenAI o3-mini|OpenAI Operator|OpenAIContentCrawler|OpenBot|OpenText AI|Operator|Outwrite|Open Deep Research|OpenAI GPTBot|OpenAI Image Downloader|
-Page Analyzer AI|PanguBot|Panscient|PaperLiBot|PaperLiBot/2.1|Paraphraser.io|peer39_crawler|peer39_crawler/1.0|Perplexity|PerplexityBot|PerplexityBot/1.0|PerplexityUserPerplexity-User||Perplexity-User/1.0|
+Page Analyzer AI|PanguBot|Panscient|PaperLiBot|Paraphraser.io|peer39_crawler|peer39_crawler/1.0|Perplexity|PerplexityBot|PerplexityBot/1.0|PerplexityUserPerplexity-User||Perplexity-User/1.0|
 Open Perflexity|Perplexit-User|Perplexity Deep Research|petalBot|PetalBot|Phind|PhindBot|PiplBot|ProWritingAid|proximic|Puppeteer|Poe|PoeSearchBot|PoeBot|
 RAG|Agentic RAG LangGraph|Agentic RAG|Autonomous RAG|Basic RAG Chain|Basic RAG|Claude-RAG|Cohere RAG|Corrective RAG|RAPTOR LLM|
 Deepseek Local RAG Agent|Gemini Agentic RAG|GenAI RAG|GenAI RAG|Hybrid Search RAG|Llama 3.1 Local RAG|Local Hybrid Search RAG|Local RAG Agent|RAG Agent Cohere|RAG Agent|RAG Azure AI|
@@ -341,7 +344,7 @@ Zero /|Zero GTP|ZeroCHAT|Zerochat|ZeroGPT|ZeroSearch|Zhipu|XXXGPT|Zimm
 compatible; OAI-SearchBot/1.0|  
 Complete User agent: 	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36; compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot
 * very hard to gete rid of!  - if you do not want it - Delate it!
-Can asocome from: myrepublic.com.sg
+Can as well come from: myrepublic.com.sg
 
 ***************************
 #I USE /.htaccess2:
@@ -353,213 +356,15 @@ RewriteRule "^.*$" - [F,L]</IfModule>
 
 .....................................................................
 ---------------------------------------------------------------------
-* Updated: 250412: 
-User Agent changed:
-User-agent: AITraining /
-	  
-*
-Meta:
-Llama 4
-	  
-*
-AI agents /
-URL: https://www.analyticsvidhya.com/blog/2025/03/ai-agents-terms/
-	 
-* 
-WebText /       #openAI
-URL: https://paperswithcode.com/dataset/webtext
-
-....................................
-User-agent: Slack-ImgProxy
-Disallow: /
-
-URL: https://api.slack.com/robots
-
-
-250414:
-Added: User-agent: PerplexityBot/1.0
-
-250416:
-* NEW:
-GPT-4.1
-GPT-4.1-mini
-GPT-4.1-nano 
-
-Llama 3.2
-Llama 4
-
-* Steal your images:
-ImageGen
-ImageGen /
-
-## Delated:  
-GPTbot/0.1
-GPTBot/1.0
-
-NEW ADDDED: 250502
-GPTBot/1.2
-ChatGPT-User/2.0
-ChatGPT search
-MistralAI-User/1.0	    Mistral — fetches citations for Le Chat.	
-
-.......................................
-................................................................................
-## Added: 250512:
-Grammarly
-URL: https://www.grammarly.com
-
-ChatLLM 
-URL: https://chatllm.abacus.ai
-
-Le Chat
-URL: https://mistral.ai
-
-#LLM (alibaba open source)*
-Useragent: qwen /
-qwen3
-Qwen3-VL
-Qwen Chat
-URL: https://qwen3.org/
-
-AI Chat  https://deepai.org/chat
-AI Chatbot https://www.semrush.com/free-tools/ai-text-generator/
-
-User-Agent: *
-Content-Usage: ai=n
-Disallow: /
-
-##250621:
-LÄGG IN:
-
-OpenAI o3
-ChatGPT 4o-mini	
-ChatGPT 4o	
-ChatGPT 4.5 
-ChatGPT 4.1	
-ChatGPT o1	
-ChatGPT o3-mini	
-
-Azure AI Search
-ai-crawlers-training
-ChatGPT Operator
-gentoo-chat
-ChatOpenAI
-
-webscraping-ai-ruby
-webscraping-ai-php
-webscraping-ai-python
-Scrapegraph-ai
-Node.js
-Webscrape AI
-AI Web Scraper
-ScrapeGraphAI
-SmartScraperGraph
-
-WeChat
-
-ImageGPT
-GPT-4o Image
-Open Deep Research
-Open Perflexity 
-Kaggle agent
-AI Journalist Agent
-Browser MCP Agent
-FastGPT
-BraveGPT
-YourGPT  
-
-skrape.ai
-Anonymous AI
-AnythingLLM
-
-OpenAI GPTBot
-OpenAI Image Downloader
-
-WRTNBot/1.0 
-WRTNBot
-ZeroSearch
-
-GigaChat
-Cognitive AI engine
-LLM Scraper
-AI-Crawler
-DataForAI
-gen-ai
-PoeBot
-Apple-GenAI
-WebCrawler-AI
-CopilotBot
-	
-DeepSeek V3	
-DeepSeek R1	Y
-Qwen2.5 72B	
-Qwen 2.5‑VL
-Mistral AI:
-Mixtral 8x22B
-Magistral 
-Gemma 3
-
-AI Ghostwriter
-Ghostwriter 
-FIRE-1 Agent
-
-Duck.ai
-anonymous AI chatbot
-DuckDuckGo Chat
-DuckAssistBot 
-DuckDuckGo-Enhanced
-
-Autonomous RAG
-Agentic RAG
-Claude-RAG
-ReAct AI Agent 
-ScrapeGraphAI
-RAG Agent
-RAG Search
-RAG_VertexAI
-RAG_search
-RAG ChatGPT
-RAG LLM
-RAG 
-RAG Azure AI
-GenAI RAG
-RAG Chatbot
-RAG pipeline
-Cohere RAG
-Agentic RAG LangGraph
-together AI
-Corrective RAG 
-Deepseek Local RAG Agent
-Gemini Agentic RAG
-Hybrid Search RAG 
-Llama 3.1 Local RAG
-Local Hybrid Search RAG
-Local RAG Agent
-RAG-as-a-Service
-RAG Agent Cohere
-Basic RAG Chain
-RAG Database Routing
-Vision RAG
-Redis AI RAG 
-GenAI RAG
-Basic RAG
-
-Langchain raptor
-RAPTOR LLM
-langchain-google-genai
-langchain-perplexity
-langchain-openai
-
-..........................................................................
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-..........................................................................
+.....................................................................
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ### A Complete Ai List ##)
 #Ai/BOTS - scrapers: 
 ## Ultimate Ai + scrapers not wanted List: Based on: perrishpress AI LIst:
 
 User-agent: * 
 User-agent: .ai
-User-agent: ai=n
+User-Agent: .*?-ai$ 
 User-agent: Agent GPT
 User-agent: Agentic
 User-agent: Agentic-RAG
@@ -882,6 +687,7 @@ User-agent: Mixtral 8x22B
 User-agent: midjourney
 User-agent: Monica
 User-agent: MSBot
+User-agent: model-training
 User-agent: Narrative
 User-agent: NeevaBot
 User-agent: Neural Text
@@ -917,7 +723,6 @@ User-agent: Page Analyzer AI
 User-agent: PanguBot
 User-agent: Panscient
 User-agent: PaperLiBot
-User-agent: PaperLiBot/2.1
 User-agent: Paraphraser.io
 User-agent: peer39_crawler
 User-agent: peer39_crawler/1.0
@@ -1088,4 +893,4 @@ Disallow: /
 
 :::::::::::::::::::::::::::::::::::::::::	  
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 250621
+### Updated: 250701
