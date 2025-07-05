@@ -30,7 +30,8 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 *  GREAT BLOG:  Pivot to AI: https://pivot-to-ai.com/   News about  AI.
 *  
 # Updates: **
-*
+
+* AI Shild updated and working good, makes it hard for AI to read your stuff:)
 * Updated 2500701 ROBOTS-HTACCESS.txt / New AI + Fork of blockaai crawlers.zip, Myhtacces, Kirby, haproxy, caddy   added 1 new, delated one/not in use)
 * Updates: 250621 - AI Alternativetouse Updated:)
 * Updates: 250621 - Block ai - extra protection - Light:)
