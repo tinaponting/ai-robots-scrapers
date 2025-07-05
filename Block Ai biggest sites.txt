@@ -2,6 +2,7 @@
 *Seems like a blunt and very untargeted rule. Here are the urls of some of the largest AI website:
 
 .................................................................................................
+
 OpenAI**.com**
 
 Anthropic**.com**
@@ -84,6 +85,23 @@ AI Searches:
 -intext:"ai art", -intext:lora, -intext:"stable diffusion"
 
 ::::::::::::::::::::::::::::::::::::::::::::
+# PAIN IN THE ASS!!:
+ahrefsbot|AhrefsBot|AhrefsSiteAudit|AhrefsBot/7.0|Barkrowler|
+SemrushBot|SemrushBot-BA|SemrushBot-SA|SemrushBot/7~bl|Semrush|SemrushBot|SemrushBot-SA|SemrushBot-OCOB|SemrushBot-SWA|
+SemrushBot-SISF|SemrushBot-SI|SemrushBot-SI|SemrushBot-SWA|SemrushBot-CT|SemrushBot-BM|SemrushBot-FT|
+Majestic|Rogerbot
+
+ahrefs.com
+ahrefs.net
+
+*bot.*.ahrefs.net
+*bot.*.ahrefs.com
+
+# SEMRUSH AI:
+SemrushBot|SemrushBot-BA|SemrushBot-SA|SemrushBot/7~bl|Semrush|SemrushBot|SemrushBot-SA|SemrushBot-OCOB|SemrushBot-SWA|
+SemrushBot-SISF|SemrushBot-SI|SemrushBot-SI|SemrushBot-SWA|SemrushBot-CT|SemrushBot-BM|SemrushBot-FT|
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 # Research & Knowledge Discovery AI To block:
 https://chat.openai.com
 https://perplexity.ai
@@ -125,4 +143,4 @@ https://mobilemonkey.com
 https://tars.com
 
 :::::::::::::::::::::::::::::::::::::::::::::::
-#* UPDATED: 250501
+#* UPDATED: 250705
