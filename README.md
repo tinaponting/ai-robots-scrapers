@@ -31,6 +31,7 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 *  
 # Updates: **
 
+* Updates: 2025/07/18 Perrishpresss List
 * AI Shild updated and working good, makes it hard for AI to read your stuff:)
 * Updated 2500701 ROBOTS-HTACCESS.txt / New AI + Fork of blockaai crawlers.zip, Myhtacces, Kirby, haproxy, caddy   added 1 new, delated one/not in use)
 * Updates: 250621 - AI Alternativetouse Updated:)
@@ -40,7 +41,7 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 * Updates: 250621 HAproxy files - No Ai:)*
 * Updated 250621, Forkof-kirby-block-ai-master - With Latest AI -no thanks:)
 * Updates: 250621 Fork of blockaai crawlers.zip - PLUGIN - new AI - No thanks:)*
-* Updates: 250621 Perrishpresss 8G My hraccess added AI, if your want a protection for Scaping aswell, on: https://github.com/tinaponting/protect-wordpress
+* Updates: 250621 Perrishpresss 8G My raccess added AI, if your want a protection for Scaping aswell, on: https://github.com/tinaponting/protect-wordpress
 * Updated 250621 ROBOTS-HTACCESS.txt / New AI- ADDED, Myhtacces new Aiadded.
 * ADDED: DRUPAL - jOOMLA PLUGINS - add your ai, plugins:)
 * Updates: 250607 - Hugo Ai block)
