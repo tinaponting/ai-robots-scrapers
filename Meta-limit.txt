@@ -130,12 +130,24 @@ So the new header on here is:
 
 Header set X-Robots-Tag: noai, noimageai, SPC"
 
+Header set X-Robots-Tag “noai, noimageai”
 
 ## VCL powered Fastly service:
 
 set resp.http.x-robots-tag = "noai";
 
 resp.headers.set("x-robots-tag", "noai");
+
+:::::::::::::::::::::::::::::::::::::
+## Nginx servers, add this to your configuration file:
+add_header X-Robots-Tag “noai, noimageai”;
+
+:::::::::::::::::::::::::::::::::::::
+## Express.js (Node.js) applications, modify the response headers:
+app.use((req, res, next) => {
+res.setHeader(“X-Robots-Tag”, “noai, noimageai”);
+next();
+});
 
 :::::::::::::::::::::::::::::::::::::
 #IN .htaccess put: Then they only can get one visit/per IP! Works great, have it on my blogs:
@@ -167,9 +179,82 @@ RewriteCond %{REQUEST_URI} !^/Post/
 RewriteRule ^(.*)$ - [E=RATE_LIMIT:1]
 Header set Retry-After "5" env=RATE_LIMIT</ifModule>
 
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 # NGINX-Rate Limit:
 
 limit_req_zone $binary_remote_addr zone=req_limit_per_ip:10m rate=10r/s;
 
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+### Enable Rate Limiting on Your Server For Apache (Using mod_evasive):
+Install mod_evasive (assuming it’s not installed):
+BASH | sudo apt-get install libapache2-mod-evasive
+Configure rate limits in /etc/apache2/mods-available/evasive.conf
+DOSHashTableSize 3097
+DOSPageCount 5
+DOSSiteCount 50
+
+DOSBlockingPeriod 600
+
+Configure rate limits in /etc/apache2/mods-available/evasive.conf
+BASH | sudo systemctl restart apache2
+Enable Rate Limiting on Your Ser
+
+
+### Enable Rate Limiting on Your Server For Nginx (Using limit_req_zone):
+Nginx configuration (nginx.conf):
+http {
+limit_req_zone $binary_remote_addr zone=one:10m rate=1r/s;
+}
+server {
+location / {
+limit_req zone=one burst=5;
+}
+}
+
+Restart Nginx
+BASH | sudo systemctl restart nginx
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+##Honeypot Traps: Use hidden links to detect and block AI scrapers.
+Honeypot traps work by placing hidden links or form fields on your website 
+that humans won’t see or click, but scrapers will. If a bot interacts with them, you can block its IP or take other actions.
+
+* 
+How to Set Up a Honeypot Trap:
+Add a Hidden Honeypot Link by placing this hidden link in your HTML:
+<a href=”/trap-page” class=”honeypot”>Hidden Link</a>
+<style>.honeypot { display: none; }</style>
+Humans won’t see it due to display: none;.
+Bots may still follow it, exposing themselves.
+Create a Trap Page (trap-page.html):
+Log visits to this page to identify scrapers (php example):
+<?php
+$ip = $_SERVER[‘REMOTE_ADDR’];
+$file = ‘honeypot_log.txt’;
+file_put_contents($file, “$ip\n”, FILE_APPEND);
+?>
+<html>
+<head><meta name=”robots” content=”noindex, nofollow”></head>
+<body>
+Nothing to see here.
+</body>
+</html>
+Logs suspicious IPs in honeypot_log.txt.
+Prevents indexing so search engines ignore it.
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 2500625
+## Update Your Terms of Service.
+Clearly state that AI scraping is prohibited in your terms of service document for the website.
+NOTE: This is an example only, make sure you use legal advice to determine your own verbiage needed.
+
+Example Verbiage:
+“Unauthorized scraping, data extraction, or use of automated tools (including AI models, bots, and crawlers) 
+to access, store, or repurpose content from this site is strictly prohibited. Any violation may result in legal action, IP bans, and further enforcement measures.”
+
+### 
+Use CSS Hidden Elements – Place text in display: none; sections that only appear in raw HTML
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Updated: 250727
