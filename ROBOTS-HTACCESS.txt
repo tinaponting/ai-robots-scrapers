@@ -1317,7 +1317,7 @@ Llama 4
 LLM
 LLM Scraper
 Local RAG Agent
-ser-agent:  Llama 3.1 Local RAG
+Llama 3.1 Local RAG
 Local Hybrid Search RAG
 magpie-crawler
 Manus
@@ -1487,7 +1487,7 @@ SmartScraperGraph
 Text Blaze
 TextCortex
 The Knowledge AI
-User-Agent: thehive.a1
+thehive.a1
 Thinkbot
 TikTokSpider
 Timpibot
