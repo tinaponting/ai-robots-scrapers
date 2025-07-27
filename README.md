@@ -33,7 +33,8 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 # Working: ** a new AI LIST, 250727
 
 
-* Updates: 2025/07/18 Perrishpresss List
+* Updates: 20250727 Meta Limit txt.
+* Updates: 20250718 Perrishpresss List
 * AI Shild updated and working good, makes it hard for AI to read your stuff:)
 * Updated 2500701 ROBOTS-HTACCESS.txt / New AI + Fork of blockaai crawlers.zip, Myhtacces, Kirby, haproxy, caddy   added 1 new, delated one/not in use)
 * Updates: 250621 - AI Alternativetouse Updated:)
