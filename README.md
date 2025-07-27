@@ -30,6 +30,8 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 *  GREAT BLOG:  Pivot to AI: https://pivot-to-ai.com/   News about  AI.
 *  
 # Updates: **
+# Working: ** a new AI LIST, 250727
+
 
 * Updates: 2025/07/18 Perrishpresss List
 * AI Shild updated and working good, makes it hard for AI to read your stuff:)
