@@ -32,6 +32,7 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 # Updates: **
 # Working: ** a new AI LIST, 250727
 
+* Updates: 250728 Fork of blockaai crawlers.zip - PLUGIN.
 * Updates: 250727 Caddy files. 
 * Updates: 250727 My htaccess, Choose, my or Perrishpress. htaccess.
 * Updates: 20250727 Meta Limit txt.
