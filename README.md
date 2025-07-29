@@ -32,6 +32,7 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 # Updates: **
 # Working: ** a new AI LIST, 250727
 
+* Updates: 250728 - Hugo Ai block.
 * Updated 250728, Forkof-kirby-block-ai-master.
 * Updates: 250628 HAproxy files. 
 * Updates: 250728 Fork of blockaai crawlers.zip - PLUGIN.
