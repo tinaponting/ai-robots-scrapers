@@ -482,7 +482,6 @@ RASA
 Hugging Face Transformers Agents
 Langflow
 Lyzer
-LlamaIndex
 Haystack
 Langroid
 Flowise
@@ -491,11 +490,28 @@ Neural Chat
 
 * LLM frameworks
 LangChain
-LlamaIndex
+Llama Index - Data framework for LLM applications
 Agentic RAG
-RAG
-txt: custom AI applications that can navigate, scrape, and manipulate web content with ease
- 
+RAG txt: custom AI applications that can navigate, scrape, and manipulate web content with ease
+Dify - Open-source framework for LLM applications
+RAG pipeline
+Haystack - End-to-end NLP framework
+Embedchain - Framework for ChatGPT-like bots
+SuperAGI - Open-source autonomous AI agent framework
+AGiXT - Scalable framework for AI agents
+XAgent - Autonomous LLM-based agent framework
+OpenAgents - Open platform for language agents
+AI Legion - Swarm framework for autonomous agents
+Agent Protocol - Unified interface for AI agents
+Agents.js - JavaScript framework for building AI agents
+CAMEL - Communicative Agents for "Mind" Exploration
+6,380 stars · 762 forks · 76 contributors · 305 issues · Python · Apache-2.0
+Autonomous-GPT - Framework for autonomous GPT-4 agents
+Parallel execution- ix - Autonomous agent framework
+Smolagents - Minimalist framework for building powerful agents
+Docker deployment- Pydantic AI - Production-grade agent framework built on Pydantic
+Model Context Protocol (MCP)
+
 .....................................................................
 ---------------------------------------------------------------------
 # Open AI:
@@ -1767,8 +1783,191 @@ IPv4 Proxies|IPv6 Proxies|Mobile Proxies|Virgin proxies|Proxy Servers| sproxiesd
 ## BLOCK AI: -  BBQ:   https://plugin-planet.com/bbq-pro/   Great plugin with lots custom rules:)
 
 # Content scraper block plugin, lots to choose from.
+.....................................................................
+---------------------------------------------------------------------
+## New Ai: 250728
+
+MiniMax-M1
+MiniMax-Text-01
+URL: https://www.minimax.io/
+
+Cog
+URL: https://github.com/replicate/cog
+
+ContentShake AI
+
+mightygpt
+LLM Browser 
+URL: https://www.futuretools.io/tools/mightygpt
+
+X:
+Grok 3.5
+
+GPT-4.5
+Quark chatbot
+Quark   (alibaba)
+
+https://matrix.tencent.com
+Zhuque AI image detector
+OR: AI Detection Assistant
+
+Alice	Yandex (chatbot)
+YandexGPT
+
+AliGenie	Alibaba Group	
+CarynAI
+AgentQL  (dataextration)
+
+smartbot
+https://vnptai.io/vi
+
+AI _ image stealers:
+coreweave.com
+URL: 	https://coreweave.com/
+
+Chai 
+https://langbase.com
+https://chai.new
+
+# DANGER:
+DarkBard 
+WolfGPT
+PoisonGPT
+ChaosGPT
+FreedomGPT 
+
+GPT-J 
+URL: https://huggingface.co/docs/transformers/v4.48.2/model_doc/gptj
+
+GrammarlyGO
+Jenni AI
+Janitor AI
+WordAi
+Venus Chub AI
+Crushon AI
+Charstar AI
+
+Claude-sonnet-4
+OpenAI/o4-mini
+Claude-3 Opus 
+
+Datenbank Crawler  AI?
+
+Baidu AI:  
+User-agent: Baiduspider
+		
+ThinkBot AI ?
+User Agent: ThinkBot
+URL: https://play.google.com/store/apps/details?id=pmsopmsoftware.opengpt&pli=1
+URL 2: http://thinkbot.net  = Thinkbot/0.5.8
+UURL #: https://www.thinkbots.ai/
+ALSO COMES FROM: apnic.net
 
 
+User-agent: Devin  // Devin AI
+URL: https://app.devin.ai
+
+User-agent: Echobot Bot
+User-agent: EchoboxBot
+URL: https://echobox.com
+
+
+bedrockbot
+URL:https://pypi.org/project/bedrock-bot/
+https://www.piwheels.org/project/bedrock-bot/
+
+GenAI chatbot 
+
+python Ai
+Go
+Elixir (machine-learning)
+Scala   (machine-learning)
+...........................
+
+SummalyBot
+URL: ttps://www.grammarly.com/ai/ai-writing-tools/summarizing-tool
+
+Thinkbot
+URL: https://www.thinkbot.agency
+? Is it a threat to bloggers/business profile?
+...........................
+
+User-agent: GoogleAgent-Mariner
+URL: https://darkvisitors.com/agents/googleagent-mariner
+URL 2: https://deepmind.google/models/project-mariner/
+...........................
+...........................
+
+Qwen3 
+Kimi-2
+
+Shadow AI 
+where hidden agents access private data.
+
+Devin
+URL: https://darkvisitors.com/agents/devin
+
+Gemini-Deep-Research
+URL: https://darkvisitors.com/agents/gemini-deep-research
+
+...........................
+RAG:
+
+Deepseek Local RAG Agent
+Agentic RAG LangGraph
+Agentic RAG
+Agentic
+Agentic-RAG
+Basic RAG Chain
+Deepseek Local RAG Agent
+Agentic RAG LangGraph
+Agentic RAG
+Agentic
+Agentic-RAG
+Basic RAG Chain
+............................
+SummalyBot
+URL: ttps://www.grammarly.com/ai/ai-writing-tools/summarizing-tool
+
+Thinkbot
+URL: https://www.thinkbot.agency
+............................
+??
+User-agent: GoogleAgent-Mariner
+URL: https://darkvisitors.com/agents/googleagent-mariner
+URL 2: https://deepmind.google/models/project-mariner/
+............................
+Qwen3 
+Kimi-2
+
+Shadow AI 
+where hidden agents access private data.
+
+Devin
+URL: https://darkvisitors.com/agents/devin
+
+Gemini-Deep-Research
+URL: https://darkvisitors.com/agents/gemini-deep-research
+
+............................
+Alice	Yandex	
+YandexGPT
+AliGenie	
+CarynAI		
+Celia	Huawei	
+Chai	Chai	
+ChatBot	Text	
+ChatGPT	OpenAI	
+GigaChat		
+Kuki	
+SILVIA	Cognitive Code	?
+Q	Amazon	
+Zo is Microsoft’s replacement to Tay
+Luna: as far as I can tell, this is still vaporware. But presents a story that it aggregates a number of AI-as-a-cloud services to answer any question very well. We’ll see.
+Lumo chatbot
+Llama2.ai
+
+............................................................................
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ............................................................................
-# Updated: 250701
+# Updated: 250803
