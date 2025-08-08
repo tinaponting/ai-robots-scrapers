@@ -32,7 +32,8 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 # Updates: **
 # Working: ** a new AI LIST, 250801 = DONE!
 
- Updated 250803   AI text updated:)
+* Updates: 250808 Fork of blockaai crawlers.zip - PLUGIN with Allowed bots.
+*  Updated 250803   AI text updated:)
 * Updated 250801  block ai.php updated and more secure:)
 * Updates: 250801 Fork of blockaai crawlers.zip - PLUGIN with Allowed bots.
 * Updates: 250728 - Hugo Ai block.
