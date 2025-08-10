@@ -1591,20 +1591,30 @@ AwarioRssBot
 AwarioSmartBot
 AwarioBot 1.0
 
+## Retired:
+Claude 3.7 
 
-###* LÄGGIN:  ##BLOCK:
+#  DELATE:  not active
+AndersPinkBot
+URL: https://anderspink.com
+Redict to: https://www.go1.com/
+
+
+##BLOCK:
 Applebot/0.1
 
+NEW:
 GPT-5 Mini
 GPT-5 Nano
 GPT-5 Chat
+URL: https://www.bleepingcomputer.com/news/artificial-intelligence/microsoft-accidentally-confirms-gpt-5-gpt-5-mini-gpt-5-nano-ahead-of-launch/
+
 
 OAI-SearchBot/1.0   
 Qwen 3 
 Kimi K2
 
 ## Claude:
-ClaudeBot/1.0
 Claude Opus 4.1
 
 python Ai
@@ -1612,6 +1622,16 @@ Go
 
 Kimi K2
 Kimi-2
+
+TO Perrish sent: 
+
+GLM-4.5
+URL: https://z.ai/blog/glm-4.5
+Chat: https://chat.z.ai/
+
+Clearview AI
+
+
 :::::::::::::::::::::::::::::::::::::::::::	  
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 2500810
+### Updated: 250810
