@@ -32,7 +32,8 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 # Updates: **
 # Working: ** a new AI LIST, 250810 = WORKING IN PROGRESS!
 
-* Updates: 2500810 HAproxy files AI. 
+* Updated 250810  block ai.php AI block)
+* Updates: 250810 HAproxy files AI. 
 * Updates: 250810 My htaccess, Choose, my or Perrishpress! 
 * Updates: 250810 Fork of blockaai crawlers.zip - PLUGIN New AI - Delated AI/Not in Use.
 * Updates: 250808 Fork of blockaai crawlers.zip - PLUGIN with Allowed bots.
