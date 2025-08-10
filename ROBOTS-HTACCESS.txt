@@ -266,6 +266,7 @@ function parseLine(line) {
 	str &= '(lower(http.user_agent) contains "#line.lcase()#")';
 }
 /* Example output:
+
 (lower(http.user_agent) contains "claude-web")
 or (lower(http.user_agent) contains "claudebot")
 or (lower(http.user_agent) contains "dataforseobot")
@@ -283,6 +284,17 @@ User-agent: Google Bard AI
 User-agent: Google-Extended
 User-agent: GoogleOther
 
+
+.....................................................................
+---------------------------------------------------------------------
+## Obstruction via redirect:
+Robb Knight came up with a clever way to make AI bots download a 10GB file instead of stealing your content.
+
+# Block AI bots
+if ($http_user_agent ~* "({{ site.robots.nginx }})") {
+  return 307 https://ash-speed.hetzner.com/10GB.bin
+}
+
 ...........................................................................:)
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::)
 ## htaccess List:
@@ -298,9 +310,9 @@ AI Detection|AI Dungeon|AI Journalist|AI Journalist Agent|AI Search|AI Search En
 AI Training|AI Web|AI Writer|AI2|AI2 BotAI2Bot|AI21 Labs|AIBot|aiHitBot|AIMatrix|AISearchBot|AITraining|AITraining /|AI-Crawler|
 ai-crawlers-training|AI Web Scraper|ai-proxy|Alexa|AlexaTM|Alice Yandex|AliGenie|Alpha AI|AlphaAI|Amazon|Amazon Athena|Amazon Bedrock|
 Amazon Comprehend|Amazon Lex|Amazon SageMaker|Amazon Silk|Amazon Textract|amazonBot|amazon-kendra|AWS bedrock|AWS Trainium|
-Bedrock Claude|bedrock-chat|bedrock-chatbot|bedrock-claude-chatbot|Amelia|AndersPinkBot|AndiBot|Anonymous AI|anonymous AI chatbot|
-Anthropic|anthropic-ai|AnyPicker|AnythingLLM|Anyword|Apple|Applebot-Extended|Apple-GenAI|Aria AI|Aria Browse|Aria browse Aria AI|
-Aria browser AI|Articoolo|Ask AI|AutoGLM|AutoGPT|Automated Writer|AutoML|Autonomous RAG|AwarioRssBot|AwarioSmartBot|Azure|Azure AI Search|
+Bedrock Claude|bedrock-chat|bedrock-chatbot|bedrock-claude-chatbot|Amelia|AndiBot|Anonymous AI|anonymous AI chatbot|
+Anthropic|anthropic-ai|AnyPicker|AnythingLLM|Anyword|Apple|Applebot-Extended|Apple-GenAI|Applebot/0.1|Aria AI|Aria Browse|Aria browse Aria AI|
+Aria browser AI|Articoolo|Ask AI|AutoGLM|AutoGPT|Automated Writer|AutoML|Autonomous RAG|Azure|Azure AI Search|
 
 BabyAGI|Basic RAG|Basic RAG Chain|BardBot|Brave Leo|Brave Leo AI|
 BraveGPT|Brightbot|Brightbot 1.0|ByteDance|byteDance|ByteDance crawler|Bytespider|Browser MCP Agent|Bedrock|
@@ -308,7 +320,8 @@ BraveGPT|Brightbot|Brightbot 1.0|ByteDance|byteDance|ByteDance crawler|Bytespide
 CarynAI|CatBoost|CCBot|ccbot|CCBot/2.0|CC-Crawler|CC-Crawler/2.0|Chai|Charstar AI|Chatbot|chatbot|ChatGLM|ChatGPT|ChatGPT 4o|ChatGPT 4o-mini|
 ChatGPT 4.1|ChatGPT 4.5|ChatGPT o1|ChatGPT o3-mini|ChatGPT Operator|ChatGPT search|ChatGPT-User|ChatGPT-User/1.0|ChatGPT-User/2.0|
 ChatLLM|ChatOpenAI|ChatUser|chatUser /|Chinchilla|Claude|Claude 3.5|Claude 3.5 Haiku|Claude 3.5 Sonnet|Claude 3.7 Sonnet|Claude 4|
-Claude Opus|Claude Opus 4|Claude Sonnet 4|ClaudeBot|ClaudeBot/1.0|Claude-RAG|Claude-SearchBot|Claude-User|Claude-Web|claude-web/1.0|ClearScope|
+Claude Opus|Claude Opus 4|Claude Sonnet 4|Claude Opus 4.1|
+ClaudeBot|ClaudeBot/1.0|Claude-RAG|Claude-SearchBot|Claude-User|Claude-Web|claude-web/1.0|ClearScope|
 Cognitive AI|Cognitive AI engine|Cohere|cohere-ai|cohere-ai/1.0|cohere-training-data-crawler|Common Crawl|CommonCrawl|Content Harmony|
 Content King|Content Optimizer|Content Samurai|Content Scraper GPT|ContentAtScale|ContentBot|Contentedge|ContentShake|Conversion AI|
 Copilot|CopilotBot|CopyAI|Copymatic|Copyscape|CoreWeave|Corrective RAG|Cohere RAG|Cotoyogi|CRAB|CrawlGPT|CrawlQ AI|CrawlspaceCrew AI|CrewAI|Crushon AI|
@@ -321,10 +334,11 @@ Echobox|Elixir|Extended GPT Scraper|
 FacebookBot|FacebookBot/1.0|FacebookExternalHit|facebookexternalhit/1.1|Factset|Factset_spyderbot|
 Falcon|FastGPT|Firecrawl|FirecrawlAgent|FIRE-1|FIRE-1 Agent|Flux|Flyriver|flyriverbot/1.1|Frase AI|FraudGPT|FriendlyCrawler|
 
-AI Ghostwriter|Gato|Gemini|Gemini Agentic RAG|Gemma|Gemma 3|Gen AI|GenAI|GenAI Chat|Genspark|
+AI Ghostwriter|Gato|Gemini|Gemini Agentic RAG|Gemma|Gemma 3|Gen AI|GenAI|GenAI Chat|Genspark|Go|
 gentoo-chat|GenAI RAG|gen-ai|Ghostwriter|GigaChat|GLM|Google Gemini|Google-CloudVertexBot|Google-Extended|Goose|GPT|GPT 4 Omni|GPT 4 Omni Mini|
 GPT Scraper|GPTBot|GPTBot /|GPTBot/1.2|GPTZero|GPT-1|GPT-2|GPT-3|GPT-3.5|GPT-3.5 turbo|GPT-4|GPT-4o|GPT-4o Image|GPT-4o mini|GPT-4V|GPT-4,5|
-gpt-4-turbo|GPT-4.1|GPT-4.1-mini|GPT-4.1-nano|GPT-5|gpt-crawler|GPT/|Grammarly|Grendizer|Grok|Grok AI chatbotGrokAI|GT Bot|GTBot|GTP|GTPBOT|
+gpt-4-turbo|GPT-4.1|GPT-4.1-mini|GPT-4.1-nano|GPT-5|GPT-5 Mini|GPT-5 Nano|GPT-5 Chat|
+gpt-crawler|GPT/|Grammarly|Grendizer|Grok|Grok AI chatbotGrokAI|GT Bot|GTBot|GTP|GTPBOT|
 
 Hemingway Editor|Hugging Face|Hypotenuse AI|Hybrid Search RAG|
 
@@ -333,7 +347,7 @@ img2dataset|imgproxy|ImageGPT|Inferkit|INK Editor|INKforall|IntelliSeek|IntelliS
 
 JasperAI|Janitor AI|Jenni AI|
 
-Kaggle agent|Kafkai|Kaggle|Kangaroo|Kangaroo Bot|Keyword Density AI|Knowledge|knowledge /|KomoBot|
+Kaggle agent|Kafkai|Kaggle|Kangaroo|Kangaroo Bot|Keyword Density AI|Knowledge|knowledge /|KomoBot|Kimi K2|Kimi-2|
 
 LangChain|langchain-google-genai|Langchain raptor|langchain-perplexity|langchain-openai|Le Chat|
 LeftWingGPT|Lensa|Lightpanda|LLaMA|Llama 3.2|Llama 4|LLM|LLM Scraper|Local RAG Agent|Llama 3.1 Local RAG|Local Hybrid Search RAG|
@@ -349,7 +363,7 @@ OpenAIContentCrawler|Open Deep Research|Open Perflexity|Openbot|OpenText AI|Oper
 
 Page Analyzer AI|PanguBot|Panscient|PaperLiBot|Paraphraser.io|peer39_crawler|peer39_crawler/1.0|Perplexity|PerplexityBot|
 PerplexityBot/1.0|PerplexityUser|Perplexity-User|Perplexity-User/1.0|Perplexit-User|Perplexity Deep Research|
-Open Perflexity|petalBot|PetalBot|Phind|PhindBot|PiplBot|ProWritingAid|proximic|Puppeteer|Poe|PoeBot|PoeSearchBot|
+Open Perflexity|petalBot|PetalBot|Phind|PhindBot|PiplBot|ProWritingAid|proximic|Puppeteer|Poe|PoeBot|PoeSearchBot|python Ai|
 
 Qualified|QualifiedBot|QuillBotQuark|Qwen|qwen /|Qwen Chat|Qwen2|Qwen3|Qwen2.5 72B	|Qwen 2.5‑VL|
 
@@ -386,14 +400,20 @@ Can as well come from: myrepublic.com.sg
 
 <IfModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
-RewriteRule !^/?robots\.txt$ - [F,L]
 RewriteRule "^.*$" - [F,L]</IfModule>
 
 * OR:
 <IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent) [NC]
-RewriteRule !^/?robots\.txt$ - [F,L]
+RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent)[NC]
+RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent)[NC]
+RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent)[NC]
+RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent)[NC]
+RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent)[NC]
+RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent)[NC]
 RewriteRule (.*) - [F,L]
+
+IF NEEDED:
+RewriteRule !^/?robots\.txt$ - [F,L]
 
 .....................................................................
 ---------------------------------------------------------------------
@@ -474,7 +494,6 @@ User-agent: bedrock-chat
 User-agent: bedrock-chatbot
 User-agent: bedrock-claude-chatbot
 User-agent: Amelia
-User-agent: AndersPinkBot
 User-agent: AndiBot
 User-agent: Anonymous AI
 User-agent: anonymous AI chatbot
@@ -486,6 +505,7 @@ User-agent: Anyword
 User-agent: Apple
 User-agent: Applebot-Extended
 User-agent: Apple-GenAI
+User-agent: Applebot/0.1
 User-agent: Aria AI
 User-agent: Aria Browse
 User-agent: Aria browse Aria AI
@@ -556,6 +576,7 @@ User-agent: Claude Opus 4
 User-agent: Claude Sonnet 4
 User-agent: ClaudeBot
 User-agent: ClaudeBot/1.0
+User-agent: Claude Opus 4.1
 User-agent: Claude-RAG
 User-agent: Claude-SearchBot
 User-agent: Claude-User
@@ -663,6 +684,7 @@ User-agent: Google Gemini
 User-agent: Google-CloudVertexBot
 User-agent: Google-Extended
 User-agent: Goose
+User-agent: Go
 User-agent: GPT
 User-agent: GPT 4 Omni
 User-agent: GPT 4 Omni Mini
@@ -687,6 +709,9 @@ User-agent: GPT-4.1
 User-agent: GPT-4.1-mini
 User-agent: GPT-4.1-nano
 User-agent: GPT-5
+User-agent: GPT-5 Mini
+User-agent: GPT-5 Nano
+User-agent: GPT-5 Chat
 User-agent: gpt-crawler
 User-agent: GPT/
 User-agent: Grammarly
@@ -730,6 +755,8 @@ User-agent: Keyword Density AI
 User-agent: Knowledge
 User-agent: knowledge /
 User-agent: KomoBot
+User-agent: Kimi K2
+User-agent: Kimi-2
 User-agent: LangChain
 User-agent: langchain-google-genai
 User-agent: Langchain raptor
@@ -833,6 +860,7 @@ User-agent: Puppeteer
 User-agent: Poe
 User-agent: PoeBot
 User-agent: PoeSearchBot
+User-agent: python Ai
 User-agent: Qualified
 User-agent: QualifiedBot
 User-agent: QuillBot
@@ -1046,7 +1074,6 @@ bedrock-chat
 bedrock-chatbot
 bedrock-claude-chatbot
 Amelia
-AndersPinkBot
 AndiBot
 Anonymous AI
 anonymous AI chatbot
@@ -1058,6 +1085,7 @@ Anyword
 Apple
 Applebot-Extended
 Apple-GenAI
+Applebot/0.1
 Aria AI
 Aria Browse
 Aria browse Aria AI
@@ -1235,6 +1263,7 @@ Google Gemini
 Google-CloudVertexBot
 Google-Extended
 Goose
+Go
 GPT
 GPT 4 Omni
 GPT 4 Omni Mini
@@ -1259,6 +1288,9 @@ GPT-4.1
 GPT-4.1-mini
 GPT-4.1-nano
 GPT-5
+GPT-5 Mini
+GPT-5 Nano
+GPT-5 Chat
 gpt-crawler
 GPT/
 Grammarly
@@ -1301,6 +1333,8 @@ Kangaroo Bot
 Keyword Density AI
 Knowledge
 knowledge /
+Kimi K2
+Kimi-2
 KomoBot
 LangChain
 langchain-google-genai
@@ -1405,6 +1439,7 @@ Puppeteer
 Poe
 PoeBot
 PoeSearchBot
+python Ai
 Qualified
 QualifiedBot
 QuillBot
@@ -1548,7 +1583,35 @@ Zhipu
 XXXGPT
 Zimm
 
-
 :::::::::::::::::::::::::::::::::::::::::::	  
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 250727
+##PAIN in in the Ass:  #
+### DELATED: 
+AwarioRssBot
+AwarioSmartBot
+AwarioBot 1.0
+
+
+###* LÄGGIN:  ##BLOCK:
+Applebot/0.1
+
+GPT-5 Mini
+GPT-5 Nano
+GPT-5 Chat
+
+OAI-SearchBot/1.0   
+Qwen 3 
+Kimi K2
+
+## Claude:
+ClaudeBot/1.0
+Claude Opus 4.1
+
+python Ai
+Go
+
+Kimi K2
+Kimi-2
+:::::::::::::::::::::::::::::::::::::::::::	  
+:::::::::::::::::::::::::::::::::::::::::::
+### Updated: 2500810
