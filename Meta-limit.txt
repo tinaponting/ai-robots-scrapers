@@ -105,6 +105,9 @@ Header set X-Robots-Tag "noai, noimageai, nosummary"
 
 Header set X-Robots-Tag "noai, noimageai, nosummary, noml"
 
+OR: 
+Header set X-Robots-Tag: "noai, noimageai, GPC"
+
 ......................................
 #  TDM HEAD:
 
@@ -257,4 +260,4 @@ to access, store, or repurpose content from this site is strictly prohibited. An
 Use CSS Hidden Elements – Place text in display: none; sections that only appear in raw HTML
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 250727
+Updated: 250822
