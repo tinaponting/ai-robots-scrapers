@@ -1,0 +1,300 @@
+.HTACCESSS - NO WAY- AI!
+# Block “Scrapers, image stealers AI” bots:
+******************************************************************** :)
+#### Put in .htaccess2,1 or htaccess:   ###
+
+## ALT 1: 
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
+RewriteRule "^.*$" - [F,L]</IfModule>
+### ALT 2:
+
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT}"(bot|bot|bot|bot|bot|bot|bot)"[NC]
+RewriteRule "^.*$" - [F,L]
+</IfModule>
+
+### ALT 3:
+
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT}^.*(BotToBlock1|BotToBlock2|BotToBlock3).*$ [NC] 
+RewriteRule .* – [F,L]</IfModule>
+
+## ALT 4:
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent) [NC]
+RewriteRule (.*) - [F,L]
+</IfModule>
+
+## Or if you want: 403:
+
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT} (bot|bot|bot) [NC]
+RewriteRule .* - [R=403,L]</IfModule>
+
+## IF you want a: 503:
+
+RewriteCond %{HTTP_USER_AGENT} ^.*(bot|bot|bot).*$ [NC]
+RewriteCond %{REQUEST_URI} !^/robots\.txt$
+RewriteRule .* - [R=503,L]
+
+..........................................
+###### ALT 4: way to block ai bots. Block via Request URL:
+
+<IfModule mod_alias.c>
+RedirectMatch 403 /bot/
+</IfModule>
+
+OR: 
+<IfModule mod_alias.c>
+RedirectMatch 403 /(bot|bot)/
+</IfModule>
+..........................................
+### ### ALT 5:
+# Apache:
+
+<IfModule authz_core_module>
+<If "%{HTTP_USER_AGENT} == 'BOT'">
+Require all denied
+</If>
+</IfModule>
+
+### ### ALT 6:
+BrowserMatchNoCase (YOUR BOOTS HERE) bad_bot
+Order Deny,Allow
+Deny from env=bad_bot
+
+..........................................
+
+### STRONG ALTERATIVE: Alternative with no welcome at all:
+
+<IfModule authz_core_module>
+<If "%{HTTP_USER_AGENT} == 'GPTBot'">
+<If "%{HTTP_USER_AGENT} == 'robots.txt'">
+Require all denied
+</If></IfModule>
+
+............................
+### ### ALT 6:, Block via Query String:
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{QUERY_STRING} (bot|bot) [NC]
+RewriteRule (.*) - [F,L]
+</IfModule>
+
+............................
+####### ALT 7: 
+with IP adress  For notorius ai bots, who gets under the radar.
+
+RewriteCond %{HTTP_USER_AGENT} ^$ [OR]
+RewriteCond %{HTTP_USER_AGENT} (bot|crawl|robot)
+RewriteCond %{HTTP_USER_AGENT}!(bot|bot|bot|bot|bot|bot) [NC]
+RewriteRule ^/?.*$ "http\:\/\/127\.0\.0\.1" [R,L]
+
+* Change above IP to the Notirous one not wanted ip
+...................................
+### Block AI bots on a NGINX*  web server ##
+
+NGINX web servers do not use .htaccess files, but instead nginx.conf (or Vhost files). 
+
+To block bad bots on your NGINX server, add a list of user agents to your nginx.conf, like this:
+If more bots, add:  Bot|Bot|BotBot|Bot|Bot and so on.
+
+
+if ($http_user_agent ~* (Bot|Bot|Bot) ) { 
+return 403; 
+}
+
+#OR:
+if ($http_user_agent ~* "( )") {
+    return 403;
+}
+
+# case insensitive ###
+
+if ($http_user_agent ~* (BadBotOne|BadBotTwo)) {
+	return 403
+}
+-------------
+# No scrapers
+if ($scraper = 1) {
+return 418 "?";
+}
+
+If you prefer to redirect them somewhere, just use a return 301 instead:
+
+ # case insensitive matching
+    if ($http_user_agent ~* (netcrawl|npbot|malicious)) {
+        return 301 https://yoursite.com;
+    }
+
+# WITH referers. 
+
+if ($http_referer ~ "domain\.com|badsite\.net|example\.com")  {
+  return 403;
+
+}
+.....................................................................
+---------------------------------------------------------------------
+#From sixcolurs /  https://sixcolors.com/post/2024/06/excluding-your-website-from-apples-ai-crawler/
+
+add the following snippet of code to your functions.php file by going to the administration interface and choosing Appearance > 
+Theme File Editor and selecting functions.php from the sidebar. (You can also do this via a plugin like Code Snippets, which I use.
+
+add_filter('robots_txt', 'my_robots_commands', 99, 2); // filter to add robots
+function my_robots_commands($output, $public) {
+  $output .= "User-agent: Applebot-Extended\nDisallow: /";
+  return $output;
+}
+
+.....................................................................
+---------------------------------------------------------------------
+# Using PHP:
+If you website is built with PHP like WordPress you can add the code below to your header.php to block all link crawlers:
+
+$badAgents = array('bot','bot', 'bot', 'bot', 'bot', 'bot', 'bot');
+foreach ($badAgents as $blacklist) {
+if (preg_match("/$blacklist/", strtolower($_SERVER['HTTP_USER_AGENT'])) ) {
+exit();
+} }
+
+.....................................................................
+---------------------------------------------------------------------
+#fail2ban
+# /etc/fail2ban/filter.d/nginx-badbots.conf
+[Definition]
+
+badbots = ADD your rawfile here
+
+failregex = (?i)<HOST> -.*"(GET|POST|HEAD) (.*?)" \d+ \d+ "(.*?)" ".*(?:%(badbots)s).*"$
+
+ignoreregex =
+
+.....................................................................
+---------------------------------------------------------------------
+
+# For Express.js (Node.js) applications, modify the response headers:
+
+app.use((req, res, next) => {
+res.setHeader(“X-Robots-Tag”, “noai, noimageai”);
+next();
+});
+
+.....................................................................
+---------------------------------------------------------------------
+### RATE LIMTIT: (Nginx) 
+22w2q2
+Enable Rate Limiting on Your Server For Apache (Using mod_evasive):
+Install mod_evasive (assuming it’s not installed):
+BASH | sudo apt-get install libapache2-mod-evasive
+Configure rate limits in /etc/apache2/mods-available/evasive.conf
+DOSHashTableSize 3097
+DOSPageCount 5
+DOSSiteCount 50
+DOSBlockingPeriod 600
+
+# Configure rate limits in /etc/apache2/mods-available/evasive.conf
+BASH | sudo systemctl restart apache2
+Enable Rate Limiting on Your Server For Nginx (Using limit_req_zone):
+Nginx configuration (nginx.conf):
+http {
+limit_req_zone $binary_remote_addr zone=one:10m rate=1r/s;
+}
+server {
+location / {
+limit_req zone=one burst=5;
+}
+}
+
+Restart Nginx
+BASH | sudo systemctl restart nginx
+
+.....................................................................
+---------------------------------------------------------------------
+# MediaWiki specifically, here’s an nginx pattern that takes effect if it’s a complex URL:
+
+set $BOT "";
+if ($uri ~* (/w/index.php)) {
+    set $BOT "C"; }
+# then detect the bot tell and give a 503
+
+.....................................................................
+---------------------------------------------------------------------
+# How to Set Up a Honeypot Trap:
+
+Add a Hidden Honeypot Link by placing this hidden link in your HTML:
+<a href=”/trap-page” class=”honeypot”>Hidden Link</a>
+<style>.honeypot { display: none; }</style>
+Humans won’t see it due to display: none;.
+Bots may still follow it, exposing themselves.
+
+Create a Trap Page (trap-page.html):
+Log visits to this page to identify scrapers (php example):
+
+<?php
+$ip = $_SERVER[‘REMOTE_ADDR’];
+$file = ‘honeypot_log.txt’;
+file_put_contents($file, “$ip\n”, FILE_APPEND);
+?>
+<html>
+<head><meta name=”robots” content=”noiai, nofollow”></head>
+<body>
+Nothing to see here.
+</body>
+</html>
+
+Logs suspicious IPs in honeypot_log.txt.
+Prevents indexing so search engines ignore it.
+
+.....................................................................
+---------------------------------------------------------------------
+## OWASP’s crawlers-user-agents.data to the Cloudflare WAF custom rule expression:
+
+// path may be different on your server
+pathUserAgents = "/etc/apache2/conf.d/modsec_vendor_configs/OWASP3/rules/crawlers-user-agents.data";
+str = "";
+F = FileOpen(pathUserAgents, "read");
+while (!FileIsEOF(F)) parseLine(FileReadLine(F).trim());
+FileClose(F);
+echo(str);
+function parseLine(line) {
+	// ignore empty lines and comments
+	if (line == "" || line.left(1) == "##") return;
+	if (str != "") str &= " or ";
+	str &= '(lower(http.user_agent) contains "#line.lcase()#")';
+}
+/* Example output:
+
+(lower(http.user_agent) contains "claude-web")
+or (lower(http.user_agent) contains "claudebot")
+or (lower(http.user_agent) contains "dataforseobot")
+[...]
+*/
+			
+.....................................................................
+---------------------------------------------------------------------
+# FROM Perrishpress/ ultamte list, Note: If you don’t care about search results,
+ you can restore the removed blocks for Google, Bing, and Apple:
+User-agent: Applebot
+User-agent: BingAI
+User-agent: Bingbot-chat
+User-agent: Google Bard AI
+User-agent: Google-Extended
+User-agent: GoogleOther
+
+
+.....................................................................
+---------------------------------------------------------------------
+## Obstruction via redirect:
+Robb Knight came up with a clever way to make AI bots download a 10GB file instead of stealing your content.
+
+# Block AI bots
+if ($http_user_agent ~* "({{ site.robots.nginx }})") {
+  return 307 https://ash-speed.hetzner.com/10GB.bin
+}
+
+...........................................................................:)
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::)
+Updated: 250828
