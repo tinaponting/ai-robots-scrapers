@@ -1,279 +1,6 @@
 .HTACCESSS - NO WAY- AI!
 # Block “Scrapers, image stealers AI” bots:
 ******************************************************************** :)
-#### Put in .htaccess2,1 or htaccess:   ###
-
-## ALT 1: 
-
-<IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
-RewriteRule "^.*$" - [F,L]</IfModule>
-### ALT 2:
-
-<IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT}"(bot|bot|bot|bot|bot|bot|bot)"[NC]
-RewriteRule "^.*$" - [F,L]
-</IfModule>
-
-### ALT 3:
-
-<IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT}^.*(BotToBlock1|BotToBlock2|BotToBlock3).*$ [NC] 
-RewriteRule .* – [F,L]</IfModule>
-
-## ALT 4:
-<IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent) [NC]
-RewriteRule (.*) - [F,L]
-</IfModule>
-
-## Or if you want: 403:
-
-<IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT} (bot|bot|bot) [NC]
-RewriteRule .* - [R=403,L]</IfModule>
-
-## IF you want a: 503:
-
-RewriteCond %{HTTP_USER_AGENT} ^.*(bot|bot|bot).*$ [NC]
-RewriteCond %{REQUEST_URI} !^/robots\.txt$
-RewriteRule .* - [R=503,L]
-
-..........................................
-###### ALT 4: way to block ai bots. Block via Request URL:
-
-<IfModule mod_alias.c>
-RedirectMatch 403 /bot/
-</IfModule>
-
-OR: 
-<IfModule mod_alias.c>
-RedirectMatch 403 /(bot|bot)/
-</IfModule>
-..........................................
-### ### ALT 5:
-# Apache:
-
-<IfModule authz_core_module>
-<If "%{HTTP_USER_AGENT} == 'BOT'">
-Require all denied
-</If>
-</IfModule>
-
-### ### ALT 6:
-BrowserMatchNoCase (YOUR BOOTS HERE) bad_bot
-Order Deny,Allow
-Deny from env=bad_bot
-
-..........................................
-
-### STRONG ALTERATIVE: Alternative with no welcome at all:
-
-<IfModule authz_core_module>
-<If "%{HTTP_USER_AGENT} == 'GPTBot'">
-<If "%{HTTP_USER_AGENT} == 'robots.txt'">
-Require all denied
-</If></IfModule>
-
-............................
-### ### ALT 6:, Block via Query String:
-
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond %{QUERY_STRING} (bot|bot) [NC]
-RewriteRule (.*) - [F,L]
-</IfModule>
-
-............................
-####### ALT 7: 
-with IP adress  For notorius ai bots, who gets under the radar.
-
-RewriteCond %{HTTP_USER_AGENT} ^$ [OR]
-RewriteCond %{HTTP_USER_AGENT} (bot|crawl|robot)
-RewriteCond %{HTTP_USER_AGENT}!(bot|bot|bot|bot|bot|bot) [NC]
-RewriteRule ^/?.*$ "http\:\/\/127\.0\.0\.1" [R,L]
-
-* Change above IP to the Notirous one not wanted ip
-...................................
-### Block AI bots on a NGINX*  web server ##
-
-NGINX web servers do not use .htaccess files, but instead nginx.conf (or Vhost files). 
-
-To block bad bots on your NGINX server, add a list of user agents to your nginx.conf, like this:
-If more bots, add:  Bot|Bot|BotBot|Bot|Bot and so on.
-
-
-if ($http_user_agent ~* (Bot|Bot|Bot) ) { 
-return 403; 
-}
-
-#OR:
-if ($http_user_agent ~* "( )") {
-    return 403;
-}
-
-# case insensitive ###
-
-if ($http_user_agent ~* (BadBotOne|BadBotTwo)) {
-	return 403
-}
--------------
-# No scrapers
-if ($scraper = 1) {
-return 418 "?";
-}
-
-If you prefer to redirect them somewhere, just use a return 301 instead:
-
- # case insensitive matching
-    if ($http_user_agent ~* (netcrawl|npbot|malicious)) {
-        return 301 https://yoursite.com;
-    }
-
-# WITH referers. 
-
-if ($http_referer ~ "domain\.com|badsite\.net|example\.com")  {
-  return 403;
-
-}
-.....................................................................
----------------------------------------------------------------------
-#From sixcolurs /  https://sixcolors.com/post/2024/06/excluding-your-website-from-apples-ai-crawler/
-
-add the following snippet of code to your functions.php file by going to the administration interface and choosing Appearance > 
-Theme File Editor and selecting functions.php from the sidebar. (You can also do this via a plugin like Code Snippets, which I use.
-
-add_filter('robots_txt', 'my_robots_commands', 99, 2); // filter to add robots
-function my_robots_commands($output, $public) {
-  $output .= "User-agent: Applebot-Extended\nDisallow: /";
-  return $output;
-}
-
-.....................................................................
----------------------------------------------------------------------
-# Using PHP:
-If you website is built with PHP like WordPress you can add the code below to your header.php to block all link crawlers:
-
-$badAgents = array('bot','bot', 'bot', 'bot', 'bot', 'bot', 'bot');
-foreach ($badAgents as $blacklist) {
-if (preg_match("/$blacklist/", strtolower($_SERVER['HTTP_USER_AGENT'])) ) {
-exit();
-} }
-
-.....................................................................
----------------------------------------------------------------------
-#fail2ban
-# /etc/fail2ban/filter.d/nginx-badbots.conf
-[Definition]
-
-badbots = ADD your rawfile here
-
-failregex = (?i)<HOST> -.*"(GET|POST|HEAD) (.*?)" \d+ \d+ "(.*?)" ".*(?:%(badbots)s).*"$
-
-ignoreregex =
-
-.....................................................................
----------------------------------------------------------------------
-
-# For Express.js (Node.js) applications, modify the response headers:
-
-app.use((req, res, next) => {
-res.setHeader(“X-Robots-Tag”, “noai, noimageai”);
-next();
-});
-
-.....................................................................
----------------------------------------------------------------------
-### RATE LIMTIT: (Nginx) 
-22w2q2
-Enable Rate Limiting on Your Server For Apache (Using mod_evasive):
-Install mod_evasive (assuming it’s not installed):
-BASH | sudo apt-get install libapache2-mod-evasive
-Configure rate limits in /etc/apache2/mods-available/evasive.conf
-DOSHashTableSize 3097
-DOSPageCount 5
-DOSSiteCount 50
-DOSBlockingPeriod 600
-
-# Configure rate limits in /etc/apache2/mods-available/evasive.conf
-BASH | sudo systemctl restart apache2
-Enable Rate Limiting on Your Server For Nginx (Using limit_req_zone):
-Nginx configuration (nginx.conf):
-http {
-limit_req_zone $binary_remote_addr zone=one:10m rate=1r/s;
-}
-server {
-location / {
-limit_req zone=one burst=5;
-}
-}
-
-Restart Nginx
-BASH | sudo systemctl restart nginx
-
-.....................................................................
----------------------------------------------------------------------
-# MediaWiki specifically, here’s an nginx pattern that takes effect if it’s a complex URL:
-
-set $BOT "";
-if ($uri ~* (/w/index.php)) {
-    set $BOT "C"; }
-# then detect the bot tell and give a 503
-
-.....................................................................
----------------------------------------------------------------------
-# How to Set Up a Honeypot Trap:
-
-Add a Hidden Honeypot Link by placing this hidden link in your HTML:
-<a href=”/trap-page” class=”honeypot”>Hidden Link</a>
-<style>.honeypot { display: none; }</style>
-Humans won’t see it due to display: none;.
-Bots may still follow it, exposing themselves.
-
-Create a Trap Page (trap-page.html):
-Log visits to this page to identify scrapers (php example):
-
-<?php
-$ip = $_SERVER[‘REMOTE_ADDR’];
-$file = ‘honeypot_log.txt’;
-file_put_contents($file, “$ip\n”, FILE_APPEND);
-?>
-<html>
-<head><meta name=”robots” content=”noiai, nofollow”></head>
-<body>
-Nothing to see here.
-</body>
-</html>
-
-Logs suspicious IPs in honeypot_log.txt.
-Prevents indexing so search engines ignore it.
-
-.....................................................................
----------------------------------------------------------------------
-## OWASP’s crawlers-user-agents.data to the Cloudflare WAF custom rule expression:
-
-// path may be different on your server
-pathUserAgents = "/etc/apache2/conf.d/modsec_vendor_configs/OWASP3/rules/crawlers-user-agents.data";
-str = "";
-F = FileOpen(pathUserAgents, "read");
-while (!FileIsEOF(F)) parseLine(FileReadLine(F).trim());
-FileClose(F);
-echo(str);
-function parseLine(line) {
-	// ignore empty lines and comments
-	if (line == "" || line.left(1) == "##") return;
-	if (str != "") str &= " or ";
-	str &= '(lower(http.user_agent) contains "#line.lcase()#")';
-}
-/* Example output:
-
-(lower(http.user_agent) contains "claude-web")
-or (lower(http.user_agent) contains "claudebot")
-or (lower(http.user_agent) contains "dataforseobot")
-[...]
-*/
-			
-.....................................................................
 ---------------------------------------------------------------------
 # FROM Perrishpress/ ultamte list, Note: If you don’t care about search results,
  you can restore the removed blocks for Google, Bing, and Apple:
@@ -284,17 +11,8 @@ User-agent: Google Bard AI
 User-agent: Google-Extended
 User-agent: GoogleOther
 
-
 .....................................................................
 ---------------------------------------------------------------------
-## Obstruction via redirect:
-Robb Knight came up with a clever way to make AI bots download a 10GB file instead of stealing your content.
-
-# Block AI bots
-if ($http_user_agent ~* "({{ site.robots.nginx }})") {
-  return 307 https://ash-speed.hetzner.com/10GB.bin
-}
-
 ...........................................................................:)
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::)
 ## htaccess List:
@@ -305,78 +23,78 @@ if ($http_user_agent ~* "({{ site.robots.nginx }})") {
 
 .ai|-ai|_ai|ai.|ai-|ai_|ai=|
 
-Agentic RAG with LangGraph|AgentQL|AI Agent|AI agents /|AI Article Writer|AI Chat|AI Chatbot|AI Content Detector|AI copilot|
+Agentic RAG with LangGraph|AgentQL|AI Agent|AI agents /|AgentGPT|AI Article Writer|AI Chat|AI Chatbot|AI Content Detector|AI copilot|
 AI Detection|AI Dungeon|AI Journalist|AI Journalist Agent|AI Search|AI Search Engine|AI Search Intent|AI SEO Crawler|
 AI Training|AI Web|AI Writer|AI2|AI2 BotAI2Bot|AI21 Labs|AIBot|aiHitBot|AIMatrix|AISearchBot|AITraining|AITraining /|AI-Crawler|
-ai-crawlers-training|AI Web Scraper|ai-proxy|Alexa|AlexaTM|Alice Yandex|AliGenie|Alpha AI|AlphaAI|Amazon|Amazon Athena|Amazon Bedrock|
+ai-crawlers-training|AI Web Scraper|AI Scraper|AI Website Screenshot|ai-proxy|Alexa|AlexaTM|Alice Yandex|AliGenie|Alpha AI|AlphaAI|Amazon|Amazon Athena|Amazon Bedrock|
 Amazon Comprehend|Amazon Lex|Amazon SageMaker|Amazon Silk|Amazon Textract|amazonBot|amazon-kendra|AWS bedrock|AWS Trainium|
 Bedrock Claude|bedrock-chat|bedrock-chatbot|bedrock-claude-chatbot|Amelia|AndiBot|Anonymous AI|anonymous AI chatbot|
 Anthropic|anthropic-ai|AnyPicker|AnythingLLM|Anyword|Apple|Applebot-Extended|Apple-GenAI|Applebot/0.1|Aria AI|Aria Browse|Aria browse Aria AI|
-Aria browser AI|Articoolo|Ask AI|AutoGLM|AutoGPT|Automated Writer|AutoML|Autonomous RAG|Azure|Azure AI Search|
+Aria browser AI|Articoolo|Ask AI|AutoGLM|AutoGPT|AutoGen|Automated Writer|AutoML|Autonomous RAG|Azure|Azure AI Search|
 
-BabyAGI|Basic RAG|Basic RAG Chain|BardBot|Brave Leo|Brave Leo AI|
+BabyAGI|BabyCatAGI|Basic RAG|Basic RAG Chain|BardBot|Brave Leo|Brave Leo AI|bigsur.ai| 
 BraveGPT|Brightbot|Brightbot 1.0|ByteDance|byteDance|ByteDance crawler|Bytespider|Browser MCP Agent|Bedrock|
 
 CarynAI|CatBoost|CCBot|ccbot|CCBot/2.0|CC-Crawler|CC-Crawler/2.0|Chai|Charstar AI|Chatbot|chatbot|ChatGLM|ChatGPT|ChatGPT 4o|ChatGPT 4o-mini|
-ChatGPT 4.1|ChatGPT 4.5|ChatGPT o1|ChatGPT o3-mini|ChatGPT Operator|ChatGPT search|ChatGPT-User|ChatGPT-User/1.0|ChatGPT-User/2.0|
+ChatGPT 4.1|ChatGPT 4.5|ChatGPT o1|ChatGPT o3-mini|ChatGPT Operator|ChatGPT search|ChatGPT-User|ChatGPT-User/1.0|ChatGPT-User/2.0|ChatGPT Agent|
 ChatLLM|ChatOpenAI|ChatUser|chatUser /|Chinchilla|Claude|Claude 3.5|Claude 3.5 Haiku|Claude 3.5 Sonnet|Claude 3.7 Sonnet|Claude 4|
 Claude Opus|Claude Opus 4|Claude Sonnet 4|Claude Opus 4.1|
-ClaudeBot|ClaudeBot/1.0|Claude-RAG|Claude-SearchBot|Claude-User|Claude-Web|claude-web/1.0|ClearScope|
+ClaudeBot|ClaudeBot/1.0|Claude-RAG|Claude-SearchBot|Claude-User|Claude-Web|claude-web/1.0|Claude LLM|ClearScope|
 Cognitive AI|Cognitive AI engine|Cohere|cohere-ai|cohere-ai/1.0|cohere-training-data-crawler|Common Crawl|CommonCrawl|Content Harmony|
 Content King|Content Optimizer|Content Samurai|Content Scraper GPT|ContentAtScale|ContentBot|Contentedge|ContentShake|Conversion AI|
 Copilot|CopilotBot|CopyAI|Copymatic|Copyscape|CoreWeave|Corrective RAG|Cohere RAG|Cotoyogi|CRAB|CrawlGPT|CrawlQ AI|CrawlspaceCrew AI|CrewAI|Crushon AI|
 
 DALL-E|DALL-E 2|DALL·E 3|Dall-E 4|DALL-E Mini|DarkBard|DataForAI|DataForSeoBot|DataProvider|dataprovider|Datenbank Crawler|DeepAI|DeepL|DeepMind|DeepSeek|
-DeepSeek R1 Y|DeepSeek V3|DeepSeek-R1|DepolarizingGPT|DialoGPT|Diffbot|Doubao AI|DuckAssistBot|DuckDuckGo Chat|DuckDuckGo-Enhanced|Duck.ai|
+DeepSeek R1 Y|DeepSeek V3|DeepSeek-R1|DepolarizingGPT|Deep Research|DialoGPT|Devin|Diffbot|Doubao AI|DuckAssistBot|DuckDuckGo Chat|DuckDuckGo-Enhanced|Duck.ai|
 
 Echobox|Elixir|Extended GPT Scraper|
 
-FacebookBot|FacebookBot/1.0|FacebookExternalHit|facebookexternalhit/1.1|Factset|Factset_spyderbot|
-Falcon|FastGPT|Firecrawl|FirecrawlAgent|FIRE-1|FIRE-1 Agent|Flux|Flyriver|flyriverbot/1.1|Frase AI|FraudGPT|FriendlyCrawler|
+FacebookBot|FacebookBot/1.0|FacebookExternalHit|facebookexternalhit/1.1|Factset|Factset_spyderbot
+Falcon|FastGPT|Firecrawl|FirecrawlAgent|FIRE-1|FIRE-1 Agent|Flux|Flyriver|flyriverbot/1.1|Frase AI|FraudGPT|FriendlyCrawler|Firebase|
 
 AI Ghostwriter|Gato|Gemini|Gemini Agentic RAG|Gemma|Gemma 3|Gen AI|GenAI|GenAI Chat|Genspark|Go|
-gentoo-chat|GenAI RAG|gen-ai|Ghostwriter|GigaChat|GLM|Google Gemini|Google-CloudVertexBot|Google-Extended|Goose|GPT|GPT 4 Omni|GPT 4 Omni Mini|
+gentoo-chat|GenAI RAG|gen-ai|Ghostwriter|GigaChat|GLM|Google Gemini|Gemini-Deep-Research|Gemini-User|Google-CloudVertexBot|Google-Extended|Goose|GPT|GPT 4 Omni|GPT 4 Omni Mini|
 GPT Scraper|GPTBot|GPTBot /|GPTBot/1.2|GPTZero|GPT-1|GPT-2|GPT-3|GPT-3.5|GPT-3.5 turbo|GPT-4|GPT-4o|GPT-4o Image|GPT-4o mini|GPT-4V|GPT-4,5|
 gpt-4-turbo|GPT-4.1|GPT-4.1-mini|GPT-4.1-nano|GPT-5|GPT-5 Mini|GPT-5 Nano|GPT-5 Chat|
-gpt-crawler|GPT/|Grammarly|Grendizer|Grok|Grok AI chatbotGrokAI|GT Bot|GTBot|GTP|GTPBOT|
+gpt-crawler|GPT /|GPT-oss /|GPT4Free|GPT Researcher|Grammarly|Grendizer|Grok|Grok AI chatbotGrokAI|GT Bot|GTBot|GTP|GTPBOT|
 
-Hemingway Editor|Hugging Face|Hypotenuse AI|Hybrid Search RAG|
+Hemingway Editor|Hugging Face|Hypotenuse AI|Hybrid Search RAG|hybrid LLM|
 
 iAskBot|iaskspider|iaskspider/2.0|ICC-Crawler|ImageGen|ImageGen /|ImagesiftBot|
 img2dataset|imgproxy|ImageGPT|Inferkit|INK Editor|INKforall|IntelliSeek|IntelliSeek.ai|ISSCyberRiskCrawler|
 
 JasperAI|Janitor AI|Jenni AI|
 
-Kaggle agent|Kafkai|Kaggle|Kangaroo|Kangaroo Bot|Keyword Density AI|Knowledge|knowledge /|KomoBot|Kimi K2|Kimi-2|
+Kaggle agent|Kafkai|Kaggle|Kangaroo|Kangaroo Bot|Keyword Density AI|Knowledge|knowledge /|KomoBot|Kimi K2|Kimi-2|Kimi-VL|
 
 LangChain|langchain-google-genai|Langchain raptor|langchain-perplexity|langchain-openai|Le Chat|
-LeftWingGPT|Lensa|Lightpanda|LLaMA|Llama 3.2|Llama 4|LLM|LLM Scraper|Local RAG Agent|Llama 3.1 Local RAG|Local Hybrid Search RAG|
+LeftWingGPT|Lensa|Lightpanda|LinerBot|LLaMA|Llama 3.2|Llama 4|LLM|LLM Scraper|Local RAG Agent|Llama 3.1 Local RAG|Local Hybrid Search RAG|LiteLLM Proxy|
 
 magpie-crawler|Manus|Magistral|MarketMuse|Meltwater|Meta AI|Meta Llama|MetaAI|Meta-AI|Meta.AI|Meta-AI|MetaTagBot|Meta-External|Meta-ExternalAgent|Meta-ExternalFetcher|
-meta-externalfetcher|meta-externalfetcher/1.1|MiniMax|Mistral|MistralAI-User/1.0|Mixtral 8x22B|midjourney|Monica|model-training|
+meta-externalfetcher|meta-externalfetcher/1.1|MiniMax|Mistral|MistralAI-User/1.0|meta-webindexer/1.1|Mixtral 8x22B|midjourney|Monica|model-training|
 
 Narrative|NeevaBot|Neural Text|NeuralSEO|Nicecrawler|NinjaAIBot/1.0|NinjaAI|Nova Act|NovaAct|NodeZero|Node.js|
 
-OAI SearchBot|OAI-SearchBot|OAI-SearchBot/1.0|Omgili|Omgilibot|
+OAI SearchBot|OAI-SearchBot|OAI-SearchBot/1.0|Omgili|Omgilibot|Olivia|
 OASIS|Open AI|OpenAI|OpenAI Crawler|OpenAI CUA|OpenAI o1|OpenAI o3|OpenAI o1-mini|OpenAI o3-mini|OpenAI Operator|
 OpenAIContentCrawler|Open Deep Research|Open Perflexity|Openbot|OpenText AI|Operator|OpenAI GPTBot|OpenAI Image Downloader|Outwrite|
 
 Page Analyzer AI|PanguBot|Panscient|PaperLiBot|Paraphraser.io|peer39_crawler|peer39_crawler/1.0|Perplexity|PerplexityBot|
-PerplexityBot/1.0|PerplexityUser|Perplexity-User|Perplexity-User/1.0|Perplexit-User|Perplexity Deep Research|
+PerplexityBot/1.0|PerplexityUser|Perplexity-User|Perplexity-User/1.0|Perplexit-User|Perplexity Deep Research|PerfectChatGPT|
 Open Perflexity|petalBot|PetalBot|Phind|PhindBot|PiplBot|ProWritingAid|proximic|Puppeteer|Poe|PoeBot|PoeSearchBot|python Ai|
 
-Qualified|QualifiedBot|QuillBotQuark|Qwen|qwen /|Qwen Chat|Qwen2|Qwen3|Qwen2.5 72B	|Qwen 2.5‑VL|
+Qualified|QualifiedBot|QuillBotQuark|Qwen|qwen /|Qwen Chat|Qwen2|Qwen3|Qwen2.5 72B|Qwen 2.5‑VL||Qopywriter.ai|Qwen-Agent|
 
 RAG|RAG Agent|RAG Agent Cohere|RAG Azure AI|RAG Chatbot|
 RAG ChatGPT|RAG LLM|RAG pipeline|RAG Search|RAG Database Routing|RAG-as-a-Service|RAG_VertexAI|RAG_with_search|
 Redis AI RAG|RAG IS|RAG Pipeline|RAG Search|RAG with|Raptor|ReAct AI Agent|RAPTOR LLM|RightWingGPT|RobotSpider|Rytr|
 
 SaplingAI|Scala|Scalenut|ScrapeGraph|ScrapeGraphAI|Scrapegraph-ai|Scraper|ScraperGPT|Scrapy|Scrapy 2.12.0|Scrapy 2.13.1|Scrapy/2.0|
-ScriptBook|Search GPT|SearchGPT|Seekr|SemrushBot|SemrushBot-FT|SemrushBot-OCOB|SemrushBot-SWA|Sentibot|SEO Content Machine|
-SEO Robot|ShadowGPT|Sidetrade|Sidetrade /|Simplified AI|Sitefinity|skrape.ai|Skydancer|SlickWrite|SmartBot|SmartScrape|
-Sonic|Sora|Spin Rewrite|Spinbot|Stability AI|StableDiffusionBot|Sudowrite|SummalyBot|Super Agent|Surfer AI|SmartScraperGraph|
+ScriptBook|Search GPT|SearchGPT|Seekr|SemrushBot|SemrushBot-FT|SemrushBot-OCOB|SemrushBot-SWA|ShapBot|Sentibot|SEO Content Machine|
+SEO Robot|SEObot|ShadowGPT|Sidetrade|Sidetrade /|Simplified AI|Sitefinity|skrape.ai|Skydancer|SlickWrite|SmartBot|SmartScrape|
+Sonic|Sora|Spin Rewrite|Spinbot|Stability AI|StableDiffusionBot|Sudowrite|SummalyBot|Super Agent|Surfer AI|SmartScraperGraph|spawning-ai|
 
-Text Blaze|TextCortex|The Knowledge AI|thehive.a1|Thinkbot|TikTokSpider|Timpibot|Traefik|TorChat|Together AI|TurnitinBot|
+Text Blaze|TextCortex|The Knowledge AI|thehive.a1|Thinkbot|TikTokSpider|Timpibot|Traefik|TorChat|Thordata|Together AI|TurnitinBot|
 
 VelenPublicWebCrawler|Venus Chub AI|Vidnami AI|Vision RAG|
 WebChatGPT|WebCrawler-AI|Webscrape AI|Webscrape|webscraping-ai-ruby|webscraping-ai-php|webscraping-ai-python|WebText||WebText /|Webzio|
@@ -402,18 +120,22 @@ Can as well come from: myrepublic.com.sg
 RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
 RewriteRule "^.*$" - [F,L]</IfModule>
 
-* OR:
+###* OR:
 <IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent)[NC]
-RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent)[NC]
-RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent)[NC]
-RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent)[NC]
-RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent)[NC]
-RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent)[NC]
+RewriteCond%{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent)[NC]
+RewriteCond%{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent)[NC]
+RewriteCon %{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent)[NC]
+RewriteCon %{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent)[NC]
+RewriteCond%{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent)[NC]
+RewriteCond%{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent)[NC]
 RewriteRule (.*) - [F,L]
+</IfModule>
 
-IF NEEDED:
-RewriteRule !^/?robots\.txt$ - [F,L]
+**IF NEEDED:
+]RewriteRule !^/?robots\.txt$ - [F,L]
+
+*** Extra Security: 
+RewriteCond %{HTTP_USER_AGENT} ^Spawning-AI$ [NC,OR]
 
 .....................................................................
 ---------------------------------------------------------------------
@@ -431,6 +153,7 @@ User-agent: ai.
 User-agent: ai-
 User-agent: ai_
 User-agent: ai=
+User-agent: AddSearchBot
 User-agent: AcademicBotRTU
 User-agent: Agent GPT
 User-agent: Agentic
@@ -441,6 +164,7 @@ User-agent: Agentic RAG with LangGraph
 User-agent: AgentQL
 User-agent: AI Agent
 User-agent: AI agents /
+User-agent: AgentGPT
 User-agent: AI Article Writer
 User-agent: AI Chat
 User-agent: AI Chatbot
@@ -470,6 +194,8 @@ User-agent: AITraining /
 User-agent: AI-Crawler
 User-agent: ai-crawlers-training
 User-agent: AI Web Scraper
+User-agent: AI Scraper
+User-agent: AI Website Screenshot
 User-agent: ai-proxy
 User-agent: Alexa
 User-agent: AlexaTM
@@ -514,6 +240,7 @@ User-agent: Articoolo
 User-agent: Ask AI
 User-agent: AutoGLM
 User-agent: AutoGPT
+User-agent: AutoGen
 User-agent: Automated Writer
 User-agent: AutoML
 User-agent: Autonomous RAG
@@ -522,12 +249,14 @@ User-agent: AwarioSmartBot
 User-agent: Azure
 User-agent: Azure AI Search
 User-agent: BabyAGI
+User-agent: BabyCatAGI
 User-agent: Basic RAG
 User-agent: Basic RAG Chain
 User-agent: BardBot
 User-agent: Brave Leo
 User-agent: Brave Leo AI
 User-agent: BraveGPT
+User-agent: bigsur.ai
 User-agent: Brightbot
 User-agent: Brightbot 1.0
 User-agent: ByteDance
@@ -536,6 +265,7 @@ User-agent: ByteDance crawler
 User-agent: Bytespider
 User-agent: Browser MCP Agent
 User-agent: Bedrock
+User-agent: bigsur.ai
 User-agent: CarynAI
 User-agent: CatBoost
 User-agent: CCBot
@@ -560,6 +290,7 @@ User-agent: ChatGPT search
 User-agent: ChatGPT-User
 User-agent: ChatGPT-User/1.0
 User-agent: ChatGPT-User/2.0
+User-agent: ChatGPT Agent
 User-agent: ChatLLM
 User-agent: ChatOpenAI
 User-agent: ChatUser
@@ -582,6 +313,7 @@ User-agent: Claude-SearchBot
 User-agent: Claude-User
 User-agent: Claude-Web
 User-agent: claude-web/1.0
+User-agent: Claude LLM
 User-agent: ClearScope
 User-agent: Cognitive AI
 User-agent: Cognitive AI engine
@@ -635,9 +367,11 @@ User-agent: DeepSeek
 User-agent: DeepSeek R1 Y
 User-agent: DeepSeek V3
 User-agent: DeepSeek-R1
+User-agent: Deep Research
 User-agent: DepolarizingGPT
 User-agent: DialoGPT
 User-agent: Diffbot
+User-agent: Devin
 User-agent: Doubao AI
 User-agent: DuckAssistBot
 User-agent: DuckDuckGo Chat
@@ -664,6 +398,7 @@ User-agent: flyriverbot/1.1
 User-agent: Frase AI
 User-agent: FraudGPT
 User-agent: FriendlyCrawler
+User-agent: Firebase
 User-agent: AI Ghostwriter
 User-agent: Gato
 User-agent: Gemini
@@ -681,7 +416,9 @@ User-agent: Ghostwriter
 User-agent: GigaChat
 User-agent: GLM
 User-agent: Google Gemini
+User-agent: Gemini-User
 User-agent: Google-CloudVertexBot
+User-agent: Gemini-Deep-Research
 User-agent: Google-Extended
 User-agent: Goose
 User-agent: Go
@@ -713,7 +450,10 @@ User-agent: GPT-5 Mini
 User-agent: GPT-5 Nano
 User-agent: GPT-5 Chat
 User-agent: gpt-crawler
-User-agent: GPT/
+User-agent: GPT /
+User-agent: GPT-oss /
+User-agent: GPT4Free
+User-agent: GPT Researcher
 User-agent: Grammarly
 User-agent: Grendizer
 User-agent: Grok
@@ -727,6 +467,7 @@ User-agent: Hemingway Editor
 User-agent: Hugging Face
 User-agent: Hypotenuse AI
 User-agent: Hybrid Search RAG
+User-agent: hybrid LLM
 User-agent: iAskBot
 User-agent: iaskspider
 User-agent: iaskspider/2.0
@@ -757,6 +498,7 @@ User-agent: knowledge /
 User-agent: KomoBot
 User-agent: Kimi K2
 User-agent: Kimi-2
+User-agent: Kimi-VL
 User-agent: LangChain
 User-agent: langchain-google-genai
 User-agent: Langchain raptor
@@ -766,6 +508,7 @@ User-agent: Le Chat
 User-agent: LeftWingGPT
 User-agent: Lensa
 User-agent: Lightpanda
+User-agent: LinerBot 
 User-agent: LLaMA
 User-agent: Llama 3.2
 User-agent: Llama 4
@@ -774,6 +517,7 @@ User-agent: LLM Scraper
 User-agent: Local RAG Agent
 ser-agent:  Llama 3.1 Local RAG
 User-agent: Local Hybrid Search RAG
+User-agent: LiteLLM Proxy
 User-agent: magpie-crawler
 User-agent: Manus
 User-agent: Magistral 
@@ -791,6 +535,7 @@ User-agent: Meta-ExternalAgent
 User-agent: meta-externalagent
 User-agent: Meta-ExternalFetcher
 User-agent: meta-externalfetcher/1.1
+User-agent: meta-webindexer/1.1
 User-agent: MiniMax
 User-agent: Mistral
 User-agent: MistralAI-User/1.0
@@ -833,6 +578,7 @@ User-agent: Operator
 User-agent: OpenAI GPTBot
 User-agent: OpenAI Image Downloader
 User-agent: Outwrite
+User-agent: Olivia
 User-agent: Page Analyzer AI
 User-agent: PanguBot
 User-agent: Panscient
@@ -851,6 +597,7 @@ User-agent: Perplexity Deep Research
 User-agent: Open Perflexity 
 User-agent: petalBot
 User-agent: PetalBot
+User-agent: PerfectChatGPT
 User-agent: Phind
 User-agent: PhindBot
 User-agent: PiplBot
@@ -872,6 +619,8 @@ User-agent: Qwen2
 User-agent: Qwen3
 User-agent: Qwen2.5 72B	
 User-agent: Qwen 2.5‑VL
+User-agent: Qwen-Agent
+User-agent: Qopywriter.ai
 User-agent: RAG
 User-agent: RAG Agent
 User-agent: RAG Agent Cohere
@@ -916,8 +665,10 @@ User-agent: SemrushBot
 User-agent: SemrushBot-FT
 User-agent: SemrushBot-OCOB
 User-agent: SemrushBot-SWA
+User-agent: ShapBot
 User-agent: Sentibot
 User-agent: SEO Content Machine
+User-agent: SEObot
 User-agent: SEO Robot
 User-agent: ShadowGPT
 User-agent: Sidetrade
@@ -940,6 +691,7 @@ User-agent: SummalyBot
 User-agent: Super Agent
 User-agent: Surfer AI
 User-agent: SmartScraperGraph
+User-agent: Spawning-ai
 User-agent: Text Blaze
 User-agent: TextCortex
 User-agent: The Knowledge AI
@@ -949,6 +701,7 @@ User-agent: TikTokSpider
 User-agent: Timpibot
 User-agent: Traefik
 User-agent: TorChat
+User-agent: Thordata
 User-agent: Together AI
 User-agent: TurnitinBot
 User-agent: VelenPublicWebCrawler
@@ -1017,6 +770,13 @@ ai.
 ai-
 ai_
 ai=
+AddSearchBot
+AcademicBotRTU
+Agent GPT
+Agentic
+Agentic Deep Research
+Agentic RAG
+Agentic-RAG
 Agentic RAG with LangGraph
 AgentQL
 AI Agent
@@ -1050,6 +810,8 @@ AITraining /
 AI-Crawler
 ai-crawlers-training
 AI Web Scraper
+AI Scraper
+AI Website Screenshot
 ai-proxy
 Alexa
 AlexaTM
@@ -1094,6 +856,8 @@ Articoolo
 Ask AI
 AutoGLM
 AutoGPT
+AutoGen
+AgentGPT
 Automated Writer
 AutoML
 Autonomous RAG
@@ -1102,6 +866,7 @@ AwarioSmartBot
 Azure
 Azure AI Search
 BabyAGI
+BabyCatAGI
 Basic RAG
 Basic RAG Chain
 BardBot
@@ -1109,6 +874,7 @@ Brave Leo
 Brave Leo AI
 BraveGPT
 Brightbot
+bigsur.ai
 Brightbot 1.0
 ByteDance
 byteDance
@@ -1116,6 +882,7 @@ ByteDance crawler
 Bytespider
 Browser MCP Agent
 Bedrock
+bigsur.ai
 CarynAI
 CatBoost
 CCBot
@@ -1140,6 +907,7 @@ ChatGPT search
 ChatGPT-User
 ChatGPT-User/1.0
 ChatGPT-User/2.0
+ChatGPT Agent
 ChatLLM
 ChatOpenAI
 ChatUser
@@ -1156,11 +924,13 @@ Claude Opus 4
 Claude Sonnet 4
 ClaudeBot
 ClaudeBot/1.0
+Claude Opus 4.1
 Claude-RAG
 Claude-SearchBot
 Claude-User
 Claude-Web
 claude-web/1.0
+Claude LLM
 ClearScope
 Cognitive AI
 Cognitive AI engine
@@ -1214,9 +984,11 @@ DeepSeek
 DeepSeek R1 Y
 DeepSeek V3
 DeepSeek-R1
+Deep Research
 DepolarizingGPT
 DialoGPT
 Diffbot
+Devin
 Doubao AI
 DuckAssistBot
 DuckDuckGo Chat
@@ -1243,9 +1015,12 @@ flyriverbot/1.1
 Frase AI
 FraudGPT
 FriendlyCrawler
+Firebase
 AI Ghostwriter
 Gato
 Gemini
+Gemini-Deep-Research
+Gemini-User
 Gemini Agentic RAG
 Gemma
 Gemma 3
@@ -1292,7 +1067,10 @@ GPT-5 Mini
 GPT-5 Nano
 GPT-5 Chat
 gpt-crawler
-GPT/
+GPT Researcher
+GPT /
+GPT-oss /
+GPT4Free
 Grammarly
 Grendizer
 Grok
@@ -1302,10 +1080,13 @@ GT Bot
 GTBot
 GTP
 GTPBOT
+GPT-oss /
+GPT4Free
 Hemingway Editor
 Hugging Face
 Hypotenuse AI
 Hybrid Search RAG
+hybrid LLM
 iAskBot
 iaskspider
 iaskspider/2.0
@@ -1333,9 +1114,10 @@ Kangaroo Bot
 Keyword Density AI
 Knowledge
 knowledge /
+KomoBot
 Kimi K2
 Kimi-2
-KomoBot
+Kimi-VL
 LangChain
 langchain-google-genai
 Langchain raptor
@@ -1345,6 +1127,7 @@ Le Chat
 LeftWingGPT
 Lensa
 Lightpanda
+LinerBot 
 LLaMA
 Llama 3.2
 Llama 4
@@ -1353,6 +1136,7 @@ LLM Scraper
 Local RAG Agent
 Llama 3.1 Local RAG
 Local Hybrid Search RAG
+LiteLLM Proxy
 magpie-crawler
 Manus
 Magistral 
@@ -1370,6 +1154,7 @@ Meta-ExternalAgent
 meta-externalagent
 Meta-ExternalFetcher
 meta-externalfetcher/1.1
+meta-webindexer/1.1
 MiniMax
 Mistral
 MistralAI-User/1.0
@@ -1412,6 +1197,7 @@ Operator
 OpenAI GPTBot
 OpenAI Image Downloader
 Outwrite
+Olivia
 Page Analyzer AI
 PanguBot
 Panscient
@@ -1430,6 +1216,7 @@ Perplexity Deep Research
 Open Perflexity 
 petalBot
 PetalBot
+PerfectChatGPT
 Phind
 PhindBot
 PiplBot
@@ -1451,6 +1238,8 @@ Qwen2
 Qwen3
 Qwen2.5 72B	
 Qwen 2.5‑VL
+Qwen-Agent
+Qopywriter.ai
 RAG
 RAG Agent
 RAG Agent Cohere
@@ -1495,9 +1284,11 @@ SemrushBot
 SemrushBot-FT
 SemrushBot-OCOB
 SemrushBot-SWA
+ShapBot
 Sentibot
 SEO Content Machine
 SEO Robot
+SEObot
 ShadowGPT
 Sidetrade
 Sidetrade /
@@ -1519,6 +1310,7 @@ SummalyBot
 Super Agent
 Surfer AI
 SmartScraperGraph
+Spawning-ai
 Text Blaze
 TextCortex
 The Knowledge AI
@@ -1528,6 +1320,7 @@ TikTokSpider
 Timpibot
 Traefik
 TorChat
+Thordata
 Together AI
 TurnitinBot
 VelenPublicWebCrawler
@@ -1583,55 +1376,7 @@ Zhipu
 XXXGPT
 Zimm
 
-:::::::::::::::::::::::::::::::::::::::::::	  
-:::::::::::::::::::::::::::::::::::::::::::
-##PAIN in in the Ass:  #
-### DELATED: 
-AwarioRssBot
-AwarioSmartBot
-AwarioBot 1.0
-
-## Retired:
-Claude 3.7 
-
-#  DELATE:  not active
-AndersPinkBot
-URL: https://anderspink.com
-Redict to: https://www.go1.com/
-
-
-##BLOCK:
-Applebot/0.1
-
-NEW:
-GPT-5 Mini
-GPT-5 Nano
-GPT-5 Chat
-URL: https://www.bleepingcomputer.com/news/artificial-intelligence/microsoft-accidentally-confirms-gpt-5-gpt-5-mini-gpt-5-nano-ahead-of-launch/
-
-
-OAI-SearchBot/1.0   
-Qwen 3 
-Kimi K2
-
-## Claude:
-Claude Opus 4.1
-
-python Ai
-Go
-
-Kimi K2
-Kimi-2
-
-TO Perrish sent: 
-
-GLM-4.5
-URL: https://z.ai/blog/glm-4.5
-Chat: https://chat.z.ai/
-
-Clearview AI
-
 
 :::::::::::::::::::::::::::::::::::::::::::	  
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 250810
+### Updated: 250828
