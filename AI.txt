@@ -1968,6 +1968,216 @@ Lumo chatbot
 Llama2.ai
 
 ............................................................................
+### On The Way:
+GPT-6
+
+## Not harm what I can see!
+netEstate Imprint Crawler 
+https://darkvisitors.com/agents/netestate-imprint-crawler#netestate-imprint-crawler
+URL2: https://www.netestate.de
+URL3: https://github.com/michaelbrunnbauer/sparqlcrawlserver
+URL3: https://www.sengine.info/
+URL:3: https://www.website-datenbank.de/
+
+.............................
+
+### Not blocking! Se Darkvisitors adwise: ###
+GoogleAgent-Mariner
+https://darkvisitors.com/agents/googleagent-mariner#what-is-googleagent-mariner
+
+.............................
+#  Echobot
+# AI EchoBot
+URL: https://github.com/microsoft/BotBuilder-Samples
+URL2: https://echobot.me/
+URL3: https://wpcommerz.com/echobot/
+URL4: https://github.com/MmmarRTha/echobot-ai-app
+URL4: https://echobot-ai-app.vercel.app/
+
+Notes; AI AI Framework, need gtp or mIstral or gemini to work = No threat yet!
+
+.............................
+##PAIN in in the Ass:  #
+### DELATED: 
+AwarioRssBot
+AwarioSmartBot
+AwarioBot 1.0
+
+## Retired:
+Claude 3.7 
+
+#  DELATE:  not active
+AndersPinkBot
+URL: https://anderspink.com
+Redict to: https://www.go1.com/
+
+
+##BLOCK:
+Applebot/0.1
+
+NEW:
+GPT-5 Mini
+GPT-5 Nano
+GPT-5 Chat
+URL: https://www.bleepingcomputer.com/news/artificial-intelligence/microsoft-accidentally-confirms-gpt-5-gpt-5-mini-gpt-5-nano-ahead-of-launch/
+
+
+OAI-SearchBot/1.0   
+Qwen 3 
+Kimi K2
+
+## Claude:
+Claude Opus 4.1
+
+python Ai
+Go
+
+Kimi K2
+Kimi-2
+
+TO Perrish sent: 
+
+GLM-4.5
+URL: https://z.ai/blog/glm-4.5
+Chat: https://chat.z.ai/
+
+Clearview AI
+
+.............................
+Chats AI:
+
+Zendesk 
+Microsoft 365 Copilot
+Grok
+Jasper Chat
+Deep AI
+Generative AI
+HuggingChat
+Character.ai
+Poe
+Chatsonic
+Copy.ai
+ZenoChat
+Lumo AI chatbot  //Proton
+
+........................................
+Noted: Not admitted but in the future?
+Diffusion Deep Researcher
+deep research
+Gemini Diffusion
+
+Tinybird
+URL: https://www.tinybird.co/
+
+Linked in post Generator:
+TinyLLaMA-1.1B-Chat
+URL: https://github.com/brezzergit/LinkedIn-LLM-Post-Generator
+
+.......................................
+Maybe?  Been visiting me:)
+VNPT AI
+URL: https://vnpt.com.vn/english/news/vnpt-ready-to-make-long-term-and-continuous-investments-in-ai.html
+
+
+ADDED: 
+ Google-Firebase
+ URL: https://firebase.google.com/
+ URL 2: https://extensions.dev/extensions?category=ai
+ 
+## OTHERS:
+https://openrouter.ai/models?q=v1
+
+rtrvr.ai
+URL: https://www.rtrvr.ai/
+Cannot find the useragent!
+
+.......................................
+### Added now to htaccess/robots.txt.
+
+spawning-ai
+
+ChatGPT Agent
+Claude LLM
+
+AddSearchBot 
+URL: https://darkvisitors.com/agents/addsearchbot
+URL: https://darkvisitors.com/agents/addsearchbot#what-is-addsearchbot
+
+bigsur.ai 
+https://darkvisitors.com/agents/bigsur-ai#bigsur-ai
+User-agent: bigsur.ai
+
+LinerBot 
+URL: https://darkvisitors.com/agents/linerbot
+
+Gemini User
+User-agent: Gemini-User
+
+Olivia  (chatbot)
+URL: https://github.com/olivia-ai/olivia
+URL2: https://olivia-ai.org/
+
+AI Scraper 
+(Web Data Extractor)
+URL: https://galaxy.ai/ai-scraper
+
+AI Website Screenshot
+https://image.galaxy.ai/website-screenshot-generator
+
+hybrid LLM
+
+#### OPEN AI
+GPT-oss /
+
+GPT4Free
+URL: https://github.com/xtekky/gpt4free
+
+SEObot
+URL: https://seobotai.com/
+AutoGen
+AgentGPT
+
+GPT Researcher
+
+AI SCRAPER:
+Thordata
+URL: https://www.thordata.com/
+
+Devin
+URL: https://darkvisitors.com/agents/devin
+
+PerfectChatGPT
+URL: https://www.perfectessaywriter.ai
+
+Kimi-VL
+URL: https://github.com/MoonshotAI/Kimi-VL
+
+Gemini-Deep-Research
+URL: https://darkvisitors.com/agents/gemini-deep-research
+
+Qopywriter.ai
+URL: https://qopywriter.ai/
+
+LiteLLM Proxy (LLM Gateway)
+URL: https://docs.litellm.ai/docs/providers/litellm_proxy
+
+Qwen-Agent
+URL: https://github.com/QwenLM/Qwen-Agent
+
+ShapBot
+URL: https://parallel.ai
+
+meta-webindexer/1.1
+URL: https://developers.facebook.com/docs/sharing/webmasters/web-crawlers/
+ 
+Deep Research
+
+Firebase
+
+BabyCatAGI
+URL: https://replit.com/@YoheiNakajima/BabyCatAGI#main.py
+
+ 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-............................................................................
-# Updated: 250803
+.............................................................................
+# Updated: 250828
