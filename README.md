@@ -32,7 +32,8 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 # Updates: **
 # Working: ** a new AI LIST, 250825: = WORKING IN PROGRESS! As fast I can!
 
-* Updated 2500830, Forkof-kirby-block-ai-master AIBots.
+* Updates: 2508130 HAproxy Block AI. 
+* Updated: 2500830, Forkof-kirby-block-ai-master AIBots.
 * Updated: 2508129 Caddy files AI.
 * Updates: 250829 Fork of blockaai crawlers.zip
 * Updates: 250828 My htaccess, Choose, my or Perrishpress! + htaccess/robts.txt updated:) 
