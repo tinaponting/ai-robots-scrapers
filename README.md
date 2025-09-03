@@ -30,8 +30,9 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 *  GREAT BLOG:  Pivot to AI: https://pivot-to-ai.com/   News about  AI.
 *  
 # Updates: **
-# Working: ** a new AI LIST, 250825: = WORKING IN PROGRESS! As fast I can!
+# Working: ** a new AI LIST, Made ready: 250903 - all files:): 
 
+* Updated 250903  block ai.php AI block.
 * Updates: 250908 - Hugo Ai block.
 * Updates: 2508130 HAproxy Block AI. 
 * Updated: 2500830, Forkof-kirby-block-ai-master AIBots.
