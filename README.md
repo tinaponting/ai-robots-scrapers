@@ -14,6 +14,8 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 * AI News:  https://getcoai.com/news/
             https://aimagazine.com/
 
+  * Text extraction: https://central.yourtext.guru/main-content-extraction-from-web-pages/
+
 * Perrishpress Ultimate list:  https://perishablepress.com/ultimate-ai-block-list/
   
 * AI Great list: https://github.com/sindresorhus/awesome-chatgpt
