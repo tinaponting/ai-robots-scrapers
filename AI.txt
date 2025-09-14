@@ -86,6 +86,8 @@ URL: https://www.databricks.com/product/artificial-intelligence
 Ollama /various AI:
 URL: https://ollama.com
 
+Machine Learning:  https://www.geeksforgeeks.org/machine-learning/machine-learning/
+
 .....................................................................
 ---------------------------------------------------------------------
 ## Blogs, News and intresting sites:
@@ -1630,8 +1632,10 @@ AI Chatbot https://www.semrush.com/free-tools/ai-text-generator/
 ---------------------------------------------------------------------
 ##RAG:
 
+Agentic
 Autonomous RAG
 Agentic RAG
+Agentic-RAG
 Claude-RAG
 ReAct AI Agent 
 ScrapeGraphAI
@@ -1664,7 +1668,6 @@ Vision RAG
 Redis AI RAG 
 GenAI RAG
 Basic RAG
-
 Langchain raptor
 RAPTOR LLM
 langchain-google-genai
@@ -1678,7 +1681,8 @@ langchain-openai
 User Agent: AITraining
 User-agent: AITraining /
 
-User-Agent: .*?-ai$ Disallow: /
+User-Agent: .*?-ai$ 
+Disallow: /
 
 Content-Usage: ai=n
 Disallow: /
@@ -1911,20 +1915,18 @@ Gemini-Deep-Research
 URL: https://darkvisitors.com/agents/gemini-deep-research
 
 ...........................
-RAG:
 
-Deepseek Local RAG Agent
-Agentic RAG LangGraph
-Agentic RAG
-Agentic
-Agentic-RAG
-Basic RAG Chain
-Deepseek Local RAG Agent
-Agentic RAG LangGraph
-Agentic RAG
-Agentic
-Agentic-RAG
-Basic RAG Chain
+##SKICKAT TILL Perrish.
+cvat.ai
+Video AI
+URL: https://www.cvat.ai/
+
+fetchfox.ai
+URL: https://fetchfox.ai/
+URL 2: https://github.com/fetchfox/fetchfox
+
+Vanna.AI
+URL: https://vanna.ai/
 ............................
 SummalyBot
 URL: ttps://www.grammarly.com/ai/ai-writing-tools/summarizing-tool
@@ -2078,9 +2080,9 @@ Maybe?  Been visiting me:)
 VNPT AI
 URL: https://vnpt.com.vn/english/news/vnpt-ready-to-make-long-term-and-continuous-investments-in-ai.html
 
-
 ADDED: 
  Google-Firebase
+ Useragent: Firebase
  URL: https://firebase.google.com/
  URL 2: https://extensions.dev/extensions?category=ai
  
@@ -2176,8 +2178,102 @@ Firebase
 
 BabyCatAGI
 URL: https://replit.com/@YoheiNakajima/BabyCatAGI#main.py
+.......................................
+### LAGT IN 250913  ####
+##AI FACEBOT:
+Meta-Webindexer 1.1
+Meta-Webindexer 1/1
 
- 
+Thinkbot 
+Thinkbot/0.5.8
+URL: https://thinkbot.agency/
+
+Instructor
+instructor-php
+URL: https://instructorphp.com/
+
+openpi
+URL: https://github.com/Physical-Intelligence/openpi
+
+https://github.com/CeramicTeam/CeramicTerracotta
+URL 2: https://ceramic.ai/
+Useragent: Ceramic TerraCotta Crawler
+Useragent: TerraCotta
+
+#OPEN AI:
+OpenAIo4-mini 
+
+OpenAGI
+Open Interpreter
+Agent Middleware
+Agent API
+AI Legion
+DigitalOceanGenAICrawler
+Brightbot operator 
+
+# Another writing/spelling:
+Superagent
+Auto-GPT
+AgentGPT
+
+AI Scrapers:
+n8n-nodes-aiscraper
+LangExtract
+
+OTHERS:
+quillbot.com
+LINER Bot
+MiniMax
+MetaGPT
+netEstate Imprint Crawler
+Kimi-k1.5
+Julius AI
+React Agent
+Big Sur AI
+Big Sur AI Crawler
+AliyunSecBot
+
+#China:
+Qwen 4
+qwen:4b
+Qwen 4 LLM
+QwenLM
+Qwen-Chat
+
+GTP:
+ChatGPT-User
+GPT Researcher
+ChatGPT Operator 
+
+AI:
+panscient.com
+knowledge-base
+
+AI HTTP Analyzer
+URL: https://portswigger.net/bappstore/36cb140ac1a6449bbab1bafc18df8cfa
+
+#Kruti AI Assistant:  
+Ola
+https: https://www.kruti.ai/
+
+Useragent: superagi
+https://superagi.com/
+
+AI Scraper:
+https://spider.cloud/
+URL": https://github.com/spider-rs/spider
+Useragent: Spider/2.0; +https://spider.cloud
+
+
+##Tencent Hunyuan AI:##		
+DeepSeekV2.5-Chat
+Zhuque AI Detector
+Mixtral-8x22B-Instruct
+Llama3.1-405B-Instruct	
+Llama3.1-70B-Instruct
+Hunyuan-Large-Instruct	
+Hunyuan-7B-Instruct	7B	
+
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................................
-# Updated: 250828
+# Updated: 250914
