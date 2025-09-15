@@ -32,9 +32,10 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 *  GREAT BLOG:  Pivot to AI: https://pivot-to-ai.com/   News about  AI.
 *  
 # Updates: **
-# Working: ** a new AI LIST, Working on a new List: 250911 - Be patient:): 
+# Working: ** a new AI LIST, Working on a new List: 250913 - Be patient:): 
 
-* Updated: 250909 ROBOTS-HTACCESS.txt / Ulitmate bot Ai block list:)
+* Updates: 2500915 My htaccess
+* Updated: 250915 ROBOTS-HTACCESS.txt / Ulitmate bot Ai block list:)
 * Updates: 2500908 My htaccess, Choose, my or Perrishpress! + htaccess/robts.txt updated A Error:( Corrected:) 
 * Updated: 250903  block ai.php AI block.
 * Updates: 250908 - Hugo Ai block.
