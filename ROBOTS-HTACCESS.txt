@@ -74,7 +74,7 @@ Kaggle agent|Kafkai|Kaggle|Kangaroo|Kangaroo Bot|Keyword Density AI|Knowledge|kn
 
 LangChain|LangExtract|langchain-google-genai|Langchain raptor|langchain-perplexity|langchain-openai|Le Chat|
 LeftWingGPT|Lensa|Lightpanda|LinerBot|LINER Bot|LLaMA|Llama 3.2|Llama 4|LLM|LLM Scraper|Local RAG Agent|Llama 3.1 Local RAG|
-Llama3.1-405B-Instruct|	Llama3.1-70B-Instruct|Local Hybrid Search RAG|LiteLLM Proxy|
+Llama3.1-405B-Instruct|	Llama3.1-70B-Instruct|Local Hybrid Search RAG|LiteLLM Proxy
  
 magpie-crawler|Manus|Magistral|MarketMuse|Meltwater|Meta AI|Meta AI Crawler|Meta Llama|MetaAI|Meta-AI|Meta.AI|Meta-AI|MetaGPT|MetaTagBot|Meta-External|Meta-ExternalAgent|Meta-ExternalFetcher|
 meta-externalfetcher|meta-externalfetcher/1.1|MiniMax|Mini AGI|Mistral|MistralAI-User/1.0|meta-webindexer/1.1|Meta-Webindexer 1.1|Meta-Webindexer 1/1|Mixtral 8x22B|
@@ -122,10 +122,6 @@ Can as well come from: myrepublic.com.sg
 ***************************
 #I USE /.htaccess2:
 
-<IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
-RewriteRule "^.*$" - [F,L]</IfModule>
-
 ###* OR:  I USE THIS; also on myhacess folder.
 <IfModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}\bAI\b [NC,OR]
@@ -164,7 +160,12 @@ RewriteCond %{HTTP_USER_AGENT} ^AI [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} GPT\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGPT [NC,OR]
   
-  
+## ALTERNATIVE:
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
+RewriteRule "^.*$" - [F,L]</IfModule>
+ 
 .....................................................................
 ---------------------------------------------------------------------
 .....................................................................
