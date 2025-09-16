@@ -1182,7 +1182,6 @@ gpt-crawler
 GPT Researcher
 GPT /
 GPT-oss /
-GPT4Free
 Grammarly
 Grendizer
 Grok
@@ -1192,7 +1191,6 @@ GT Bot
 GTBot
 GTP
 GTPBOT
-GPT-oss /
 GPT4Free
 Hemingway Editor
 Hugging Face
