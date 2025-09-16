@@ -30,7 +30,23 @@ If you want A Strong anti Ai . Hacker firewall with No thanks AI:  perishablepre
 *  IF YOU WANT A strong firewall, aho also protect againtst scrapers: perishablepress.com8g-firewall with Latest Aibots - not wanted:)
 
 *  GREAT BLOG:  Pivot to AI: https://pivot-to-ai.com/   News about  AI.
-*  
+.....................................................................................
+*  # TRAPS AI:
+
+iocaine (Linux - Caddy)
+https://iocaine.madhouse-project.org/
+
+Nepenthes Quixotic  /very slow!
+URL: https://www.jwz.org/dadadodo/
+URL 2: https://zadzmo.org/code/nepenthes/
+
+Marco Chain:
+URL:h ttps://www.geeksforgeeks.org/machine-learning/markov-chain/
+URL 2: https://github.com/hn1fsLandfill/muscipula
+
+More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mechanisms
+..........................................................................................
+
 # Updates: **
 # Working: ** a new AI LIST, Working on a new List: 250913 - Be patient:): 
 
