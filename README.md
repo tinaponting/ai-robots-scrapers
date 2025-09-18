@@ -50,6 +50,7 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
 # Updates: **
 # Working: ** a new AI LIST, Working on a new List: 250913 - Be patient:): 
 
+* Updates: 250918 HAproxy Block AI. -Updated:)
 * Updates: 250918 HAproxy Block AI. - Updated:)
 * Updates: 250918 Fork of blockaai crawlers.zip - Updated:)
 * Updates: 2500915 My htaccess
