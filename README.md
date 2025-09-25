@@ -50,6 +50,7 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
 # Updates: **
 # Working: ** a new AI LIST, Working on a new List: 250913 - Be patient:): 
 
+* Updated: 250925  block ai.php AI Updated, Lighweight extra protect, place in in core:).
 * Updates: 2509020 - Hugo Ai block - Updated.
 * Updates: 250919 My htaccess -Updated:)
 * Updated: 250818, Forkof-kirby-block-ai-master. . Uodated:)
