@@ -1,0 +1,329 @@
+Magento 2:
+
+3 Steps to create Magento 2 Robots.txt:
+1. Log in to Admin Panel.
+
+2. Navigate to Content > Design > Configuration
+1_Global edit
+3. Expand the Search Engine Robots.
+
+Default Robots: Set to one from the drop-down.
+Edit Custom Instruction of Robots.txt File: Enter any custom details if needed in this field.
+Reset to Default: Use this button to set the Magento 2 Robots.txt file to its default configuration.
+set Meta Robots from Magento admin panel
+Save the Configuration
+The robots exclusion protocol or standard, also known as Robots.txt can be configured in default Magento 2 with the above steps.
+
+Why Should I Set NoIndex NoFollow Tags to Links in Magento 2:
+For example, you are launching a new product in your Magento 2 store. However, your team is still working on it. For time being, you can set that product page to NoIndex to tell the search engine to not index that page.
+
+In this way, you can test the changes in the live store and at the same time restrict the search engine to index it.
+
+Also, the NoFollow tags to links can be useful when you want to offer any additional information that is located on a particular web address but not pass the link equity.
+
+Meta robots tags: NOINDEX, NOFOLLOW
+Now that you have created robots.txt successfully, pay attention to the meta robots tags. Cover the unnecessary parts of the code from crawlers using these tags.
+
+No Index is an attribute of tag, that restricts the transfer of the page weight to a non certified source. Moreover, it can be used for pages with a large number of external links.
+No Follow hides the page from indexation
+Apply Nofollow or Noindex to your configuration by either updating the robots.txt file or using meta name=“robots” tag.
+
+Possible Combinations:
+
+INDEX, FOLLOW: Instructs the web crawlers to index the store and check back later for the changes.
+NOINDEX, FOLLOW: Instructs the web crawlers not to index the store but check back later.
+INDEX, NOFOLLOW: Instructs the web crawlers to index the site once and avoid checking back later.
+NOINDEX, NOFOLLOW: Instructs the web crawlers not to index the site and also not check back later
+Add the following code to the robots.txt file in order to hide specific pages:
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+User-agent: *
+Disallow: /myfile.html
+Alternatively, you can restrict indexation with the following code:
+
+<html >
+<head >
+<meta name=”robots” content=”noindex, follow”/ >
+<title>page title>
+</head >
+The recommended default settings for Magento 2:
+User-agent: *
+
+# Directories
+Disallow: /app/
+Disallow: /bin/
+Disallow: /dev/
+Disallow: /lib/
+Disallow: /phpserver/
+Disallow: /pkginfo/
+Disallow: /report/
+Disallow: /setup/
+Disallow: /update/
+Disallow: /var/
+Disallow: /vendor/
+
+# Paths (clean URLs)
+Disallow: /index.php/
+Disallow: /catalog/product_compare/
+Disallow: /catalog/category/view/
+Disallow: /catalog/product/view/
+Disallow: /catalogsearch/
+Disallow: /checkout/
+Disallow: /control/
+Disallow: /contacts/
+Disallow: /customer/
+Disallow: /customize/
+Disallow: /newsletter/
+Disallow: /review/
+Disallow: /sendfriend/
+Disallow: /wishlist/
+
+# Files
+Disallow: /composer.json
+Disallow: /composer.lock
+Disallow: /CONTRIBUTING.md
+Disallow: /CONTRIBUTOR_LICENSE_AGREEMENT.html
+Disallow: /COPYING.txt
+Disallow: /Gruntfile.js
+Disallow: /LICENSE.txt
+Disallow: /LICENSE_AFL.txt
+Disallow: /nginx.conf.sample
+Disallow: /package.json
+Disallow: /php.ini.sample
+Disallow: /RELEASE_NOTES.txt
+
+# Do not index pages that are sorted or filtered.
+Disallow: /*?*product_list_mode=
+Disallow: /*?*product_list_order=
+Disallow: /*?*product_list_limit=
+Disallow: /*?*product_list_dir=
+
+# Do not index session ID
+Disallow: /*?SID=
+Disallow: /*?
+Disallow: /*.php$
+
+# CVS, SVN directory and dump files
+Disallow: /*.CVS
+Disallow: /*.Zip$
+Disallow: /*.Svn$
+Disallow: /*.Idea$
+Disallow: /*.Sql$
+Disallow: /*.Tgz$
+Check these frequently used Magento 2 robots.txt file examples:
+Allow full access to all directories and pages:
+User-agent:*
+Disallow:
+Don’t allow access for any user-agent to any directory and page:
+User-agent:*
+Disallow: /
+Default Instructions:
+Disallow: /lib/
+Disallow: /*.php$
+Disallow: /pkginfo/
+Disallow: /report/
+Disallow: /var/
+Disallow: /catalog/
+Disallow: /customer/
+Disallow: /sendfriend/
+Disallow: /review/
+Disallow: /*SID=
+Restrict User Accounts and Checkout Pages
+Disallow: /checkout/
+Disallow: /onestepcheckout/
+Disallow: /customer/
+Disallow: /customer/account/
+Disallow: /customer/account/login/
+To disallow duplicate content
+Disallow: /tag/
+Disallow: /review
+To disallow CMS directories
+Disallow: /app/
+Disallow: /bin/
+Disallow: /dev/
+Disallow: /lib/
+Disallow: /phpserver/
+Disallow: /pub/
+To disallow Catalog and Search Pages
+Disallow: /catalogsearch/
+Disallow: /catalog/product_compare/
+Disallow: /catalog/category/view/
+Disallow: /catalog/product/view/
+To disallow URL Filter Searches
+Disallow: /*?dir*
+Disallow: /*?dir=desc
+Disallow: /*?dir=asc
+Disallow: /*?limit=all
+Disallow: /*?mode*
+
+
+Common Web crawlersL:
+Here are some common bots on the internet:
+
+Steps to create Magento 2 Robots.txt:
+1. Log in to Admin Panel.
+
+2. Navigate to Content > Design > Configuration
+
+1_Global edit
+3. Expand the Search Engine Robots.
+
+Default Robots: Set to one from the drop-down.
+Edit Custom Instruction of Robots.txt File: Enter any custom details if needed in this field.
+Reset to Default: Use this button to set the Magento 2 Robots.txt file to its default configuration.
+set Meta Robots from Magento admin panel
+Save the Configuration
+The robots exclusion protocol or standard, also known as Robots.txt can be configured in default Magento 2 with the above steps.
+
+Why Should I Set NoIndex NoFollow Tags to Links in Magento 2:
+For example, you are launching a new product in your Magento 2 store. However, your team is still working on it. For time being, you can set that product page to NoIndex to tell the search engine to not index that page.
+
+In this way, you can test the changes in the live store and at the same time restrict the search engine to index it.
+
+Also, the NoFollow tags to links can be useful when you want to offer any additional information that is located on a particular web address but not pass the link equity.
+
+Meta robots tags: NOINDEX, NOFOLLOW
+Now that you have created robots.txt successfully, pay attention to the meta robots tags. Cover the unnecessary parts of the code from crawlers using these tags.
+
+No Index is an attribute of tag, that restricts the transfer of the page weight to a non certified source. Moreover, it can be used for pages with a large number of external links.
+No Follow hides the page from indexation
+Apply Nofollow or Noindex to your configuration by either updating the robots.txt file or using meta name=“robots” tag.
+
+Possible Combinations:
+
+INDEX, FOLLOW: Instructs the web crawlers to index the store and check back later for the changes.
+NOINDEX, FOLLOW: Instructs the web crawlers not to index the store but check back later.
+INDEX, NOFOLLOW: Instructs the web crawlers to index the site once and avoid checking back later.
+NOINDEX, NOFOLLOW: Instructs the web crawlers not to index the site and also not check back later
+Add the following code to the robots.txt file in order to hide specific pages:
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+User-agent: *
+Disallow: /myfile.html
+Alternatively, you can restrict indexation with the following code:
+
+<html >
+<head >
+<meta name=”robots” content=”noindex, follow”/ >
+<title>page title>
+</head >
+The recommended default settings for Magento 2:
+User-agent: *
+
+# Directories
+Disallow: /app/
+Disallow: /bin/
+Disallow: /dev/
+Disallow: /lib/
+Disallow: /phpserver/
+Disallow: /pkginfo/
+Disallow: /report/
+Disallow: /setup/
+Disallow: /update/
+Disallow: /var/
+Disallow: /vendor/
+
+# Paths (clean URLs)
+Disallow: /index.php/
+Disallow: /catalog/product_compare/
+Disallow: /catalog/category/view/
+Disallow: /catalog/product/view/
+Disallow: /catalogsearch/
+Disallow: /checkout/
+Disallow: /control/
+Disallow: /contacts/
+Disallow: /customer/
+Disallow: /customize/
+Disallow: /newsletter/
+Disallow: /review/
+Disallow: /sendfriend/
+Disallow: /wishlist/
+
+# Files
+Disallow: /composer.json
+Disallow: /composer.lock
+Disallow: /CONTRIBUTING.md
+Disallow: /CONTRIBUTOR_LICENSE_AGREEMENT.html
+Disallow: /COPYING.txt
+Disallow: /Gruntfile.js
+Disallow: /LICENSE.txt
+Disallow: /LICENSE_AFL.txt
+Disallow: /nginx.conf.sample
+Disallow: /package.json
+Disallow: /php.ini.sample
+Disallow: /RELEASE_NOTES.txt
+
+# Do not index pages that are sorted or filtered.
+
+Disallow: /*?*product_list_mode=
+Disallow: /*?*product_list_order=
+Disallow: /*?*product_list_limit=
+Disallow: /*?*product_list_dir=
+
+# Do not index session ID
+Disallow: /*?SID=
+Disallow: /*?
+Disallow: /*.php$
+
+# CVS, SVN directory and dump files
+Disallow: /*.CVS
+Disallow: /*.Zip$
+Disallow: /*.Svn$
+Disallow: /*.Idea$
+Disallow: /*.Sql$
+Disallow: /*.Tgz$
+
+User-agent:*
+Disallow: /
+Default Instructions:
+Disallow: /lib/
+Disallow: /*.php$
+Disallow: /pkginfo/
+Disallow: /report/
+Disallow: /var/
+Disallow: /catalog/
+Disallow: /customer/
+Disallow: /sendfriend/
+Disallow: /review/
+Disallow: /*SID=
+
+Restrict User Accounts and Checkout Pages
+Disallow: /checkout/
+Disallow: /onestepcheckout/
+Disallow: /customer/
+Disallow: /customer/account/
+Disallow: /customer/account/login/
+To disallow duplicate content
+Disallow: /tag/
+Disallow: /review
+
+To disallow CMS directories
+Disallow: /app/
+Disallow: /bin/
+Disallow: /dev/
+Disallow: /lib/
+Disallow: /phpserver/
+Disallow: /pub/
+
+To disallow Catalog and Search Pages
+Disallow: /catalogsearch/
+Disallow: /catalog/product_compare/
+Disallow: /catalog/category/view/
+Disallow: /catalog/product/view/
+
+To disallow URL Filter Searches
+Disallow: /*?dir*
+Disallow: /*?dir=desc
+Disallow: /*?dir=asc
+Disallow: /*?limit=all
+Disallow: /*?mode*
+
+
+Add your Ai LIST here:
+
+
+
+
+#Stolen from: https://meetanshi.com/blog/magento-2-robots-txt-meta-robots/
