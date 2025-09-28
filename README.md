@@ -51,7 +51,8 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
 # Working: ** a new AI LIST, Working on a new List: 2509125 -  fixing a new list, new AI Dectected - Be patient:)
 
 * Nigx file error! - working on it!
-* Updated: 250928 Perrishpresss Ai - Updated.
+* ADDED 250928: Perrishpresshtaccess Perrishpress htaccess.
+* Updated: 250928 Perrishpresss Ai - Updated.  
 * Updated: 250925  block ai.php AI Updated, Lighweight extra protect, place in in core:).
 * Updates: 2509020 - Hugo Ai block - Updated.
 * Updates: 250919 My htaccess -Updated:)
