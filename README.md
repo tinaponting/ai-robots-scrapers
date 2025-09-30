@@ -44,6 +44,11 @@ Marco Chain:
 URL:h ttps://www.geeksforgeeks.org/machine-learning/markov-chain/
 URL 2: https://github.com/hn1fsLandfill/muscipula
 
+haphash .Haproxy trap:https://github.com/dgl/haphash
+Haproxy Protection: https://gitgud.io/fatchan/haproxy-protection/
+Anubis: https://anubis.techaro.lol/
+Go way: https://git.gammaspectra.live/git/go-away
+
 More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mechanisms
 ..........................................................................................
 
