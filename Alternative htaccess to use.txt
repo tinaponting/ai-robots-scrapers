@@ -8,6 +8,7 @@
 <IfModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
 RewriteRule "^.*$" - [F,L]</IfModule>
+
 ### ALT 2:
 
 <IfModule mod_rewrite.c>
@@ -20,6 +21,23 @@ RewriteRule "^.*$" - [F,L]
 <IfModule mod_rewrite.c>
 RewriteCond %{HTTP_USER_AGENT}^.*(BotToBlock1|BotToBlock2|BotToBlock3).*$ [NC] 
 RewriteRule .* – [F,L]</IfModule>
+
+#Another one:
+
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT} ^.*(ChatGPT-User|ClaudeBot|PerplexityBot).*$ [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*(ChatGPT-User|ClaudeBot|PerplexityBot).*$ [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*(ChatGPT-User|ClaudeBot|PerplexityBot).*$ [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*(ChatGPT-User|ClaudeBot|PerplexityBot).*$ [NC]
+RewriteRule .* - [F,L]
+
+#ALTERNATIVE:
+
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT} (AI2Bot(.*)|anthropic-ai(.*)|Bytespider(.*)|ChatGPT-User(.*)|Claude-Web(.*)|ClaudeBot(.*)|DataForSeoBot(.*)) [NC]
+RewriteRule (.*) - [F,L]
+</IfModule>
+
 
 ## ALT 4:
 <IfModule mod_rewrite.c>
@@ -34,10 +52,10 @@ RewriteCond %{HTTP_USER_AGENT} (bot|bot|bot) [NC]
 RewriteRule .* - [R=403,L]</IfModule>
 
 ## IF you want a: 503:
-
+<IfModule mod_rewrite.c>
 RewriteCond %{HTTP_USER_AGENT} ^.*(bot|bot|bot).*$ [NC]
 RewriteCond %{REQUEST_URI} !^/robots\.txt$
-RewriteRule .* - [R=503,L]
+RewriteRule .* - [R=503,L]</IfModule>
 
 ..........................................
 ###### ALT 4: way to block ai bots. Block via Request URL:
@@ -89,11 +107,20 @@ RewriteRule (.*) - [F,L]
 with IP adress  For notorius ai bots, who gets under the radar.
 
 RewriteCond %{HTTP_USER_AGENT} ^$ [OR]
-RewriteCond %{HTTP_USER_AGENT} (bot|crawl|robot)
+RewriteCond %{HTTP_USER_AGENT} (bot|crawl|robot) [NC]
 RewriteCond %{HTTP_USER_AGENT}!(bot|bot|bot|bot|bot|bot) [NC]
 RewriteRule ^/?.*$ "http\:\/\/127\.0\.0\.1" [R,L]
 
 * Change above IP to the Notirous one not wanted ip
+...................................
+# Block via Referrer:
+
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_REFERER} ^http://(.*)exempel\.ai [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://(.*)exempel\.ai [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://(.*)exempel\.ai [NC]
+RewriteRule (.*) - [F,L]
+</IfModule>
 ...................................
 ### Block AI bots on a NGINX*  web server ##
 
@@ -196,6 +223,7 @@ DOSSiteCount 50
 DOSBlockingPeriod 600
 
 # Configure rate limits in /etc/apache2/mods-available/evasive.conf
+
 BASH | sudo systemctl restart apache2
 Enable Rate Limiting on Your Server For Nginx (Using limit_req_zone):
 Nginx configuration (nginx.conf):
@@ -284,7 +312,6 @@ User-agent: Google Bard AI
 User-agent: Google-Extended
 User-agent: GoogleOther
 
-
 .....................................................................
 ---------------------------------------------------------------------
 ## Obstruction via redirect:
@@ -297,4 +324,4 @@ if ($http_user_agent ~* "({{ site.robots.nginx }})") {
 
 ...........................................................................:)
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::)
-Updated: 250828
+Updated: 251006
