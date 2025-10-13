@@ -49,6 +49,8 @@ Haproxy Protection: https://gitgud.io/fatchan/haproxy-protection/
 Anubis: https://anubis.techaro.lol/
 Go way: https://git.gammaspectra.live/git/go-away
 
+PYTHON TRAP:  https://maurycyz.com/projects/trap_bots/
+
 More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mechanisms
 ..........................................................................................
 
