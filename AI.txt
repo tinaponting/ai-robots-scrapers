@@ -217,6 +217,9 @@ URL: https://huggingface.co/AI-Sweden-Models/gpt-sw3-20b-instruct
 User-agent: GPT-Sw3
 Disallow: /
 
+Klang
+URL: https://klang.ai/sv/
+
 .....................................................................
 ---------------------------------------------------------------------
 # Accona business (Business USA):  Active?
@@ -259,6 +262,19 @@ qwen3
 Qwen3-VL
 Qwen Chat
 URL: https://qwen3.org/
+
+#OTHERS:
+Meituan-agent
+AiCheng Agent
+
+PAI-DataSurfer Agent  
+//Alibaba Cloud Computing Platform
+
+ReFoRCE + o3 
+ReFoRCE + o1-preview 
+//Hao AI Lab x Snowflake
+
+Spider-Agent + Qwen3-Coder	31.08
 
 .....................................................................
 ---------------------------------------------------------------------
@@ -314,6 +330,9 @@ Google PaLM2
 https://ai.google/discover/palm2
 https://cloud.google.com/blog/products/ai-machine-learning/generative-ai-applications-with-vertex-ai-palm-2-models-and-langchain 
 
+GeminiBot	
+Google-Extended	Google Gemini LLM training
+URL: https://ai.google.dev/competition/projects/gemini-bot-bd
 
 User-agent: Gemini  
 User-agent: Google Gemini
@@ -971,7 +990,11 @@ Disallow: /
 
 User-agent: DialogFlow
 Disallow: /
-
+.....................................................................
+---------------------------------------------------------------------
+SenseTime  /CHINA
+Sensechat
+URL: https://www.sensetime.com/en
 .....................................................................
 ---------------------------------------------------------------------
 ## AI SCRAPERS - AI And AI datascrapers: 
@@ -1271,6 +1294,11 @@ URL: https://www.sbintuitions.co.jp/en/bot/
 ASK:
 User-agent: Ask AI
 Disallow: /
+
+Perplexity AI App
+URL: https://github.com/inulute/perplexity-ai-app/releases
+Perplexity AI Chat
+Perplexity-ai
 
 .....................................................................
 ---------------------------------------------------------------------
@@ -1982,7 +2010,6 @@ URL3: https://www.sengine.info/
 URL:3: https://www.website-datenbank.de/
 
 .............................
-
 ### Not blocking! Se Darkvisitors adwise: ###
 GoogleAgent-Mariner
 https://darkvisitors.com/agents/googleagent-mariner#what-is-googleagent-mariner
@@ -2000,7 +2027,7 @@ Notes; AI AI Framework, need gtp or mIstral or gemini to work = No threat yet!
 
 .............................
 ##PAIN in in the Ass:  #
-### DELATED: 
+### Still in use: On th e list again!
 AwarioRssBot
 AwarioSmartBot
 AwarioBot 1.0
@@ -2264,7 +2291,6 @@ https://spider.cloud/
 URL": https://github.com/spider-rs/spider
 Useragent: Spider/2.0; +https://spider.cloud
 
-
 ##Tencent Hunyuan AI:##		
 DeepSeekV2.5-Chat
 Zhuque AI Detector
@@ -2274,6 +2300,93 @@ Llama3.1-70B-Instruct
 Hunyuan-Large-Instruct	
 Hunyuan-7B-Instruct	7B	
 
+# List of Chatbots, LLMs and other AI Models:
+Alpaca.cpp
+ChatALL
+Cursor.sh
+Caffe
+Fastai
+LocalAI
+Linux AI assistant
+MetaGPT
+Mistral.ai
+Mycroft AI
+Ollama.ai
+OpenRouter
+PrivateGPT
+PyTorch
+Azure OpenAI
+Cerebras
+Cohere (v1 and v2)
+Fireworks
+Google Gemini (native and OpenAI compatible)
+Moonshot / Kimi
+Ollama (on localhost)
+OpenAI
+OpenRouter
+Sambanova
+::::::::::::::::::::::::::::::::::::::
+
+Shell GPT
+URL: https://github.com/TheR1D/shell_gpt
+
+LLM Scraping:
+Scrapegraph-ai
+URL: https://scrapegraph-doc.onrender.com/
+
+DIV:
+Alpaca
+Ernie 
+GPT OSS
+GPT4ALL
+GPT-5 Thinking mini
+GPT-5o 
+DeepSeekBot
+DeepSeek V3
+OpenLens AI
+Kingsoft-LLM 
+Meta Agent
+Celia	
+Chat2DB-Agent
+Claude-4-Sonnet
+Grok 4 Fast
+Spider-Agent
+Magnus
+
+Jamba 1.5 Large
+Jamba 1.5 Mini
+URL: https://aws.amazon.com/bedrock/ai21/
+
+Kingsoft-LLM 
+Kingsoft AI
+
+Jina AI:
+URL: https://jina.ai/models/
+ReaderLM-v2
+
+Ask Data with Relational 
+Knowledge Graph
+
+GPTBot/1,2
+ClaudeBot/1.0
+? Google-CloudVertexBot
+Kangaroo-Bot
+
+https://www.adcreative.ai/
+
+Sudowrite
+https://sudowrite.com/
+
+::::::::::::::::::::::::::::::::::::::
+
+Crawl4AI
+URL: https://docs.crawl4ai.com/
+
+AgentFlow:
+🌐 Website: https://agentflow.stanford.edu/
+📚 Documentation: https://huggingface.co/papers/2510.05592
+💻 GitHub: https://github.com/lupantech/AgentFlow
+
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................................
-# Updated: 250914
+# Updated: 251013
