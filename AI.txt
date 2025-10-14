@@ -2387,6 +2387,35 @@ AgentFlow:
 📚 Documentation: https://huggingface.co/papers/2510.05592
 💻 GitHub: https://github.com/lupantech/AgentFlow
 
+::::::::::::::::::::::::::::::::::::::
+##250918 Notes:
+
+Lagt in på: Extended Fork of blockai bots:
+perplexity.ai
+"perplexity.ai",
+"PerplexityBot/1.0",	
+"perplexity-*-*-*-*",
+".perplexity.ai",
+
+allenai\.org 
+cohere\.ai 
+mistral\.ai 
+openai\.com/bot 
+omgili\.com 
+perplexity\.ai 
+spider\.cloud 
+
+### Very hard to get rid of, if it on Amazon ,this works:
+DENY:
+ClaudeBot 1/O
+compatible; "ClaudeBot/1.0; +claudebot\@anthropic.com
+/ClaudeBot[\s\/]?[\d\.]*?/i
+/^ClaudeBot/1\.0; \+https\://www\.anthropic\.com$/
+
+##And they try with this:
+
+^test-bot$
+
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................................
-# Updated: 251013
+# Updated: 251014
