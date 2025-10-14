@@ -20,95 +20,91 @@ User-agent: GoogleOther
 ## Big list, also see: Perishpress List ###
 ## ULTIMATE LIST RAW:
 
-.ai|-ai|_ai|ai.|ai-|ai_|ai=|.*?-ai$|ai=n
+RewriteCond%{HTTP_USER_AGENT}AI\b [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}\bAI [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^AI [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}GPT\b [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}\bGPT [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}/ClaudeBot[\s\/]?[\d\.]*?/i [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^Spawning-AI$ [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(.ai|-ai|_ai|ai.|ai-|ai_|ai=|.*?-ai$|ai=n)[NC,OR
 
-AddSearchBot|AcademicBotRTU|Agent Middleware|Agentic|Agent 3|Agentic Deep Research|
-Agentic RAG|Agentic-RAG|Agentic RAG with LangGraph|AgentQL|AI Agent|AI agents /|AgentGPT|Agent API|
-AI Legion|Agent|Middleware|AI Article Writer|AI Chat|AI Chatbot|AI Content Detector|AI copilot|
-AI Detection|AI Dungeon|AI Journalist|AI Journalist Agent|AI Search|AI Search Engine|AI Search Intent|AI SEO Crawler|
-AI Web|AI Writer|AI2|AI2 BotAI2Bot|AI21 Labs|AIBot|aiHitBot|AIMatrix|AISearchBot|AITraining|AITraining /|AI-Crawler|
-ai-crawlers-training|AI Web Scraper|AI Scraper|AI Website Screenshot|ai-proxy|Alexa|AlexaTM|Alice Yandex|
-AliGenie|Alpha AI|AlphaAI|Amazon|Amazon Athena|Amazon Bedrock|AliyunSecBot|
-Amazon Comprehend|Amazon Lex|Amazon SageMaker|Amazon Silk|Amazon Textract|amazonBot|Amazonbot|amazon-kendra|AWS bedrock|AWS Trainium|
-Bedrock Claude|bedrock-chat|bedrock-chatbot|bedrock-claude-chatbot|Amelia|AndiBot|Anonymous AI|anonymous AI chatbot|
-Anthropic|anthropic-ai|AnyPicker|AnythingLLM|Anyword|Apple|Applebot-Extended|Apple-GenAI|Applebot/0.1|Aria AI|Aria Browse|Aria browse Aria AI|
-Aria browser AI|Articoolo|Ask AI|AutoGLM|AutoGPT|Auto-GPT|AutoGen|Automated Writer|AutoML|Autonomous RAG|
-AwarioRssBot|AwarioSmartBot|Azure|Azure AI Search
+.ai|-ai|_ai|ai.|ai-|ai_|ai=|.*?-ai$|ai=n|
 
-BabyAGI|BabyCatAGI|Basic RAG|Basic RAG Chain|BardBot|Brave Leo|Brave Leo AI|bigsur.ai|Big Sur AI|Big Sur AI Crawler|
-BraveGPT|Brightbot|Brightbot 1.0|Brightbot operator|ByteDance|byteDance|ByteDance crawler|Bytespider|Browser MCP Agent|Browser Use|Bedrock
+AcademicBotRTU|AddSearchBot|Agent 3|Agent API|Agent GPT|Agent Middleware|AgentGPT|Agentic|Agentic Deep Research|Agentic RAG|Agentic RAG with LangGraph|Agentic-RAG|
+AgentQL|AI Agent|AI agents /|AI Article Writer|AI Chat|AI Chatbot|AI Content Detector|AI copilot|AI Detection|AI Dungeon|AI Journalist|AI Journalist Agent|
+AI Legion|AI RAG|AI Scraper|AI Search|AI Search Engine|AI Search Intent|AI SEO Crawler|AI Training|AI Web|AI Web Scraper|AI Website Screenshot|AI Writer|AI2|AI2 Bot|
+AI2Bot|AI21 Labs|AIBot|aiHitBot|AIMatrix|AISearch|AISearchBot|AITraining|AITraining /|AI-Crawler|ai-crawlers-training|ai-proxy|Alexa|AlexaTM|Alice Yandex|AliGenie|AliyunSec|
+AliyunSecBot|Alpha AI|AlphaAI|Amazon|Amazon Athena|Amazon Bedrock|Amazon Comprehend|Amazon Lex|Amazon SageMaker|Amazon Silk|Amazon Textract|Amazonbot|amazonBot|amazon-kendra|
+Amelia|AndiBot|Anonymous AI|anonymous AI chatbot|Anthropic|anthropic-ai|AnyPicker|AnythingLLM|Anyword|Applebot-Extended|Apple-GenAI|Aria AI|Aria Browse|Aria browse Aria AI|
+Aria browser AI|Articoolo|Ask AI|AutoGen|AutoGLM|AutoGPT|Automated Writer|AutoML|Autonomous RAG|Auto-GPT|AwarioRssBot|AwarioSmartBot|AWS bedrock|AWS Trainium|Azure|Azure AI Search|Azure OpenAI|
 
-CarynAI|CatBoost|CCBot|ccbot|CCBot/2.0|CC-Crawler|CC-Crawler/2.0|Ceramic TerraCotta Crawler|Chai|Ceramic TerraCotta Crawler|Charstar AI|
-Chatbot|chatbot|ChatGLM|ChatGPT|ChatGPT 4o|ChatGPT 4o-mini|
-ChatGPT 4.1|ChatGPT 4.5|ChatGPT o1|ChatGPT o3-mini|ChatGPT Operator|ChatGPT search|ChatAnthropic|ChatGPT-User|ChatGPT-User/1.0|ChatGPT-User/2.0|ChatGPT Agent|
-ChatLLM|ChatOpenAI|ChatUser|chatUser /|Chinchilla|Claude|laude.ai|Claude 3.5|Claude 3.5 Haiku|Claude 3.5 Sonnet|Claude 3.7 Sonnet|Claude 4|
-Claude Opus|Claude Opus 4|Claude Sonnet 4|Claude Opus 4.1|ClaudeBot|ClaudeBot/1.0|Claude-RAG|Claude-SearchBot|Claude-User|Claude-Web|claude-web/1.0|Claude LLM|ClearScope|
-Cognitive AI|Cognitive AI engine|Cohere|cohere-ai|cohere-ai/1.0|cohere-training-data-crawler|Common Crawl|CommonCrawl|Content Harmony|
-Content King|Content Optimizer|Content Samurai|Content Scraper GPT|ContentAtScale|ContentBot|Contentedge|ContentShake|Conversion AI|
-Copilot|CopilotBot|CopyAI|Copymatic|Copyscape|CoreWeave|Corrective RAG|Cohere RAG|Cotoyogi|CRAB|CrawlGPT|CrawlQ AI|Crawlspace|Crew AI|CrewAI|cURL|cURL /|Crushon AI
+BabyAGI|BabyCatAGI|BardBot|Basic RAG|Basic RAG Chain|Bedrock|Bedrock Claude|bedrock-chat|bedrock-chatbot|bedrock-claude-chatbot|Big Sur|Big Sur AI|Big Sur AI Crawler|Bigsur|
+bigsur.ai|Botsonic|Brave Leo AI|BraveGPT|Brightbot|Brightbot 1.0|Brightbot operator|Browser MCP Agent|Browser Use|Bytebot|ByteDance|byteDance|ByteDance crawler|Bytespider|
 
-DALL-E|DALL-E 2|DALL·E 3|Dall-E 4|DALL-E Mini|DarkBard|DataForAI|DataForSeoBot|DataProvider|dataprovider|Datenbank Crawler|DeepAI|DeepL|DeepMind|DeepSeek|
-DeepSeek R1 Y|DeepSeek V3|DeepSeek-R1|DepolarizingGPT|Deep Research|DialoGPT|Devin|Diffbot|
-Doubao AI|DuckAssistBot|DuckDuckGo Chat|DuckDuckGo-Enhanced|Duck.ai|
-DeepSeekV2.5-Chat|DigitalOceanGenAICrawler
+CarynAI|CatBoost|CCBot|ccbot|CCBot/2.0|CC-Crawler|CC-Crawler/2.0|Celia|Ceramic TerraCotta Crawler|Chai|
+Character|Charstar AI|Chat2DB-Agent|ChatAnthropic|Chatbot|chatbot|ChatGLM|ChatGLM-Spider|hatGPT|ChatGPT 4o|ChatGPT 4o-mini|ChatGPT 4.1|ChatGPT 4.5|ChatGPT 5|ChatGPT Agent|ChatGPT o1|
+ChatGPT o3-mini|ChatGPT Operator|ChatGPT search|ChatGPT-User|ChatGPT-User/1.0|ChatGPT-User/2.0|ChatGPT 3.0|ChatLLM|ChatOpenAI|Chatsonic|ChatUser|chatUser /|Chinchilla|Claude|Claude Agent|Claude 3.5|
+Claude 3.5 Haiku|Claude 3.5 Sonnet|Claude 3.7 Sonnet|Claude 4|Claude LLM|Claude Opus|Claude Opus 4|Claude Opus 4.1|Claude Sonnet 4|Claude Sonnet 4.5|ClaudeBot|ClaudeBot/1.0|
+Claude-RAG|Claude-SearchBot|Claude-User|Claude-Web|claude-web/1.0|claude.ai|ClearScope|Clearview|Cognitive AI|Cognitive AI engine|Cohere|Cohere RAG|cohere-ai|cohere-ai/1.0|
+cohere-training-data-crawler|Common Crawl|CommonCrawl|Content Harmony|Content King|Content Optimizer|Content Samurai|Content Scraper GPT|ContentAtScale|ContentBot|Contentedge|ContentShake|
+Conversion AI|Copilot|CopilotBot|CopyA|ICopymatic|Copyscape|CoreWeave|Corrective RAG|Cotoyogi|CRAB|Crawl4AI|CrawlGPT|CrawlQ AI|Crawlspace|Crew AI|CrewAI|Crushon AI|cURL|cURL /|
+	
+DALL-E|DALL-E 2|Dall-E 4|DALL-E Mini|DALL·E 3|DarkBard|DataFor|DataForAI|DataForSeoBot|DataProvider|
+dataprovider|Datenbank Crawler|Deep AI|Deep Research|DeepAI|DeepL|DeepMind|Deepseek Agent|DeepResearch|DeepSeek|DeepSeek R1 Y|DeepSeek V3|DeepSeekBot|DeepSeekV2.5-Chat|
+DeepSeek-LLM|DeepSeek-R1|DepolarizingGPT|Devin|DialoGPT|Diffbot|DigitalOceanGenAICrawler|Doubao AI|DuckAssistBot|DuckDuckGo Chat|DuckDuckGo-Enhanced|Duck.ai|
 
-Echobox|Elixir|Extended GPT Scraper
+Echobot|Echobox|Elixir|Extended GPT Scraper|
+FacebookBot|FacebookBot/1.0|FacebookExternalHit|facebookexternalhit/1.1|Factset|Factset_spyderbot|Falcon|Fastai|FastGPT|Firebase|Firecrawl|FirecrawlAgent|Fireworks|FIRE-1|FIRE-1 Agent|Flux|Flyriver|flyriverbot/1.1|Frase AI|FraudGPT|FriendlyCrawler|
 
-FacebookBot|FacebookBot/1.0|FacebookExternalHit|facebookexternalhit/1.1|Factset|Factset_spyderbot
-Falcon|FastGPT|Firecrawl|FirecrawlAgent|FIRE-1|FIRE-1 Agent|Flux|Flyriver|flyriverbot/1.1|Frase AI|FraudGPT|FriendlyCrawler|Firebase
+AI Ghostwriter|Gato|Gemini|Gemini Agentic RAG|Gemini-Deep-Research|Gemini-User|Gemma|Gemma 3|Gen AI|GenAI|GenAI Chat|GenAI RAG|Generative|Genspark|gentoo-chat|gen-ai|Ghostwriter|GigaChat|GLM|
+Go|GodMode|Google Gemini|GoogleAgent-Mariner|Google-CloudVertexBot|Google-Extended|Goose|GPT|GPT 4 Omni|GPT 4 Omni Mini|GPT Chat 3|GPT OSS|GPT Researcher|GPT Scraper|GPT /|GPT4ALL|
+GPT4Free|GPTBot|GPTBot /|GPTBot/1,2|GPTBot/1.2|GPTZero|GPT-1|GPT-2|GPT-3|GPT-3.5|GPT-3.5 turbo|GPT-4|GPT-4o|GPT-4o Image|GPT-4o mini|GPT-4V|GPT-4,5|gpt-4-turbo|GPT-4.1|GPT-4.1-mini|
+GPT-4.1-nano|GPT-5|GPT-5 Chat|GPT-5 Mini|GPT-5 Nano|GPT-5 Thinking mini|GPT-5o|gpt-crawler|GPT-oss /|Grammarly|Grendizer|Grok|GrokBot|Grok 4 Fast|Grok AI chatbot|GrokAI|GT Bot|GTBot|GTPBOT|
 
-AI Ghostwriter|Gato|Gemini|Gemini Agentic RAG|Gemma|Gemma 3|Gen AI|GenAI|GenAI Chat|Genspark|Go|
-gentoo-chat|GenAI RAG|gen-ai|Ghostwriter|GigaChat|GLM|Google Gemini|Gemini-Deep-Research|Gemini-User|Google-CloudVertexBot|Google-Extended|GoogleAgent-Mariner|
-Goose|GPT|GPT 4 Omni|GPT 4 Omni Mini|GPT Scraper|GPTBot|GPTBot /|GPTBot/1.2|GPTZero|GPT-1|GPT-2|GPT-3|GPT-3.5|GPT-3.5 turbo|
-GPT-4|GPT-4o|GPT-4o Image|GPT-4o mini|GPT-4V|GPT-4,5|gpt-4-turbo|GPT-4.1|GPT-4.1-mini|GPT-4.1-nano|GPT-5|GPT-5 Mini|GPT-5 Nano|GPT-5 Chat|
-gpt-crawler|GPT /|GPT-oss /|GPT4Free|GPT Researcher|Grammarly|Grendizer|Grok|Grok AI chatbot|GrokAI|GT Bot|GTBot|GTP|GTPBOT
-
-Hemingway Editor|Hugging Face|Hypotenuse AI|Hybrid Search RAG|hybrid LLM|Hunyuan-Large-Instruct|Hunyuan-7B-Instruct	7B	
-
-iAskBot|iaskspider|iaskspider/2.0|ICC-Crawler|ImageGen|ImageGen /|ImagesiftBot|
-img2dataset|imgproxy|ImageGPT|Inferkit|INK Editor|INKforall|IntelliSeek|IntelliSeek.ai|Instructor|instructor-php|ISSCyberRiskCrawler
-
-JasperAI|Janitor AI|Jenni AI|Julius AI
-
-Kaggle agent|Kafkai|Kaggle|Kangaroo|Kangaroo Bot|Keyword Density AI|Knowledge|knowledge-base|knowledge /|KomoBot|Kimi K2|Kimi-2|Kimi-k1.5|Kimi-VL
-
-LangChain|LangExtract|langchain-google-genai|Langchain raptor|langchain-perplexity|langchain-openai|Le Chat|
-LeftWingGPT|Lensa|Lightpanda|LinerBot|LINER Bot|LLaMA|Llama 3.2|Llama 4|LLM|LLM Scraper|Local RAG Agent|Llama 3.1 Local RAG|
-Llama3.1-405B-Instruct|	Llama3.1-70B-Instruct|Local Hybrid Search RAG|LiteLLM Proxy
+Hemingway Editor|Hetzner|Hugging|Hugging Face|HuggingChat|Hunyuan|Hunyuan-7B-Instruct 7B|Hunyuan-Large-Instruct|hybrid LLM|Hybrid Search RAG|Hypotenuse AI|
  
-magpie-crawler|Manus|Magistral|MarketMuse|Meltwater|Meta AI|Meta AI Crawler|Meta Llama|MetaAI|Meta-AI|Meta.AI|Meta-AI|MetaGPT|MetaTagBot|Meta-External|Meta-ExternalAgent|Meta-ExternalFetcher|
-meta-externalfetcher|meta-externalfetcher/1.1|MiniMax|Mini AGI|Mistral|MistralAI-User/1.0|meta-webindexer/1.1|Meta-Webindexer 1.1|Meta-Webindexer 1/1|Mixtral 8x22B|
-Mixtral-8x22B-Instruct|midjourney|Monica|model-training
+iAskBot|iaskspider|iaskspider/2.0|ICC-Crawler|ImageGen|ImageGen /|ImageGPT|ImagesiftBot|img2dataset|imgproxy|Inferkit|INK Editor|INKforall|Instructor|instructor-php|IntelliSeek|IntelliSeek.ai|ISSCyberRiskCrawler|
 
-Narrative|NeevaBot|Neural Text|NeuralSEO|netEstate Imprint Crawler|Nicecrawler|NinjaAIBot/1.0|NinjaAI|Nova Act|NovaAct|NodeZero|Node.js|n8n-nodes-aiscraper
+Jamba 1.5 Large|Jamba 1.5 Mini|Janitor AI|JasperAI|Jenni AI|Julius AI|
 
-OAI SearchBot|OAI-SearchBot|OAI-SearchBot/1.0compatible; OAI-SearchBot/1.0|Omgili|Omgilibot|OASIS|Open AI|OpenAI|OpenAI Crawler|OpenAI CUA|OpenAI o1|OpenAI o3|OpenAI o4|
-OpenAI o1-mini|OpenAI o3-mini|OpenAI o4-mini|OpenAI Operator|OpenAIContentCrawler|Open Deep Research|Open Perflexity|
-Openbot|OpenText AI|Operator|OpenAI GPTBot|OpenAI Image Downloader|openpi|OpenAGI|Open Interpreter|Open Lovable|Outwrite|Olivia|Ola
+Kafkai|Kaggle|Kaggle agent|Kangaroo|Kangaroo Bot|Kangaroo-Bot|Keyword Density AI|Kimi|Kimi K2|Kimi-2|Kimi-VL|Kingsoft-LLM|Knowledge|Knowledge Graph|knowledge /|knowledge-base|KomoBot|Kruti|
 
-Page Analyzer AI|PanguBot|Panscient|panscient.com|PaperLiBot|Paraphraser.io|peer39_crawler|peer39_crawler/1.0|Perplexity|PerplexityBot|
-PerplexityBot/1.0|PerplexityUser|Perplexity-User|Perplexity-User/1.0|Perplexit-User|Perplexity Deep Research|PerfectChatGPT|
-Open Perflexity|petalBot|PetalBot|Phind|PhindBot|PiplBot|ProWritingAid|proximic|Puppeteer|Poe|PoeBot|PoeSearchBot|python Ai
+LangChain|Langchain raptor|langchain-google-genai|langchain-openai|langchain-perplexity|LangExtract|Le Chat|LeftWingGPT|Lensa|Lightpanda|LINER Bot|LinerBot|LiteLLM|LiteLLM Proxy|LLM Proxy|
+LiteLLM Python|LLaMA|Llama 3.1| Local RAG|Llama 3.2|Llama 4|Llama3.1-70B-Instruct|Llama3.1-405B-Instruct|LLM|LLM Scraper|Local Hybrid Search RAG|Local RAG Agent|Local RAG|LocalAI|Lovable|
+
+Magistral|Magnus|magpie-crawler|Manus|MarketMuse|Meltwater|Meta Agent|Meta AI|Meta AI Crawler|Meta Llama|MetaAI|MetaGPT|MetaTagBot|Meta-AI|Meta-External|
+Meta-ExternalAgent|meta-externalagent|meta-externalagent/1.1|Meta-ExternalFetcher|meta-externalfetcher/1.1|Meta-Webindexer|Meta-Webindexer 1/1|meta-webindexer/1.1|Meta.AI|
+Middleware|midjourney|Mini AGI|MiniMax|Mintlify|Mistral|MistralAI-User/1.0|MistralAI-User|Mistral.ai|Mixtral 8x22B|Mixtral-8x22B-Instruct|MobileLLM-R1|model-training|Monica|Moonshot|Mycroft AI|
+
+n8n-nodes-aiscrapeNarrative|NeevaBot|netEstate|netEstate Imprint Crawler|Neural Text|NeuralSEO|Nicecrawler|NinjaAI|NinjaAIBot/1.0|NodeZero|Node.js|Nova Act|NovaAct|
+
+OAI SearchBot|OAI-SearchBot|OAI-SearchBot/1.0|OASIS|Ola|Olivia|Ollama|oLLM|Omgili|Omgilibot|Open AI|
+Open Deep Research|Open Interpreter|Open Lovable|Open Perflexity|OpenAGI|OpenAI|OpenAI CrawlerOpenAI CUA|OpenAI GPTBot|OpenAI Image Downloader|OpenAI o1|OpenAI o1-mini|
+OpenAI o3|OpenAI o3-mini|OpenAI o4|OpenAI o4-mini|OpenAI Operator|OpenAIContentCrawler|Openbot|OpenLens AI|openpi|OpenRouter|openrouter|OpenText AI|Operator|Outwrite|OWL|
+
+Page Analyzer AI|PanguBot|Panscient|panscient.com|PaperLiBot|Paraphraser.io|peer39_crawler|peer39_crawler/1.0|PerfectChatGPTPerplexity|Perplexity AI|
+Perplexity Deep Research|Perplexity Search|PerplexityBot|PerplexityBot/1.0|PerplexityUser|Perplexity-User|Perplexity-User/1.0|Perplexit-User|Open Perflexity|
+Petal|PetalBot|petalBot|Phind|PhindBot|PiplBot|Poe|PoeBot|PoeSearchBot|PrivateGPT|ProWritingAid|proximic|Puppeteer|python Ai|PyTorch Lightning|PyTorch Lightning LLM|
 
 Qualified|QualifiedBot|QuillBotquillbot.com|Quark|Qwen|qwen /|Qwen Chat|Qwen-Chat|Qwen2|Qwen3|Qwen 4|qwen:4b|Qwen 4 LLM|QwenLM|Qwen2.5 72B|Qwen 2.5‑VL||Qwen-Agent|Qopywriter.ai|
 
-RAG|RAG Agent|RAG Agent Cohere|RAG Azure AI|RAG Chatbot|RAG ChatGPT|RAG LLM|RAG pipeline|RAG Database Routing|RAG-as-a-Service|RAG_VertexAI|RAG_with_search|
-Redis AI RAG|RAG IS|RAG Search|RAG with|Raptor|ReAct AI Agent|React Agent|RAPTOR LLM|RightWingGPT|RobotSpider|Rytr
+AI RAG|RAG|RAG-|RAG_|RAG AgentRAG Agent CohereRAG Azure AI|RAG Chatbot|RAG ChatGPT|RAG Database|RAG Database Routing|RAG IS|
+RAG LLM|RAG Pipeline|RAG Search|RAG with|RAG-as-a-Service|RAG_VertexAI|RAG_with_search|Raptor|RAPTOR LLM|React Agent|ReAct AI Agent|Redis AI RAG|RightWingGPT|RobotSpider|Rytr|
 
-SaplingAI|Scala|Scalenut|ScrapeGraph|ScrapeGraphAI|Scrapegraph-ai|Scraper|ScraperGPT|Scrapy|Scrapy 2.12.0|Scrapy 2.13.1|Scrapy/2.0|
-ScriptBook|Search GPT|SearchGPT|Seekr|SemrushBot|SemrushBot-FT|SemrushBot-OCOB|SemrushBot-SWA|ShapBot|Sentibot|SEO Content Machine|
-SEO Robot|SEObot|ShadowGPT|Sidetrade|Sidetrade /|Simplified AI|Sitefinity|skrape.ai|Skydancer|SlickWrite|SmartBot|SmartScrape|
-Sonic|Sora|Spin Rewrite|Spinbot|Stability AI|StableDiffusionBot|Sudowrite|SummalyBot|Super Agent|Superagent|superagi|Surfer AI|SmartScraperGraph|spawning-ai|Spider/2.0; +https://spider.cloud
+Sambanova|SaplingAI|SBIntuitionsBot|Scala|Scalenut|Scrap|ScrapeGraph|ScrapeGraphAI|Scrapegraph-aiScraper|ScraperGPT|Scrapy|Scrapy 2.12.0|Scrapy 2.13.1|
+Scrapy/2.0|ScriptBook|Search GPT|Search RAG|SearchGPT|Seekr|SemrushBot|SemrushBot-FT|SemrushBot-OCOB|SemrushBot-SWA|Sentibot|SEO Content Machine|SEO Robot|SEObot|ShadowGPT|ShapBot|
+Shell GPT|Sidetrade|Sidetrade /|Simplified AI|Sitefinity|skrape.ai|Skydancer|SlickWrite|SmartBot|SmartScrape|SmartScraperGraph|Sonic|Sora|Spawning-ai|SpiderCreator|Spider-Agent|
+Spider/2|Spider/2.0; +https://spider.cloud|Spin Rewrite|Spinbot|Stability|Stability AI|StableDiffusionBot|Sudowrite|SummalyBot|Super Agent|Superagent|superagi|Surfer AI|SUSE AI|
 
-Text Blaze|TextCortex|KnowledgeThe Knowledge AI|thehive.a1|Thinkbot|Thinkbot/0.5.8|TikTokSpider|Timpibot|Traefik|TerraCotta|TorChat|Thordata|Together AI|TurnitinBot
+Text Blaze|Text-RAG|TextCortex|Knowledge|The Knowledge AI|thehive.a1|Thinkbot| Thinkbot/0.5.8|TikTokSpider|Timpibot|Traefik|TerraCotta|TorChat|Thordata|Together AI|TurnitinBot|uAgents|TurnitinBot|
 
-VelenPublicWebCrawler|Venus Chub AI|Vidnami AI|Vision RAG|
-WebChatGPT|WebCrawler-AI|Webscrape AI|Webscrape|webscraping-ai-ruby|webscraping-ai-php|webscraping-ai-python|WebText||WebText /|Webzio|
-Webzio-Extended|WeChat|Whisper|WordAI|Wordtune|WormGPT|WormGPT V3.0|WPBot|wpbot|WPBot/1.1|WPBot/1.2|AI – WPBot|Writecream|WriterZen|Writescope|Writesonic|WRTNBot|WRTNBot/1.0 
+AI – WPBot|VelenPublicWebCrawler|Venus Chub AI|Vidnami AI|Vision RAG|vnCallbot|vnFace|VNPT SmartBot|VNPT SmartReader|
+Web 3.0 Navigator|WebChatGPT|WebCrawler-AI|WebExplorer-8B|Webscrape|Webscrape AI|webscraping-ai-php|webscraping-ai-python|webscraping-ai-ruby|WebSurfer|WebText|WebText /|
+Webzio|Webzio-Extended|WeChat|Whisper|WizardLM|WordAI|Wordtune|WormGPT|WormGPT V3.0|WPBot|wpbot|WPBot/1.1|WPBot/1.2|Writecream|WriterZen|Writescope|Writesonic|WRTNBot|WRTNBot/1.0|
 
 xAI|xBot|x.AI|YaML|YandexGPT|YandexLLM|
-YandexAdditional|YandexAdditionalBot|yarchatgpt|YarGPT|YouBot|YourGPT|
-Zero /|Zero|Zero GTP|ZeroCHAT|Zerochat|ZeroGPT|ZeroSearch|Zhuque AI|Zhuque AI Detector|Zhipu|XXXGPT|Zimm
+YandexAdditional|YandexAdditionalBot|yarchatgpt|YarGPT|YouBot|YourGPT|Zero /|Zero|Zero GTP|ZeroCHAT|Zerochat|ZeroGPT|ZeroSearch|Zhuque AI|Zhuque AI Detector|Zhipu|XXXGPT|Zimm|
 	
 .......................................
 ## NOT WANTED;
@@ -116,20 +112,15 @@ Zero /|Zero|Zero GTP|ZeroCHAT|Zerochat|ZeroGPT|ZeroSearch|Zhuque AI|Zhuque AI De
 compatible; OAI-SearchBot/1.0| 
  
 Complete User agent: 	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36; compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot
+
 * very hard to gete rid of!  - if you do not want it - Delate it!
-Can as well come from: myrepublic.com.sg
+## Can as well come from: myrepublic.com.sg
 
 ***************************
 #I USE /.htaccess2:
 
 ###* OR:  I USE THIS; also on myhacess folder.
 <IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}\bAI\b [NC,OR]
-RewriteCond%{HTTP_USER_AGENT}AI\b [OR]
-RewriteCond%{HTTP_USER_AGENT}\bAI [OR]
-RewriteCond%{HTTP_USER_AGENT}^AI [NC,OR]
-RewriteCond%{HTTP_USER_AGENT}GPT\b [NC,OR]
-RewriteCond%{HTTP_USER_AGENT}\bGPT [NC,OR]
 RewriteCond%{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent)[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent)[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent)[NC,OR]
@@ -142,7 +133,6 @@ RewriteCond%{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent)[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent)[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent)[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent)[NC,OR] 
-
 RewriteCond%{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent)[NC]
 RewriteRule (.*) - [F,L]
 </IfModule>
@@ -153,19 +143,29 @@ RewriteRule !^/?robots\.txt$ - [F,L]
 #* NOTE: Last must be: [NC]
 
 ### ORGINAL:
-RewriteCond %{HTTP_USER_AGENT} \bAI\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} AI\b [OR]
-RewriteCond %{HTTP_USER_AGENT} \bAI [OR]
-RewriteCond %{HTTP_USER_AGENT} ^AI [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} GPT\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \bGPT [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}\bAI\b [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}AI\b [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}\bAI [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^AI [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}GPT\b [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}\bGPT [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}/ClaudeBot[\s\/]?[\d\.]*?/i [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^Spawning-AI$ [NC,OR]
   
-## ALTERNATIVE:
 
+#Another one:
 <IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
-RewriteRule "^.*$" - [F,L]</IfModule>
- 
+RewriteCond %{HTTP_USER_AGENT} ^.*(ChatGPT-User|ClaudeBot|PerplexityBot).*$ [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*(ChatGPT-User|ClaudeBot|PerplexityBot).*$ [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*(ChatGPT-User|ClaudeBot|PerplexityBot).*$ [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*(ChatGPT-User|ClaudeBot|PerplexityBot).*$ [NC]
+RewriteRule .* - [F,L]
+
+#ALTERNATIVE ":
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT} (AI2Bot(.*)|anthropic-ai(.*)|Bytespider(.*)|ChatGPT-User(.*)|Claude-Web(.*)|ClaudeBot(.*)|DataForSeoBot(.*)) [NC]
+RewriteRule (.*) - [F,L]
+</IfModule>
 .....................................................................
 ---------------------------------------------------------------------
 .....................................................................
@@ -184,22 +184,21 @@ User-agent: ai_
 User-agent: ai=
 User-agent: .*?-ai$ 
 User-agent: ai=n
-User-agent: AddSearchBot
-User-agent: Agent Middleware
 User-agent: AcademicBotRTU
+User-agent: AddSearchBot
+User-agent: Agent 3
+User-agent: Agent API
 User-agent: Agent GPT
+User-agent: Agent Middleware
 User-agent: AgentGPT
 User-agent: Agentic
-User-agent: Agent 3
 User-agent: Agentic Deep Research
 User-agent: Agentic RAG
-User-agent: Agentic-RAG
 User-agent: Agentic RAG with LangGraph
+User-agent: Agentic-RAG
 User-agent: AgentQL
 User-agent: AI Agent
 User-agent: AI agents /
-User-agent: Agent API
-User-agent: AI Legion
 User-agent: AI Article Writer
 User-agent: AI Chat
 User-agent: AI Chatbot
@@ -209,12 +208,17 @@ User-agent: AI Detection
 User-agent: AI Dungeon
 User-agent: AI Journalist
 User-agent: AI Journalist Agent
+User-agent: AI Legion
+User-agent: AI RAG
+User-agent: AI Scraper
 User-agent: AI Search
 User-agent: AI Search Engine
 User-agent: AI Search Intent
 User-agent: AI SEO Crawler
 User-agent: AI Training
 User-agent: AI Web
+User-agent: AI Web Scraper
+User-agent: AI Website Screenshot
 User-agent: AI Writer
 User-agent: AI2
 User-agent: AI2 Bot
@@ -223,19 +227,19 @@ User-agent: AI21 Labs
 User-agent: AIBot
 User-agent: aiHitBot
 User-agent: AIMatrix
+User-agent: AISearch
 User-agent: AISearchBot
 User-agent: AITraining
 User-agent: AITraining /
 User-agent: AI-Crawler
 User-agent: ai-crawlers-training
-User-agent: AI Web Scraper
-User-agent: AI Scraper
-User-agent: AI Website Screenshot
 User-agent: ai-proxy
 User-agent: Alexa
 User-agent: AlexaTM
 User-agent: Alice Yandex
 User-agent: AliGenie
+User-agent: AliyunSec
+User-agent: AliyunSecBot
 User-agent: Alpha AI
 User-agent: AlphaAI
 User-agent: Amazon
@@ -246,15 +250,9 @@ User-agent: Amazon Lex
 User-agent: Amazon SageMaker
 User-agent: Amazon Silk
 User-agent: Amazon Textract
-User-agent: amazonBot
 User-agent: Amazonbot
+User-agent: amazonBot
 User-agent: amazon-kendra
-User-agent: AWS bedrock
-User-agent: AWS Trainium
-User-agent: Bedrock Claude
-User-agent: bedrock-chat
-User-agent: bedrock-chatbot
-User-agent: bedrock-claude-chatbot
 User-agent: Amelia
 User-agent: AndiBot
 User-agent: Anonymous AI
@@ -264,49 +262,56 @@ User-agent: anthropic-ai
 User-agent: AnyPicker
 User-agent: AnythingLLM
 User-agent: Anyword
-User-agent: Apple
 User-agent: Applebot-Extended
 User-agent: Apple-GenAI
-User-agent: Applebot/0.1
 User-agent: Aria AI
 User-agent: Aria Browse
 User-agent: Aria browse Aria AI
 User-agent: Aria browser AI
 User-agent: Articoolo
 User-agent: Ask AI
+User-agent: AutoGen
 User-agent: AutoGLM
 User-agent: AutoGPT
-User-agent: Auto-GPT
-User-agent: AutoGen
-User-agent: AliyunSecBot
 User-agent: Automated Writer
 User-agent: AutoML
 User-agent: Autonomous RAG
+User-agent: Auto-GPT
 User-agent: AwarioRssBot
 User-agent: AwarioSmartBot
+User-agent: AWS bedrock
+User-agent: AWS Trainium
 User-agent: Azure
 User-agent: Azure AI Search
+User-agent: Azure OpenAI
 User-agent: BabyAGI
 User-agent: BabyCatAGI
+User-agent: BardBot
 User-agent: Basic RAG
 User-agent: Basic RAG Chain
-User-agent: BardBot
-User-agent: Brave Leo
-User-agent: Brave Leo AI
-User-agent: BraveGPT
-User-agent: bigsur.ai
+User-agent: Bedrock
+User-agent: Bedrock Claude
+User-agent: bedrock-chat
+User-agent: bedrock-chatbot
+User-agent: bedrock-claude-chatbot
+User-agent: Big Sur
 User-agent: Big Sur AI
 User-agent: Big Sur AI Crawler
+User-agent: Bigsur
+User-agent: bigsur.ai
+User-agent: Botsonic
+User-agent: Brave Leo AI
+User-agent: BraveGPT
 User-agent: Brightbot
 User-agent: Brightbot 1.0
-User-agent: Brightbot operator 
+User-agent: Brightbot operator
+User-agent: Browser MCP Agent
+User-agent: Browser Use
+User-agent: Bytebot
 User-agent: ByteDance
 User-agent: byteDance
 User-agent: ByteDance crawler
 User-agent: Bytespider
-User-agent: Browser MCP Agent
-User-agent: Browser Use
-User-agent: Bedrock
 User-agent: CarynAI
 User-agent: CatBoost
 User-agent: CCBot
@@ -314,9 +319,13 @@ User-agent: ccbot
 User-agent: CCBot/2.0
 User-agent: CC-Crawler
 User-agent: CC-Crawler/2.0
-User-agent: Chai
+User-agent: Celia
 User-agent: Ceramic TerraCotta Crawler
+User-agent: Chai
+User-agent: Character
 User-agent: Charstar AI
+User-agent: Chat2DB-Agent
+User-agent: ChatAnthropic
 User-agent: Chatbot
 User-agent: chatbot
 User-agent: ChatGLM
@@ -325,43 +334,50 @@ User-agent: ChatGPT 4o
 User-agent: ChatGPT 4o-mini
 User-agent: ChatGPT 4.1
 User-agent: ChatGPT 4.5
+User-agent: ChatGPT 5
+User-agent: ChatGPT Agent
 User-agent: ChatGPT o1
 User-agent: ChatGPT o3-mini
 User-agent: ChatGPT Operator
 User-agent: ChatGPT search
 User-agent: ChatGPT-User
-User-agent: ChatAnthropic
 User-agent: ChatGPT-User/1.0
 User-agent: ChatGPT-User/2.0
-User-agent: ChatGPT Agent
+User-agent: ChatGPT 3.0
 User-agent: ChatLLM
+User-agent: ChatGLM-Spider
 User-agent: ChatOpenAI
+User-agent: Chatsonic
 User-agent: ChatUser
 User-agent: chatUser /
 User-agent: Chinchilla
 User-agent: Claude
-User-agent: claude.ai
+User-agent: Claude Agent
 User-agent: Claude 3.5
 User-agent: Claude 3.5 Haiku
 User-agent: Claude 3.5 Sonnet
 User-agent: Claude 3.7 Sonnet
 User-agent: Claude 4
+User-agent: Claude LLM
 User-agent: Claude Opus
 User-agent: Claude Opus 4
+User-agent: Claude Opus 4.1
 User-agent: Claude Sonnet 4
+User-agent: Claude Sonnet 4.5
 User-agent: ClaudeBot
 User-agent: ClaudeBot/1.0
-User-agent: Claude Opus 4.1
 User-agent: Claude-RAG
 User-agent: Claude-SearchBot
 User-agent: Claude-User
 User-agent: Claude-Web
 User-agent: claude-web/1.0
-User-agent: Claude LLM
+User-agent: claude.ai
 User-agent: ClearScope
+User-agent: Clearview
 User-agent: Cognitive AI
 User-agent: Cognitive AI engine
 User-agent: Cohere
+User-agent: Cohere RAG
 User-agent: cohere-ai
 User-agent: cohere-ai/1.0
 User-agent: cohere-training-data-crawler
@@ -384,9 +400,9 @@ User-agent: Copymatic
 User-agent: Copyscape
 User-agent: CoreWeave
 User-agent: Corrective RAG
-User-agent: Cohere RAG
 User-agent: Cotoyogi
 User-agent: CRAB
+User-agent: Crawl4AI
 User-agent: CrawlGPT
 User-agent: CrawlQ AI
 User-agent: Crawlspace
@@ -397,34 +413,41 @@ User-agent: cURL
 User-agent: cURL /
 User-agent: DALL-E
 User-agent: DALL-E 2
-User-agent: DALL·E 3
 User-agent: Dall-E 4
 User-agent: DALL-E Mini
+User-agent: DALL·E 3
 User-agent: DarkBard
+User-agent: DataFor
 User-agent: DataForAI
 User-agent: DataForSeoBot
 User-agent: DataProvider
 User-agent: dataprovider
 User-agent: Datenbank Crawler
+User-agent: Deep AI
+User-agent: Deep Research
 User-agent: DeepAI
 User-agent: DeepL
 User-agent: DeepMind
+User-agent: DeepResearch
 User-agent: DeepSeek
+User-agent: Deepseek Agent
 User-agent: DeepSeek R1 Y
 User-agent: DeepSeek V3
+User-agent: DeepSeekBot
+User-agent: DeepSeekV2.5-Chat
+User-agent: DeepSeek-LLM
 User-agent: DeepSeek-R1
-User-agent: Deep Research
 User-agent: DepolarizingGPT
+User-agent: Devin
 User-agent: DialoGPT
 User-agent: Diffbot
 User-agent: DigitalOceanGenAICrawler
-User-agent: DeepSeekV2.5-Chat
-User-agent: Devin
 User-agent: Doubao AI
 User-agent: DuckAssistBot
 User-agent: DuckDuckGo Chat
 User-agent: DuckDuckGo-Enhanced
 User-agent: Duck.ai
+User-agent: Echobot
 User-agent: Echobox
 User-agent: Elixir
 User-agent: Extended GPT Scraper
@@ -435,9 +458,12 @@ User-agent: facebookexternalhit/1.1
 User-agent: Factset
 User-agent: Factset_spyderbot
 User-agent: Falcon
+User-agent: Fastai
 User-agent: FastGPT
+User-agent: Firebase
 User-agent: Firecrawl
 User-agent: FirecrawlAgent
+User-agent: Fireworks
 User-agent: FIRE-1
 User-agent: FIRE-1 Agent
 User-agent: Flux
@@ -446,37 +472,45 @@ User-agent: flyriverbot/1.1
 User-agent: Frase AI
 User-agent: FraudGPT
 User-agent: FriendlyCrawler
-User-agent: Firebase
 User-agent: AI Ghostwriter
 User-agent: Gato
 User-agent: Gemini
 User-agent: Gemini Agentic RAG
+User-agent: Gemini-Deep-Research
+User-agent: Gemini-User
 User-agent: Gemma
 User-agent: Gemma 3
 User-agent: Gen AI
 User-agent: GenAI
 User-agent: GenAI Chat
+User-agent: GenAI RAG
+User-agent: Generative
 User-agent: Genspark
 User-agent: gentoo-chat
-User-agent: GenAI RAG
 User-agent: gen-ai
 User-agent: Ghostwriter
 User-agent: GigaChat
 User-agent: GLM
-User-agent: Google Gemini
-User-agent: Gemini-User
-User-agent: Google-CloudVertexBot
-User-agent: Gemini-Deep-Research
-User-agent: Google-Extended
-User-agent: GoogleAgent-Mariner
-User-agent: Goose
 User-agent: Go
+User-agent: GodMode
+User-agent: Google Gemini
+User-agent: GoogleAgent-Mariner
+User-agent: Google-CloudVertexBot
+User-agent: Google-Extended
+User-agent: Goose
 User-agent: GPT
 User-agent: GPT 4 Omni
 User-agent: GPT 4 Omni Mini
+User-agent: GPT Chat 3
+User-agent: GPT OSS
+User-agent: GPT Researcher
 User-agent: GPT Scraper
+User-agent: GPT /
+User-agent: GPT4ALL
+User-agent: GPT4Free
 User-agent: GPTBot
 User-agent: GPTBot /
+User-agent: GPTBot/1,2
 User-agent: GPTBot/1.2
 User-agent: GPTZero
 User-agent: GPT-1
@@ -495,164 +529,197 @@ User-agent: GPT-4.1
 User-agent: GPT-4.1-mini
 User-agent: GPT-4.1-nano
 User-agent: GPT-5
+User-agent: GPT-5 Chat
 User-agent: GPT-5 Mini
 User-agent: GPT-5 Nano
-User-agent: GPT-5 Chat
+User-agent: GPT-5 Thinking mini
+User-agent: GPT-5o
 User-agent: gpt-crawler
-User-agent: GPT /
 User-agent: GPT-oss /
-User-agent: GPT4Free
-User-agent: GPT Researcher
 User-agent: Grammarly
 User-agent: Grendizer
 User-agent: Grok
+User-agent: GrokBot
+User-agent: Grok 4 Fast
 User-agent: Grok AI chatbot
 User-agent: GrokAI
 User-agent: GT Bot
 User-agent: GTBot
-User-agent: GTP
 User-agent: GTPBOT
 User-agent: Hemingway Editor
+User-agent: Hetzner
+User-agent: Hugging
 User-agent: Hugging Face
-User-agent: Hypotenuse AI
-User-agent: Hybrid Search RAG
-User-agent: Hunyuan-Large-Instruct	
-User-agent: Hunyuan-7B-Instruct	7B	
+User-agent: HuggingChat
+User-agent: Hunyuan
+User-agent: Hunyuan-7B-Instruct 7B
+User-agent: Hunyuan-Large-Instruct
 User-agent: hybrid LLM
+User-agent: Hybrid Search RAG
+User-agent: Hypotenuse AI
 User-agent: iAskBot
 User-agent: iaskspider
 User-agent: iaskspider/2.0
 User-agent: ICC-Crawler
 User-agent: ImageGen
 User-agent: ImageGen /
+User-agent: ImageGPT
 User-agent: ImagesiftBot
 User-agent: img2dataset
 User-agent: imgproxy
-User-agent: ImageGPT
 User-agent: Inferkit
 User-agent: INK Editor
 User-agent: INKforall
-User-agent: IntelliSeek
-User-agent: IntelliSeek.ai
 User-agent: Instructor
 User-agent: instructor-php
+User-agent: IntelliSeek
+User-agent: IntelliSeek.ai
 User-agent: ISSCyberRiskCrawler
-User-agent: JasperAI
+User-agent: Jamba 1.5 Large
+User-agent: Jamba 1.5 Mini
 User-agent: Janitor AI
+User-agent: JasperAI
 User-agent: Jenni AI
 User-agent: Julius AI
-User-agent: Kaggle agent
 User-agent: Kafkai
 User-agent: Kaggle
+User-agent: Kaggle agent
 User-agent: Kangaroo
 User-agent: Kangaroo Bot
+User-agent: Kangaroo-Bot
 User-agent: Keyword Density AI
-User-agent: Knowledge
-User-agent: knowledge-base
-User-agent: knowledge /
-User-agent: KomoBot
+User-agent: Kimi
 User-agent: Kimi K2
 User-agent: Kimi-2
 User-agent: Kimi-VL
+User-agent: Kingsoft-LLM
+User-agent: Knowledge
+User-agent: Knowledge Graph
+User-agent: knowledge /
+User-agent: knowledge-base
+User-agent: KomoBot
+User-agent: Kruti
 User-agent: LangChain
-User-agent: LangExtract
-User-agent: langchain-google-genai
 User-agent: Langchain raptor
-User-agent: langchain-perplexity
+User-agent: langchain-google-genai
 User-agent: langchain-openai
+User-agent: langchain-perplexity
+User-agent: LangExtract
 User-agent: Le Chat
 User-agent: LeftWingGPT
 User-agent: Lensa
 User-agent: Lightpanda
-User-agent: LinerBot 
 User-agent: LINER Bot
+User-agent: LinerBot
+User-agent: LiteLLM
+User-agent: LiteLLM Proxy
+User-agent: LiteLLM Python
 User-agent: LLaMA
+User-agent: Llama 3.1 
 User-agent: Llama 3.2
 User-agent: Llama 4
-User-agent: LLM
-User-agent: LLM Scraper
-User-agent: Local RAG Agent
-User-agent: Llama 3.1 Local RAG
-User-agent: Llama3.1-405B-Instruct	
 User-agent: Llama3.1-70B-Instruct
+User-agent: Llama3.1-405B-Instruct
+User-agent: LLM
+User-agent: LLM Proxy
+User-agent: LLM Scraper
 User-agent: Local Hybrid Search RAG
-User-agent: LiteLLM Proxy
+User-agent: Local RAG Agent
+User-agent: LocalAI
+User-agent: Local RAG
+User-agent: Lovable
+User-agent: Magistral
+User-agent: Magnus
 User-agent: magpie-crawler
 User-agent: Manus
-User-agent: Magistral 
 User-agent: MarketMuse
 User-agent: Meltwater
+User-agent: Meta Agent
 User-agent: Meta AI
 User-agent: Meta AI Crawler
 User-agent: Meta Llama
 User-agent: MetaAI
-User-agent: Meta-AI
-User-agent: Meta.AI
-User-agent: Meta-AI
 User-agent: MetaGPT
 User-agent: MetaTagBot
+User-agent: Meta-AI
 User-agent: Meta-External
 User-agent: Meta-ExternalAgent
 User-agent: meta-externalagent
+User-agent: meta-externalagent/1.1
 User-agent: Meta-ExternalFetcher
 User-agent: meta-externalfetcher/1.1
-User-agent: meta-webindexer/1.1
-User-agent: Meta-Webindexer 1.1
+User-agent: Meta-Webindexer
 User-agent: Meta-Webindexer 1/1
-User-agent: MiniMax
+User-agent: meta-webindexer/1.1
+User-agent: Meta.AI
+User-agent: Middleware
+User-agent: midjourney
 User-agent: Mini AGI
+User-agent: MiniMax
+User-agent: Mintlify
 User-agent: Mistral
+User-agent: MistralAI-User
 User-agent: MistralAI-User/1.0
+User-agent: Mistral.ai
 User-agent: Mixtral 8x22B
 User-agent: Mixtral-8x22B-Instruct
-User-agent: midjourney
-User-agent: Monica
+User-agent: MobileLLM-R1
 User-agent: model-training
+User-agent: Monica
+User-agent: Moonshot
+User-agent: Mycroft AI
+User-agent: n8n-nodes-aiscraper
 User-agent: Narrative
 User-agent: NeevaBot
+User-agent: netEstate
+User-agent: netEstate Imprint Crawler
 User-agent: Neural Text
 User-agent: NeuralSEO
-User-agent: netEstate Imprint Crawler
 User-agent: Nicecrawler
-User-agent: NinjaAIBot/1.0
 User-agent: NinjaAI
-User-agent: Nova Act
-User-agent: NovaAct
+User-agent: NinjaAIBot/1.0
 User-agent: NodeZero
 User-agent: Node.js
-User-agent: n8n-nodes-aiscraper
+User-agent: Nova Act
+User-agent: NovaAct
 User-agent: OAI SearchBot
 User-agent: OAI-SearchBot
 User-agent: OAI-SearchBot/1.0
+User-agent: OASIS
+User-agent: Ola
+User-agent: Olivia
+User-agent: Ollama
+User-agent: oLLM
 User-agent: Omgili
 User-agent: Omgilibot
-User-agent: OASIS
 User-agent: Open AI
+User-agent: Open Deep Research
+User-agent: Open Interpreter
+User-agent: Open Lovable
+User-agent: Open Perflexity
+User-agent: OpenAGI
 User-agent: OpenAI
 User-agent: OpenAI Crawler
 User-agent: OpenAI CUA
-User-agent: OpenAI o1
-User-agent: OpenAI o3
-User-agent: OpenAI o4
-User-agent: OpenAI o1-mini
-User-agent: OpenAI o3-mini
-User-agent: OpenAI o4-mini 
-User-agent: OpenAI Operator
-User-agent: OpenAIContentCrawler
-User-agent: Open Deep Research
-User-agent: Open Perflexity
-User-agent: Openbot
-User-agent: OpenText AI
-User-agent: Operator
 User-agent: OpenAI GPTBot
 User-agent: OpenAI Image Downloader
+User-agent: OpenAI o1
+User-agent: OpenAI o1-mini
+User-agent: OpenAI o3
+User-agent: OpenAI o3-mini
+User-agent: OpenAI o4
+User-agent: OpenAI o4-mini
+User-agent: OpenAI Operator
+User-agent: OpenAIContentCrawler
+User-agent: Openbot
+User-agent: OpenLens AI
 User-agent: openpi
-User-agent: OpenAGI
-User-agent: Open Interpreter
-User-agent: Open Lovable
+User-agent: OpenRouter
+User-agent: openrouter
+User-agent: OpenText AI
+User-agent: Operator
 User-agent: Outwrite
-User-agent: Olivia
-User-agent: Ola
+User-agent: OWL
 User-agent: Page Analyzer AI
 User-agent: PanguBot
 User-agent: Panscient
@@ -661,28 +728,34 @@ User-agent: PaperLiBot
 User-agent: Paraphraser.io
 User-agent: peer39_crawler
 User-agent: peer39_crawler/1.0
-User-agent: Perplexity
+User-agent: PerfectChatGPT
+User-agent: Perflexity
+User-agent: Perplexity AI
+User-agent: Perplexity Deep Research
+User-agent: Perplexity Search
 User-agent: PerplexityBot
 User-agent: PerplexityBot/1.0
 User-agent: PerplexityUser
 User-agent: Perplexity-User
 User-agent: Perplexity-User/1.0
 User-agent: Perplexit-User
-User-agent: Perplexity Deep Research
-User-agent: Open Perflexity 
-User-agent: petalBot
+User-agent: Open Perflexity
+User-agent: Petal
 User-agent: PetalBot
-User-agent: PerfectChatGPT
+User-agent: petalBot
 User-agent: Phind
 User-agent: PhindBot
 User-agent: PiplBot
-User-agent: ProWritingAid
-User-agent: proximic
-User-agent: Puppeteer
 User-agent: Poe
 User-agent: PoeBot
 User-agent: PoeSearchBot
+User-agent: PrivateGPT
+User-agent: ProWritingAid
+User-agent: proximic
+User-agent: Puppeteer
 User-agent: python Ai
+User-agent: PyTorch Lightning
+User-agent: PyTorch Lightning LLM
 User-agent: Qualified
 User-agent: QualifiedBot
 User-agent: QuillBot
@@ -702,32 +775,39 @@ User-agent: Qwen2.5 72B
 User-agent: Qwen 2.5‑VL
 User-agent: Qwen-Agent
 User-agent: Qopywriter.ai
+User-agent: AI RAG
 User-agent: RAG
+User-agent: RAG-
+User-agent: RAG_
 User-agent: RAG Agent
 User-agent: RAG Agent Cohere
 User-agent: RAG Azure AI
 User-agent: RAG Chatbot
 User-agent: RAG ChatGPT
-User-agent: RAG LLM
+User-agent: RAG Database
 User-agent: RAG Database Routing
-User-agent: RAG-as-a-Service
-User-agent: RAG_VertexAI
-User-agent: RAG_with_search
-User-agent: Redis AI RAG
 User-agent: RAG IS
+User-agent: RAG LLM
 User-agent: RAG Pipeline
 User-agent: RAG Search
 User-agent: RAG with
+User-agent: RAG-as-a-Service
+User-agent: RAG_VertexAI
+User-agent: RAG_with_search
 User-agent: Raptor
-User-agent: ReAct AI Agent 
-User-agent: React Agent
 User-agent: RAPTOR LLM
+User-agent: React Agent
+User-agent: ReAct AI Agent
+User-agent: Redis AI RAG
 User-agent: RightWingGPT
 User-agent: RobotSpider
 User-agent: Rytr
+User-agent: Sambanova
 User-agent: SaplingAI
+User-agent: SBIntuitionsBot
 User-agent: Scala
 User-agent: Scalenut
+User-agent: Scrap
 User-agent: ScrapeGraph
 User-agent: ScrapeGraphAI
 User-agent: Scrapegraph-ai
@@ -739,18 +819,20 @@ User-agent: Scrapy 2.13.1
 User-agent: Scrapy/2.0
 User-agent: ScriptBook
 User-agent: Search GPT
+User-agent: Search RAG
 User-agent: SearchGPT
 User-agent: Seekr
 User-agent: SemrushBot
 User-agent: SemrushBot-FT
 User-agent: SemrushBot-OCOB
 User-agent: SemrushBot-SWA
-User-agent: ShapBot
 User-agent: Sentibot
 User-agent: SEO Content Machine
-User-agent: SEObot
 User-agent: SEO Robot
+User-agent: SEObot
 User-agent: ShadowGPT
+User-agent: ShapBot
+User-agent: Shell GPT
 User-agent: Sidetrade
 User-agent: Sidetrade /
 User-agent: Simplified AI
@@ -760,10 +842,17 @@ User-agent: Skydancer
 User-agent: SlickWrite
 User-agent: SmartBot
 User-agent: SmartScrape
+User-agent: SmartScraperGraph
 User-agent: Sonic
 User-agent: Sora
+User-agent: Spawning-ai
+User-agent: SpiderCreator
+User-agent: Spider-Agent
+User-agent: Spider/2
+User-agent: Spider/2.0; +https://spider.cloud
 User-agent: Spin Rewrite
 User-agent: Spinbot
+User-agent: Stability
 User-agent: Stability AI
 User-agent: StableDiffusionBot
 User-agent: Sudowrite
@@ -772,10 +861,9 @@ User-agent: Super Agent
 User-agent: Superagent
 User-agent: superagi
 User-agent: Surfer AI
-User-agent: SmartScraperGraph
-User-agent: Spawning-ai
-User-agent: Spider/2.0; +https://spider.cloud
+User-agent: SUSE AI
 User-agent: Text Blaze
+User-agent: Text-RAG
 User-agent: TextCortex
 User-agent: Knowledge
 User-agent: The Knowledge AI
@@ -790,23 +878,33 @@ User-agent: TorChat
 User-agent: Thordata
 User-agent: Together AI
 User-agent: TurnitinBot
+User-agent: uAgents
+User-agent: AI – WPBot
 User-agent: VelenPublicWebCrawler
 User-agent: Venus Chub AI
 User-agent: Vidnami AI
 User-agent: Vision RAG
+User-agent: vnCallbot
+User-agent: vnFace
+User-agent: VNPT SmartBot
+User-agent: VNPT SmartReader
+User-agent: Web 3.0 Navigator
 User-agent: WebChatGPT
 User-agent: WebCrawler-AI
-User-agent: Webscrape AI
+User-agent: WebExplorer-8B
 User-agent: Webscrape
-User-agent: webscraping-ai-ruby
+User-agent: Webscrape AI
 User-agent: webscraping-ai-php
 User-agent: webscraping-ai-python
+User-agent: webscraping-ai-ruby
+User-agent: WebSurfer
 User-agent: WebText
 User-agent: WebText /
 User-agent: Webzio
 User-agent: Webzio-Extended
 User-agent: WeChat
 User-agent: Whisper
+User-agent: WizardLM
 User-agent: WordAI
 User-agent: Wordtune
 User-agent: WormGPT
@@ -815,13 +913,12 @@ User-agent: WPBot
 User-agent: wpbot
 User-agent: WPBot/1.1
 User-agent: WPBot/1.2
-User-agent: AI – WPBot
 User-agent: Writecream
 User-agent: WriterZen
 User-agent: Writescope
 User-agent: Writesonic
 User-agent: WRTNBot
-User-agent: WRTNBot/1.0 
+User-agent: WRTNBot/1.0
 User-agent: xAI
 User-agent: xBot
 User-agent: x.AI 				
@@ -862,22 +959,21 @@ ai_
 ai=
 .*?-ai$ 
 ai=n
-AddSearchBot
 AcademicBotRTU
-Agent Middleware
-Agent API
-AI Legion
-Agentic
+AddSearchBot
 Agent 3
+Agent API
+Agent GPT
+Agent Middleware
+AgentGPT
+Agentic
 Agentic Deep Research
 Agentic RAG
-Agentic-RAG
 Agentic RAG with LangGraph
+Agentic-RAG
 AgentQL
 AI Agent
 AI agents /
-Agent GPT
-AgentGPT
 AI Article Writer
 AI Chat
 AI Chatbot
@@ -887,12 +983,17 @@ AI Detection
 AI Dungeon
 AI Journalist
 AI Journalist Agent
+AI Legion
+AI RAG
+AI Scraper
 AI Search
 AI Search Engine
 AI Search Intent
 AI SEO Crawler
 AI Training
 AI Web
+AI Web Scraper
+AI Website Screenshot
 AI Writer
 AI2
 AI2 Bot
@@ -901,20 +1002,18 @@ AI21 Labs
 AIBot
 aiHitBot
 AIMatrix
+AISearch
 AISearchBot
 AITraining
 AITraining /
-anthropic-ai
 AI-Crawler
 ai-crawlers-training
-AI Web Scraper
-AI Scraper
-AI Website Screenshot
 ai-proxy
 Alexa
 AlexaTM
 Alice Yandex
 AliGenie
+AliyunSec
 AliyunSecBot
 Alpha AI
 AlphaAI
@@ -926,15 +1025,9 @@ Amazon Lex
 Amazon SageMaker
 Amazon Silk
 Amazon Textract
-amazonBot
 Amazonbot
+amazonBot
 amazon-kendra
-AWS bedrock
-AWS Trainium
-Bedrock Claude
-bedrock-chat
-bedrock-chatbot
-bedrock-claude-chatbot
 Amelia
 AndiBot
 Anonymous AI
@@ -944,49 +1037,56 @@ anthropic-ai
 AnyPicker
 AnythingLLM
 Anyword
-Apple
 Applebot-Extended
 Apple-GenAI
-Applebot/0.1
 Aria AI
 Aria Browse
 Aria browse Aria AI
 Aria browser AI
 Articoolo
 Ask AI
+AutoGen
 AutoGLM
 AutoGPT
-AutoGen
-AgentGPT
-Auto-GPT
 Automated Writer
 AutoML
 Autonomous RAG
+Auto-GPT
 AwarioRssBot
 AwarioSmartBot
+AWS bedrock
+AWS Trainium
 Azure
 Azure AI Search
+Azure OpenAI
 BabyAGI
 BabyCatAGI
+BardBot
 Basic RAG
 Basic RAG Chain
-BardBot
-Brave Leo
+Bedrock
+Bedrock Claude
+bedrock-chat
+bedrock-chatbot
+bedrock-claude-chatbot
+Big Sur
+Big Sur AI
+Big Sur AI Crawler
+Bigsur
+bigsur.ai
+Botsonic
 Brave Leo AI
 BraveGPT
 Brightbot
-bigsur.ai
-Big Sur AI
-Big Sur AI Crawler
 Brightbot 1.0
-Brightbot operator 
+Brightbot operator
+Browser MCP Agent
+Browser Use
+Bytebot
 ByteDance
 byteDance
 ByteDance crawler
 Bytespider
-Browser MCP Agent
-Browser Use
-Bedrock
 CarynAI
 CatBoost
 CCBot
@@ -994,9 +1094,13 @@ ccbot
 CCBot/2.0
 CC-Crawler
 CC-Crawler/2.0
-Chai
+Celia
 Ceramic TerraCotta Crawler
+Chai
+Character
 Charstar AI
+Chat2DB-Agent
+ChatAnthropic
 Chatbot
 chatbot
 ChatGLM
@@ -1005,43 +1109,49 @@ ChatGPT 4o
 ChatGPT 4o-mini
 ChatGPT 4.1
 ChatGPT 4.5
+ChatGPT 5
+ChatGPT Agent
 ChatGPT o1
 ChatGPT o3-mini
+ChatGPT Operator
 ChatGPT search
 ChatGPT-User
-ChatAnthropic
 ChatGPT-User/1.0
 ChatGPT-User/2.0
-ChatGPT Agent
-ChatGPT Operator
+ChatGPT 3.0
 ChatLLM
+ChatGLM-Spider
 ChatOpenAI
+Chatsonic
 ChatUser
 chatUser /
 Chinchilla
 Claude
-claude.ai
+Claude Agent
 Claude 3.5
 Claude 3.5 Haiku
 Claude 3.5 Sonnet
 Claude 3.7 Sonnet
 Claude 4
+Claude LLM
 Claude Opus
 Claude Opus 4
-Claude Sonnet 4
-ClaudeBot
-ClaudeBot/1.0
 Claude Opus 4.1
+Claude Sonnet 4
+Claude Sonnet 4.5
+ClaudeBot
 Claude-RAG
 Claude-SearchBot
 Claude-User
 Claude-Web
 claude-web/1.0
-Claude LLM
+claude.ai
 ClearScope
+Clearview
 Cognitive AI
 Cognitive AI engine
 Cohere
+Cohere RAG
 cohere-ai
 cohere-ai/1.0
 cohere-training-data-crawler
@@ -1064,9 +1174,9 @@ Copymatic
 Copyscape
 CoreWeave
 Corrective RAG
-Cohere RAG
 Cotoyogi
 CRAB
+Crawl4AI
 CrawlGPT
 CrawlQ AI
 Crawlspace
@@ -1077,34 +1187,41 @@ cURL
 cURL /
 DALL-E
 DALL-E 2
-DALL·E 3
 Dall-E 4
 DALL-E Mini
+DALL·E 3
 DarkBard
+DataFor
 DataForAI
 DataForSeoBot
 DataProvider
 dataprovider
 Datenbank Crawler
+Deep AI
+Deep Research
 DeepAI
 DeepL
 DeepMind
+DeepResearch
 DeepSeek
+Deepseek Agent
 DeepSeek R1 Y
 DeepSeek V3
+DeepSeekBot
+DeepSeekV2.5-Chat
+DeepSeek-LLM
 DeepSeek-R1
-Deep Research
 DepolarizingGPT
+Devin
 DialoGPT
 Diffbot
-DeepSeekV2.5-Chat
 DigitalOceanGenAICrawler
-Devin
 Doubao AI
 DuckAssistBot
 DuckDuckGo Chat
 DuckDuckGo-Enhanced
 Duck.ai
+Echobot
 Echobox
 Elixir
 Extended GPT Scraper
@@ -1115,9 +1232,12 @@ facebookexternalhit/1.1
 Factset
 Factset_spyderbot
 Falcon
+Fastai
 FastGPT
+Firebase
 Firecrawl
 FirecrawlAgent
+Fireworks
 FIRE-1
 FIRE-1 Agent
 Flux
@@ -1126,37 +1246,45 @@ flyriverbot/1.1
 Frase AI
 FraudGPT
 FriendlyCrawler
-Firebase
 AI Ghostwriter
 Gato
 Gemini
+Gemini Agentic RAG
 Gemini-Deep-Research
 Gemini-User
-Gemini Agentic RAG
 Gemma
 Gemma 3
 Gen AI
 GenAI
 GenAI Chat
+GenAI RAG
+Generative
 Genspark
 gentoo-chat
-GenAI RAG
 gen-ai
 Ghostwriter
 GigaChat
 GLM
+Go
+GodMode
 Google Gemini
+GoogleAgent-Mariner
 Google-CloudVertexBot
 Google-Extended
-GoogleAgent-Mariner
 Goose
-Go
 GPT
 GPT 4 Omni
 GPT 4 Omni Mini
+GPT Chat 3
+GPT OSS
+GPT Researcher
 GPT Scraper
+GPT /
+GPT4ALL
+GPT4Free
 GPTBot
 GPTBot /
+GPTBot/1,2
 GPTBot/1.2
 GPTZero
 GPT-1
@@ -1175,162 +1303,197 @@ GPT-4.1
 GPT-4.1-mini
 GPT-4.1-nano
 GPT-5
+GPT-5 Chat
 GPT-5 Mini
 GPT-5 Nano
-GPT-5 Chat
+GPT-5 Thinking mini
+GPT-5o
 gpt-crawler
-GPT Researcher
-GPT /
 GPT-oss /
 Grammarly
 Grendizer
 Grok
+GrokBot
+Grok 4 Fast
 Grok AI chatbot
 GrokAI
 GT Bot
 GTBot
-GTP
 GTPBOT
-GPT4Free
 Hemingway Editor
+Hetzner
+Hugging
 Hugging Face
-Hypotenuse AI
-Hybrid Search RAG
+HuggingChat
+Hunyuan
+Hunyuan-7B-Instruct 7B
+Hunyuan-Large-Instruct
 hybrid LLM
-Hunyuan-Large-Instruct	
-Hunyuan-7B-Instruct	7B	
+Hybrid Search RAG
+Hypotenuse AI
 iAskBot
 iaskspider
 iaskspider/2.0
 ICC-Crawler
 ImageGen
 ImageGen /
+ImageGPT
 ImagesiftBot
 img2dataset
 imgproxy
-ImageGPT
 Inferkit
 INK Editor
 INKforall
-IntelliSeek
-IntelliSeek.ai
 Instructor
 instructor-php
+IntelliSeek
+IntelliSeek.ai
 ISSCyberRiskCrawler
-JasperAI
+Jamba 1.5 Large
+Jamba 1.5 Mini
 Janitor AI
+JasperAI
 Jenni AI
 Julius AI
-Kaggle agent
 Kafkai
 Kaggle
+Kaggle agent
 Kangaroo
 Kangaroo Bot
+Kangaroo-Bot
 Keyword Density AI
+Kimi
+Kimi K2
+Kimi-2
+Kimi-VL
+Kingsoft-LLM
 Knowledge
+Knowledge Graph
 knowledge /
 knowledge-base
 KomoBot
-Kimi K2
-Kimi-2
-Kimi-k1.5
-Kimi-VL
+Kruti
 LangChain
-LangExtract
-langchain-google-genai
 Langchain raptor
-langchain-perplexity
+langchain-google-genai
 langchain-openai
+langchain-perplexity
+LangExtract
 Le Chat
 LeftWingGPT
 Lensa
 Lightpanda
+LINER Bot
 LinerBot
-LINER Bot 
+LiteLLM
+LiteLLM Proxy
+LiteLLM Python
 LLaMA
+Llama 3.1 
 Llama 3.2
 Llama 4
+Llama3.1-70B-Instruct
+Llama3.1-405B-Instruct
 LLM
 LLM Scraper
-Local RAG Agent
-Llama 3.1 Local RAG
-Llama3.1-405B-Instruct	
-Llama3.1-70B-Instruct
+LLM Proxy
 Local Hybrid Search RAG
-LiteLLM Proxy
+Local RAG Agent
+LocalAI
+Local RAG
+Lovable
+Magistral
+Magnus
 magpie-crawler
 Manus
-Magistral 
 MarketMuse
 Meltwater
+Meta Agent
 Meta AI
 Meta AI Crawler
 Meta Llama
 MetaAI
-Meta-AI
-Meta.AI
-Meta-AI
 MetaGPT
 MetaTagBot
+Meta-AI
 Meta-External
 Meta-ExternalAgent
 meta-externalagent
+meta-externalagent/1.1
 Meta-ExternalFetcher
 meta-externalfetcher/1.1
-meta-webindexer/1.1
-Meta-Webindexer 1.1
+Meta-Webindexer
 Meta-Webindexer 1/1
-MiniMax
+meta-webindexer/1.1
+Meta.AI
+Middleware
+midjourney
 Mini AGI
+MiniMax
+Mintlify
 Mistral
+MistralAI-User
 MistralAI-User/1.0
+Mistral.ai
 Mixtral 8x22B
 Mixtral-8x22B-Instruct
+MobileLLM-R1
+model-training
+Monica
+Moonshot
+Mycroft AI
+n8n-nodes-aiscraper
 Narrative
 NeevaBot
+netEstate
+netEstate Imprint Crawler
 Neural Text
 NeuralSEO
-netEstate Imprint Crawler
 Nicecrawler
-NinjaAIBot/1.0
 NinjaAI
-Nova Act
-NovaAct
+NinjaAIBot/1.0
 NodeZero
 Node.js
-n8n-nodes-aiscraper
+Nova Act
+NovaAct
 OAI SearchBot
 OAI-SearchBot
 OAI-SearchBot/1.0
+OASIS
+Ola
+Olivia
+Ollama
+oLLM
 Omgili
 Omgilibot
-OASIS
 Open AI
+Open Deep Research
+Open Interpreter
+Open Lovable
+Open Perflexity
+OpenAGI
 OpenAI
 OpenAI Crawler
 OpenAI CUA
-OpenAI o1
-OpenAI o3
-OpenAI o4
-OpenAI o1-mini
-OpenAI o3-mini
-OpenAI o4-mini 
-OpenAI Operator
-OpenAIContentCrawler
-Open Deep Research
-Open Perflexity
-Openbot
-OpenText AI
-Operator
 OpenAI GPTBot
 OpenAI Image Downloader
+OpenAI o1
+OpenAI o1-mini
+OpenAI o3
+OpenAI o3-mini
+OpenAI o4
+OpenAI o4-mini
+OpenAI Operator
+OpenAIContentCrawler
+Openbot
+OpenLens AI
 openpi
-OpenAGI
-Open Interpreter
-Open Lovable
+OpenRouter
+openrouter
+OpenText AI
+Operator
 Outwrite
-Olivia
-Ola
+OWL
 Page Analyzer AI
 PanguBot
 Panscient
@@ -1339,28 +1502,34 @@ PaperLiBot
 Paraphraser.io
 peer39_crawler
 peer39_crawler/1.0
+PerfectChatGPT
 Perplexity
+Perplexity AI
+Perplexity Deep Research
+Perplexity Search
 PerplexityBot
 PerplexityBot/1.0
 PerplexityUser
 Perplexity-User
 Perplexity-User/1.0
 Perplexit-User
-Perplexity Deep Research
-Open Perflexity 
-petalBot
+Open Perflexity
+Petal
 PetalBot
-PerfectChatGPT
+petalBot
 Phind
 PhindBot
 PiplBot
-ProWritingAid
-proximic
-Puppeteer
 Poe
 PoeBot
 PoeSearchBot
+PrivateGPT
+ProWritingAid
+proximic
+Puppeteer
 python Ai
+PyTorch Lightning
+PyTorch Lightning LLM
 Qualified
 QualifiedBot
 QuillBot
@@ -1380,32 +1549,41 @@ Qwen2.5 72B
 Qwen 2.5‑VL
 Qwen-Agent
 Qopywriter.ai
+AI RAG
 RAG
+RAG-
+RAG_
 RAG Agent
 RAG Agent Cohere
 RAG Azure AI
 RAG Chatbot
 RAG ChatGPT
-RAG LLM
+RAG Database
 RAG Database Routing
-RAG-as-a-Service
-RAG_VertexAI
-RAG_with_search
-Redis AI RAG
 RAG IS
+RAG LLM
 RAG Pipeline
 RAG Search
 RAG with
+RAG-
+RAG_
+RAG-as-a-Service
+RAG_VertexAI
+RAG_with_search
 Raptor
-ReAct AI Agent 
-React Agent
 RAPTOR LLM
+React Agent
+ReAct AI Agent
+Redis AI RAG
 RightWingGPT
 RobotSpider
 Rytr
+Sambanova
 SaplingAI
+SBIntuitionsBot
 Scala
 Scalenut
+Scrap
 ScrapeGraph
 ScrapeGraphAI
 Scrapegraph-ai
@@ -1417,18 +1595,20 @@ Scrapy 2.13.1
 Scrapy/2.0
 ScriptBook
 Search GPT
+Search RAG
 SearchGPT
 Seekr
 SemrushBot
 SemrushBot-FT
 SemrushBot-OCOB
 SemrushBot-SWA
-ShapBot
 Sentibot
 SEO Content Machine
 SEO Robot
 SEObot
 ShadowGPT
+ShapBot
+Shell GPT
 Sidetrade
 Sidetrade /
 Simplified AI
@@ -1438,10 +1618,18 @@ Skydancer
 SlickWrite
 SmartBot
 SmartScrape
+SmartScraperGraph
 Sonic
 Sora
+Spawning-ai
+SpiderCreator
+Spider-Agent
+Spider/2
+Spider/2
+Spider/2.0; +https://spider.cloud
 Spin Rewrite
 Spinbot
+Stability
 Stability AI
 StableDiffusionBot
 Sudowrite
@@ -1450,10 +1638,9 @@ Super Agent
 Superagent
 superagi
 Surfer AI
-SmartScraperGraph
-Spawning-ai
-Spider/2.0; +https://spider.cloud
+SUSE AI
 Text Blaze
+Text-RAG
 TextCortex
 Knowledge
 The Knowledge AI
@@ -1468,23 +1655,34 @@ TorChat
 Thordata
 Together AI
 TurnitinBot
+uAgents
+TurnitinBot
+AI – WPBot
 VelenPublicWebCrawler
 Venus Chub AI
 Vidnami AI
 Vision RAG
+vnCallbot
+vnFace
+VNPT SmartBot
+VNPT SmartReader
+Web 3.0 Navigator
 WebChatGPT
 WebCrawler-AI
-Webscrape AI
+WebExplorer-8B
 Webscrape
-webscraping-ai-ruby
+Webscrape AI
 webscraping-ai-php
 webscraping-ai-python
+webscraping-ai-ruby
+WebSurfer
 WebText
 WebText /
 Webzio
 Webzio-Extended
 WeChat
 Whisper
+WizardLM
 WordAI
 Wordtune
 WormGPT
@@ -1493,13 +1691,12 @@ WPBot
 wpbot
 WPBot/1.1
 WPBot/1.2
-AI – WPBot
 Writecream
 WriterZen
 Writescope
 Writesonic
 WRTNBot
-WRTNBot/1.0 
+WRTNBot/1.0
 xAI
 xBot
 x.AI 				
@@ -1528,4 +1725,4 @@ Zimm
 
 :::::::::::::::::::::::::::::::::::::::::::	  
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 250915
+### Updated: 251014
