@@ -246,6 +246,7 @@ BASH | sudo systemctl restart nginx
 set $BOT "";
 if ($uri ~* (/w/index.php)) {
     set $BOT "C"; }
+	
 # then detect the bot tell and give a 503
 
 .....................................................................
@@ -300,17 +301,6 @@ or (lower(http.user_agent) contains "claudebot")
 or (lower(http.user_agent) contains "dataforseobot")
 [...]
 */
-			
-.....................................................................
----------------------------------------------------------------------
-# FROM Perrishpress/ ultamte list, Note: If you don’t care about search results,
- you can restore the removed blocks for Google, Bing, and Apple:
-User-agent: Applebot
-User-agent: BingAI
-User-agent: Bingbot-chat
-User-agent: Google Bard AI
-User-agent: Google-Extended
-User-agent: GoogleOther
 
 .....................................................................
 ---------------------------------------------------------------------
@@ -322,6 +312,16 @@ if ($http_user_agent ~* "({{ site.robots.nginx }})") {
   return 307 https://ash-speed.hetzner.com/10GB.bin
 }
 
+.....................................................................
+---------------------------------------------------------------------
+### PHP: Server-Side Scripting
+
+php
+if (strpos($_SERVER['HTTP_USER_AGENT'], 'Stupidbot') !== false) {
+header('HTTP/1.0 403 Forbidden');
+exit;
+}
+
 ...........................................................................:)
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::)
-Updated: 251006
+Updated: 251014
