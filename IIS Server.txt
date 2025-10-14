@@ -1,0 +1,23 @@
+
+### IIS
+#For IIS, you can use the URL Rewrite module in your web.config file. Insert this rule inside the section:
+
+
+<rule name="Block OpenAI Bots" stopProcessing="true">
+<match url=".*" / >
+<conditions>
+<add input="{HTTP_USER_AGENT}"
+pattern="(OAI-SearchBot|ChatGPT-User|GPTBot)" />
+</conditions>
+<action type="CustomResponse" statusCode="403" statusReason="Forbidden"
+statusDescription="Access Denied" /&lgt;
+</rule>
+Caddy (v2)
+In Caddy, define a named matcher that uses a regular expression on the User-Agent header. For example, in your Caddyfile:
+@openaiBots {
+header_regexp User-Agent (?i)(OAI-SearchBot|ChatGPT-User|GPTBot)
+}
+
+handle @openaiBots {
+respond 403
+}
