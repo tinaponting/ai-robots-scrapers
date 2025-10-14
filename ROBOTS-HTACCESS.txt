@@ -27,7 +27,7 @@ RewriteCond%{HTTP_USER_AGENT}GPT\b [NC,OR]
 RewriteCond%{HTTP_USER_AGENT}\bGPT [NC,OR]
 RewriteCond%{HTTP_USER_AGENT}/ClaudeBot[\s\/]?[\d\.]*?/i [NC,OR]
 RewriteCond%{HTTP_USER_AGENT}^Spawning-AI$ [NC,OR]
-RewriteCond%{HTTP_USER_AGENT}(.ai|-ai|_ai|ai.|ai-|ai_|ai=|.*?-ai$|ai=n)[NC,OR
+RewriteCond%{HTTP_USER_AGENT}(.ai|-ai|_ai|ai.|ai-|ai_|ai=|.*?-ai$|ai=n)[NC,OR]
 
 .ai|-ai|_ai|ai.|ai-|ai_|ai=|.*?-ai$|ai=n|
 
