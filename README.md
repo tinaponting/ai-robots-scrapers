@@ -57,6 +57,7 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
 # Updates: **
 # Working: ** a new AI LIST, Working on a new List: 2509125 -  fixing a new list, new AI Dectected - Be patient:)
 
+* ai-shield.zip - UPDATED, if they tries to steal your content, they got dummy text:) Do not interfear with speed.
 * Nigx file error! - working on it!
 * ADDED 250928: Perrishpresshtaccess Perrishpress htaccess.
 * Updated: 250928 Perrishpresss Ai - Updated.  
