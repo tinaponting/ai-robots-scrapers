@@ -1,0 +1,49 @@
+#Fail2Ban filter for misbehaving AI scrapers and bots
+#that don't respect robots.txt
+#Marcus Dean Adams
+
+[Definition]
+failregex = ^<HOST> -.*"(GET|POST|PUT|DELETE|HEAD|OPTIONS|CONNECT).*ClaudeBot.*$
+            ^<HOST> -.*"(GET|POST|PUT|DELETE|HEAD|OPTIONS|CONNECT).*meta-externalagent.*$
+            ^<HOST> -.*"(GET|POST|PUT|DELETE|HEAD|OPTIONS|CONNECT).*meta-externalfetcher.*$
+            ^<HOST> -.*"(GET|POST|PUT|DELETE|HEAD|OPTIONS|CONNECT).*Bytespider.*$
+            ^<HOST> -.*"(GET|POST|PUT|DELETE|HEAD|OPTIONS|CONNECT).*GPTBot.*$
+            ^<HOST> -.*"(GET|POST|PUT|DELETE|HEAD|OPTIONS|CONNECT).*anthropic-ai.*$
+            ^<HOST> -.*"(GET|POST|PUT|DELETE|HEAD|OPTIONS|CONNECT).*FacebookBot.*$
+            ^<HOST> -.*"(GET|POST|PUT|DELETE|HEAD|OPTIONS|CONNECT).*Diffbot.*$
+            ^<HOST> -.*"(GET|POST|PUT|DELETE|HEAD|OPTIONS|CONNECT).*PerplexityBot.*$
+			
+Contents of /etc/fail2ban/jail.d/aibots.local:
+
+[aibots]
+enabled = true
+port = 80,443
+filter = aibots
+maxretry = 1
+bantime = 168h
+findtime = 10m
+logpath = /var/log/apache2/access.log
+
+
+..............................
+
+#Fail2Ban filter for bots and scrapers that try to access
+#files directly without entering credentials for apache2-auth
+#and therefore trigger lots of 401 errors without triggering
+#the apache-auth jail.
+#
+#Marcus Dean Adams
+	[Definition]
+failregex = ^<HOST> .+\" 401 \d+ .*$
+	
+Contents of /etc/fail2ban/jail.d/apache-401repeat.local
+
+[apache-401repeat]
+enabled = true
+ignoreip = 10.1.1.1
+port = 80,443
+filter = apache-401repeat
+maxretry = 1
+bantime = 672h
+findtime = 10m
+logpath = /var/log/apache2/access.log
