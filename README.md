@@ -57,7 +57,8 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
 # Updates: **
 # Working: * New AI List and scrips all up-to-date 251113 - new working in progress)
 
-* Updates: 2500914 My htaccess updated
+* AI- Shield updated 251114.
+* Updates: 251114 My htaccess updated
 * Updated: 251114 ROBOTS-HTACCESS.txt /New strong AI block list! Added: GTP: 5.1
 * Updated: 251113 ROBOTS-HTACCESS.txt /New strong AI block list!
 * ai-shield.zip - UPDATED, if they tries to steal your content, they got dummy text:) Do not interfear with speed.
