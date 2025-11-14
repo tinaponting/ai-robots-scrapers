@@ -63,7 +63,7 @@ AI Ghostwriter|Gato|Gemini|Gemini Agentic RAG|Gemini-Ai|
 Gemini-Deep-Research|Gemini-User|Gemma|Gemma 3|Gen AI|GenAI|GenAI Chat|GenAI RAG|Generative|Genspark|gentoo-chat|gen-ai|GhostGPT|Ghostwriter|GigaChat|GLM|GLM 4.6|Go|GodMode|Google Gemini|
 GoogleAgent-Mariner|Google-CloudVertexBot|Google-Extended|Google-NotebookLM|Goose|GPT|GPT 4 Omni|GPT 4 Omni Mini|GPT Chat 3|GPT OSS|GPT Researcher|GPT Scraper|GPT /|GPT4ALL|GPT4Free|GPTBot|GPTBot /|
 GPTBot/1,2|GPTBot/1.2|GPTZero|GPT-1|GPT-2|GPT-3|GPT-3.5|GPT-3.5 turbo|GPT-4|GPT-4o|GPT-4o Image|GPT-4o mini|GPT-4V|GPT-4,5|gpt-4-turbo|GPT-4.1|GPT-4.1-mini|GPT-4.1-nano|GPT-5|GPT-5 Chat|GPT-5 Mini|GPT-5 Nano|
-GPT-5 Thinking mini|GPT-5o|GPT-5-high|GPT-crawler|gpt-crawler|GPT-oss /|GPT-Qwen Deep Research|Grammarly|Grendizer|Grok|Grok 4 Fast|Grok AI chatbot|GrokAI|GrokBot|Grok-4|Grok-4 Heavy|Groq-Bot|GT Bot|GTBot|GTPBOT
+GPT-5 Thinking mini|GPT-5o|GPT-5-high|GPT-5.1|GPT-5.1 Instant|GPT-5.1 Thinking|GPT-5.1 Auto|GPT-5.1|GPT-5.1 Instant|GPT-5.1 Thinking|GPT-5.1 Auto|GPT-crawler|gpt-crawler|GPT-oss /|GPT-Qwen Deep Research|Grammarly|Grendizer|Grok|Grok 4 Fast|Grok AI chatbot|GrokAI|GrokBot|Grok-4|Grok-4 Heavy|Groq-Bot|GT Bot|GTBot|GTPBOT
 
 Hemingway Editor|Hetzner|Hugging|Hugging Face|HuggingChat|huggingfacebot|HuggingFace-Bot|hugging-face-ai|Hunyuan|Hunyuan-7B-Instruct 7B|Hunyuan-Large-Instruct|hybrid LLM|Hybrid Search RAG|Hypotenuse AI
 
@@ -584,6 +584,10 @@ User-agent: GPT-5 Thinking mini
 User-agent: GPT-5o
 User-agent: GPT-5-high
 User-agent: GPT-crawler
+User-agent: GPT-5.1
+User-agent: GPT-5.1 Instant
+User-agent: GPT-5.1 Thinking
+User-agent: GPT-5.1 Auto
 User-agent: gpt-crawler
 User-agent: GPT-oss /
 User-agent: GPT-Qwen Deep Research
@@ -1475,6 +1479,10 @@ GPT-5 Nano
 GPT-5 Thinking mini
 GPT-5o
 GPT-5-high
+GPT-5.1
+GPT-5.1 Instant
+GPT-5.1 Thinking
+GPT-5.1 Auto
 GPT-crawler
 gpt-crawler
 GPT-oss /
