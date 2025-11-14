@@ -101,7 +101,7 @@ RAG LLM|RAG Pipeline|RAG Search|RAG with|RAG-as-a-Service|RAG_VertexAI|RAG_with_
 Sambanova|SaplingAI|SBIntuitionsBot|Scala|scaleai|Scalenut|scale-crawler|Scrap|ScrapeGraph|ScrapeGraphAI|Scrapegraph-ai|Scraper|Scraper Bot|ScraperGPT|Scraping Agent AI|Scrapy|Scrapy 2.12.0|
 Scrapy 2.13.1|Scrapy-LLM|Scrapy/2.0|ScriptBook|Search GPT|Search RAG|SearchGPT|Seekr|SeLLMa|SemrushBot|SemrushBot-FT|SemrushBot-OCOB|SemrushBot-SWA|Sentibot|SEO Content Machine|SEO Robot|SEObot|ShadowGPT|
 ShapBot|Shell GPT|sider.ai|Sidetrade|Simplified AI|Sitefinity|skrape.ai|Skydancer|Skyvern|SlickWrite|SmartBot|SmartScrape|SmartScraperGraph|Sonic|Sora|SpamGPT|Spawning-ai|SpiderCreator|Spider-Agent|Spider/2|
-Spider/2.0; +https://spider.cloud|Spin Rewrite|Spinbot|Stability|Stability AI|Stable Diffusion|StableDiffusionBot|Stagehand|STEALTH|Step 3|Sudowrite|SummalyBot|Super Agent|Superagent|superagi|Surfer AI|SUSE AI|
+Spider/2.0; +https://spider.cloud|Spin Rewrite|Spinbot|Stability|Stability AI|Stable Diffusion|StableDiffusionBot|Stagehand|STEALTH|Step 3|Sudowrite|SummalyBot|Super Agent|Superagent|superagi|Surfer AI|SUSE AI
 
 Knowledge|taiko|TerraCotta|Text Blaze|TextCortex|Text-RAG|The Knowledge AI|TheKnowledgeAI|thehive.a1|Thinkbot|Thinkbot/0.5.8|Thordata|TikTokSpider|Timpibot|Together AI|Together-Bot|TorChat|Traefik|Tülu|TurnitinBot|uAgents|UI-TARS
 
