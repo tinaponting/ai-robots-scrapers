@@ -57,7 +57,7 @@ DALL-E|DALL-E 2|Dall-E 4|DALL-E Mini|DALL·E 3|DarkBARD|DarkBard|DarkBERT|DarkGP
 Datenbank Crawler|Deep AI|Deep Research|DeepAI|DeepL|DeepL Agent|DeepMind|DeepResearch|DeepSeek|Deepseek Agent|DeepSeek R1 Chatbot|DeepSeek R1 Y|DeepSeek V3|DeepSeekBot|DeepSeekV2.5-Chat|
 DeepSeek-LLM|DeepSeek-R1|DepolarizingGPT|Devin|DialoGPT|Diffbot|DigitalOceanGenAICrawler|DocsGPTOnyx|Dolma|Dots Chatbot|Doubao AI|DuckAssistBot|DuckDuckGo Chat|DuckDuckGo-Enhanced|Duck.ai
 
-Echobot|Echobox|Elixir|Embed v3|ERNIE X1.1|Evil-GPT|Extended GPT Scraper|FacebookBot|FacebookBot/1.0|FacebookExternalHit|facebookexternalhit/1.1|Factset|Factset_spyderbot|Falcon|Fastai|FastGPT|Firebase|Firecrawl|FirecrawlAgent|Fireworks|FIRE-1|FIRE-1 Agent|Flux|Flyriver|flyriverbot/1.1|Frase AI|FraudGPT|FriendlyCrawler|
+Echobot|Echobox|Elixir|Embed v3|ERNIE X1.1|Evil-GPT|Extended GPT Scraper|FacebookBot|FacebookBot/1.0|FacebookExternalHit|facebookexternalhit/1.1|Factset|Factset_spyderbot|Falcon|Fastai|FastGPT|Firebase|Firecrawl|FirecrawlAgent|Fireworks|FIRE-1|FIRE-1 Agent|Flux|Flyriver|flyriverbot/1.1|Frase AI|FraudGPT|FriendlyCrawler
 
 AI Ghostwriter|Gato|Gemini|Gemini Agentic RAG|Gemini-Ai|
 Gemini-Deep-Research|Gemini-User|Gemma|Gemma 3|Gen AI|GenAI|GenAI Chat|GenAI RAG|Generative|Genspark|gentoo-chat|gen-ai|GhostGPT|Ghostwriter|GigaChat|GLM|GLM 4.6|Go|GodMode|Google Gemini|
@@ -70,9 +70,9 @@ Hemingway Editor|Hetzner|Hugging|Hugging Face|HuggingChat|huggingfacebot|Hugging
 iAskBot|iaskspider|iaskspider/2.0|ICC-Crawler|IdeogramImageGen|ImageGen /|ImageGPT|
 Imagen 4|ImagesiftBot|img2dataset|imgproxy|Inferkit|INK Editor|INKforall|Instructor|instructor-php|IntelliSeek|IntelliSeek.ai|ISSCyberRiskCrawler|MAI-Image-1
 
-Jamba 1.5 Large|Jamba 1.5 Mini|Janitor AI|JasperAI|Jenni AI|Julius AI|
+Jamba 1.5 Large|Jamba 1.5 Mini|Janitor AI|JasperAI|Jenni AI|Julius AI
 
-Kafkai|Kaggle|Kaggle agent|Kangaroo|Kangaroo Bot|Kangaroo-Bot|Keyword Density AI|Kimi|Kimi K2|Kimi-2|Kimi-VL|Kingsoft-LLM|Knowledge|Knowledge Graph|knowledge /|knowledge-base|KomoBot|Kruti|
+Kafkai|Kaggle|Kaggle agent|Kangaroo|Kangaroo Bot|Kangaroo-Bot|Keyword Density AI|Kimi|Kimi K2|Kimi-2|Kimi-VL|Kingsoft-LLM|Knowledge|Knowledge Graph|knowledge /|knowledge-base|KomoBot|Kruti
 
 LangChain|Langchain raptor|langchain-google-genai|langchain-openai|langchain-perplexity|
 LangExtract|Langfuse|Language AI|Le Chat|LeftWingGPT|Lensa|Leonadro|Lightpanda|LightRAG|LINER Bot|LinerBot|LiteLLM|LiteLLM Proxy|LiteLLM Python|LLaMA|
