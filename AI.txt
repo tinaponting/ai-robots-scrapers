@@ -2562,7 +2562,6 @@ URL: https://www.udio.com/
 
 ............................................
 -------------------------------------------
-ADDED: 2051104
 ## Model evaluation is supported for the following 
 foundation models (to see which Regions support each model, refer to Supported foundation models in Amazon Bedrock):
 
@@ -2662,6 +2661,52 @@ Stability AI Stable Image Ultra 1.1 stability.stable-image-ultra-v1:1
 
 Writer Palmyra X4 writer.palmyra-x4-v1:0
 Writer Palmyra X5 writer.palmyra-x5-v1:0
+..............................
+#Frameworks that Facilitate RAG:
+
+Haystack: LLM orchestration framework to build customizable, production-ready LLM applications.
+LangChain: An all-purpose framework for working with LLMs.
+Semantic Kernel: An SDK from Microsoft for developing Generative AI applications.
+LlamaIndex: Framework for connecting custom data sources to LLMs.
+Dify: An open-source LLM app development platform.
+Cognita: Open-source RAG framework for building modular and production ready applications.
+Verba: Open-source application for RAG out of the box.
+Mastra: Typescript framework for building AI applications.
+Letta: Open source framework for building stateful LLM applications.
+Flowise: Drag & drop UI to build customized LLM flows.
+Swiftide: Rust framework for building modular, streaming LLM applications.
+CocoIndex: ETL framework to index data for AI, such as RAG; with realtime incremental updates.
+Pathway: Performant open-source Python ETL framework with Rust runtime, supporting 300+ data sources.
+Pathway AI Pipelines: A production-ready RAG framework supporting real-time indexing, retrieval, and change tracking across diverse data sources.
+
+# These tools can assist in evaluating the performance of your RAG system, from tracking user feedback to 
+logging query interactions and comparing multiple evaluation metrics over time.
+
+LangFuse: Open-source tool for tracking LLM metrics, observability, and prompt management.
+Ragas: Framework that helps evaluate RAG pipelines.
+LangSmith: A platform for building production-grade LLM applications, allows you to closely monitor and evaluate your application.
+Hugging Face Evaluate: Tool for computing metrics like BLEU and ROUGE to assess text quality.
+Weights & Biases: Tracks experiments, logs metrics, and visualizes performance.
+
+
+RAG (Retrieval Augmented Generation)
+🔥 Agentic RAG with Embedding Gemma
+🧐 Agentic RAG with Reasoning
+📰 AI Blog Search (RAG)
+🔍 Autonomous RAG
+🔄 Contextual AI RAG Agent
+🔄 Corrective RAG (CRAG)
+🐋 Deepseek Local RAG Agent
+🤔 Gemini Agentic RAG
+👀 Hybrid Search RAG (Cloud)
+🔄 Llama 3.1 Local RAG
+🖥️ Local Hybrid Search RAG
+🦙 Local RAG Agent
+🧩 RAG-as-a-Service
+✨ RAG Agent with Cohere
+⛓️ Basic RAG Chain
+📠 RAG with Database Routing
+🖼️ Vision RAG
 
 ..........................................................................
 --------------------------------------------------------------------------
@@ -2684,6 +2729,8 @@ GPT-5.1 Instant
 GPT-5.1 Thinking
 GPT-5.1 Auto
 
+
+
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................................
-# Updated: 251114
+# Updated: 251115
