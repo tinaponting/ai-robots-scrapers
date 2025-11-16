@@ -56,7 +56,7 @@ H# lML Element ( Robots Meta Tag)
 * fROM: https://www.searchenginejournal.com/new-rules-will-block-ai-training-bots/532348/
 The following are the proposed meta robots directives:
 
-<meta name=”robots” content=”DisallowAITraining”>
+ <meta name="robots"content="DisallowAITraining">
 
 ## The following are the proposed * Robots.txt rules:
 DisallowAITraining – instructs the parser to not use the data for AI training language model.
@@ -227,6 +227,7 @@ that humans won’t see or click, but scrapers will. If a bot interacts with the
 * 
 How to Set Up a Honeypot Trap:
 Add a Hidden Honeypot Link by placing this hidden link in your HTML:
+
 <a href=”/trap-page” class=”honeypot”>Hidden Link</a>
 <style>.honeypot { display: none; }</style>
 Humans won’t see it due to display: none;.
@@ -260,4 +261,37 @@ to access, store, or repurpose content from this site is strictly prohibited. An
 Use CSS Hidden Elements – Place text in display: none; sections that only appear in raw HTML
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 250822
+ROBOTS.TXT:
+
+    <meta name="robots" content="noai, noindex, noimageai">
+    <meta name="googlebot" content="noai">
+    <meta name="bingbot" content="noai">
+    <meta name="gptbot" content="noindex">
+    <meta name="claudebot" content="noindex">
+    <meta name="amazonbot" content="noai">
+    <meta name="applebot" content="noai">
+    <meta name="anthropicai" content="noindex">
+    <meta name="perplexitybot" content="noindex">
+    <meta name="quorabot" content="noindex">
+    <meta name="duckduckgo-enhanced" content="noai">
+    <meta name="openai-user" content="noai">
+    <meta name="ai-content-detector" content="noindex">
+    <meta name="dataforai" content="noai">
+    <meta name="commoncrawl" content="noai">
+    <meta name="bytespider" content="noai">
+    <meta name="neevaai" content="noai">
+    <meta name="youbot" content="noai">
+    <meta name="facebookbot" content="noai">
+    <meta name="x-robot" content="noindex">
+    <meta name="bingbot" content="noai">
+    <meta name="copilotbot" content="noai">
+    <meta name="poebot" content="noindex">
+    <meta name="phindbot" content="noindex">
+    <meta name="apple-genai" content="noai">
+    <meta name="ai-crawler" content="noindex">
+    <meta name="webcrawler-ai" content="noindex">
+    <meta name="anybot" content="noai">
+	
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+-----------------------------------------------------------
+Updated: 251116
