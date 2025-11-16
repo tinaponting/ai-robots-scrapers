@@ -55,9 +55,10 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
 ..........................................................................................
 
 # Updates: **
-# Working: * New AI List and scrips all up-to-date 251115 - new working in progress)
+# Working: * New AI List and scrips all up-to-date 251116)
 
-* Updated: 251125  block ai.php, Lighweight extra protect, place in in core:).
+* Hugo Ai block - Updated 251116.
+* block ai.php, Lighweight extra protect, place in in core:) - Updated 1116
 * HA Proxy list updated 251114
 * Fork of blockaai crawlers.zip - Updated 251114
 * Caddy - updated 251114
