@@ -1,5 +1,5 @@
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Ai bots/scrapers:
+Ai bots - scrapers:
 .................................................................
 ## Ai (important) Adresses:  ###
 .
@@ -2729,8 +2729,106 @@ GPT-5.1 Instant
 GPT-5.1 Thinking
 GPT-5.1 Auto
 
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#ADDED: 251125
 
+GPTBot/1.3
+OLMO 3
+Meta's SAM 3
+
+Petabot 
+URL: https://petanux.com/petabot/
+
+resec.ai
+URL: https://resea.ai/
+
+Crawl4ai 
+Grok 4.1
+ChatGPT Retrieval
+ERNIE
+FAISS (Facebook AI Similarity Search)
+
+Haystack:
+Haystack - deepset AI
+U haystack-ai
+Haystack RAG Pipeline 
+
+REALM
+Weaviate
+langchain-openai
+DeepSeek-V3.1
+AI Deep Research Agent
+NotebookLM Deep Research
+
+LinkupBot/1.0 (LinkupBot for web indexing; https://linkup.so/bot; [bot@linkup.so](mailto:bot@linkup.so)
+Linkup Deep
+https://www.linkup.so/
+
+KlaviyoAIBot
+URL: https://help.klaviyo.com/hc/en-us/articles/40496146232219
+
+KI-Crawler
+URL: https://www.smartlemon.de/blog/logfile-analyse-llms/
+
+NextChat
+URL: https://github.com/ChatGPTNextWeb/NextChat
+
+Knowledge-graph RAG
+knowledge graph
+
+LLM Scraper
+openai-user
+openai-python
+
+AI-Crawler
+URL: https://github.com/oxylabs/ai-crawler-py
+
+AI Crawler
+URL: https://www.genaiprotos.com/prototype/ai-crawler/
+
+?
+Perplexity Stealth
+Replicate-Bot
+
+NetShelter ContentScan
+URL: https://inpowered.ai/
+
+ZanistaBot
+URL: https://zanista.ai/crawler-info
+
+User-agent: LLM-jp-Crawler
+URL: https://llm-jp.github.io/crawler/
+
+Amazon Q Business
+https://aws.amazon.com/q/business/  
+Amazon Kendra Web Crawler
+https://docs.aws.amazon.com/kendra/latest/dg/stop-web-crawler.html
+
+Agentic RAG with Reasoning
+
+https://udger.com/resources/ua-list/bot-detail?bot=Cypex
+cypex.ai/scanning Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Chrome/126.0.0.0 Safari/537.36
+I do not need any more security:(  I am armed to the teeth!  Very shade!
+
+LMArena bot
+https://udger.com/resources/ua-list/bot-detail?bot=LMArena+bot
+
+Abacus AI Deep Agent
+AI2Bot-DeepResearchEval
+Poggio-Citations
+LAION-huggingface-processor 
+LCC
+SBIntuitionsBot
+Spider
+ZanistaBot 
+Opus 4.5
+PandasAI
+AI guardrails
+gobrowser
+AI Agentic RAG Pipeline  ?
+LightRAG
+GPT-Shield-AI-Plagiarism-Detector
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................................
-# Updated: 251115
+#UPDATED: 251125
