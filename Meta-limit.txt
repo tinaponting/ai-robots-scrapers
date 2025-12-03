@@ -108,6 +108,11 @@ Header set X-Robots-Tag "noai, noimageai, nosummary, noml"
 OR: 
 Header set X-Robots-Tag: "noai, noimageai, GPC"
 
+
+# MAX SNIPPET:
+
+X-Robots-Tag: noindex, nofollow, max-snippet:150, max-image-preview:standard
+
 ......................................
 #  TDM HEAD:
 
@@ -292,6 +297,69 @@ ROBOTS.TXT:
     <meta name="webcrawler-ai" content="noindex">
     <meta name="anybot" content="noai">
 	
+..................................................................
+
+User-Agent: *
+Content-Signal: ai-train=no, search=yes, ai-input=no
+Disallow: /
+
+#URL: https://contentsignals.org/
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
------------------------------------------------------------
-Updated: 251116
+#Option 1: Block All Snippets
+Prevent Google from using any part of a page in AI-generated summaries:
+
+<meta name="robots" content="nosnippet">
+
+Best for: Pages with entirely sensitive content, legal pages, or internal documentation.
+
+#Option 2: Limit Snippet Length
+
+Allow short snippets while preventing lengthy AI summaries:
+
+html<meta name="robots" content="max-snippet:100">
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#Blocking AI from Using Content
+This meta tag setup completely blocks AI from accessing and using content from the webpage.
+Example Use Case: A company wants to prevent AI from scraping their website's proprietary research and reports.
+
+<head>
+  <meta name="okforai" content="false">
+</head>
+
+#Working?
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+# Nginx
+add_header X-Robots-Tag "noai, noimageai" always;
+
+# Express.js (Node.js) applications, modify the response headers:
+app.use((req, res, next) => {
+res.setHeader(“X-Robots-Tag”, “noai, noimageai”);
+next();
+});
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+...........................................................
+### JSON: 
+
+Example JSON-LD Licensing Information:
+
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "license": {
+    "@type": "CreativeWork",
+    "name": "Custom AI Usage License",
+    "url": "https://www.example.com/ai-usage-license"
+  },
+  "usageInfo": {
+    "aiTraining": "disallowed",
+    "summarization": "allowed",
+    "reproduction": "disallowed"
+  }
+}
+
+...........................................................
+-----------------------------------------------------------	
+# Updated: 251203
