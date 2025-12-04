@@ -57,6 +57,7 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
 # Updates: **
 #WORKNG ON A NEW LIST, HAVE Patience  / 251125#
 
+* UPdated: 201204 My htacces for peace from AI:)
 * Fork of blockaai crawlers.zip - Updated 251117 -with allowed and only forbidden useragen
  Extended version: https://bloggligan.com/robots.txt
 * Hugo Ai block - Updated 251116.
