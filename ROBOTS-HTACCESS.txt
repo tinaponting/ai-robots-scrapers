@@ -93,7 +93,7 @@ n8n-nodes-aiscraper|Nano Banana|Nanobrowser|nanochat|Narrative|NeevaBot|netEstat
 
 OAI SearchBot|OAI-SearchBot|OAI-SearchBot/1.0|OAI-SearchBot/1.3|Ola|Olivia|Ollama|oLLM|OLMo|OLMo 2 Chatbot|OLMO 3|OLMoASR|OLMoE|Omgili|Omgilibot|Onyx|Open AI|Open Deep Research|Open Interpreter|Open Lovable|Open Operator|Open Perflexity|Open Source LLM|OpenAGI|OpenAI|
 OpenAI Crawler|OpenAI CUA|OpenAI GPTBot|OpenAI Image Downloader|OpenAI o1|OpenAI o1-mini|OpenAI o3|OpenAI o3-mini|OpenAI o4|OpenAI o4-mini|OpenAI Operator|OpenAIContentCrawler|
-openai-python|openai-user|Openbot|OpenInterpreter|OpenLens AI|openpi|OpenRouter|openrouter|OpenText AI|open-manus-v2|Operator|Opus 4.5|Outwrite|OVHcloud AI Training|OWL|Owlin
+openai-python|openai-user|Openbot|OpenInterpreter|OpenLens AI|openpi|OpenRouter|openrouter|OpenText AI|open-manus-v2|Operator|Outwrite|OVHcloud AI Training|OWL|Owlin
 
 Page Analyzer AI|PandasAI|PanguBot|Panscient|panscient.com|PaperLiBot|Paraphraser.io|peer39_crawler|peer39_crawler/1.0|PerfectChatGPT|Perflexity|Perplexity AI|Perplexity Deep Research|Perplexity Search|Perplexity Stealth|
 PerplexityBot|PerplexityBot/1.0|PerplexityUser|Perplexity-User|Perplexity-User/1.0|Perplexit-User|Petabot|Petal|PetalBot|petalBot|Phind|PhindBot|PiplBot|Pixmo|Playwright Agentic AI|
@@ -853,7 +853,6 @@ User-agent: openrouter
 User-agent: OpenText AI
 User-agent: open-manus-v2
 User-agent: Operator
-User-agent: Opus 4.5
 User-agent: Outwrite
 User-agent: OVHcloud AI Training
 User-agent: OWL
@@ -1791,7 +1790,6 @@ openrouter
 OpenText AI
 open-manus-v2
 Operator
-Opus 4.5
 Outwrite
 OVHcloud AI Training
 OWL
@@ -2069,4 +2067,4 @@ Zimm
 
 :::::::::::::::::::::::::::::::::::::::::::	  
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 25130
+### Updated: 251204
