@@ -63,8 +63,7 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
 
 * UPDATED: 251208, Ai-shield, Caddy, Fork of...:) plugin updated and checked:)
 * Updated 250218 - 251205  :)
-* Updated 250110 - 251110
-* 250109, GTBOT - a pain in the ass!
+* Updated 250909 - 251110
 * 240101 - 241230, updated All:)
 
 ****************************************
