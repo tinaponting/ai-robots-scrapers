@@ -61,6 +61,7 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
 * Fork of blockaai crawlers.zip - Updated 251117 -with allowed and only forbidden useragen
  Extended version: https://bloggligan.com/robots.txt
 
+* UPDATED: 251208, Ai-shield plugin updated and checked:)
 * Updated 250218 - 251205  :)
 * Updated 250110 - 251110
 * 250109, GTBOT - a pain in the ass!
