@@ -61,7 +61,8 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
 * Fork of blockaai crawlers.zip - Updated 251117 -with allowed and only forbidden useragen
  Extended version: https://bloggligan.com/robots.txt
 
-* UPDATED: 251208, Ai-shield, Caddy, Fork of...:) plugin updated and checked:)
+* UPDATED: 251206 - Haproxy Updated
+* UPDATED: 251208 - Ai-shield, Caddy, Fork of...:) plugin updated and checked:)
 * Updated 250218 - 251205  :)
 * Updated 250909 - 251110
 * 240101 - 241230, updated All:)
