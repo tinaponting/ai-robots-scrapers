@@ -55,18 +55,15 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
 ..........................................................................................
 
 # Updates: **
-#WORKNG ON A NEW LIST, HAVE Patience / All done -Merry Christmas#
+#WORKNG ON A NEW LIST, HAVE Patience / working now: 20260107 #
 
 * UPdated: 201204 My htacces for peace from AI:)
 * Fork of blockaai crawlers.zip - Updated 251117 -with allowed and only forbidden useragen
  Extended version: https://bloggligan.com/robots.txt
 
-* UPDATED: 251215 - Hugo-config.yaml-nothanksAI
-* UPDATED: 251207 - BLOCK ai php
-* UPDATED: 251206 - Forkof-kirby-block-ai-master + nginx
-* UPDATED: 251206 - Haproxy Updated
-* UPDATED: 251208 - Ai-shield, Caddy, Fork of...:) plugin updated and checked:)
-* Updated 250218 - 251205  :)
+
+* Updated 26? 
+* Updated 250218 - 25121§ :)
 * Updated 250909 - 251110
 * 240101 - 241230, updated All:)
 
