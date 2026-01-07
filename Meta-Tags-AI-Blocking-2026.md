@@ -208,6 +208,7 @@ Header set X-Robots-Tag "noindex, nofollow, max-snippet:150, max-image-preview:s
 
 ```apache
 <IfModule mod_headers.c>
+    Header set X-Robots-Tag "AITraining"
     Header set X-Robots-Tag "noai, noimageai"
     Header set X-Robots-Tag "gptbot: noindex, nofollow"
     Header set X-Robots-Tag "claudebot: noindex, nofollow"
@@ -496,6 +497,7 @@ server {
 ```html
 <head>
     <meta charset="UTF-8">
+    <meta name="AITraining">
     <meta name="robots" content="noai, noimageai, nosummary">
     <meta name="tdm-reservation" content="1">
     <meta name="gptbot" content="noindex, nofollow">
@@ -569,6 +571,37 @@ server {
 <meta name="deepseekbot" content="noindex">
 <meta name="Meta-ExternalAgent" content="noindex">
 ```
+
+
+#20260107 FROM ALBBA: HEADERS:
+
+ Headers & Meta Tags
+Start with unambiguous, machine-readable signals—even if ignored by some scrapers, they establish legal and ethical standing. 
+Add these to every blog post’s <head>:
+
+<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\">
+<meta name=\"googlebot\" content=\"index, follow, max-snippet:-1\">
+<meta name=\"ai\" content=\"noai, noimageai, noarchive\">
+<meta name=\"bingbot\" content=\"noai, noimageai\">
+<meta name=\"slurp\" content=\"noai\">
+<link rel=\"canonical\" href=\"https://yourblog.com/your-post/\">
+<meta name=\"application-name\" content=\"Your Blog Name\">
+
+
+# Block generic patterns used by AI scrapers
+User-agent: *
+Disallow: /*?*
+Disallow: /*.php$
+Disallow: /*.json$
+Disallow: /search?q=
+
+
+# HTTP Response Headers for Machine Readability
+Add these headers server-side (via .htaccess, nginx config, or Cloudflare Workers) to reinforce intent:
+
+X-Robots-Tag: noai, noimageai, noarchive
+Permissions-Policy: interest-cohort=(), attribution-reporting=()
+Referrer-Policy: strict-origin-when-cross-origi
 
 ---
 
