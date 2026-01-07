@@ -62,7 +62,7 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
  Extended version: https://bloggligan.com/robots.txt
 
 
-* Updated 26? 
+* Updated 260107 - all txts updaded:) 
 * Updated 250218 - 25121§ :)
 * Updated 250909 - 251110
 * 240101 - 241230, updated All:)
