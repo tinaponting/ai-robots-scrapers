@@ -1,4 +1,4 @@
-# Ultimate AI Block List v1.7 20250924
+# Ultimate AI Block List v1.8 20260105
 # https://perishablepress.com/ultimate-ai-block-list/
 
 # Allow all other bots full access
@@ -18,8 +18,10 @@ User-agent: Agentic
 User-agent: AgentQL
 User-agent: Agent 3
 User-agent: Agent API
+User-agent: Agent-
 User-agent: AI Agent
 User-agent: AI Article Writer
+User-agent: AI Assistant
 User-agent: AI Chat
 User-agent: AI Content Detector
 User-agent: AI Detection
@@ -36,6 +38,7 @@ User-agent: AI2
 User-agent: AIBot
 User-agent: aiHitBot
 User-agent: AIMatrix
+User-agent: Airesearch
 User-agent: AISearch
 User-agent: AITraining
 User-agent: Alexa
@@ -48,6 +51,7 @@ User-agent: Amazon
 User-agent: Amelia
 User-agent: AndersPinkBot
 User-agent: AndiBot
+User-agent: Anomura
 User-agent: Anonymous AI
 User-agent: Anthropic
 User-agent: AnyPicker
@@ -57,13 +61,13 @@ User-agent: Aria AI
 User-agent: Aria Browse
 User-agent: Articoolo
 User-agent: Ask AI
+User-agent: Atlassian
 User-agent: AutoGen
-User-agent: AutoGLM
 User-agent: Automated Writer
 User-agent: AutoML
 User-agent: Autonomous RAG
-User-agent: AwarioRssBot
-User-agent: AwarioSmartBot
+User-agent: AutoRAG
+User-agent: Awario
 User-agent: AWS Trainium
 User-agent: Azure
 User-agent: BabyAGI
@@ -77,6 +81,7 @@ User-agent: Botsonic
 User-agent: Brightbot
 User-agent: Browser MCP Agent
 User-agent: Browser Use
+User-agent: BuddyBot
 User-agent: Bytebot
 User-agent: ByteDance
 User-agent: Bytespider
@@ -85,10 +90,10 @@ User-agent: CatBoost
 User-agent: CC-Crawler
 User-agent: CCBot
 User-agent: Chai
+User-agent: Channel3Bot
 User-agent: Character
 User-agent: Charstar AI
 User-agent: Chatbot
-User-agent: ChatGLM
 User-agent: Chatsonic
 User-agent: ChatUser
 User-agent: Chinchilla
@@ -99,6 +104,7 @@ User-agent: Cognitive AI
 User-agent: Cohere
 User-agent: Common Crawl
 User-agent: CommonCrawl
+User-agent: Compass
 User-agent: Content Harmony
 User-agent: Content King
 User-agent: Content Optimizer
@@ -122,8 +128,10 @@ User-agent: Crawlspace
 User-agent: Crew AI
 User-agent: CrewAI
 User-agent: Crushon AI
+User-agent: Cypex
 User-agent: DALL-E
 User-agent: DarkBard
+User-agent: DarkBERT
 User-agent: DataFor
 User-agent: DataProvider
 User-agent: Datenbank Crawler
@@ -136,6 +144,7 @@ User-agent: DeepResearch
 User-agent: DeepSeek
 User-agent: Devin
 User-agent: Diffbot
+User-agent: Dolma
 User-agent: Doubao AI
 User-agent: DuckAssistBot
 User-agent: DuckDuckGo Chat
@@ -150,7 +159,6 @@ User-agent: Falcon
 User-agent: FIRE-1
 User-agent: Firebase
 User-agent: Firecrawl
-User-agent: Flux
 User-agent: Flyriver
 User-agent: Frase AI
 User-agent: FriendlyCrawler
@@ -171,6 +179,7 @@ User-agent: GPT
 User-agent: Grammarly
 User-agent: Grendizer
 User-agent: Grok
+User-agent: Groq
 User-agent: GT Bot
 User-agent: GTBot
 User-agent: GTP
@@ -181,9 +190,13 @@ User-agent: Hunyuan
 User-agent: Hybrid Search RAG
 User-agent: Hypotenuse AI
 User-agent: iAsk
+User-agent: IbouBot
 User-agent: ICC-Crawler
+User-agent: Ideogram
 User-agent: ImageGen
+User-agent: Imagen
 User-agent: ImagesiftBot
+User-agent: ImageSpider
 User-agent: img2dataset
 User-agent: imgproxy
 User-agent: INK Editor
@@ -201,22 +214,33 @@ User-agent: Kaggle
 User-agent: Kangaroo
 User-agent: Keyword Density AI
 User-agent: Kimi
+User-agent: Klaviyo
 User-agent: Knowledge
 User-agent: KomoBot
 User-agent: Kruti
+User-agent: KunatoCrawler
+User-agent: LAIONDownloader
 User-agent: LangChain
+User-agent: Langfuse
+User-agent: Language AI
 User-agent: Le Chat
 User-agent: Lensa
+User-agent: Leonardo
 User-agent: Lightpanda
+User-agent: LightRAG
 User-agent: LinerBot
+User-agent: LinkupBot
 User-agent: LLaMA
+User-agent: LCC
 User-agent: LLM
 User-agent: Local RAG Agent
 User-agent: Lovable
 User-agent: Magistral
 User-agent: magpie-crawler
+User-agent: MAI-Image
 User-agent: Manus
 User-agent: MarketMuse
+User-agent: MBZUAI
 User-agent: Meltwater
 User-agent: Meta-AI
 User-agent: Meta-External
@@ -232,7 +256,9 @@ User-agent: Mintlify
 User-agent: Mistral
 User-agent: Mixtral
 User-agent: model-training
+User-agent: Molmo
 User-agent: Monica
+User-agent: Nano
 User-agent: Narrative
 User-agent: NeevaBot
 User-agent: netEstate
@@ -240,24 +266,32 @@ User-agent: Neural Text
 User-agent: NeuralSEO
 User-agent: NinjaAI
 User-agent: NodeZero
+User-agent: NotebookLM
 User-agent: Nova Act
 User-agent: NovaAct
+User-agent: Nytheon
 User-agent: OAI-SearchBot
 User-agent: OAI SearchBot
 User-agent: OASIS
 User-agent: Olivia
+User-agent: OLM
 User-agent: Omgili
+User-agent: Onyx
 User-agent: Open AI
 User-agent: Open Interpreter
 User-agent: OpenAGI
 User-agent: OpenAI
 User-agent: OpenBot
+User-agent: OpenInterpreter
 User-agent: OpenPi
 User-agent: OpenRouter
 User-agent: OpenText AI
 User-agent: Operator
 User-agent: Outwrite
+User-agent: OVHcloud
+User-agent: Owlin
 User-agent: Page Analyzer AI
+User-agent: PaLM 2
 User-agent: PanguBot
 User-agent: Panscient
 User-agent: Paperlibot
@@ -268,12 +302,19 @@ User-agent: Perplexity
 User-agent: Petal
 User-agent: Phind
 User-agent: PiplBot
+User-agent: Pixmo
+User-agent: Playwright
 User-agent: PoeBot
 User-agent: PoeSearchBot
+User-agent: Poggio
+User-agent: Poseidon
 User-agent: ProWritingAid
 User-agent: Proximic
+User-agent: PulsarRPA
 User-agent: Puppeteer
 User-agent: Python AI
+User-agent: Python lxml
+User-agent: PyTorch
 User-agent: Qualified
 User-agent: Quark
 User-agent: QuillBot
@@ -291,8 +332,12 @@ User-agent: RAG-
 User-agent: RAG_
 User-agent: Raptor
 User-agent: React Agent
+User-agent: Reasoning
 User-agent: Redis AI RAG
+User-agent: Reka Flash
+User-agent: Replicate
 User-agent: RobotSpider
+User-agent: RunPod
 User-agent: Rytr
 User-agent: SaplingAI
 User-agent: SBIntuitionsBot
@@ -312,6 +357,7 @@ User-agent: Sidetrade
 User-agent: Simplified AI
 User-agent: Sitefinity
 User-agent: Skydancer
+User-agent: Skyvern
 User-agent: SlickWrite
 User-agent: SmartBot
 User-agent: Sonic
@@ -321,13 +367,18 @@ User-agent: SpiderCreator
 User-agent: Spin Rewrite
 User-agent: Spinbot
 User-agent: Stability
+User-agent: Stable Diffusion
 User-agent: StableDiffusionBot
+User-agent: Stagehand
+User-agent: Stealth
 User-agent: Sudowrite
 User-agent: SummalyBot
 User-agent: Super Agent
 User-agent: Superagent
 User-agent: SuperAGI
 User-agent: Surfer AI
+User-agent: Taiko
+User-agent: TavilyBot
 User-agent: TerraCotta
 User-agent: Text Blaze
 User-agent: TextCortex
@@ -336,16 +387,22 @@ User-agent: Thordata
 User-agent: TikTokSpider
 User-agent: Timpibot
 User-agent: Tinybird
-User-agent: Together AI
+User-agent: Together
 User-agent: Traefik
+User-agent: Tulu
+User-agent: Tülu
 User-agent: TurnitinBot
+User-agent: TwinAgent
 User-agent: uAgents
+User-agent: UI-TARS
 User-agent: VelenPublicWebCrawler
 User-agent: Venus Chub AI
 User-agent: Vidnami AI
 User-agent: Vision RAG
+User-agent: WARDBot
 User-agent: WebSurfer
 User-agent: WebText
+User-agent: WebVoyager
 User-agent: Webzio
 User-agent: WeChat
 User-agent: Whisper
@@ -356,11 +413,16 @@ User-agent: Writecream
 User-agent: WriterZen
 User-agent: Writescope
 User-agent: Writesonic
+User-agent: WRTNBot
 User-agent: xAI
+User-agent: Xanthorox
 User-agent: xBot
+User-agent: XLNet
+User-agent: YaK
 User-agent: YaML
 User-agent: YandexAdditional
 User-agent: YouBot
+User-agent: Zanista
 User-agent: Zendesk
 User-agent: Zero
 User-agent: Zhipu
@@ -370,155 +432,123 @@ Disallow: /
 
 ***
 
-# Ultimate AI Block List v1.7 20250924
+# Ultimate AI Block List v1.8 20260105
 # https://perishablepress.com/ultimate-ai-block-list/
 
 <IfModule mod_rewrite.c>
+
 	RewriteEngine On
-	RewriteCond %{HTTP_USER_AGENT} (\.ai|-ai|_ai|ai\.|ai-|ai_|ai=|AddSearchBot|Agentic|AgentQL|Agent\ 3|Agent\ API|AI\ Agent|AI\ Article\ Writer|AI\ Chat|AI\ Content\ Detector|AI\ Detection|AI\ Dungeon|AI\ Journalist|AI\ Legion) [NC,OR]
-	RewriteCond %{HTTP_USER_AGENT} (AI\ RAG|AI\ Search|AI\ SEO\ Crawler|AI\ Training|AI\ Web|AI\ Writer|AI2|AIBot|aiHitBot|AIMatrix|AISearch|AITraining|Alexa|Alice\ Yandex|AliGenie|AliyunSec|Alpha\ AI|AlphaAI|Amazon|Amelia) [NC,OR]
-	RewriteCond %{HTTP_USER_AGENT} (AndersPinkBot|AndiBot|Anonymous\ AI|Anthropic|AnyPicker|Anyword|Applebot|Aria\ AI|Aria\ Browse|Articoolo|Ask\ AI|AutoGen|AutoGLM|Automated\ Writer|AutoML|Autonomous\ RAG|AwarioRssBot|AwarioSmartBot|AWS\ Trainium|Azure) [NC,OR]
-	RewriteCond %{HTTP_USER_AGENT} (BabyAGI|BabyCatAGI|BardBot|Basic\ RAG|Bedrock|Big\ Sur|Bigsur|Botsonic|Brightbot|Browser\ MCP\ Agent|Browser\ Use|Bytebot|ByteDance|Bytespider|CarynAI|CatBoost|CC-Crawler|CCBot|Chai|Character) [NC,OR]
-	RewriteCond %{HTTP_USER_AGENT} (Charstar\ AI|Chatbot|ChatGLM|Chatsonic|ChatUser|Chinchilla|Claude|ClearScope|Clearview|Cognitive\ AI|Cohere|Common\ Crawl|CommonCrawl|Content\ Harmony|Content\ King|Content\ Optimizer|Content\ Samurai|ContentAtScale|ContentBot|Contentedge) [NC,OR]
-	RewriteCond %{HTTP_USER_AGENT} (ContentShake|Conversion\ AI|Copilot|CopyAI|Copymatic|Copyscape|CoreWeave|Corrective\ RAG|Cotoyogi|CRAB|Crawl4AI|CrawlQ\ AI|Crawlspace|Crew\ AI|CrewAI|Crushon\ AI|DALL-E|DarkBard|DataFor|DataProvider) [NC,OR]
-	RewriteCond %{HTTP_USER_AGENT} (Datenbank\ Crawler|DeepAI|Deep\ AI|DeepL|DeepMind|Deep\ Research|DeepResearch|DeepSeek|Devin|Diffbot|Doubao\ AI|DuckAssistBot|DuckDuckGo\ Chat|DuckDuckGo-Enhanced|Echobot|Echobox|Elixir|FacebookBot|FacebookExternalHit|Factset) [NC,OR]
-	RewriteCond %{HTTP_USER_AGENT} (Falcon|FIRE-1|Firebase|Firecrawl|Flux|Flyriver|Frase\ AI|FriendlyCrawler|Gato|Gemini|Gemma|Gen\ AI|GenAI|Generative|Genspark|Gentoo-chat|Ghostwriter|GigaChat|GLM|GodMode) [NC,OR]
-	RewriteCond %{HTTP_USER_AGENT} (Goose|GPT|Grammarly|Grendizer|Grok|GT\ Bot|GTBot|GTP|Hemingway\ Editor|Hetzner|Hugging|Hunyuan|Hybrid\ Search\ RAG|Hypotenuse\ AI|iAsk|ICC-Crawler|ImageGen|ImagesiftBot|img2dataset|imgproxy) [NC,OR]
-	RewriteCond %{HTTP_USER_AGENT} (INK\ Editor|INKforall|Instructor|IntelliSeek|Inferkit|ISSCyberRiskCrawler|Janitor\ AI|Jasper|Jenni\ AI|Julius\ AI|Kafkai|Kaggle|Kangaroo|Keyword\ Density\ AI|Kimi|Knowledge|KomoBot|Kruti|LangChain|Le\ Chat) [NC,OR]
-	RewriteCond %{HTTP_USER_AGENT} (Lensa|Lightpanda|LinerBot|LLaMA|LLM|Local\ RAG\ Agent|Lovable|Magistral|magpie-crawler|Manus|MarketMuse|Meltwater|Meta-AI|Meta-External|Meta-Webindexer|Meta\ AI|MetaAI|MetaTagBot|Middleware|Midjourney) [NC,OR]
-	RewriteCond %{HTTP_USER_AGENT} (Mini\ AGI|MiniMax|Mintlify|Mistral|Mixtral|model-training|Monica|Narrative|NeevaBot|netEstate|Neural\ Text|NeuralSEO|NinjaAI|NodeZero|Nova\ Act|NovaAct|OAI-SearchBot|OAI\ SearchBot|OASIS|Olivia) [NC,OR]
-	RewriteCond %{HTTP_USER_AGENT} (Omgili|Open\ AI|Open\ Interpreter|OpenAGI|OpenAI|OpenBot|OpenPi|OpenRouter|OpenText\ AI|Operator|Outwrite|Page\ Analyzer\ AI|PanguBot|Panscient|Paperlibot|Paraphraser\.io|peer39_crawler|Perflexity|Perplexity|Petal) [NC,OR]
-	RewriteCond %{HTTP_USER_AGENT} (Phind|PiplBot|PoeBot|PoeSearchBot|ProWritingAid|Proximic|Puppeteer|Python\ AI|Qualified|Quark|QuillBot|Qopywriter|Qwen|RAG\ Agent|RAG\ Azure\ AI|RAG\ Chatbot|RAG\ Database|RAG\ IS|RAG\ Pipeline|RAG\ Search) [NC,OR]
-	RewriteCond %{HTTP_USER_AGENT} (RAG\ with|RAG-|RAG_|Raptor|React\ Agent|Redis\ AI\ RAG|RobotSpider|Rytr|SaplingAI|SBIntuitionsBot|Scala|Scalenut|Scrap|ScriptBook|Seekr|SEObot|SEO\ Content\ Machine|SEO\ Robot|SemrushBot|Sentibot) [NC,OR]
-	RewriteCond %{HTTP_USER_AGENT} (Serper|ShapBot|Sidetrade|Simplified\ AI|Sitefinity|Skydancer|SlickWrite|SmartBot|Sonic|Sora|Spider/2|SpiderCreator|Spin\ Rewrite|Spinbot|Stability|StableDiffusionBot|Sudowrite|SummalyBot|Super\ Agent|Superagent) [NC,OR]
-	RewriteCond %{HTTP_USER_AGENT} (SuperAGI|Surfer\ AI|TerraCotta|Text\ Blaze|TextCortex|Thinkbot|Thordata|TikTokSpider|Timpibot|Tinybird|Together\ AI|Traefik|TurnitinBot|uAgents|VelenPublicWebCrawler|Venus\ Chub\ AI|Vidnami\ AI|Vision\ RAG|WebSurfer|WebText) [NC,OR]
-	RewriteCond %{HTTP_USER_AGENT} (Webzio|WeChat|Whisper|WordAI|Wordtune|WPBot|Writecream|WriterZen|Writescope|Writesonic|xAI|xBot|YaML|YandexAdditional|YouBot|Zendesk|Zero|Zhipu|Zhuque\ AI|Zimm) [NC]
-	RewriteRule (.*) - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} (\.ai|-ai|_ai|ai\.|ai-|ai_|ai=|AddSearchBot|Agentic|AgentQL|Agent\ 3|Agent\ API|Agent-|AI\ Agent|AI\ Article\ Writer|AI\ Assistant|AI\ Chat|AI\ Content\ Detector|AI\ Detection|AI\ Dungeon) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (AI\ Journalist|AI\ Legion|AI\ RAG|AI\ Search|AI\ SEO\ Crawler|AI\ Training|AI\ Web|AI\ Writer|AI2|AIBot|aiHitBot|AIMatrix|Airesearch|AISearch|AITraining|Alexa|Alice\ Yandex|AliGenie|AliyunSec|Alpha\ AI) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (AlphaAI|Amazon|Amelia|AndersPinkBot|AndiBot|Anomura|Anonymous\ AI|Anthropic|AnyPicker|Anyword|Applebot|Aria\ AI|Aria\ Browse|Articoolo|Ask\ AI|Atlassian|AutoGen|Automated\ Writer|AutoML|Autonomous\ RAG) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (AutoRAG|Awario|AWS\ Trainium|Azure|BabyAGI|BabyCatAGI|BardBot|Basic\ RAG|Bedrock|Big\ Sur|Bigsur|Botsonic|Brightbot|Browser\ MCP\ Agent|Browser\ Use|BuddyBot|Bytebot|ByteDance|Bytespider|CarynAI) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (CatBoost|CC-Crawler|CCBot|Chai|Channel3Bot|Character|Charstar\ AI|Chatbot|Chatsonic|ChatUser|Chinchilla|Claude|ClearScope|Clearview|Cognitive\ AI|Cohere|Common\ Crawl|CommonCrawl|Compass|Content\ Harmony) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (Content\ King|Content\ Optimizer|Content\ Samurai|ContentAtScale|ContentBot|Contentedge|ContentShake|Conversion\ AI|Copilot|CopyAI|Copymatic|Copyscape|CoreWeave|Corrective\ RAG|Cotoyogi|CRAB|Crawl4AI|CrawlQ\ AI|Crawlspace|Crew\ AI) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (CrewAI|Crushon\ AI|Cypex|DALL-E|DarkBard|DarkBERT|DataFor|DataProvider|Datenbank\ Crawler|DeepAI|Deep\ AI|DeepL|DeepMind|Deep\ Research|DeepResearch|DeepSeek|Devin|Diffbot|Dolma|Doubao\ AI) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (DuckAssistBot|DuckDuckGo\ Chat|DuckDuckGo-Enhanced|Echobot|Echobox|Elixir|FacebookBot|FacebookExternalHit|Factset|Falcon|FIRE-1|Firebase|Firecrawl|Flyriver|Frase\ AI|FriendlyCrawler|Gato|Gemini|Gemma|Gen\ AI) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (GenAI|Generative|Genspark|Gentoo-chat|Ghostwriter|GigaChat|GLM|GodMode|Goose|GPT|Grammarly|Grendizer|Grok|Groq|GT\ Bot|GTBot|GTP|Hemingway\ Editor|Hetzner|Hugging) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (Hunyuan|Hybrid\ Search\ RAG|Hypotenuse\ AI|iAsk|IbouBot|ICC-Crawler|Ideogram|ImageGen|Imagen|ImagesiftBot|ImageSpider|img2dataset|imgproxy|INK\ Editor|INKforall|Instructor|IntelliSeek|Inferkit|ISSCyberRiskCrawler|Janitor\ AI) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (Jasper|Jenni\ AI|Julius\ AI|Kafkai|Kaggle|Kangaroo|Keyword\ Density\ AI|Kimi|Klaviyo|Knowledge|KomoBot|Kruti|KunatoCrawler|LAIONDownloader|LangChain|Langfuse|Language\ AI|Le\ Chat|Lensa|Leonardo) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (Lightpanda|LightRAG|LinerBot|LinkupBot|LLaMA|LCC|LLM|Local\ RAG\ Agent|Lovable|Magistral|magpie-crawler|MAI-Image|Manus|MarketMuse|MBZUAI|Meltwater|Meta-AI|Meta-External|Meta-Webindexer|Meta\ AI) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (MetaAI|MetaTagBot|Middleware|Midjourney|Mini\ AGI|MiniMax|Mintlify|Mistral|Mixtral|model-training|Molmo|Monica|Nano|Narrative|NeevaBot|netEstate|Neural\ Text|NeuralSEO|NinjaAI|NodeZero) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (NotebookLM|Nova\ Act|NovaAct|Nytheon|OAI-SearchBot|OAI\ SearchBot|OASIS|Olivia|OLM|Omgili|Onyx|Open\ AI|Open\ Interpreter|OpenAGI|OpenAI|OpenBot|OpenInterpreter|OpenPi|OpenRouter|OpenText\ AI) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (Operator|Outwrite|OVHcloud|Owlin|Page\ Analyzer\ AI|PaLM\ 2|PanguBot|Panscient|Paperlibot|Paraphraser\.io|peer39_crawler|Perflexity|Perplexity|Petal|Phind|PiplBot|Pixmo|Playwright|PoeBot|PoeSearchBot) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (Poggio|Poseidon|ProWritingAid|Proximic|PulsarRPA|Puppeteer|Python\ AI|Python\ lxml|PyTorch|Qualified|Quark|QuillBot|Qopywriter|Qwen|RAG\ Agent|RAG\ Azure\ AI|RAG\ Chatbot|RAG\ Database|RAG\ IS|RAG\ Pipeline) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (RAG\ Search|RAG\ with|RAG-|RAG_|Raptor|React\ Agent|Reasoning|Redis\ AI\ RAG|Reka\ Flash|Replicate|RobotSpider|RunPod|Rytr|SaplingAI|SBIntuitionsBot|Scala|Scalenut|Scrap|ScriptBook|Seekr) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (SEObot|SEO\ Content\ Machine|SEO\ Robot|SemrushBot|Sentibot|Serper|ShapBot|Sidetrade|Simplified\ AI|Sitefinity|Skydancer|Skyvern|SlickWrite|SmartBot|Sonic|Sora|Spider/2|SpiderCreator|Spin\ Rewrite|Spinbot) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (Stability|Stable\ Diffusion|StableDiffusionBot|Stagehand|Stealth|Sudowrite|SummalyBot|Super\ Agent|Superagent|SuperAGI|Surfer\ AI|Taiko|TavilyBot|TerraCotta|Text\ Blaze|TextCortex|Thinkbot|Thordata|TikTokSpider|Timpibot) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (Tinybird|Together|Traefik|Tulu|Tülu|TurnitinBot|TwinAgent|uAgents|UI-TARS|VelenPublicWebCrawler|Venus\ Chub\ AI|Vidnami\ AI|Vision\ RAG|WARDBot|WebSurfer|WebText|WebVoyager|Webzio|WeChat|Whisper) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (WordAI|Wordtune|WPBot|Writecream|WriterZen|Writescope|Writesonic|WRTNBot|xAI|Xanthorox|xBot|XLNet|YaK|YaML|YandexAdditional|YouBot|Zanista|Zendesk|Zero|Zhipu) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (Zhuque\ AI|Zimm) [NC]
+RewriteRule (.*) - [F,L]
 </IfModule>
 
 
-****
-Block list for Nginx
-Before using, read the Notes and Disclaimer.
-
-# Ultimate AI Block List v1.7 20250924
+# Ultimate AI Block List v1.8 20260105
 # https://perishablepress.com/ultimate-ai-block-list/
 
-if ($http_user_agent ~* "(\.ai|-ai|_ai|ai\.|ai-|ai_|ai=|AddSearchBot|Agentic|AgentQL|Agent\ 3|Agent\ API|AI\ Agent|AI\ Article\ Writer|AI\ Chat|AI\ Content\ Detector|AI\ Detection|AI\ Dungeon|AI\ Journalist|AI\ Legion)") {
+if ($http_user_agent ~* "(\.ai|-ai|_ai|ai\.|ai-|ai_|ai=|AddSearchBot|Agentic|AgentQL|Agent\ 3|Agent\ API|Agent-|AI\ Agent|AI\ Article\ Writer|AI\ Assistant|AI\ Chat|AI\ Content\ Detector|AI\ Detection|AI\ Dungeon)") {
 	return 403;
 }
-if ($http_user_agent ~* "(AI\ RAG|AI\ Search|AI\ SEO\ Crawler|AI\ Training|AI\ Web|AI\ Writer|AI2|AIBot|aiHitBot|AIMatrix|AISearch|AITraining|Alexa|Alice\ Yandex|AliGenie|AliyunSec|Alpha\ AI|AlphaAI|Amazon|Amelia)") {
+if ($http_user_agent ~* "(AI\ Journalist|AI\ Legion|AI\ RAG|AI\ Search|AI\ SEO\ Crawler|AI\ Training|AI\ Web|AI\ Writer|AI2|AIBot|aiHitBot|AIMatrix|Airesearch|AISearch|AITraining|Alexa|Alice\ Yandex|AliGenie|AliyunSec|Alpha\ AI)") {
 	return 403;
 }
-if ($http_user_agent ~* "(AndersPinkBot|AndiBot|Anonymous\ AI|Anthropic|AnyPicker|Anyword|Applebot|Aria\ AI|Aria\ Browse|Articoolo|Ask\ AI|AutoGen|AutoGLM|Automated\ Writer|AutoML|Autonomous\ RAG|AwarioRssBot|AwarioSmartBot|AWS\ Trainium|Azure)") {
+if ($http_user_agent ~* "(AlphaAI|Amazon|Amelia|AndersPinkBot|AndiBot|Anomura|Anonymous\ AI|Anthropic|AnyPicker|Anyword|Applebot|Aria\ AI|Aria\ Browse|Articoolo|Ask\ AI|Atlassian|AutoGen|Automated\ Writer|AutoML|Autonomous\ RAG)") {
 	return 403;
 }
-if ($http_user_agent ~* "(BabyAGI|BabyCatAGI|BardBot|Basic\ RAG|Bedrock|Big\ Sur|Bigsur|Botsonic|Brightbot|Browser\ MCP\ Agent|Browser\ Use|Bytebot|ByteDance|Bytespider|CarynAI|CatBoost|CC-Crawler|CCBot|Chai|Character)") {
+if ($http_user_agent ~* "(AutoRAG|Awario|AWS\ Trainium|Azure|BabyAGI|BabyCatAGI|BardBot|Basic\ RAG|Bedrock|Big\ Sur|Bigsur|Botsonic|Brightbot|Browser\ MCP\ Agent|Browser\ Use|BuddyBot|Bytebot|ByteDance|Bytespider|CarynAI)") {
 	return 403;
 }
-if ($http_user_agent ~* "(Charstar\ AI|Chatbot|ChatGLM|Chatsonic|ChatUser|Chinchilla|Claude|ClearScope|Clearview|Cognitive\ AI|Cohere|Common\ Crawl|CommonCrawl|Content\ Harmony|Content\ King|Content\ Optimizer|Content\ Samurai|ContentAtScale|ContentBot|Contentedge)") {
+if ($http_user_agent ~* "(CatBoost|CC-Crawler|CCBot|Chai|Channel3Bot|Character|Charstar\ AI|Chatbot|Chatsonic|ChatUser|Chinchilla|Claude|ClearScope|Clearview|Cognitive\ AI|Cohere|Common\ Crawl|CommonCrawl|Compass|Content\ Harmony)") {
 	return 403;
 }
-if ($http_user_agent ~* "(ContentShake|Conversion\ AI|Copilot|CopyAI|Copymatic|Copyscape|CoreWeave|Corrective\ RAG|Cotoyogi|CRAB|Crawl4AI|CrawlQ\ AI|Crawlspace|Crew\ AI|CrewAI|Crushon\ AI|DALL-E|DarkBard|DataFor|DataProvider)") {
+if ($http_user_agent ~* "(Content\ King|Content\ Optimizer|Content\ Samurai|ContentAtScale|ContentBot|Contentedge|ContentShake|Conversion\ AI|Copilot|CopyAI|Copymatic|Copyscape|CoreWeave|Corrective\ RAG|Cotoyogi|CRAB|Crawl4AI|CrawlQ\ AI|Crawlspace|Crew\ AI)") {
 	return 403;
 }
-if ($http_user_agent ~* "(Datenbank\ Crawler|DeepAI|Deep\ AI|DeepL|DeepMind|Deep\ Research|DeepResearch|DeepSeek|Devin|Diffbot|Doubao\ AI|DuckAssistBot|DuckDuckGo\ Chat|DuckDuckGo-Enhanced|Echobot|Echobox|Elixir|FacebookBot|FacebookExternalHit|Factset)") {
+if ($http_user_agent ~* "(CrewAI|Crushon\ AI|Cypex|DALL-E|DarkBard|DarkBERT|DataFor|DataProvider|Datenbank\ Crawler|DeepAI|Deep\ AI|DeepL|DeepMind|Deep\ Research|DeepResearch|DeepSeek|Devin|Diffbot|Dolma|Doubao\ AI)") {
 	return 403;
 }
-if ($http_user_agent ~* "(Falcon|FIRE-1|Firebase|Firecrawl|Flux|Flyriver|Frase\ AI|FriendlyCrawler|Gato|Gemini|Gemma|Gen\ AI|GenAI|Generative|Genspark|Gentoo-chat|Ghostwriter|GigaChat|GLM|GodMode)") {
+if ($http_user_agent ~* "(DuckAssistBot|DuckDuckGo\ Chat|DuckDuckGo-Enhanced|Echobot|Echobox|Elixir|FacebookBot|FacebookExternalHit|Factset|Falcon|FIRE-1|Firebase|Firecrawl|Flyriver|Frase\ AI|FriendlyCrawler|Gato|Gemini|Gemma|Gen\ AI)") {
 	return 403;
 }
-if ($http_user_agent ~* "(Goose|GPT|Grammarly|Grendizer|Grok|GT\ Bot|GTBot|GTP|Hemingway\ Editor|Hetzner|Hugging|Hunyuan|Hybrid\ Search\ RAG|Hypotenuse\ AI|iAsk|ICC-Crawler|ImageGen|ImagesiftBot|img2dataset|imgproxy)") {
+if ($http_user_agent ~* "(GenAI|Generative|Genspark|Gentoo-chat|Ghostwriter|GigaChat|GLM|GodMode|Goose|GPT|Grammarly|Grendizer|Grok|Groq|GT\ Bot|GTBot|GTP|Hemingway\ Editor|Hetzner|Hugging)") {
 	return 403;
 }
-if ($http_user_agent ~* "(INK\ Editor|INKforall|Instructor|IntelliSeek|Inferkit|ISSCyberRiskCrawler|Janitor\ AI|Jasper|Jenni\ AI|Julius\ AI|Kafkai|Kaggle|Kangaroo|Keyword\ Density\ AI|Kimi|Knowledge|KomoBot|Kruti|LangChain|Le\ Chat)") {
+if ($http_user_agent ~* "(Hunyuan|Hybrid\ Search\ RAG|Hypotenuse\ AI|iAsk|IbouBot|ICC-Crawler|Ideogram|ImageGen|Imagen|ImagesiftBot|ImageSpider|img2dataset|imgproxy|INK\ Editor|INKforall|Instructor|IntelliSeek|Inferkit|ISSCyberRiskCrawler|Janitor\ AI)") {
 	return 403;
 }
-if ($http_user_agent ~* "(Lensa|Lightpanda|LinerBot|LLaMA|LLM|Local\ RAG\ Agent|Lovable|Magistral|magpie-crawler|Manus|MarketMuse|Meltwater|Meta-AI|Meta-External|Meta-Webindexer|Meta\ AI|MetaAI|MetaTagBot|Middleware|Midjourney)") {
+if ($http_user_agent ~* "(Jasper|Jenni\ AI|Julius\ AI|Kafkai|Kaggle|Kangaroo|Keyword\ Density\ AI|Kimi|Klaviyo|Knowledge|KomoBot|Kruti|KunatoCrawler|LAIONDownloader|LangChain|Langfuse|Language\ AI|Le\ Chat|Lensa|Leonardo)") {
 	return 403;
 }
-if ($http_user_agent ~* "(Mini\ AGI|MiniMax|Mintlify|Mistral|Mixtral|model-training|Monica|Narrative|NeevaBot|netEstate|Neural\ Text|NeuralSEO|NinjaAI|NodeZero|Nova\ Act|NovaAct|OAI-SearchBot|OAI\ SearchBot|OASIS|Olivia)") {
+if ($http_user_agent ~* "(Lightpanda|LightRAG|LinerBot|LinkupBot|LLaMA|LCC|LLM|Local\ RAG\ Agent|Lovable|Magistral|magpie-crawler|MAI-Image|Manus|MarketMuse|MBZUAI|Meltwater|Meta-AI|Meta-External|Meta-Webindexer|Meta\ AI)") {
 	return 403;
 }
-if ($http_user_agent ~* "(Omgili|Open\ AI|Open\ Interpreter|OpenAGI|OpenAI|OpenBot|OpenPi|OpenRouter|OpenText\ AI|Operator|Outwrite|Page\ Analyzer\ AI|PanguBot|Panscient|Paperlibot|Paraphraser\.io|peer39_crawler|Perflexity|Perplexity|Petal)") {
+if ($http_user_agent ~* "(MetaAI|MetaTagBot|Middleware|Midjourney|Mini\ AGI|MiniMax|Mintlify|Mistral|Mixtral|model-training|Molmo|Monica|Nano|Narrative|NeevaBot|netEstate|Neural\ Text|NeuralSEO|NinjaAI|NodeZero)") {
 	return 403;
 }
-if ($http_user_agent ~* "(Phind|PiplBot|PoeBot|PoeSearchBot|ProWritingAid|Proximic|Puppeteer|Python\ AI|Qualified|Quark|QuillBot|Qopywriter|Qwen|RAG\ Agent|RAG\ Azure\ AI|RAG\ Chatbot|RAG\ Database|RAG\ IS|RAG\ Pipeline|RAG\ Search)") {
+if ($http_user_agent ~* "(NotebookLM|Nova\ Act|NovaAct|Nytheon|OAI-SearchBot|OAI\ SearchBot|OASIS|Olivia|OLM|Omgili|Onyx|Open\ AI|Open\ Interpreter|OpenAGI|OpenAI|OpenBot|OpenInterpreter|OpenPi|OpenRouter|OpenText\ AI)") {
 	return 403;
 }
-if ($http_user_agent ~* "(RAG\ with|RAG-|RAG_|Raptor|React\ Agent|Redis\ AI\ RAG|RobotSpider|Rytr|SaplingAI|SBIntuitionsBot|Scala|Scalenut|Scrap|ScriptBook|Seekr|SEObot|SEO\ Content\ Machine|SEO\ Robot|SemrushBot|Sentibot)") {
+if ($http_user_agent ~* "(Operator|Outwrite|OVHcloud|Owlin|Page\ Analyzer\ AI|PaLM\ 2|PanguBot|Panscient|Paperlibot|Paraphraser\.io|peer39_crawler|Perflexity|Perplexity|Petal|Phind|PiplBot|Pixmo|Playwright|PoeBot|PoeSearchBot)") {
 	return 403;
 }
-if ($http_user_agent ~* "(Serper|ShapBot|Sidetrade|Simplified\ AI|Sitefinity|Skydancer|SlickWrite|SmartBot|Sonic|Sora|Spider/2|SpiderCreator|Spin\ Rewrite|Spinbot|Stability|StableDiffusionBot|Sudowrite|SummalyBot|Super\ Agent|Superagent)") {
+if ($http_user_agent ~* "(Poggio|Poseidon|ProWritingAid|Proximic|PulsarRPA|Puppeteer|Python\ AI|Python\ lxml|PyTorch|Qualified|Quark|QuillBot|Qopywriter|Qwen|RAG\ Agent|RAG\ Azure\ AI|RAG\ Chatbot|RAG\ Database|RAG\ IS|RAG\ Pipeline)") {
 	return 403;
 }
-if ($http_user_agent ~* "(SuperAGI|Surfer\ AI|TerraCotta|Text\ Blaze|TextCortex|Thinkbot|Thordata|TikTokSpider|Timpibot|Tinybird|Together\ AI|Traefik|TurnitinBot|uAgents|VelenPublicWebCrawler|Venus\ Chub\ AI|Vidnami\ AI|Vision\ RAG|WebSurfer|WebText)") {
+if ($http_user_agent ~* "(RAG\ Search|RAG\ with|RAG-|RAG_|Raptor|React\ Agent|Reasoning|Redis\ AI\ RAG|Reka\ Flash|Replicate|RobotSpider|RunPod|Rytr|SaplingAI|SBIntuitionsBot|Scala|Scalenut|Scrap|ScriptBook|Seekr)") {
 	return 403;
 }
-if ($http_user_agent ~* "(Webzio|WeChat|Whisper|WordAI|Wordtune|WPBot|Writecream|WriterZen|Writescope|Writesonic|xAI|xBot|YaML|YandexAdditional|YouBot|Zendesk|Zero|Zhipu|Zhuque\ AI|Zimm)") {
+if ($http_user_agent ~* "(SEObot|SEO\ Content\ Machine|SEO\ Robot|SemrushBot|Sentibot|Serper|ShapBot|Sidetrade|Simplified\ AI|Sitefinity|Skydancer|Skyvern|SlickWrite|SmartBot|Sonic|Sora|Spider/2|SpiderCreator|Spin\ Rewrite|Spinbot)") {
 	return 403;
 }
-
+if ($http_user_agent ~* "(Stability|Stable\ Diffusion|StableDiffusionBot|Stagehand|Stealth|Sudowrite|SummalyBot|Super\ Agent|Superagent|SuperAGI|Surfer\ AI|Taiko|TavilyBot|TerraCotta|Text\ Blaze|TextCortex|Thinkbot|Thordata|TikTokSpider|Timpibot)") {
+	return 403;
+}
+if ($http_user_agent ~* "(Tinybird|Together|Traefik|Tulu|Tülu|TurnitinBot|TwinAgent|uAgents|UI-TARS|VelenPublicWebCrawler|Venus\ Chub\ AI|Vidnami\ AI|Vision\ RAG|WARDBot|WebSurfer|WebText|WebVoyager|Webzio|WeChat|Whisper)") {
+	return 403;
+}
+if ($http_user_agent ~* "(WordAI|Wordtune|WPBot|Writecream|WriterZen|Writescope|Writesonic|WRTNBot|xAI|Xanthorox|xBot|XLNet|YaK|YaML|YandexAdditional|YouBot|Zanista|Zendesk|Zero|Zhipu)") {
+	return 403;
+}
+if ($http_user_agent ~* "(Zhuque\ AI|Zimm)") {
+	return 403;
+}
 
 
 ::::::::::::::::::::::::::::::::::::::::::
 ..........................................
 
-v1.5 – 2025/06/03
-Adds Applebot
-Changes Phindbot to Phind
-Changes AI Search Engine to AI Search
-Adds: AI Chat, 
-ai-proxy, aiHitBot, 
-AndiBot, AutoGLM,
-AutoML, 
-BabyAGI, 
-Brightbot, 
-chatbot, 
-Factset, 
-imgproxy, 
-Lensa, 
-Lightpanda, 
-Manus, 
-Monica, 
-NovaAct, 
-Puppeteer, 
-Qualified, 
-Qwen, 
-SemrushBot, 
-TikTokSpider, 
-Traefik, 
-VelenPublicWebCrawler, 
-YaML
-
-//UPDATED:  v1.5 – 2025/06/03 
-
-****
-
-v1.6 – 2025/07/18
-Adds many new AI bots, use a free online tool to get the new bots by comparing this version with previous version
-Makes better use of wildcard matching to streamline the list while keeping false positives near zero
-Adds robots.txt rules to allow all other bots full access
-Improves alphabetization and formatting
-Replaces AI2Bot and AI2 Labs with AI2
-Replaces all specific Amazon bot names with Amazon
-Replaces Applebot with Apple
-Replaces LLMs with LLM
-Replaces WormsGTP with GTP
-Replaces Zero GTP and Zerochat with Zero
-
-.....
-
-v1.7 – 2025/09/24
-Removes Apple, adds Applebot
-Removes Brave Leo (Brave Browser Search)
-Adds 65 new patterns, matching many more user agents
+v1.8 – 2026/01/05
+Removes Flux
+Consolidates GLM bots
+Consolidates Awario bots
+Adds 60+ new patterns, matching many more user agents
 Streamlines numerous patterns, removes some patterns
 Improves pattern matching for more accurate blocking and better performance
 Updates the wild-card blocked AI bots plain-text list
 
 
-
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 ---------------------------------------------------
-Updated: 250929
+Updated: 20260105
