@@ -131,7 +131,7 @@
 <meta name="phindbot" content="noindex">
 <meta name="youbot" content="noai">
 <meta name="neevaai" content="noai">
-<meta name="exa-bot" content="noindex">
+<meta name="exa-bot" content="noindex">   #French search engine Exalead - not in use!
 ```
 
 ### Chinese AI Bots
@@ -162,7 +162,7 @@
 <meta name="x-robot" content="noindex">
 <meta name="ai-crawler" content="noindex">
 <meta name="webcrawler-ai" content="noindex">
-<meta name="anybot" content="noai">
+<meta name="anybot" content="noai">  #Add your own bot
 ```
 
 ### Complete Bot-Specific Block (Copy-Paste Ready)
@@ -208,7 +208,7 @@ Header set X-Robots-Tag "noindex, nofollow, max-snippet:150, max-image-preview:s
 
 ```apache
 <IfModule mod_headers.c>
-    Header set X-Robots-Tag "AITraining"
+    Header set X-Robots-Tag: DisallowAITraining
     Header set X-Robots-Tag "noai, noimageai"
     Header set X-Robots-Tag "gptbot: noindex, nofollow"
     Header set X-Robots-Tag "claudebot: noindex, nofollow"
