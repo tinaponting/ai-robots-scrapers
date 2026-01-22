@@ -55,12 +55,12 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
 ..........................................................................................
 
 # Updates: **
-#WORKNG ON A NEW LIST, HAVE Patience / working now: 20260112 #
+#WORKNG ON A NEW LIST, HAVE Patience / working now: 260122 #
 
-* UPdated: 201204 My htacces for peace from AI:)
+* Updated: 260122: ROBOTS-HTACCESS.txt - Latest and Cleaned up,checked:)
+* Updated: 261204 My htacces for peace from AI:)
 * Fork of blockaai crawlers.zip - Updated 251117 -with allowed and only forbidden useragen
  Extended version: https://bloggligan.com/robots.txt
-
 * Updated 260112 Perrishpresshtaccess.zip
 * Updated 260112 Perrishpressultimateblockailist.txt
 
