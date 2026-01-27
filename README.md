@@ -57,6 +57,7 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
 # Updates: **
 #WORKNG ON A NEW LIST, HAVE Patience / working now: 260122 #
 
+* Updated 260127: Fork of blockaai crawlers
 * Updated 260124: nginx
 * Updated: 260122: Haproxy
 * Updated: 260122: Caddy
