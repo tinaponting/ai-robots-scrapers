@@ -57,6 +57,7 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
 # Updates: **
 #WORKNG ON A NEW LIST, HAVE Patience / working now: 260122 #
 
+* Updated 260128: AI-SHIELD
 * Updated 260127: Kirby block Ai
 * Updated 260127: Fork of blockaai crawlers
 * Updated 260124: nginx
