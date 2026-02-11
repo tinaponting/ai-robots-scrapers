@@ -122,7 +122,7 @@ Llama 4|Llama3.1-70B-Instruct|Llama3.1-405B-Instruct|LLM Proxy|LLM Scraper|LLM|L
 Magistral|MAI-DS-R1|Magistral Medium|Magnus|magpie-crawler|MAI-Image|MAI-Image-1|MalwareGPT|Manus|
 Manus-User|MarketMuse|MBZUAI|MBZUAI Chatbot|Meltwater|Meta Agent|Meta AI|Meta AI Crawler|Meta Llama|Meta search scraper|MetaAI|MetaGPT|MetaTagBot|Meta-AI|Meta-External|Meta-ExternalAgent|
 meta-externalagent|meta-externalagent/1.1|Meta-ExternalFetcher|meta-externalfetcher|meta-externalfetcher/1.1|Meta-Webindexer|meta-webindexer|Meta-Webindexer 1/1|meta-webindexer/1.1|Meta.AI|
-microsoft: phi-4-multimodal-instruct|microsoft: phi-4-reasoning-plus|Middleware|Midjourney|midjourney|Mini AGI|minimal AGI|MiniMax|Mintlify|Mistral|Mistral NeMo Instruct|Mistral OCR 3|MistralAI-User|
+Middleware|Midjourney|midjourney|Mini AGI|minimal AGI|MiniMax|Mintlify|Mistral|Mistral NeMo Instruct|Mistral OCR 3|MistralAI-User|
 MistralAI-User/1.0|mistral-large-3|mistral-medium|mistral-small|Mistral.ai|Mixtral|Mixtral 8x22B|Mixtral-8x22B-Instruct|MobileLLM-R1|ModatScanner|model-training|Molmo|Monica|Moonshot|Mycroft AI
 
 n8n-nodes-aiscraper|Nano|Nano Banana|Nanobrowser|nanochat|Narrative|NeevaBot|newsai|netEstate|netEstate Imprint Crawler|NetShelter ContentScan|Neural Text|NeuralSEO|NextChat|Nicecrawler|NinjaAI|
@@ -130,8 +130,8 @@ NinjaAIBot/1.0|Ninja - Chatbot AI| Ninja Deep Research|NodeZero|Node.js|Notebook
 
 Page Analyzer AI|PaLM 2|PandasAI|PanguBot|Panscient|panscient.com|PaperLiBot|Paraphraser.io|peer39_crawler|peer39_crawler/1.0|PerfectChatGPT|
 Perflexity|Perplexity AI|Perplexity Labs|Perplexity LLM|Perplexity Comet|Perplexity Chatbot|Perplexity Deep Research|Perplexity Search|Perplexity Stealth|PerplexityBot|
-Perplexity-Bot|PerplexityBot/1.0|PerplexityUser|Perplexity-User|Perplexity-User/1.0|Perplexity: Sonar Pro|Perplexity Research|Perplexit-User|Petabot|Petal|PetalBot|petalBot|
-PetalBot mobile|Phind|PhindBot|PiplBot|Pixmo|Playwright|Playwright Agentic AI|Poe|PoeBot|PoeSearchBot|Poggio|Poggio-Citations|PoisonGPT|Poseidon|Poseidon Research Crawler|PrivateGPT|
+Perplexity-Bot|PerplexityBot/1.0|PerplexityUser|Perplexity-User|Perplexity-User/1.0|Perplexity Research|Perplexit-User|Petabot|Petal|PetalBot|petalBot|
+PetalBot mobile|Phi| phi-4-multimodal-instruct|phi-4-reasoning-plus|Phind|PhindBot|PiplBot|Pixmo|Playwright|Playwright Agentic AI|Poe|PoeBot|PoeSearchBot|Poggio|Poggio-Citations|PoisonGPT|Poseidon|Poseidon Research Crawler|PrivateGPT|
 PrivateGPTitingA|ProWrid|ProWritingAid|Proximic|proximic|PulsarRPA|Puppeteer|Puppeteer|Python AI|python Ai|Python lxml|Python Scrapy|PyTorch|PyTorch Lightning|PyTorch Lightning LLM
 
 Qopywriter|Qopywriter.ai|Qualified|QualifiedBot|Quark|QuillBot|quillbot.com|Qwen-Agent|
@@ -145,7 +145,7 @@ SAM 3|Sambanova|SaplingAI|SBIntuitionsBot|Scala|scaleai|Scalenut|scale-crawler|s
 ScrapeGraphAI|Scrapegraph-ai|Scrapeless|Scraper|Scraper Bot|ScraperGPT|Scraping Agent AI|Scrapy|Scrapy-LLM|Scrapy Python|Scrapy Middleware|Scrapy selenium|Scrapy-playwright|ScriptBook|
 Search GPT|Search RAG|Search retrieval|SearchGPT|Seed|Seekr|SeLLMa|SemrushBot|SemrushBot/7|SemrushBot-OCOB|SemrushBot-SWA|Sentibot|SEO Content Machine|SEO Robot|SEObot|Serper|ShadowGPT|
 ShapBot|Shell GPT|sider.ai|Sidetrade|Sidetrade indexer bot|sigmabrowse|SigmaOS|Simplified AI|Sitefinity|skrape.ai|Skydancer|Skyvern|SlickWrite|SmartBot|SmartScrape|SmartScraperGraph|
-Sonic|Sora|SpamGPT|Spawn agent|Spawning AI|Spawning-ai|Spider|SpiderCreator|Spider Scraper|Spider-Agent|Spider/2|Spider Middleware|Spin Rewrite|Spinbot|Stability|Stability AI|
+Sonic|Sora|Sonar Pro|SpamGPT|Spawn agent|Spawning AI|Spawning-ai|Spider|SpiderCreator|Spider Scraper|Spider-Agent|Spider/2|Spider Middleware|Spin Rewrite|Spinbot|Stability|Stability AI|
 Stable Diffusion|StableDiffusionBot|Stagehand|STEALTH|Stealth|Step 3|StoryGraph|Sudowrite|SummalyBot|Super Agent|Superagent| Superagent|SuperAGI|superagi|Surfer AI|Surfer| SUSE AI
 
 Taiko|taiko|TavilyBot|TavilySearchAPIRetriever|Tenable AgenvtTerraCotta|Text Blaze|TextCortex|Text-RAG|The Knowledge AI|
@@ -896,8 +896,6 @@ User-agent: meta-webindexer
 User-agent: Meta-Webindexer 1/1
 User-agent: meta-webindexer/1.1
 User-agent: Meta.AI
-User-agent: microsoft: phi-4-multimodal-instruct
-User-agent: microsoft: phi-4-reasoning-plus
 User-agent: Middleware
 User-agent: Midjourney
 User-agent: midjourney
@@ -1047,7 +1045,6 @@ User-agent: PerplexityBot/1.0
 User-agent: PerplexityUser
 User-agent: Perplexity-User
 User-agent: Perplexity-User/1.0
-User-agent: Perplexity: Sonar Pro
 User-agent: Perplexity Research
 User-agent: Perplexit-User
 User-agent: Petabot
@@ -1055,6 +1052,9 @@ User-agent: Petal
 User-agent: PetalBot
 User-agent: petalBot
 User-agent: PetalBot mobile
+User-agent: Phi 
+User-agent: phi-4-multimodal-instruct
+User-agent: phi-4-reasoning-plus
 User-agent: Phind
 User-agent: PhindBot
 User-agent: PiplBot
@@ -1212,6 +1212,7 @@ User-agent: SmartScrape
 User-agent: SmartScraperGraph
 User-agent: Sonic
 User-agent: Sora
+User-agent: Sonar Pro
 User-agent: SpamGPT
 User-agent: Spawn agent
 User-agent: Spawning AI
@@ -2055,8 +2056,6 @@ meta-webindexer
 Meta-Webindexer 1/1
 meta-webindexer/1.1
 Meta.AI
-microsoft: phi-4-multimodal-instruct
-microsoft: phi-4-reasoning-plus
 Middleware
 Midjourney
 midjourney
@@ -2206,7 +2205,6 @@ PerplexityBot/1.0
 PerplexityUser
 Perplexity-User
 Perplexity-User/1.0
-Perplexity: Sonar Pro
 Perplexity Research
 Perplexit-User
 Petabot
@@ -2214,6 +2212,9 @@ Petal
 PetalBot
 petalBot
 PetalBot mobile
+Phi 
+phi-4-multimodal-instruct
+phi-4-reasoning-plus
 Phind
 PhindBot
 PiplBot
@@ -2371,6 +2372,7 @@ SmartScrape
 SmartScraperGraph
 Sonic
 Sora
+Sonar Pro
 SpamGPT
 Spawn agent
 Spawning AI
@@ -2525,4 +2527,4 @@ Zimm
 
 :::::::::::::::::::::::::::::::::::::::::::	  
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 260122
+### Updated: 260211
