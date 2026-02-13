@@ -4098,7 +4098,170 @@ NEEDS: ChatGPT, Gemini, and Claude chatbots and models to work!
 AI Agents in Rust
 URL. https://adk-rust.com/en
 
-____________________________________________
+
+.......................
+
+Retriever
+URL: https://kestra.io/plugins/plugin-ai/retriever
+URL2: https://arxiv.org/abs/2411.19718
+URL3: https://docs.langchain.com/oss/python/integrations/retrievers
+
+Retriever	
+AmazonKnowledgeBasesRetriever	
+AzureAISearchRetriever
+ElasticsearchRetriever	
+VertexAISearchRetriever
+TavilySearchAPIRetriever
+Search retrieval
+BM25 Retriever
+
+.......................
+260213:
+ÄNDRAT:  microsoft: phi-4-multimodal-instruct
+microsoft: phi-4-reasoning-plus
+
+Till:
+Phi 
+phi-4-multimodal-instruct
+phi-4-reasoning-plus
+
+ÄNDRA: Perplexity: Sonar Pro
+Till: Sonar Pro
+.......................
+260213  //NOT CHECKED:
+
+# Scrapers:
+Helium Scraper
+Watercrawl
+Content Grabber
+Golang Colly
+HTTP Request Smuggler	
+Smuggler.py
+playwright-cli
+:::::::::::::::::::::::::::::::::::::::
+
+Agent TARS
+Agent TARS CLI
+URL: https://agent-tars.com/
+
+dataminr
+URL: https://www.dataminr.com/
+
+Multi-Agent
+URL: thub.com/camel-ai/owl
+
+Grok 5 
+
+Amazon Titan
+Nova 2 Lite
+Nova 2 Sonic
+
+User-agent: crawler.with.dots
+User-agent: curl|sudo bash
+
+Grok-DeepSearch/1.0
+Grok DeepSearch
+
+langchain-scrapeless
+LangSmith
+LLM Websearch
+Ask.py
+SootiAI
+RAGify Search
+LlamaResearcher
+LLM Pigeon
+Lorph
+Playwright Stealth
+CheerioCrawler
+PuppeteerCrawler
+PlaywrightCrawler
+GPT Researcher
+ai-web-scraper
+Scraping Agent AI
+Scrapegraph-ai
+cURL User-Agent
+ChatUp AI
+ChatGPT Plus
+ChatGenie
+SearchChat
+Moshi
+Scira AI
+SuperGrok
+Scrapling
+AI-Web-Scraper
+PanGu Chat
+RyteBot
+Mistral Perflexity AI
+
+User-agent: CopilotNative
+User-agent: CopilotSapphire
+?
+Browser MCP Agent
+Notion MCP Agent
+Site Crawler MCP
+
+Claude Computer Use
+
+Auto-GPT ?
+Claude-SearchBot ?
+Replit Agent 3
+Security Threat Agent ?
+SBIntuitionsBot ?
+imageSpider ?
+Spider	AI projects and RAG systems data collection. ?
+Web-Search-AI
+
+#LAGT IN UNDER: ai.srcape övriga:
+air.ai/scanning
+cypex.ai/scanning
+
+#LAGT IN UNDER: ai.srcape övriga:
+WebFetch
+WebFetch.MCP
+URL: https://docs.datapizza.ai/0.0.9/API%20Reference/Tools/web_fetch/
+
+#LAGT IN UNDER: ai.srcape övriga:
+Text Formatter
+URL: https://textformatter.ai/
+
+#LAGT IN UNDER: ai.srcape övriga:
+Thinklab
+URL: https://thinklab-ai.com/
+
+#LAGT IN UNDER: ai.srcape övriga:
+content crawler spider
+URL: https://darkvisitors.com/agents/content-crawler-spider
+
+Zoominfo AI Agents
+
+Moltbot / ClawdBot / OpenClaw
+
+? Gemini-Deep-Research
+
+BrowserOS
+ 
+DiaBrowser
+https://www.diabrowser.com
+
+searchatlas.com
+searchatlas
+
+Model Context Protocol - MCP
+
+Echobot Bot
+
+PaperLiBot/2.1
+Claude Opus 4.6
+
+VLM
+
+?
+air.ai/scanning
+
+langextract
+
+________________________________________________________
+________________________________________________________
 
 ## Disclaimer
 
@@ -4108,4 +4271,4 @@ This guide is provided for informational purposes only. The AI crawler landscape
 
 *Guide compiled from public sources and community contributions. 
 
-> **Last Updated:** January 20250107  
+> **Last Updated:** January 260213  
