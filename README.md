@@ -55,7 +55,7 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
 ..........................................................................................
 
 # Updates: **
-#WORKNG ON A NEW LIST, HAVE Patience / working now: 260122 #
+#WORKNG ON A NEW LIST, HAVE Patience / working now: 260213 - updated Lists!#
 
 * Updated 260211: ROBOTS-HTACCESS.txt
 * Updated 260128: AI-SHIELD
