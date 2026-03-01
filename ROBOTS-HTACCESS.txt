@@ -141,7 +141,7 @@ ProWrid|ProWritingAid|Proximic|proximic|PulsarRPA|Puppeteer|Puppeteer|PuppeteerC
 Qopywriter|Qopywriter.ai|Qualified|QualifiedBot|Quark|QuillBot|quillbot.com|Qwen-Agent|Qwen|Qwen 2.5‑VL|Qwen 4|Qwen 4 LLM|Qwen Chat|
 Qwen-Chat|Qwen Deep Research|Qwen LLM|Qwen2|Qwen2.5 72B|Qwen 2.5‑VL|Qwen3|Qwen 4|qwen:4b|QwenLM|Qwen 4 LLM|Qwen-Agent|Qwen-Chat
 
-AI RAG|RAG|RAG Agent|RAG Agent Cohere|RAG Azure AI|RAG Chatbot|RAG ChatGPT|RAG Database|RAG Database Routing|RAG IS|RAG LLM|RAG Pipeline|RAG Search|RAG with|RAG with Vercel AI SDK|
+AI RAG|RAG|RAG Agent|RAG Agent Cohere|RAG Azure AI|RAG Chatbot|RAG ChatGPT|RAG Database|RAG Database Routing|RAG IS|RAG LLM|RAG Pipeline|RAG Search|RAG with|RAG-"|RAG with Vercel AI SDK|
 RAGify Search|RAG-|RAG-as-a-Service|RAG_|RAG_VertexAI|RAG_with_search|Raptor|RAPTOR LLM|React Agent|ReAct AI Agent|Reader|REALM|Reasoning|Redis AI RAG|Reka Flash|Reka Flash 3.1|
 Replicate|Replicate-Bot|Replit Agent 3|resec.ai|Retriever|RightWingGPT|RobotSpider|Runner H|RunPod|RunPod-Bot|Rytr
 
@@ -1177,6 +1177,7 @@ User-agent: RAG with
 User-agent: RAG with Vercel AI SDK
 User-agent: RAGify Search
 User-agent: RAG-
+User-agent: RAG-"
 User-agent: RAG-as-a-Service
 User-agent: RAG_
 User-agent: RAG_VertexAI
