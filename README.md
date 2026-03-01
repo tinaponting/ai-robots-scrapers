@@ -57,6 +57,7 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
 # Updates: **
 ###WORKNG ON A NEW LIST, HAVE Patience / working now: 260223 - updated Lists!###
 
+* Updated: ROBOTS-HTACCESS lIST
 * Updated 260223: nginx
 * Updated 260223: Haproxy
 * Updated 260223: Caddy files forAi protection.
