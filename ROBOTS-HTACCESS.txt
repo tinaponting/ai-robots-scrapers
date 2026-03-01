@@ -1083,7 +1083,6 @@ User-agent: Perplexity Research
 User-agent: Perplexity Scraper
 User-agent: Perplexity Search
 User-agent: Perplexity Stealth
-User-agent: Perplexity Stealth
 User-agent: PerplexityBot
 User-agent: PerplexityBot/1.0
 User-agent: PerplexityUser
