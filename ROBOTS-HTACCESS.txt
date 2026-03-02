@@ -57,7 +57,7 @@ RewriteCond%{HTTP_USER_AGENT}/perplexitybot[\s\/]?[\d\.]*?/i[NC,OR]
 Abacus AI Deep Agent|AcademicBotRTU|AddSearchBot|Agent 3|Agent API|Agent GPT|Agent Middleware|AgentGPT|Agentic|Agentic Deep Research|Agentic RAG|
 Agentic RAG with LangGraph|Agentic RAG with Reasoning|Agentic-RAGAgentQL|Agent-|Agent-3|Agent-E|AI Agent|AI Agentic RAG Pipeline|AI agents| AI Article Writer|AI Assistant|
 AI Chat|AI Chatbot|AI Content Detector|AI copilot|AI Crawler|AI Data Scraper|AI Deep Research Agent|AI Detection|AI Dungeon|AI Ghostwriter|AI guardrails|AI Journalist|AI Journalist Agent|
-AI Legion|AI RAG|AI Scraper|AI Search|AI Search Engine|AI Search Intent|AI SEO Crawler|AI Web|AI Web Scraper|AI-Web-Scraper|ai-web-scraper|AI Website Screenshot|AI Writer|AI Writer|
+AI Legion|AI RAG|AI Scraper|AI Search|AI Search Engine|AI Search Intent|AI SEO Crawler|AI Web|AI Web Scraper|AI-Web-Scraper|ai-web-scraper|AI Website Screenshot|AI Writer|
 AI – WPBot|AI2|AI2 Bot|AI2Bot|AI2Bot-DeepResearchEval|ai2thor|AI21 Labs|AIBot|aiHitBot|AIMatrix|Airesearch|airesearchbot|air.ai/scanning|AISearch|AISearchBot|AI Training|AITraining
 ai-agent-playwright|AI-Content-Detector|AI-Crawler|ai-crawlers-training|ai-proxyai-writer|AlexaAlexaTM|Alice Yandex|AliGenie|AliyunSec|AliyunSecBot|AllenAI Bot|Alpha AI|AlphaAI|
 Amazon|Amazon Athena|Amazon Bedrock|Amazon Bedrock AgentCore Browser|Amazon Comprehend|Amazon Kendra Web Crawler|Amazon Lex|Amazon Titan|Amazon Q Business|Amazon SageMaker|
@@ -275,7 +275,6 @@ User-agent: AI Web Scraper
 User-agent: AI-Web-Scraper
 User-agent: ai-web-scraper
 User-agent: AI Website Screenshot
-User-agent: AI Writer
 User-agent: AI Writer
 User-agent: AI – WPBot
 User-agent: AI2
@@ -1448,5 +1447,5 @@ https://perishablepress.com/ultimate-ai-block-list/
 
 :::::::::::::::::::::::::::::::::::::::::::	  
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 2600301
+### Updated: 2600302
 
