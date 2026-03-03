@@ -730,7 +730,6 @@ User-agent: GPT Researcher
 User-agent: GPT-crawler
 User-agent: gpt-crawler
 User-agent: gpt-image1
-User-agent: GPT-oss 
 User-agent: GPT-Qwen Deep Research
 User-agent: GPT-Shield-AI-Plagiarism-Detector
 User-agent: Grafana
@@ -1450,3 +1449,4 @@ https://perishablepress.com/ultimate-ai-block-list/
 :::::::::::::::::::::::::::::::::::::::::::	  
 :::::::::::::::::::::::::::::::::::::::::::
 ### Updated: 260303
+
