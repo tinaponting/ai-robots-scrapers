@@ -97,7 +97,7 @@ Genspark|Gentoo-chat|gentoo-chat|gen-ai|GhostGPT|Ghostwriter|GigaChat|GLM|GLM 4.
 GoogleAgent-Mariner|Google-CloudVertexBot|Google-Extended|Google-Firebase|Google-NotebookLM|Goose|GPT 4 Omni|GPT 4 Omni Mini|GPT 5.1|GPT Chat 3|GPT Image 1.5|GPT OSS|
 GPT Researcher|GPT Scraper|GPT| GPT4ALL|GPT4Free|GPTBot|GPTBot/1,2|GPTBot/1.2|GPTBot/1.3|GPTZero|GPT-1|GPT-2|GPT-3|GPT-3.5|GPT-3.5 turbo|GPT-4|GPT-4o|GPT-4o Image|GPT-4o mini|GPT-4V|
 GPT-4,5|gpt-4-turbo|GPT-4.1|GPT-4.1-mini|GPT-4.1-nano|GPT-5|GPT-5 Chat|GPT-5 Mini|GPT-5 Nano|GPT-5 Thinking mini|GPT-5o|GPT-5-high|GPT-5.2|GPT-5.2 Auto|GPT-5.2 Instant|
-GPT-5.2 Pro|GPT-5.2 Thinking|GPT Researcher|GPT-crawler|gpt-crawler|gpt-image1|GPT-oss|GPT-Qwen Deep Research|GPT-Shield-AI-Plagiarism-Detector|Grafana|Grammarly|Grendizer|Grok|
+GPT-5.2 Pro|GPT-5.2 Thinking|GPT Researcher|GPT-crawler|gpt-crawler|gpt-image1|GPT OSS|GPT-oss|GPT-Qwen Deep Research|GPT-Shield-AI-Plagiarism-Detector|Grafana|Grammarly|Grendizer|Grok|
 Grok 4 Fast|Grok AI chatbot|Grok DeepSearch|Grok-DeepSearch/1.0|Grok Imagine|GrokAI|GrokBot|Grok-4|Grok-4 Heavy|grok-4-fast-thinking|Grok 5|Groq|Groq-Bot|GT Bot|GTBot|GTP
 
 Hemingway Editor|Hetzner|Hugging|Hugging Face|HuggingChat|huggingfacebot|HuggingFace-Bot|hugging-face-ai|
@@ -688,6 +688,7 @@ User-agent: GPT 5.1
 User-agent: GPT Chat 3
 User-agent: GPT Image 1.5
 User-agent: GPT OSS
+User-agent: GPT-oss
 User-agent: GPT Researcher
 User-agent: GPT Scraper
 User-agent: GPT 
@@ -1449,4 +1450,3 @@ https://perishablepress.com/ultimate-ai-block-list/
 :::::::::::::::::::::::::::::::::::::::::::	  
 :::::::::::::::::::::::::::::::::::::::::::
 ### Updated: 260303
-
