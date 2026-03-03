@@ -725,7 +725,7 @@ User-agent: GPT-5.2 Auto
 User-agent: GPT-5.2 Instant
 User-agent: GPT-5.2 Pro
 User-agent: GPT-5.2 Thinking
-User-agent: PT Researcher
+User-agent: GPT Researcher
 User-agent: GPT-crawler
 User-agent: gpt-crawler
 User-agent: gpt-image1
