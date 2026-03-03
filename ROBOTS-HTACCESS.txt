@@ -622,6 +622,7 @@ User-agent: FAISS
 User-agent: FacebookBot
 User-agent: FacebookBot/1.0
 User-agent: FacebookExternalHit
+User-agent: facebookexternalhit
 User-agent: facebookexternalhit/1.1
 User-agent: Factset
 User-agent: Factset_spyderbot
@@ -1447,5 +1448,5 @@ https://perishablepress.com/ultimate-ai-block-list/
 
 :::::::::::::::::::::::::::::::::::::::::::	  
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 2600302
+### Updated: 260303
 
