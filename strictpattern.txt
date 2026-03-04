@@ -1,0 +1,38 @@
+### Strict Pattern AI: ##
+##FROM: https://chrisleverseo.com/user-agents/
+
+#Cohere-AI
+/^Mozilla/5\.0 \(compatible; Cohere\-AI/1\.0; \+https\://cohere\.com/\)$/
+
+#GPTBot:
+/^Mozilla/5\.0 AppleWebKit/537\.36 \(KHTML, like Gecko; compatible; GPTBot/1\.0; \+https\://openai\.com/gptbot\)$/
+
+
+#ChatGPT-User
+/^Mozilla/5\.0 AppleWebKit/537\.36 \(KHTML, like Gecko; compatible; ChatGPT\-User/1\.0; \+https\://openai\.com/bot\)$/
+
+
+#Claude-Web
+/^Mozilla/5\.0 AppleWebKit/537\.36 \(KHTML, like Gecko; compatible; Claude\-Web/1\.0; \+https\://www\.anthropic\.com\)$/
+
+#ClaudeBot
+/^ClaudeBot/1\.0; \+https\://www\.anthropic\.com$/
+
+#PerplexityBot
+/^Mozilla/5\.0 AppleWebKit/537\.36 \(KHTML, like Gecko; compatible; PerplexityBot/1\.0; \+https\://perplexity\.ai/bot\)$/
+
+#Meta-ExternalAgent
+/^Meta\-ExternalAgent/1\.0 \(\+https\://developers\.facebook\.com/docs/sharing/bot\)$/
+
+#Amazonbot
+/^Amazonbot/0\.1 \(\+https\://developer\.amazon\.com/support/amazonbot\)$/
+/^Amazonbot/0\.2 \(\+https\://developer\.amazon\.com/support/amazonbot\)$/
+
+#Bytespider
+/^Mozilla/5\.0 \(compatible; Bytespider; spider\-feedback@bytedance\.com\)$/
+
+#ChatGLM-Spider
+/^ChatGLM\-Spider$/
+
+
+
