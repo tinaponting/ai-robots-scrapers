@@ -55,10 +55,11 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
 ..........................................................................................
 
 # Updates: **
-###WORKNG ON A NEW LIST, HAVE Patience / working now: 260302 - updated Lists!###
+###WORKNG ON A NEW LIST, HAVE Patience / working now: 260304 - /still some fielsto update, and check so it works, updated Lists!###
 
+* Updated:260304: ROBOTS-HTACCESSTOUSE.txt renamed from: ROBOTS-HTACCESS.txt
 * Updated:260302: AI-SHIELD - updated with Latest Ai + AI scrapers
-* Updated:260301: ROBOTS-HTACCESS lIST,Caddy, Myhaccess, Haproxy, nginx - Forgot a useragent!
+* Updated:260301: ROBOTS-HTACCESS LIST,Caddy, Myhaccess, Haproxy, nginx - Forgot a useragent!
 * Updated 260223: nginx
 * Updated 260223: Haproxy
 * Updated 260223: Caddy files forAi protection.
