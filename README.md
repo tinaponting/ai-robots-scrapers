@@ -57,6 +57,7 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
 # Updates: **
 ###WORKNG ON A NEW LIST, HAVE Patience / working now: 260304 - /still some fielsto update, and check so it works, updated Lists!###
 
+* ADDED:260304: Strictpattern Ai, if they refuses to go away:)
 * Updated:260304: ROBOTS-HTACCESSTOUSE.txt renamed from: ROBOTS-HTACCESS.txt
 * Updated:260302: AI-SHIELD - updated with Latest Ai + AI scrapers
 * Updated:260301: ROBOTS-HTACCESS LIST,Caddy, Myhaccess, Haproxy, nginx - Forgot a useragent!
