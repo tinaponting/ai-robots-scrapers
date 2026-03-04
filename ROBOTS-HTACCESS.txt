@@ -784,7 +784,7 @@ User-agent: Imagen
 User-agent: imagen4
 User-agent: ImagesiftBot
 User-agent: ImageSpider
-User-agent: imagespider|
+User-agent: imagespider
 User-agent: img2dataset
 User-agent: imgproxy
 User-agent: inclusionai/ring-1t
@@ -1448,5 +1448,4 @@ https://perishablepress.com/ultimate-ai-block-list/
 
 :::::::::::::::::::::::::::::::::::::::::::	  
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 260303
-
+### Updated: 260304
