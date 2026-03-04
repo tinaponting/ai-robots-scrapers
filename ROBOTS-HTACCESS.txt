@@ -21,8 +21,7 @@ RewriteCond%{HTTP_USER_AGENT}GPT\b [NC,OR]
 RewriteCond%{HTTP_USER_AGENT}\bGPT [NC,OR]
 RewriteCond%{HTTP_USER_AGENT}/ClaudeBot[\s\/]?[\d\.]*?/i [NC,OR]
 RewriteCond%{HTTP_USER_AGENT}^Spawning-AI$ [NC,OR]
-  
-  
+   
 .....................................................................
 ---------------------------------------------------------------------
 ...........................................................................:)
@@ -48,7 +47,8 @@ RewriteCond%{HTTP_USER_AGENT}/ClaudeBot[\s\/]?[\d\.]*?/i[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}/GPTBot[\s\/]?[\d\.]*?/i[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}^(.*)GPTBot(.*)$ - [NC,OR]
 RewriteCond%{HTTP_USER_AGENT}/OAI-SearchBot[\s\/]?[\d\.]*?/i [NC,OR]
-RewriteCond%{HTTP_USER_AGENT}^.*(compatible; OAI-SearchBot/1.0|compatible; OAI-SearchBot/1.3|compatible; ClaudeBot/1.6).*$ [NC,OR] 
+RewriteCond%{HTTP_USER_AGENT}^.*(compatible; OAI-SearchBot/1.0|compatible; OAI-SearchBot/1.3|compatible; ClaudeBot/1.6).*$ [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}/^Mozilla/5\.0 AppleWebKit/537\.36 \(KHTML, like Gecko; compatible; OAI\-SearchBot/1\.0; \+https\://openai\.com/searchbot\)$/  [NC,OR]
 RewriteCond%{HTTP_USER_AGENT}PetalBot [NC,OR]
 RewriteCond%{HTTP_USER_AGENT}/petalbot[\s\/]?[\d\.]*?/i [NC,OR]
 RewriteCond%{HTTP_USER_AGENT}/perplexitybot[\s\/]?[\d\.]*?/i[NC,OR]
