@@ -49,6 +49,8 @@ RewriteCond%{HTTP_USER_AGENT}^(.*)GPTBot(.*)$ - [NC,OR]
 RewriteCond%{HTTP_USER_AGENT}/OAI-SearchBot[\s\/]?[\d\.]*?/i [NC,OR]
 RewriteCond%{HTTP_USER_AGENT}^.*(compatible; OAI-SearchBot/1.0|compatible; OAI-SearchBot/1.3|compatible; ClaudeBot/1.6).*$ 
 RewriteCond%{HTTP_USER_AGENT}/^Mozilla/5\.0 AppleWebKit/537\.36 \(KHTML, like Gecko; compatible; OAI\-SearchBot/1\.0; \+https\://openai\.com/searchbot\)$/  
+RewriteCond%{HTTP_USER_AGENT}/^Mozilla/5\.0 AppleWebKit/537\.36 \(KHTML, like Gecko; compatible; OAI\-SearchBot/1\.3; \+https\://openai\.com/searchbot\)$/
+RewriteCond%{HTTP_USER_AGENT}/^Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36; compatible; OAI-SearchBot/1.3; robots.txt; \+https\://openai\.com/searchbot\)$/
 RewriteCond%{HTTP_USER_AGENT}PetalBot [NC,OR]
 RewriteCond%{HTTP_USER_AGENT}/petalbot[\s\/]?[\d\.]*?/i [NC,OR]
 RewriteCond%{HTTP_USER_AGENT}/perplexitybot[\s\/]?[\d\.]*?/i[NC,OR]
@@ -1447,4 +1449,4 @@ https://perishablepress.com/ultimate-ai-block-list/
 
 :::::::::::::::::::::::::::::::::::::::::::	  
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 260304
+### Updated: 260306
