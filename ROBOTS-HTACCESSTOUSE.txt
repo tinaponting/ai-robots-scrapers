@@ -147,7 +147,7 @@ AI RAG|RAG|RAG Agent|RAG Agent Cohere|RAG Azure AI|RAG Chatbot|RAG ChatGPT|RAG D
 RAGify Search|RAG-|RAG-as-a-Service|RAG_|RAG_VertexAI|RAG_with_search|Raptor|RAPTOR LLM|React Agent|ReAct AI Agent|Reader|REALM|Reasoning|Redis AI RAG|Reka Flash|Reka Flash 3.1|
 Replicate|Replicate-Bot|Replit Agent 3|resec.ai|Retriever|RightWingGPT|RobotSpider|Runner H|RunPod|RunPod-Bot|Rytr
 
-SAM 3|Sambanova|SaplingAI|SBIntuitionsBot|Scala|scaleai|Scalenut|scale-crawler|scan.cypex.ai|Scira AI|Scrap|ScrapeGraph|ScrapeGraphAI|Scrapegraph-ai|Scrapegraph|
+SAM 3|Sambanova|SaplingAI|SBIntuitionsBot|Scala|scaleai|Scalenut|scale-crawler|scan.cypex.ai|Scira AI|Scrap|ScrapeGraph|ScrapeGraphAI|Scrapegraph-ai|
 Scrapeless|Scraper|Scraper Bot|ScraperGPT|Scraping Agent AI|Scraping Browser|Scrapling|Scrapy|Scrapy Middleware|Scrapy Python|Scrapy selenium|Scrapy-LLM|Scrapy-playwright|
 ScriptBook|Search GPT|Search RAG|Search retrieval|searchatlas|SearchChat|SearchGPT|Seed|Seedance|Seekr|SeLLMa|SemrushBot|SemrushBot-OCOB|SemrushBot-SWA|SemrushBot/7|
 Sentibot|SEO Content Machine|SEO Robot|SEObot|Serper|ShadowGPT|ShapBot|Shell GPT|sider.ai|Sidetrade|Sidetrade indexer bot|sigmabrowse|SigmaOS|Simplified AI|Site Crawler MCP|
