@@ -57,7 +57,8 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
 # Updates: **
 ###WORKNG ON A NEW LIST, HAVE Patience / working now: 260307 - / I more to update, and check so it works, updated Lists!###
 
- Updated:260307:  Fork of blockaai crawlers, renamned to:  Fork of blockaai crawlers-AI wordpress robots.txt
+*  Updated:2603§5: BLOCK ai php - updated witn most scrapers hell! 
+* Updated:260307:  Fork of blockaai crawlers, renamned to:  Fork of blockaai crawlers-AI wordpress robots.txt
 * ADDED:260304: Strictpattern Ai, if they refuses to go away:)
 * Updated:260304: ROBOTS-HTACCESSTOUSE.txt renamed from: ROBOTS-HTACCESS.txt
 * Updated:260302: AI-SHIELD - updated with Latest Ai + AI scrapers
