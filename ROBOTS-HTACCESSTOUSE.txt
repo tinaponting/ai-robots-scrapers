@@ -77,7 +77,7 @@ Ceramic TerraCotta Crawler|Chai|Channel3Bot|Character|Character-AI|Charstar AI|C
 ChatGLM-Spider|ChatGPT|ChatGPT 3.0|ChatGPT 4o|ChatGPT 4o-mini|ChatGPT 4.1|ChatGPT 4.5|ChatGPT 5|ChatGPT Agent|ChatGPT Atlas|ChatGPT o1|ChatGPT o3-mini|
 ChatGPT Operator|ChatGPT Plus|ChatGPT Retrieval|ChatGPT search|ChatGPT-Browser|ChatGPT-User|ChatGPT-User v2.0|ChatGPT-User/1.0|ChatGPT-User/2.0|ChatLLM|ChatOpenAI|
 Chatsonic|ChatUp AI|ChatUser|CheerioCrawler|Chinchilla|Cici|Clara|Claude|Claude 3.5|Claude 3.5 Haiku|Claude Haiku 4.5|Claude 3.5 Sonnet|Claude 3.7 Sonnet|
-Claude 4|Claude Agent|Claude Computer Use|Claude Haiku 4.5|Claude LLM|Claude Opus|Claude Opus 4|Claude Opus 4.1|Claude Opus 4.5|Claude Opus 4.6|Claude Sonnet 4|
+Claude 4|Claude Agent|Claude Computer Use|Claude LLM|Claude Opus|Claude Opus 4|Claude Opus 4.1|Claude Opus 4.5|Claude Opus 4.6|Claude Sonnet 4|
 Claude Sonnet 4.5|Claude v1.2|ClaudeBot|ClaudeBot/1.0|ClaudeBot/1.6|claude-4-haiku-thinking|Claude-RAG|Claude-SearchBot|Claude-User|Claude-Web|claude-web/1.0|
 claude.ai|ClearScope|Clearview|Cloudflare AutoRAG|Cloudflare-AutoRAG|CloudVertexBotCognitive AI|Cognitive AI engine|Cohere|Cohere LLM|Cohere RAG|cohere-ai|
 cohere-ai/1.0|Cohere-Command|cohere-training-data-crawler|Command-A-Reasoning|Common Crawl|CommonCrawl|Compass|content crawler spider|Content Harmony|Content King|
@@ -481,7 +481,6 @@ User-agent: Claude 3.7 Sonnet
 User-agent: Claude 4
 User-agent: Claude Agent
 User-agent: Claude Computer Use
-User-agent: Claude Haiku 4.5
 User-agent: Claude LLM
 User-agent: Claude Opus
 User-agent: Claude Opus 4
@@ -1437,6 +1436,7 @@ User-agent: Zimm
 User-agent: Zoominfo AI Agents
 Disallow: /
 
+
 ::::::::::::::::::::::::::::::::::::::
 --------------------------------------
 #iF YOU WANT With no useraget:
@@ -1449,4 +1449,4 @@ https://perishablepress.com/ultimate-ai-block-list/
 
 :::::::::::::::::::::::::::::::::::::::::::	  
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 260306
+### Updated: 260320
