@@ -55,7 +55,7 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
 ..........................................................................................
 
 # Updates: **
-###WORKNG ON A NEW LIST, HAVE Patience / working now: Ready - / I more to update, and check so it works, updated Lists!###
+## #WORKNG ON A NEW LIST 260505,ready as fast I have time!, HAVE Patience / working now: Ready - / I more to update, and check so it works, updated Lists!###
 
 * Updated:260325: LIGHTPD -added, fill in yourself!
 * Updated:260325: Hugo-config.yaml-nothanksAI - At LAst....
