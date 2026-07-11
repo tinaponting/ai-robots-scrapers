@@ -57,6 +57,7 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
 # Updates: **
 ## #WORKNG ON A NEW LIST 260711,ready ABD updated Lists!###
 
+* Updated 260711: Kirby block Ai
 * Updated:260711: Hugo-config.yaml-nothanksAI
 * Updated 2607110: Haproxy
 * Updated:260711:  Fork of blockaai crawlers, renamned to:  Fork of blockaai crawlers-AI wordpress robots.txt
