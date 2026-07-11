@@ -55,8 +55,10 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
 ..........................................................................................
 
 # Updates: **
-## #WORKNG ON A NEW LIST 2600630,ready as fast I have time/working hard!, HAVE Patience / I more to update, and check so it works, updated Lists!###
+## #WORKNG ON A NEW LIST 260711,ready ABD updated Lists!###
 
+
+* Updated:260711: ROBOTS-HTACCESSTOUSE.txt renamed from: ROBOTS-HTACCESS.txt
 * Updated:260325: LIGHTPD -added, fill in yourself!
 * Updated:260325: Hugo-config.yaml-nothanksAI - At LAst....
 * Updated:260325: BLOCK ai php - updated witn most scrapers hell! 
