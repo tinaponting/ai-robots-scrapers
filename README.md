@@ -57,6 +57,7 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
 # Updates: **
 ## #WORKNG ON A NEW LIST 260711,ready ABD updated Lists!###
 
+* Updated:260711: LIGHTPD
 * Updated:260711: robots.txt
 * Updated:260711: ROBOTS-HTACCESSTOUSE.txt renamed from: ROBOTS-HTACCESS.txt
 * Updated:260325: LIGHTPD -added, fill in yourself!
