@@ -57,6 +57,8 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
 # Updates: **
 ## #WORKNG ON A NEW LIST 260711,ready ABD updated Lists!###
 
+
+* Updated 2607110: Haproxy
 * Updated:260711:  Fork of blockaai crawlers, renamned to:  Fork of blockaai crawlers-AI wordpress robots.txt
 * Updated 260711: Caddy files forAi protection.
 * Updated:260711: AI-SHIELD - updated with Latest Ai + AI scrapers
