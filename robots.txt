@@ -1,4 +1,3 @@
-User-agent: * 
 User-agent: *
 User-agent: .ai
 User-agent: -ai
