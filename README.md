@@ -55,8 +55,9 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
 ..........................................................................................
 
 # Updates: **
-## #WORKNG ON A NEW LIST 260711,ready ABD updated Lists!###
+## #WORKNG ON A NEW LIST 260719,ready ABD updated Lists!###
 
+* Updated 260719: AI-SHIELD:!!! Ready to protect your blogs:)
 * SYNTAX CHECK: AI-SHIELD:!!! upload the new version when it ready!
 * Updated 260711: READY MADE HTACCESS
 * Updated 260711: nginx
