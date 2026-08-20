@@ -55,7 +55,7 @@ More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mec
 ..........................................................................................
 
 # Updates: **
-## #WORKNG ON A NEW LIST 260719,ready ABD updated Lists!###
+## #WORKNG ON A NEW LIST 2600820, ongoing.....a slimmer list with more.....!###
 
 * Updated 260720: AI-SHIELD:!!- to effective........blocked leitime bots.
 * Updated 260719: AI-SHIELD:!!! Ready to protect your blogs:)
