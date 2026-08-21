@@ -52,6 +52,12 @@ Go way: https://git.gammaspectra.live/git/go-away
 PYTHON TRAP:  https://maurycyz.com/projects/trap_bots/
 
 More to read:   https://c3.unu.edu/blog/beyond-robot-txt-modern-anti-crawler-mechanisms
+
+### PERRISHPRESS AI BLOCK: Download from heis site:  
+https://perishablepress.com/ultimate-ai-block-list/
+
+###  DOWNLOAD THE LATEST Ngix, htaccess above!!
+
 ..........................................................................................
 
 # Updates: **
