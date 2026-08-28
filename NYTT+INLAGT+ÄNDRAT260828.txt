@@ -1,0 +1,559 @@
+.............................
+#NEW VARITIONS
+tiktokspider
+............................
+# NEW AI useragent:
+Olmo Hybrid 
+............................
+#New AI:
+iAskAI-Crawler
+............................
+#User-agent: Google-Agent
+............................  
+##SCRAPERS:
+HttpClient 
+............................
+............................
+###Retiring - Retired:  * Check now and then!
+
+GPT‑4o
+GPT‑4.1 
+GPT‑4.1 mini 
+OpenAI o4-mini ChatGPT
+............................
+............................
+#NEW: 
+Headless AI Agent
+............................
+# NEW VARIANT OF:
+AI-Scraper
+AIScraper
+..........................
+CHANGED:
+ERNIE 
+.........................
+wpbot/1.4
+RewriteCond %{HTTP_USER_AGENT} wpbot\/1\.4 [NC]
+RewriteRule .* - [F,L]
+
+.........................
+##CHANGED: Amazon /// Useragents:
+
+Amazon-AI
+Amazon Athena
+Amazon Bedrock
+Amazon Bedrock AgentCore Browser
+Amazon Comprehend
+Amazon Contxbot
+Amazon Kendra Web Crawler
+Amazon Lex
+Amazon Titan
+Amazon SageMaker
+Amazon Silk
+Amazon Textract
+amzn.to
+Amazonbot
+amazonBot
+AmazonKnowledgeBasesRetriever
+amazon-kendra
+Amazon Kendra
+.........................
+#Not in Useragents yet:
+
+carbon-umbrella-bot
+
+.........................
+##ADDED: 260505
+Clawbot
+ClawbotLeadScan
+
+.........................
+Danish (Not added but if.....): 
+User-agent: ChatDK-Bot 
+
+.........................
+##260506 
+
+OpenClaw Agent
+OpenClaw
+Open Claw browser
+
+..................................
+## MAYBE LATER....  ##
+
+Known Agents Browser
+Known Agent
+Known Agents
+
+https://geoscoreai.com
+ai-crawler-checker
+           geo-ai-agent
+		   
+qwen-turbo
+
+
+.........................................
+260515 - Maybe Later?
+
+QClaw 
+qclaw
+
+.........................................
+##260515:
+
+OxyCopilot
+
+# Cohere-Ai:
+/Cohere\-Ai[\s\/]?[\d\.]*?/i
+
+.........................................
+260517:
+
+Maybe in the Future:
+
+AI PaaS
+PaaS
+
+.........................................
+260522
+
+Aranet-SearchBot
+Aranet-SearchBot/1.0
+
+Useragent: Aranet-SearchBot/1.0; +https://aranet.ai/bot)
+Useragent: Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Aranet-SearchBot/1.0; +https://aranet.ai/bot) Chrome/131.0.0.0 Safari/537.36
+#IS A: AI scraper!
+
+ApifyBot
+ApifyWebsiteContentCrawler
+
+anchor
+
+.........................................
+260523
+
+HenkBot/Valyu AI
+HenkBot
+
+##User-agent: HenkBot
+#FROM: Mozilla/5.0 (compatible; HenkBot/1.0; +https://valyu.ai/crawler)
+
+
+Hunyuan
+
+Hermes Agent
+URL: https://github.com/NousResearch/hermes-agent
+
+.........................................
+#260523
+
+360Spider
+360 AI
+360AI Search
+360 AI Research
+360AI browser
+
+#Purpose: It crawls websites to index content for search engines and, commonly, to collect data for training AI models.
+
+..................................
+#260524
+
+SerpApiBot/1.0
+URL: Mozilla/5.0 (compatible; SerpApiBot/1.0; +https://serpapi.com/bot)
+
+SiteSucker 
+USE: is a macOS/windows application that automatically downloads websites
+
+ChatGPT-User
+chatgpt-user
+
+
+claude-searchbot
+Claude-User
+claude-user
+claude-web
+
+claude-searchbot|Claude-User|claude-user|claude-web|
+
+cloudflare-ai-search
+
+ChatGPT Scraper
+
+..................................
+#260525
+
+EFTER: ChatGPT-User/2.0
+ChatGPT-User
+chatgpt-user
+
+ChatGPT-User|chatgpt-user|
+
+
+EFTER: Claude-SearchBot
+claude-searchbot
+Claude-User
+claude-user
+claude-web
+
+claude-searchbot|Claude-User|claude-user|claude-web|
+
+
+EFTER: Clearview
+cloudflare-ai-search
+
+
+EFTER: ChatGPT search
+ChatGPT Scraper
+
+.........................................
+260524
+SerpApiBot/1.0
+
+SiteSucker 
+
+shapbot
+
+serverhunterspider
+# Scraper
+# https://knownagents.com/agents/serverhunterspider
+
+.........................................
+#260527
+
+novellum
+Novellum AI Crawl
+
+nullclaw
+URL: https://nullclaw.io/
+
+nanobot
+URL: https://github.com/HKUDS/nanobot
+
+nanoclaw
+URL: https://github.com/nanocoai/nanoclaw
+
+Nano Search
+Nano AI Search   (360)
+
+##MAYBE: but it doesn't seem to work! = Nothing on their site!
+NagetBot
+URL: Mozilla/5.0 (compatible; NagetBot/1.0; +https://naget.ai/bot) 
+NagBotAI
+https://nagbotai.com
+
+newsai
+URL: https://www.newsai.me/
+
+NotebookLM
+
+Nova
+URL: https://novaapp.ai/
+
+# Scraper
+# https://knownagents.com/agents/nutch
+User-agent: Nutch
+
+User-agent: Novellum AI Crawl
+https://noveum.ai/en
+## Fi of broken Aiagents!
+
+# Scraper - Does not affect ordinary sites! or blogs.
+# https://knownagents.com/agents/nyt-scraping
+User-agent: nyt_scraping
+
+Maybe:
+easyscan
+URL: https://www.it-recht-kanzlei.de/website-scanner-fuer-mandanten.php
+
+.........................................
+###AI: (BROWSERS) -260530
+
+Anchor Browser
+Anchor Browser Agent
+BrowserCat 
+Hyperbrowser
+browser39
+camofox browser
+Do Browser
+Browserfly 
+Obscura
+Stagehand  
+Skyvern
+
+//Not added! YET, maybe in the Future!
+.........................................
+#260601
+Brightbot 1.0
+Bright Data Scraper 
+Bright Data CLI
+
+deckagent
+devin
+
+diffbot
+
+duckassistbot
+
+.........................................
+#26050602
+
+agent-fetch
+URL: https://github.com/teng-lin/agent-fetch
+
+
+E - COMMERSE: AlibabaBot
+
+# KANSKE:  Kunato
+
+Code
+
+Claude Opus 4.8
+
+Coveobot
+URL: https://bots.fyi/d/coveobot
+
+
+.........................................
+#260603 
+
+google-agent
+Google-Gemini-CLI
+Gemini-Deep-Research
+Gemini-Vertex
+
+
+## EFTER: GPT-5.2 Thinking
+
+GPT-5.4 Thinking 
+GPT-5.4
+GPT-5.4 Pro
+GPT‑5.4 mini
+GPT‑5.4 nano
+GPT-5.5 
+
+.........................................
+260605/09
+
+scrapy-playwright
+
+Scrapy-
+Scrapy spider
+scrapy-redis
+Scrapy crawlspider
+
+.........................................
+#260609
+Terra Cotta
+TerraCotta
+
+Tencent AI chatbot
+Trae
+URL: https://www.trae.ai/
+
+Turnitin
+
+twinagent
+
+thehive.ai
+.........................................
+#260620:2606010:
+
+WARDBot
+wardbot
+
+WRTNBot crawler
+Wrtn
+
+AI Web Search
+Web Search Agent
+Web-Search-AI
+Web Search
+Websearch
+
+.........................................
+260620:2606016:
+# AI SCRAPER:
+llm-scraper	
+LLMFeeder	
+
+llms.txt crawler bot
+
+LCC
+
+
+#Maybe Later:
+lillbee
+https://lilbee.sh
+https://github.com/tobocop2/lilbee
+
+.........................................
+#260619:
+	dataprovider
+	dataprovider spider
+	dataproviderbot
+	
+AnthropicBot
+
+AzureAI-SearchBot
+
+MAYBE LATER: Anchor Browser
+
+.........................................
+#260620:
+PentestGPT
+PentestGPT Research
+URL: https://pentestgpt.com/ 
+
+Playwright MCP
+
+ProRataInc
+
+.........................................
+#260621:
+RAGFlow 
+URL: https://github.com/infiniflow/ragflow
+
+RSS/XML Scraper
+Replicate
+URL: https://replicate.com/
+
+RobotSpider
+
+.........................................
+#260624:
+MyCentralAIScraperBot
+Mistral Le Chat 
+
+#Maybe Later:
+MCP 
+
+User-Agent: Mozilla-Tabstack/1.0 (+https://tabstack.ai)
+Mozilla-Tabstack
+URL: https://tabstack.ai/api
+
+Manus Agent
+
+.........................................
+#260627:
+xAI-SearchBot
+
+.........................................
+#260629:
+Querit-SearchBot
+QueritBot
+
+.........................................
+#260630:
+GPT-
+
+GeistHaus-PageFetcher
+
+##GONE FOREVER:
+gpt-3.5-turbo-16k-0613
+gpt-4-turbo-2024-04-09
+GPT 4 Turbo
+gpt-4-turbo
+GPT 4 Turbo
+gpt-4
+
+.........................................
+#260702:
+UseAI 
+
+.........................................
+#269706:
+
+KimiBot
+Kimi Claw
+Kimi-SearchBot
+Kimi Search
+Kimi-User 
+
+.........................................
+#260707:
+## maybe if.... 
+
+IndexFox 
+URL: https://indexfox.ai/
+
+NagetBot/1.0
+YRL: https://naget.ai/bot
+
+
+YGS Group Falconer Scraper
+URL: https://radar.cloudflare.com/bots/directory/ygs-group-falconer-scraper
+
+
+"AIWebIndex/2.0 (+https://lyrenth.com/bot; AI-readable web index)"
+
+Director 
+
+Crawler
+CragCrawler
+Cursor
+
+???
+Agent browser
+Leanstral
+AGI Agent
+Cloudflare-AI-Search-External
+AlertSite
+Alli AI Bot
+Alphalens Bot
+Anchor Browser
+Anemone
+ApacheBench
+Arachmo
+
+.........................................
+#260708:
+Claude 5
+Claude Fable
+Claude Sonnet 5	
+
+##Retired:
+User-agent: Claude 3.5 Haiku
+User-agent: Claude Opus 4.1
+User-agent: Claude Opus 4.5
+
+.........................................
+#260709:
+Yandex AI	
+YiyanBot
+
+.........................................
+#260711:
+#Tormenting my blogs...........
+
+xAI-SearchBot/1.0
+
+Added: Alice 
+
+.........................................
+#260817:
+Atomic Agent
+atomic-agent
+https://atomicagent.io/
+
+Scraper of my blogs:(
+AhrefsBot/7.0
+
+#FALSE Applebots/scraping:
+Applebot/0.1
+
+User-agent: AIWebIndex
+User-agent: AgentTimes
+
+User-agent: amazon-QBusiness
+User-agent: AmazonBuyForMe
+
+User-agent: Atlassian Rovo
+.........................................
+#260818:
+USED BY HACKERS:
+Chrome Bot
+URL: https://github.com/devanshusingla/ChromeBot
+
+::::::::::::::::::::::::::::::::::::::
+--------------------------------------
+# UPDATED: 260828
