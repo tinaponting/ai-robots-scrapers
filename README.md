@@ -63,6 +63,7 @@ https://perishablepress.com/ultimate-ai-block-list/
 # Updates: **
 ## #WORKNG ON A NEW LIST 2600828, ongoing.....a slimmer list with more.....!###
 
+* Updated 260928: CADDY - Updated
 * Updated 260928: NGINX - Updated
 * Updated 260828: Haproxy - Updated
 * Updated 260828: READY MADE HTACCESS - Updated
