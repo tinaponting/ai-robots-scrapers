@@ -31,7 +31,7 @@ RewriteCond%{HTTP_USER_AGENT}^Spawning-AI$ [NC,OR]
 ## Big list, also see: Perishpress List ### ## ULTIMATE LIST RAW:
 
 
-RewriteCond %{HTTP_USER_AGENT} (.ai|-ai|_ai|ai.|ai-|ai_|ai=|.*?-ai$|ai=) [NC,OR]
+RewriteCond%{HTTP_USER_AGENT} (.ai|-ai|_ai|ai.|ai-|ai_|ai=|.*?-ai$|ai=) [NC,OR]
  
 360 AI|360 AI Research|360AI browser|360AI Search|360Spider|Abacus AI Deep Agent|AcademicBotRTU|AddSearchBot|Agent-|Agent-3|Agent-E|Agent 3|Agent API|AgentGPT|Agent GPT|Agentic|Agentic-RAG|
 Agentic Deep Research|Agentic RAG|Agentic RAG with LangGraph|Agentic RAG with Reasoning|Agent Middleware|AgentQL|AgentTimes|AhrefsBot/7.0|ai-agent-playwright|AI-Content-Detector|AI-Crawler|
@@ -68,7 +68,7 @@ DocsGPTOnyx|dolly|Dolma|Dots Chatbot|Doubao AI|Doubao 1.5|DuckAssistBot|duckassi
 ExaSearchBot|Echobox|EchoboxBot|ElasticsearchRetriever|Elixir|Embed|embed-v4.0|ERNIE|ErnieBot|Evil-GPT|Extended GPT Scraper|ExaBot
 
 FAISS|FacebookBot|FacebookBot/1.0|FacebookExternalHit|facebookexternalhit|facebookexternalhit/1.1|Factset|Factset_spyderbot|Falcon|Fastai|FastGPT|Firebase|Firecrawl|
-FirecrawlAgent|Fireworks|FIRE-1|FIRE-1 Agent|Finbot|Flux|Flux 2|Flux Operator|Flyriver|flyriverbot/1.1Frase AI|FraudGPT|FriendlyCrawler
+FirecrawlAgent|Fireworks|FIRE-1|FIRE-1 Agent|Finbot|Flux|Flux 2|Flux Operator|Flyriver|flyriverbot/1.1|Frase AI|FraudGPT|FriendlyCrawler
 
 Gato|Gemini|Gemini Agentic RAG|Gemini-Ai|Gemini-Deep-Research|Gemini-User|Gemini URL Context|Gemma|Gen AI|GenAI|gen-ai|GeistHaus-PageFetcher|GenAI Chat|GenAI RAG|Generative|Genspark|
 Gentoo-chat|gentoo-chat|GhostGPT|Ghostwriter|GigaChat|GLM|GLM,|GLM-|GLM 4.6|GLM 5|Go|gobrowser|GodMode|Google-Agent|google-agent|Google-Gemini-CLI|Google Gemini|Gemini-Deep-Research|
