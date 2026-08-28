@@ -152,19 +152,19 @@ Complete User agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit
 ###* OR:  #I USE THIS; also on myhacess folder.#
 
 <IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent) [NC,OR]
-RewriteCond %{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent) [NC,OR]
-RewriteCond %{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent) [NC,OR]
-RewriteCond %{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent) [NC,OR]
-RewriteCond %{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent) [NC,OR]
-RewriteCond %{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent) [NC,OR]
-RewriteCond %{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent) [NC,OR]
-RewriteCond %{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent) [NC,OR]
-RewriteCond %{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent) [NC,OR]
-RewriteCond %{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent) [NC,OR]
-RewriteCond %{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent) [NC,OR]
-RewriteCond %{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent) [NC,OR] 
-RewriteCond %{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent) [NC]
+RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent) [NC,OR] 
+RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent) [NC]
 RewriteRule (.*) - [F,L]
 </IfModule>
 
