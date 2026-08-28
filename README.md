@@ -63,6 +63,7 @@ https://perishablepress.com/ultimate-ai-block-list/
 # Updates: **
 ## #WORKNG ON A NEW LIST 2600820, ongoing.....a slimmer list with more.....!###
 
+* Updated:260028: robots.txt  #CLEANED and updated:)
 * Updated 260720: AI-SHIELD:!!- to effective........blocked leitime bots.
 * Updated 260719: AI-SHIELD:!!! Ready to protect your blogs:)
 * SYNTAX CHECK: AI-SHIELD:!!! upload the new version when it ready!
