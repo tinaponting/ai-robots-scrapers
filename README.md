@@ -61,8 +61,9 @@ https://perishablepress.com/ultimate-ai-block-list/
 ..........................................................................................
 
 # Updates: **
-## #WORKNG ON A NEW LIST 2600820, ongoing.....a slimmer list with more.....!###
+## #WORKNG ON A NEW LIST 2600828, ongoing.....a slimmer list with more.....!###
 
+* Updated 260828: READY MADE HTACCESS -Updated
 * Updated:260828: ROBOTS-HTACCESSTOUSE.txt  CLEANED and updated:)
 * Updated:260028: robots.txt  #CLEANED and updated:)
 * Updated 260720: AI-SHIELD:!!- to effective........blocked leitime bots.
