@@ -63,6 +63,7 @@ https://perishablepress.com/ultimate-ai-block-list/
 # Updates: **
 ## #WORKNG ON A NEW LIST 2600828, ongoing.....a slimmer list with more.....!###
 
+* Updated 260829: Kirby block AI
 * Updated 260829: Fork of blockaai crawlers-AI wordpress robots.txt
 * Updated 260828: CADDY - Updated
 * Updated 260828: NGINX - Updated
