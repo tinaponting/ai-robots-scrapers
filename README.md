@@ -63,8 +63,9 @@ https://perishablepress.com/ultimate-ai-block-list/
 # Updates: **
 ## #WORKNG ON A NEW LIST 2600828, ongoing.....a slimmer list with more.....!###
 
-* Updated 260928: CADDY - Updated
-* Updated 260928: NGINX - Updated
+* Updated 260829: Fork of blockaai crawlers-AI wordpress robots.txt
+* Updated 260828: CADDY - Updated
+* Updated 260828: NGINX - Updated
 * Updated 260828: Haproxy - Updated
 * Updated 260828: READY MADE HTACCESS - Updated
 * Updated:260828: ROBOTS-HTACCESSTOUSE.txt  CLEANED and updated:)
