@@ -111,7 +111,7 @@ Perplexity LLM|Perplexity pypi|Perplexity Research|Perplexity Scraper|Perplexity
 Perplexity-User|PetalBot|petalBot|Phind|PhindBot|phi-4-multimodal-instruct|phi-4-reasoning-plus|Playwright|Playwright Agentic AI|Playwright MCP|Playwright Stealth|Poe|PoeBot|PoeSearchBot|Poggio|
 Poseidon|Poseidon Research Crawler|ProWrid|ProWritingAid|Proximic|proximic|PulsarRPA|Puppeteer|Puppeteer|Python AI|python Ai|Python lxml|Python Scrapy|PyTorch|PyTorch Lightning|PyTorch Lightning LLM
 
-Qopywriter|Qopywriter.ai|Qualified|QualifiedBot|Quark|QueritBot|Querit-SearchBot|QuillBot|quillbot.com|Qwen|Qwen Chat|Qwen Deep Research|Qwen LLM|QwenLM|Qwen-Agent|Qwen-Chat|Qwen-Chat|
+Qopywriter|Qopywriter.ai|Qualified|QualifiedBot|Quark|QueritBot|Querit-SearchBot|QuillBot|quillbot.com|Qwen|Qwen Chat|Qwen Deep Research|Qwen LLM|QwenLM|Qwen-Agent|Qwen-Chat
 
 AI RAG|RAG|RAG Agent|RAG Agent Cohere|RAG Azure AI|RAG Chatbot|RAG ChatGPT|RAG Database|RAG Database Routing|RAG IS|RAG LLM|RAG Pipeline|RAG Search|RAG with|RAG with Vercel AI SDK|
 RAGify Search|RAG-|RAG-as-a-Service|RAG-"|RAG_|RAG_VertexAI|RAG_with_search|RAPTOR LLM|React Agent|ReAct AI Agent|Redis AI RAG|Reka Flash|Replicate|Replicate-Bot|resec.ai|Retriever|RSS/XML Scraper|Runner H|Rytr
@@ -1161,7 +1161,6 @@ User-agent: Qwen Deep Research
 User-agent: Qwen LLM
 User-agent: QwenLM
 User-agent: Qwen-Agent
-User-agent: Qwen-Agent
 User-agent: Qwen-Chat
 User-agent: AI RAG
 User-agent: RAG
@@ -1364,4 +1363,4 @@ https://perishablepress.com/ultimate-ai-block-list/
 
 :::::::::::::::::::::::::::::::::::::::::::	  
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 260828  Cleaned and Updated:)
+### Updated: 260829  Cleaned and Updated:)
