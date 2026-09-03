@@ -3,10 +3,11 @@
 
 #Cohere-AI
 /^Mozilla/5\.0 \(compatible; Cohere\-AI/1\.0; \+https\://cohere\.com/\)$/
+>Alternative:  /^cohere\-ai$/
 
 #GPTBot:
 /^Mozilla/5\.0 AppleWebKit/537\.36 \(KHTML, like Gecko; compatible; GPTBot/1\.0; \+https\://openai\.com/gptbot\)$/
-
+Alternative:  ^GPTBot\/1\.0; \(\+https:\/\/openai\.com\/gptbot\)$/
 
 #ChatGPT-User
 /^Mozilla/5\.0 AppleWebKit/537\.36 \(KHTML, like Gecko; compatible; ChatGPT\-User/1\.0; \+https\://openai\.com/bot\)$/
@@ -17,12 +18,17 @@
 
 #ClaudeBot
 /^ClaudeBot/1\.0; \+https\://www\.anthropic\.com$/
+Alternative: /^ClaudeBot\/1\.0; \+\(https:\/\/www\.anthropic\.com\/claudebot\)$/
+
 
 #PerplexityBot
 /^Mozilla/5\.0 AppleWebKit/537\.36 \(KHTML, like Gecko; compatible; PerplexityBot/1\.0; \+https\://perplexity\.ai/bot\)$/
+Alternative: /^PerplexityBot\/1\.0; \(\+https:\/\/www\.perplexity\.ai\/perplexitybot\)$/
 
 #Meta-ExternalAgent
 /^Meta\-ExternalAgent/1\.0 \(\+https\://developers\.facebook\.com/docs/sharing/bot\)$/
+Alternative:  /^Meta\-ExternalAgent\/1\.0 \(\+https:\/\/developers\.facebook\.com\/docs\/sharing\/bot\)$/
+
 
 #Amazonbot
 /^Amazonbot/0\.1 \(\+https\://developer\.amazon\.com/support/amazonbot\)$/
@@ -34,5 +40,21 @@
 #ChatGLM-Spider
 /^ChatGLM\-Spider$/
 
+Google-Extended | /^Google\-Extended$/
 
+Applebot-Extended | /^Applebot\-Extended$/
 
+CCBot | /^CCBot\/2\.0; \(\+http:\/\/commoncrawl\.org\/faq\/\)$/
+
+Diffbot | /^Diffbot\/0\.1; \(\+http:\/\/www\.diffbot\.com\/bot\/\)$/
+
+ChatGPT-User | /^Mozilla\/5\.0 AppleWebKit\/537\.36 \(KHTML, like Gecko; compatible; ChatGPT\-User\/1\.0; \+https:\/\/openai\.com\/bot\)$/
+
+OAI-SearchBot | /^Mozilla\/5\.0 \([Cc]ompatible; OAI\-SearchBot\/1\.0; \+https:\/\/openai\.com\/searchbot\)$/
+
+ClaudeWeb | /^ClaudeWeb\/1\.0; \+https:\/\/www\.anthropic\.com$/
+
+Google-CloudVertexBot | /^Google\-CloudVertexBot\/1\.0$/
+
+.............................
+Updated: 260903
