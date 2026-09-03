@@ -138,6 +138,9 @@ In swedish:
 * ATT ANVÄNDA:  .htaccess och plugins på Protect Wordpress:
 URL: https://github.com/tinaponting/protect-wordpress
 
+VIKTIGT: Håll koll på uppdateringar på sajterna! På AI händer det mycket! Det går fort med utveckligen
+inom AI, så håll ett öga på uppdateringar!
+
 Alltid: "raw file" - använd raw filen, tadet script du gillar och vet funkar för din blogg/sajt, lägg in filen,
 Eller använd: htaccess1 eller htaccess2 färdiga brandväggar, lägg upp i roten på din sajt.
 
@@ -145,9 +148,6 @@ AI BOT HELL:
 URL: https://github.com/tinaponting/ai-robots-scrapers
 
 Plugins: Lägg upp i in plugin mapp - Aktivera -klart, evt.inställningar.
-
-VIKTIGT: Håll koll på uppdateringar på sajterna! På AI händer det mycket! Det går fort med utveckligen
-inom AI, så håll ett öga på uppdateringar!
 
 PLUGINS:
 
