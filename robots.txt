@@ -997,7 +997,6 @@ User-agent: Proximic
 User-agent: proximic
 User-agent: PulsarRPA
 User-agent: Puppeteer
-User-agent: Puppeteer
 User-agent: PuppeteerCrawler
 User-agent: Python AI
 User-agent: python Ai
