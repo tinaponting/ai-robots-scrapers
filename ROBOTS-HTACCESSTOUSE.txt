@@ -109,7 +109,7 @@ OpenText AI|OpenVLA|Operator|Opus|Outwrite|OVHcloud|OVHcloud AI Training|OWL|Owl
 Page Analyzer AI|PandasAI|PanGu Chat|PanguBot|Panscient|panscient.com|Paraphraser.io|PentestGPT|PentestGPT Research|Perflexity|Perplexity AI|Perplexity Chatbot|Perplexity Deep Research|Perplexity Image|
 Perplexity LLM|Perplexity pypi|Perplexity Research|Perplexity Scraper|Perplexity Search|Perplexity Stealth|Perplexity Web Scraper|PerplexityBot|Perplexity-Bot|perplexity-py|Perplexity-Stealth|
 Perplexity-User|PetalBot|petalBot|Phind|PhindBot|phi-4-multimodal-instruct|phi-4-reasoning-plus|Playwright|Playwright Agentic AI|Playwright MCP|Playwright Stealth|Poe|PoeBot|PoeSearchBot|Poggio|
-Poseidon|Poseidon Research Crawler|ProWrid|ProWritingAid|Proximic|proximic|PulsarRPA|Puppeteer|Puppeteer|Python AI|python Ai|Python lxml|Python Scrapy|PyTorch|PyTorch Lightning|PyTorch Lightning LLM
+Poseidon|Poseidon Research Crawler|ProWrid|ProWritingAid|Proximic|proximic|PulsarRPA|Puppeteer|Python AI|python Ai|Python lxml|Python Scrapy|PyTorch|PyTorch Lightning|PyTorch Lightning LLM
 
 Qopywriter|Qopywriter.ai|Qualified|QualifiedBot|Quark|QueritBot|Querit-SearchBot|QuillBot|quillbot.com|Qwen|Qwen Chat|Qwen Deep Research|Qwen LLM|QwenLM|Qwen-Agent|Qwen-Chat
 
@@ -1138,7 +1138,6 @@ User-agent: Proximic
 User-agent: proximic
 User-agent: PulsarRPA
 User-agent: Puppeteer
-User-agent: Puppeteer
 User-agent: Python AI
 User-agent: python Ai
 User-agent: Python lxml
@@ -1363,4 +1362,4 @@ https://perishablepress.com/ultimate-ai-block-list/
 
 :::::::::::::::::::::::::::::::::::::::::::	  
 :::::::::::::::::::::::::::::::::::::::::::
-### Updated: 260829  Cleaned and Updated:)
+### Updated: 260903 Cleaned and Updated:)
