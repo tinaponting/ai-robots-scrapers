@@ -1198,7 +1198,6 @@ User-agent: Tencent AI chatbot
 User-agent: Trae
 User-agent: TerraCotta
 User-agent: Terra Cotta
-User-agent: TerraCotta
 User-agent: Text Blaze
 User-agent: TextCortex
 User-agent: Text-RAG
