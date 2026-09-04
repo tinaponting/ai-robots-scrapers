@@ -61,8 +61,9 @@ https://perishablepress.com/ultimate-ai-block-list/
 ..........................................................................................
 
 # Updates: **
-## #WORKNG ON A NEW LIST 26000902, one file to do.....!###
+## #WORKNG ON A NEW LIST: PUH!........!###
 
+* Updated 260902: AI-SHIELD - UPDATED
 * Updated:260902: Hugo-config.yaml-nothanksAI
 * Updated:260901 BLOCK ai php - corrected some errors
 * Updated 260829: Kirby block AI
