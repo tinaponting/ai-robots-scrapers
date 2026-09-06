@@ -63,6 +63,7 @@ https://perishablepress.com/ultimate-ai-block-list/
 # Updates: **
 ## #WORKNG ON A NEW LIST: PUH!........!###
 
+* Updated 260902: AI-SHIELD - UPDATED AND Changed name, better reflect what is does: AI -SCRAPER-SHIELD!!
 * Updated 260902: AI-SHIELD - UPDATED
 * Updated:260902: Hugo-config.yaml-nothanksAI
 * Updated:260901 BLOCK ai php - corrected some errors
