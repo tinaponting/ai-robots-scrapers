@@ -61,7 +61,7 @@ https://perishablepress.com/ultimate-ai-block-list/
 ..........................................................................................
 
 # Updates: **
-## #WORKNG ON A NEW LIST: PUH!........!###
+## #WORKNG ON A NEW LIST: PUH!........ 261018, ready?!###
 
 * Updated 260919: AI-SHIELD - UPDATED 
 * Updated 260902: AI-SHIELD - UPDATED AND Changed name, better reflect what is does: AI -SCRAPER-SHIELD!!
