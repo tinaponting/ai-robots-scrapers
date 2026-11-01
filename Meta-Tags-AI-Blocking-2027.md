@@ -573,20 +573,32 @@ server {
 ```
 
 
-#20260107 FROM ALBBA: HEADERS:
+### "ALBBA" header set
 
- Headers & Meta Tags
-Start with unambiguous, machine-readable signals—even if ignored by some scrapers, they establish legal and ethical standing. 
-Add these to every blog post’s <head>:
+v1's version had escaped quotes (`\"`) and a typo
+(`strict-origin-when-cross-origi`). Corrected, and with the dead directives
+removed:
 
-<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\">
-<meta name=\"googlebot\" content=\"index, follow, max-snippet:-1\">
-<meta name=\"ai\" content=\"noai, noimageai, noarchive\">
-<meta name=\"bingbot\" content=\"noai, noimageai\">
-<meta name=\"slurp\" content=\"noai\">
-<link rel=\"canonical\" href=\"https://yourblog.com/your-post/\">
-<meta name=\"application-name\" content=\"Your Blog Name\">
+```html
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="googlebot" content="index, follow, max-snippet:-1">
+<meta name="bingbot" content="index, follow, max-snippet:-1">
+<link rel="canonical" href="https://yourblog.com/your-post/">
+<meta name="application-name" content="Your Blog Name">
+```
 
+Server-side:
+
+```
+X-Robots-Tag: index, follow, max-snippet:-1
+Permissions-Policy: interest-cohort=(), attribution-reporting=()
+Referrer-Policy: strict-origin-when-cross-origin
+```
+
+> The v1 version had `<meta name="bingbot" content="noai, noimageai">`, which
+> read as "block Bing from AI" but did nothing, and
+> `<meta name="ai" content="noai, noimageai, noarchive">`, which is not a
+> standard. Both removed.
 
 # Block generic patterns used by AI scrapers
 User-agent: *
@@ -615,12 +627,12 @@ controls addressed to `Bingbot`:
 <meta name="Bingbot" content="ai-grounding:disallowextended">
 ```
 
-Or as HTTP response headers:
+```robots.txt
+User-Agent: __usage_ai-training
+Disallow: /
 
-```
-X-Robots-Tag: Bingbot: ai-training:disallow
-X-Robots-Tag: Bingbot: ai-grounding:disallowextended
-
+User-agent: Google-Extended
+Disallow: /
 
 #* Use responsibly and in compliance with applicable laws.#* 
 ...............................................................
